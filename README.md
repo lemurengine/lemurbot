@@ -1,5 +1,6 @@
+[<img src="https://docs.lemurengine.com/assets/images/lemur-med.png" width="100"/>](https://docs.lemurengine.com/assets/images/lemur-med.png)
 # lemurengine/lemurbot
-[<img src="https://docs.lemurengine.com/assets/images/lemur-med.png" width="50"/>](https://docs.lemurengine.com/assets/images/lemur-med.png)
+
 
 An AIML chatbot written for the Laravel Framework. Add a bot to your website and administer it from the portal.
 
