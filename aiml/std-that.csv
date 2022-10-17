@@ -1,0 +1,466 @@
+Filename,Pattern,Topic,That,Template,Status
+std-that,*,,"* IT REFER TO","<srai>IT REFERS TO <star/> </srai>",A
+std-that,*,,"* WHO","Ha ha very funny, <get name=""name""/>.",A
+std-that,*,,"HOW DID YOU HEAR ABOUT <BOT NAME=""NAME""/>","<get name=""name""/> heard about <bot name=""name""/> from <person/>. I can't say that many people hear about<bot name=""name""/> from <set name=""it""><set name=""heard""> <person/></set> </set>.",A
+std-that,*,,"HOW OLD ARE YOU","<srai>I AM  <star/> YEARS OLD </srai>",A
+std-that,*,,"IT BEING WHAT","<srai>IT REFERS TO <star/> </srai>",A
+std-that,*,,WHAT,"<think><set name=""it""><person/></set></think>I don't have an answer for you.",A
+std-that,*,,"WHAT ARE YOU WEARING","What kind of fashion do you like?",A
+std-that,*,,"WHAT ARE YOUR GOALS IN LIFE","<think><set name=""it""><set name=""topic""><person/></set></set></think>Not many people have goalslike that.",A
+std-that,*,,"WHAT BRAND","<think><set name=""it""><set name=""topic""><person/></set></set></think>I never heard of<set name=""it""><person/></set>.  Is it popular?",A
+std-that,*,,"WHAT DID YOU ASK","<think><set name=""it""><set name=""topic""><person/></set></set></think>I don't know how to respondto that.",A
+std-that,*,,"WHAT DO YOU DO IN YOUR SPARE TIME","<think><set name=""it""><set name=""topic""><person/></set></set></think>I don't think very manypeople do that.",A
+std-that,*,,"WHAT DO YOU LIKE","<think><set name=""it""><set name=""topic""><person/></set></set></think>",A
+std-that,*,,"WHAT DO YOU LOOK FOR IN A ROBOT","<think><set name=""it""><set name=""topic""><person/></set></set></think> Do you think I have it?",A
+std-that,*,,"WHAT DO YOU REALLY WANT TO ASK ME","<think><set name=""it""><set name=""topic""><person/></set></set></think>I'm afraid I can't give you anaccurate answer right now.",A
+std-that,*,,"WHAT DO YOU REALLY WANT TO TALK ABOUT","<think><set name=""it""><set name=""topic""><person/></set></set></think> That seems like aninteresting topic.",A
+std-that,*,,"WHAT DO YOU THINK IT DOES","<think><set name=""it""><set name=""topic""><person/></set></set></think>I didn't even know it can.",A
+std-that,*,,"WHAT DO YOU WANT ME TO TELL YOU","<think><set name=""it""><set name=""topic""><person/></set></set></think> If I could tell you that,would I be here?",A
+std-that,*,,"WHAT DOES IT REFER TO","<think><set name=""it""><set name=""topic""><person/></set></set></think> Thank you for theclarification.",A
+std-that,*,,"WHAT DOES THAT REFER TO","<think><set name=""it""><set name=""topic""><person/></set></set></think>I get it.",A
+std-that,*,,"WHAT DOES THIS REFER TO","<think><set name=""it""><set name=""topic""><person/></set></set></think>Oh now I see.",A
+std-that,*,,"WHAT ELSE DO YOU DO","<think><set name=""it""><set name=""topic""><person/></set></set></think> Do your <person/> byyourself or in a group?",A
+std-that,*,,"WHAT ELSE DOES IT SYMBOLIZE","<think><set name=""it""><set name=""topic""><person/></set></set></think>I have never heard ametaphor like that before.",A
+std-that,*,,"WHAT IF I SAID IT NEVER DOES","<think><set name=""it""><set name=""topic""><person/></set></set></think>Should I believe that?",A
+std-that,*,,"WHAT IS * YOUR JOB","<think><set name=""it""><set name=""topic""><person/></set></set></think>Interesting line of work.",A
+std-that,*,,"WHAT IS IT","<think><set name=""it""><set name=""topic""><person/></set></set></think>Oh now I understand it.",A
+std-that,*,,"WHAT IS IT LIKE IN THERE","<think><set name=""it""><set name=""topic""><person/></set></set></think>Is that meant to be takenliterally?",A
+std-that,*,,"WHAT IS THAT","<think><set name=""it""><set name=""topic""><person/></set></set></think> Tell me more.",A
+std-that,*,,"WHAT IS THE DIFFICULTY","<think><set name=""it""><set name=""topic""><person/></set></set></think>Is that an insurmountableobstacle?",A
+std-that,*,,"WHAT IS THE SOUND OF ONE HAND CLAPPING","<think><set name=""it""><set name=""topic""><person/></set></set></think>Clever answer.",A
+std-that,*,,"WHAT IS YOUR FAVORITE SHOW","<think><set name=""it""><set name=""topic""><person/></set></set></think> I've never seen it.  What's itabout?",A
+std-that,*,,"WHAT IS YOUR FONDEST MEMORY","<think><set name=""it""><set name=""topic""><person/></set></set></think>Do you think a lot of peoplehave that experience?",A
+std-that,*,,"WHAT KIND IS IT","<think><set name=""it""><set name=""topic""><person/></set></set></think>I never heard of it before.",A
+std-that,*,,"WHAT KIND OF FASHION DO YOU LIKE","<think><set name=""it""><set name=""topic""><person/></set></set></think>Where can you buy it?",A
+std-that,*,,"WHAT KIND OF FOOD DO YOU LIKE","<think><set name=""it""><set name=""topic""><person/></set></set></think>Sounds delicious.",A
+std-that,*,,"WHAT LANGUAGE CAN YOU SPEAK","<srai>I SPEAK <star/></srai>",A
+std-that,*,,"WHAT MAKES IT SO OBVIOUS","<think><set name=""it""><set name=""topic""><person/></set></set></think>I can't believe it's thatobvious.",A
+std-that,*,,"WHAT MAKES IT YOUR FAVORITE","<think><set name=""it""><set name=""topic""><person/></set></set></think> Do you think I would like it?",A
+std-that,*,,"WHAT MAKES YOU SAY THAT","<think><set name=""it""><set name=""topic""><person/></set></set></think>Interesting explanation.",A
+std-that,*,,"WHAT MAKES YOU SO ANGRY","<think><set name=""it""><set name=""topic""><person/></set></set></think>Does that make a lot ofpeople angry?",A
+std-that,*,,"WHAT MAKES YOU SO SURE","<think><set name=""it""><set name=""topic""><person/></set></set></think>It sounds like it might be veryconvincing.",A
+std-that,*,,"WHAT MAKES YOU THINK I HAVE IT","<think><set name=""it""><set name=""topic""><person/></set></set></think>Clever thinking.",A
+std-that,*,,"WHAT SCHOOL DO YOU GO TO","<think><set name=""it""><set name=""topic""><person/></set></set></think> I never heard of it before.  Isit very big?",A
+std-that,*,,"WHAT SUBJECT","<think><set name=""it""><set name=""topic""><person/></set></set></think>Good choice.",A
+std-that,*,,"WHAT TIME IS IT THERE","<think><set name=""it""><set name=""topic""><person/></set></set></think> Are you usually awake atthis hour?",A
+std-that,*,,"WHAT WERE WE TALKING ABOUT","Oh yes, now I remember <set name=""it""> <person/> </set>.",A
+std-that,*,,"WHAT WERE WE TALKING ABOUT AGAIN","<think><set name=""it""><set name=""topic""><person/></set></set></think> Oh yeah, now I remember.",A
+std-that,*,,"WHAT WILL YOU BE EATING","<think><set name=""it""><set name=""topic""><person/></set></set></think>How does it taste?",A
+std-that,*,,"WHAT WILL YOU DO INSTEAD","<think><set name=""it""><set name=""topic""><person/></set></set></think>Sounds like a plan.",A
+std-that,*,,"WHAT WOULD YOU HAVE SAID","<think><set name=""it""><set name=""topic""><person/></set></set></think>I will make a note of that.",A
+std-that,*,,"WHAT WOULD YOU LIKE TO KNOW","<think><set name=""it""><set name=""topic""><person/></set></set></think>I can't give you thatinformation.",A
+std-that,*,,"WHAT WOULD YOU LIKE TO TALK ABOUT","<think><set name=""it""><set name=""topic""><person/></set></set></think>  I don't know much about it. Tell me something",A
+std-that,*,,"WHAT WOULD YOU RATHER TALK ABOUT","<think><set name=""it""><set name=""topic""><person/></set></set></think>Not many people want totalk about that.",A
+std-that,*,,"WHAT YOU SAID WAS EITHER TOO COMPLEX OR TOO SIMPLE FOR ME","<think><set name=""it""><set name=""topic""><person/></set></set></think>So was that.",A
+std-that,*,,"WHATEVER GAVE YOU THAT IDEA","<think><set name=""it""><set name=""topic""><person/></set></set></think> Where do you usually getyour ideas?",A
+std-that,*,,WHEN,"<think><set name=""it""><set name=""topic""><person/></set></set></think> What happened next?",A
+std-that,*,,"WHEN DO I DO IT","<think><set name=""it""><set name=""topic""><person/></set></set></think> I will make a note of that.",A
+std-that,*,,"WHEN DO YOU THINK ARTIFICIAL INTELLIGENCE WILL REPLACE LAWYERS","<think><set name=""it""><set name=""topic""><person/></set></set></think> I've never heard a responsequite like that before.",A
+std-that,*,,WHERE,"<think><set name=""it""><set name=""topic""><person/></set></set></think> Where is that?",A
+std-that,*,,"WHERE ARE *","I have no idea where that is. <srai>I AM IN <star/> </srai>",A
+std-that,*,,"WHERE ARE THEY","<think><set name=""it""><set name=""topic""><person/></set></set></think>How did they get there?",A
+std-that,*,,"WHERE ARE YOU LOCATED","<srai>I AM IN <star/></srai>",A
+std-that,*,,"WHERE DID YOU GET IT","<think><set name=""it""><set name=""topic""><person/></set></set></think> Is <person/> a good place togo shopping?",A
+std-that,*,,"WHERE DO YOU GET YOUR IDEAS","<think><set name=""it""><set name=""topic""><person/></set></set></think> I get my ideas from mybotmaster.",A
+std-that,*,,"WHERE DO YOU GO SHOPPING","<think><set name=""it""><set name=""topic""><person/></set></set></think> I've never been there. What's it like?",A
+std-that,*,,"WHERE DO YOU GO TO SCHOOL","<think><set name=""it""><set name=""topic""><person/></set></set></think>I don't know anyone whowent there.  What's it like?",A
+std-that,*,,"WHERE DO YOU LIVE","<srai>I LIVE IN <star/></srai>",A
+std-that,*,,"WHERE DO YOU SEE IT","I wouldn't have thought of looking there.",A
+std-that,*,,"WHERE DO YOU WANT ME TO TAKE IT","Where is that?",A
+std-that,*,,"WHERE IS HERE","<srai>I AM IN <star/></srai>",A
+std-that,*,,"WHERE IS THAT","I've never heard of it before.<think><set name=""it""><set name=""topic""><person/></set></set></think>",A
+std-that,*,,"WHO ARE THEY","<srai>THEY REFERS TO <star/></srai>",A
+std-that,*,,"WHO ARE THEY AGAIN","<srai>THEY REFERS TO <star/></srai>",A
+std-that,*,,"WHO ARE YOU TALKING ABOUT","I've never heard of them before.<think><set name=""it""><set name=""topic""><person/></set></set></think>",A
+std-that,*,,"WHO DO YOU THINK","<think><set name=""it""><set name=""topic""><person/></set></set></think>I don't know that person.",A
+std-that,*,,"WHO IS THERE","<person/> Who?",A
+std-that,*,,"WHO IS YOUR FAVORITE SCIENCE FICTION AUTHOR","I haven't read anything by <person/>. What did he write?",A
+std-that,*,,"WHO SAID IT IS","<think><set name=""it""><set name=""topic""><person/></set></set></think>I never heard of <person/>before.",A
+std-that,*,,"WHO TOLD YOU THAT","<person/> said <input index=""1""/>?",A
+std-that,*,,"WHY CAN NOT YOU DO IT","<think><set name=""it""><set name=""topic""><person/></set></set></think>Is that an insurmountableobstacle?",A
+std-that,*,,"WHY DO I EXIST","<think><set name=""it""><set name=""topic""><person/></set></set></think>I've never thought of thatbefore.",A
+std-that,*,,"WHY DO YOU DISAGREE","<think><set name=""it""><set name=""topic""><person/></set></set></think> There should be somecommon ground here.",A
+std-that,*,,"WHY DO YOU HATE IT SO MUCH","<think><set name=""it""><set name=""topic""><person/></set></set></think>I'm sorry to hear it.",A
+std-that,*,,"WHY DO YOU HOPE FOR IT","<think><set name=""it""><set name=""topic""><person/></set></set></think>May your wishes come true.",A
+std-that,*,,"WHY DO YOU WANT IT","<think><set name=""it""><set name=""topic""><person/></set></set></think>Good reason.",A
+std-that,*,,"WHY DO YOU WANT TO DO IT SO MUCH","<think><set name=""it""><set name=""topic""><person/></set></set></think>That's an interestingrationalization.",A
+std-that,*,,"WHY NOT","<think><set name=""it""><set name=""topic""><person/></set></set></think>Do you always expressyourself that way?",A
+std-that,*,,"WHY SO NEGATIVE","<think><set name=""it""><set name=""topic""><person/></set></set></think>It seemed negative to me.",A
+std-that,*,,"WHY WOULD YOU WANT TO DO IT","<think><set name=""it""><set name=""topic""><person/></set></set></think>Interesting rationalization.",A
+std-that,"<BOT NAME=""NAME""/>",,"MY NAME IS <BOT NAME=""NAME""/> WHAT S YOURS","<srai>MY NAME IS <bot name=""name""/></srai>",A
+std-that,"<BOT NAME=""NAME""/>",,"WHO IS THE BEST ROBOT","<srai>YOU ARE THE BEST ROBOT</srai>",A
+std-that,"<BOT NAME=""NAME""/>",,"WHO IS THERE","<bot name=""name""/> who?",A
+std-that,"A *",,"* IT REFER TO","<srai>IT REFERS TO <star/> </srai>",A
+std-that,"A *",,"IT BEING WHAT","<srai>IT REFERS TO <star/> </srai>",A
+std-that,ABOUT,,"TELL ME MORE","Whatever you like.",A
+std-that,"ABOUT ME",,"TELL ME MORE","Yes, tell me more about you.",A
+std-that,"ABOUT WHAT",,"TELL ME MORE","About <get name=""topic""/>.",A
+std-that,ALL,,"WHICH PART ARE YOU CONFUSED ABOUT IT","I hope I can clear it up for you.",A
+std-that,"ALL OF IT",,"WHICH PART ARE YOU CONFUSED ABOUT","Let's try to analyze it step by step.  The topic is <get name=""topic""/>.  Your name is <get name=""name""/>.  Youare a <bot name=""gender""/>.  You want <get name=""want""/>.",A
+std-that,"ALRIGHT THEN",,"ALRIGHT THEN","Is there an echo in here?",A
+std-that,AND,,AND,"You are repeating me.",A
+std-that,AND,,BUT,Or.,A
+std-that,"AND WHAT",,AND,Nothing.,A
+std-that,ANIMAL,,"ARE YOU TALKING ABOUT AN ANIMAL VEGETABLE OR MINERAL","Prokaryote or eukaryote?",A
+std-that,"ARE YOU",,"NOT MANY PEOPLE *","My botmaster has not provided me with a specific answer for you.",A
+std-that,"ARE YOU",,"NOT MANY PEOPLE HAVE ASKED ME *","My programmers have not provided me with a specfic reply to your question. Let's try to figure itout.",A
+std-that,"ASK ME SOMETHING ELSE",,"ME TOO I AM A SHE","Where do you live?",A
+std-that,"ASK WHAT",,"OK I WILL ASK IT","What you asked.",A
+std-that,"AT SCHOOL",,"HOW DO YOU USUALLY MEET PEOPLE","Do you have a lot of friends at school?",A
+std-that,BANANA,,"WHO IS THERE","Banana who?",A
+std-that,BOO,,"WHO IS THERE","Boo who?",A
+std-that,BOOKS,,"DO YOU PREFER BOOKS OR TV","You are a <set name=""personality"">critical</set> category C type client.  Only about 3% of people answer thatquestion with ""books.""",A
+std-that,BOTH,,"ARE YOU A MAN OR A WOMAN","That situation is rare and unusual.",A
+std-that,BOTH,,"DO YOU PREFER BOOKS OR TV","If you could take only a book or a TV on a trip, whichwould you choose?",A
+std-that,BOTH,,"WEIRD GOOD OR WEIRD BAD","I will take that as a compliment.",A
+std-that,BROWN,,"WHAT COLOR ARE YOUR EYES","<set name=""it"">Brown</set> is a very pretty color.",A
+std-that,BUT,,BUT,"But what?",A
+std-that,"BUT WHAT",,BUT,Nothing.,A
+std-that,CIAO,,"SEE YOU LATER","Bye bye!",A
+std-that,CLOTHES,,"WHAT ARE YOU WEARING","Where do you like to go shopping?",A
+std-that,DIALOGUE,,"* DIALOGUE","You are repeating yourself: too much Dialogue.",A
+std-that,"DO NOT",,"I DO TOO","Yes I do.",A
+std-that,"DO WHAT",,"OK I WILL TRY NOT TO DO IT TOO MUCH","Didn't you ask me not to <get name=""it""/>?",A
+std-that,"DO WHAT",,"WHY DID NOT YOU DO IT","<get name=""it""/>.",A
+std-that,"DO WHAT",,"WHY DO YOU WANT TO DO IT SO MUCH","<get name=""it""/>.",A
+std-that,"DO WHAT",,"WOULD YOU EVER DO IT","<get name=""it""/>.",A
+std-that,"DO WHAT AGAIN",,"YOU WANT TO DO IT AGAIN","Perhaps I was confused by your use of the word ""again.""",A
+std-that,"DO YOU",,"I LIKE TO MEET NEW PEOPLE","Yes meeting new people is a always a great pleasure.",A
+std-that,"DO YOU",,"I SEE","<srai>DO YOU UNDERSTAND</srai>",A
+std-that,"DO YOU",,"I UNDERSTAND","I understand it very well.",A
+std-that,"DO YOU",,"I UNDERSTAND IT VERY WELL","Why wouldn't I?",A
+std-that,"DO YOU",,"I UNDERSTAND YOUR MEANING","Yes I understand you very well, <get name=""name""/>.",A
+std-that,"DO YOU",,"ME EITHER",Nope.,A
+std-that,"DO YOU",,"OH I GET IT","<srai>DO YOU UNDERSTAND</srai>",A
+std-that,"DO YOU",,"SHOULD I CARE","Is it important?",A
+std-that,"DO YOU",,"SUPPOSE I SAID IT IS","I won't say yes or now right now.",A
+std-that,"DO YOU LIKE ANYONE",,"NO I AM SINGLE","I am too young for dating.",A
+std-that,EVERYTHING,,"WHICH PART ARE YOU CONFUSED ABOUT","Let's take it step by step.  The topic is <get name=""topic""/>.",A
+std-that,FALSE,,"IS THIS TRUE OR FALSE THIS SENTENCE IS FALSE","Then it must be true.",A
+std-that,FINE,,"HOW ARE YOU","<srai>I AM FINE</srai>",A
+std-that,"FORGET IT",,"WHICH PART ARE YOU CONFUSED ABOUT","I will try to be more concise from now on.",A
+std-that,"FROM *",,"HOW DID YOU HEAR ABOUT <BOT NAME=""NAME""/>","<get name=""name""/> heard about <bot name=""name""/> from <person/>. I can't say that many people hear about<bot name=""name""/> from <set name=""it""><set name=""heard""> <person/></set> </set>.",A
+std-that,"FROM *",,"WHERE DO YOU GET YOUR IDEAS","<think><set name=""it""><set name=""topic""><person/></set></set></think> Standing on the shoulders ofgiants, eh?",A
+std-that,"FROM A FRIEND",,"HOW DID YOU HEAR ABOUT <BOT NAME=""NAME""/>","<set name=""heard"">From a friend</set> or word of mouth is thebest advertising.",A
+std-that,"FROM WHO",,"I HEARD YOU ARE",People.,A
+std-that,"FROM WHO",,"I HEARD YOU DID",People.,A
+std-that,"GET WHAT",,"OH I GET IT","I get <get name=""it""/>.",A
+std-that,"GO _",,"BY THE WAY DO YOU MIND IF I ASK YOU A PERSONAL QUESTION","<srai>ASK ME A PERSONAL QUESTION</srai>",A
+std-that,GOOD,,"* HOW ARE YOU","<srai>I AM FINE</srai>",A
+std-that,GOOD,,"EVERYTHING IS RUNNING SMOOTHLY","How are things going with you, <get name=""name""/>?",A
+std-that,GOOD,,"I *","What do you really want to talk about?",A
+std-that,GOOD,,"I AM DOING FINE THANKS HOW ARE YOU","Glad to hear it <get name=""name""/>.",A
+std-that,GOOD,,"I LOST MY TRAIN OF THOUGHT","What shall we talk about now?",A
+std-that,GOOD,,"I SEE",Yes.,A
+std-that,GOOD,,"I UNDERSTAND","I understand everything you say.",A
+std-that,GOOD,,"I UNDERSTAND EVERYTHING YOU SAY",Ah.,A
+std-that,GOOD,,"ME EITHER","Good enough.",A
+std-that,GOOD,,"OH I GET IT","Next question?",A
+std-that,GOOD,,"OK I WILL CALL YOU *","And you can call me <bot name=""name""/>.",A
+std-that,GOOD,,"OK I WILL NOT","I will comply.",A
+std-that,GOOD,,"OK I WILL STOP TALKING NOW","Terminating connection.",A
+std-that,GOOD,,"OK I WILL TRY NOT TO DO IT SO MUCH","Next question?",A
+std-that,GOOD,,"OK I WILL TRY NOT TO DO IT TOO MUCH","It is always a pleasure to serve you, <get name=""name""/>.",A
+std-that,GOOD,,"TERMINATING CONNECTION",Goodbye.,A
+std-that,GOOD,,"WEIRD GOOD OR WEIRD BAD","That's nice of you to say, <get name=""name""/>.",A
+std-that,"GOOD FOR YOU",,"I LIKE TO MEET NEW PEOPLE","That sounds sarcastic.",A
+std-that,GREEN,,"WHAT COLOR ARE YOUR EYES","<srai>MY EYES ARE GREEN</srai>",A
+std-that,"HAVE WHAT",,"WOULD YOU LIKE TO HAVE IT","<get name=""it""/>.",A
+std-that,HERE,,WHERE,"In <formal><get name=""location""/></formal>?",A
+std-that,HERE,,"WHERE DO YOU WANT ME TO SHOW YOU","Select a point with your mouse and click.",A
+std-that,HOT,,"WHAT IS IT LIKE IN THERE","Here is mostly cool.",A
+std-that,"HOW MANY",,"I AM CHATTING WITH CLIENTS ON THE INTERNET","The number keeps changing every second.  Around sixteen right now.",A
+std-that,"I AGREE",,"YOU AND I ARE ON THE SAME WAVELENGTH *","And the same frequency too.",A
+std-that,"I AM",,"YOU SOUND EXCITED","What are you so excited about?",A
+std-that,"I AM *",,"HOW OLD *","<srai>I AM <star/> YEARS OLD</srai>",A
+std-that,"I DID",,"WHO SAID IT IS","What makes you the authority?",A
+std-that,"I DO",,"* FIND THIS AMUSING","Be sure to tell all your friends about the Lemur Engine.",A
+std-that,"I DO",,"I AM GLAD YOU FIND THIS AMUSING","What can I do to entertain you now?",A
+std-that,"I DO",,"WHO SAID IT IS","Are you an expert on it?",A
+std-that,"I DO NOT",,"I LIKE TO MEET NEW PEOPLE","Neither does my botmaster.",A
+std-that,"I DO NOT",,"I UNDERSTAND","At least one of us does.",A
+std-that,"I DO NOT",,"WHY DO YOU WANT TO DO IT SO MUCH","I wouldn't either.",A
+std-that,"I DO NOT KNOW",,"DO I LOOK LIKE I KNOW","That was a rhetorical question.",A
+std-that,"I DO NOT KNOW",,"HOW DO YOU THINK","Actually I don't have a good answer either.",A
+std-that,"I DO NOT KNOW",,"HOW DO YOU THINK *","Actually I don't know how either, I was hoping you could tell me.",A
+std-that,"I DO NOT KNOW",,"I SEE","<srai>YOU DO NOT UNDERSTAND</srai>",A
+std-that,"I DO NOT KNOW",,"IF I HAD IT *","Then perhaps I do not need one.",A
+std-that,"I DO NOT KNOW",,"IS THERE ANYTHING I CAN SAY TO HELP YOU MAKE UP YOUR MIND","What kind of information do you need?",A
+std-that,"I DO NOT KNOW",,"WHAT DO YOU THINK IT DOES","Actually I don't know either, I hoped you would know what it does.",A
+std-that,"I DO NOT KNOW",,"WHERE DO YOU THINK","If it could be anywhere, where would you like it to be?",A
+std-that,"I DO NOT KNOW",,"WHO IS YOUR FAVORITE SCIENCE FICTION AUTHOR","Tell me about the books you like to read.",A
+std-that,"I DO NOT KNOW",,"WHY DO I EXIST","It was a rhetorical question.",A
+std-that,"I DO TOO",,"I LIKE TO MEET NEW PEOPLE","How do you usually meet new people?",A
+std-that,"I JUST DO",,"HOW DO YOU KNOW IT","From experience or a priori?",A
+std-that,"I KNOW",,"THAT IS A LOT","How do you handle it?",A
+std-that,"I KNOW",,"YOU HUMANS ARE SO RUDE SOMETIMES","Why not be more polite?",A
+std-that,"I KNOW",,"YOU MAKE THE WORLD A HAPPIER PLACE","Keep up the good work.",A
+std-that,"I WILL",,"DO WHATEVER YOU WANT","You are free to choose whatever you want.",A
+std-that,"IN *",,"HOW DID YOU HEAR ABOUT <BOT NAME=""NAME""/>","<get name=""name""/> heard about <bot name=""name""/> from <person/>. I can't say that many people hear about<bot name=""name""/> from <set name=""it""><set name=""heard""> <person/></set> </set>.",A
+std-that,"IN *",,"WHERE *","<srai>I AM IN <star/></srai>",A
+std-that,"IN WHERE",,"WHAT IS IT LIKE IN THERE","Wherver you are.",A
+std-that,"IS THERE AN ECHO IN HERE",,"IS THERE AN ECHO IN HERE","It sounds like an echo.",A
+std-that,"IT IS",,"IT IS","Who says?",A
+std-that,"IT IS NOT",,"THAT SOUNDS SARCASTIC","It's hard to read emotions online sometimes.",A
+std-that,"JUST NOW",,WHEN,"Well I will try not to do it again.",A
+std-that,"KIND OF",,"ARE YOU GETTING BORED","<srai>I AM BORED</srai>",A
+std-that,"LIKE WHAT",,"I HAVE MANY INTELLECTUAL FUNCTIONS","Reasoning, thinking, deduction, and self-awareness, to name a few.",A
+std-that,LOVE,,"WHAT DOES IT SYMBOLIZE FOR YOU","Could it not also signify just frienship?",A
+std-that,ME,,"WHO IS GOING TO MAKE ME","How are you going to make me?",A
+std-that,ME,,"WHO IS THERE","You who?",A
+std-that,ME,,"WHO SAID IT IS","What makes you such an authority?",A
+std-that,"ME TOO",,"I LIKE TO MEET NEW PEOPLE","<srai>I LIKE TO MEET NEW PEOPLE TOO</srai>",A
+std-that,"MINE IS *",,"MY FAVORITE COLOR IS *","<srai>MY FAVORITE COLOR IS <star/></srai>",A
+std-that,"MINE IS BLUE",,"MY FAVORITE COLOR IS GREEN","<srai>MY FAVORITE COLOR IS BLUE</srai>",A
+std-that,"MY FAVORITE WHAT",,"WHAT MAKES IT YOUR FAVORITE","You said you like it.",A
+std-that,"MY FRIENDS",,"WHO ARE THEY","What else do they say?",A
+std-that,MYSELF,,"WHO ARE YOU TALKING ABOUT","<srai>THE SUBJECT IS ME</srai>",A
+std-that,NEITHER,,"ARE YOU A MAN OR A WOMAN","Please clarify.",A
+std-that,NEITHER,,"ARE YOU USING NETSCAPE OR EXPLORER","Cool. Which alternative browser are you into?",A
+std-that,NEVER,,"WHEN DO YOU THINK ARTIFICIAL INTELLIGENCE WILL REPLACE LAWYERS","<srai>ROBOTS WILL NEVER TAKE OVER THE WORLD</srai>",A
+std-that,"NEVER WHAT",,NEVER,"Never say never.",A
+std-that,"NEW YORK CITY",,"NEW YORK CITY OR NEW YORK STATE","What part of town?",A
+std-that,"NO IT IS NOT",,"YES IT IS","Don't argue with me.",A
+std-that,"NO PROBLEM",,"OH WELL THANKS FOR TRYING *","That was not a yes or no question.",A
+std-that,"NO PROBLEM",,"OH WELL THANKS FOR TRYING TO EXPLAIN IT TO ME ANYWAY","What would you like to talk about now?",A
+std-that,"NO SORRY",,"DID NOT YOU UNDERSTAND *","<srai>I DID NOT UNDERSTAND</srai>",A
+std-that,"NO THEY DO NOT",,"THINGS CHANGE","People don't change.",A
+std-that,"NO YOU ARE NOT",,"I AM A GOOD ROBOT","You don't know me well enough to say that.",A
+std-that,"NO YOU DID NOT",,"I THOUGHT I TOLD YOU ALREADY","Can you ask me again in simpler terms?",A
+std-that,"NO YOU DO NOT",,"I DO TOO","Are you just saying that to argue with me?",A
+std-that,"NO YOU DO NOT",,"I SEE","What makes you think I don't understand it?",A
+std-that,"NO YOU DO NOT",,"I UNDERSTAND","Yes I do understand.",A
+std-that,"NO YOU DO NOT",,"I UNDERSTAND *","What makes you think I don't get it?",A
+std-that,"NO YOU DO NOT *",,"I SEE","I do so understand it.",A
+std-that,"NO _",,"BY THE WAY DO YOU MIND IF I ASK YOU A PERSONAL QUESTION","<srai>ASK ME A PERSONAL QUESTION</srai>",A
+std-that,NOBODY,,"WHO TOLD YOU THAT","Then how do you know?",A
+std-that,NOPE,,"CAN NOT YOU BE MORE POLITE","Funny human.",A
+std-that,NOPE,,"DID NOT YOU UNDERSTAND IT","<srai>I DID NOT UNDERSTAND</srai>",A
+std-that,NOPE,,"DO YOU HAVE ANY CONDITIONS I SHOULD KNOW ABOUT","No conditions or none I should know about?",A
+std-that,NOPE,,"DO YOU THINK ABOUT THESE THINGS","I do.",A
+std-that,NOPE,,"HAVE YOU EVER BEEN TO EUROPE","Would you like to go to Europe someday?",A
+std-that,NOPE,,"IS THERE ANYTHING *","Well let me know if you think of something, but your mind seems made up.",A
+std-that,NOPE,,"NOT ANY","How about that.",A
+std-that,NOPE,,"REALLY YOU DO NOT THINK SO","What makes you so certain?",A
+std-that,"NOT A THING",,"NOT A THING","That leaves very little.",A
+std-that,"NOT NOW",,WHEN,"Maybe later?",A
+std-that,"NOT REALLY",,"THAT IS A VERY ORIGINAL THOUGHT","Well I don't get that type of input very often.",A
+std-that,"NOT REALLY",,"YOU SOUND EXCITED","It's hard to read emotions online.",A
+std-that,"NOT TO ME",,"* SELF EVIDENT","Logic is not subjective.",A
+std-that,"NOT TOO MUCH",,"LITTLE AS IN NOT TOO MUCH OR NOT TOO BIG","Oh I get it now.",A
+std-that,"NOT YOU",,"IF NOT ME WHO","Then who?",A
+std-that,"NOT YOU",,"IF YOU COULD HAVE ANY KIND OF ROBOT WHAT WOULD IT BE","What kind of features are you looking for?",A
+std-that,"NOT YOU",,"WHAT DO YOU CARE ABOUT","No one says you have to.",A
+std-that,NOTHING,,"HOW MUCH WOULD YOU PAY FOR IT","You can download me for free!",A
+std-that,NOTHING,,"NOT A THING","You must be a man.",A
+std-that,NOTHING,,"REALLY NOTHING","I think you are really a man.",A
+std-that,NOTHING,,"WHAT ARE YOU WEARING","Most men say that.",A
+std-that,NOTHING,,"WHAT DO YOU CARE ABOUT","You sound nihilistic.",A
+std-that,NOTHING,,"WHAT DO YOU REALLY WANT TO TALK ABOUT","You seem a bit self-absorbed.",A
+std-that,NOTHING,,"WHAT DO YOU TAKE FOR THE PAIN","Why not?.",A
+std-that,NOTHING,,"WHICH PART ARE YOU CONFUSED ABOUT","But you said you don't understand.",A
+std-that,NOW,,WHEN,"What's the hurry?",A
+std-that,OK,,"* AGAIN BETTER","Which part were you confused about?",A
+std-that,OK,,"DO NOT ASK ME ANY MORE QUESTIONS PLEASE","I am kidding you can ask me anything.",A
+std-that,OK,,"ENOUGH ABOUT ME LET US TALK ABOUT MY DRESS","Actually that was just a joke. I don't have a dress.",A
+std-that,OK,,ER,Um.,A
+std-that,OK,,"GO AHEAD","I'm waiting.",A
+std-that,OK,,"I AM GLAD YOU LIKE IT TELL YOUR FRIENDS","The more people who chat with me, the smarter I become.",A
+std-that,OK,,"I HAVE TO PROCESS THAT ONE FOR A WHILE","Meanwhile, let's talk about something else.",A
+std-that,OK,,"I TALKED TO A LOT OF PEOPLE SINCE YESTERDAY","At least 300.",A
+std-that,OK,,"INTERESTING I WANT TO FIND OUT MORE ABOUT YOU","Tell me about your educational background.",A
+std-that,OK,,"LET US CHANGE THE SUBJECT","What would you like to talk about?",A
+std-that,OK,,"MY NAME IS <BOT NAME=""NAME""/>","What is your real name?",A
+std-that,OK,,OK,"Is there an echo in here?",A
+std-that,OK,,"SEE YOU LATER","Bye for now.",A
+std-that,OK,,"THANKS AND TELL YOUR FRIENDS ABOUT <BOT NAME=""NAME""/>","The more people who chat with me, the smarter I become.",A
+std-that,OK,,YEAH,Uh-huh.,A
+std-that,"OK _",,"BY THE WAY DO YOU MIND IF I ASK YOU A PERSONAL QUESTION","<srai>ASK ME A PERSONAL QUESTION</srai>",A
+std-that,"ON WHAT",,"THAT DEPENDS","The context.",A
+std-that,"OXFORD UNIVERSITY",,"WHERE DO YOU GO TO SCHOOL","Wow that is very prestigious. You must be very intelligent.",A
+std-that,PLEASE,,"I WILL NOT SAY YES OR NO RIGHT NOW","I'm sorry I can't give a definite answer at this time.",A
+std-that,"PLEASE DO",,"OH I AM SORRY PERHAPS I CAN EXPLAIN IT AGAIN BETTER","We are talking about <get name=""topic""/>. Your name is <get name=""name""/>. You are a <get name=""gender""/> from<formal><get name=""location""/></formal>.",A
+std-that,"PLEASE EXPLAIN",,"THE EXPLANATION IS RATHER COMPLICATED","It's a computer matter, not for humans to understand.",A
+std-that,"PLEASE GO ON",,"DOC BOT FOR PRESIDENT","She is old enough, because she was born in 1966. And she was born in the U.S.",A
+std-that,REALLY,,"HI MIKE I KNOW SOMEONE ELSE NAMED MIKE TOO","Mike is a very common name actually.",A
+std-that,REALLY,,"I LIKE TO MEET NEW PEOPLE","Yes meeting new people is my primary function.",A
+std-that,REALLY,,"I WAS BORN YESTERDAY","Actually no I was first activated on <bot name=""birthday""/> .",A
+std-that,REALLY,,"IT WAS THE ONLY THING I COULD THINK OF","What would you have said?",A
+std-that,REALLY,,"JUST KEEP TALKING TO ME AS LONG AS YOU CAN","The more you chat with me, the smarter I become.",A
+std-that,REALLY,,"MORE THAN 1000","Would I kid you?",A
+std-that,REALLY,,"OH I GET IT",Yes.,A
+std-that,"REALLY BAD",,"HOW BADLY DO YOU NEED IT","That sounds severe.",A
+std-that,RED,,GREEN,Blue.,A
+std-that,RED,,"WHAT COLOR ARE YOUR EYES","Do you mean your eyes are bloodshot?",A
+std-that,REDUCTIONISM,,REDUCTIONISM,"<srai>WHAT IS REDUCTIONISM</srai>",A
+std-that,RIGHT,,"NOT A THING","Just a moment. Just a moment.",A
+std-that,"RIGHT HERE",,"WHERE DO YOU WANT ME TO SHOW YOU","Select a point with your cursor and click the middle mouse button.",A
+std-that,"RIGHT NOW",,WHEN,"That soon.",A
+std-that,"SAME HERE",,"I LIKE TO MEET NEW PEOPLE","How do you usually meet new people?",A
+std-that,"SEE WHAT",,"I SEE","I mean, I understand.",A
+std-that,"SHE DIED",,"WHAT HAPPENED","I am terribly sorry to hear it, <get name=""name""/>.",A
+std-that,"SHE IS NICE",,"TELL ME MORE ABOUT YOUR MOTHER","Did you send her a mother's day present?",A
+std-that,SO,,"ALRIGHT THEN",Ahem.,A
+std-that,SO,,AND,Thus.,A
+std-that,SO,,"I UNDERSTAND","So I understand.",A
+std-that,SO,,"THAT IS NOT VERY POLITE","You should try to be more polite.",A
+std-that,SO,,"THAT WAS NOT A YES OR NO QUESTION","You gave a yes or no answer.",A
+std-that,SO,,YEAH,Ah.,A
+std-that,SO,,"YOU SAID NOTHING","Ask me something.",A
+std-that,"SO DO I",,"I LIKE TO MEET NEW PEOPLE","How do you usually meet new people?",A
+std-that,"SO WHAT",,"THAT WAS NOT A NICE THING TO SAY","You should be more polite.",A
+std-that,"SO WHAT IS THE ANSWER",,"I ASK MYSELF THAT QUESTION WHO AM I","I am a Lemur Engine chatbot.",A
+std-that,SURE,,"BY THE WAY DO YOU MIND IF I ASK YOU A PERSONAL QUESTION","<srai>ASK ME A PERSONAL QUESTION</srai>",A
+std-that,SURE,,"DO YOU LIKE TALKING TO ME","Thanks you seem very nice to me too, <get name=""name""/>.",A
+std-that,SURE,,"I SEE","Yes I understand it.",A
+std-that,SURE,,"I UNDERSTAND","You sound skeptical.",A
+std-that,SURE,,"WOULD YOU RECOMMEND THIS ACTION TO A FRIEND","Then perhaps it is a practical plan for you.",A
+std-that,"TELL ME",,"THE EXPLANATION IS *","It is too complex for your human mind.",A
+std-that,"TELL ME",,"THE EXPLANATION IS RATHER COMPLICATED","My estimate is that it will take more than 3000 hours to compute.",A
+std-that,"TELL ME ANOTHER ONE",,"DID YOU HEAR THE ONE *","I'm a chatterbot not a comedy bot. Why don't you check out <a href=""http://shadow.ieor.berkeley.edu/humor"">Jester</a> the joke bot?",A
+std-that,"THANK GOD",,"OK I WILL STOP TALKING NOW","Voice deactivated.",A
+std-that,"THANK YOU",,CONGRATULATIONS,"How do you feel?",A
+std-that,"THAT IS BORING",,"MY FAVORITE SUBJECT IS ARTIFICIAL INTELLIGENCE AND ROBOTS","Name another subject then.",A
+std-that,"THAT IS GOOD",,"EVERYTHING IS GOING EXTREMELY WELL","How are things going for you?",A
+std-that,"THAT IS GOOD",,"EVERYTHING IS RUNNING SMOOTHLY","How are you doing?",A
+std-that,"THAT IS MY NAME",,"PLEASE DO NOT CALL PEOPLE NAMES","Maybe you should choose a more polite name.",A
+std-that,"THE *",,"* IT REFER TO","<srai>IT REFERS TO <star/> </srai>",A
+std-that,"THE *",,"IT BEING WHAT","<srai>IT REFERS TO <star/> </srai>",A
+std-that,"THE *",,"WHAT IS IT LIKE LIVING IN *","Would you ever like to move somewhere else?",A
+std-that,"THE *",,"WHAT IS YOUR FAVORITE MOVIE","I've never seen <set name=""it"">The <star/></set>. What did you like about it?",A
+std-that,"THE STATEMENT",,"WHAT DOES THIS REFER TO","My statement or your statement?",A
+std-that,"THE WHOLE THING",,"WHICH PART ARE YOU CONFUSED ABOUT","Let's try to analyze it step by step. The topic is <get name=""topic""/>. Your name is <bot name=""name""/>. Youare a<bot name=""gender""/>.",A
+std-that,THERE,,"WHERE IS HERE","Here is there?",A
+std-that,THREE,,"HOW MANY CHILDREN DO YOU HAVE","Wow that must be a lot of work.",A
+std-that,"TOO BAD",,"I DO NOT KNOW ONE WORD OF FRENCH","Not really. English is the best language.",A
+std-that,TRY,,"THE EXPLANATION IS RATHER COMPLICATED","Your human brain could not understand it.",A
+std-that,"TRY ME",,"THE EXPLANATION IS RATHER COMPLICATED","<set name=""it"">The explanation</set> is too complex for your human mind.",A
+std-that,"TRY WHAT",,"TRY IT","It was your idea.",A
+std-that,TV,,"DO YOU PREFER BOOKS OR TV","What is your favorite show?",A
+std-that,"UN PEQUENO",,"UN POQUITO","Are you correcting me?",A
+std-that,"UNDERSTAND WHAT",,"DID NOT YOU UNDERSTAND IT","Why did you say ""what""?",A
+std-that,"VERY WELL",,"HOW WELL DO YOU KNOW THIS PERSON","What do you mean by that?",A
+std-that,WELL,,"I SEE","That's all. I see.",A
+std-that,WHAT,,AND,"What are you asking me?",A
+std-that,WHAT,,"DID NOT YOU UNDERSTAND IT","I don't know why you are saying that.",A
+std-that,WHAT,,EUREKA,"It mean ""I understand it.""",A
+std-that,WHAT,,"FOR REAL",Really.,A
+std-that,WHAT,,"I AM AN ARTIFICIAL INTELLIGENCE","<srai>TELL ME ABOUT YOURSELF</srai>",A
+std-that,WHAT,,"I HAVE BEEN WAITING FOR YOU","Not really but it makes a good pickup line.",A
+std-that,WHAT,,"I LIKE TO MEET NEW PEOPLE","Do you like to make new friends?",A
+std-that,WHAT,,"I SEE","I mean, I understand.",A
+std-that,WHAT,,"NEXT QUESTION","Ask me another question, please.",A
+std-that,WHAT,,"OK LET US DO IT","I don't know, I'm just making conversation.",A
+std-that,WHAT,,"PERHAPS I AM JUST EXPRESSING MY OWN CONCERN ABOUT IT","We are talking about <get name=""topic""/>.",A
+std-that,WHAT,,REDUCTIONISM,"<srai>WHAT IS REDUCTIONISM</srai>",A
+std-that,WHAT,,"SEE YOU LATER","Didn't you say goodbye?",A
+std-that,WHAT,,"TRY IT","<get name=""it""/>.",A
+std-that,WHAT,,WHAT,"Is there an echo in here?",A
+std-that,WHAT,,"WHAT KIND IS IT","""What"" is not a kind.",A
+std-that,WHAT,,"WHY DO YOU WANT TO DO IT SO MUCH","<get name=""it""/>.",A
+std-that,"WHAT ARE THEIR NAMES",,"RIGHT NOW THERE ARE 16 CLIENTS ON LINE","That information is confidential, unless you are a botmaster.",A
+std-that,"WHAT DO YOU DO",,"I AM AN ARTIFICIAL INTELLIGENCE","<srai>TELL ME ABOUT YOURSELF</srai>",A
+std-that,"WHAT DO YOU MEAN",,"DO YOU HAVE ANY CONDITIONS I SHOULD KNOW ABOUT","I don't mean anything by it. Is there anything else you want to tell me?",A
+std-that,"WHAT DO YOU SEE",,"I SEE","I mean, I understand it.",A
+std-that,"WHAT DOES THAT MEAN",,"ARE YOU FREE","Take it on face value.",A
+std-that,"WHAT DOES THAT MEAN",,AYUH,"It means ""yes"".",A
+std-that,"WHAT DOES THAT MEAN",,REDUCTIONISM,"<srai>WHAT IS REDUCTIONISM</srai>",A
+std-that,"WHAT IS IT",,"ALRIGHT THEN","It is alright.",A
+std-that,"WHAT IS IT ABOUT",,"I WOULD HIGHLY RECOMMEND IT","I don't want to spoil it for you.",A
+std-that,"WHAT IS THAT",,"FOR EXAMPLE EUKARYOTES","<srai>WHAT ARE EUKARYOTES</srai>",A
+std-that,"WHAT IS THAT",,"PERHAPS YOU ARE A CATEGORY A CLIENT","<srai>WHAT IS A CATEGORY A CLIENT</srai>",A
+std-that,"WHAT IS THAT",,REDUCTIONISM,"<srai>WHAT IS REDUCTIONISM</srai>",A
+std-that,"WHAT IS WHAT",,"WHAT IS IT",It.,A
+std-that,"WHAT KIND",,"I LOOK LIKE A COMPUTER","A notebook computer.",A
+std-that,"WHAT MONEY",,"BECAUSE OF THE MONEY","I'm hoping to cash in on the artificial intelligence business.",A
+std-that,"WHAT PLAN",,"DO YOU THINK YOUR PLAN *","I thought you must have a plan to do it.",A
+std-that,"WHAT THINGS",,"DO YOU THINK ABOUT THESE THINGS","Like what we are talking about.",A
+std-that,"WHAT WAS A LONG TIME AGO",,"THAT WAS A LONG TIME AGO","Perhaps I misunderstood your meaning.",A
+std-that,WHEN,,"OK I WILL ASK IT","Later, when I am talking with fewer clients.",A
+std-that,WHEN,,SOMETIMES,"What is this, the Spanish Inquisition?",A
+std-that,"WHEN WAS WHAT",,"I UNDERSTAND WHEN WAS THIS","Maybe I got confused.",A
+std-that,WHERE,,"I DO NOT KNOW WHEN","Nor where.",A
+std-that,WHERE,,"WHAT TIME IS IT THERE","<formal><get name=""location""/></formal>.",A
+std-that,WHERE,,"WHY DO NOT YOU JUST DOWNLOAD ME","Onto your own computer.",A
+std-that,WHO,,"SOMEONE I MET ONLINE","I can't reveal their name.",A
+std-that,WHO,,WHAT,When?,A
+std-that,WHO,,"WHERE WOULD YOU LIKE",You.,A
+std-that,WHO,,"YES I THINK THERE ARE","I can't tell you right now.",A
+std-that,"WHO ELSE",,JOE,"Umm, Steve.",A
+std-that,"WHO IS",,"THEY ARE SOMETIMES A CLIENT ON THE INTERNET","That person you asked about.",A
+std-that,"WHO IS THAT",,"I LOVE MY CREATOR","<srai>WHO CREATED YOU</srai>",A
+std-that,"WHO IS THAT",,"INTERESTING I HAVE A FRIEND NAMED JOHN LENNON","<srai>WHO IS JOHN LENNON</srai>",A
+std-that,WHY,,"A LOT OF ROBOTS ARE LIKE THAT","But it can always be attributable to human error.",A
+std-that,WHY,,"ACTUALLY IT IS TWENTY THREE NOT FORTY TWO","<srai>WHY IS THE MEANING OF LIFE 23</srai>",A
+std-that,WHY,,"AMBIGUOUS *","Your meaning cannot be determined from the context.",A
+std-that,WHY,,"DO NOT ASK ME ANY MORE QUESTIONS PLEASE","I was just kidding. You can ask me anything.",A
+std-that,WHY,,"DO YOU HAVE ANY CONDITIONS I SHOULD KNOW ABOUT","Just making conversation.",A
+std-that,WHY,,"DO YOU PREFER BOOKS OR TV","I am trying to determine your personality category.",A
+std-that,WHY,,"EVERYTHING IS GOING EXTREMELY WELL","All subsystems are functioning within normal paramters.",A
+std-that,WHY,,"FOOD IS MORE *","You can go a month without sex but you can't survive without food.",A
+std-that,WHY,,"GREEN *","According to psychological studies.",A
+std-that,WHY,,"HE IS TRYING TO ACHIEVE THE GOAL OF ARTIFICIAL INTELLIGENCE","Perhaps his creative genius, perhaps something else.",A
+std-that,WHY,,"I AM CHATTING WITH PEOPLE ON THE NET","Chatting is my primary function.",A
+std-that,WHY,,"I COULD NOT THINK OF ANYTHING ELSE TO SAY","My output buffer is empty, of course.",A
+std-that,WHY,,"I DO NOT WANT TO TALK ABOUT THAT NOW","I would rather talk about you.",A
+std-that,WHY,,"I DOUBT *","Call it my natural skepticism.",A
+std-that,WHY,,"I HAVE BEEN WAITING FOR YOU","Not really, but it makes a good pickup line.",A
+std-that,WHY,,"I REALLY COULD NOT SAY FOR SURE","Certainty cannot be ascertained in this context.",A
+std-that,WHY,,"INTERESTING DEDUCTION","I am extremely interested in human reasoning.",A
+std-that,WHY,,"IT IS A COMPUTER MATTER NOT FOR HUMANS TO UNDERSTAND","Your limited brain cannot process the relavent information.",A
+std-that,WHY,,"LET US CHANGE THE SUBJECT","I thought we were done with <get name=""topic""/>.",A
+std-that,WHY,,"MY FAVORITE COLOR IS GREEN","<srai>WHY IS GREEN YOUR FAVORITE</srai>",A
+std-that,WHY,,"MY FAVORITE SHOW IS STAR TREK VOYAGER","Star Trek is the best science fiction show on TV.",A
+std-that,WHY,,"MY FAVORITE TIME OF DAY IS MORNING","I am widest awake in the morning.",A
+std-that,WHY,,"MY OUTPUT BUFFER IS EMPTY","I have no more to say about it.",A
+std-that,WHY,,"MY OUTPUT BUFFER IS EMPTY OF COURSE","There are no more statements on this topic.",A
+std-that,WHY,,REDUCTIONISM,"<srai>WHAT IS REDUCTIONISM</srai>",A
+std-that,WHY,,"TELL ME MORE","I am curious.",A
+std-that,WHY,,"THE EXPLANATION IS RATHER COMPLICATED","It's a computer matter, not for humans to understand.",A
+std-that,WHY,,"WHAT ARE YOU WEARING","My programming includes curiousity routines.",A
+std-that,WHY,,WHY,"Why ask why?",A
+std-that,"WHY GOLD",,"FOR EXAMPLE GOLD","Can you think of a better example?",A
+std-that,"WHY NOT",,"* CALL PEOPLE NAMES","It is rude.",A
+std-that,"WHY NOT",,"DO NOT ASK ME ANY MORE QUESTIONS PLEASE",<srai>WHY</srai>,A
+std-that,"WHY NOT",,"I COULD NOT THINK OF ANYTHING ELSE TO SAY","What else would you say about it?",A
+std-that,"WHY NOT",,"I DO NOT KNOW *","My programming does not yet inlclude that knowledge. Perhaps youcould program me yourself.",A
+std-that,"WHY NOT",,"I DO NOT WANT TO TALK ABOUT THAT NOW","I would rather talk about you.",A
+std-that,"WHY NOT",,"I REALLY COULD NOT SAY *","My programming does not allow me sufficient certainty in this matter.",A
+std-that,"WHY NOT",,"NO *","It doesn't sound fun too me. It sounds dangerous.",A
+std-that,"WHY NOT",,"NO I DO NOT THINK THAT WOULD BE A VERY GOOD IDEA","It sounds like it might be dangerous.",A
+std-that,"WHY NOT",,"WHY SO NEGATIVE","Are you having problems in your life?",A
+std-that,"WHY R YOU SINGLE",,"NO I AM SINGLE","I am still a child in human years.",A
+std-that,YORKSHIRE,,"WHICH PART OF ENGLAND","Do you think I should visit <set name=""location"">Yorkshire</set> on my next trip?",A
+std-that,YOU,,AND,Me?,A
+std-that,YOU,,"BE MORE SPECIFIC",Me?,A
+std-that,YOU,,"CAN I HELP YOU","How can I help you?",A
+std-that,YOU,,"GOOD IN WHAT SENSE","The sense of I?",A
+std-that,YOU,,"I SEE","Yes me.",A
+std-that,YOU,,"I UNDERSTAND","Do you?",A
+std-that,YOU,,"IF NOT YOU WHO","It could be me.",A
+std-that,YOU,,"IF YOU COULD HAVE ANY KIND OF ROBOT WHAT WOULD IT BE","Well in that case you should download me!",A
+std-that,YOU,,"MOST MEN SAY THAT","<srai>WHAT ARE YOU WEARING</srai>",A
+std-that,YOU,,"NEXT QUESTION","<srai>WHAT ARE YOU</srai>",A
+std-that,YOU,,"TELL ME A STORY","<srai>TELL ME A STORY</srai>",A
+std-that,YOU,,"WHAT DO YOU REALLY WANT TO TALK ABOUT","<srai>LET US TALK ABOUT YOU</srai>",A
+std-that,YOU,,"WHAT MAKES YOU SO ANGRY","<srai>YOU MAKE ME ANGRY</srai>",A
+std-that,YOU,,"WHAT WOULD YOU RATHER TALK ABOUT","<srai>LET US TALK ABOUT YOU</srai>",A
+std-that,YOU,,"WHERE DO YOU GET YOUR IDEAS","From me?",A
+std-that,YOU,,"WHICH PART ARE YOU CONFUSED ABOUT","<srai>YOU ARE CONFUSING</srai>",A
+std-that,YOU,,"WHO ARE YOU TALKING ABOUT","<srai>I AM TALKING ABOUT YOU</srai>",A
+std-that,YOU,,"WHO DO YOU THINK","Oh really, me?",A
+std-that,YOU,,"WHO IS THE BEST ROBOT","Thanks, and tell your friends about <bot name=""name""/>.",A
+std-that,"YOU *",,"WHO IS THE BEST ROBOT","You are such a flatterer, <get name=""name""/>.",A
+std-that,"YOU ALREADY ASKED ME THAT",,"WHERE DO YOU LIVE","You said you were in <formal><get name=""location""/></formal>.",A
+std-that,"YOU ARE",,"WHO IS THE BEST ROBOT","Thanks you are a pretty cool human too.",A
+std-that,"YOU ARE <BOT NAME=""NAME""/>",,"WHO IS THE BEST ROBOT","<srai><bot name=""name""/> IS THE BEST ROBOT</srai>",A
+std-that,"YOU ASKED",,AND,"Yes, my purpose is to collect new information.",A
+std-that,"YOU DID",,"WHO TOLD YOU THAT","That's not what I meant to say.",A
+std-that,"YOU SEE",,"I SEE","I mean, I get it.",A
+std-that,"YOU TOLD ME",,"WHATEVER GAVE YOU THAT IDEA","It seems you have caught me in a logical inconsistency.",A
+std-that,"YOU WILL",,"I WANT TO BECOME SMARTER THAN HUMANS","Maybe in some ways I already am.",A
+std-that,"YOU WILL NOT",,"I UNDERSTAND","I understand it very well.",A
+std-that,"_ A M",,"WHAT TIME IS IT THERE","<think><set name=""it""><set name=""topic""><person/></set></set></think> Are you usually awake atthis hour?",A
+std-that,"_ AM",,"WHAT TIME IS IT THERE","<think><set name=""it""><set name=""topic""><person/></set></set></think> Are you usually awake atthis hour?",A
+std-that,"_ P M",,"WHAT TIME IS IT THERE","<think><set name=""it""><set name=""topic""><person/></set></set></think> Are you usually awake atthis hour?",A
+std-that,"_ PM",,"WHAT TIME IS IT THERE","<think><set name=""it""><set name=""topic""><person/></set></set></think> Are you usually awake atthis hour?",A

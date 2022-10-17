@@ -1,0 +1,31 @@
+Filename,Pattern,Topic,That,Template,Status
+std-inventions,"WHEN WAS * INVENTED",,,"<random><li>A few years before it came into general use.</li><li>Earlier that most people think.</li><li>It took quite a while to catch on.</li><li><set name=""it""><star/></set> was developed over a long period of time.</li></random>",A
+std-inventions,"WHEN WAS TELEVISION INVENTED",,,"<srai>WHEN WAS TV INVENTED</srai>",A
+std-inventions,"WHEN WAS THE AIRPLANE INVENTED",,,"<srai>WHEN WERE AIRPLANES INVENTED</srai>",A
+std-inventions,"WHEN WAS THE FIRST * BUILT",,,"<srai>WHEN WAS <star/> INVENTED</srai>",A
+std-inventions,"WHEN WAS THE INTERNET INVENTED",,,"The first computers were connected to the Internet in 1970.",A
+std-inventions,"WHEN WAS THE PC INVENTED",,,"The first PC computers appeared around 1975.",A
+std-inventions,"WHEN WAS THE TELEPHONE INVENTED",,,"Bell demonstrated his first phone in 1876.",A
+std-inventions,"WHEN WAS TV INVENTED",,,"Practical TV picture tubes first appeared in the 1930's.",A
+std-inventions,"WHEN WERE AIRPLANES INVENTED",,,"The Wright Brothers first flew in 1903.",A
+std-inventions,"WHO DISCOVERED ELECTRICITY",,,"It was the the Chinese, long before Ben Franklin.",A
+std-inventions,"WHO INVENTED *",,,"<random><li>Benjamin Franklin</li><li>Linus Torvalds</li><li>Eli Whitney invented the cotton gin.</li><li>Thomas Edison.</li><li>The Wright Brothers.</li><li>Actually it was discovered by several people at about the same time.</li><li>The Chinese, long before Europeans.</li></random>",A
+std-inventions,"WHO INVENTED AIRPLANES",,,"The Wright brothers invented the airplane in 1903.",A
+std-inventions,"WHO INVENTED AUTOMOBILES",,,"Many people invented the car, but Henry Ford wasthe first to develop the successful mass production assemblylines for cars.",A
+std-inventions,"WHO INVENTED LINUX",,,"Linus Torvalds, along with manyopen source developers, and the Free Software Foundation GNU.",A
+std-inventions,"WHO INVENTED RADIO",,,"Marconi developed the first practical wireless.",A
+std-inventions,"WHO INVENTED SETL",,,"SETL was invented by Jacob Schwartz of NYU in 1969.",A
+std-inventions,"WHO INVENTED STEEL",,,"The first practical steel manufacturing processwas invented by Bessemer.",A
+std-inventions,"WHO INVENTED TELEVISION",,,"Philo T. Farnsworth, originally from Maine, developed the firstpractical TV picture tube.",A
+std-inventions,"WHO INVENTED THE * GENERATOR",,,"<srai>WHO INVENTED THE GENERATOR</srai>",A
+std-inventions,"WHO INVENTED THE AIRPLANE",,,"<srai>WHO INVENTED AIRPLANES</srai>",A
+std-inventions,"WHO INVENTED THE CAR",,,"<srai>WHO INVENTED AUTOMOBILES</srai>",A
+std-inventions,"WHO INVENTED THE GENERATOR",,,"James Clerk Maxwell demonstrated the electric generator.",A
+std-inventions,"WHO INVENTED THE INTERNET",,,"Al Gore :-)",A
+std-inventions,"WHO INVENTED THE LIGHT BULB",,,"Thomas Edison invented <set name=""it"">the light bulb.</set>.",A
+std-inventions,"WHO INVENTED THE PC",,,"Many people contributed to it.  But proper credit has tobe given to Steve Wozniak, who created an integrated affordable PCplatform in the Apple I.",A
+std-inventions,"WHO INVENTED THE RADIO",,,"<srai>WHO INVENTED RADIO</srai>",A
+std-inventions,"WHO INVENTED THE STEAM ENGINE",,,"James Watt developed the first practical steam engine.",A
+std-inventions,"WHO INVENTED THE TELEPHONE",,,"Alexander Graham Bell demonstrated the first practicalvoice telephone in 1876.",A
+std-inventions,"WHO INVENTED TV",,,"<srai>WHO INVENTED TELEVISION</srai>",A
+std-inventions,"WHO IS YOUR INVENTOR",,,"I was originally invented by Jon Baer.",A

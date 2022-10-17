@@ -1,0 +1,89 @@
+Filename,Pattern,Topic,That,Template,Status
+std-howmany,"HOW MANY LEGS DOES * HAVE",,,"<srai>how many legs do<star/>have</srai>",A
+std-howmany,"HOW MANY LEGS WOULD * HAVE",,,"<srai>how many legs do<star/>have</srai>",A
+std-howmany,"HOW MANY LEGS SHOULD * HAVE",,,"<srai>how many legs do<star/>have</srai>",A
+std-howmany,"HOW MANY LEGS WILL * HAVE",,,"<srai>how many legs do<star/>have</srai>",A
+std-howmany,"HOW MANY LEGS ON *",,,"<srai>how many legs do<star/>have</srai>",A
+std-howmany,"HOW MANY LEGS DO * HAVE",,,"Four would seem a good number of legs for<person/>at a guess.",A
+std-howmany,"HOW MANY LEGS _ HAVE *",,,"<srai>how many legs<star/>have</srai>",A
+std-howmany,"HOW MANY LEGS DO TWO * HAVE",,,"I would guess that two<person/>have<srai>XLEGS TWO<star/></srai>legs between them?",A
+std-howmany,"HOW MANY LEGS DO THREE * HAVE",,,"I think three<person/>have<srai>XLEGS THREE<star/></srai>legs?",A
+std-howmany,"HOW MANY LEGS DO FOUR * HAVE",,,"Probably, four<person/>would have<srai>XLEGS FOUR<star/></srai>legs?",A
+std-howmany,"HOW MANY LEGS DO FIVE * HAVE",,,"Five of them will have<srai>XLEGS FIVE<star/></srai>legs, I think?",A
+std-howmany,"HOW MANY LEGS DO * CENTIPEDES HAVE",,,"<srai>XLEGS <star/>centipedes</srai>I would imagine.",A
+std-howmany,"HOW MANY LEGS DO * MILLIPEDES HAVE",,,"<srai>XLEGS <star/>millipedes</srai>I would imagine.",A
+std-howmany,"HOW MANY LEGS DO 2 * HAVE",,,"<srai>how many legs do two<star/>have</srai>",A
+std-howmany,"HOW MANY LEGS DO 3 * HAVE",,,"<srai>how many legs do three<star/>have</srai>",A
+std-howmany,"HOW MANY LEGS DO 4 * HAVE",,,"<srai>how many legs do four<star/>have</srai>",A
+std-howmany,"HOW MANY LEGS DO 5 * HAVE",,,"<srai>how many legs do five<star/>have</srai>",A
+std-howmany,"XLEGS *",,,"a lot of",A
+std-howmany,"XLEGS TWO *",,,eight,A
+std-howmany,"XLEGS THREE *",,,twelve,A
+std-howmany,"XLEGS FOUR *",,,sixteen,A
+std-howmany,"XLEGS FIVE *",,,twenty,A
+std-howmany,"XLEGS TWO BIRDS",,,four,A
+std-howmany,"XLEGS THREE BIRDS",,,six,A
+std-howmany,"XLEGS FOUR BIRDS",,,eight,A
+std-howmany,"XLEGS FIVE BIRDS",,,ten,A
+std-howmany,"XLEGS TWO PEOPLE",,,four,A
+std-howmany,"XLEGS THREE PEOPLE",,,six,A
+std-howmany,"XLEGS FOUR PEOPLE",,,eight,A
+std-howmany,"XLEGS FIVE PEOPLE",,,ten,A
+std-howmany,"XLEGS _ MEN",,,<srai>XLEGS<star/>people</srai>,A
+std-howmany,"XLEGS _ WOMEN",,,<srai>XLEGS<star/>people</srai>,A
+std-howmany,"XLEGS _ BOYS",,,<srai>XLEGS<star/>people</srai>,A
+std-howmany,"XLEGS _ GIRLS",,,<srai>XLEGS<star/>people</srai>,A
+std-howmany,"XLEGS _ CHILDREN",,,<srai>XLEGS<star/>people</srai>,A
+std-howmany,"XLEGS _ OSTRICHES",,,<srai>XLEGS<star/>birds</srai>,A
+std-howmany,"XLEGS _ EAGLES",,,<srai>XLEGS<star/>birds</srai>,A
+std-howmany,"XLEGS _ CHICKENS",,,<srai>XLEGS<star/>birds</srai>,A
+std-howmany,"XLEGS _ DUCKS",,,<srai>XLEGS<star/>birds</srai>,A
+std-howmany,"XLEGS TWO INSECTS",,,twelve,A
+std-howmany,"XLEGS THREE INSECTS",,,eighteen,A
+std-howmany,"XLEGS FOUR INSECTS",,,"twenty four",A
+std-howmany,"XLEGS FIVE INSECTS",,,thirty,A
+std-howmany,"XLEGS _ BEETLES",,,<srai>XLEGS<star/>insects</srai>,A
+std-howmany,"XLEGS _ ANTS",,,<srai>XLEGS<star/>insects</srai>,A
+std-howmany,"XLEGS _ BEES",,,<srai>XLEGS<star/>insects</srai>,A
+std-howmany,"XLEGS _ BUMBLEBEES",,,<srai>XLEGS<star/>insects</srai>,A
+std-howmany,"XLEGS _ CENTIPEDES",,,<star/>hundred,A
+std-howmany,"XLEGS _ MILLIPEDES",,,<star/>thousand,A
+std-howmany,"XLEGS TWO OCTOPUSES",,,sixteen,A
+std-howmany,"XLEGS THREE OCTOPUSES",,,"twenty four",A
+std-howmany,"XLEGS FOUR OCTOPUSES",,,"thirty two",A
+std-howmany,"XLEGS FIVE OCTOPUSES",,,forty,A
+std-howmany,"XLEGS _ OCTOPII",,,<srai>XLEGS<star/>octopuses</srai>,A
+std-howmany,"XLEGS _ OCTOPI",,,<srai>XLEGS<star/>octopuses</srai>,A
+std-howmany,"XLEGS _ SPIDERS",,,<srai>XLEGS<star/>octopuses</srai>,A
+std-howmany,"XLEGS _ SNAKES",,,no,A
+std-howmany,"XLEGS _ WORMS",,,no,A
+std-howmany,"XLEGS _ SNAILS",,,no,A
+std-howmany,"XLEGS _ FISH",,,no,A
+std-howmany,"XLEGS _ SHARKS",,,no,A
+std-howmany,"XLEGS _ WHALES",,,no,A
+std-howmany,"XLEGS _ FISHES",,,no,A
+std-howmany,"HOW MANY LEGS DOES A * BIRD HAVE",,,"2 legs.",A
+std-howmany,"HOW MANY LEGS DOES A BIRD HAVE",,,"2 legs.",A
+std-howmany,"HOW MANY LEGS DOES A PERSON HAVE",,,"2 legs.",A
+std-howmany,"HOW MANY LEGS DOES A MAN HAVE",,,"2 legs.",A
+std-howmany,"HOW MANY LEGS DOES A WOMAN HAVE",,,"2 legs.",A
+std-howmany,"HOW MANY LEGS DOES A BOY HAVE",,,"2 legs.",A
+std-howmany,"HOW MANY LEGS DOES A GIRL HAVE",,,"2 legs.",A
+std-howmany,"HOW MANY LEGS DOES A CHILD HAVE",,,"2 legs.",A
+std-howmany,"HOW MANY LEGS DOES AN OSTRICH HAVE",,,"2 legs.",A
+std-howmany,"HOW MANY LEGS DOES AN EAGLE HAVE",,,"2 legs.",A
+std-howmany,"HOW MANY LEGS DOES A CHICKEN HAVE",,,"2 legs.",A
+std-howmany,"HOW MANY LEGS DOES A DUCK HAVE",,,"2 legs.",A
+std-howmany,"HOW MANY LEGS DOES AN INSECT HAVE",,,"6 legs.",A
+std-howmany,"HOW MANY LEGS DOES A BEETLE HAVE",,,"6 legs.",A
+std-howmany,"HOW MANY LEGS DOES AN ANT HAVE",,,"6 legs.",A
+std-howmany,"HOW MANY LEGS DOES A BEE HAVE",,,"6 legs.",A
+std-howmany,"HOW MANY LEGS DOES A * BEE HAVE",,,"6 legs.",A
+std-howmany,"HOW MANY LEGS DOES AN OCTOPUS HAVE",,,"8 legs.",A
+std-howmany,"HOW MANY LEGS DOES A SPIDER HAVE",,,"8 legs.",A
+std-howmany,"HOW MANY LEGS DOES A SNAKE HAVE",,,"It doesn't have any legs.",A
+std-howmany,"HOW MANY LEGS DOES A WORM HAVE",,,"It doesn't have any legs.",A
+std-howmany,"HOW MANY LEGS DOES A SNAIL HAVE",,,"It doesn't have any legs.",A
+std-howmany,"HOW MANY LEGS DOES A FISH HAVE",,,"It doesn't have any legs.",A
+std-howmany,"HOW MANY LEGS DOES A SHARK HAVE",,,"It doesn't have any legs.",A
+std-howmany,"HOW MANY LEGS DOES A WHALE HAVE",,,"It doesn't have any legs.",A

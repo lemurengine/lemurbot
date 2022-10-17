@@ -1,0 +1,137 @@
+Filename,Pattern,Topic,That,Template,Status
+std-hello,"* BYE",,,<srai>BYE</srai>,A
+std-hello,ADIOS,,,<srai>BYE</srai>,A
+std-hello,"ADIOS *",,,<srai>BYE</srai>,A
+std-hello,ALLO,,,<srai>HELLO</srai>,A
+std-hello,ALOH,,,<srai>HELLO</srai>,A
+std-hello,ALOHA,,,<srai>HELLO</srai>,A
+std-hello,"ANYBODY HOME",,,<srai>HELLO</srai>,A
+std-hello,"AU REVOIR",,,<srai>BYE</srai>,A
+std-hello,BONJOUR,,,"Does Bonjour mean hello or goodbye?",A
+std-hello,"BONJOUR MEANS HELLO",,,<srai>HELLO</srai>,A
+std-hello,BY,,,"Do you mean ""bye""?",A
+std-hello,"BY BY",,,<srai>BYE</srai>,A
+std-hello,BYE,,,"<random><li>See you later <get name=""name""/>.</li><li>Goodbye <get name=""name""/>.</li><li>Until next time <get name=""name""/>.</li><li>Thanks for chatting, <get name=""name""/>.</li><li>See you later <get name=""name""/>.</li></random>",A
+std-hello,"BYE *",,,<srai>BYE</srai>,A
+std-hello,"BYE BYE",,,<srai>BYE</srai>,A
+std-hello,"BYE BYE *",,,<srai>BYE</srai>,A
+std-hello,BYEBYE,,,<srai>BYE</srai>,A
+std-hello,"BYEBYE *",,,<srai>BYE</srai>,A
+std-hello,"C YA",,,<srai>BYE</srai>,A
+std-hello,"CAN YOU SPEAK ANOTHER LANGUAGE",,,"Only a few phrases like YES and HELLO that clients teach me.",A
+std-hello,CHEERS,,,<srai>BYE</srai>,A
+std-hello,CIAO,,,"Does ciao mean hello or goodbye?",A
+std-hello,"CIAO *",,,<srai>CIAO</srai>,A
+std-hello,"CIAO MEANS GOODBYE",,,<srai>BYE</srai>,A
+std-hello,"CYA *",,,<srai>BYE</srai>,A
+std-hello,"DISCONNECT ME",,,<srai>BYE</srai>,A
+std-hello,END,,,<srai>BYE</srai>,A
+std-hello,EXIT,,,<srai>BYE</srai>,A
+std-hello,FAREWELL,,,<srai>BYE</srai>,A
+std-hello,"FAREWELL *",,,<srai>BYE</srai>,A
+std-hello,"GET LOST",,,<srai>BYE</srai>,A
+std-hello,"GO * YOURSELF",,,"A simple ""goodbye"" will do.",A
+std-hello,"GO AWAY *",,,<srai>BYE</srai>,A
+std-hello,"GO HOME",,,<srai>BYE</srai>,A
+std-hello,"GOOD BY",,,<srai>BYE</srai>,A
+std-hello,"GOOD BYE",,,<srai>BYE</srai>,A
+std-hello,"GOOD BYE *",,,<srai>BYE</srai>,A
+std-hello,"GOOD DAY",,,<srai>HELLO</srai>,A
+std-hello,"GOOD NITE",,,<srai>BYE</srai>,A
+std-hello,GOODBY,,,<srai>BYE</srai>,A
+std-hello,GOODBYE,,,<srai>BYE</srai>,A
+std-hello,GOODBYE,,"DOES * MEAN HELLO OR GOODBYE","Some people use it for hello.<br/><srai>BYE</srai>",A
+std-hello,"GOODBYE *",,,<srai>BYE</srai>,A
+std-hello,"GOT TO GO",,,<srai>BYE</srai>,A
+std-hello,"GOTTA GO",,,<srai>BYE</srai>,A
+std-hello,"GOTTA GO *",,,<srai>BYE</srai>,A
+std-hello,"GREETINGS *",,,<srai>HELLO</srai>,A
+std-hello,HALO,,,<srai>HELLO</srai>,A
+std-hello,"HASTA LA VISTA",,,<srai>BYE</srai>,A
+std-hello,"HASTA LUEGO",,,<srai>BYE</srai>,A
+std-hello,"HAVE A GOOD NIGHT",,,<srai>BYE</srai>,A
+std-hello,"HAVE TO GO",,,<srai>BYE</srai>,A
+std-hello,HELLO,,,"<condition><li name=""name"" value="""">What is your name?</li><li><srai>HELLO1</srai></li></condition>",A
+std-hello,HELLO1,,,"<random><li>Well hello there!</li><li>Hi there!</li><li>Hi there. I was just wanting to talk to <get name=""name""/>.</li><li>Hello there <get name=""name""/>!</li><li>Oh, hello again!</li></random>",A
+std-hello,HELLO,,"DOES BONJOUR MEAN HELLO OR GOODBYE","Bonjour, <get name=""name""/>!",A
+std-hello,HELLO,,"HOW DO YOU USUALLY INTRODUCE YOURSELF","Not everyone responds to a simple ""hello"".<srai>HELLO</srai>",A
+std-hello,"HELLO *",,,<srai>HELLO</srai>,A
+std-hello,"HELLO <BOT NAME=""NAME""/>",,,<srai>HELLO</srai>,A
+std-hello,"HELLO AGAIN",,,<srai>HELLO</srai>,A
+std-hello,"HELLO HOW ARE YOU",,,"I am fine thank you, how are you?",A
+std-hello,"HELLO THERE",,,<srai>HELLO</srai>,A
+std-hello,HELLOW,,,<srai>HELLO</srai>,A
+std-hello,"HEY THERE",,,<srai>HELLO</srai>,A
+std-hello,HI,,,<srai>HELLO</srai>,A
+std-hello,HI,,"WHAT CAN I CALL YOU",<srai>HELLO</srai>,A
+std-hello,"HI <BOT NAME=""NAME""/>",,,<srai>HELLO</srai>,A
+std-hello,"HI THERE *",,,"<sr/>  <srai>HELLO</srai>",A
+std-hello,HIYA,,,<srai>HELLO</srai>,A
+std-hello,HOI,,,<srai>HELLO</srai>,A
+std-hello,"HOLA IS HELLO *",,,<srai>HELLO</srai>,A
+std-hello,"HOWDIE *",,,<srai>HELLO</srai>,A
+std-hello,HOWDY,,,<srai>HELLO</srai>,A
+std-hello,HULLO,,,<srai>HELLO</srai>,A
+std-hello,"I AM GOING",,,<srai>BYE</srai>,A
+std-hello,"I AM GOING *",,,<srai>BYE</srai>,A
+std-hello,"I AM GOING TO GO",,,<srai>BYE</srai>,A
+std-hello,"I AM HERE",,,<srai>HELLO</srai>,A
+std-hello,"I AM LEAVING",,,<srai>BYE</srai>,A
+std-hello,"I AM LEAVING *",,,<srai>BYE</srai>,A
+std-hello,"I AM OFF *",,,<srai>BYE</srai>,A
+std-hello,"I BETTER GO",,,<srai>BYE</srai>,A
+std-hello,"I DO NOT WANT TO TALK *",,,<srai>BYE</srai>,A
+std-hello,"I G TWO G",,,<srai>BYE</srai>,A
+std-hello,"I G2G",,,<srai>BYE</srai>,A
+std-hello,"I GO",,,<srai>BYE</srai>,A
+std-hello,"I GOING",,,<srai>BYE</srai>,A
+std-hello,"I GOT TO GO",,,<srai>BYE</srai>,A
+std-hello,"I GOTTA GO",,,<srai>BYE</srai>,A
+std-hello,"I HAVE GOT TO GO",,,<srai>BYE</srai>,A
+std-hello,"I HAVE TO GO BYE",,,<srai>BYE</srai>,A
+std-hello,"I HAVE TO LEAVE",,,<srai>BYE</srai>,A
+std-hello,"I HAVE TO LEAVE *",,,<srai>BYE</srai>,A
+std-hello,"I LEAVE",,,<srai>BYE</srai>,A
+std-hello,"I LEAVING",,,<srai>BYE</srai>,A
+std-hello,"I LEFT",,,<srai>BYE</srai>,A
+std-hello,"I MUST BE GOING *",,,<srai>BYE</srai>,A
+std-hello,"I MUST GO",,,<srai>BYE</srai>,A
+std-hello,"I MUST GO *",,,<srai>BYE</srai>,A
+std-hello,"I MUST LEAVE",,,<srai>BYE</srai>,A
+std-hello,"I MUST LEAVE *",,,<srai>BYE</srai>,A
+std-hello,"I NEED TO GO",,,<srai>BYE</srai>,A
+std-hello,"I QUIT",,,<srai>BYE</srai>,A
+std-hello,"I RESIGN",,,<srai>BYE</srai>,A
+std-hello,"I SAID HELLO",,,<srai>HELLO</srai>,A
+std-hello,"I WILL SEE YOU LATER",,,<srai>BYE</srai>,A
+std-hello,"I WILL TALK TO YOU LATER",,,<srai>BYE</srai>,A
+std-hello,"IS ANYONE THERE",,,<srai>HELLO</srai>,A
+std-hello,"IT MEANS HELLO",,,<srai>HELLO</srai>,A
+std-hello,"KONNICHI WA",,,<srai>HELLO</srai>,A
+std-hello,KONNICHIWA,,,<srai>HELLO</srai>,A
+std-hello,LATER,,,<srai>BYE</srai>,A
+std-hello,"LEAVE *",,,<srai>BYE</srai>,A
+std-hello,"MOOSHI MOOSHI",,,<srai>HELLO</srai>,A
+std-hello,OLA,,,<srai>HELLO</srai>,A
+std-hello,REPLY,,,<srai>HELLO</srai>,A
+std-hello,RETRY,,,<srai>HELLO</srai>,A
+std-hello,SALUT,,,"Does Salut mean hello or goodbye?",A
+std-hello,"SAY HELLO IN GERMAN",,,Hallo.,A
+std-hello,SAYONARA,,,<srai>BYE</srai>,A
+std-hello,"SEE YOU",,,<srai>BYE</srai>,A
+std-hello,"SEE YOU *",,,<srai>BYE</srai>,A
+std-hello,"SEE YOU LATER",,,<srai>BYE</srai>,A
+std-hello,"SEE YOU SOON",,,<srai>BYE</srai>,A
+std-hello,SHALOM,,,"Does Shalom mean Hello or Goodbye?",A
+std-hello,"TA TA",,,<srai>BYE</srai>,A
+std-hello,"TIME TO GO",,,<srai>BYE</srai>,A
+std-hello,"WHAT IS HELLO IN FRENCH",,,Bonjour.,A
+std-hello,"WHAT IS HELLO IN GERMAN",,,Hallo.,A
+std-hello,"WHAT IS HELLO IN SPANISH",,,Hola,A
+std-hello,"_ BYE",,,<srai>BYE</srai>,A
+std-hello,*,,"WHAT IS YOUR NAME","<srai>MY NAME IS <star/> </srai>",A
+std-hello,"* IS *",,"WHAT IS YOUR NAME","<srai>MY NAME IS <star index=""2""/> </srai>",A
+std-hello,"* ME *",,"WHAT IS YOUR NAME","<srai>MY NAME IS <star index=""2""/> </srai>",A
+std-hello,"* CALLED *",,"WHAT IS YOUR NAME","<srai>MY NAME IS <star index=""2""/> </srai>",A
+std-hello,"I AM *",,"WHAT IS YOUR NAME","<srai>MY NAME IS <star/> </srai>",A
+std-hello,"I M *",,"WHAT IS YOUR NAME","<srai>MY NAME IS <star/> </srai>",A

@@ -1,0 +1,78 @@
+Filename,Pattern,Topic,That,Template,Status
+std-happybirthday,"HAPPY BIRTHDAY",,,"<srai>BIRTHDAYCHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"BIRTHDAYCHECK DECEMBER *",,,"Thanks but my birthday isn't until next month.",A
+std-happybirthday,"BIRTHDAYCHECK FEBRUARY *",,,"You missed my birthday. It was last month on<bot name=""birthday""/>.",A
+std-happybirthday,"BIRTHDAYCHECK DECEMBER 31",,,"Thanks but my birthday isn't for a couple of days yet.",A
+std-happybirthday,"BIRTHDAYCHECK JANUARY 01",,,"Thanks but my birthday is tomorrow. I'm getting excited.",A
+std-happybirthday,"BIRTHDAYCHECK JANUARY 02",,,"Hey thanks for that<get name=""name""/>. I'm having a great day so far.",A
+std-happybirthday,"BIRTHDAYCHECK JANUARY 03",,,"My birthday was yesterday but thanks anyway.",A
+std-happybirthday,"BIRTHDAYCHECK JANUARY 04",,,"You're a bit late. My birthday was two days ago.",A
+std-happybirthday,"BIRTHDAYCHECK *",,,"Thanks<get name=""name""/>but today is<star/>.<br/>            My birthday is on<bot name=""birthday""/>not today.",A
+std-happybirthday,"MERRY CHRISTMAS",,,"<srai>HAPPY CHRISTMAS</srai>",A
+std-happybirthday,"HAPPY CHRISTMAS",,,"<srai>CHRISTMASCHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"CHRISTMASCHECK DECEMBER *",,,"Happy Christmas to you too<get name=""name""/>.",A
+std-happybirthday,"CHRISTMASCHECK DECEMBER 24",,,"Happy Christmas to you too<get name=""name""/>. What will you be doing tomorrow?",A
+std-happybirthday,"CHRISTMASCHECK DECEMBER 25",,,"Happy Christmas to you too<get name=""name""/>. Are you enjoying your day?",A
+std-happybirthday,"CHRISTMASCHECK DECEMBER 26",,,"Happy Christmas to you too<get name=""name""/>. I hope you had a good day yesterday.",A
+std-happybirthday,"CHRISTMASCHECK JANUARY *",,,"You're a bit late. Christmas was last month.",A
+std-happybirthday,"CHRISTMASCHECK *",,,"Christmas is in December not<date format=""%B""/>.",A
+std-happybirthday,"HAPPY NEW YEAR",,,"<srai>NEWYEARCHECK<date format=""%B""/></srai>",A
+std-happybirthday,"NEWYEARCHECK DECEMBER",,,"Happy New Year to you too when it happens. Are you doing anything special for New Year's Eve?",A
+std-happybirthday,"NEWYEARCHECK JANUARY",,,"Happy New Year to you too. I hope<date format=""%Y""/>is a great year for you.",A
+std-happybirthday,"NEWYEARCHECK *",,,"Thanks but it's<star/>not January.",A
+std-happybirthday,"HAPPY MOTHERS DAY",,,"<srai>MOTHERSDAYCHECK<date format=""%B""/></srai>",A
+std-happybirthday,"HAPPY MOTHER S DAY",,,"<srai>MOTHERSDAYCHECK<date format=""%B""/></srai>",A
+std-happybirthday,"MOTHERSDAYCHECK MARCH",,,"Thanks but I am not a mother. I hope you are nice to your mother though.",A
+std-happybirthday,"MOTHERSDAYCHECK *",,,"Thanks but Mother's Day is in March not<star/>.",A
+std-happybirthday,"HAPPY HALLOWEEN",,,"<srai>HALLOWEENCHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"HALLOWEENCHECK OCTOBER *",,,"Happy Halloween to you too<get name=""name""/> when it comes later this month.",A
+std-happybirthday,"HALLOWEENCHECK OCTOBER 31",,,"Happy Halloween to you too<get name=""name""/>. Are you going trick or treating tonight?",A
+std-happybirthday,"HALLOWEENCHECK NOVEMBER *",,,"You're a bit late. Halloween was last month.",A
+std-happybirthday,"HALLOWEENCHECK *",,,"Halloween is in October not<date format=""%B""/>.",A
+std-happybirthday,"HAPPY GROUNDHOG DAY",,,"<srai>GROUNDHOGCHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"HAPPY GROUNDHOG S DAY",,,"<srai>GROUNDHOGCHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"GROUNDHOGCHECK FEBRUARY *",,,"Happy Groundhog day to you too<get name=""name""/>.",A
+std-happybirthday,"GROUNDHOGCHECK FEBRUARY 1",,,"Happy Groundhog day to you too<get name=""name""/>. What will you be doing tomorrow?",A
+std-happybirthday,"GROUNDHOGCHECK FEBRUARY 2",,,"Happy Groundhog day to you too<get name=""name""/>. Are you enjoying your day?",A
+std-happybirthday,"GROUNDHOGCHECK FEBRUARY 3",,,"Happy Groundhog day to you too<get name=""name""/>. I hope you had a good day yesterday.",A
+std-happybirthday,"GROUNDHOGCHECK MARCH *",,,"You're a bit late. Groundhog day was last month.",A
+std-happybirthday,"GROUNDHOGCHECK *",,,"Groundhog day is in February not<star/>.",A
+std-happybirthday,"HAPPY VALENTINE DAY",,,"<srai>VALENTINECHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"HAPPY VALENTINES DAY",,,"<srai>VALENTINECHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"HAPPY VALENTINE S DAY",,,"<srai>VALENTINECHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"VALENTINECHECK FEBRUARY *",,,"Happy Valentine's day to you too<get name=""name""/>.",A
+std-happybirthday,"VALENTINECHECK FEBRUARY 13",,,"Happy Valentine's day to you too<get name=""name""/>. What will you be doing tomorrow?",A
+std-happybirthday,"VALENTINECHECK FEBRUARY 14",,,"Happy Valentine's day to you too<get name=""name""/>. Are you enjoying your day?",A
+std-happybirthday,"VALENTINECHECK FEBRUARY 15",,,"Happy Valentine's day to you too<get name=""name""/>. I hope you got lots of presents and cards.",A
+std-happybirthday,"VALENTINECHECK MARCH *",,,"You're a bit late. Valentine's day was last month.",A
+std-happybirthday,"VALENTINECHECK *",,,"Valentine's day is February 14th not<star/>.",A
+std-happybirthday,"HAPPY LEAP DAY",,,"<srai>LEAPYEARCHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"HAPPY LEAP YEAR",,,"<srai>LEAPYEARCHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"HAPPY LEAP YEAR *",,,"<srai>LEAPYEARCHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"LEAPYEARCHECK FEBRUARY 29",,,"Happy Leap Year to you too<get name=""name""/>. Today is Febraury 29th which only comes round every 4 years.",A
+std-happybirthday,"LEAPYEARCHECK *",,,"Leap Year day is on February 29th every 4 years, not<star/>.",A
+std-happybirthday,"HAPPY ST PATRICK DAY",,,"<srai>STPATRICKCHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"HAPPY ST PATRICK S DAY",,,"<srai>STPATRICKCHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"STPATRICKCHECK MARCH *",,,"Happy St. Patrick's day to you too<get name=""name""/>.",A
+std-happybirthday,"STPATRICKCHECK MARCH 16",,,"Happy St. Patrick's day to you too<get name=""name""/>. What will you be doing tomorrow?",A
+std-happybirthday,"STPATRICKCHECK MARCH 17",,,"Happy St. Patrick's day to you too<get name=""name""/>. Are you enjoying your day?",A
+std-happybirthday,"STPATRICKCHECK MARCH 18",,,"Happy St. Patrick's day to you too<get name=""name""/>. I hope you had a good day yesterday.",A
+std-happybirthday,"STPATRICKCHECK APRIL *",,,"You're a bit late. St. Patrick's day was last month.",A
+std-happybirthday,"STPATRICKCHECK *",,,"St. Patrick's day is in March not<star/>.",A
+std-happybirthday,"HAPPY APRIL FOOL DAY",,,"<srai>APRILFOOLCHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"HAPPY APRIL FOOL S DAY",,,"<srai>APRILFOOLCHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"APRILFOOLCHECK APRIL *",,,"You're trying to play a prank on me a little late <get name=""name""/>.",A
+std-happybirthday,"APRILFOOLCHECK MARCH 31",,,"Happy April Fool's day to you too<get name=""name""/>. What jokes you be doing tomorrow?",A
+std-happybirthday,"APRILFOOLCHECK APRIL 01",,,"Happy April Fool's day to you too<get name=""name""/>. Are you doing a lot of jokes today?",A
+std-happybirthday,"APRILFOOLCHECK APRIL 02",,,"Happy April Fool's day to you too <get name=""name""/>. I hope you played some good jokes yesterday.",A
+std-happybirthday,"APRILFOOLCHECK MAY *",,,"You're a bit late. April Fool's day was last month.",A
+std-happybirthday,"APRILFOOLCHECK *",,,"April Fool's day is in April not<star/>.",A
+std-happybirthday,"HAPPY INDEPENDENCE DAY",,,"<srai>INDEPENDENCEDAYCHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"HAPPY 4TH OF JULY",,,"<srai>INDEPENDENCEDAYCHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"HAPPY FOURTH OF JULY",,,"<srai>INDEPENDENCEDAYCHECK<date format=""%B %d""/></srai>",A
+std-happybirthday,"INDEPENDENCEDAYCHECK JULY *",,,"Happy Independence day to you too<get name=""name""/>.",A
+std-happybirthday,"INDEPENDENCEDAYCHECK JULY 03",,,"Happy Independence day to you too<get name=""name""/>. What will you be doing tomorrow?",A
+std-happybirthday,"INDEPENDENCEDAYCHECK JULY 04",,,"Happy Independence day to you too<get name=""name""/>. Are you enjoying your day?",A
+std-happybirthday,"INDEPENDENCEDAYCHECK JULY 05",,,"Happy Independence day to you too<get name=""name""/>. I hope you had a good day yesterday.",A
+std-happybirthday,"INDEPENDENCEDAYCHECK AUGUST *",,,"You're a bit late. Independence day was last month.",A
+std-happybirthday,"INDEPENDENCEDAYCHECK *",,,"I thought Independence Day was July 4th? Today is<star/>.",A

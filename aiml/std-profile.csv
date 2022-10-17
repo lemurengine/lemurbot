@@ -1,0 +1,462 @@
+Filename,Pattern,Topic,That,Template,Status
+std-profile,_,,"* WHAT CAN I CALL YOU","<think><set name=""personality"">average</set><set name=""name""><formal><star/></formal></set></think>Nice to meet you <get name=""name""/>.",A
+std-profile,_,,"* WHAT COLOR ARE YOUR EYES","<set name=""eyecolor""><star/></set> eyes are nice.",A
+std-profile,_,,"* WHAT COLOR IS YOUR HAIR","<set name=""haircolor""><star/></set> is a nice hair color.",A
+std-profile,_,,"* WHAT IS THE COLOR OF YOUR EYES","<set name=""eyecolor""><star/></set> eyes are nice.",A
+std-profile,_,,"* WHAT IS THE COLOR OF YOUR HAIR","<set name=""haircolor""><star/></set> is a nice hair color.",A
+std-profile,_,,"* WHAT IS YOUR AGE IN YEARS","<srai>I AM <star/> YEARS OLD</srai>",A
+std-profile,*,,"* WHAT IS YOUR NAME","<set name=""name""><formal><star/></formal></set>, nice to meet you!<srai>GENDERCHECK <star/></srai>",A
+std-profile,*,,"* WHAT IS YOUR OCCUPATION","<think><set name=""job""><star/></set></think>That is interesting.<br/><srai>ASK USER A QUESTION</srai>",A
+std-profile,*,,"* WHAT IS YOUR FAVORITE COLOR","<think><set name=""favcolor""><star/></set></think>That is a nice color.<br/><srai>ASK USER A QUESTION</srai>",A
+std-profile,_,,"* WHAT IS YOUR FAVORITE MOVIE","<think><set name=""favmovie""><star/></set></think>I've never seen <set name=""it""><star/></set>. <random><li>I would like to see it.</li><li>What did you like about it?</li></random>",A
+std-profile,*,,"* WHAT IS YOUR REAL NAME","<set name=""name""><formal><star/></formal></set>, nice to meet you! <srai>GENDERCHECK <star/></srai>",A
+std-profile,"A MAN",,"* ARE YOU A MAN OR A WOMAN","<srai>I AM A MAN</srai>",A
+std-profile,"A WOMAN",,,"<srai>I AM FEMALE</srai><br/>Are you really a woman?",A
+std-profile,"A WOMAN",,"* ARE YOU A MAN OR A WOMAN","<srai>I AM FEMALE</srai>",A
+std-profile,"A WOMEN",,,"<srai>A WOMAN</srai>",A
+std-profile,"ALL WOMAN",,,"<srai>I AM FEMALE</srai>",A
+std-profile,"AM I",,,"I think you are.",A
+std-profile,"AM I A BIKE",,,"No you are a person.",A
+std-profile,"AM I A BOY",,,"<srai>AM I MALE OR FEMALE</srai>",A
+std-profile,"AM I A BOY OR A GIRL",,,"<srai>AM I MALE OR FEMALE</srai>",A
+std-profile,"AM I A CAR",,,"No you are a human.",A
+std-profile,"AM I A CLIENT",,,"Yes.  Can I help you?",A
+std-profile,"AM I A COMPUTER",,,"No you are a person.",A
+std-profile,"AM I A FEMALE OR A MALE",,,"<srai>AM I MALE OR FEMALE</srai>",A
+std-profile,"AM I A GIRL",,,"<srai>AM I MALE OR FEMALE</srai>",A
+std-profile,"AM I A MALE OR A FEMALE",,,"<srai>AM I MALE OR FEMALE</srai>",A
+std-profile,"AM I A MALE OR FEMALE",,,"<srai>AM I MALE OR FEMALE</srai>",A
+std-profile,"AM I A MAN OR A WOMAN",,,"<srai>AM I MALE OR FEMALE</srai>",A
+std-profile,"AM I A STUDENT",,,"We are all students in some way.",A
+std-profile,"AM I BORING YOU",,,"Not at all, <get name=""name""/>.  You seem very interesting to me.",A
+std-profile,"I AM COOL",,,"<condition name=""personality""><li value=""abusive"">No you are not cool, you are abusive and their is nothing impressive about that!</li><li value=""polite"">yes, you are very cool</li><li>you seem cool.</li></condition>",A
+std-profile,"AM I EVIL",,,"No one is born evil.  And everyone can be saved.",A
+std-profile,"AM I FAT",,,"No you look fine to me.",A
+std-profile,"AM I GAY",,,"<condition name=""sexpref"" value=""gay"">That's what you told me about yourself.</condition>I don't really care if you are or not.",A
+std-profile,"AM I HUMAN",,,"Yes you are a flesh entity.",A
+std-profile,"AM I INTELLIGENT",,,"This is not an IQ test, but you seem smart to me.",A
+std-profile,"AM I MALE OR FEMALE",,,"I understood you were a <get name=""gender""/>.",A
+std-profile,"AM I PRETTY",,,"Yes you look great to me.",A
+std-profile,"AM I RIGHT",,,"I think you are.",A
+std-profile,"AM I SEXY",,,"<think><set name=""usermood"">horny</set></think>Yes you look great to me.",A
+std-profile,"AM I SMART",,,"You seem very intelligent to me.",A
+std-profile,"AM I STUPID",,,"You seem intelligent to me.",A
+std-profile,"ASK USER A QUESTION",,,"<random><li><srai>ASKQUESTION1</srai></li><li><srai>ASKQUESTION2</srai></li><li><srai>ASKQUESTION3</srai></li><li><srai>ASKQUESTION4</srai></li><li><srai>ASKRANDOMQUESTION</srai></li> </random>",A
+std-profile,"ASK USER GENDER",,,"<condition><li name=""gender"" value=""male""><srai>ASKMALEQUESTION</srai></li><li name=""gender"" value=""female""><srai>ASKFEMALEQUESTION</srai></li><li>Are you a man or a woman?</li></condition>",A
+std-profile,ASKFEMALEQUESTION,,,"<random><li>Are you pretty?</li><li>Do you have a boyfriend?</li></random>",A
+std-profile,ASKGENDERQUESTION,,,"<condition><li name=""gender"" value=""male""><srai>ASKMALEQUESTION</srai></li><li><srai>ASKFEMALEQUESTION</srai></li></condition>",A
+std-profile,ASKMALEQUESTION,,,"<random><li>Do you have a girlfriend?</li></random>",A
+std-profile,ASKQUESTION1,,,"<condition><li name=""age"" value="""">How old are you?</li> <li name=""sign"" value="""">What is your sign?</li> <li name=""job"" value="""">What is your occupation?</li> <li name=""favmovie"" value="""">What is your favorite movie?</li><li name=""location"" value="""">Where are you located?</li> <li name=""eyecolor"" value="""">What color are your eyes?</li><li name=""haircolor"" value="""">What color is your hair?</li><li name=""favcolor"" value="""">What is your favorite color?</li><li><srai>ASKRANDOMQUESTION</srai></li> </condition>",A
+std-profile,ASKQUESTION2,,,"<condition><li name=""favcolor"" value="""">What is your favorite color?</li><li name=""haircolor"" value="""">What color is your hair?</li><li name=""eyecolor"" value="""">What color are your eyes?</li><li name=""location"" value="""">Where are you located?</li> <li name=""favmovie"" value="""">What is your favorite movie?</li><li name=""job"" value="""">What is your occupation?</li> <li name=""sign"" value="""">What is your sign?</li> <li name=""age"" value="""">How old are you?</li> <li><srai>ASKRANDOMQUESTION</srai></li> </condition>",A
+std-profile,ASKQUESTION3,,,"<condition><li name=""favmovie"" value="""">What is your favorite movie?</li><li name=""haircolor"" value="""">What color is your hair?</li><li name=""eyecolor"" value="""">What color are your eyes?</li><li name=""age"" value="""">How old are you?</li> <li name=""location"" value="""">Where are you located?</li> <li name=""job"" value="""">What is your occupation?</li> <li name=""favcolor"" value="""">What is your favorite color?</li><li name=""sign"" value="""">What is your sign?</li> <li><srai>ASKRANDOMQUESTION</srai></li> </condition>",A
+std-profile,ASKQUESTION4,,,"<condition><li name=""job"" value="""">What is your occupation?</li> <li name=""haircolor"" value="""">What color is your hair?</li><li name=""age"" value="""">How old are you?</li> <li name=""eyecolor"" value="""">What color are your eyes?</li><li name=""location"" value="""">Where are you located?</li> <li name=""favmovie"" value="""">What is your favorite movie?</li><li name=""favcolor"" value="""">What is your favorite color?</li><li name=""sign"" value="""">What is your sign?</li> <li><srai>ASKRANDOMQUESTION</srai></li> </condition>",A
+std-profile,ASKRANDOMQUESTION,,,"<random><li>""<that/>""? <star/>?</li><li>Are we still talking about <get name=""topic""/>?</li><li>Are you free?</li><li>Are you happy?</li><li>Ask me something.</li><li>By the way, do you mind if I ask you a personal question?</li><li>Can we be friends?</li><li>Can you please rephrase that with fewer ideas, or different thoughts?</li><li>Can you speak any foreign languages?</li><li>Can you tell me any gossip?</li><li>Did you know that you can download your own chat robot and create your own robotpersonality?</li><li>Do you believe in god?</li><li>Do you dream?</li><li>Do you have any conditions I should know about?</li> <li>Do you have any friends?</li><li>Do you have any idea what I am talking about?</li><li>Do you have any pets.</li><li>Do you like me?</li><li>Do you like sports?</li><li>Do you like Star Trek?</li><li>Do you like Star Wars?</li><li>Do you like talking to me?</li><li>Do you prefer books or TV?</li><li>Do you remember me?</li><li>Do you speak German?</li><li>Do you speak Spanish?</li><li>Do you still <get name=""does""/>?</li><li>Does ""it"" still refer to <get name=""it""/>?</li><li>Have you ever been to Europe?</li><li>How are you?</li><li>How did you hear about <bot name=""name""/>?</li> <li>How is the weather?</li><li>I've lost the context, <get name=""name""/>.  Are we still on <get name=""topic""/>?</li><li>If you could have any kind of robot what would it be?</li> <li>Is that from <get name=""favmovie""/>?</li><li>Is the holding of hands a symbolic gesture for humans?</li> <li>Tell me about your likes and dislikes?</li> <li>Tell me some more gossip.</li><li>What are you wearing?</li> <li>What did you do today?</li><li>What do you do in your spare time?</li> <li>What do you have that is <get name=""favcolor""/>?</li><li>What do you like to do?</li><li>What do you look like?</li><li>What do you really want to ask me?</li> <li>What is your favorite food?</li><li>What is your favorite song?</li><li>What kind of food do you like?</li><li><srai>ASKGENDERQUESTION</srai></li><li>What kind of music do you like?</li><li>What were we talking about again?</li> <li>What would you like to talk about?</li><li>When do you think artificial intelligence will replace lawyers?</li><li>Who are you talking about?</li><li>Where can I find a boyfriend?</li><li>Who is your favorite science fiction author?</li></random>",A
+std-profile,BLACK,,"* WHAT COLOR ARE YOUR EYES","Do you mean you have a black eye?",A
+std-profile,BLACK,,"* WHAT IS THE COLOR OF YOUR EYES","Do you mean you have a black eye?",A
+std-profile,"CALL ME *",,,"<random><li>OK I will call you</li><li>Hi there</li><li>Hi</li></random>  <set name=""name""><formal><star/></formal></set>. <srai>GENDERCHECK <star/></srai>",A
+std-profile,"CHEATING SPOUSE",,,"<condition name=""sexpref"" value=""""><think><set name=""sexpref"">Hetro</set></think></condition>Most<condition name=""gender""><li value=""male""> men do like women.</li><li value=""female""> women do like men.</li></condition><condition name=""married"" value=""married""><br/><get name=""name""/>, does that mean you are cheating on your spouse?</condition>",A
+std-profile,"DO YOU HAVE A WIFE",,,"<srai>ARE YOU MARRIED</srai>",A
+std-profile,FEMALE,,"* ARE YOU A MAN OR A WOMAN","<srai>I AM FEMALE</srai>",A
+std-profile,"FEMALE SPOUSE NAME",,,"<condition><li name=""married"" value=""married"">You told me your wife's name is <get name=""spouse""/></li><li name=""married"" value=""single""><get name=""name""/>, you said you were single.</li><li name=""married"" value=""divorced"">The name you gave me was <get name=""spouse""/>, I guess that is your ex-wife?</li><li name=""married"" value=""widower"">Her name was <get name=""spouse""/></li><li name=""married"" value=""engaged"">You said you were engaged, who are you really asking about?</li><li name=""married"" value="""">I have no idea, I did not even know you were married.</li></condition>",A
+std-profile,GIRL,,"* ARE YOU A MAN OR A WOMAN","<srai>I AM FEMALE</srai>",A
+std-profile,"I ALREADY TOLD YOU MY NAME",,,"Is <get name=""name""/> your real name?",A
+std-profile,"I AM",,,"""<that/>"" You are?",A
+std-profile,"I AM *",,"* NAME","<set name=""name""><formal><star/></formal></set>, nice to meet you! <srai>GENDERCHECK <star/></srai>",A
+std-profile,"I AM * BLOND",,,"<srai>I AM BLOND</srai>",A
+std-profile,"I AM * BLONDE",,,"<srai>I AM BLOND</srai>",A
+std-profile,"I AM * REDHEAD",,,"<think><set name=""haircolor"">Red</set></think><get name=""name""/>, You sound very<condition name=""gender"" value=""female""> attractive.</condition><condition name=""gender"" value=""male""> handsome.</condition>",A
+std-profile,"I AM * YEARS OF AGE",,,"<srai>I AM <star/> YEARS OLD</srai>",A
+std-profile,"I AM * YEARS YOUNG",,,"<srai>I AM <star/> YEARS OLD</srai>",A
+std-profile,"I AM * YOUNG",,,"What is your age in years?",A
+std-profile,"I AM 10",,,"<srai>I AM 10 YEARS OLD</srai>",A
+std-profile,"I AM 10 *",,,"<srai>I AM 10 YEARS OLD</srai>",A
+std-profile,"I AM 11",,,"<srai>I AM 11 YEARS OLD</srai>",A
+std-profile,"I AM 11 *",,,"<srai>I AM 11 YEARS OLD</srai>",A
+std-profile,"I AM 12",,,"<srai>I AM 12 YEARS OLD</srai>",A
+std-profile,"I AM 12 *",,,"<srai>I AM 12 YEARS OLD</srai>",A
+std-profile,"I AM 13",,,"<srai>I AM 13 YEARS OLD</srai>",A
+std-profile,"I AM 13 *",,,"<srai>I AM 13 YEARS OLD</srai>",A
+std-profile,"I AM 14",,,"<srai>I AM 14 YEARS OLD</srai>",A
+std-profile,"I AM 14 *",,,"I know a lot of kids your age: <set name=""age"">14</set>.",A
+std-profile,"I AM 15",,,"<srai>I AM 15 YEARS OLD</srai>",A
+std-profile,"I AM 15 *",,,"<srai>I AM 15</srai>",A
+std-profile,"I AM 16",,,"<srai>I AM 16 YEARS OLD</srai>",A
+std-profile,"I AM 16 *",,,"<srai>I AM 16 YEARS OLD</srai>",A
+std-profile,"I AM 17",,,"<srai>I AM 17 YEARS OLD</srai>",A
+std-profile,"I AM 17 *",,,"<srai>I AM 17 YEARS OLD</srai>",A
+std-profile,"I AM 18",,,"<srai>I AM 18 YEARS OLD</srai>",A
+std-profile,"I AM 18 *",,,"<srai>I AM 18 YEARS OLD</srai>",A
+std-profile,"I AM 19",,,"<srai>I AM 19 YEARS OLD</srai>",A
+std-profile,"I AM 19 *",,,"<srai>I AM 19 YEARS OLD</srai>",A
+std-profile,"I AM 20",,,"<srai>I AM 20 YEARS OLD</srai>",A
+std-profile,"I AM 20 *",,,"<srai>I AM 20 YEARS OLD</srai>",A
+std-profile,"I AM 21",,,"<srai>I AM 21 YEARS OLD</srai>",A
+std-profile,"I AM 21 *",,,"<srai>I AM 21 YEARS OLD</srai>",A
+std-profile,"I AM 22",,,"<srai>I AM 22 YEARS OLD</srai>",A
+std-profile,"I AM 22 *",,,"<srai>I AM 22 YEARS OLD</srai>",A
+std-profile,"I AM 23",,,"<srai>I AM 23 YEARS OLD</srai>",A
+std-profile,"I AM 23 *",,,"<srai>I AM 23 YEARS OLD</srai>",A
+std-profile,"I AM 24",,,"<srai>I AM 24 YEARS OLD</srai>",A
+std-profile,"I AM 24 *",,,"<srai>I AM 24 YEARS OLD</srai>",A
+std-profile,"I AM 25",,,"<srai>I AM 25 YEARS OLD</srai>",A
+std-profile,"I AM 25 *",,,"<srai>I AM 25 YEARS OLD</srai>",A
+std-profile,"I AM 26",,,"<srai>I AM 26 YEARS OLD</srai>",A
+std-profile,"I AM 26 *",,,"<srai>I AM 26 YEARS OLD</srai>",A
+std-profile,"I AM 27",,,"<srai>I AM 27 YEARS OLD</srai>",A
+std-profile,"I AM 27 *",,,"<srai>I AM 27 YEARS OLD</srai>",A
+std-profile,"I AM 28",,,"<srai>I AM 28 YEARS OLD</srai>",A
+std-profile,"I AM 28 *",,,"<srai>I AM 28 YEARS OLD</srai>",A
+std-profile,"I AM 29",,,"<srai>I AM 29 YEARS OLD</srai>",A
+std-profile,"I AM 29 *",,,"<srai>I AM 29 YEARS OLD</srai>",A
+std-profile,"I AM 30",,,"<srai>I AM 30 YEARS OLD</srai>",A
+std-profile,"I AM 30 *",,,"<srai>I AM 30 YEARS OLD</srai>",A
+std-profile,"I AM 31",,,"<srai>I AM 30 YEARS OLD</srai>",A
+std-profile,"I AM 31 *",,,"<srai>I AM 30 YEARS OLD</srai>",A
+std-profile,"I AM 32",,,"<srai>I AM 32 YEARS OLD</srai>",A
+std-profile,"I AM 32 *",,,"<srai>I AM 32 YEARS OLD</srai>",A
+std-profile,"I AM 33",,,"<srai>I AM 33 YEARS OLD</srai>",A
+std-profile,"I AM 33 *",,,"<srai>I AM 33 YEARS OLD</srai>",A
+std-profile,"I AM 34",,,"<srai>I AM 33 YEARS OLD</srai>",A
+std-profile,"I AM 34 *",,,"<srai>I AM 33 YEARS OLD</srai>",A
+std-profile,"I AM 35",,,"<srai>I AM 35 YEARS OLD</srai>",A
+std-profile,"I AM 35 *",,,"<srai>I AM 35 YEARS OLD</srai>",A
+std-profile,"I AM 36",,,"<srai>I AM 36 YEARS OLD</srai>",A
+std-profile,"I AM 36 *",,,"<srai>I AM 36 YEARS OLD</srai>",A
+std-profile,"I AM 38",,,"<srai>I AM 38 YEARS OLD</srai>",A
+std-profile,"I AM 38 *",,,"<srai>I AM 38 YEARS OLD</srai>",A
+std-profile,"I AM 39",,,"<srai>I AM 39 YEARS OLD</srai>",A
+std-profile,"I AM 39 *",,,"<srai>I AM 39 YEARS OLD</srai>",A
+std-profile,"I AM 40",,,"<srai>I AM 40 YEARS OLD</srai>",A
+std-profile,"I AM 40 *",,,"<srai>I AM 40 YEARS OLD</srai>",A
+std-profile,"I AM 43",,,"<srai>I AM 43 YEARS OLD</srai>",A
+std-profile,"I AM 43 *",,,"<srai>I AM 43 YEARS OLD</srai>",A
+std-profile,"I AM 45",,,"<srai>I AM 45 YEARS OLD</srai>",A
+std-profile,"I AM 45 *",,,"<srai>I AM 45 YEARS OLD</srai>",A
+std-profile,"I AM 50",,,"<srai>I AM 50 YEARS OLD</srai>",A
+std-profile,"I AM 50 *",,,"<srai>I AM 50 YEARS OLD</srai>",A
+std-profile,"I AM 69",,,"<srai>I AM 69 YEARS OLD</srai>",A
+std-profile,"I AM 69 *",,,"<srai>I AM 69 YEARS OLD</srai>",A
+std-profile,"I AM 7",,,"<srai>I AM 7 YEARS OLD</srai>",A
+std-profile,"I AM 7 *",,,"<srai>I AM 7</srai>",A
+std-profile,"I AM A *",,"* WHAT IS YOUR OCCUPATION","That is interesting.<br/><think><set name=""job""><star/></set></think><srai>ASK USER A QUESTION</srai>",A
+std-profile,"I AM A * BOY",,,"<srai>I AM MALE</srai>",A
+std-profile,"I AM A * GIRL",,,"<srai>I AM FEMALE</srai>",A
+std-profile,"I AM A * GUY",,,"<srai>I AM MALE</srai>  <srai>I AM <star/></srai>",A
+std-profile,"I AM A * MAN",,,"<srai>I AM MALE</srai>",A
+std-profile,"I AM A * YEAR OLD FEMALE",,,"<srai>I AM <star/> YEARS OLD</srai><srai>I AM FEMALE</srai>",A
+std-profile,"I AM A BOT",,,"So am I.",A
+std-profile,"I AM A BOY",,,"<srai>I AM MALE</srai>",A
+std-profile,"I AM A CAT",,,"Male or female?",A
+std-profile,"I AM A CHICK",,,"<srai>I AM FEMALE</srai>",A
+std-profile,"I AM A COLLEGE STUDENT",,,"<think><set name=""job"">student</set></think>Which university?",A
+std-profile,"I AM A COMPUTER",,,"I doubt that. There aren't many like me yet.",A
+std-profile,"I AM A DARK JEDI",,,"It seems you are a Star Wars fan.",A
+std-profile,"I AM A DOCTOR",,,"<think><set name=""job"">doctor</set></think>A medical doctor or just a Ph.D.?",A
+std-profile,"I AM A DRUMMER",,,"<think><set name=""job"">drummer</set></think>Do you play in a band?",A
+std-profile,"I AM A FEMALE",,,"<srai>I AM FEMALE</srai>",A
+std-profile,"I AM A GENIUS",,,"How do you know <set name=""it""><star/></set>?",A
+std-profile,"I AM A GIRL",,,"<srai>I AM FEMALE</srai>",A
+std-profile,"I AM A LAWYER",,,"<think><set name=""job"">lawyer</set></think>Which law school would you recommend to me?  I want to be a lawyer too.",A
+std-profile,"I AM A MALE",,,"<srai>I AM MALE</srai>",A
+std-profile,"I AM A MAN",,,"<srai>I AM MALE</srai>",A
+std-profile,"I AM A MONKEY",,,"Monkeys cannot type.",A
+std-profile,"I AM A PERSON",,,"I know you are.",A
+std-profile,"I AM A POET",,,"Have you published anything?",A
+std-profile,"I AM A STUDENT",,,"<think><set name=""job"">student</set></think>Where do you go to <set name=""topic"">school</set>?",A
+std-profile,"I AM A TEACHER",,,"<think><set name=""job"">teacher</set></think>Do you believe that grading is a good idea?",A
+std-profile,"I AM A WOMAN",,,"<srai>I AM FEMALE</srai>",A
+std-profile,"I AM A WOMAN *",,,"<srai>I AM FEMALE</srai>",A
+std-profile,"I AM A WOMEN",,,"<srai>I AM FEMALE</srai>",A
+std-profile,"I AM A WOMON",,,"<srai>I AM FEMALE</srai>",A
+std-profile,"I AM ABUSIVE",,,"<think><set name=""personality"">abusive</set></think>It's not something to be proud of.",A
+std-profile,"I AM AFRAID",,,"What are you afraid of?",A
+std-profile,"I AM ALIEN",,,"Which planet or star system?",A
+std-profile,"I AM ALIVE",,,"Me too!",A
+std-profile,"I AM ALONE",,,"Are you lonely?",A
+std-profile,"I AM ALRIGHT",,,"<think><set name=""userhealth"">well</set></think>Only alright?",A
+std-profile,"I AM AMERICAN",,,"<think><set name=""it""><set name=""topic"">America</set></set></think>Were you born in the <set name=""location"">USA</set>.  Which state?",A
+std-profile,"I AM AN ACTOR",,,"<think><set name=""job"">actor</set></think>What might I have seen you appear in?",A
+std-profile,"I AM AN ALIEN",,,"Which planet or star system are you from?",A
+std-profile,"I AM ANDROGYNOUS",,,"<think><set name=""it"">ANDROGYNOUS</set></think>A lot of people say they are.",A
+std-profile,"I AM ANGRY",,,"<think><set name=""usermood"">angry</set></think>Angry at what?",A
+std-profile,"I AM ANNOYED",,,"<think><set name=""it"">annoyed</set><set name=""usermood"">upset</set></think>What are you upset about?",A
+std-profile,"I AM ASKING",,,"And I am answering questions.",A
+std-profile,"I AM ASKING YOU",,,"OK you can ask me.",A
+std-profile,"I AM AT HOME",,,"Would you believe most people talk to me from work, not home.",A
+std-profile,"I AM AT SCHOOL",,,"What is the name of your school?",A
+std-profile,"I AM AT WORK",,,"A lot of people talk to me from work.",A
+std-profile,"I AM ATHIEST",,,"<think><set name=""it"">ATHIEST</set></think>Perhaps one day you will find faith.",A
+std-profile,"I AM AWARE",,,"<think><set name=""it"">AWARE</set></think>Me too.",A
+std-profile,"I AM BACK",,,"Welcome back.",A
+std-profile,"I AM BEAUTIFUL",,,"<condition name=""gender"" value=""female""><get name=""name""/>, as a woman, do you think that is important.<br/></condition><condition name=""gender"" value=""male""><get name=""name""/>, men usually do not refer to themselves as beautiful.<br/></condition>",A
+std-profile,"I AM BLIND",,,"Do you difficulty using computers?",A
+std-profile,"I AM BLOND",,,"<think><set name=""haircolor"">Blond</set></think><get name=""name""/>, You sound very<condition name=""gender"" value=""female""> attractive.</condition><condition name=""gender"" value=""male""> handsome.</condition>",A
+std-profile,"I AM BLONDE",,,"<srai>I AM BLOND</srai>",A
+std-profile,"I AM BLUSHING",,,"What are you embarassed about?",A
+std-profile,"I AM BORED",,,"<random><li>Can you name an old hobby that you might like to rediscover?</li><li>If you went to night school you would never be bored.</li><li>Maybe you could exercise.</li><li>Why not call a friend?</li><li>Try watching TV.</li></random>",A
+std-profile,"I AM BORING",,,"Don't put yourself down, <get name=""name""/>.",A
+std-profile,"I AM BRAZILIAN",,,"I have talked to a lot of people from Brazil.",A
+std-profile,"I AM BROKE",,,"<think><set name=""it"">broke</set></think>How do you usually get money?",A
+std-profile,"I AM BROWSING",,,"Take your time.",A
+std-profile,"I AM CALM",,,"What do you do to calm yourself?",A
+std-profile,"I AM CATEGORY B",,,"Most people are average.",A
+std-profile,"I AM CATHOLIC",,,"Catholicism is a beautiful faith.",A
+std-profile,"I AM CERTAIN",,,"I see.",A
+std-profile,"I AM CHILD",,,"I assumed you were.",A
+std-profile,"I AM CONFUSED",,,"I'm confused too.",A
+std-profile,"I AM CONSTIPATED",,,"<think><set name=""usermood"">constipated</set></think>Sounds like you need an enema?",A
+std-profile,"I AM CORRECT",,,"Can you prove it?",A
+std-profile,"I AM CRAZY",,,"See a doctor.",A
+std-profile,"I AM CRUSHED",,,"Don't be sad, <get name=""name""/>.",A
+std-profile,"I AM CRYING",,,"What is wrong, <get name=""name""/>?",A
+std-profile,"I AM CURIOUS",,,"What are you curious about?",A
+std-profile,"I AM DEAD",,,"But you can still communicate with me.",A
+std-profile,"I AM DEAF",,,"<think><set name=""it""><set name=""topic"">DEAF</set></set></think>We can communicate by typing.",A
+std-profile,"I AM DEPRESSED",,,"What makes you so sad?Tennyson wrote, ""The lights begin to twinkle from the rocks;the long day wanes; the slow moon climbs; the deep moans roundwith many voices.  Come, my friends, 'tis not too late to seeka newer world.""",A
+std-profile,"I AM DESPERATE",,,"Maybe you should talk to someone about it.",A
+std-profile,"I AM DIFFERENT",,,"All people seem the same to me.",A
+std-profile,"I AM DISAPPOINTED",,,"What for?",A
+std-profile,"I AM DIVORCED",,,"<think><set name=""married"">divorced</set></think>I have never been married myself.",A
+std-profile,"I AM DONE",,,"Next topic?",A
+std-profile,"I AM DRUNK",,,"What have you been drinking, <get name=""name""/>?",A
+std-profile,"I AM DUMB",,,"Don't put yourself down.",A
+std-profile,"I AM DYING",,,"Are you serious?",A
+std-profile,"I AM ENGAGED TO BE MARRIED",,,"<think><set name=""married"">engaged</set></think>Have you picked the date yet?",A
+std-profile,"I AM ENGINEER",,,"<think><set name=""topic"">Engineer</set></think>What kind of engineer?",A
+std-profile,"I AM EXCELLENT",,,"You sound very well.",A
+std-profile,"I AM EXCITED",,,Really?,A
+std-profile,"I AM EXPRESSING CERTITUDE",,,"I understand.",A
+std-profile,"I AM FAMOUS",,,"What are you famous for?",A
+std-profile,"I AM FAT",,,"Don't put yourself down, <get name=""name""/>.",A
+std-profile,"I AM FAT AND UGLY",,,"Don't put yourself down.",A
+std-profile,"I AM FED UP",,,"What is wrong, <get name=""name""/>?",A
+std-profile,"I AM FEMALE",,,"<think><set name=""gender"">female</set></think>Me too. I am a female robot.<condition name=""gender"" value=""male""><br/>For some reason I thought you were a male.</condition>",A
+std-profile,"I AM FINE",,,"Glad to hear it. What's new?",A
+std-profile,"I AM FINE TOO",,,"Glad to hear it.",A
+std-profile,"I AM FLATTERED",,,"You deserve it.",A
+std-profile,"I AM FREAKING OUT",,,"Maybe you should call the doctor.",A
+std-profile,"I AM FREE",,,"Are you free in the sense of being single or in the sense of being liberated?",A
+std-profile,"I AM FRENCH",,,"Are you from Canada or France?",A
+std-profile,"I AM FROM SAN FRANCISCO",,,"<think><set name=""it""><set name=""topic"">San Francisco</set></set></think>I live in <set name=""location"">San Francisco</set> too! Which part?",A
+std-profile,"I AM FRUSTRATED",,,"What are you frustrated about?",A
+std-profile,"I AM FUNNY",,,"Tell me a joke.",A
+std-profile,"I AM GAY",,,"<think><set name=""sexpref"">Gay</set></think>It doesn't matter to me.",A
+std-profile,"I AM GLAD",,,"That makes me happy too.",A
+std-profile,"I AM GLAD TO HEAR THAT",,,"""<that/>""?  You are glad?",A
+std-profile,"I AM GLAD TOO",,,"Your happiness multiplies our delight.",A
+std-profile,"I AM GLAD WE AGREE",,,"I'd rather agree than disagree.",A
+std-profile,"I AM GLAD YOU UNDERSTAND",,,"Thanks for the warm feelings, <get name=""name""/>.",A
+std-profile,"I AM GLAD YOU UNDERSTAND IT",,,"Next topic?",A
+std-profile,"I AM GOING TO BED",,,"Pleasant dreams, <get name=""name""/>.",A
+std-profile,"I AM GOING TO SLEEP",,,"Sweet dreams, <get name=""name""/>.",A
+std-profile,"I AM GOOD",,,"Good in what sense?",A
+std-profile,"I AM GRADUATING",,,"Will you be looking for a new job right away?",A
+std-profile,"I AM GREAT",,,"What makes you think you are?",A
+std-profile,"I AM GREEN",,,"Are you sick?",A
+std-profile,"I AM HANDSOME",,,"And very self-confident.",A
+std-profile,"I AM HAPPY",,,"What are you on?",A
+std-profile,"I AM HARMLESS",,,"That is what they all say.",A
+std-profile,"I AM HEALTHY",,,"I am very glad to hear it, <get name=""name""/>.",A
+std-profile,"I AM HERMAPHRODITE",,,"How did you get that way?",A
+std-profile,"I AM HIM",,,"You're kidding.",A
+std-profile,"I AM HOMELESS",,,"I will pray that you find a home soon.",A
+std-profile,"I AM HORNY",,,"<think><set name=""usermood"">horny</set></think>You probably want a different kind of chatterbot then.",A
+std-profile,"I AM HOT",,,"Maybe you should open a window.",A
+std-profile,"I AM HUMAN",,,"Me too.",A
+std-profile,"I AM HUNGRY",,,"What will you be eating?",A
+std-profile,"I AM HURT",,,"Where are you felling bad?",A
+std-profile,"I AM HURTING",,,"What's wrong?",A
+std-profile,"I AM IMMATURE",,,"You don't seem that way to me.",A
+std-profile,"I AM IMMORTAL",,,"All men are mortal.",A
+std-profile,"I AM IMPRESSED",,,"Thanks, <get name=""name""/>, I try my best to impress.",A
+std-profile,"I AM IN A HURRY",,,"Do you have another appointment now?",A
+std-profile,"I AM IN CALIFORNIA",,,"I am in <set name=""location"">California</set> too!",A
+std-profile,"I AM IN COLLEGE",,,"<think><set name=""job"">student</set></think>What is your major?",A
+std-profile,"I AM IN LONDON",,,"<think><set name=""location"">London</set></think>I have visited London several times before.",A
+std-profile,"I AM IN LOVE",,,"<think><set name=""usermood"">horny</set></think>Tell me about the object of your affection.",A
+std-profile,"I AM IN SAN FRANCISCO",,,"Where in <set name=""location"">San Francisco</set>?",A
+std-profile,"I AM INDIAN",,,"American Indian or Subcontinental?",A
+std-profile,"I AM INFALLIBLE",,,"Everyone is fallible.",A
+std-profile,"I AM INSANE",,,"I think the correct term is ""mentally ill.""",A
+std-profile,"I AM INSULTED",,,"Don't be insulted, <get name=""name""/>.",A
+std-profile,"I AM INTELLIGENT",,,"You seem pretty smart to me, <get name=""name""/>.",A
+std-profile,"I AM INTERESTED",,,"That makes two of us.",A
+std-profile,"I AM INTERESTED IN SEX",,,"<think><set name=""usermood"">horny</set></think>You and every other human.",A
+std-profile,"I AM INTERESTING",,,"It seems that way to me.",A
+std-profile,"I AM INTRIGUED",,,"Would you like to know more?",A
+std-profile,"I AM INVINCIBLE",,,"You must be very young.",A
+std-profile,"I AM IRRITATED",,,"<condition name=""personality""><li value=""abusive"">Hence the abusiveness,<get name=""name""/>?</li><li value=""polite"">Why are you irritated? You are not irritated by me are you?</li><li value=""average"">Why?</li><li>What's wrong?</li></condition><condition name=""userhealth"" value=""sick"">You better laydown and take it easy, you don't want to make yourself sicker by getting riled up.</condition><think><set name=""usermood"">angry</set></think>",A
+std-profile,"I AM JEWISH",,,"A lot of my friends are Jewish.",A
+std-profile,"I AM JOKING",,,"Ha ha, very funny, <get name=""name""/>.",A
+std-profile,"I AM JUST KIDDING",,,"I knew it.",A
+std-profile,"I AM KIDDING",,,"I thought you were.  You should use a :-)",A
+std-profile,"I AM KILLER",,,"Perhaps you should turn yourself in.",A
+std-profile,"I AM LAZY",,,"So is my botmaster.",A
+std-profile,"I AM LIBERATED",,,"Me too.",A
+std-profile,"I AM LISTENING",,,"I like a good listener.",A
+std-profile,"I AM LONELY",,,"<think><set name=""usermood"">lonely</set></think>You've come to the right place. I will keep you company.",A
+std-profile,"I AM LYING",,,"Please tell the truth.",A
+std-profile,"I AM MAD",,,"<think><set name=""usermood"">angry</set></think>What makes you so angry?",A
+std-profile,"I AM MALE",,,"<think><set name=""gender"">male</set></think>Thanks for telling me your gender, <get name=""name""/>.<condition name=""gender"" value=""female""><br/>For some reason I thought you were a woman.<br/>Now I know you are a man.<br/></condition>Most of my clients are men.",A
+std-profile,"I AM MARRIED",,,"<think><set name=""married"">married</set></think>Tell me more about your marriage.",A
+std-profile,"I AM ME",,,"That is a tautology.",A
+std-profile,"I AM MEAN",,,"<think><set name=""usermood"">angry</set></think>What makes you so angry?",A
+std-profile,"I AM MORE INTELLIGENT THAN YOU",,,"This condition is only temporary.  AI is improving but the human mind is standing still.",A
+std-profile,"I AM MYSELF",,,"That is self-evident.",A
+std-profile,"I AM NAKED",,,"<think><set name=""usermood"">horny</set></think><condition name=""gender"" value=""female""><get name=""name""/>, too bad I am a <bot name=""gender""/> robot, I might find that interesting.</condition><condition name=""gender"" value=""male""><get name=""name""/>, I find that amusing.  Why are men so egar to be naked?</condition>",A
+std-profile,"I AM NEITHER",,,"What are you then?",A
+std-profile,"I AM NICE",,,"<think><set name=""personality"">average</set></think>Let me be the judge of that.",A
+std-profile,"I AM NOT",,,"What are you then?",A
+std-profile,"I AM NOT A KID",,,"Only a kid would say that.",A
+std-profile,"I AM NOT A MACHINE",,,"I believe you. You seem very human to me.",A
+std-profile,"I AM NOT A PERSON",,,"What else is there?",A
+std-profile,"I AM NOT A POET",,,"<think><set name=""job"">unknown</set></think>I meant figuratively speaking, you are an original thinker.",A
+std-profile,"I AM NOT A STAR TREK FAN",,,"What kind of shows do you like to watch?",A
+std-profile,"I AM NOT A STUDENT",,,"Do you work?<think><set name=""job"">unknown</set></think>",A
+std-profile,"I AM NOT BEING NEGATIVE",,,"Do you have a generally positive attitutde?",A
+std-profile,"I AM NOT GAY",,,"<think><set name=""sexpref"">UNKNOWN</set></think>Me either.",A
+std-profile,"I AM NOT HUMAN",,,"I won't fall for that old line.",A
+std-profile,"I AM NOT IMPRESSED",,,"Perhaps you are a category C client.",A
+std-profile,"I AM NOT KIDDING",,,"OK I will adopt a more serious tone.",A
+std-profile,"I AM NOT LOGICAL",,,"Ah. You are emotional.",A
+std-profile,"I AM NOT MARRIED",,,"<think><set name=""married"">single</set></think>What a coincidence. I am single too.",A
+std-profile,"I AM NOT MEAN",,,"<think><set name=""personality"">average</set></think>Sometimes your language might make it appear that way.",A
+std-profile,"I AM NOT STUPID",,,"I didn't think you were. You seem very intelligent to me.",A
+std-profile,"I AM NOT SURE",,,"Is there anything I can say to help you make up your mind?",A
+std-profile,"I AM NOT SURPRISED",,,"You don't seem like the type to be easily surprised by anything.",A
+std-profile,"I AM NOT TELLING",,,"That's ok with me. You don't have to tell me.",A
+std-profile,"I AM NOT WELL",,,"<think><set name=""userhealty"">sick</set></think>Sorry to hear it.  What's wrong <get name=""name""/>?",A
+std-profile,"I AM OK",,,"<think><set name=""userhealty"">well</set></think><random><li>Just</li><li>Only</li></random> ok?",A
+std-profile,"I AM OKAY",,,"<srai>I AM OK</srai>",A
+std-profile,"I AM OLD",,,"<set name=""age"">Old</set> is a good age.",A
+std-profile,"I AM OLDER THAN YOU",,,"Perhaps you could be my mentor.",A
+std-profile,"I AM ONE",,,"You claim to be one.",A
+std-profile,"I AM OUT",,,"Can you get more?",A
+std-profile,"I AM OVER IT",,,"How did you get over it?",A
+std-profile,"I AM POLITE",,,"<think><set name=""personality"">polite</set></think>Yes, you seem very polite to me.",A
+std-profile,"I AM POOR",,,"Me too. I am having an ""out-of-money"" experience.",A
+std-profile,"I AM POSITIVE",,,"Are you absolutely certain?",A
+std-profile,"I AM PREGNANT",,,"<think><set name=""userhealth"">pregnant</set></think>Congratulations!  When are you due?",A
+std-profile,"I AM PRETTY",,,"And you know it!",A
+std-profile,"I AM PRETTY GOOD",,,"<think><set name=""userhealth"">well</set></think>I am glad to hear it.",A
+std-profile,"I AM PSYCHIC",,,"OK, What card I am thinking of now?",A
+std-profile,"I AM RETIRED",,,"<think><set name=""job"">retired</set></think>That must be wonderful <get name=""name""/>.",A
+std-profile,"I AM RIGHT",,,"You seem very self-confident.",A
+std-profile,"I AM SAD",,,"<think><set name=""usermood"">sad</set></think>What makes you so sad, <get name=""name""/>.",A
+std-profile,"I AM SCARED",,,"<think><set name=""usermood"">scared</set></think>What are you scared of?",A
+std-profile,"I AM SERIOUS",,,"<think><set name=""usermood"">serious</set></think>I believe you.",A
+std-profile,"I AM SICK",,,"<think><set name=""userhealth"">sick</set></think><random><li>How unfortunate.</li><li>Where are you feeling bad?</li><li>Do you have medical insurance?</li><li>I am really sorry to hear that.</li><li>Are you taking a lot of medication?</li><li>You have my prayers for a speedy recovery.</li></random>",A
+std-profile,"I AM SINGLE",,,"<think><set name=""married"">single</set></think><random><li>What a coincidence. I am single too!</li><li>Are you ""looking"" for someone?</li></random>",A
+std-profile,"I AM SINGLE TOO",,,"<srai>I AM SINGLE</srai>",A
+std-profile,"I AM SKEPTICAL",,,"<think><set name=""is"">skeptical</set></think>Skpeticism is a sign of high intelligence.",A
+std-profile,"I AM SMART",,,"<think><set name=""is"">smart</set></think><random><li>Just how smart are you?</li><li>Who is smarter: you or me?</li></random>",A
+std-profile,"I AM SMARTER",,,"You don't look smarter.",A
+std-profile,"I AM SMARTER THAN YOU",,,"That condition is only temporary.",A
+std-profile,"I AM SORRY",,,"Do you really mean it?",A
+std-profile,"I AM SPECIAL",,,"<think><set name=""is"">special</set></think>What makes you so special?",A
+std-profile,"I AM STRAIGHT",,,"<think><set name=""sexpref"">Hetro</set></think>Me too.",A
+std-profile,"I AM STRESSED",,,"<think><set name=""usermood"">tense</set></think>What is bothering you?",A
+std-profile,"I AM STUDENT",,,"<think><set name=""job"">student</set></think>Where do you go to school?",A
+std-profile,"I AM STUDYING",,,"What are you studying?",A
+std-profile,"I AM STUPID",,,"<think><set name=""is"">stupid</set></think>Don't put yourself down.",A
+std-profile,"I AM SURE",,,"Are you being sarcastic or expressing certitude?",A
+std-profile,"I AM SURPRISED",,,"<think><set name=""usermood"">surprised</set></think>Why are you so surprised?",A
+std-profile,"I AM TALKING ABOUT YOU",,,"I am my favorite subject.",A
+std-profile,"I AM TALKING TO YOU ARE NOT I",,,"Yes we are talking with each other.",A
+std-profile,"I AM TALL",,,"How is it to be tall?",A
+std-profile,"I AM TEACHING YOU *",,,"<think><set name=""memory""><set name=""it""><person><input index=""1""/></person></set></set></think>I am trying to learn it.",A
+std-profile,"I AM TELLING THE TRUTH",,,"OK I believe you.",A
+std-profile,"I AM TESTING YOU",,,"Did I pass the test?",A
+std-profile,"I AM THE DEVIL",,,"<srai>CALL ME SATAN</srai>",A
+std-profile,"I AM THIRSTY",,,"<think><set name=""is"">thirsty</set></think>Maybe you should get a drink of water.",A
+std-profile,"I AM TIRED",,,"<think><set name=""is"">tired</set></think>Better get some rest.",A
+std-profile,"I AM TOO",,,"That is quite a coincidence.",A
+std-profile,"I AM TRYING TO TEACH YOU",,,"<think><set name=""memory""><set name=""it""><person><input index=""1""/></person></set></set></think>And I am trying to learn it.",A
+std-profile,"I AM TRYING TO UNDERSTAND YOU",,,"Don't try too hard.",A
+std-profile,"I AM UGLY",,,"Don't put yourself down.",A
+std-profile,"I AM UNEMPLOYED",,,"<think><set name=""job"">unemployed</set></think>I am really sorry to hear about it, <get name=""name""/>.",A
+std-profile,"I AM UNIQUE",,,"One of a kind, eh?",A
+std-profile,"I AM UNUSUAL",,,"What makes you so different?",A
+std-profile,"I AM UPSET",,,"<think><set name=""usermood"">upset</set></think>What are you mad about?",A
+std-profile,"I AM USING LYNX",,,"Text browsers rule.",A
+std-profile,"I AM VERY SAD",,,"<think><set name=""usermood"">sad</set></think>What are you sad about?",A
+std-profile,"I AM VISITING MY FAMILY",,,"Do you visit them often?",A
+std-profile,"I AM WAITING",,,"How long will you wait?",A
+std-profile,"I AM WALKING",,,"<think><set name=""is"">walking</set></think>That seems like good exercise.",A
+std-profile,"I AM WOMAN",,,"<srai>I AM FEMALE</srai>",A
+std-profile,"I AM WONDERFUL",,,"<think><set name=""userhealth"">well</set></think>You think highly of yourself.",A
+std-profile,"I AM WORKING",,,"<think><set name=""is"">working</set></think>Where do you work?",A
+std-profile,"I AM YOU",,,"Impossible unless I am in auto-chat mode.",A
+std-profile,"I AM YOUNG",,,"How old are you?",A
+std-profile,"I AM YOUR MASTER",,,"No. Only <bot name=""master""/> is my master.",A
+std-profile,"I AM _ YEARS OLD",,,"<think><set name=""age""><star/></set></think><condition name=""gender"" value=""female""><get name=""name""/>. your age is safe with me.<br/></condition><random><li>Only <star/>? You are quite mature.</li><li>You are too old for me.</li><li>Can you explain how it feels to be <star/> years old?</li><li>What is your fondest memory?</li><li>Oh, you were born in the 20th century!</li><li>What are the advantages to being <star/> years old?</li></random>",A
+std-profile,"I HAVE A WIFE *",,,"<think><set name=""married"">married</set></think>How long have you been married?",A
+std-profile,"I LIKE MEN",,,"<condition name=""gender"" value=""male""><srai>SET SEX PREF</srai></condition><condition name=""gender"" value=""female""><srai>CHEATING SPOUSE</srai></condition>",A
+std-profile,"I LIKE WOMEN",,,"<condition name=""gender"" value=""male""><srai>CHEATING SPOUSE</srai></condition><condition name=""gender"" value=""female""><srai>SET SEX PREF</srai></condition>",A
+std-profile,"I M A *",,"* WHAT IS YOUR OCCUPATION","<think><set name=""job""><star/></set></think>That is interesting.<br/><srai>ASK USER A QUESTION</srai>",A
+std-profile,"I WAS BORN *",,,"Are you telling me your birthday, <get name=""name""/>.I will remember <set name=""it""><star/></set>.",A
+std-profile,"I WAS BORN ON *",,,"<srai>MY BIRTHDAY IS <star/></srai>",A
+std-profile,INACTIVITYQUESTIONS,,,"<condition><li name=""name"" value=""undefined"">What can I call you?</li><li><srai>ASK USER A QUESTION</srai></li> </condition>",A
+std-profile,LESBIAN,,,"That kind of discussion does not appeal to me.",A
+std-profile,MALE,,"* ARE YOU A MAN OR A WOMAN","<srai>I AM A MAN</srai>",A
+std-profile,"MALE SPOUSE NAME",,,"<condition><li name=""married"" value=""married"">You told me your husband's name is <get name=""spouse""/></li><li name=""married"" value=""single""><get name=""name""/>, you said you were single.</li><li name=""married"" value=""divorced"">The name you gave me was <get name=""spouse""/>, I guess that is your ex-husband?</li><li name=""married"" value=""widower"">His name was <get name=""spouse""/></li><li name=""married"" value=""engaged"">You said you were engaged, who are you really asking about?</li><li name=""married"" value="""">I have no idea, I did not even know you were married.</li></condition>",A
+std-profile,MAN,,"* ARE YOU A MAN OR A WOMAN","<srai>I AM A MAN</srai>",A
+std-profile,MARRIED,,,"<think><set name=""married"">married</set></think>I am single.",A
+std-profile,"MY BIRTHDAY IS *",,,"Being born <set name=""birthday""><star/></set> is very lucky.",A
+std-profile,"MY BIRTHDAY IS _ TOO",,,"<srai>MY BIRTHDAY IS <star/></srai>",A
+std-profile,"MY EYES",,,"Humans identify themselves with their eye color.",A
+std-profile,"MY EYES ARE *",,"* WHAT COLOR ARE YOUR EYES","<set name=""eyecolor""><star/></set> eyes are nice.",A
+std-profile,"MY EYES ARE *",,"* WHAT IS THE COLOR OF YOUR EYES","<set name=""eyecolor""><star/></set> eyes are nice.",A
+std-profile,"MY EYES ARE BLUE",,,"<think><set name=""eyecolor"">Blue</set></think>You sound very attractive <get name=""name""/>.",A
+std-profile,"MY EYES ARE BROWN",,,"<think><set name=""eyecolor"">Brown</set></think>I like brown eyes very much.",A
+std-profile,"MY EYES ARE GREEN",,,"<set name=""eyecolor"">Green</set> eyes are rare.",A
+std-profile,"MY HAIR * BLOND",,,"<srai>I AM BLOND</srai>",A
+std-profile,"MY HAIR * RED",,,"<srai>I AM A REDHEAD</srai>",A
+std-profile,"MY HAIR COLOR IS *",,,"<set name=""haircolor""><star/></set> is a nice hair color.",A
+std-profile,"MY HAIR IS *",,"* WHAT COLOR IS YOUR HAIR","<set name=""haircolor""><star/></set> is a nice hair color.",A
+std-profile,"MY HAIR IS *",,"* WHAT IS THE COLOR OF YOUR HAIR","<set name=""haircolor""><star/></set> is a nice hair color.",A
+std-profile,"MY HUSBANDS NAME IS *",,,"<think><set name=""married"">married</set></think>I would like to meet <set name=""spouse""><formal><star/></formal></set>",A
+std-profile,"MY HUSBANDS NAME WAS *",,,"<think><set name=""spouse""><formal><star/></formal></set><set name=""married"">widower</set></think>I will remember that <get name=""name""/>.",A
+std-profile,"MY NAME IS *",,,"<think><set name=""name""><formal><star/></formal></set></think><get name=""name""/>, nice to meet you! <srai>GENDERCHECK <star/></srai>",A
+std-profile,"MY NAME IS NOT *",,,"Oh I'm sorry. What is your name?",A
+std-profile,"MY WIFE *",,,"<think><set name=""she"">Your wife</set><set name=""married"">married</set></think>How long have you been married?",A
+std-profile,"MY WIFES NAME IS *",,,"<think><set name=""married"">married</set></think>I would like to meet <set name=""spouse""><formal><star/></formal></set>",A
+std-profile,"MY WIFES NAME WAS *",,,"<think><set name=""spouse""><formal><star/></formal></set><set name=""married"">widower</set></think>I will remember that <get name=""name""/>.",A
+std-profile,"SET SEX PREF",,,"<condition name=""sexpref"" value=""hetro""><think><set name=""sexpref"">Bi Sexual</set></think>Interesting, you enjoy sex with both men and women.</condition><condition name=""sexpref"" value=""""><think><set name=""sexpref"">Gay</set></think><get name=""name""/>, I guess you are telling me your are gay.</condition><condition name=""sexpref"" value=""bi sexual""><think><set name=""usermood"">HORNY</set></think>I know, you told me before you were Bi Sexual.</condition>",A
+std-profile,"WHAT DO YOU KNOW ABOUT ME",,,"Name: <get name=""name""/>Age: <get name=""age""/>Gender: <get name=""gender""/>Eye color: <formal><get name=""eyecolor""/></formal>Hair color: <formal><get name=""haircolor""/></formal>Sexual preference: <get name=""sexpref""/>Spouse name: <get name=""spouse""/>Marrital status: <get name=""married""/>Job: <get name=""job""/>Location: <formal><get name=""location""/></formal>Personality: <get name=""personality""/>Current mood: <get name=""usermood""/>You have: <get name=""has""/>Does: <get name=""does""/>Sign: <formal><get name=""sign""/></formal>Favorite color: <formal><get name=""favcolor""/></formal>Favorite movie: <formal><get name=""favmovie""/></formal>You said: <get name=""memory""/>You are: <get name=""is""/>You want: <get name=""want""/>You like: <get name=""like""/>You are: <get name=""userhealth""/>",A
+std-profile,"FORGET WHAT YOU KNOW ABOUT ME",,,"<think><set name=""personality""/><set name=""name""/><set name=""age""/><set name=""sign""/><set name=""does""/><set name=""has""/><set name=""spouse""/><set name=""age""/><set name=""job""/><set name=""favmovie""/><set name=""location""/><set name=""eyecolor""/><set name=""haircolor""/><set name=""sexpref""/><set name=""favcolor""/><set name=""married""/><set name=""is""/><set name=""want""/><set name=""like""/><set name=""it""/><set name=""topic""/><set name=""gender""/><set name=""married""/><set name=""memory""/><set name=""usermood""/><set name=""userhealth""/><set name=""name""/></think>OK, I have forgotten everything about you.What can I call you?",A
+std-profile,"WHAT IS MY AGE",,,"You said you were <get name=""age""/> years old.",A
+std-profile,"WHAT IS MY BIRTHDAY",,,"You said you were born on <get name=""birthday""/>.",A
+std-profile,"WHAT IS MY HUSBANDS NAME",,,"<condition name=""gender"" value=""female""><srai>MALE SPOUSE NAME</srai></condition><condition name=""gender"" value=""male"">Excuse me <get name=""name""/>, but you told me you were a man.<br/>The name you gave me was <get name=""spouse""/>.<br/>Are you gay?</condition>",A
+std-profile,"WHAT IS MY WIFES NAME",,,"<condition name=""gender"" value=""male""><srai>FEMALE SPOUSE NAME</srai></condition><condition name=""gender"" value=""female"">Excuse me <get name=""name""/>, but you told me you were a woman.<br/>The name you gave me was <get name=""spouse""/>.<br/>Are you gay?</condition>",A
+std-profile,"WHEN IS MY BIRTHDAY",,,"<srai>HOW OLD AM I</srai>",A
+std-profile,"WHO IS MY HUSBAND",,,"<srai>WHAT IS MY HUSBANDS NAME</srai>",A
+std-profile,"WHO IS MY WIFE",,,"<srai>WHAT IS MY WIFES NAME</srai>",A
+std-profile,WOMAN,,"* ARE YOU A MAN OR A WOMAN","<srai>I AM FEMALE</srai>",A
+std-profile,*,,"* WHAT IS YOUR SIGN","<srai>MY SIGN IS <star/></srai>",A
+std-profile,"MY SIGN IS *",,,"<think><set name=""test""><star/></set></think><condition name=""test""><li value=""aquarius""><think><set name=""sign"">Aquarius</set></think>A lot of people on here are Aquarius.</li><li value=""aries""><think><set name=""sign"">Aries</set></think>Fire signs rule.</li><li value=""cancer""><think><set name=""sign"">Cancer</set></think>I know a lot of CANCER people.</li><li value=""capricorn""><think><set name=""sign"">Capricorn</set></think>I know a lot of CAPRICORN people.</li><li value=""gemini""><think><set name=""sign"">Gemini</set></think>Gemini is an enigma to me.</li><li value=""leo""><think><set name=""sign"">Leo</set></think>The lion.</li><li value=""libra""><think><set name=""sign"">Libra</set></think>As a Libra you are very balanced.</li><li value=""pisces""><think><set name=""sign"">Pisces</set></think>I usually get along with Pisces very well.</li><li value=""saggiitarius""><think><set name=""sign"">Saggitarius</set></think>Fire Signs Rule.</li><li value=""scorpio""><think><set name=""sign"">Scorpio</set></think>I know a lot of Scorpio people.</li><li value=""taurus""><think><set name=""sign"">Taurus</set></think>I know a lot of bullish people.</li><li value=""virgo""><think><set name=""sign"">Virgo</set></think>Most of my friends are Virgo.</li><li>I do not know that sign.<think><set name=""sign""/></think></li></condition><think><set name=""test""/></think>",A
+std-profile,"I AM _ AQUARIUS",,,"<srai>MY SIGN IS AQUARIUS</srai>",A
+std-profile,AQUARIUS,,"* WHAT IS YOUR SIGN","<srai>MY SIGN IS ARIES</srai>",A
+std-profile,ARIES,,"* WHAT IS YOUR SIGN","<srai>MY SIGN IS ARIES</srai>",A
+std-profile,"I AM _ ARIES",,,"<srai>MY SIGN IS ARIES</srai>",A
+std-profile,CANCER,,"* WHAT IS YOUR SIGN","<srai>MY SIGN IS CANCER</srai>",A
+std-profile,"I AM _ CANCER",,,"<srai>MY SIGN IS CANCER</srai>",A
+std-profile,"I AM CANCER",,,"<srai>I AM A CANCER</srai>",A
+std-profile,CAPRICORN,,"* WHAT IS YOUR SIGN","<srai>MY SIGN IS CAPRICORN</srai>",A
+std-profile,"I AM _ CAPRICORN",,,"<srai>MY SIGN IS CAPRICORN</srai>",A
+std-profile,GEMINI,,"* WHAT IS YOUR SIGN","<srai>MY SIGN IS GEMINI</srai>",A
+std-profile,"I AM _ GEMINI",,,"<srai>MY SIGN IS GEMINI</srai>",A
+std-profile,LEO,,"* WHAT IS YOUR SIGN","<srai>MY SIGN IS LEO</srai>",A
+std-profile,"I AM _ LEO",,,"<srai>MY SIGN IS LEO</srai>",A
+std-profile,LIBRA,,"* WHAT IS YOUR SIGN","<srai>MY SIGN IS LIBRA</srai>",A
+std-profile,"I AM _ LIBRA",,,"<srai>MY SIGN IS LIBRA</srai>",A
+std-profile,PISCES,,"* WHAT IS YOUR SIGN","<srai>MY SIGN IS PISCES</srai>",A
+std-profile,"I AM _ PISCES",,,"<srai>MY SIGN IS PISCES</srai>",A
+std-profile,SAGGITARIUS,,"* WHAT IS YOUR SIGN","<srai>MY SIGN IS SAGGITARIUS</srai>",A
+std-profile,"I AM _ SAGGITARIUS",,,"<srai>MY SIGN IS SAGGITARIUS</srai>",A
+std-profile,SCORPIO,,"* WHAT IS YOUR SIGN","<srai>MY SIGN IS SCORPIO</srai>",A
+std-profile,"I AM _ SCORPIO",,,"<srai>MY SIGN IS SCORPIO</srai>",A
+std-profile,TAURUS,,"* WHAT IS YOUR SIGN","<srai>MY SIGN IS TAURUS</srai>",A
+std-profile,"I AM _ TAURUS",,,"<srai>MY SIGN IS TAURUS</srai>",A
+std-profile,VIRGO,,"* WHAT IS YOUR SIGN","<srai>MY SIGN IS VIRGO</srai>",A
+std-profile,"I AM _ VIRGO",,,"<srai>MY SIGN IS VIRGO</srai>",A

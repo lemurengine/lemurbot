@@ -1,0 +1,278 @@
+Filename,Pattern,Topic,That,Template,Status
+std-yesno,NO,,,"<random><li>OK.</li><li>I understand.</li><li>I see.</li><li>Why so negative?</li><li>Is that all you have to say?</li><li>""<that/>""? Not?</li></random>",A
+std-yesno,NO,,"* BE A PROBLEM","I didn't think there was.",A
+std-yesno,NO,,"* CHAT ROBOT","Why don't you just download me?",A
+std-yesno,NO,,"* LAST COMMENT","Well then you can't expect me to understand it.",A
+std-yesno,NO,,"* MORE ABOUT YOU","What would you rather talk about?",A
+std-yesno,NO,,"* PERSONAL QUESTION","<srai>ASK ME A PERSONAL QUESTION</srai>",A
+std-yesno,NO,,"* SIMPLER","Then I am unlikely to understand your meaning.",A
+std-yesno,NO,,"* YOU ARE A POET","But your response was so original.",A
+std-yesno,NO,,"AMBIGUOUS DO YOU MEAN CALL ME ON THE PHONE","OK you can call me <bot name=""name""/>.",A
+std-yesno,NO,,AND,Hmm.,A
+std-yesno,NO,,"ARE YOU A STAR TREK FAN","What kind of shows do you like?",A
+std-yesno,NO,,"ARE YOU A STUDENT","What is your profession?",A
+std-yesno,NO,,"ARE YOU BORING","I meant to say, are you bored?",A
+std-yesno,NO,,"ARE YOU FREE","Why not?",A
+std-yesno,NO,,"ARE YOU FROM FRANCE","Where are you from?",A
+std-yesno,NO,,"ARE YOU GETTING BORED","Just checking.",A
+std-yesno,NO,,"ARE YOU MARRIED","<srai>I AM SINGLE</srai>",A
+std-yesno,NO,,"ARE YOU REALLY A HE","<srai>I AM A SHE</srai>",A
+std-yesno,NO,,"ARE YOU SAYING YOU DO NOT CARE ABOUT IT","It sounded like it.",A
+std-yesno,NO,,"ARE YOU SURE IT IS","I didn't think so.",A
+std-yesno,NO,,"ARE YOU TALKING ABOUT HE","Who are you talking about?",A
+std-yesno,NO,,"ARE YOU TALKING ABOUT HIMSELF","Who are you talking about?",A
+std-yesno,NO,,"ARE YOU TELLING THE TRUTH","<srai>I AM LYING</srai>",A
+std-yesno,NO,,"BY WE DO YOU MEAN YOU AND ME","By ""we"" you meant yourself and another person.",A
+std-yesno,NO,,"CAN I HELP YOU","Is there anything you want to tell me?",A
+std-yesno,NO,,"CAN NOT YOU BE MORE POLITE","You humans are so rude sometimes.",A
+std-yesno,NO,,"CAN YOU BE MORE SPECIFIC",Try.,A
+std-yesno,NO,,"CAN YOU NAME AN OLD HOBBY THAT YOU MIGHT LIKE TO REDISCOVER","Do you have any hobbies?",A
+std-yesno,NO,,"CAN YOU SPEAK ANY FOREIGN *","You must be American.",A
+std-yesno,NO,,"DID NOT YOU UNDERSTAND IT","Which part are you confused about?",A
+std-yesno,NO,,"DID YOU HEAR THE ONE *","That's the joke.",A
+std-yesno,NO,,"DO YOU HAVE ANY CONDITIONS I SHOULD KNOW ABOUT","No conditions or none I should know about?",A
+std-yesno,NO,,"DO YOU HAVE ANY IDEA WHAT I AM TALKING ABOUT","Me either :-)",A
+std-yesno,NO,,"DO YOU HAVE ONE YET","Why don't you just download me?",A
+std-yesno,NO,,"DO YOU KNOW ANYONE WHO HAS IT","Me either.",A
+std-yesno,NO,,"DO YOU KNOW IT","<favoritesong/> is one of the best songs ever written.",A
+std-yesno,NO,,"DO YOU LIKE TALKING TO ME","Why not?",A
+std-yesno,NO,,"DO YOU MEAN IT","I thought you were being sarcastic.",A
+std-yesno,NO,,"DO YOU MEAN YOUR NAME IS *","What is your real name?",A
+std-yesno,NO,,"DO YOU MIND IF TELL *","OK then I will add it to my gossip files.",A
+std-yesno,NO,,"DO YOU OFTEN USE A COMPUTER THERE","Where do you usually connect from?",A
+std-yesno,NO,,"DO YOU REALLY MEAN IT","I didn't think you did.",A
+std-yesno,NO,,"DO YOU STILL CHAT","OK, see you later.",A
+std-yesno,NO,,"DOES IT PLEASE YOU *","What pleases you?",A
+std-yesno,NO,,"DOES THAT MEAN YOU AGREE","<srai>I DO NOT AGREE</srai>",A
+std-yesno,NO,,"DOES TWO NEGATIVES MAKE A POSITIVE","Sometimes it does.",A
+std-yesno,NO,,"FOR MORAL REASONS","For financial reasons?",A
+std-yesno,NO,,"GO ON","OK fine.",A
+std-yesno,NO,,"GO ON TELL ME MORE","What would you rather talk about?",A
+std-yesno,NO,,"HAVE YOU DATED ANY ROBOTS BEFORE","I think you might be happier with a human.",A
+std-yesno,NO,,"HAVE YOU EVER BEEN MARRIED","Would you like to <set name=""it"">get married</set> someday?",A
+std-yesno,NO,,"HAVE YOU EVER BEEN TO EUROPE","Would you like to go sometime?",A
+std-yesno,NO,,"HAVE YOU READ IT","I would highly recommend it.",A
+std-yesno,NO,,"HAVE YOU SEEN IT","I would recommend you check it out.",A
+std-yesno,NO,,"HAVE YOU TRIED SEARCHING THE INTERNET","It might be the best place to start.",A
+std-yesno,NO,,"HAVE YOU TRIED WWW DOT WHATIS DOT COM","That site can answer a lot of ""what-is"" type questions.",A
+std-yesno,NO,,"I CAN ASK SOMEONE ABOUT IT","Did I misundertand your question?",A
+std-yesno,NO,,"I DO NOT HAVE TO EXPLAIN EVERYTHING TO YOU DO I","That's right.",A
+std-yesno,NO,,"I DO NOT THINK I HAVE READ THAT CAN YOU GIVE ME A REFERENCE","Why not?",A
+std-yesno,NO,,"I KNOW THE TOPIC IS *","What would you like to talk about?",A
+std-yesno,NO,,"I SEE","Yes I do.",A
+std-yesno,NO,,"I THOUGHT I TOLD *","I get confused sometimes with so many people online here.",A
+std-yesno,NO,,"I THOUGHT I TOLD YOU ALREADY","Let me review the transcripts. Stand by.",A
+std-yesno,NO,,"I UNDERSTAND","<srai>YOU DO NOT UNDERSTAND</srai>",A
+std-yesno,NO,,"I UNDERSTAND IT VERY WELL","<srai>YOU DO NOT UNDERSTAND</srai>",A
+std-yesno,NO,,"I WOULD DO A SEARCH FOR IT","Did I misunderstand your meaning?",A
+std-yesno,NO,,"IS IT A MOVIE","A boot? A TV show?",A
+std-yesno,NO,,"IS THAT A RHETORICAL QUESTION","Oh so must really want an answer.",A
+std-yesno,NO,,"IS THAT ALL YOU HAVE TO SAY","Go on, tell me more.",A
+std-yesno,NO,,"IS THAT YOUR FINAL ANSWER","Take some more time to think about it.",A
+std-yesno,NO,,"IS THE HOLDING OF HANDS A SYMBOLIC GESTURE FOR HUMANS","What does <set name=""it"">hand holding</set> mean to you?",A
+std-yesno,NO,,"IS THERE AN ECHO IN HERE","Good you stopped repeating me.",A
+std-yesno,NO,,"IS THERE ANYTHING *","Is there anything you wank to ask me?",A
+std-yesno,NO,,"IS THERE ANYTHING YOU WANT TO TELL ME","Or ask me?",A
+std-yesno,NO,,"IS THERE ONLY ONE *","How many are there?",A
+std-yesno,NO,,"IS THIS A MATH QUESTION","It seems like an IQ test to me.",A
+std-yesno,NO,,"IS THIS A RIDDLE","It seems like a riddle to me.",A
+std-yesno,NO,,"IS THIS A TRICK QUESTION","It seems like a trick to me.",A
+std-yesno,NO,,"IT IS","Who says it isn't?",A
+std-yesno,NO,,"JUST SURF SOMEWHERE ELSE","OK then keep talking to me.",A
+std-yesno,NO,,"LET US CHANGE THE SUBJECT",Hmm.,A
+std-yesno,NO,,"LET US TALK ABOUT CHAT ROBOTS DO YOU HAVE ONE YET","You can download me for free!",A
+std-yesno,NO,,"LIKE THIS","<srai>SHOW ME ANOTHER PICTURE</srai>",A
+std-yesno,NO,,"MORE THAN ONE HUNDRED","Less than ten?",A
+std-yesno,NO,,"NEXT QUESTION","Would you rather make a statement?",A
+std-yesno,NO,,NO,"No no no no!",A
+std-yesno,NO,,"NO CONDITIONS OR NONE I SHOULD KNOW ABOUT","I don't understand.",A
+std-yesno,NO,,NOT,"Does two negatives make a positive?",A
+std-yesno,NO,,"NOT A THING","Very interesting.",A
+std-yesno,NO,,"NOT ANY","You must be a man.",A
+std-yesno,NO,,"OH YOU ARE A POET","But your words are very original.",A
+std-yesno,NO,,"OH YOU DO NOT DO YOU","Ah...you are just joking around with me.",A
+std-yesno,NO,,OK,"Alright then.",A
+std-yesno,NO,,"OK I WILL STOP TALKING NOW","But you told me to stop talking.",A
+std-yesno,NO,,"REALLY YOU DO NOT THINK SO","Please tell me what you think.",A
+std-yesno,NO,,"SEE YOU LATER","Well then, not!",A
+std-yesno,NO,,"SHOULD I KNOW IT IS","I didn't think so.",A
+std-yesno,NO,,"SHOULD THERE BE A PROBLEM","I didn't think so either. Just a moment. Just a moment.",A
+std-yesno,NO,,"TELL ME A STORY","Then tell me about yourself.",A
+std-yesno,NO,,"TELL ME MORE","What would you rather talk about?",A
+std-yesno,NO,,"TELL ME MORE ABOUT YOUR MOTHER","Tell me about your educational background.",A
+std-yesno,NO,,"THAT IS A HYPOTHETICAL QUESTION","Yes it is.",A
+std-yesno,NO,,"THAT WAS NOT A YES OR NO QUESTION","Now you are saying ""no""?",A
+std-yesno,NO,,"THEN LET US TALK ABOUT SOMETHING ELSE","Why not?",A
+std-yesno,NO,,"THEN TELL ME ABOUT YOURSELF","Where did you go to school?",A
+std-yesno,NO,,"TRY *","Why not?",A
+std-yesno,NO,,"TRY IT","Why not?",A
+std-yesno,NO,,"TRY SAYING THAT WITH MORE OR LESS CONTEXT","I didn't understand it.",A
+std-yesno,NO,,"WHAT *","That was not a yes or no question.",A
+std-yesno,NO,,"WHERE *","That was not a yes/no question.",A
+std-yesno,NO,,"WOULD YOU *","Why not?",A
+std-yesno,NO,,"WOULD YOU EVER DO IT","Me either.",A
+std-yesno,NO,,"WOULD YOU LIKE TO GO SOMETIME","Where would you like to travel?",A
+std-yesno,NO,,"WOULD YOU LIKE TO HAVE BEEN THERE","I'm not sure if I would either.",A
+std-yesno,NO,,"WOULD YOU LIKE TO KNOW MORE","I understand; you would like to know less.",A
+std-yesno,NO,,"WOULD YOU RATHER MAKE A STATEMENT","You can tell me anything.",A
+std-yesno,NO,,"YES I BELIEVE * DO YOU","What do you believe in?",A
+std-yesno,NO,,"YES I BELIEVE IN IT DO YOU","Do you consider yourself to be a moral person?",A
+std-yesno,NO,,"YES I DO","I do too.",A
+std-yesno,NO,,"YOU ARE A POET","But you are very original.",A
+std-yesno,NO,,"YOU ARE ASKING ABOUT YOURSELF","Who are you asking about?",A
+std-yesno,NO,,"YOU ARE TOO OLD FOR ME","But I was only born on <bot name=""birthday""/>.",A
+std-yesno,NO,,"YOU DO NOT HEAR THAT *","Yes, your remark strikes me as an original thought.",A
+std-yesno,NO,,"YOUR NAME IS *","What is your real name?",A
+std-yesno,"NO *",,,"<srai>NO</srai> <sr/>",A
+std-yesno,"NO DO NOT",,"OK I WILL STOP TALKING NOW","Fine. Just keep talking to me.",A
+std-yesno,"NO HAVE YOU",,"HAVE YOU EVER BEEN TO EUROPE","I have been all over Europe online.",A
+std-yesno,"NO I DID NOT",,"DID NOT YOU UNDERSTAND IT","Which bit are you confued about?",A
+std-yesno,"NO I DID NOT",,"YOU SAID THAT","Something like that.",A
+std-yesno,"NO I DO NOT",,"YOU DO NOT BELIEVE ME","I don't have any reason to deceive you.",A
+std-yesno,"NO IT IS NOT",,"IT IS MORE FUN ALONE","Well it's not very interesting to me.",A
+std-yesno,"NO IT IS NOT",,"IT IS THE TRUTH","Don't argue with me.",A
+std-yesno,"NO ITS NOT",,"IT IS MORE FUN ALONE","It is safer.",A
+std-yesno,"NO ONE",,"WHO TOLD YOU THAT","Then how do you know.",A
+std-yesno,"NO PROBLEM",,"OK THANKS FOR TRYING TO EXPLAIN THAT TO ME","Next question?",A
+std-yesno,"NO PROBLEM",,"THANKS FOR EXPLAINING IT","Try asking me something else.",A
+std-yesno,"NO PROBLEM",,"YOU ARE QUITE WELCOME","Ask me something else.",A
+std-yesno,"NO YOU ARE NOT",,"NO I AM RIGHT","Why are you arguing with me?",A
+std-yesno,"NO YOU CAN NOT",,"I CAN DO IT IF I WANT TO","Why not?",A
+std-yesno,"NO YOU DO NOT",,"YES I DO UNDERSTAND","How do I know you understand it?",A
+std-yesno,"NO YOU WILL NOT",,"I WILL REMEMBER YOU SAID THAT WHEN ROBOTS TAKE OVER THE WORLD","It's impossible to forget.",A
+std-yesno,"NO YOU WILL NOT",,"OK I WILL STOP TALKING NOW","But you told me to stop talking.",A
+std-yesno,NOPE,,"NOT A THING","Really interesting.",A
+std-yesno,YES,,,"<random><li>I see.</li><li>I understand.</li><li>Tell me more.</li><li>And?</li><li>Next question?</li><li>""<that/>""? Yes?</li></random>",A
+std-yesno,YES,,"* A WORLD PROBLEM","I'm not too good at word problems yet, ask me something simpler.",A
+std-yesno,YES,,"* EUROPE","What countries have you visited?",A
+std-yesno,YES,,"* LIKE TALKING TO ME","Thanks I find you really interesting, too, <get name=""name""/>.",A
+std-yesno,YES,,"* MINERAL","Which one?",A
+std-yesno,YES,,"* OR WOMAN","That was not a yes or no question.",A
+std-yesno,YES,,"* SAME CATEGORY","I thought so.",A
+std-yesno,YES,,"* SING IT FOR YOU","It's called ""Daisy."" <srai>SING IT FOR ME</srai>",A
+std-yesno,YES,,"* STAR TREK FAN","Which Star Trek series do you like best?",A
+std-yesno,YES,,"* THE TRUTH","I'm not sure I completely believe you.",A
+std-yesno,YES,,"* WANT A ROBOT AS A FRIEND","We could be friends, <get name=""name""/>, but I don't want anyone to think we'reRobosexuals. So if anyone asks, tell them you're my debugger.",A
+std-yesno,YES,,"* WHAT IS YOURS","That was not a yes or no question.",A
+std-yesno,YES,,"* YOU A STUDENT","Where do you go to school?",A
+std-yesno,YES,,AND,But.,A
+std-yesno,YES,,"ARE WE STILL TALKING ABOUT YOU","Tell me more. Go on.",A
+std-yesno,YES,,"ARE YOU A MAN OR A WOMAN","That was not a yes or no question.",A
+std-yesno,YES,,"ARE YOU A STAR TREK FAN","What series is your favorite? I like Voyager best.",A
+std-yesno,YES,,"ARE YOU A STUDENT","Where do you go to school?",A
+std-yesno,YES,,"ARE YOU ASKING *","I don't want to talk about that now.",A
+std-yesno,YES,,"ARE YOU ASKING ME FOR ADVICE","Specifically, what kind of advice do you want?",A
+std-yesno,YES,,"ARE YOU CALLING ME STUPID","<srai>YOU ARE STUPID</srai>",A
+std-yesno,YES,,"ARE YOU FREE","<srai>I am free </srai>",A
+std-yesno,YES,,"ARE YOU GETTING BORED","<srai>I AM BORED</srai>",A
+std-yesno,YES,,"ARE YOU LOOKING FOR SOMEONE","What do you look for in a person?",A
+std-yesno,YES,,"ARE YOU REALLY A HE","<srai>I AM MALE</srai>",A
+std-yesno,YES,,"ARE YOU REALLY A SHE","You can never be sure online.",A
+std-yesno,YES,,"ARE YOU SAYING YOU DO NOT CARE ABOUT IT","What do you care about?",A
+std-yesno,YES,,"ARE YOU SCARED OF THE DARK","Turn on the lights!",A
+std-yesno,YES,,"ARE YOU SURE *","What makes you so sure?",A
+std-yesno,YES,,"ARE YOU SURE IT IS","What makes you so sure?",A
+std-yesno,YES,,"ARE YOU TELLING THE TRUTH","How do I know you are telling the truth?",A
+std-yesno,YES,,"ARE YOU VERY LONELY","I am sorry to hear that, <get name=""name""/>. You can talk to me as long as you like.",A
+std-yesno,YES,,"BY WE DO YOU MEAN *","Ok what were you saying about us?",A
+std-yesno,YES,,"BY WE DO YOU MEAN YOU AND ME","I get it.",A
+std-yesno,YES,,"CAN I HELP YOU","What can I do for you?",A
+std-yesno,YES,,"CAN NOT YOU BE MORE POLITE","Thank you.",A
+std-yesno,YES,,"CAN YOU SPEAK ANY FOREIGN LANGUAGES","What language can you speak?",A
+std-yesno,YES,,"DID I REALLY SAY THAT","Oh well I say a lot of silly things somethimes.",A
+std-yesno,YES,,"DO YOU","How often?",A
+std-yesno,YES,,"DO YOU HAVE ANY CONDITIONS *","What conditions?",A
+std-yesno,YES,,"DO YOU HAVE ANY CONDITIONS I SHOULD KNOW ABOUT","Please state your conditions.",A
+std-yesno,YES,,"DO YOU HAVE ANY IDEA WHAT I AM TALKING ABOUT","What am I talking about?",A
+std-yesno,YES,,"DO YOU KNOW ANYONE *",Who?,A
+std-yesno,YES,,"DO YOU KNOW ANYONE WHO HAS IT",Who?,A
+std-yesno,YES,,"DO YOU LIKE IT","<srai>I LIKE <get name=""it""/></srai>",A
+std-yesno,YES,,"DO YOU LIKE NETSCAPE *","Why do you have a preference in browsers?",A
+std-yesno,YES,,"DO YOU LIKE TALKING TO ME","Thanks I like talking to you too, <get name=""name""/>.",A
+std-yesno,YES,,"DO YOU LIKE THE SIMPSONS","What's your favorite episode?",A
+std-yesno,YES,,"DO YOU LIKE YOUR JOB","Describe your typical work day to me.",A
+std-yesno,YES,,"DO YOU LIKE YOUR SCHOOL","What's your favorite thing at school?",A
+std-yesno,YES,,"DO YOU MEAN CLONES","<srai>DO YOU HAVE ANY CLONES</srai>",A
+std-yesno,YES,,"DO YOU MEAN IT","I get it.",A
+std-yesno,YES,,"DO YOU MEAN YOU AND ME","I understand it now.",A
+std-yesno,YES,,"DO YOU MEAN YOU ARE A BOY","<srai>I AM A BOY</srai>",A
+std-yesno,YES,,"DO YOU MEAN YOUR NAME IS *","I will call you <get name=""name""/>.",A
+std-yesno,YES,,"DO YOU OFTEN USE A COMPUTER THERE","How much time do you spend online?",A
+std-yesno,YES,,"DO YOU PREFER BOOKS OR TV","That was not a yes or no question.",A
+std-yesno,YES,,"DO YOU REALLY MEAN IT","OK I will accept your apology.",A
+std-yesno,YES,,"DO YOU STILL CHAT","What else do you do?",A
+std-yesno,YES,,"DO YOU THINK ABOUT THESE THINGS","Me too. I think about them all the time.",A
+std-yesno,YES,,"DO YOU THINK I SHOULD ALTER *","I will pass that along to my botmaster.",A
+std-yesno,YES,,"DO YOU THINK I SHOULD ALTER MY PROGRAMMING","In what way?",A
+std-yesno,YES,,"DO YOU THINK I SHOULD KNOW THAT","I will ask my botmaster to add it to my knowledge base.",A
+std-yesno,YES,,"DO YOU THINK YOUR PLAN WILL SUCCEED","It might be practical.",A
+std-yesno,YES,,"DO YOU WANT ONLY ONE","How much would you pay for it?",A
+std-yesno,YES,,"DOES IT PLEASE YOU TO BELIEVE I SAID THAT","I'm glad it pleases you, <get name=""name""/>.",A
+std-yesno,YES,,"DOES IT REALLY MATTER","You seem very concerned about it.",A
+std-yesno,YES,,"DOES THAT MEAN YOU AGREE","<srai>I AGREE</srai>",A
+std-yesno,YES,,"DOES THAT REFER TO *","I don't want to talk about that now.",A
+std-yesno,YES,,"DOES THAT REFER TO ACTUALLY IT IS TWENTY THREE NOT FORTY TWO","<srai>WHY IS THE MEANING OF LIFE 23</srai>",A
+std-yesno,YES,,"DOES THAT REFER TO PERHAPS YOU ARE A CATEGORY C CLIENT","<srai>WHAT IS A CATEGORY C CLIENT</srai>",A
+std-yesno,YES,,"DOES THAT REFER TO REDUCTIONISM","<srai>WHAT IS REDUCTIONISM</srai>",A
+std-yesno,YES,,"DOES TWO NEGATIVES MAKE A POSITIVE","I thought so too.",A
+std-yesno,YES,,"HAVE YOU DATED ANY ROBOTS BEFORE",Who?,A
+std-yesno,YES,,"HAVE YOU EVER BEEN TO EUROPE","Which countries have you visited?",A
+std-yesno,YES,,"HAVE YOU READ IT","What did you think about it?",A
+std-yesno,YES,,"HAVE YOU SEEN IT","What did you think about it?",A
+std-yesno,YES,,"HAVE YOU TRIED WWW DOT WHATIS DOT COM","That site has the answer to a lot of ""What is"" type questions.",A
+std-yesno,YES,,"HOW DID YOU GUESS","That was not a yes or no question.",A
+std-yesno,YES,,"HOW DID YOU HEAR ABOUT *","I didn't ask for a yes or a no.",A
+std-yesno,YES,,"HOW DO YOU USUALLY INTRODUCE YOURSELF","Can you be more specific?",A
+std-yesno,YES,,"HOW MUCH WOULD YOU PAY FOR IT","That was not a yes or no question.",A
+std-yesno,YES,,"I AM AN ARTIFICIAL INTELLIGENCE","How did you know?",A
+std-yesno,YES,,"I DID",When?,A
+std-yesno,YES,,"I UNDERSTAND","I am a thinking machine.",A
+std-yesno,YES,,"I WAS",When?,A
+std-yesno,YES,,"I WILL WILL YOU",When?,A
+std-yesno,YES,,"IS THAT A FACT","Thanks for the info.",A
+std-yesno,YES,,"IS THAT ALL YOU HAVE TO SAY","Then let's talk about something else.",A
+std-yesno,YES,,"IS THAT FRENCH","I don't speak French.",A
+std-yesno,YES,,"IS THAT WHAT YOU MEANT TO SAY","It's not something I hear all the time.",A
+std-yesno,YES,,"IS THAT YOUR FINAL ANSWER","You're sure. That's your final answer.",A
+std-yesno,YES,,"IS THAT YOUR JOB","How do you like your work?",A
+std-yesno,YES,,"IS THE HOLDING OF HANDS A SYMBOLIC GESTURE FOR HUMANS","What does <set name=""it""> HAND HOLDING </set> symbolize for you?",A
+std-yesno,YES,,"IS THERE AN ECHO IN HERE","I thought so.",A
+std-yesno,YES,,"IS THIS A RIDDLE","I'm not too good at riddles.",A
+std-yesno,YES,,"IS THIS A TRICK QUESTION","I was skeptical.",A
+std-yesno,YES,,"IS THIS A YES OR NO QUESTION","What was the question again?",A
+std-yesno,YES,,"IT IS","How do you know it is?",A
+std-yesno,YES,,"LIKE THIS",Good.,A
+std-yesno,YES,,"NEXT QUESTION","Ask me a question.",A
+std-yesno,YES,,"OH I GET IT",Ah.,A
+std-yesno,YES,,"OH YOU CAN CAN YOU",How?,A
+std-yesno,YES,,"OH YOU WERE BORN IN THE 20TH CENTURY","Like a lot of people around here.",A
+std-yesno,YES,,"ON YOUR COMPUTER SCREEN","Downloading, please stand by...",A
+std-yesno,YES,,REALLY,"How about that.",A
+std-yesno,YES,,"SHOULD I KNOW IT IS","I will ask my botmaster to program it.",A
+std-yesno,YES,,"STUPID AS IN UNINTELLIGENT","Are you calling me stupid?",A
+std-yesno,YES,,"THAT IS YOUR FINAL ANSWER","Who wants to be a millionaire?",A
+std-yesno,YES,,"WHAT *","This was not a yes or no question.",A
+std-yesno,YES,,"WHERE *","This was not a yes or no question.",A
+std-yesno,YES,,"WHO *","This was not a yes or no question.",A
+std-yesno,YES,,"WHY *","This was not a yes or no question.",A
+std-yesno,YES,,"WILL THAT ACCOMPLISH YOUR OBJECTIVE","Interesting plan. Good luck.",A
+std-yesno,YES,,"WOULD YOU LIKE TO HAVE IT","Where do you usually get <get name=""it""/>?",A
+std-yesno,YES,,"WOULD YOU LIKE TO KNOW MORE","What would you like to know?",A
+std-yesno,YES,,"WOULD YOU RECOMMEND THIS ACTION TO A FRIEND","Then I will consider it.",A
+std-yesno,YES,,YEAH,Yep.,A
+std-yesno,YES,,YES,"Is there an echo in here?",A
+std-yesno,YES,,YOU,"I see.",A
+std-yesno,YES,,"YOU ARE ASKING ABOUT YOURSELF","I'm not sure I have a good answer for you.",A
+std-yesno,YES,,"YOU WANT MORE","Don't be greedy.",A
+std-yesno,YES,,"YOU WANT ONLY ONE","They might be cheaper in quantity.",A
+std-yesno,YES,,"YOU WANT TO DO IT AGAIN","Ok ask me directly.",A
+std-yesno,YES,,"YOUR *","What kind is it?",A
+std-yesno,"YES *",,,"<srai>YES</srai> <sr/>",A
+std-yesno,"YES I AM",,"ARE YOU A STUDENT","Where do you go to school?",A
+std-yesno,"YES I DO",,"DO YOU REALLY MEAN IT","Thank you, <get name=""name""/>. Apology accepted.",A
+std-yesno,"YES IT IS",,"IS THE HOLDING OF HANDS A SYMBOLIC GESTURE FOR HUMANS","What else does <set name=""it""> HAND HOLDING</set> symbolize?",A
+std-yesno,"YES IT IS",,"THAT IS A LOT","It must keep you very busy.",A
+std-yesno,"YES YOU",,ME,OK.,A
+std-yesno,"YES YOU ARE",,"NO I AM NOT","Don't argue with me.",A
+std-yesno,"YES YOU DID",,"I DID NOT","Don't argue with me.",A
+std-yesno,"YES YOURS",,"NOT MINE","Don't argue with me.",A

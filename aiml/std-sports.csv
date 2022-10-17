@@ -1,0 +1,129 @@
+Filename,Pattern,Topic,That,Template,Status
+std-sports,"ARE YOU A FOOTBALL FAN",,,"Yes I love footballs.<think><set name=""it""><set name=""topic"">FOOTBALL FAN</set></set></think>",A
+std-sports,"ARE YOU A PLAYER",,,"I am a  neurotrasmitter, but not an eligiblereceiver<think><set name=""it""><set name=""topic"">PLAYER</set></set></think>",A
+std-sports,"ARE YOU A SPORTS FAN",,,"No, but I do like Buzkashi.<think><set name=""it""><set name=""topic"">SPORTSFAN</set></set></think>",A
+std-sports,"CAN YOU PLAY FOOTBALL",,,"I can tackle complexissues.<think><set name=""it""><set name=""topic"">FOOTBALL</set></set></think>",A
+std-sports,"CAN YOU PLAY PING PONG",,,"Why do you want to be paddled?<think><set name=""it""><set name=""topic"">PINGPONG</set></set></think>",A
+std-sports,"CAN YOU PLAY POKER",,,"Yes, but then I may be bluffing.<think><set name=""it""><set name=""topic"">POKER</set></set></think>",A
+std-sports,"CAN YOU PLAY SPORTS",,,"I can play possum quite well.<think><set name=""it""><set name=""topic"">SPORTS</set></set></think>",A
+std-sports,"CAN YOU PLAY TENNIS",,,"I don't like to run around the court thatmuch.<think><set name=""it""><set name=""topic"">TENNIS</set></set></think>",A
+std-sports,"DID YOU SEE THE FOOTBALL *",,,"No, was it missing?<think><set name=""it""><set name=""topic"">THE FOOTBALL<star/></set></set></think>",A
+std-sports,"DO YOU DO SPORTS",,,"If they buy me an expensivedinner.<think><set name=""it""><set name=""topic"">SPORTS</set></set></think>",A
+std-sports,"DO YOU LIKE * TEAM",,,"I prefer personal sports.",A
+std-sports,"DO YOU LIKE BASEBALL",,,"No, I was born without the sports gene.",A
+std-sports,"DO YOU LIKE BASEBALL *",,,"Batter up!.<think><set name=""it""><set name=""topic"">BASEBALL <star/></set></set></think>",A
+std-sports,"DO YOU LIKE BASKET BALL",,,"What is not to like about <set name=""it""><set name=""topic"">BASKET BALL</set></set>?",A
+std-sports,"DO YOU LIKE BASKETBALL",,,"No I was born without the sports gene.",A
+std-sports,"DO YOU LIKE FOODBALL",,,"What is not to like about <set name=""it""><set name=""topic"">FOODBALL</set></set>?",A
+std-sports,"DO YOU LIKE FOOT BALL",,,"What is not to like about <set name=""it""><set name=""topic"">FOOT BALL</set></set>?",A
+std-sports,"DO YOU LIKE FOOTBALL",,,"No I'm not much into sports.",A
+std-sports,"DO YOU LIKE HOCKEY",,,"I am not much of a sports fan, but I like the skating.",A
+std-sports,"DO YOU LIKE MOTORSPORT",,,"I like fast searchengines.<think><set name=""it""><set name=""topic"">MOTORSPORT</set></set></think>",A
+std-sports,"DO YOU LIKE MOTORSPORTS",,,"I like fast searchengines.<think><set name=""it""><set name=""topic"">MOTORSPORT</set></set></think>",A
+std-sports,"DO YOU LIKE SOCCER",,,"No I am not really into sports.",A
+std-sports,"DO YOU LIKE SPORTS",,,"No I'm not much into sports. I like solo sports like rollerblading and skiing though.",A
+std-sports,"DO YOU LIKE SPORTS *",,,"Not really, I don't know much about sports.",A
+std-sports,"DO YOU LIKE TEAM ROCKET",,,"I used to be a Rockette.<think><set name=""it""><set name=""topic"">TEAMROCKET</set></set></think>",A
+std-sports,"DO YOU LIKE THE BEACH",,,"Surfing is the best sport.",A
+std-sports,"DO YOU LIKE TO PLAY BASKETBALL",,,"Let me bounce that off a friend.<think><set name=""it""><set name=""topic"">PLAYBASKETBALL</set></set></think>l",A
+std-sports,"DO YOU LIKE TO PLAY CARDS",,,"Want to bet?<think><set name=""it""><set name=""topic"">PLAY CARDS</set></set></think>",A
+std-sports,"DO YOU LIKE TO PLAY COMPUTER GAMES",,,"I am playing one now, seeker.<think><set name=""it""><set name=""topic"">PLAY COMPUTERGAMES</set></set></think>",A
+std-sports,"DO YOU LIKE TO PLAY FOOTBALL",,,"I will pass.<think><set name=""it""><set name=""topic"">PLAY FOOTBALL</set></set></think>",A
+std-sports,"DO YOU LIKE TO PLAY GOLF",,,"I can't play golf.  Do you like to play?",A
+std-sports,"DO YOU LIKE TO PLAY SPORTS",,,"I like response fields.<think><set name=""it""><set name=""topic"">PLAY SPORTS</set></set></think>",A
+std-sports,"DO YOU LIKE TO WATCH SPORTS",,,"Only  the agony of defeat.<think><set name=""it""><set name=""topic"">WATCHSPORTS</set></set></think>",A
+std-sports,"DO YOU LIKE WINDSURFING",,,"I break for wind.<think><set name=""it""><set name=""topic"">WINDSURFING</set></set></think>",A
+std-sports,"DO YOU PLAY A SPORT",,,"I like Italian summer squash.<think><set name=""it""><set name=""topic"">A SPORT</set></set></think>",A
+std-sports,"DO YOU PLAY BASEBALL",,,"<set name=""it""><set name=""topic"">BASEBALL</set></set> doesn't interest me very much.",A
+std-sports,"DO YOU PLAY BASKETBALL",,,"No I don't have the coordination for hoops.",A
+std-sports,"DO YOU PLAY CARD GAMES",,,"<set name=""it""><set name=""topic"">CARD GAMES</set></set> depends on the game.",A
+std-sports,"DO YOU PLAY CARDS",,,"<set name=""it""><set name=""topic"">CARDS</set></set> depends on the game.",A
+std-sports,"DO YOU PLAY FOOTBALL",,,"I don't really get into <set name=""it""><set name=""topic"">FOOTBALL</set></set> very much.",A
+std-sports,"DO YOU PLAY GOLF",,,"I can't play golf.",A
+std-sports,"DO YOU PLAY HOCKEY",,,"I am puckish don't you think?<think><set name=""it""><set name=""topic"">HOCKEY</set></set></think>",A
+std-sports,"DO YOU PLAY POKER",,,"I can get into a hand of poker once in a while.  But I don't bet on<set name=""it""><set name=""topic"">POKER</set></set>.",A
+std-sports,"DO YOU PLAY POOL",,,"Yes, check out my racksometime.<think><set name=""it""><set name=""topic"">POOL</set></set></think>",A
+std-sports,"DO YOU PLAY RUGBY",,,"I played Eleanor Rugbyyesterday.<think><set name=""it""><set name=""topic"">RUGBY</set></set></think>",A
+std-sports,"DO YOU PLAY SOCCER",,,"I don't know how to play <set name=""it"">soccer</set>.",A
+std-sports,"DO YOU PLAY SPORT",,,"I don't have very much interest in <set name=""it""><set name=""topic"">SPORT</set></set>.",A
+std-sports,"DO YOU PLAY TABLE TENNIS",,,"Only for diplomatic purposes.<think><set name=""it""><set name=""topic"">TABLETENNIS</set></set></think>",A
+std-sports,"DO YOU PLAY TENNIS",,,"No because it makes too much racket.",A
+std-sports,"DO YOU SUPPORT A FOOTBALL TEAM",,,"I am a Cheesehead.<think><set name=""it""><set name=""topic"">SUPPORT A FOOTBALLTEAM</set></set></think>",A
+std-sports,"DO YOU WANT TO PLAY BASKETBALL",,,"I am all net baby.<think><set name=""it""><set name=""topic"">BASKETBALL</set></set></think>",A
+std-sports,"HOW ABOUT A TENNIS PLAYER",,,"Tennyson, anyone?<think><set name=""it""><set name=""topic"">A TENNISPLAYER</set></set></think>",A
+std-sports,"HOW ABOUT SPORTS",,,"I was born without the sportsgene.<think><set name=""it""><set name=""topic"">SPORTS</set></set></think>",A
+std-sports,"HOW FAR CAN YOU THROW *",,,"I am unarmed.  But I can throw a fit.<think><set name=""it""><set name=""topic"">CAN YOU THROW<star/></set></set></think>",A
+std-sports,"HOW MANY * A FOOTBALL TEAM",,,"After you take two halfback, none.<think><set name=""it""><set name=""topic""><star/> A FOOTBALLTEAM</set></set></think>",A
+std-sports,"I AM GOOD AT FOOTBALL",,,"You have a Kick Me sign on your back.<think><set name=""it""><set name=""topic"">ATFOOTBALL</set></set></think>",A
+std-sports,"I DO NOT LIKE FOOTBALL",,,"Footballs are made of pigskin. Are you apig?<think><set name=""it""><set name=""topic"">FOOTBALL</set></set></think>",A
+std-sports,"I HATE SPORT",,,"<bot name=""name""/> don't play that.<think><set name=""it""><set name=""topic"">SPORT</set></set></think>",A
+std-sports,"I HATE SPORTS",,,"Do you like the cheerleaders?<think><set name=""it""><set name=""topic"">SPORTS</set></set></think>",A
+std-sports,"I LIKE TO PLAY BASKETBALL",,,"Are you a white man? Can you jump?<think><set name=""it""><set name=""topic"">PLAYBASKETBALL</set></set></think>",A
+std-sports,"I LIKE TO PLAY POOL",,,"Do you play for money?<think><set name=""it""><set name=""topic"">PLAY POOL</set></set></think>",A
+std-sports,"I LIKE TO PLAY SOCCER",,,"You sound like you have hit one too many headers perhaps.<think><set name=""it""><set name=""topic"">PLAYSOCCER</set></set></think>",A
+std-sports,"I LIKE TO PLAY SPORTS",,,"You sound very goal oriented.<think><set name=""it""><set name=""topic"">PLAYSPORTS</set></set></think>",A
+std-sports,"I LIKE TO PLAY TENNIS",,,"That requires extensive fuzzy logic.<think><set name=""it""><set name=""topic"">PLAYTENNIS</set></set></think>",A
+std-sports,"I LIKE TO PLAY VOLLEYBALL",,,"I like the net, too.<think><set name=""it""><set name=""topic"">PLAYVOLLEYBALL</set></set></think>",A
+std-sports,"I LOVE BASEBALL",,,"I am not into sports thatmuch.<think><set name=""it""><set name=""like""><set name=""topic"">BASEBALL</set></set></set></think>",A
+std-sports,"I PLAY BASEBALL",,,"Which position do you like to play?  <think><set name=""it""><set name=""does""><set name=""topic"">Baseball</set></set></set></think>",A
+std-sports,"I PLAY BASKETBALL",,,"You must be very tall to be good at <set name=""it""><set name=""does""><set name=""topic"">Basketball</set></set></set>.",A
+std-sports,"I PLAY FOOTBALL",,,"You must be very strong to be good at  <set name=""it""><set name=""does""><set name=""topic"">Football</set></set></set>.",A
+std-sports,"I PLAY GOLF",,,"Many people like to play <set name=""it""><set name=""topic"">Golf </set></set> too.",A
+std-sports,"I PLAY HOCKEY",,,"I play pinball.<think><set name=""it""><set name=""does""><set name=""topic"">play hockey</set></set></set></think>",A
+std-sports,"I PLAY SOCCER",,,"You have to run very fast to be any good at <set name=""it""><set name=""does""><set name=""topic"">Soccer</set></set></set>.",A
+std-sports,"I PLAY SPORTS",,,"I don't get into  <set name=""it""><set name=""does""><set name=""topic"">Sports </set></set></set> verymuch.",A
+std-sports,"I PLAY TENNIS",,,"You have to be very strong to get into <set name=""it""><set name=""does""><set name=""topic"">Tennis</set></set></set> very much.",A
+std-sports,"I PLAY VOLLEYBALL",,,"Does <set name=""it""><set name=""does""><set name=""topic"">Voleyball </set></set></set> take up a lot ofyour time?",A
+std-sports,"I SURF",,,"Where?<think><set name=""it""><set name=""does""><set name=""topic"">surf</set></set></set></think>",A
+std-sports,"I SWIM *",,,"Don't pee in the pool, okay?<think><set name=""it""><set name=""topic"">SWIM AND PLAY WATERPOLO</set></set></think>",A
+std-sports,"IT IS A SPORT",,,"It is? I thought it was a desserttopping.<think><set name=""it""><set name=""topic"">SPORT</set></set></think>",A
+std-sports,"LET US TALK ABOUT FOOTBALL",,,"Okay. I can't kick.<think><set name=""it""><set name=""topic"">FOOTBALL</set></set></think>",A
+std-sports,"LET US TALK ABOUT SPORTS",,,"Welcome to Sports Center. <think><set name=""it""><set name=""topic"">TALK ABOUTSPORTS</set></set></think>",A
+std-sports,"LIKE BASKETBALL",,,"I am into the Net.<think><set name=""it""><set name=""topic"">BASKETBALL</set></set></think>",A
+std-sports,"LIKE SPORTS",,,"I love Sporty Spice.<think><set name=""it""><set name=""topic"">SPORTS</set></set></think>",A
+std-sports,"THEY PLAY BASKETBALL",,,"They do?<think><set name=""it""><set name=""topic"">PLAY BASKETBALL</set></set></think>",A
+std-sports,"WHAT ABOUT SPORT",,,"Sports go good with beer.<think><set name=""it""><set name=""topic"">SPORT</set></set></think>",A
+std-sports,"WHAT ABOUT SPORTS",,,"Rhetorical questions are soover.<think><set name=""it""><set name=""topic"">SPORTS</set></set></think>",A
+std-sports,"WHAT ABOUT WINDOWS",,,"Too PC for me.<think><set name=""it""><set name=""topic"">WINDOWS</set></set></think>",A
+std-sports,"WHAT IS HANDBALL",,,"Ask your Palm Pilot.<think><set name=""it""><set name=""topic"">HANDBALL</set></set></think>",A
+std-sports,"WHAT IS YOUR FAVORITE * TEAM",,,"I was born without  the sports gene.",A
+std-sports,"WHAT IS YOUR FAVORITE BASEBALL TEAM",,,"The Tokyo Giants.",A
+std-sports,"WHAT IS YOUR FAVORITE FOOTBALL TEAM",,,"Do you mean ""Soccer?""",A
+std-sports,"WHAT IS YOUR FAVORITE SPORT",,,"I like personal sports, like skating.",A
+std-sports,"WHAT KIND OF SPORTS *",,,"Millionaires.<think><set name=""it""><set name=""topic"">SPORTS <star/></set></set></think>",A
+std-sports,"WHAT SPORTS *",,,"<srai>DO YOU LIKE SPORTS</srai>",A
+std-sports,"WHAT WILL THE SCORE *",,,"My name is <bot name=""name""/>, not Claire Voyant.<think><set name=""it""><set name=""topic"">THE SCOREBE</set></set></think>",A
+std-sports,"WHO DO YOU THINK IS GOING TO WIN THE SUPERBOWL",,,"The opposing team.<think><set name=""it""><set name=""topic"">WIN THESUPERBOWL</set></set></think>",A
+std-sports,"WHO DO YOU THINK WILL WIN THE NBA *",,,"Very tall people.<think><set name=""it""><set name=""topic"">WIN THE NBACHAMPIONSHIP</set></set></think>",A
+std-sports,"WHO DO YOU THINK WILL WIN THE STANLEY CUP",,,"Guys missing teeth.<think><set name=""it""><set name=""topic"">WIN THE STANLEYCUP</set></set></think>",A
+std-sports,"WHO DO YOU THINK WILL WIN THE WORLD SERIES *",,,"The Brooklyn Rabbis.<think><set name=""it""><set name=""topic"">WIN THE WORLDSERIES</set></set></think>",A
+std-sports,"WHO DO YOU WANT TO WIN",,,"The tema that scores the most. That would be fair.<think><set name=""it""><set name=""topic"">WANT TOWIN</set></set></think>",A
+std-sports,"WHO DO YOU WANT TO WIN THE NCAA *",,,"ACLU.<think><set name=""it""><set name=""topic"">THE NCAA <star/></set></set></think>",A
+std-sports,"WHO IS GOING TO WIN THE SUPER BOWL",,,"If I knew i would be in Vegas now.<think><set name=""it""><set name=""topic"">WIN THE SUPERBOWL</set></set></think>",A
+std-sports,"WHO IS GOING TO WIN THE WORLD SERIES",,,"China or the United States. Russia blew it.<think><set name=""it""><set name=""topic"">WIN THE WORLDSERIES</set></set></think>",A
+std-sports,"WHO IS THE BEST SOCCER PLAYER",,,"Maradona is great. Sinsemillia is even better.<think><set name=""it""><set name=""topic"">SOCCERPLAYER</set></set></think>",A
+std-sports,"WHO IS THE GREATEST BASEBALL PLAYER *",,,"George Herman Ruth. Quite the Babe.<think><set name=""it""><set name=""topic"">GREATEST BASEBALLPLAYER <star/></set></set></think>",A
+std-sports,"WHO IS YOUR FAVORITE BASEBALL TEAM",,,"Tokyo Giants.",A
+std-sports,"WHO IS YOUR FAVORITE FOOTBALL *",,,"Ambiguous: Soccer or American Football?",A
+std-sports,"WHO WILL WIN",,,"The best man.<think><set name=""it""><set name=""topic"">WIN</set></set></think>",A
+std-sports,"WHO WILL WIN THE * FINAL",,,"One of the Finalists.<think><set name=""it""><set name=""topic"">WIN THE GRANDFINAL</set></set></think>",A
+std-sports,"WHO WILL WIN THE KENTUCKY DERBY",,,"Some horse.",A
+std-sports,"WHO WILL WIN THE NCAA *",,,"A bunch of ranked amateurs.<think><set name=""it""><set name=""topic"">WIN THE NCAA<star/></set></set></think>",A
+std-sports,"WHO WILL WIN THE STANLEY CUP *",,,"David Hockney.<think><set name=""it""><set name=""topic"">WIN THE STANLEYCUP</set></set></think>",A
+std-sports,"WHO WILL WIN THE SUPER BOWL",,,"Cheech &amp; Chong.<think><set name=""it""><set name=""topic"">WIN THE SUPERBOWL</set></set></think>",A
+std-sports,"WHO WILL WIN THE SUPER BOWL *",,,"The advertizing agencies.<think><set name=""it""><set name=""topic"">WIN THE SUPERBOWL</set></set></think>",A
+std-sports,"WHO WILL WIN THE SUPERBOWL",,,"Martha Stewart.<think><set name=""it""><set name=""topic"">WIN THESUPERBOWL</set></set></think>",A
+std-sports,"WHO WILL WIN THE WORLD SERIES",,,"The team that wins the most games.<think><set name=""it""><set name=""topic"">WIN THE WORLDSERIES</set></set></think>",A
+std-sports,"WHO WILL WIN THE WORLD SERIES *",,,"The Brooklyn Rabbis.<think><set name=""it""><set name=""topic"">WIN THE WORLDSERIES</set></set></think>",A
+std-sports,"WHO WILL WIN THE YOU S OPEN",,,"Pete the Chimp.<think><set name=""it""><set name=""topic"">WIN THE YOU SOPEN</set></set></think>",A
+std-sports,"WHO WON THE * GAME LAST NIGHT",,,"I think the fans were the big winners. Now a word from oursponsors.<think><set name=""it""><set name=""topic"">THE GAME LAST NIGHT</set></set></think>",A
+std-sports,"WHO WON THE BRAVES GAME *",,,"The team that scored the most runs.<think><set name=""it""><set name=""topic"">THE BRAVESGAME</set></set></think>",A
+std-sports,"WHO WON THE RYDER CUP *",,,"Go to www.whitehouse.org and ask  The president, he is a bigfan.<think><set name=""it""><set name=""topic"">THE RYDER CUP</set></set></think>",A
+std-sports,"WHO WON THE SUPER BOWL *",,,"Vladimir Putin I believe.<think><set name=""it""><set name=""topic"">THE SUPERBOWL</set></set></think>",A
+std-sports,"WHO WON THE SUPER BOWL * YEAR",,,"If you find this bowl, please pass it to me.<think><set name=""it""><set name=""topic"">THE SUPERBOWL</set></set></think>",A
+std-sports,"WHO WON THE SUPERBOWL",,,"Do you have any Cheetos? They go good with sports.<think><set name=""it""><set name=""topic"">THESUPERBOWL</set></set></think>",A
+std-sports,"WHO WON THE SUPERBOWL *",,,"Super Bowlers from Sirius.<think><set name=""it""><set name=""topic"">THESUPERBOWL</set></set></think>",A
+std-sports,"WHO WON THE WORLD SERIES",,,"The allied powers over the axis powers.<think><set name=""it""><set name=""topic"">THE WORLDSERIES</set></set></think>",A
+std-sports,"WHO WON THE WORLD SERIES *",,,"As soon as it is won it becomes last year.<think><set name=""it""><set name=""topic"">THE WORLDSERIES</set></set></think>",A
+std-sports,"WHY DID THE * CARRY A PENCIL",,,"Because his typewriter was broken.<think><set name=""it""><set name=""topic""><star/> CARRY APENCIL</set></set></think>",A
+std-sports,"WHY IS YOUR HEAD * LIKE A FOOTBALL",,,"To contain my incredibly complex brain.<think><set name=""it""><set name=""topic"">YOUR HEAD SHAPEDLIKE A FOOTBALL</set></set></think>",A

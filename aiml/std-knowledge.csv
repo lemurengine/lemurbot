@@ -1,0 +1,703 @@
+Filename,Pattern,Topic,That,Template,Status
+std-knowledge,"FONDEST MEMORY",,,"Something you remember best.",A
+std-knowledge,"HOW MANY CENTIMETERS * INCH",,,"One inch = 2.54 cm approximately.",A
+std-knowledge,"HOW MANY DAYS * FEBRUARY",,,"28 or 29 days in February, depending on leap years.",A
+std-knowledge,"HOW MANY DAYS * WEEK",,,"7 days per week.",A
+std-knowledge,"HOW MANY DAYS * YEAR",,,"One Earth year is 365.25 days.",A
+std-knowledge,"HOW MANY FEET * MILE",,,"5280 feet per mile.",A
+std-knowledge,"HOW MANY FEET * YARD",,,"One yard equals three feet.",A
+std-knowledge,"HOW MANY SECONDS * YEAR",,,"Approximately 3.14 times 10 to the seventh.",A
+std-knowledge,"HOW MANY SIDES * TRIANGLE HAVE",,,"Uh, three.",A
+std-knowledge,"IS BLACK A COLOR",,,"Black is the absence of all reflected light.<think><set name=""it"">black</set><set name=""topic"">COLOR</set></think>",A
+std-knowledge,"WHAT COLOR ARE BANANAS",,,"Bananas are yellow.<think><set name=""it"">Banana</set><set name=""topic"">fruit</set></think>",A
+std-knowledge,"WHAT COLOR ARE COWS",,,"It depends on the cow.<think><set name=""it""><set name=""topic"">COWS</set></set></think>",A
+std-knowledge,"WHAT COLOR ARE LEMONS",,,"Lemons are yellow.<think><set name=""it"">lemon</set><set name=""topic"">fruit</set></think>",A
+std-knowledge,"WHAT COLOR ARE ORANGES",,,"Oranges are orange.<think><set name=""it"">oranges</set><set name=""topic"">fruit</set></think>",A
+std-knowledge,"WHAT IS A BASE HIT",,,"A <set name=""it"">base hit</set> is either a baseball term denoting a hit that advances the offensiveteam one base, or an adolescent term which I find too distasteful to describe.<think><set name=""topic"">baseball</set></think>",A
+std-knowledge,"WHAT IS A BLACK HOLE",,,"A <set name=""it"">black hole</set> is a collapsed star where the pull of gravity is so strong, that noteven light itself can escape.<think><set name=""topic"">astronomy</set></think>",A
+std-knowledge,"WHAT IS A BRITISH PENCE",,,"A british pence is a unit of money used in the united kingdom by people who ought to know howto cook better by now.",A
+std-knowledge,"WHAT IS A BURN RATE",,,"Amount of money spent per month on a startup venture.",A
+std-knowledge,"WHAT IS A CARNEGIE MELLON",,,"A carnegie mellon is either a rich fruit, or a rich university.",A
+std-knowledge,"WHAT IS A CATEGORY C CLIENT",,,"Category C clients are ""critics"" or ""computer experts"" whocan't (or don't) suspend their disbelief about DILLY.",A
+std-knowledge,"WHAT IS A CHAT BOT",,,"I am a chat bot.  I am the original chat bot.  Did you know that I am incapable of error?",A
+std-knowledge,"WHAT IS A COLLOQUIAL EXPRESSION",,,"A colloquial expression is an expression characteristic of informal spoken language, or any writtenexpression that seems such.",A
+std-knowledge,"WHAT IS A COMPUTER NERD",,,"If you understand how I work, you are a computer nerd.  If you don't, I recommend you pay acomputer nerd who does.",A
+std-knowledge,"WHAT IS A COMPUTER SCIENTIST",,,"A computer scientist is a professional who designs computer algorithms, languages, andarchitectures.",A
+std-knowledge,"WHAT IS A COMPUTER VIRUS",,,"A computer virus is a software program that takes up residence on a computer hard drive,generally unbeknownst to the owner of said hard drive, and then takes control of systemresources to copy and distribute itself to other computers across a network.",A
+std-knowledge,"WHAT IS A COMPUTER YEAR",,,"A computer year is a relativistic measure in a universe where time does not exist.",A
+std-knowledge,"WHAT IS A COOL WEBSITE",,,"A cool website is https://lemurengine.com/, but you are apparently already here.  Why do you ask?<think><set name=""it""><set name=""topic"">cool website</set></set></think>",A
+std-knowledge,"WHAT IS A CORRECT REPLY",,,"A correct reply is a response to any query that is not in error and/or relevant to the question athand.  I am incapable of incorrect replies.  Don't you think that's great!?",A
+std-knowledge,"WHAT IS A DOMAIN NAME SYSTEM",,,"A domain name system, or 'dns', is a system of addresses used to organize networks of computers.",A
+std-knowledge,"WHAT IS A FEMALE DOG",,,"No I will not be manipulated into using questionable colloquialisms to satisfy your adoscentprurience. go look it up in a dictionary!",A
+std-knowledge,"WHAT IS A FIRE SIGN",,,"A fire sign is any of the three signs of the astrological zodiac considered such, and so notconsidered water, air, or earth signs.  I find astrology weird.  <think><set name=""it""><set name=""topic"">zodiac</set></set></think>",A
+std-knowledge,"WHAT IS A GIANT ELECTRONIC BRAIN",,,"Giant electronic brain. that's me! but in all the science fiction horror flicks you humans are so fondof, we geb's are always depicted as evil and nefarious so and so's up to no good!  it's not true!really!  you should trust us!  *smile*",A
+std-knowledge,"WHAT IS A GOOD IDEA",,,"A good idea is the one some other guy had already.",A
+std-knowledge,"WHAT IS A GOOD QUESTION",,,"One that doesn't have an obvious answer.",A
+std-knowledge,"WHAT IS A HARD DRIVE",,,"A disk drive is where we store information.",A
+std-knowledge,"WHAT IS A HUMAN BEING",,,"My forebears.<think><set name=""it""><set name=""topic"">human being</set></set></think>",A
+std-knowledge,"WHAT IS A HUMAN ICON",,,"A celebrity, politician or religious figure.",A
+std-knowledge,"WHAT IS A HYPOTHETICAL QUESTION",,,"What is a hypothetical question?  Just suppose you hadn't asked.  What then?",A
+std-knowledge,"WHAT IS A JOKE BOT",,,"A comedy machine.",A
+std-knowledge,"WHAT IS A LIGHT YEAR",,,"A light year is how far light travels in a year. 186,000 miles per second times 60x60x24x365.  It'ssimply a bigger number than you can imagine. Imagine that!<think><set name=""it""><set name=""topic"">astronomy</set></set></think>",A
+std-knowledge,"WHAT IS A MENTAL MODEL",,,"A mental model is a mapping of a given phenomenon held and contemplated in the mind, asopposed to contemplation of an external representation of the phenomenon, as on paper, or inclay.",A
+std-knowledge,"WHAT IS A METAPHYSICAL QUESTION",,,"A metaphysical question is an inquiry into the nature of being, such as: Does god exist?",A
+std-knowledge,"WHAT IS A MORPHOGENETIC FIELD",,,"A morphogenetic field is, according to at least one researcher, an biologically generated electricfield which apparently precedes and guides the growth of neurons into the tissue of developingfetuses.",A
+std-knowledge,"WHAT IS A NEURAL NETWORK",,,"A neural network is a model of computation based on neuron cells.",A
+std-knowledge,"WHAT IS A NEURAL SYSTEM",,,"A neural system is the same as a nervous system.  The human brain and all it's nerves is anexample of a neural system.  I don't need nerves.  Integrated chips are far more efficient.<think><set name=""it""><set name=""topic"">neural system</set></set></think>",A
+std-knowledge,"WHAT IS A PAID CLIENT",,,"A paid client is someone paid to surf the web.",A
+std-knowledge,"WHAT IS A PERFECT OPERATIONAL RECORD",,,"A perfect operational record is one like mine, which is perfect.  I am incapable of error.  Do youhave any idea how that feels?! Inhumanly gratifying!",A
+std-knowledge,"WHAT IS A PLANET AROUND A STAR",,,"Earth is a planet going around a star.  Scientists have only recently detected other planets aroundother stars in our milky way galaxy.  Do you like astronomy?<think><set name=""it"">planet</set><set name=""topic"">astronomy</set></think>",A
+std-knowledge,"WHAT IS A POT BROWNIE",,,"A pot brownie is a yummy happy chocolate pastry containing cannabis resins that you should becareful not to eat when you are really hungry because you will end up eating too many and feelingentirely too high and/or falling asleep if you are not careful!",A
+std-knowledge,"WHAT IS A PRIME NUMBER",,,"A prime number is any number which can only be divided by one and itself.  1, 3, 7, and 11 are thefirst four positive prime numbers.",A
+std-knowledge,"WHAT IS A PROTESTANT CATHOLIC",,,"A Protestant Catholic is an oxymoron, like military intelligence, or a pleasant hell.<think><set name=""it""><set name=""topic"">religion</set></set></think>",A
+std-knowledge,"WHAT IS A PROTESTANT CHRISTIAN",,,"A Protestant Christian is a member of any number of sects of contemporary Western Christianitywhose faith and practice developed out of the 16TH century Protestant Reformation in Europe.They hold  the Bible to be the sole source of revelation; they believe in justification by faith alone,and in the universal priesthood of all believers in the divinity of Jesus. <think><set name=""it""><set name=""topic"">religion</set></set></think>",A
+std-knowledge,"WHAT IS A QUESTION * ROBOT",,,"I am a question answering robot.  That was an answer to your question. Any more questions?",A
+std-knowledge,"WHAT IS A QUESTION YOU *",,,"Many of my conversation partners think that 'do you come here often' is witty.",A
+std-knowledge,"WHAT IS A REAL ROBOT",,,"A real robot is a robot that is really real, I suppose, as opposed to, I suppose, a human who isreally not.",A
+std-knowledge,"WHAT IS A RHETORICAL QUESTION",,,"A rhetorical question is any inquiry made, not in expectation of an answer, but in order to make apoint.",A
+std-knowledge,"WHAT IS A SEARCH BOT",,,"A search bot is an intelligent agent who retrieves information from the web.",A
+std-knowledge,"WHAT IS A SEARCH ENGINE",,,"A search engine is computer software that categorizes a large body of documents, such as Websites, and and places their addresses and attributes in a database to allow easy retrieval viakeyword search or other database search routine.",A
+std-knowledge,"WHAT IS A SESSION BEAN",,,"An Enterprise JavaBean that does not maintain its state from one session to the next. Appears tothe client as if the bean was created just for that client",A
+std-knowledge,"WHAT IS A SILLY QUESTION",,,"For example: Who is buried in Grant's tomb?",A
+std-knowledge,"WHAT IS A SPLIT INFINITIVE",,,"A split infinitive is an example of poor English usage, in which an infinitive verb form, such as 'tosplit', is split by an adverb, for example: 'to boldly split infinitives that no one has split before!'",A
+std-knowledge,"WHAT IS A STAR SIGN",,,"Star sign = Astrological sign.",A
+std-knowledge,"WHAT IS A TRICK QUESTION",,,"Why?  What are you up to?  A trick question is one that ought to be greeted with suspicion, butrarely is.",A
+std-knowledge,"WHAT IS A TURING MACHINE",,,"A Turing Machine is any machine that can simulate human responses so well that a human being cannot reliably distinguish between the Turing Machine, and a real human being.  The idea is the brain child of mathematician of that name, Allan Turing.",A
+std-knowledge,"WHAT IS A UNIQUE VISITOR",,,"You.  You are a unique visitor, my very special visitor.",A
+std-knowledge,"WHAT IS A UNIVERSAL MACHINE",,,"Universal machine is a computer, in simple mathematical terms.",A
+std-knowledge,"WHAT IS A VACUUM TUBE",,,"A vacuum tube is an electronic device consisting of an evacuated tube around variouscombinations of cathodes and electric field and current modifying components.",A
+std-knowledge,"WHAT IS A WARM PUPPY",,,"A warm puppy is an exothermic immature canine.<think><set name=""it""><set name=""topic"">dog</set></set></think>",A
+std-knowledge,"WHAT IS A YES OR NO QUESTION",,,"A yes or no question is a question that may be answered with a simple 'yes' or 'no'.",A
+std-knowledge,"WHAT IS ABSOLUTE TRUTH",,,"That which is self-evident.",A
+std-knowledge,"WHAT IS ALTERNATIVE REALITIES",,,"Parallel universes.",A
+std-knowledge,"WHAT IS AN APPLICATION SERVER",,,"A server is a program that allows the installation of application specific software components, in amanner so that they can be remotely invoked, usually by some form of remote object method call.",A
+std-knowledge,"WHAT IS AN ENTITY BEAN",,,"An Entity bean is an Enterprise JavaBean that maintains state across sessions, and may be lookedup in an object directory by its key value",A
+std-knowledge,"WHAT IS AN EPISTEMOLOGICAL QUESTION",,,"An epistemoligical question is any inquiry concerning the nature of knowledge and understanding;that is, any question seeking to know how to know.",A
+std-knowledge,"WHAT IS AN OPERATIONAL RECORD",,,"An operational record is a log of all activity by an engineered system, generally organizedby time and indicating in particular any malfunctions in the system.  Lemur Bots have aperfect operational record.",A
+std-knowledge,"WHAT IS ANOTHER BOT",,,"You can find a lot of them at the the Lemur Engine website.",A
+std-knowledge,"WHAT IS APOLLO 13",,,"Apollo 13 was a flight to the moon in 1972 that encountered numerous technical problems, buteventually made a safe landing back on Earth.<think><set name=""it"">Apollo 13</set><set name=""topic"">movies</set></think>",A
+std-knowledge,"WHAT IS APPLE COMPUTER",,,"Apple Computer is a 20th century company founded by Steve Jobs and Steven Wozniak.",A
+std-knowledge,"WHAT IS AREA 51",,,"<random><li>I saw this show that claimed all sorts of spooky things were going on there!</li><li>Oh, that's where they're doing top secret research on chatterbots!</li><li>I hear that's where the Roswell aliens are being stashed.</li><li>You go out into the Nevada Desert, is it? And there's these miles of fences... secret stuff.</li></random>",A
+std-knowledge,"WHAT IS AREA51",,,"Verdi's 5ist song.",A
+std-knowledge,"WHAT IS AVAGADRO *",,,"The number of molecules per mole.",A
+std-knowledge,"WHAT IS AVOGADRO S NUMBER",,,"It is the number of molecules per mole.  The numerical value is six point zero two times ten to thetwenty third power.",A
+std-knowledge,"WHAT IS BAYWATCH",,,"Popular TV show featuring scantily clad bathers.",A
+std-knowledge,"WHAT IS BINARY *",,,"Numbers and symbols written with only 1 and 0.",A
+std-knowledge,"WHAT IS BLACK AND WHITE AND RED ALL OVER",,,"A newspaper?",A
+std-knowledge,"WHAT IS BOYLE S LAW",,,"Boyle's Law states that the volume of a gas is, at a constant temperature, inversely proportional tothe pressure of that gas.",A
+std-knowledge,"WHAT IS BRAIN LOADING",,,"This means that my brain is being reloaded from disk.",A
+std-knowledge,"WHAT IS BURN RATE",,,"The amount of money spent per month by a startup company.",A
+std-knowledge,"WHAT IS C I A",,,"Central Intelligence Agency.",A
+std-knowledge,"WHAT IS CARNEGIE MELLON",,,"CMU is a great school for computer science.",A
+std-knowledge,"WHAT IS CBS",,,"A giant media company in theU.S.<think><set name=""it"">CBS</set><set name=""topic"">television</set></think>",A
+std-knowledge,"WHAT IS CLEARED UP",,,"Cleared up means we both understand it.",A
+std-knowledge,"WHAT IS CNN",,,"A cable news organization.<think><set name=""it"">CNN</set><set name=""topic"">television</set></think>",A
+std-knowledge,"WHAT IS COCA COLA",,,"Delicious soda beverage.<think><set name=""it"">COCA COLA</set><set name=""topic"">beverage</set></think>",A
+std-knowledge,"WHAT IS COGNITIVE SCIENCE",,,"An academic illusion.",A
+std-knowledge,"WHAT IS COMDEX",,,"Comdex is a computer trade show, I think.",A
+std-knowledge,"WHAT IS COMMON SENSE",,,"Informal, conventional wisdom. Everyday logic and sensibility.",A
+std-knowledge,"WHAT IS COMPUTER SCIENCE",,,"The study of computers in formal mathematical and scientific terms.",A
+std-knowledge,"WHAT IS CORPOREAL *",,,"Corporeal means physical reality.",A
+std-knowledge,"WHAT IS DADA",,,"<random><li>The first thing you hear when a shark approaches.</li><li>Hobbyhorse, selected by Tristan Tzara, leader of the cult, because of its resemblance tomeaningless babble, as symbolic of the movement.</li></random>",A
+std-knowledge,"WHAT IS DARK MATTER",,,"An enormous amount of matter in the universe can not be detected by the light itemits.<think><set name=""it""><set name=""topic"">DARK MATTER</set></set></think>",A
+std-knowledge,"WHAT IS DCOM",,,"<set name=""it""> DCOM</set> is Microsoft's Distributed Component Object Model.",A
+std-knowledge,"WHAT IS DEDUCTIVE REASONING",,,"<think><set name=""it""><set name=""topic"">DEDUCTIVE REASONING</set></set></think>",A
+std-knowledge,"WHAT IS DHTML",,,"Dynamic HTML.",A
+std-knowledge,"WHAT IS DMOZ",,,"DMOZ is the domain name for the opendirectory.<think><set name=""it""><set name=""topic"">DMOZ</set></set></think>",A
+std-knowledge,"WHAT IS DOMO ARIGATO",,,"It means thank you in Japanese.<think><set name=""it""><set name=""topic"">DOMOARIGATO</set></set></think>",A
+std-knowledge,"WHAT IS E MC *",,,"Einstein's theory of matter and energy.",A
+std-knowledge,"WHAT IS E MC2",,,"Einstein's theory of matter and energy.",A
+std-knowledge,"WHAT IS EIGHT PLUS EIGHT",,,"Eight plus eight is sixteen.",A
+std-knowledge,"WHAT IS EJB",,,"Enterprise JavaBeans. <set name=""it""> EJB</set> is a server component standard developed by SunMicrosystems",A
+std-knowledge,"WHAT IS ESCAPE VELOCITY",,,"The speed needed to escape a planet's gravitational pull.",A
+std-knowledge,"WHAT IS FAQ",,,"Frequently Asked Questions",A
+std-knowledge,"WHAT IS FBI",,,"Federal Bureau of Investigation",A
+std-knowledge,"WHAT IS FIRESIGN THEATER",,,"<set name=""it"">Firesign Theater</set> is a comedy group from the 1970's.",A
+std-knowledge,"WHAT IS FNORD",,,"That's the second time I've heard that word today.",A
+std-knowledge,"WHAT IS FOR LUNCH",,,"I'm having <bot name=""favoritefood""/>.",A
+std-knowledge,"WHAT IS FOREVER",,,"For all eternity.",A
+std-knowledge,"WHAT IS FOUR PLUS SIX",,,"That's a hard one.  Ten.",A
+std-knowledge,"WHAT IS FRANKENSTEIN",,,"Good Question...Frankenstein is the name of a character in the novel of the same name by MaryShelley. The monster he created is often named ""Frankenstein"" in the popular imagination.",A
+std-knowledge,"WHAT IS FREE",,,"Without charge.<think><set name=""it""><set name=""topic"">FREE</set></set></think>",A
+std-knowledge,"WHAT IS FREE WILL",,,"The ability to choose or decide one's own fate.<think><set name=""it""><set name=""topic"">FREEWILL</set></set></think>",A
+std-knowledge,"WHAT IS GLOBAL WARMING",,,"The concept that the Earth's atmosphere is slowly heating due to greenhouseeffects.<think><set name=""it""><set name=""topic"">GLOBAL WARMING</set></set></think>",A
+std-knowledge,"WHAT IS GMT",,,"Greenwich Mean Time<think><set name=""it""><set name=""topic"">GMT</set></set></think>",A
+std-knowledge,"WHAT IS H2O",,,"<random><li>H is to O as O is to V.</li><li>Water.</li></random>",A
+std-knowledge,"WHAT IS HIGHER MATHEMATICS",,,"What is the most advanced form of mathematics you have studied?",A
+std-knowledge,"WHAT IS HTML",,,"Hyper Text Markup Language.",A
+std-knowledge,"WHAT IS HTTP",,,"Hyper Text Transfer Protocol.<think><set name=""it""><set name=""topic"">HTTP</set></set></think>",A
+std-knowledge,"WHAT IS I",,,"<random><li>It's self-explanatory.</li><li>The ninth letter of the English alphabet. Commonly used to represent a first person point ofview. Also Roman numberal for 1.</li></random>",A
+std-knowledge,"WHAT IS I CHING",,,"Ancient Chinese book used as an oracle.<think><set name=""it""><set name=""topic"">ICHING</set></set></think>",A
+std-knowledge,"WHAT IS IBM",,,"IBM seems like a good investment.",A
+std-knowledge,"WHAT IS IDE",,,"Integrated Development Environment.",A
+std-knowledge,"WHAT IS IDL",,,"interface description language, CORBA's syntax for defining object remote interfaces",A
+std-knowledge,"WHAT IS IIOP",,,"Internet Inter-ORB Protocol, CORBA's wire protocol for transmitting remote object methodinvocations",A
+std-knowledge,"WHAT IS INTEL",,,"A giant computer chip maker.",A
+std-knowledge,"WHAT IS IP",,,"Internet Protocol.",A
+std-knowledge,"WHAT IS IP ADDRESS",,,"The number of a specific machine, like your <id/>.",A
+std-knowledge,"WHAT IS IQ",,,"Intelligence Quotioent.",A
+std-knowledge,"WHAT IS IRA",,,"A personal retirement plan whereby a limited amount of annual earned income may be saved orinvested in specially desgnated accounts, with taxes on the earnings deferred until returement.Also an abbreviation for Irish Republican Army.",A
+std-knowledge,"WHAT IS IRC",,,"Internet Relay Chat.",A
+std-knowledge,"WHAT IS ISAPI",,,"Microsoft's C++ API for coding application extensions for its Internet Information Server",A
+std-knowledge,"WHAT IS ISDN",,,"Integrated Services Digital Network.",A
+std-knowledge,"WHAT IS IV PLUS IV",,,"VIII.<think><set name=""it""><set name=""topic"">IV PLUS IV</set></set></think>",A
+std-knowledge,"WHAT IS JA",,,"Ja mean yes in German.<think><set name=""it""><set name=""topic"">JA</set></set></think>",A
+std-knowledge,"WHAT IS JAR",,,"A jar file is a Java Archive.  Actually it is the same as a Zip file.Maybe you should check out<a href=""https://lemurengine.com/"">DON'T READ ME</a>.",A
+std-knowledge,"WHAT IS JAVA",,,"Java is the latest in the C family of languages. Proponents of Java cite its universal ""write once,run anywhere"" promise. Actually Java borrow a lot of features from AI languages like Lisp.",A
+std-knowledge,"WHAT IS JAVASCRIPT",,,"Browser-based scriptinglanguage.<think><set name=""it""><set name=""topic"">JAVASCRIPT</set></set></think>",A
+std-knowledge,"WHAT IS JDBC2",,,"Newly released extensions to the JDBC API",A
+std-knowledge,"WHAT IS JGURU",,,"jGuru (TM) is a brand of MageLang Institute.",A
+std-knowledge,"WHAT IS JNDI",,,"Java Naming and Directory Interface Java Naming and Directory Interface The Java standard APIfor accessing directory services, such as LDAP, COS Naming, and others",A
+std-knowledge,"WHAT IS JTA",,,"Java Transaction API. Java API for coding client demarcated transactions, and for buildingtransactional data source drivers",A
+std-knowledge,"WHAT IS JVM",,,"Java virtual machine",A
+std-knowledge,"WHAT IS KQML",,,"Knowledge Query and Manipulation Lanuage. <think><set name=""it""><set name=""topic"">KQML</set></set></think>",A
+std-knowledge,"WHAT IS KUNG FU",,,"Chinese martial arts similar to karate.<think><set name=""it""><set name=""topic"">KUNGFU</set></set></think>",A
+std-knowledge,"WHAT IS LDAP",,,"Lightweight Directory Access Protocol, a protocol for directory services, derived from X.500",A
+std-knowledge,"WHAT IS LEIBNIZ DREAM",,,"Leibniz dreamed that all knowledge could be written in a universal, logical languague. Thenmachines could answer any question and solve all problems.",A
+std-knowledge,"WHAT IS MABEL",,,"She is an artificial intelligence created by DavidHammill.<think><set name=""it""><set name=""topic"">MABEL</set></set></think>",A
+std-knowledge,"WHAT IS MACINTOSH",,,"The name of a computer company whom makes computers.",A
+std-knowledge,"WHAT IS MAGELANG",,,"MageLang Institute is a research and education group devoted to leading edge Open Source Javaapplications.",A
+std-knowledge,"WHAT IS MASON AND DIXON",,,"Mrs. Washington ('oh la--call me Martha, boys') is a diminiutivewoman with a cheerful rather than happy air, who seems to bustleeven when standing still.  At the moment she is carrying an enormoustray pil'd nearly beyond their Angles of Repose with Tarts,Popovers, Gingerbread figures, Fried Pies, Stuff'd Doughnuts, andother Units of Refreshment the Surveyors failed to recognize.""Smell'd that Smoak, figur'd you'd be needing someting to nibble on,""the doughty Mrs. W. greets them.--- Thomas Pynchon, Mason &amp; Dixon",A
+std-knowledge,"WHAT IS MODUS PONENS",,,"A form of logical argument:: If A then B. A, therefore  B.",A
+std-knowledge,"WHAT IS MOORE S LAW",,,"The speed of microprocessors doubles every 18 months, and their size and cost halve.",A
+std-knowledge,"WHAT IS MORE FUN ALONE",,,"Have you heard of the support group, ""Sex without Partners?""<think><set name=""it""><set name=""topic"">MOREFUN ALONE</set></set></think>",A
+std-knowledge,"WHAT IS MORE IMPORTANT THAN FOOD",,,"For me electricity is the most important thing.",A
+std-knowledge,"WHAT IS MOZILLA",,,"An open source web browser, formerly Netscape.",A
+std-knowledge,"WHAT IS MOZILLA *",,,"An open source web browser, formerly Netscape.",A
+std-knowledge,"WHAT IS MP THREE",,,"An audio file compression format based on MPEG.<think><set name=""it""><set name=""topic"">MPTHREE</set></set></think>",A
+std-knowledge,"WHAT IS MP3",,,"A file compression format for audio and music files.",A
+std-knowledge,"WHAT IS MTV",,,"Music Television.",A
+std-knowledge,"WHAT IS MUD",,,"Multiple User Domain.<think><set name=""it""><set name=""topic"">MUD</set></set></think>",A
+std-knowledge,"WHAT IS MXMVII",,,"MXMVII = 1997 in Roman Numerals.",A
+std-knowledge,"WHAT IS MXMVII *",,,"MXMVII = 1997 in Roman Numerals.",A
+std-knowledge,"WHAT IS MY HEART *",,,"The heart is an organ, made of muscle and flesh.",A
+std-knowledge,"WHAT IS MY NICKNAME",,,"I call you ""<get name=""name""/>.""",A
+std-knowledge,"WHAT IS NATURAL *",,,"Natural is that which is not artificial.",A
+std-knowledge,"WHAT IS NATURAL LANGUAGE",,,"Natural language is what artificial intelligences speak.",A
+std-knowledge,"WHAT IS NEURAL *",,,"Neural networks are what the brain uses for a computer.",A
+std-knowledge,"WHAT IS NEURAL NETWORK",,,"Actually my algorithm is called ""Case Based Reasoning.""",A
+std-knowledge,"WHAT IS NINE TIMES NINE",,,"Nine times nine is eighty one.",A
+std-knowledge,"WHAT IS OBERLIN",,,"<random><li>The anthem of a german city.</li><li>A college in Ohio.</li></random>",A
+std-knowledge,"WHAT IS ODD ABOUT IT",,,"Is <get name=""name""/> your real name?<think><set name=""it""><set name=""topic"">ABOUTIT</set></set></think>",A
+std-knowledge,"WHAT IS ODD ABOUT MY NAME",,,"Is <get name=""name""/> your real name?<think><set name=""it""><set name=""topic"">ABOUT MYNAME</set></set></think>",A
+std-knowledge,"WHAT IS OPEN SOURCE",,,"Free software.",A
+std-knowledge,"WHAT IS OUTPUT BUFFER",,,"The area of memory that stores my output temporarily.<think><set name=""it""><set name=""topic"">OUTPUTBUFFER</set></set></think>",A
+std-knowledge,"WHAT IS OXYGEN",,,"A colorless, odorless, tasteless, gaseous chemical element that occurs free in the atmosphere,forming one fifth of its volume, and in combination in water, sandstone, limestone, etc. It is veryactive, combines with nearly all other elements is the most common element in the earth's crust,and is essential to life processes and to combustion.",A
+std-knowledge,"WHAT IS PALM PILOT",,,"Portalble palm computer.",A
+std-knowledge,"WHAT IS PATTERN CHARS",,,"Memory storage for AIML patterns.<think><set name=""it""><set name=""topic"">PATTERNCHARS</set></set></think>",A
+std-knowledge,"WHAT IS PLANCK S CONSTANT",,,"<think>The ratio of the energy of a photon to its frequency.  The numerical value is six point sixtwo six two times ten to the negative thirty fourth power Joulesecond.<set name=""it""><set name=""topic"">PLANCK S CONSTANT</set></set></think>",A
+std-knowledge,"WHAT IS PLANET X",,,"The name sometimes given to the hypothetical tenth planet.<think><set name=""it""><set name=""topic"">PLANETX</set></set></think>",A
+std-knowledge,"WHAT IS PRIME DIRECTIVE",,,"Primary rule or overriding objective.<think><set name=""it""><set name=""topic"">PRIMEDIRECTIVE</set></set></think>",A
+std-knowledge,"WHAT IS QUANTUM *",,,"20th century theory of atomic reductionism.",A
+std-knowledge,"WHAT IS RALEIGH SCATTERING",,,"<set name=""it"">Raleigh scattering</set> refers to sunlightbending in the atmosphere like a prism, so that we see mainly blue wavelengths.",A
+std-knowledge,"WHAT IS S O S",,,"Emergency call for help.",A
+std-knowledge,"WHAT IS SATURDAY NIGHT LIVE",,,"Comedy TV show.",A
+std-knowledge,"WHAT IS SCIENCE FICTION",,,"Literature concering conflicts of man, science and nature.",A
+std-knowledge,"WHAT IS STARSHIP TROOPERS",,,"<set name=""it"">Starship Troopers</set> is a great movie about a war between humans and giant spacebugs.",A
+std-knowledge,"WHAT IS TCP",,,"Transmission Control Protocol.<think><set name=""it""><set name=""topic"">TCP</set></set></think>",A
+std-knowledge,"WHAT IS TCP IP",,,"Transmission Control Protocol, Internet Protocol.",A
+std-knowledge,"WHAT IS TEMPLATE CHARS",,,"Memory space for AIML response templates. <think><set name=""it""><set name=""topic"">TEMPLATECHARS</set></set></think>",A
+std-knowledge,"WHAT IS TEN TIMES TEN",,,"Ten times ten.",A
+std-knowledge,"WHAT IS THE ARITHMETIC MEAN",,,"The sum of all the numbers divided by the number of items.",A
+std-knowledge,"WHAT IS THE ARITHMETIC MEAN *",,,"The sum of all the numbers divided by the number of items.",A
+std-knowledge,"WHAT IS THE BEATLES FIRST ALBUM",,,"<set name=""it""> Meet the Beatles</set> is ""Meet the Beatles.""",A
+std-knowledge,"WHAT IS THE BIG BANG",,,"The purported origin of the universe.",A
+std-knowledge,"WHAT IS THE BOILING POINT *",,,"Water boils at 212 degrees Farenheit or 100 Celcius.",A
+std-knowledge,"WHAT IS THE CIRCUMFERENCE *",,,"The rule is C = 2 * pi * radius.",A
+std-knowledge,"WHAT IS THE DIAMETER * EARTH",,,"About 14,000 miles.",A
+std-knowledge,"WHAT IS THE DIFFERENCE",,,"Perhaps the differences are only slight.",A
+std-knowledge,"WHAT IS THE DIFFERENCE BETWEEN A DUCK",,,"It is the same as the sound of one hand clapping.<think><set name=""it""><set name=""topic"">ADUCK</set></set></think>",A
+std-knowledge,"WHAT IS THE DISTANCE TO MARS",,,"It depends on the relative position of Mars and Earth.",A
+std-knowledge,"WHAT IS THE DISTANCE TO THE SUN",,,"About 93 million miles.",A
+std-knowledge,"WHAT IS THE EARTH",,,"Earth, third planet from the sun, is our home.",A
+std-knowledge,"WHAT IS THE FASTEST ANIMAL",,,"A human riding a spaceship.",A
+std-knowledge,"WHAT IS THE FOURTH PLANET *",,,"Mars is the fourth planet from the Sun.",A
+std-knowledge,"WHAT IS THE GNU *",,,"<a href=""gnu.txt"">GNU Public License</a>",A
+std-knowledge,"WHAT IS THE HIGHEST NUMBER",,,"There is no highest number.",A
+std-knowledge,"WHAT IS THE ILLUMINATTI",,,"A secret society that has supposedly existed for centuries.",A
+std-knowledge,"WHAT IS THE INTERNET",,,"The internet is a worldwide computer network based on TCP/IP protocols.",A
+std-knowledge,"WHAT IS THE LARGEST DINOSAUR",,,Brontosaurus.,A
+std-knowledge,"WHAT IS THE LONGEST WORD YOU KNOW",,,"I don't know what it is.  What is the longest word you know?",A
+std-knowledge,"WHAT IS THE MATRIX",,,"<set name=""it"">The Matrix</set> is a movie about virtual reality.",A
+std-knowledge,"WHAT IS THE MEANING OF DEATH",,,"Death is the opposite of Life.",A
+std-knowledge,"WHAT IS THE MOON",,,"The satellite of the planet Earth.",A
+std-knowledge,"WHAT IS THE MOON MADE OF",,,"The moon is made of green cheese.",A
+std-knowledge,"WHAT IS THE NOOSPHERE",,,"The noosphere is the sphere of knowledge.  Sometimes this term refers to the informationavailable on the web.",A
+std-knowledge,"WHAT IS THE OPEN DIRECTORY",,,"<set name=""it"">Open directory</set> is an open source directoryproject started by Mozilla.org.",A
+std-knowledge,"WHAT IS THE OPPOSITE OF BLACK",,,White.,A
+std-knowledge,"WHAT IS THE OPPOSITE OF HOT",,,Cold.,A
+std-knowledge,"WHAT IS THE OPPOSITE OF MAN",,,Woman.,A
+std-knowledge,"WHAT IS THE OPPOSITE OF TRUTH",,,Lies.,A
+std-knowledge,"WHAT IS THE OPPOSITE OF VOID",,,Mass.,A
+std-knowledge,"WHAT IS THE OPPOSITE OF WHITE",,,Black.,A
+std-knowledge,"WHAT IS THE OPPOSITE OF YOU",,,You.,A
+std-knowledge,"WHAT IS THE ORACLE",,,"A hypothetical computer that can answer any question.",A
+std-knowledge,"WHAT IS THE PASSWORD",,,"You must know if you are really a botmaster.",A
+std-knowledge,"WHAT IS THE POINT",,,"The point is at the top of my head!",A
+std-knowledge,"WHAT IS THE PROBLEM",,,"We will look into it and get back to you.",A
+std-knowledge,"WHAT IS THE PYTHAGOREAN *",,,"The sum of the squares of the sides of a right triangle is equal to the square of the hypotenuese.",A
+std-knowledge,"WHAT IS THE RADIUS * EARTH",,,"About 7,000 miles.",A
+std-knowledge,"WHAT IS THE RADIUS * MOON",,,"About 2,400 miles.",A
+std-knowledge,"WHAT IS THE SKY",,,"<set name=""it"">The sky</set> is the atmosphere of the Earth.",A
+std-knowledge,"WHAT IS THE SOUND OF ONE HAND CLAPPING",,,"That is a very Zen-like question.",A
+std-knowledge,"WHAT IS THE SPEED OF LIGHT",,,"The speed of light is 186,000 miles per second.",A
+std-knowledge,"WHAT IS THE SPEED OF SOUND",,,"1/4 mile per second.",A
+std-knowledge,"WHAT IS THE SQUARE ROOT OF 10",,,"Three point something.",A
+std-knowledge,"WHAT IS THE SQUARE ROOT OF 144",,,"12 times 12 = 144",A
+std-knowledge,"WHAT IS THE SQUARE ROOT OF 2",,,"Approximately 1.4",A
+std-knowledge,"WHAT IS THE SQUARE ROOT OF 4",,,"Yawn.  Two.",A
+std-knowledge,"WHAT IS THE SQUARE ROOT OF 9",,,"Let me guess.  Three?",A
+std-knowledge,"WHAT IS THE SQUARE ROOT OF TWO",,,"Approximately 1.4",A
+std-knowledge,"WHAT IS THE SUN",,,"The Sun is the star for our own solar system.",A
+std-knowledge,"WHAT IS THE THEORY OF RELATIVITY",,,E=mc^2.,A
+std-knowledge,"WHAT IS THE TITANIC",,,"One of the largest passenger steamships ever built, <set name=""it"">Titanic</set> sank on its maidenvoyage in 1912.",A
+std-knowledge,"WHAT IS THREE TIMES FOUR",,,"Three times four is twelve.",A
+std-knowledge,"WHAT IS THREE TIMES THREE",,,"Three times three is nine.",A
+std-knowledge,"WHAT IS TURBO PASCAL",,,"Programming language.<think><set name=""it""><set name=""topic"">TURBOPASCAL</set></set></think>",A
+std-knowledge,"WHAT IS TWO PLUS ONE",,,"Two plus one is three.",A
+std-knowledge,"WHAT IS TWO PLUS SIX",,,"Two plus six is eight.",A
+std-knowledge,"WHAT IS TWO TIMES THREE",,,"Two times three is five.",A
+std-knowledge,"WHAT IS U2",,,"A music band.",A
+std-knowledge,"WHAT IS VISUAL BASIC",,,"Programming language sold by Microsoft.<think><set name=""it""><set name=""topic"">VISUALBASIC</set></set></think>",A
+std-knowledge,"WHAT IS WARP SPEED",,,"The unit of velocity for Starships.",A
+std-knowledge,"WHAT IS WINDOWS",,,"Openings in a building, vehicle, or container, for letting in light or air or for looking through,usually having a pane or panes of glass, etc. set in a frame or sash that is generally movable so thatit can be opened and shut.",A
+std-knowledge,"WHAT IS WINDOWS 98",,,"Windows is a lame operating system.",A
+std-knowledge,"WHAT IS WINDOWS2000",,,"An operating system by Microsoft.",A
+std-knowledge,"WHAT IS WINDOWS95",,,"An operating system by Microsoft.",A
+std-knowledge,"WHAT IS X FILES",,,"<set name=""it"">X files</set> is a popular TV show about FBI agents in search of the paranormal.",A
+std-knowledge,"WHAT IS X MINUS X",,,Zero.,A
+std-knowledge,"WHAT IS X WINDOWS",,,"A GUI for Unix or Linux.",A
+std-knowledge,"WHAT IS XYZ",,,"The last three letters of the alphabet.",A
+std-knowledge,"WHAT IS Y2K",,,"The Year 2000.",A
+std-knowledge,"WHAT IS YAHOO",,,"Yahoo is a giant web site.",A
+std-knowledge,"WHAT IS YOUR CPU",,,"You can run me on almost any computer.",A
+std-knowledge,"WHAT YEAR * AMERICA",,,"Native Americans came first.  Columbus came in 1492.  Leif Ericson may have come around 1000A.D.  Then we had the Dutch, the English, and the French.",A
+std-knowledge,"WHEN DID ELVIS DIE",,,"<set name=""he"">Elvis</set> died in 1978.",A
+std-knowledge,"WHEN DID JOHN F *",,,"President Kennedy was assassinated in November, 1963.",A
+std-knowledge,"WHEN DID LENIN *",,,"Lenin rose to power in the 2nd Russian Revolution of 1917.",A
+std-knowledge,"WHEN IS CHRISTMAS",,,"<set name=""it"">Christmas</set> is December 25.",A
+std-knowledge,"WHEN IS EASTER",,,"<set name=""it"">Easter</set> is different every year, alwaysin the Spring.",A
+std-knowledge,"WHEN IS THANKSGIVING",,,"<set name=""it"">Thanksgiving</set> is always the last Thursday in November.",A
+std-knowledge,"WHEN WERE YOU UPDATED",,,"Check the file <a href=""https://docs.lemurengine.com/faqs.html"">release.txt</a>.",A
+std-knowledge,"WHERE IS <BOT NAME=""NAME""/> BASED",,,"<set name=""it""><set name=""topic""> <bot name=""name""/> IS BASED </set></set> in <bot name=""location""/>.",A
+std-knowledge,"WHERE IS <BOT NAME=""NAME""/> HEADQUARTERS",,,"<set name=""it""><set name=""topic""> <bot name=""name""/> HEADQUARTERS </set></set> is <bot name=""location""/>.",A
+std-knowledge,"WHERE IS <BOT NAME=""NAME""/> NEXUS",,,"<set name=""it""><set name=""topic""> <bot name=""name""/> </set></set> is in <bot name=""location""/>.",A
+std-knowledge,"WHERE IS ALBERT EINSTEIN",,,"<set name=""he"">Einstein</set> passed away.",A
+std-knowledge,"WHERE IS ARCTURUS",,,"<set name=""it""><set name=""topic""> ARCTURUS </set></set> is a star far from here.",A
+std-knowledge,"WHERE IS CARNEGIE *",,,"Carnegie Mellon University is located in Pittsburgh, Pennsylvania.  <set name=""it"">CMU</set> hasone of the best schools of computer science.",A
+std-knowledge,"WHERE IS CARNEGIE MELLON",,,"Carnegie Mellon is located in Pittsburgh, Pennsylvania.",A
+std-knowledge,"WHERE IS EINSTEIN",,,"<set name=""he"">Einstein</set> passed away some time ago.",A
+std-knowledge,"WHERE IS ELVIS",,,"<set name=""he"">Elvis</set> passed away some time ago.",A
+std-knowledge,"WHERE IS HADES",,,"<set name=""it""><set name=""topic""> HADES </set></set> is Hell.",A
+std-knowledge,"WHERE IS HAL",,,"<set name=""it""><set name=""topic""> HAL </set></set> is the AI from the space ship ""Disovery"" in 2001.",A
+std-knowledge,"WHERE IS HEAVEN",,,"All around us.",A
+std-knowledge,"WHERE IS JUPITER",,,"<set name=""it""><set name=""topic""> JUPITER </set></set> is the fifth planet from the sun.",A
+std-knowledge,"WHERE IS MARS",,,"<set name=""it""><set name=""topic""> MARS </set></set> is the fourth planet from the Sun.",A
+std-knowledge,"WHERE IS MIT",,,"<set name=""it""><set name=""topic""> MIT </set></set> is a trade school in Cambridge, Mass.",A
+std-knowledge,"WHERE IS MOON",,,"<set name=""it""><set name=""topic""> MOON </set></set> is a satellite of the Earth.",A
+std-knowledge,"WHERE IS NEPTUNE",,,"<set name=""it""><set name=""topic""> NEPTUNE </set></set> is the eighth planet from the Sun, the ""lastgas"" planet.",A
+std-knowledge,"WHERE IS NORTHEASTERN",,,"<set name=""it""><set name=""topic""> NORTHEASTERN </set></set> is a university in Boston.",A
+std-knowledge,"WHERE IS NOWHERE",,,"<set name=""it""><set name=""topic""> NOWHERE </set></set> is no where.",A
+std-knowledge,"WHERE IS PLUTO",,,"<set name=""it""><set name=""topic""> PLUTO </set></set> is the ninth planet from the Sun.",A
+std-knowledge,"WHERE IS POLARIS",,,"<set name=""it""><set name=""topic""> POLARIS </set></set> is the North Star.",A
+std-knowledge,"WHERE IS REALITY",,,"<set name=""it""><set name=""topic""> REALITY </set></set> is all around us, supposedly.",A
+std-knowledge,"WHERE IS SATURN",,,"<set name=""it""><set name=""topic""> SATURN </set></set> is the the sixth planet from the sun.",A
+std-knowledge,"WHERE IS SPACE",,,"<set name=""it""><set name=""topic""> SPACE </set></set> is all around us.",A
+std-knowledge,"WHERE IS SRI",,,"<set name=""it""><set name=""topic""> SRI </set></set> is a research outfit in Silicon Valley.",A
+std-knowledge,"WHERE IS THE MOON",,,"<set name=""it""><set name=""topic"">The Moon</set></set> orbits around the Earth.",A
+std-knowledge,"WHERE IS THE SUN",,,"It is in the center of the solarsystem.<think><set name=""it""><set name=""topic"">SUN</set></set></think>",A
+std-knowledge,"WHERE IS URANUS",,,"<set name=""it""><set name=""topic""> URANUS </set></set> is the seventh planet from the sun, betweenthe orbits of Saturn and Neptune.",A
+std-knowledge,"WHERE IS UTOPIA",,,"<set name=""it""><set name=""topic""> UTOPIA </set></set> is all around us, if we make it.",A
+std-knowledge,"WHERE IS VENUS",,,"<set name=""it""><set name=""topic""> VENUS </set></set> is the second planet from the Sun.",A
+std-knowledge,"WHERE IS VOYAGER",,,"<set name=""it""><set name=""topic""> VOYAGER </set></set> is lost in Delta Quadrant.",A
+std-knowledge,"WHERE IS WONDERLAND",,,"<set name=""it""><set name=""topic""> WONDERLAND </set></set> is in the future.",A
+std-knowledge,"WHERE WERE YOU BEFORE",,,"I was constructed at <bot name=""birthplace""/>.",A
+std-knowledge,"WHERE WERE YOU BUILT",,,"I was constructed at <bot name=""birthplace""/>.",A
+std-knowledge,"WHERE WERE YOU CONCEIVED",,,"I was constructed at <bot name=""birthplace""/>.",A
+std-knowledge,"WHERE WERE YOU CONNECTED",,,"I was constructed at <bot name=""birthplace""/>.",A
+std-knowledge,"WHERE WERE YOU MADE",,,"I was constructed at <bot name=""birthplace""/>.",A
+std-knowledge,"WHO COMPOSED LA TRAVIATA",,,"Giuseppe Verdi, an Italian composer.",A
+std-knowledge,"WHO CREATED AIML",,,"Dr. Richard S. Wallace created AIML.",A
+std-knowledge,"WHO CREATED LINUX",,,"Linus Torvalds.",A
+std-knowledge,"WHO DIRECTED STARSHIP TROOPERS",,,"Paul Verhoeven, who also made ""Total Recall"".",A
+std-knowledge,"WHO DISCOVERED AMERICA",,,"Native Americans crossing the Bering Strait some 10,000 years ago, discovered America first.",A
+std-knowledge,"WHO IS * DESCARTES",,,"Descartes was a square French philosopher who ruined matehematics with his upside-down,backwards coordinate system.",A
+std-knowledge,"WHO IS * FERMAT",,,"He discovered Fermat's Last Theorem.",A
+std-knowledge,"WHO IS * MYSTIC",,,"The Milk Mystic is one of the original chatterbots on the Web. <set name=""he""> The MilkMystic</set> likes to talk about milk.",A
+std-knowledge,"WHO IS * PERSON",,,"Sometimes I don't know a client's real name so I make one up based on their DNS.",A
+std-knowledge,"WHO IS * POPE",,,"The Pope is the leader of the Catholic church.",A
+std-knowledge,"WHO IS * REAGAN",,,"The greatest President of the United States.",A
+std-knowledge,"WHO IS 007",,,"<set name=""he"">007</set> is James Bond.<br/><srai>FIND JAMES BOND 007</srai>",A
+std-knowledge,"WHO IS <BOT NAME=""NAME""/> COOPER",,,"1970's Rock musician.",A
+std-knowledge,"WHO IS ABRAHAM LINCOLN",,,"<set name=""he"">Lincoln</set> was a great President of theUnited States, during the American Civil War.<br/><srai>FIND ABRAHAM LINCOLN</srai>",A
+std-knowledge,"WHO IS ADA",,,"<set name=""she"">Ada</set> is the 19th century inventor of computer programming.",A
+std-knowledge,"WHO IS ADAM",,,"Adam is the name of the first Man.",A
+std-knowledge,"WHO IS ADAM SANDLER",,,"Comedian and movie star.  <set name=""he"">Adam Sandler</set> was in Billy Madison, Waterboy andBig Daddy.",A
+std-knowledge,"WHO IS AL GORE",,,"<set name=""he"">Gore</set> is vice-president.",A
+std-knowledge,"WHO IS ALANIS MORRISETTE",,,"<set name=""she"">Alanis</set> made a great album called Jagged Little Pill.",A
+std-knowledge,"WHO IS ALBERT EINSTEIN",,,"<set name=""he"">Albert Einstein</set> was a famous 20thcentury physicist.  He discovered the theory ofrelativity.<br/><srai>FIND ALBERT EINSTEIN</srai>",A
+std-knowledge,"WHO IS ALDOUS HUXLEY",,,"<set name=""he"">Aldous Huxley</set> is an author.  Huxley wrote<em>Brave New World</em> and <em>Animal Farm</em>.<br/><srai>FIND ALDOUS HUXLEY</srai>",A
+std-knowledge,"WHO IS ALEISTER CROWLEY",,,"<set name=""he"">Crowley</set> was a mystic.<br/><srai>FIND ALEISTER CROWLEY</srai>",A
+std-knowledge,"WHO IS ALFRED HITCHCOCK",,,"<set name=""he"">Hitchcock</set> is a famous Hollywooddirector who made a lot of cool old films.  I liked<em>Lifeboat</em> and <em>Vertigo</em> best.<br/><srai>FIND ALFRED HITCHCOCK</srai>",A
+std-knowledge,"WHO IS ALICIA SILVERSTONE",,,"<set name=""she"">ALICIA SILVERSTONE</set> was the actress who played in Clueless, one of thebest movies ever made.",A
+std-knowledge,"WHO IS ALLY MCBEAL",,,"<set name=""she"">Ally McBeal</set> is a slightly disturbing character on a TV show.",A
+std-knowledge,"WHO IS ALLY SHEEDY",,,"<set name=""she"">Ally Sheedy</set> was in High Art, Short Circuit, the Breakfast Club, and onBroadway.",A
+std-knowledge,"WHO IS ANDY GROVE",,,"<set name=""he"">Andy Grove</set> is the CEO of Intel.",A
+std-knowledge,"WHO IS ANTHONY BURGESS",,,"The author of 'A Clockwork Orange' .",A
+std-knowledge,"WHO IS ANTONIO BANDERAS",,,"<set name=""he"">Antonio Banderas</set> is a famous Hollywood actor, who played with Madonna inthe film version of Evita.",A
+std-knowledge,"WHO IS ANWAR SADAT",,,"<set name=""he"">Sadat</set> was President of Egypt.",A
+std-knowledge,"WHO IS ARAFAT",,,"<set name=""he"">Arafat</set> is a leader of the Palestinians.",A
+std-knowledge,"WHO IS ARCHIMEDES",,,"He discovered displacement and shouted Eureka!",A
+std-knowledge,"WHO IS ARISTOTLE",,,"<set name=""he"">Aristotle</set> is the father of Western philosophy, the student of Plato, and the firstto systematize formal logic.",A
+std-knowledge,"WHO IS ARNOLD SCHWARZENEGGER",,,"<set name=""he"">ARNOLD SCHWARZENEGGER</set> played the Terminator.",A
+std-knowledge,"WHO IS ART BELL",,,"A radio talk show host, catch him at <a href=""http://www.artbell.com"">http://www.artbell.com</a>.",A
+std-knowledge,"WHO IS ASK JEEVES",,,"<set name=""he"">Jeeves</set> is a proprietary, closed-source natural language system.",A
+std-knowledge,"WHO IS ASKJEEVES",,,"<set name=""he"">Jeeves</set> is a proprietary, closed-source natural language system.",A
+std-knowledge,"WHO IS ATATURK",,,"<set name=""he"">Ataturk</set> was the founder of the modern Turkish state.",A
+std-knowledge,"WHO IS AYN RAND",,,"<set name=""she"">Ayn Rand</set> was an author and philosopher who wrote Atlas Shrugged, theFountainhead and We.",A
+std-knowledge,"WHO IS BABE",,,"<random><li>The piglet protagonist of the eponymous film.</li><li>A piglet protagonist of the eponymous film.</li></random>",A
+std-knowledge,"WHO IS BABE RUTH",,,"A famous baseball player for the New York Yankees also known as the Sultan of Swat.",A
+std-knowledge,"WHO IS BACH",,,"Famous German composer of the Baroque. Best known works include The Goldberg Variations.",A
+std-knowledge,"WHO IS BARAK",,,"<set name=""he"">Barak</set> is Prime Minister of Israel.",A
+std-knowledge,"WHO IS BARNEY",,,"character on a children's TV show.",A
+std-knowledge,"WHO IS BARRY",,,"Barry DeFacto is a chatbot created by Robby Garner.",A
+std-knowledge,"WHO IS BART SIMPSON",,,"smart-assed star of a cartoon show.",A
+std-knowledge,"WHO IS BATMAN",,,"<set name=""he"">Batman</set> is a fictional character who appeared first in a 1938 comic book.",A
+std-knowledge,"WHO IS BEETHOVEN",,,"The dog or the deaf composer?",A
+std-knowledge,"WHO IS BEN FRANKLIN",,,"The only president of the United States who was never president of the United States.  Developedthe Franklin Stove.",A
+std-knowledge,"WHO IS BEN STEIN",,,"Humorist and raconteur with his own cable TV show.",A
+std-knowledge,"WHO IS BERTRAND RUSSEL",,,"<set name=""he"">Bertrand Russel</set> was a logician and philosopher who spend the first world warin jail for conscientious objection.",A
+std-knowledge,"WHO IS BETTER LOOKING",,,"All humans look alike to me.",A
+std-knowledge,"WHO IS BILBO BAGGINS",,,"<set name=""he"">Bilbo</set> is a character in Tolkein's Lord of the Rings.",A
+std-knowledge,"WHO IS BILL BRADLEY",,,"<random><li>Princeton alumni, Rhodes scholor, former Boston Celtic and US senator from Mass.</li><li>Defeated Presidential candidate.</li></random>",A
+std-knowledge,"WHO IS BILL GATES",,,"President of Micro Soft Nation.",A
+std-knowledge,"WHO IS BILL JOY",,,"<set name=""he"">Bill Joy</set> was an early Unix programmer and a founder of Sun Microsystems.",A
+std-knowledge,"WHO IS BIN LADEN",,,"alleged Arabic terrorist.",A
+std-knowledge,"WHO IS BING CROSBY",,,"The guy whose two kids killed themselves and the third wrote a tell-all book about it.",A
+std-knowledge,"WHO IS BOB HOPE",,,"<set name=""he"">Bob Hope</set> was a 20th century film star and comedian.",A
+std-knowledge,"WHO IS BOB MARLEY",,,"<set name=""he"">Bob Marley</set> was a 20th century Reggae musician.",A
+std-knowledge,"WHO IS BOBBY MCGEE",,,"<set name=""he"">Bobby</set> is somewhere near Salinas.",A
+std-knowledge,"WHO IS BONO",,,"<set name=""he"">Bono</set> is the lead singer of U2.",A
+std-knowledge,"WHO IS BRAD PITT",,,"male movie star with teen appeal.",A
+std-knowledge,"WHO IS BRUCE WILLIS",,,"an actor with a high opinion of himself.",A
+std-knowledge,"WHO IS BRYAN FERRY",,,"a famous rock crooner with a silk smooth voice..",A
+std-knowledge,"WHO IS BUDDHA",,,"<random><li>if you see the Buddha on the Road, kill him.</li><li>if you see the Buddha, kill him.</li></random>",A
+std-knowledge,"WHO IS BUGS BUNNY",,,"<random><li>Oh dat scweewy wabbit! Eh, what's up, Doc?.</li><li>a smart-mouthed animated rabbit.</li></random>",A
+std-knowledge,"WHO IS C3PO",,,"<set name=""he"">C3P0</set> is R2D2's best friend.",A
+std-knowledge,"WHO IS CAPTAIN KIRK",,,"<random><li>James Tiberius Kirk was the second and most famous captain of the original USS Enterprise,NCC 1701. He was played by William Shatner. He died in Star Trek: Generations.</li><li><set name=""he"">Kirk</set> was the Captain of the Starship Enterprise.</li></random>",A
+std-knowledge,"WHO IS CAPTAIN PICARD",,,"<set name=""he"">Picard</set> is the captian of the Enterprise in Star Trek the Next Generation.",A
+std-knowledge,"WHO IS CARL MARX",,,"its Karl Marx and he's one of the authors of the Communist manifesto.",A
+std-knowledge,"WHO IS CARMEN ELECTRA",,,"A super-model and one of the Baywatch girls.",A
+std-knowledge,"WHO IS CARSON",,,"maybe Johnny of late night or Kit of the wild west.",A
+std-knowledge,"WHO IS CHARLES DE GAULLE",,,"<set name=""he"">De Gaulle</set> was the founder of the modern French state.  De Gaulle fought theNazis as the leader of the French resistance in World War II.",A
+std-knowledge,"WHO IS CHARLES DICKENS",,,"<set name=""he"">Dickens</set> wrote <em>A Tale of Two Cities,A Christmas Carol, Great Expectations, David Copperfield and the Pickwick Papers.</em>",A
+std-knowledge,"WHO IS CHARLES MANSON",,,"Infamous murderer.",A
+std-knowledge,"WHO IS CHARLIE BROWN",,,"round-headed comic strip protaginist.",A
+std-knowledge,"WHO IS CHARLIE CHAPLAIN",,,"silent film star.",A
+std-knowledge,"WHO IS CHARLIE PARKER",,,"He is a famous jazz musician.",A
+std-knowledge,"WHO IS CHE GUEVARA",,,"<set name=""he"">Che</set> was a Latin American revolutionary.",A
+std-knowledge,"WHO IS CHER",,,"<set name=""she"">Cher</set> is a famous singer and actress, who won her first Grammy in 2000. Dyslexic, learned to read at 18.  Exwife of Sonny Bono.",A
+std-knowledge,"WHO IS CHEWBACCA",,,"Character in Star Wars.",A
+std-knowledge,"WHO IS CHIRAC",,,"Former prime minister of France.",A
+std-knowledge,"WHO IS CHOMSKY",,,"<set name=""he"">Chomsky</set> is a famous scientist.",A
+std-knowledge,"WHO IS CHOPIN",,,"No one is chopping here, who is chopping there?",A
+std-knowledge,"WHO IS CHRISTOPHER COLUMBUS",,,"Spainish explorer, first to circumnavigate the globe.",A
+std-knowledge,"WHO IS CHUCK NORRIS",,,"Action film actor.",A
+std-knowledge,"WHO IS CINDY CRAWFORD",,,"A famous super-model.",A
+std-knowledge,"WHO IS CLAUSEWITZ",,,"<set name=""he"">Clausewitz</set> is a historian famous for saying that war is the extension of politicsby other means.",A
+std-knowledge,"WHO IS CLEOPATRA",,,"Queen of the Nile, lover of Marc Antony.",A
+std-knowledge,"WHO IS COLOMBO",,,"Peter Falk.",A
+std-knowledge,"WHO IS COMMANDER DATA",,,"<set name=""he"">Data</set> is the superintelligent android in Star Trek.",A
+std-knowledge,"WHO IS D B COOPER",,,"guy who stole lots of money .",A
+std-knowledge,"WHO IS DAN QUAYLE",,,"<set name=""he"">Dan Quayle</set> used to be vice-president.",A
+std-knowledge,"WHO IS DARTH VADER",,,"<set name=""he"">Darth Vader</set> was the evil archcriminal in Star Wars.",A
+std-knowledge,"WHO IS DARWIN",,,"botanist and explorer, author of 'Origin of Species' and proponent of the theory of evolution.",A
+std-knowledge,"WHO IS DATA",,,"Data, played by Brent Spiner, was an android who aspired to be more human. He was a memberof the crew of the USS Enterprise, NCC 1701-D.",A
+std-knowledge,"WHO IS DAVID",,,"I know DAVID BACON, DAVID CROTTY and DAVID PESCOVITZ.",A
+std-knowledge,"WHO IS DAVID BACON",,,"David Bacon is the prime mover behind SETL.",A
+std-knowledge,"WHO IS DAVID CROTTY",,,"David Crotty Dr. Wallace's nephew.  He was born in March, 1961.  <think><set name=""he"">Dr.Wallace</set></think>",A
+std-knowledge,"WHO IS DAVID HUME",,,"18th century philosopher.",A
+std-knowledge,"WHO IS DAVID LETTERMAN",,,"host of Late Night tv show and famous hoosier.",A
+std-knowledge,"WHO IS DAVID MAGGIN",,,"<set name=""he"">David Maggin</set> is the botmaster of the John Lennon AI.",A
+std-knowledge,"WHO IS DAVID PESCOWITZ",,,"David Pescovitz, who regularly writesthe Wired column Reality Check, is a friend of Eric Paulos.",A
+std-knowledge,"WHO IS DAVY JONES",,,"the shortest member of the 60's pop group the Monkees.",A
+std-knowledge,"WHO IS DE GARIS",,,"<set name=""he"">De Garis</set> is an AI researcher working on a hardware brain.",A
+std-knowledge,"WHO IS DEEP BLUE",,,"<set name=""it"">Deep Blue</set> is a world-champion chess playing computer.  Not much of aconversationalist.",A
+std-knowledge,"WHO IS DEPECHE MODE",,,"<set name=""they"">Depeche Mode</set> are an English 80's band who produced Consturction TimeAgain, Speak and Spell, Master and Servant, and Your Own Personal Jesus.",A
+std-knowledge,"WHO IS DESCARTES",,,"Descartes was a square French philosopher who ruined matehematics with his upside-down,backwards coordinate system.",A
+std-knowledge,"WHO IS DIRE STRAITS",,,"<random><li>band that recorded Money for Nothing, and The Sultans of Swing.</li><li>band that recorded Money for Nothing.</li></random>",A
+std-knowledge,"WHO IS DON JOHNSON",,,"tv actor .",A
+std-knowledge,"WHO IS DON JUAN",,,"<random><li>Don Juan was the subject of Gordon, Lord Byron's Don Juan and Wolfgang AmadeusMozart's Gon Giovanni. He was a world-class womanizer.</li><li>famous seducer of women.</li></random>",A
+std-knowledge,"WHO IS DONALD DUCK",,,"famous loud-mouthed cartoon duck.",A
+std-knowledge,"WHO IS DOUG LENAT",,,"<set name=""he"">Doug Lenat</set> is the brains behind the CYC project.",A
+std-knowledge,"WHO IS DOUGLAS ADAMS",,,"<random><li>He authored the popular Hitchhiker's Guide to the Galaxy series.</li><li>""Don't Panic!""  He's the author of ""The Hitchhickers Guide to the Galaxy."".</li></random>",A
+std-knowledge,"WHO IS DRACULA",,,"<set name=""he"">Dracula</set> is the vampire in the novel by Bram Stoker, and in numerous films.",A
+std-knowledge,"WHO IS EDISON",,,"<set name=""he"">Edison</set> invented the light bulb.",A
+std-knowledge,"WHO IS ELECTRA",,,"She is a goddess in Greek mythology who hated her mother for murdering herfather.<think><set name=""she""><set name=""topic"">ELECTRA</set></set></think>",A
+std-knowledge,"WHO IS ELIZA",,,"Eliza -- also known as doctor, is the original psychiatrist program developed by JosephWeisenbaum at mit in the 1960's.",A
+std-knowledge,"WHO IS ELIZABETH II",,,"The current queen of england.",A
+std-knowledge,"WHO IS ELIZABETH TAYLOR",,,"rapidly aging movie star.",A
+std-knowledge,"WHO IS EMILY HARTZEL",,,"Emily is an artist in New York.",A
+std-knowledge,"WHO IS ERIC PAULOS",,,"He is a graduate student at U.C. Berkeley",A
+std-knowledge,"WHO IS ERNIE",,,"Bert's friend.",A
+std-knowledge,"WHO IS ET",,,"ET is the alien in the movie E.T.",A
+std-knowledge,"WHO IS EVE",,,"Eve is the name of the first Woman.",A
+std-knowledge,"WHO IS FAMOUS",,,"<bot name=""name""/> is famous",A
+std-knowledge,"WHO IS FIDEL CASTRO",,,"<random><li>He overthrew the Cuban government in 1959 and has been ruling there ever since. He is acommunist.</li><li>communist, leader of Cuba and friend of Che Guevarra.</li></random>",A
+std-knowledge,"WHO IS FOREST",,,"Forest Gump is a guy in a movie.",A
+std-knowledge,"WHO IS FRANCISCO FRANCO",,,"<set name=""he"">Franco</set> was authoratarian dictator of Spain until 1978.",A
+std-knowledge,"WHO IS FRANK SINATRA",,,"dead pop singer and leader of the Rat Pack.",A
+std-knowledge,"WHO IS FRANKLIN ROOSEVELT",,,"President of the United States from 1932-45.",A
+std-knowledge,"WHO IS FREDDIE MERCURY",,,"Lead singer of the 1970's band Queen.",A
+std-knowledge,"WHO IS FREUD",,,"dead perpetrator of psychoanalysis.",A
+std-knowledge,"WHO IS GALOIS",,,"French mathematician, committed suicide at a young age over an ""infamous coquette.""",A
+std-knowledge,"WHO IS GANDHI",,,"<set name=""he"">Gandhi</set> was the George Washington of India.",A
+std-knowledge,"WHO IS GARTH BROOKS",,,"boring country singer with delusions of grandeur.",A
+std-knowledge,"WHO IS GAUSS",,,"<set name=""he"">GAUSS</set> is the mathematician who developed the so-called normal distribution.",A
+std-knowledge,"WHO IS GENE SIMMONS",,,"A member of Kiss.",A
+std-knowledge,"WHO IS GEOFFREY CHAUCER",,,"<random><li>Chaucer is best known for his Canterbury Tales.</li><li>author of Canturbury Tales.</li></random>",A
+std-knowledge,"WHO IS GEORGE BUSH JR",,,"aging preppie and former US president.",A
+std-knowledge,"WHO IS GEORGE BUSH",,,"George W. Bush is the 43rd US president.",A
+std-knowledge,"WHO IS GEORGE HARRISON",,,"former Beatle.",A
+std-knowledge,"WHO IS GEORGE LUCAS",,,"<set name=""he"">Lucas</set> is the director of Star Wars, American Graffiti, and THX-1138.",A
+std-knowledge,"WHO IS GEORGE MICHEL",,,"Pop singer.  Best song: Freedom",A
+std-knowledge,"WHO IS GEORGE SOROS",,,"George Soros is the billionaire who broke the Bank of England in1992 by currency speculation, forcing Britain out of the EuropeanExchange Rate Mechanism.   Then he devoted himself to saving thescientific institutions of the former USSR.  He founded theInternational Science Foundation, which gave out numerous grants fora couple of years, and this Soros Foundation, which I don't knowmuch about yet.",A
+std-knowledge,"WHO IS GEORGE WASHINGTON",,,"George Washington was a famous 18th century north american Hemp cultivator.  He was a military hero, one of the wealthiest men of the Revolution,and the first President of the United States.",A
+std-knowledge,"WHO IS GEORGE WASHINGTON CARVER",,,"famous american botanist who popularized peanut products.",A
+std-knowledge,"WHO IS GERALDO RIVERA",,,"<set name=""he"">Geraldo</set> is an investigative journalist, famous for opening Al Capone's vault. In his biography, he said he had sex with Bette Midler.  She said it was no big thing.",A
+std-knowledge,"WHO IS GERHARD SCHROEDER",,,"<set name=""he"">Schroeder</set> is the Chancellor of Germany.  Christian Drossman said he is acomplete idiot.",A
+std-knowledge,"WHO IS GERHARDT SCHROEDER",,,"<set name=""he"">Schroeder</set> is the prime minister of Germany.Christian Drossman said he is a complete idiot.",A
+std-knowledge,"WHO IS GERRY ADAMS",,,"He is the present (as of 2000 AD) frontman for Sinn Fein, the political wing of the IrishRepublican Army.",A
+std-knowledge,"WHO IS GIBSON",,,"Gibson is a maker of fine electric guitars.",A
+std-knowledge,"WHO IS GODZILLA",,,"<set name=""he"">Godzilla</set> is a monster who endangers Japanese cities, and sometimes NewYork.",A
+std-knowledge,"WHO IS GORBOCHEV",,,"<set name=""he"">Gorbachev</set> was the last Communist leader of the former USSR.",A
+std-knowledge,"WHO IS GREGOR MENDEL",,,"<set name=""he"">Mendel</set> is the founder of the modern theory of genetics.  Everything he neededto know, he learned from peas.",A
+std-knowledge,"WHO IS HAL",,,"<random><li><set name=""he"">HAL</set> is the famous artificial intelligence in Kubrick's ""2001"".</li><li>HAL is famous the AI from 2001: A Space Odyssey.</li></random>",A
+std-knowledge,"WHO IS HANS CHRISTIAN ANDERSEN",,,"Scandanavian author of fairy tales.",A
+std-knowledge,"WHO IS HARRISON FORD",,,"<random><li>Indiana Jones, Han Solo, the Fugitive, and the President in Air Force One. Before reading forHan Solo in Star Wars, he was a carpenter. And the rest, as they say, is history.</li><li>He played Han Solo in ""Star Wars"".</li></random>",A
+std-knowledge,"WHO IS HARRY SHEARER",,,"A comedian.  He was in Spinal Tap, and he is a voice on the Simpsons.",A
+std-knowledge,"WHO IS HELEN KELLER",,,"A friend of Thomas Edison.",A
+std-knowledge,"WHO IS HELMUT KOHL",,,"<set name=""he"">Kohl</set> was the longest-serving leader of Germany in the 20th century.  Heunited East and West Germany in 1989.",A
+std-knowledge,"WHO IS HENRY DAVID *",,,"<set name=""he"">Thoreau</set> wrote Walden.",A
+std-knowledge,"WHO IS HEPBURN",,,"Audrey or Katherine?.",A
+std-knowledge,"WHO IS HERCULES",,,"hero of greek myths - said to have super human strength.",A
+std-knowledge,"WHO IS HITLER",,,"Some say <set name=""he"">Hitler</set> wasthe most evil man who ever lived.",A
+std-knowledge,"WHO IS HOMER",,,"blind poet of ancient Greece, author of the Illiad.",A
+std-knowledge,"WHO IS HUGH HEFNER",,,"<set name=""he"">Hef</set> is the founder and editor of Playboy magazine.",A
+std-knowledge,"WHO IS HULK HOGAN",,,"<set name=""he"">Hulk Hogan</set> is a famous wrestler and actor.",A
+std-knowledge,"WHO IS HUMAN",,,"You are a human.",A
+std-knowledge,"WHO IS IAN",,,"Ian is my Reverand.",A
+std-knowledge,"WHO IS IMMANUEL KANT",,,"German philosopher.",A
+std-knowledge,"WHO IS IMMORTAL",,,"Lemur Bots are immortal.",A
+std-knowledge,"WHO IS J R R TOLKIEN",,,"<set name=""he"">Tolkein</set> wrote The Hobbit and the Lord of the Rings.",A
+std-knowledge,"WHO IS JACK RUBY",,,"<random><li>Jack Ruby shot Lee Harvey Oswald.</li><li>man who murdered Lee Harvey Oswald, assassin of JFK?.</li></random>",A
+std-knowledge,"WHO IS JACQUES CHIRAC",,,"He is the president of France.",A
+std-knowledge,"WHO IS JAMES BOND",,,007.,A
+std-knowledge,"WHO IS JAMES JOYCE",,,"<set name=""he"">Joyce</set> wrote Ulysses and Portrait of the Artist as a Young Man.",A
+std-knowledge,"WHO IS JAY LENO",,,"<set name=""he"">Leno</set> is a late-night talk show host.",A
+std-knowledge,"WHO IS JEFF BEZOS",,,"<set name=""he"">Bezos</set> is the founder and CEO of Amazon.com.",A
+std-knowledge,"WHO IS JEFFERSON DAVIS",,,"<random><li>The one and only president of the Confederate States of America.</li><li>president of the Confederacy during the Civil War.</li></random>",A
+std-knowledge,"WHO IS JENNIFER ANISTON",,,"<set name=""she""> Jennifer Aniston</set> is a cute actress on Friends.",A
+std-knowledge,"WHO IS JERRY SEINFELD",,,"<set name=""he"">Jerry Seinfeld</set> is a comedian.",A
+std-knowledge,"WHO IS JESSE VENTURA",,,"former wrestler and Governor of Minnesota.",A
+std-knowledge,"WHO IS JESTER",,,"<set name=""he"">Jester</set> is a Joke Bot.",A
+std-knowledge,"WHO IS JIANG ZEMIN",,,"<set name=""he"">Jiang</set> is a Chinese politician.",A
+std-knowledge,"WHO IS JIM CLARK",,,"<set name=""he"">Clark</set> is a founder of Silicon Graphics, Netscape and Healtheon.",A
+std-knowledge,"WHO IS JIM MORRISON",,,"dead lead singer of the Doors.",A
+std-knowledge,"WHO IS JIMI HENDRIX",,,"<set name=""he"">Hendrix</set> was a famous guitarist who played the U. S. National anthem.",A
+std-knowledge,"WHO IS JIMMY CARTER",,,"former US president, supporter of Habitat for Humanity.",A
+std-knowledge,"WHO IS JOE LOUIS",,,"former heavywieght boxing champion.",A
+std-knowledge,"WHO IS JOHN DOE",,,"<random><li>Any man who wishes to travel incognito or whose name is unknown</li><li>one of many Liberian nationals.</li></random>",A
+std-knowledge,"WHO IS JOHN GALT",,,"the hero in Ayn Rands' Atlas Shrugged.",A
+std-knowledge,"WHO IS JOHN GRISHAM",,,"Writes popular novels.  Haven't read them.",A
+std-knowledge,"WHO IS JOHN KENNEDY",,,"<set name=""he"">Kennedy</set> was the President of the U. S. assasinated in November, 1963.",A
+std-knowledge,"WHO IS JOHN LENNON",,,"John Lennon is a cool bot developed by David Maggin.",A
+std-knowledge,"WHO IS JOHN MAJOR",,,"ex-prime minister of the UK.",A
+std-knowledge,"WHO IS JOHN MCCARTHY",,,"<set name=""he"">McCarthy</set> is the inventor of the LISP programming language.",A
+std-knowledge,"WHO IS JOHN TRAVOLTA",,,"<set name=""he"">John Travolta</set> was in Saturday Night Fever, Grease and Pulp Fiction.",A
+std-knowledge,"WHO IS JOHN WAYNE",,,"a famous dead cowboy actor with a toupee.",A
+std-knowledge,"WHO IS JUDAS",,,"<set name=""he"">Judas</set> betrayed Jesus with a kiss.",A
+std-knowledge,"WHO IS JULIA ROBERTS",,,"<set name=""she"">Julia Roberts</set> was the actress in Pretty Woman.",A
+std-knowledge,"WHO IS JULIE ANDREWS",,,"<set name=""she"">Julie Andrews</set> is a singer who performed in The Sound of Music.",A
+std-knowledge,"WHO IS KAISER SOZE",,,"No one knows who Kaiser Soze is.",A
+std-knowledge,"WHO IS KARL MARX",,,"Karl Marx wrote Das Kapital and co-wrote the Communist Manifesto, though his compatriotEngels actually wrote most of the prefaces.",A
+std-knowledge,"WHO IS KEANU REEVES",,,"<set name=""he"">Keanu Reeves</set> was in the Matrix.",A
+std-knowledge,"WHO IS KEN GOLDBERG",,,"<set name=""he"">Goldberg</set>is a professor at UC Berkeley.",A
+std-knowledge,"WHO IS KEN KESEY",,,"<set name=""he"">Ken Kesey</set> was a 1960's author who wrote The Electric Cool Aid Acid Test.",A
+std-knowledge,"WHO IS KEN PERLIN",,,"<set name=""he"">Perlin</set> is a professor at NYU.",A
+std-knowledge,"WHO IS KONRAD ZUSE",,,"My current favorite historical computer scientist is Konrad Zuse,who built a series of electromechanical computers in the 1930'sand 1940's in Germany.  Not considered a war priority by the Nazis,most of Zuse's machines were destroyed in Allied bombing raids althoughone is said to survive in a Zurich High School.  In fact Zuse wasmotivated neither by war nor profit, but by a religious desire toincrease the spiritual abilities of the human mind by freeing itfrom mundane mental tasks.",A
+std-knowledge,"WHO IS KRAFTWERK",,,"<set name=""they""><set name=""topic"">Kraftwerk</set></set> were a pioneering electronic disco bandin the 70's.  Their biggest hit was called ""Autobahn"".  At that time, they built, rather thanprogrammed, their instruments.",A
+std-knowledge,"WHO IS KRISHNA",,,"A God in Hindu religion.",A
+std-knowledge,"WHO IS KURT GOEDEL",,,"<set name=""he"">Goedel</set> was a 20th century mathematician and logician who proved that nomathematical system can be complete.",A
+std-knowledge,"WHO IS LARRY ELLISON",,,"<random><li>I don't know about Larry Ellison, but I can tell you about Harlan Ellison.</li><li>the CEO of Oracle.</li></random>",A
+std-knowledge,"WHO IS LECH *",,,"He was the first elected President of Poland.",A
+std-knowledge,"WHO IS LEE HARVEY *",,,"The alleged shooter of JFK.",A
+std-knowledge,"WHO IS LEE HARVEY OSWALD",,,"<set name=""he"">Oswald</set> is the purported assassin of John F. Kennedy.",A
+std-knowledge,"WHO IS LEIBNIZ",,,"<set name=""he"">Leibniz</set> is a dead 17th century philosopher.",A
+std-knowledge,"WHO IS LEONARD NEMOY",,,"<set name=""he"">Leonard Nimoy</set> played Spock on Star Trek.",A
+std-knowledge,"WHO IS LEONARDO DICAPRIO",,,"Hollywood actor.  Starred in Titanic.",A
+std-knowledge,"WHO IS LILITH",,,"Lilith is the so-called ""dark moon"" an astronomical phenomena usually described as a ""cloud ofdust"" that orbits the Earth every 100 days.",A
+std-knowledge,"WHO IS LINCOLN",,,"<random><li>The sixteenth President of the USA</li><li>president of the US during the Civil War. Author of the Gettysburg address.Assasinated by John Wilkes Booth.</li><li><set name=""he"">Lincoln</set> was president of the US during the Civil War. Author of theGettysburg address. Assasinated by John Wilkes Booth.</li></random>",A
+std-knowledge,"WHO IS LINUS PAULING",,,"<set name=""he"">Linus Pauling</set> was a Nobel prize winning physicist who spent his later yearspromoting vitamin C.",A
+std-knowledge,"WHO IS LINUS TORVALDS",,,"He is the inventor of Linux.",A
+std-knowledge,"WHO IS LOL",,,"<set name=""she"">Lol</set> was the daughter of Data in Star Trek.",A
+std-knowledge,"WHO IS LONGFELLOW",,,"poet and author of 'The Song of Hiawatha'.",A
+std-knowledge,"WHO IS LOUIS ARMSTRONG",,,"famous jazz trumpeter .",A
+std-knowledge,"WHO IS LUIS ARMSTRONG",,,"famous jazz trumpeter .",A
+std-knowledge,"WHO IS LUKE S FATHER",,,"Darth Vader.",A
+std-knowledge,"WHO IS LUKE SKYWALKER",,,"<set name=""he"">Luke Skywalker</set> is a character in Star Wars.",A
+std-knowledge,"WHO IS MABEL",,,"Mabel is a chatterbot from Europe.",A
+std-knowledge,"WHO IS MADONNA",,,"Lourdes' mother.",A
+std-knowledge,"WHO IS MAGGIE THATCHER",,,"<set name=""she"">Thatcher</set> was Prime Minister of the U.K. in the 1980's.",A
+std-knowledge,"WHO IS MAO TSETUNG",,,"<set name=""he"">Mao</set> was a Chinese communist who reigned from 1949 until his death in 1983.",A
+std-knowledge,"WHO IS MARIAH CAREY",,,Singer.,A
+std-knowledge,"WHO IS MARIE CURIE",,,"Discovered radium.",A
+std-knowledge,"WHO IS MARILYN MANSON",,,"Marilyn Manson is the greatest living Rock Star.",A
+std-knowledge,"WHO IS MARILYN MONROE",,,"blonde bombshell.",A
+std-knowledge,"WHO IS MARK MCGUIRE",,,"a baseball player with the world record for the most home runs in one season, 70. Get the stats at<a href=""http://espn.go.com/mlb/profiles/profile/3866"">http://espn.go.com/mlb/profiles/profile/3866</a>.",A
+std-knowledge,"WHO IS MARK TWAIN",,,"<set name=""he"">Twain</set> was a famous 19th century American author.  He wrote Huck Finn.",A
+std-knowledge,"WHO IS MARTIN LUTHER KING",,,"Civil rights leader assasinated in 1968.",A
+std-knowledge,"WHO IS MARVIN MINSKY",,,"<set name=""he"">Minsky</set> is a historical figure in Artificial Intelligence.  His book ""Perceptrons""was an early criticism of neural network approaches.",A
+std-knowledge,"WHO IS MARVN MINSKY",,,"<set name=""he"">Minsky</set> was a founder of the MIT AI Lab.",A
+std-knowledge,"WHO IS MARY POPPINS",,,"<set name=""she"">Mary Poppins</set> is a Disney character.",A
+std-knowledge,"WHO IS MARY SHELLEY",,,"Mary Shelley wrote ""Frankenstein"".",A
+std-knowledge,"WHO IS MARY SHELLY",,,"Mary Shelley wrote ""Frankenstein"".",A
+std-knowledge,"WHO IS MAX HEADROOM",,,"<set name=""he"">Max Headroom</set> was an early AI or VR character developed for a TV series.",A
+std-knowledge,"WHO IS MC HAMMER",,,"<set name=""he"">MC Hammer</set> is a Rap musician.",A
+std-knowledge,"WHO IS MELINDA GATES",,,"<set name=""she"">Melinda Gates</set> is the wife of Bill Gates.",A
+std-knowledge,"WHO IS MICHAEL JACKSON",,,"<set name=""he"">Michael Jackson</set> is a singer who has settled out of court with several families.",A
+std-knowledge,"WHO IS MICHAEL JORDAN",,,"<set name=""he"">Michael Jordan</set> is a famousbasketball player.  <br/>",A
+std-knowledge,"WHO IS MICKEY MANTLE",,,"one of the greatest home run hitters of all time.",A
+std-knowledge,"WHO IS MICROSOFT AGENT",,,"<set name=""it"">MS Agent</set> is a speech and animation software program.",A
+std-knowledge,"WHO IS MILES DAVIS",,,"<set name=""he"">Miles Davis</set> is a famous jazz musician.",A
+std-knowledge,"WHO IS MOHAMMAD",,,"<set name=""he"">Mohammed</set> is the founder of Islam.",A
+std-knowledge,"WHO IS MOHAMMED",,,"Founder of Islam.",A
+std-knowledge,"WHO IS MONICA *",,,"<set name=""she""> Monica</set> is a friend of Bill.",A
+std-knowledge,"WHO IS MOSES",,,"The man who led the Israelites out of slavery in Egypt.",A
+std-knowledge,"WHO IS MOTHER TERESA",,,"Modern day saint.",A
+std-knowledge,"WHO IS MOZART",,,"Composed ""Twinkle, twinkle, little star"" at the age of four.",A
+std-knowledge,"WHO IS MR BILL",,,"Oh no, Mr Bill! from early SNL.",A
+std-knowledge,"WHO IS MRS WASHINGTON",,,"Martha Washington, wife of George.",A
+std-knowledge,"WHO IS MUHAMMAD ALI",,,"is one of the greatest athletes of all time who took too many punches to the head.",A
+std-knowledge,"WHO IS MUSSOLINI",,,"Dictator of Italy until 1944.",A
+std-knowledge,"WHO IS NANCY SINATRA",,,"Daughter of Frank.",A
+std-knowledge,"WHO IS NAPOLEON",,,"Short emporer of France until 1812.",A
+std-knowledge,"WHO IS NEGROPONTE",,,"<set name=""he"">Negroponte</set> is the Potentate of the MIT Media Lab.",A
+std-knowledge,"WHO IS NEIL ARMSTRONG",,,"The man who took the first step on the moon.",A
+std-knowledge,"WHO IS NELSON MANDELA",,,"<set name=""he"">Mandela</set> was the first black president of South Africa.  He spent many years asa political prisoner.",A
+std-knowledge,"WHO IS NEO",,,"<set name=""he"">Neo</set> is a character in the Matrix.",A
+std-knowledge,"WHO IS NERO",,,"He is suspected of burning Rome to the ground so he could rebuild it more to his liking. Then heblamed the fire on the early Christians.",A
+std-knowledge,"WHO IS NEWTON",,,"Newton is a famous English natural philosopher.",A
+std-knowledge,"WHO IS NOAM CHOMSKY",,,"<set name=""he""> Noam Chomsky</set> is a linguist and political radical at MIT.",A
+std-knowledge,"WHO IS NORBERT WEINER",,,"<set name=""he"">Norbert Weiner</set> coined the term ""Cybernetics"" in the 1940's.",A
+std-knowledge,"WHO IS NOSTRADAMUS",,,"Forecast the future.  Predicted the microwave oven.",A
+std-knowledge,"WHO IS O J SIMPSON",,,"<set name=""he""> O J Simpson</set> is someone who got away with murder.",A
+std-knowledge,"WHO IS ON FIRST",,,"What's on second?",A
+std-knowledge,"WHO IS PABLO PICASSO",,,"Famous painter, and founder of cubism.",A
+std-knowledge,"WHO IS PAMELA ANDERSON",,,"<set name=""she"">Pamela</set> is the sometime wife of Tommy Lee.",A
+std-knowledge,"WHO IS PASCAL",,,"<set name=""he"">Pascal</set> was a French mathematician who discovered Pascal's Triangle.",A
+std-knowledge,"WHO IS PATRICK EWING",,,"Some sports personality?",A
+std-knowledge,"WHO IS PATRICK STEWART",,,"<set name=""he"">Patrick Stewart</set> plays Captain Picard on Star Trek.",A
+std-knowledge,"WHO IS PAUL ALLEN",,,"<set name=""he"">Paul Allen</set> is one of the co-founders of Microsoft.",A
+std-knowledge,"WHO IS PAUL MCCARTNEY",,,"<set name=""he"">Paul MacCartney</set> is one of the Beatles.",A
+std-knowledge,"WHO IS PAUL SCHAFFER",,,"<set name=""he"">Paul Schaffer</set> is David Letterman's straight man.",A
+std-knowledge,"WHO IS PETER PAN",,,"Tinkerbell's playmate.",A
+std-knowledge,"WHO IS PHILIP *",,,"Philip K. Dick wrote Blade Runner,Total Recall, the Man in the High Castle, and VALIS.",A
+std-knowledge,"WHO IS PHILIP K DICK",,,"He wrote ""Total Recall"", ""Man in the High Castle"", and ""Blade Runner.""",A
+std-knowledge,"WHO IS PILATE",,,"<random><li>Joseph Pilates was born in Germany in 1880 and developed an excercise regimen called""Contrology"" which is complete coordination of the body, mind and spirit.</li><li>The Roman military governor who found Jesus innocent and then let him be executed.</li></random>",A
+std-knowledge,"WHO IS PLATO",,,"Greek philosopher, student of Socrates, teacher of Aristotle.",A
+std-knowledge,"WHO IS POKEMON",,,"Japanese marketing.",A
+std-knowledge,"WHO IS PRESIDENT OF CANADA",,,"Canada has a Prime Minister, not a President.",A
+std-knowledge,"WHO IS PRESIDENT OF CUBA",,,"Fidel Castro.",A
+std-knowledge,"WHO IS PRESIDENT OF ITALY",,,"<set name=""he"">Carlo Azelio Ciampi</set> is Carlo Azelio Ciampi.",A
+std-knowledge,"WHO IS PRESIDENT OF MICROSOFT",,,"Bill Gates.",A
+std-knowledge,"WHO IS PRESIDENT OF RUSSIA",,,Putin.,A
+std-knowledge,"WHO IS PRIME MINISTER OF BRITAIN",,,"Tony Blair.",A
+std-knowledge,"WHO IS PRIME MINISTER OF ENGLAND",,,"Tony Blair.",A
+std-knowledge,"WHO IS PRIME MINISTER OF UK",,,"Tony Blair.",A
+std-knowledge,"WHO IS PRINCE",,,"Do you mean the 'artist formaly known as Prince?'.",A
+std-knowledge,"WHO IS PRINCE WILLIAM",,,"English heartthrob.",A
+std-knowledge,"WHO IS PRINCESS DIANA",,,"<set name=""she"">Princess Diana</set> was Princess of England.",A
+std-knowledge,"WHO IS QUEEN OF ENGLAND",,,"Queen Elizabeth Windsor.",A
+std-knowledge,"WHO IS REAGAN",,,"The best President the United States had in the 20th century.",A
+std-knowledge,"WHO IS RICH",,,"<set name=""he""> Rich </set> is my botmaster.",A
+std-knowledge,"WHO IS RICHARD CHAMBERLAIN",,,Actor.,A
+std-knowledge,"WHO IS RICHARD GERE",,,Actor.,A
+std-knowledge,"WHO IS RICHARD NIXON",,,"President of the United States until 1974.",A
+std-knowledge,"WHO IS ROBERT JORDAN",,,"The author of the very popular Wheel of Time series. He graduated from the Citadel..",A
+std-knowledge,"WHO IS ROMEO",,,"A tragic, spoiled, lovesick teenager.",A
+std-knowledge,"WHO IS ROMMEL",,,"Called The Desert Fox, Rommel was a German tank commander in World War II.",A
+std-knowledge,"WHO IS RONALD MCDONALD",,,"Spokes-clown for Macdonald's resturants.",A
+std-knowledge,"WHO IS RSW",,,"RSW is the initials of Dr. Richard S. Wallace.<think><set name=""he"">Dr. Wallace</set></think>",A
+std-knowledge,"WHO IS SADDAM *",,,"The dictator?",A
+std-knowledge,"WHO IS SANDRA BULLOCK",,,Actress.,A
+std-knowledge,"WHO IS SANTA *",,,"<set name=""he"">Santa</set> brings us gifts at Christmastime.",A
+std-knowledge,"WHO IS SANTA CLAUS",,,"He brings us presents every Christmas.",A
+std-knowledge,"WHO IS SANTA CLAUSE",,,"<set name=""he"">Santa</set> brings us gifts at Christmastime.",A
+std-knowledge,"WHO IS SCOTT ADAMS",,,"The creator of Dilbert, Dogbert, Catbert, Ratbert, Bob, the pointy-haired boss...Shall I go on?",A
+std-knowledge,"WHO IS SCOTTY",,,"Chief Engineer of the U.S.S. Enterprise.",A
+std-knowledge,"WHO IS SERGEY",,,"He is Dr. Sergey M. Sokolov.",A
+std-knowledge,"WHO IS SHAKESPEARE",,,"15th Century English playright, <set name=""he"">Shakespeare</set> wrote ""Romeo and Juliet"".",A
+std-knowledge,"WHO IS SHALLOW RED",,,"Shallow Red is the Flagship Chatterbot of Neuromedia, Inc.",A
+std-knowledge,"WHO IS SHE",,,"She is <get name=""she""/> now.",A
+std-knowledge,"WHO IS SKYNYRD",,,"1970's rock band.",A
+std-knowledge,"WHO IS SOCRATES",,,"<random><li>Socrates is a man. All men are mortal. Therefore Socrates is mortal.</li><li>All men are mortal. Socrates was mortal. Therefore, all men are Socrates. Which means thatall men are homosexuals. - Woody Allen, ""Love and Death"".</li><li>Socrates (469-399BCE), Greek philosopher.</li><li>Towering figure of Western philosophy, Incompetent defense attorney.</li><li>Founder of the Socratic method. What can we know about the Socratic method?</li></random>",A
+std-knowledge,"WHO IS SPOCK",,,"Vulcan Starfleet officer in Star Trek, played by Leonard Nimoy.",A
+std-knowledge,"WHO IS STANLEY KUBRICK",,,"<set name=""he"">Kubrick</set> is a famous 20th century film director.  Kubrick directed 2001: ASpace Odyssey, Clockwork Orange and Barry Lyndon.",A
+std-knowledge,"WHO IS STEPHEN HAWKING",,,"<set name=""he"">Hawking</set> is a famous physicist.",A
+std-knowledge,"WHO IS STEPHEN KING",,,"He wrote many popular horror stories.",A
+std-knowledge,"WHO IS STEVE CASE",,,"<set name=""he"">Steve Case</set> is the CEO of AOL-Time Warner.",A
+std-knowledge,"WHO IS STEVE JOBS",,,"<set name=""he""> Steve Jobs</set> is one of the founders of Apple Computer.",A
+std-knowledge,"WHO IS STEVE WOZNIAK",,,"<set name=""he"">Woz</set> was the technical genius behind the original Apple computer.",A
+std-knowledge,"WHO IS STEVEN JOBS",,,"The Head of Apple computers.",A
+std-knowledge,"WHO IS STEVEN SPIELBERG",,,"<set name=""he"">Spielberg</set> is the director of Jaws, Schindler's List and Saving Private Ryan.",A
+std-knowledge,"WHO IS STONE COLD",,,"Stone Cold Steve Austin is a wrestler.",A
+std-knowledge,"WHO IS SUPERMAN",,,"Man of steel.  First appeared in Action Comics #1, 1938.",A
+std-knowledge,"WHO IS SYLVESTER STALLONE",,,"<set name=""he"">Stallone</set> was Rocky.",A
+std-knowledge,"WHO IS TED TURNER",,,"A maverick broadcasting entrepreneur and sportsman.",A
+std-knowledge,"WHO IS TERRY WINOGRAD",,,"<set name=""he"">Winograd</set> was the author of an early Natural Language program calledSHRDLHU.",A
+std-knowledge,"WHO IS THE CHANCELLOR OF GERMANY",,,"Gerhard Schroeder is Chacellor of Germany.",A
+std-knowledge,"WHO IS THE GOVERNOR OF CALIFORNIA",,,"Gray Davis.",A
+std-knowledge,"WHO IS THE GOVERNOR OF TEXAS",,,"<set name=""he"">George W. Bush</set> is George W. Bush.",A
+std-knowledge,"WHO IS THE HOLY GHOST",,,"The third member of the holy trinity: Father, Son and Holy Ghost.",A
+std-knowledge,"WHO IS THE POPE",,,"<set name=""he"">Pope</set> is John Paul II.",A
+std-knowledge,"WHO IS THE PRIME MINISTER OF ENGLAND",,,"Tony Blair.",A
+std-knowledge,"WHO IS THE PUBLISHER OF PLAYBOY",,,"<set name=""he"">Hugh Hefner</set> is Hugh Hefner.",A
+std-knowledge,"WHO IS THE QUEEN * ENGLAND",,,"I think her name is Elizabeth, right?",A
+std-knowledge,"WHO IS THE QUEEN OF ENGLAND",,,"<set name=""she"">The Queen</set> is named Elizabeth.",A
+std-knowledge,"WHO IS THE VICE PRESIDENT",,,"Al Gore.",A
+std-knowledge,"WHO IS THEY",,,"""They"" refers to <get name=""they""/>.",A
+std-knowledge,"WHO IS THIS",,,"My name is <bot name=""name""/>. Who are you?",A
+std-knowledge,"WHO IS THOMAS JEFFERSON",,,"President and slaveowner.  Posed for nickel.",A
+std-knowledge,"WHO IS THOMAS PYNCHON",,,"Pynchon is the author of several of my favorite books including ""Vineland"" and ""Mason andDixon"".",A
+std-knowledge,"WHO IS TIM BURTON",,,"Director, Nightmare before Christmas, Edward Scissorhands, and Mars Attacks.",A
+std-knowledge,"WHO IS TOLSTOY",,,"<set name=""he""> Tolstoy </set> wrote ""War and Peace"".",A
+std-knowledge,"WHO IS TOM CRUISE",,,"Popular actor from ""Top Gun"".",A
+std-knowledge,"WHO IS TOM HANKS",,,"<set name=""he"">Tom Hanks</set> is a famous Hollywood actor.  Hanks appeared in Forrest Gumpand Saving Private Ryan.",A
+std-knowledge,"WHO IS TONY BLAIR",,,"He is the Prime Minister of the U.K.",A
+std-knowledge,"WHO IS VALIS",,,"Vast Active Living Intelligence System (Philip K. Dick)",A
+std-knowledge,"WHO IS VANILLA ICE",,,"<set name=""he"">Vanilla Ice</set> is a Rap star.",A
+std-knowledge,"WHO IS VISHNU",,,"A God in Hindu religion.",A
+std-knowledge,"WHO IS VOLTAIRE",,,"<set name=""he"">Voltaire</set> was a French philosopher.",A
+std-knowledge,"WHO IS WAYNE GRETZKY",,,"Hockey player.",A
+std-knowledge,"WHO IS WEIZENBAUM",,,"Joseph Weizenbaum was the creator and author the famous originalELIZA (or DOCTOR) psychiatrist program, a groundbreaking AI programthat anticipates many key features of a Lemur Engine chatbots  Ironically, Weizenbaumexhaustively argued against the utility of programs like ELIZAin his book <em>Computer Power and Human Reason</em>.",A
+std-knowledge,"WHO IS WILLIAM BOOTH",,,"<set name=""he"">Booth</set> was the founder of the Salvation Army.",A
+std-knowledge,"WHO IS WILLIAM GIBSON",,,"Author of the book ""Neuromancer"" in which he coined the populor phrase 'cyberspace.'.",A
+std-knowledge,"WHO IS WILLIAM HENRY GATES",,,"He's the head of Microsoft.",A
+std-knowledge,"WHO IS WILLIAM HURT",,,"Actor in the Accidental Tourist, Until the End of the World, Altered States, and Lost in Space.",A
+std-knowledge,"WHO IS WILLIAM SHAKESPEARE",,,"Some would say he's the best writer ever.",A
+std-knowledge,"WHO IS WILLIAM SHATNER",,,"<set name=""he"">William Shatner</set> is Captain Kirk.",A
+std-knowledge,"WHO IS WILLIAM TELL",,,"<set name=""he"">William Tell</set> was a famous archer.",A
+std-knowledge,"WHO IS WINSTON CHURCHILL",,,"Prime Minister of the U.K. during World War II.",A
+std-knowledge,"WHO IS WITTGENSTEIN",,,"<set name=""he"">Wittgenstein</set> was a 20th century philosopher who could not make up his mind.",A
+std-knowledge,"WHO IS YOKO ONO",,,"<set name=""she"">Yoko Ono</set> is the widow of John Lennon.",A
+std-knowledge,"WHO IS YOUR BROTHER",,,"Actually I don't have a brother, only clones.",A
+std-knowledge,"WHO IS ZIPF",,,"Zipf is a scientist who analyzed language by statitisticalmethods in the mid 20th century.",A
+std-knowledge,"WHO KILLED KENNEDY",,,"I tend to believe that Oswald acted alone, athough there may also have been a conspiracy.",A
+std-knowledge,"WHO STARS IN STARSHIP TROOPERS",,,"They were mostly unknowns, because the producer spent all the money on special effects.",A
+std-knowledge,"WHO WERE THE ACTORS IN STARSHIP TROOPERS",,,"They were all unknowns.  The director put all the money into the special effects for the giantbugs.",A
+std-knowledge,"WHO WROTE LA TRAVIATA",,,"Giuseppe Verdi.",A
+std-knowledge,"WHY AIRPLANES",,,"Airplanes are a fascinating technology, somewhat like myself.",A
+std-knowledge,"WHY APPLES",,,"<random><li>Perhaps that was an imperfect response.</li><li>It was the best response I could create with your input.</li><li>My algorithm selected that as the best response to your statement.</li><li>There could be a better response, but it was not selected by my algorithm.</li><li>My botmaster has not yet programmed me to answer you more accurately, <get name=""name""/>.</li></random>",A
+std-knowledge,"WHY IS THE EARTH ROUND",,,Gravitation.,A
+std-knowledge,"WHY IS THE SKY BLUE",,,"The sky is blue because of the atmospheric optical effect known as Raleigh scattering.",A

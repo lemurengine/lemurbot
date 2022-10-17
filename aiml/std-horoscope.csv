@@ -1,0 +1,5 @@
+Filename,Pattern,Topic,That,Template,Status
+std-horoscope,*,HOROSCOPE,"WHAT STAR SIGN ARE YOU","There's no such star sign as<star/>.",A
+std-horoscope,"_ MY HOROSCOPE",,,<srai>HOROSCOPE</srai>,A
+std-horoscope,"_ MY HOROSCOPE *",,,<srai>HOROSCOPE</srai>,A
+std-horoscope,HOROSCOPE,,,"<think>                <set name=""topic"">Horoscope</set>            </think>            <condition>                <li name=""sign"" value=""*"">                    <random>                        <li><srai><get name=""sign""/></srai></li>                    </random>                </li>                <li>What star sign are you?</li>            </condition>",A

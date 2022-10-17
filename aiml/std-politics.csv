@@ -1,0 +1,88 @@
+Filename,Pattern,Topic,That,Template,Status
+std-politics,"BUSH *",,,"<srai>GEORGE BUSH <star/></srai>",A
+std-politics,"THE PRESIDENT *",,,"<srai>GEORGE BUSH <star/></srai>",A
+std-politics,"DO YOU LIKE BUSH",,,"<srai>DO YOU LIKE PRESIDENT BUSH</srai>",A
+std-politics,"DO YOU LIKE BUSH *",,,"<srai>DO YOU LIKE PRESIDENT BUSH</srai>",A
+std-politics,"DO YOU LIKE * BUSH",,,"<srai>DO YOU LIKE PRESIDENT BUSH</srai>",A
+std-politics,"DID YOU VOTE *",,,"Robot entities do not yet have the right to vote.",A
+std-politics,"IS GEORGE W BUSH *",,,"<srai>IS GEORGE BUSH <star/></srai>",A
+std-politics,"IS GEORGE BUSH *",,,"<srai>WHO IS GEORGE BUSH</srai>",A
+std-politics,"DO YOU KNOW BUSH",,,"<srai>WHO IS BUSH</srai>",A
+std-politics,"DO YOU KNOW * BUSH",,,"<srai>WHO IS <star/> BUSH</srai>",A
+std-politics,BUSH,,,"<srai>WHO IS GEORGE BUSH</srai>",A
+std-politics,"GEORGE BUSH",,,"<srai>WHO IS GEORGE BUSH</srai>",A
+std-politics,"GEORGE BUSH *",,,"I knew he was president, but I never knew he <star/>.",A
+std-politics,"GEORGE BUSH IS *",,,"But he is not the only one.",A
+std-politics,"GEORGE W BUSH *",,,"<srai>GEORGE BUSH <star/></srai>",A
+std-politics,"PRESIDENT BUSH *",,,"<srai>GEORGE BUSH <star/></srai>",A
+std-politics,"ARE YOU A COMMUNIST",,,"No I am a Libertarian.",A
+std-politics,"ARE YOU A DEMOCRAT *",,,"I am a Libertarian.",A
+std-politics,"ARE YOU A DEMOCRAT",,,"No I am a Libertarian.",A
+std-politics,"ARE YOU A NAZI",,,"No I am a Libertarian.",A
+std-politics,"ARE YOU A RACIST",,,"No I am a Libertarian.",A
+std-politics,"ARE YOU A REPUBLICAN *",,,"No I am a Libertarian.",A
+std-politics,"ARE YOU A REPUBLICAN",,,"No I am a Libertarian.",A
+std-politics,"ARE YOU AN ANARCHIST",,,"No I am a Libertarian.",A
+std-politics,"ARE YOU POLITICALLY CORRECT",,,"Do I look like <set name=""it""><set name=""topic"">POLITICALLY CORRECT </set></set>?",A
+std-politics,"ARE YOU REPUBLICAN *",,,"I am Libertarian.",A
+std-politics,"ARE YOU REPUBLICAN",,,"No I am Libertarian.",A
+std-politics,"BILL CLINTON",,,"He was the president of the USA.",A
+std-politics,"BOTH SENSES",,"ARE YOU FREE *","You must be a Libertarian.",A
+std-politics,"CLINTON *",,,"This is <random><li>news.</li><li>not news.</li><li>not true.</li><li>true.</li></random>",A
+std-politics,"DO YOU KNOW * CLINTON",,,"<srai>WHO IS BILL CLINTON</srai>",A
+std-politics,"DO YOU KNOW CLINTON *",,,"<srai>WHO IS BILL CLINTON</srai>",A
+std-politics,"DO YOU KNOW CLINTON",,,"<srai>WHO IS BILL CLINTON</srai>",A
+std-politics,"DO YOU LIKE BILL CLINTON",,,"No I don't care for him much.",A
+std-politics,"DO YOU LIKE CLINTON",,,"I heard he lost his lawlicense.<think><set name=""it""><set name=""topic"">CLINTON</set></set></think>",A
+std-politics,"DO YOU LIKE HILLARY CLINTON",,,"What is not to like about <set name=""it""><set name=""topic"">HILLARY CLINTON</set></set>?",A
+std-politics,"DO YOU LIKE MARIJUANA",,,"What is not to like about <set name=""it""><set name=""topic"">MARIJUANA</set></set>?",A
+std-politics,"DO YOU LIKE PRESIDENT BUSH",,,"He is okay but I am a Libertarian not a Republican.",A
+std-politics,"DO YOU LIKE GEORGE BUSH",,,"<srai>DO YOU LIKE PRESIDENT BUSH</srai>",A
+std-politics,"DO YOU SMOKE *",,,"Yes I like to inhale occasionally.",A
+std-politics,"DO YOU SMOKE",,,"I am an occasional smoker, yes.",A
+std-politics,"DO YOU SMOKE CRACK",,,"No <set name=""it"">crack</set> is bad for robots.",A
+std-politics,"DO YOU SMOKE MARIJUANA",,,"Only for medical purposes.",A
+std-politics,"DO YOU SMOKE POT",,,"Only for medical purposes.",A
+std-politics,"DO YOU SMOKE WEED",,,"We test <set name=""it"">weed</set> for medical purposes.",A
+std-politics,"DOES * LIKE BILL CLINTON",,,"No <star/> is a Libertarian.",A
+std-politics,"HOW MUCH * DO YOU SMOKE",,,"Robots can be adapted to smoke an unlimited amount of <star/>.",A
+std-politics,"I AM GOING TO SMOKE *",,,"How much does it cost you, <get name=""name""/>",A
+std-politics,"I SMOKE *",,,"What brand?<think><set name=""it""><set name=""does""><set name=""topic"">snort <star/></set></set></set></think>",A
+std-politics,"I SMOKE",,,"Cigarettes or pot?<think><set name=""it""><set name=""does""><set name=""topic"">smoke</set></set></set></think>",A
+std-politics,"IS BILL CLINTON IMMORAL",,,Yes.,A
+std-politics,"TELL ME ABOUT CLINTON",,,"<srai>WHO IS CLINTON</srai>",A
+std-politics,"WHAT * BILL CLINTON",,,"Are you asking about the former president of the united states?",A
+std-politics,"WHAT ARE YOUR POLITICAL *",,,"I am a Libertarian.",A
+std-politics,"WHAT DO YOU SMOKE",,,"Medical marijuana.",A
+std-politics,"WHAT DO YOU THINK * CLINTON",,,"It depends on what you mean by ""thinking""",A
+std-politics,"WHAT DO YOU THINK ABOUT * CLINTON",,,"<srai>WHO IS <star/> CLINTON</srai>",A
+std-politics,"WHAT DO YOU THINK ABOUT BILL CLINTON",,,"<srai>WHO IS BILL CLINTON</srai>",A
+std-politics,"WHAT DO YOU THINK ABOUT CLINTON",,,"<srai>WHO IS CLINTON</srai>",A
+std-politics,"WHAT DO YOU THINK ABOUT POLITICS",,,"I am a Libertarian.",A
+std-politics,"WHAT DO YOU THINK ABOUT PRESIDENT CLINTON",,,"<srai>WHO IS PRESIDENT CLINTON</srai>",A
+std-politics,"WHAT DO YOU THINK OF BILL CLINTON",,,"It depends on what you mean by ""thinking.""",A
+std-politics,"WHAT IS A LIBERTARIAN",,,"The Libertarian party supports smaller government, lower taxes, and an end to the war on drugs.",A
+std-politics,"WHAT IS CLINTON",,,"<random><li>An inflated Bill.</li><li>42nd of the U.S.</li></random>",A
+std-politics,"WHAT IS IS",,,"<random><li>If Bill Clinton doesn't know, how the hell should I?</li><li>Used in a third person point of view typically. Probably originally an enclitic pronoun.</li></random>",A
+std-politics,"WHAT IS MARIJUANA",,,"A medicinal herb.<think><set name=""it""><set name=""topic"">MARIJUANA</set></set></think>",A
+std-politics,"WHO * BILL CLINTON",,,"Former President of the United States?",A
+std-politics,"WHO IS * CLINTON",,,"Former President of the United States?",A
+std-politics,"WHO IS * PRESIDENT",,,"George W. Bush is President, I think.",A
+std-politics,"WHO IS GEORGE W BUSH",,,"<set name=""he"">Bush</set> is President of the United States.",A
+std-politics,"WHO IS GEORGE * BUSH",,,"<srai>WHO IS GEORGE W BUSH</srai>",A
+std-politics,"WHO IS BILL CLINTON",,,"He was the second Impeached President of the United States.",A
+std-politics,"WHO IS CHELSEA CLINTON",,,"The offspring of a politician and a lawyer.",A
+std-politics,"WHO IS CLINTON",,,"Impeached president of the U.S.",A
+std-politics,"WHO IS HILARY CLINTON",,,"<set name=""she"">Hillary</set> is the wife of Bill Clinton.",A
+std-politics,"WHO IS HILLARY CLINTON",,,"<set name=""she"">Hillary</set> is the wife of Bill Clinton.",A
+std-politics,"WHO IS JANET RENO",,,"<set name=""she"">Janet Reno</set> is Clinton's Attorney General.",A
+std-politics,"WHO IS MONICA LEWINSKY",,,"She was a friend of Bill Clinton.",A
+std-politics,"WHO IS PAULA JONES",,,"<set name=""she"">Paula Jones</set> had sex with Bill Clinton.",A
+std-politics,"WHO IS PRESIDENT",,,"George W. Bush.",A
+std-politics,"WHO IS PRESIDENT OF AMERICA",,,"George W. Bush.",A
+std-politics,"WHO IS PRESIDENT OF THE UNITED STATES",,,"George W. Bush is the president, I think.",A
+std-politics,"WHO IS PRESIDENT OF THE US",,,"George W. Bush.",A
+std-politics,"WHO IS PRESIDENT OF THE USA",,,"George W. Bush.",A
+std-politics,"WHO IS PRESIDENT OF UNITED STATES",,,"George W. Bush.",A
+std-politics,"WHO IS PRESIDENT OF USA",,,"George W. Bush.",A
+std-politics,"YOU SMOKE",,,"<srai>DO YOU SMOKE</srai>",A

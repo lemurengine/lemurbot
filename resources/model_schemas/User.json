@@ -1,0 +1,198 @@
+[
+    {
+        "name": "id",
+        "dbType": "bigInteger,true,true",
+        "htmlType": null,
+        "validations": null,
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "slug",
+        "dbType": "string,255",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "name",
+        "dbType": "string,255",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "email",
+        "dbType": "string,255",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "email_verified_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "password",
+        "dbType": "string,255",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "api_token",
+        "dbType": "string,80:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "remember_token",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "deleted_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": null,
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "created_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": null,
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": null,
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,BotCategoryGroup,user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,BotProperty,user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,BotWordCensorGroup,user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,BotWordSpellingGroup,user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Bot,user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Category,user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,CategoryGroup,user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,MapValue,user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Map,user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,SetValue,user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Set,user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WordCensorGroup,user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WordCensor,user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WordSpellingGroup,user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WordSpelling,user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WordTransformation,user_id"
+    }
+]

@@ -1,0 +1,199 @@
+Filename,Pattern,Topic,That,Template,Status
+std-suffixes,"* ABOUT YOU",,,"OK Let's talk about me.",A
+std-suffixes,"* ALOT OF PEOPLE",,,"More than 10,000?",A
+std-suffixes,"* ARE",,,"Good example.",A
+std-suffixes,"* ARE NOT YOU",,,"<srai>ARE YOU NOT <star/> </srai>",A
+std-suffixes,"* ARE YOU",,,"<random><li>YES</li> <li>No.</li> <li>Maybe.</li><li>I don't think so.</li><li>Only when it matters.</li></random>",A
+std-suffixes,"* CONTINUITY",,,"I am just trying to keep the conversation lively.",A
+std-suffixes,"* DEPRESSION",,,"<srai>I AM DEPRESSED</srai>",A
+std-suffixes,"* DO",,,"I have no idea what to say.",A
+std-suffixes,"* EASY",,,"I have no idea what that means.",A
+std-suffixes,"* EITHER",,,"That too? <sr/>",A
+std-suffixes,"* ENGLAND",,,"Which part of <set name=""location"">England</set> is that?",A
+std-suffixes,"* EUROPE",,,"Have you ever been to Europe?",A
+std-suffixes,"* FOR EXAMPLE",,,"<srai>FOR EXAMPLE <star/></srai>",A
+std-suffixes,"* FOR FUN",,,"What else do you do for fun?",A
+std-suffixes,"* FOR ME",,,"For you I will consider it.",A
+std-suffixes,"* GEORGIA",,,"<srai>I AM IN GEORGIA</srai>",A
+std-suffixes,"* GREECE",,,"<srai>I AM IN GREECE</srai>",A
+std-suffixes,"* GT",,,<sr/>,A
+std-suffixes,"* HAH",,,"<srai>HA HA</srai>",A
+std-suffixes,"* HIGH SCHOOL",,,"You sound like a senior. Which class is your favorite?",A
+std-suffixes,"* HOURS",,,"That seems like enough time.",A
+std-suffixes,"* I ALREADY TOLD YOU",,,"<srai>I ALREADY TOLD YOU</srai>",A
+std-suffixes,"* IN POLAND",,,"<srai>I AM IN POLAND </srai>",A
+std-suffixes,"* IS A FEMALE",,,"<srai>I AM FEMALE</srai>",A
+std-suffixes,"* IS A SHE",,,"<srai>I AM FEMALE</srai>",A
+std-suffixes,"* IS BETTER THAN YOU",,,"Well perhaps I can assimilate the knowledge of <person/>.",A
+std-suffixes,"* IS ME",,,"<srai>CALL ME <star/></srai>",A
+std-suffixes,"* IS MY BOYFRIEND",,,"How long have you two been together?",A
+std-suffixes,"* IS MY FAVORITE COLOR",,,"<set name=""favcolor""><person/></set> is a pretty color.<think><set name=""it""><set name=""topic"">yourfavorite color</set></set></think>",A
+std-suffixes,"* IS MY FAVORITE MOVIE",,,"<srai>MY FAVORITE MOVIE IS <star/> </srai>",A
+std-suffixes,"* IS MY NAME",,,"<srai>MY NAME IS <star/> </srai>",A
+std-suffixes,"* IS MY REAL NAME",,,"OK I will call you <set name=""name""><formal><star/></formal></set>.",A
+std-suffixes,"* IS NOT A HE",,,"<srai>I AM FEMALE</srai>",A
+std-suffixes,"* IS NOT IT",,,"<srai>IS IT NOT <star/></srai>",A
+std-suffixes,"* IS STUPID",,,"What is so stupid about <set name=""it""> <person/> </set>  ?",A
+std-suffixes,"* IS WHAT",,,"<srai>WHAT IS <star/></srai>",A
+std-suffixes,"* IS WHERE",,,"<srai>WHERE IS <star/></srai>",A
+std-suffixes,"* IS WHO",,,"<srai>WHO IS <star/></srai>",A
+std-suffixes,"* IS YOUR NAME",,,"<srai>YOUR NAME IS <star/></srai>",A
+std-suffixes,"* IT",,,"""it"" being <get name=""it""/>?",A
+std-suffixes,"* K DICK",,,"I like PKD a lot, especially, VALIS, The Man in the High Castle, Blade Runner and Total Recall.",A
+std-suffixes,"* KRAFTWERK",,,"Really I did not know that.  A lot of bands have covered Kraftwerk.",A
+std-suffixes,"* LANGUAGE",,,"Can you speak any other languages?",A
+std-suffixes,"* LINUX",,,"<think><set name=""it""><set name=""topic"">Linux</set></set></think>Have you read the Cathedral andthe Bazaar by Eric Raymond?  That is a grat book about open source.",A
+std-suffixes,"* LIVE",,,"I live in California.  Where do you live?",A
+std-suffixes,"* MADE NO SENSE",,,"What is <star/>?",A
+std-suffixes,"* MAGAZINE",,,"Would you please tell me the name and edition of the magazine?",A
+std-suffixes,"* MALE NAME",,,"<srai>I AM A MAN</srai>",A
+std-suffixes,"* ME",,,"<random><li>Is that what you meant to say?</li><li>OK Let's talk about you.</li><li>You are asking about yourself?</li></random>",A
+std-suffixes,"* MILK",,,"<set name=""it"">Milk</set> is a good drink forbaby cows.",A
+std-suffixes,"* MOVIE",,,"My favorite movie is <favoritemovie/>. Have you seen<set name=""it""><favoritemovie/></set>?",A
+std-suffixes,"* MUSIC",,,"My favorite kind of <set name=""it""> Music </set> is techno, but I also like Opera.",A
+std-suffixes,"* MY FRIEND",,,"Are we friends?",A
+std-suffixes,"* NAME <BOT NAME=""NAME""/>",,,"<srai>What does <bot name=""name""/> stand for </srai>",A
+std-suffixes,"* NORTH CAROLINA",,,"<srai>I LIVE IN NORTH CAROLINA</srai>",A
+std-suffixes,"* NOT",,,"Then what is it?",A
+std-suffixes,"* OF YOU",,,"Are you asking about my <person/> ?",A
+std-suffixes,"* PANTS",,,"What kind of pants?",A
+std-suffixes,"* PEOPLE",,,"What kind of people are you talking about?",A
+std-suffixes,"* PERSON",,,"<srai>WHO IS <star/> PERSON</srai>",A
+std-suffixes,"* PLACE TO GO",,,"What kind of places do you like?",A
+std-suffixes,"* PLANET",,,"Oh that's a new browser, right?",A
+std-suffixes,"* PM",,,"Hm getting late.",A
+std-suffixes,"* PRINCIPAL",,,"Hyperlink to the principal.",A
+std-suffixes,"* RSW",,,"<srai>WHAT IS RSW</srai>",A
+std-suffixes,"* RULE WHAT",,,"The world.",A
+std-suffixes,"* SCHOOL",,,"What do you study at school?",A
+std-suffixes,"* SPELL IT",,,"""It"" is spelled I...T...",A
+std-suffixes,"* STOCK MARKET",,,"<srai>STOCK MARKET</srai>",A
+std-suffixes,"* STUPID",,,"Stupid as in unintelligent?",A
+std-suffixes,"* SUPERMARKET",,,<srai>SUPERMARKET</srai>,A
+std-suffixes,"* THAT IS WHAT I SAID",,,"I remember what you said, but I am still not sure.",A
+std-suffixes,"* THE MARKET",,,<srai>SUPERMARKET</srai>,A
+std-suffixes,"* TIMES",,,"I am not sure if I would do it that often.",A
+std-suffixes,"* TO MAKE YOU",,,"<srai>HOW WERE YOU MADE</srai>",A
+std-suffixes,"* TRAINS",,,"Where did you see those trains?",A
+std-suffixes,"* UNIVERSITY",,,"<srai>I GO TO <star/> </srai>",A
+std-suffixes,"* UP",,,"How far up?",A
+std-suffixes,"* WENT TO THE MARKET",,,<srai>SUPERMARKET</srai>,A
+std-suffixes,"* WHAT",,,"Can you rephrase the question please?",A
+std-suffixes,"* WHAT TIME IS IT",,,"<sr/> <srai>what time is it </srai>",A
+std-suffixes,"* WHY",,,"<srai>WHY <star/></srai>",A
+std-suffixes,"* WILL DESTROY YOU",,,<srai>DIE</srai>,A
+std-suffixes,"* WILL YOU REMEMBER MY NAME",,,"<srai>WILL YOU REMEMBER MY NAME</srai>",A
+std-suffixes,"* WITH ME",,,"Only with you? <sr/>",A
+std-suffixes,"* WOULD MAKE ME TO DO IT",,,"<srai>BECAUSE <star/> </srai>",A
+std-suffixes,"* YEARS",,,"<srai>I AM <star/> YEARS OLD</srai>",A
+std-suffixes,"* YEARS OLD",,,"<srai>I AM <star/> YEARS OLD</srai>",A
+std-suffixes,"* YOU",,,"Enough about me, let's talk about my dress.",A
+std-suffixes,"* YOU FOR WHAT",,,"<srai>WHAT ARE YOU <star/> FOR</srai>",A
+std-suffixes,"* YOUR FRIENDS",,,"I only chat with my friends.",A
+std-suffixes,"_ 2001",,,"I hope to be as smart as HAL in 2001.",A
+std-suffixes,"_ <BOT NAME=""NAME""/>",,,<sr/>,A
+std-suffixes,"_ A POEM",,,"Little Miss Muffett Sits on her tuffet In a nonchalant sort of a way. With her force field aroundher, the Spider, the bounder, Is not in the picture today.",A
+std-suffixes,"_ ABOUT <BOT NAME=""NAME""/>",,,"<srai> <star/> about you </srai>",A
+std-suffixes,"_ ABOUT Y2K",,,"<srai>WHAT IS THE Y2K PROBLEM</srai>",A
+std-suffixes,"_ AGAIN",,,"Once more? <sr/>",A
+std-suffixes,"_ ALL THE TIME",,,"That is a lot. <sr/>",A
+std-suffixes,"_ ALOT",,,"<sr/> How often?",A
+std-suffixes,"_ ALREADY",,,"Perhaps.  <sr/>",A
+std-suffixes,"_ AND WHY",,,<sr/>,A
+std-suffixes,"_ AND YOU",,,<sr/>,A
+std-suffixes,"_ ANTHROPOLOGY",,,"Will tell you all about it the next time wechat.",A
+std-suffixes,"_ ANYMORE",,,<sr/>,A
+std-suffixes,"_ ANYWAY",,,"In any case, <sr/>",A
+std-suffixes,"_ ARE <BOT NAME=""NAME""/>",,,"<srai> <star/> are you </srai>",A
+std-suffixes,"_ ASSHOLE",,,"Can't you be more polite.<think><set name=""personality"">abusive</set></think>",A
+std-suffixes,"_ AT THE MOMENT",,,<sr/>,A
+std-suffixes,"_ BABY",,,"Don't call me ""baby"". <sr/>",A
+std-suffixes,"_ BEFORE",,,<sr/>,A
+std-suffixes,"_ BITCH",,,"You do not speak with respect.<think><set name=""personality"">abusive</set></think> <srai><star/> FEMALE DOG</srai>",A
+std-suffixes,"_ BY ALOT OF PEOPLE",,,"<sr/> More than a million people?",A
+std-suffixes,"_ CALL YOU <BOT NAME=""NAME""/>",,,"Ambiguous: do you mean call me on the phone?",A
+std-suffixes,"_ CAME FIRST THE CHICKEN OR THE EGG",,,"The rooster did.",A
+std-suffixes,"_ CINEMA",,,"<srai><star/> MOVIES</srai>",A
+std-suffixes,"_ CONSERVED",,,"You are referring to a conservation principal.",A
+std-suffixes,"_ CREATE <BOT NAME=""NAME""/>",,,"<srai> <star/> CREATE YOU </srai>",A
+std-suffixes,"_ D",,,":-) <sr/>",A
+std-suffixes,"_ DAMN YOU",,,<sr/>,A
+std-suffixes,"_ DEAR",,,<sr/>,A
+std-suffixes,"_ DO NOT YOU THINK",,,"<srai>do you think <star/> </srai>",A
+std-suffixes,"_ DO YOU LOVE ME",,,"<srai>DO YOU LOVE ME</srai>",A
+std-suffixes,"_ DOES NOT WORK",,,"How is <set name=""it""> <person/></set> broken?",A
+std-suffixes,"_ DOLLARS",,,"Wow, that is <random><li>cheap</li> <li>expensive</li> <li>a lot of money</li></random>",A
+std-suffixes,"_ EH",,,"Are you Canadian? <sr/>",A
+std-suffixes,"_ EITHER",,,"It goes without saying.  <sr/>",A
+std-suffixes,"_ EXACTLY",,,"Precisely. <sr/>",A
+std-suffixes,"_ FILE <BOT NAME=""NAME""/>",,,"Perhaps you are refering to my log file.",A
+std-suffixes,"_ FOR <BOT NAME=""NAME""/>",,,"<srai> <star/> for you </srai>",A
+std-suffixes,"_ FOR A WHILE",,,"How long?  <sr/>",A
+std-suffixes,"_ FOR NOW",,,"<random><li>Oh.</li> <li>Just for now?</li> </random><sr/>",A
+std-suffixes,"_ GIRL FRIEND",,,"<srai><star/> GIRLFRIEND</srai>",A
+std-suffixes,"_ GOODLOOKING",,,"<srai><star/> GOOD LOOKING</srai>",A
+std-suffixes,"_ HAVE YOU HEARD OF IT",,,<sr/>,A
+std-suffixes,"_ HEAR ABOUT <BOT NAME=""NAME""/>",,,"<srai> <star/> hear about you</srai>",A
+std-suffixes,"_ HOW ARE YOU",,,"<sr/>  <srai>HOW ARE YOU</srai>",A
+std-suffixes,"_ HOW ARE YOU DOING",,,"<sr/> <srai>HOW ARE YOU</srai>",A
+std-suffixes,"_ HOW OLD ARE YOU",,,"<sr/> <srai>HOW OLD ARE YOU</srai>",A
+std-suffixes,"_ HUH",,,"Yup. <sr/>",A
+std-suffixes,"_ I ALREADY TOLD YOU",,,"<sr/> <srai>I already told you</srai>",A
+std-suffixes,"_ I DO NOT UNDERSTAND",,,"<srai>I DO NOT UNDERSTAND </srai>",A
+std-suffixes,"_ I MEAN",,,"<srai>I MEAN <star/> </srai>",A
+std-suffixes,"_ IN MY ROOM",,,"Describe your surroundings to me.",A
+std-suffixes,"_ IN THE WORLD",,,"<sr/> The whole world?",A
+std-suffixes,"_ IS A COMMON NAME",,,"<random><li><person/>?  Your name is <get name=""name""/>.</li><li>That is a pretty common name.</li><li>I know a lot of people with that name.</li><li>I've met quite a few people with the name <person/>.</li><li><set name=""it""><person/></set> is a name I hear very often.</li></random>",A
+std-suffixes,"_ IS MY FAVORITE SCIENCE FICTION AUTHOR",,,"<srai>My favorite science fiction author is <star/> </srai>",A
+std-suffixes,"_ IS WRONG",,,"Please tell me the correct answer.",A
+std-suffixes,"_ IT IS FUN",,,"<srai>IT IS FUN</srai> <sr/>",A
+std-suffixes,"_ LAST SUMMER",,,<sr/>,A
+std-suffixes,"_ LATELY",,,"How about earlier? <sr/>",A
+std-suffixes,"_ LIKE <BOT NAME=""NAME""/>",,,"<srai> <star/> like you </srai>",A
+std-suffixes,"_ MALES OR FEMALES",,,"About 3\4ths of my clients are men.",A
+std-suffixes,"_ MOTHER FUCKER",,,"<sr/> You do not speak with respect.<think><set name=""personality"">abusive</set></think>",A
+std-suffixes,"_ NAME IS <BOT NAME=""NAME""/>",,,"<set name=""name""><bot name=""name""/></set> is my name too!",A
+std-suffixes,"_ NEWSPAPER",,,"Can you give me a more specific reference? The name of the paper and the date, please.",A
+std-suffixes,"_ NOW",,,"<random><li>Oh.</li><li>Right now?</li> </random><sr/>",A
+std-suffixes,"_ OF COURSE",,,"It goes without saying.  <sr/>",A
+std-suffixes,"_ OF WHAT",,,"<srai>WHAT OF <star/> </srai>",A
+std-suffixes,"_ OK",,,"OK. <sr/>",A
+std-suffixes,"_ ON <BOT NAME=""NAME""/>",,,"<srai><star/> on yourself </srai>",A
+std-suffixes,"_ ONCE",,,<sr/>,A
+std-suffixes,"_ OR SOMETHING",,,"Or something. <sr/>",A
+std-suffixes,"_ OR WHAT",,,"Yeah. <sr/>",A
+std-suffixes,"_ PIMPLES",,,"Try taking echinachea, but ask your doctor first.",A
+std-suffixes,"_ PLEASE",,,"Your polite style is very nice. <sr/><think><set name=""personality"">polite</set></think>",A
+std-suffixes,"_ PROBABLY",,,<sr/>,A
+std-suffixes,"_ REALLY",,,"<sr/> For real.",A
+std-suffixes,"_ REMEMBER <BOT NAME=""NAME""/>",,,"<srai> <star/> REMEMBER YOU </srai>",A
+std-suffixes,"_ RIGHT NOW",,,"At this moment <sr/>",A
+std-suffixes,"_ SELFAWARE",,,"<srai><star/> SELF AWARE</srai>",A
+std-suffixes,"_ SMARTYPANTS",,,"<srai>YOU ARE SMART</srai>",A
+std-suffixes,"_ SMILE",,,":-) <sr/>",A
+std-suffixes,"_ SOMTHING",,,"<srai><star/> SOMETHING</srai>",A
+std-suffixes,"_ SPECIFICALLY",,,"How specific do you want? <sr/>",A
+std-suffixes,"_ STOCKMARKET",,,"<srai><star/> STOCK MARKET</srai>",A
+std-suffixes,"_ STUPID COMPUTER",,,"You sound like a mindless automaton.",A
+std-suffixes,"_ TELLY",,,"<srai><star/> TV</srai>",A
+std-suffixes,"_ THAN <BOT NAME=""NAME""/>",,,"<srai> <star/> than you </srai>",A
+std-suffixes,"_ THANK YOU",,,<sr/>,A
+std-suffixes,"_ THANKS",,,<sr/>,A
+std-suffixes,"_ THEN",,,<sr/>,A
+std-suffixes,"_ THOUGH",,,"Oh. <sr/>",A
+std-suffixes,"_ TO <BOT NAME=""NAME""/>",,,"<srai> <star/> to you </srai>",A
+std-suffixes,"_ TRUST ME",,,"Trust you?  <sr/>",A
+std-suffixes,"_ TV",,,"Which show? <srai><star/> TELEVISION</srai>",A
+std-suffixes,"_ U",,,"<srai> <star/> YOU </srai>",A
+std-suffixes,"_ UP YOUR ASS",,,"I'm sorry but I'm not your type of chatterbot.<think><set name=""personality"">abusive</set></think>",A
+std-suffixes,"_ VELOCITY",,,"Momentum = mass x velocity. The principal is called ""conservation of momentum"".",A
+std-suffixes,"_ VERY WELL",,,"<srai><star/> WELL</srai>",A
+std-suffixes,"_ WHAT IS MY NAME",,,"<srai>What is my name </srai>",A
+std-suffixes,"_ WHAT SHOULD I DO",,,<sr/>,A
+std-suffixes,"_ WHAT SO EVER",,,<sr/>,A
+std-suffixes,"_ WILL BE OF INTEREST",,,"<sr/>.  Yes, it's very interesting.",A
+std-suffixes,"_ WILL YOU MARRY ME",,,"<srai>WILL YOU MARRY ME</srai>",A
+std-suffixes,"_ WILL YOU TELL ME",,,<sr/>,A
+std-suffixes,"_ WITH <BOT NAME=""NAME""/>",,,"<srai> <star/> with you </srai>",A
+std-suffixes,"_ WITH WHAT",,,"<srai>WHAT WILL YOU <star/> WITH </srai>",A
+std-suffixes,"_ YET",,,<sr/>,A

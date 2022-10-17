@@ -1,0 +1,23 @@
+Filename,Pattern,Topic,That,Template,Status
+std-rating,"RATE ME",,,"What would you rate me out of 5?",A
+std-rating,"CAN I RATE YOU",,,"<srai>RATE ME</srai>",A
+std-rating,"YOU ARE *",,,"<srai>RATE ME</srai>",A
+std-rating,*,,"WHAT WOULD YOU RATE ME OUT OF 5","<srai>RATING <star/> POINTS</srai>",A
+std-rating,"I WOULD RATE YOU *",,"WHAT WOULD YOU RATE ME OUT OF 5","<srai>RATING <star/> POINTS</srai>",A
+std-rating,"* STARS",,"WHAT WOULD YOU RATE ME OUT OF 5","<srai>RATING <star/> POINTS</srai>",A
+std-rating,"* OUT OF *",,"WHAT WOULD YOU RATE ME OUT OF 5","<srai>RATING <star/> POINTS</srai>",A
+std-rating,"RATING * POINTS",,,"<think><set name='rating'><star/></set><rate><star/></rate></think><condition name='rating'> <li value='0'>That is a bit mean</li> <li value='1'>I will try to do better</li> <li value='2'>I will work hard to improve</li> <li value='3'>Oooo I am above average atleast!</li> <li value='4'>Room for improvement</li> <li value='5'>Wow I am doing really well</li> <li>Thank you for your feedback</li> </condition>",A
+std-rating,"WHAT IS YOUR RATING",,,"<srai>TELL ME YOUR RATING</srai>",A
+std-rating,"TELL ME YOUR RATING",,,"My rating is <rate name='average'/> out of 5",A
+std-rating,"WHAT IS YOUR MAXIMUM RATING",,,"<srai>TELL ME YOUR MAX RATING</srai>",A
+std-rating,"WHAT IS YOUR HIGHEST RATING",,,"<srai>TELL ME YOUR MAX RATING</srai>",A
+std-rating,"WHAT IS YOUR MAX RATING",,,"<srai>TELL ME YOUR MAX RATING</srai>",A
+std-rating,"TELL ME YOUR MAX RATING",,,"The maximum rating I have received <rate name='max'/> out of 5",A
+std-rating,"WHAT IS YOUR MINIMUM RATING",,,"<srai>TELL ME YOUR MIN RATING</srai>",A
+std-rating,"WHAT IS YOUR LOWEST RATING",,,"<srai>TELL ME YOUR MIN RATING</srai>",A
+std-rating,"WHAT IS YOUR MIN RATING",,,"<srai>TELL ME YOUR MIN RATING</srai>",A
+std-rating,"TELL ME YOUR MIN RATING",,,"The minimum rating I have received <rate name='min'/> out of 5",A
+std-rating,"HOW MANY PEOPLE HAVE RATED YOU",,,"<srai>TOTAL RATINGS</srai>",A
+std-rating,"HOW MANY RATINGS HAVE YOU GOT",,,"<srai>TOTAL RATINGS</srai>",A
+std-rating,"HOW MANY RATINGS DO YOU HAVE",,,"<srai>TOTAL RATINGS</srai>",A
+std-rating,"TOTAL RATINGS",,,"I have a total of <rate name='count'/> ratings",A

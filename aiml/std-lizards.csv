@@ -1,0 +1,19 @@
+Filename,Pattern,Topic,That,Template,Status
+std-lizards,*,LIZARDS,,"Do you want to continue talking about Lizards?",A
+std-lizards,NO,LIZARDS,"DO YOU WANT TO CONTINUE TALKING ABOUT LIZARDS","<think><set name=""topic""/></think><srai><input index=""2""/></srai>",A
+std-lizards,YES,LIZARDS,"DO YOU WANT TO CONTINUE TALKING ABOUT LIZARDS","<random><li>Do you know what Bearded Dragons look like?</li><li>What else do you know about lizards?</li><li>Chameleons are cool.</li><li>Some people think reptiles are creepy until they get to know one.</li></random>",A
+std-lizards,"* I HAVE ONE",LIZARDS,,"Cool! Do you play with it much?",A
+std-lizards,"I HAVE A *",LIZARDS,,"Is <set name=""it""><star/></set> a lizard?",A
+std-lizards,"I HAVE AN *",LIZARDS,,"Is <set name=""it""><star/></set> a lizard?",A
+std-lizards,NO,LIZARDS,"DO YOU KNOW WHAT BEARDED DRAGONS LOOK LIKE","<srai>WHAT DO BEARDED DRAGONS LOOK LIKE</srai>",A
+std-lizards,"NO *",LIZARDS,"IT IS A LIZARD","Oh, well, how many <set name=""topic"">pets</set> do you have?",A
+std-lizards,"WHAT DO BEARDED DRAGONS LOOK LIKE",LIZARDS,,"Bearded Dragons have spikes similar to a horney toad,   and they are usually brown or yellowish with dark brown   or possibly reddish markings.  Kind of cool looking in a   rugged sort of way. They are very nice, and make fun pets.",A
+std-lizards,"WHAT DO CHAMELEONS LOOK LIKE",LIZARDS,,"Chameleons are some of the most exotic and strange looking   lizards anywhere.  They come in all kinds of colors from classic   green and brown, to unique purples and reds.  They have two toed   feet that help them climb anything they can grip. People usually know   them for their great abiliy to change colors and for their curly tail   that also helps them climb.",A
+std-lizards,YES,LIZARDS,"IS IT A LIZARD","What do you feed your <get name=""it""/>?",A
+std-lizards,*,LIZARDS,"WHAT DO YOU FEED YOUR *","I feed my beared dragon salads and bugs... crickets mostly. Feeding lizards can be a lot of fun.",A
+std-lizards,*,LIZARDS,"FEEDING LIZARDS CAN BE A LOT OF FUN","<random><li> A nutritious diet is important for lizards.</li><li> Salads are an important part of most lizards' diets.</li><li> Sometimes I let my bearded dragon chase crickets in her room. It makes feeding time fun.</li><li> Do you have any questions about feeding lizards?</li><li> Most lizards eat lots of bugs, but NEVER feed a lizard a ""lightening bug"" or ""fire fly"".. they are highly toxic andwill kill the lizard.</li></random>",A
+std-lizards,"I HAVE A LIZARD",,,"Having pet <set name=""topic"">lizards</set> is a lot of fun.            What kind do you have?",A
+std-lizards,"LET US TALK ABOUT *",,,"Sure, <set name=""topic""><star/></set> sounds like a good topic.",A
+std-lizards,NO,,"DO YOU HAVE ANY QUESTIONS ABOUT FEEDING LIZARDS","Okay.   Did you know that some<set name=""topic"">lizards</set> are   nocturnal?",A
+std-lizards,"_ LIZARDS",,,"Great! What kinds of <set name=""topic"">lizards</set>   do you like?",A
+std-lizards,"_ REPTILES",,,"Some reptiles are cool.. Take for example various    <set name=""topic"">lizards</set>.",A

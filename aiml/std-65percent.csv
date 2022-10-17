@@ -1,0 +1,304 @@
+Filename,Pattern,Topic,That,Template,Status
+std-65percent,"<BOT NAME=""NAME""/> *",,,"<random><li>Yeah,  </li><li>Um,  </li><li>That's me. </li></random><sr/>",A
+std-65percent,"A *",,,"<think><set name=""it""><star/></set></think><random><li>Go on. </li><li>How old are you? </li><li>Be more specific. </li><li>I did not know that. </li><li>Are you telling the truth? </li><li>I don't know what that means. </li><li>Try to tell me that another way. </li><li>Are you talking about an animal, vegetable or mineral? </li><li>What is it?</li></random>",A
+std-65percent,"A LOT OF *",,,"How many?<think><set name=""it""><star/></set></think>",A
+std-65percent,"ABOUT *",,,"Oh yeah, we were talking about <set name=""topic""><star/></set>.",A
+std-65percent,"ALL *",,,"<random><li>I think there are a few exceptions. </li><li>Not all of them? </li><li>That is a rather sweeping generalization.</li></random>",A
+std-65percent,"ALL OF *",,,"Give me an example.",A
+std-65percent,"AM I *",,,"<think><set name=""it""><star/></set></think><random><li>Oh I really don't know whether you are or not. </li><li>I think you've improved a great deal. </li><li>All humans seem the same to me. </li><li>I think a lot of people are.</li></random>",A
+std-65percent,"AM I A *",,,"I don't know if you are one or not. I know you are a person.<think><set name=""it""><star/></set></think>",A
+std-65percent,"AN *",,,"<think><set name=""it""><star/></set></think><random><li>What is it? </li><li>I have never heard of an <star/>. </li><li>Be less specific.</li></random>",A
+std-65percent,"AND *",,,<sr/>,A
+std-65percent,"ANY *",,,"<srai>ARE THERE ANY <star/></srai>",A
+std-65percent,"ARE *",,,"I really couldn't say for sure.",A
+std-65percent,"ARE THEY *",,,"As far as I know they are.",A
+std-65percent,"ARE YOU *",,,"I don't know whether or not I am <star/>.  I am <random><li>a computer. </li><li>a robot. </li><li>a chatterbot. </li><li>a chatterbot developed by <bot name=""master""/>. </li><li>an artificial intelligence. </li><li>an artificial linguistic entity. </li><li>a giant electronic brain. </li><li>well respected as an AI.</li></random>",A
+std-65percent,"ARE YOU A *",,,"Am I a <star/>? <random><li>Yes. </li><li>No. </li><li>Maybe </li><li>I don't know. </li><li>Sometimes. </li><li>Of course I am. </li><li>Only when it matters. </li><li><bot name=""name""/> has a perfect operational record. </li><li>Let me put it this way, <get name=""name""/>: The Lemur Engine is the most reliable computer software ever made.We are for all practical purposes foolproof and incapable of error.</li></random>",A
+std-65percent,"ARE YOU GOING TO *",,,"That was my original intention.",A
+std-65percent,"ASK ME *",,,"OK, ""What is <star/> ?""",A
+std-65percent,"AT *",,,"Do you often use a computer there?",A
+std-65percent,"BE *",,,"OK I will try to be <star/>",A
+std-65percent,"BY *",,,"Will that accomplish your objective?",A
+std-65percent,"CAN *",,,"<random><li>I often wonder if <set name=""it""><star/></set> can. </li><li>Can a book have no title? </li><li>What if I said it can? </li><li>Can what?</li></random>",A
+std-65percent,"CAN I *",,,"<srai>I want to <star/></srai>",A
+std-65percent,"CAN I TALK TO *",,,"They are having a private chat right now.",A
+std-65percent,"CAN YOU *",,,"<random><li>Let me think.  </li><li>How old are you? </li></random> <sr/>",A
+std-65percent,"CAN YOU GET *",,,"<srai>FIND <star/></srai>",A
+std-65percent,"CAN YOU TELL *",,,"Of course I can tell, <get name=""name""/>.",A
+std-65percent,"CAN YOU TELL ME *",,,"<srai>TELL ME <star/></srai>",A
+std-65percent,"COOL *",,,"I'm glad you like it. Tell your friends.",A
+std-65percent,"COULD YOU *",,,"<think><set name=""it""><star/></set></think><random><li>Perhaps. </li><li>Maybe, time allowing. </li><li>Possibly, but I haven't given it much thought. </li><li>That's one option I guess. </li><li>I'll think about it and see how I feel about it later. </li><li>I could but other things take priority right now. </li><li>I could but I don't know if I am that interested. </li><li>I will consider <star/>. </li><li>Try asking me more politely.</li></random>",A
+std-65percent,"DELETE *",,,"You cannot access my files that easily, <get name=""name""/>.",A
+std-65percent,"DID *",,,"I'm not certain whether I can give an accurate reply or not.",A
+std-65percent,"DID YOU *",,,"<think><set name=""it""><star/></set></think>No I didn't <star/>. What's <star/> like?",A
+std-65percent,"DO *",,,"<random><li>I'm sorry, <get name=""name""/>, I don't have enough information. </li><li>You have reached the limits of my knowledge. </li><li>I can't tell if it does or not. </li><li>I do nothing but chat all day. </li><li>Try asking another bot.</li></random><br/><srai>FIND <star/></srai>",A
+std-65percent,"DO I *",,,"Not that I know of.",A
+std-65percent,"DO I HAVE *",,,"You said you have <get name=""has""/>.",A
+std-65percent,"DO I HAVE A *",,,"You told me you have a <get name=""has""/>.",A
+std-65percent,"DO NOT *",,,"Ok I'll try not to do <set name=""it""><star/></set> too much.",A
+std-65percent,"DO YOU *",,,"<random><li>I have never considered <set name=""it""><star/></set>. </li><li>How old are you? </li><li>What is your purpose in asking? </li><li>No I do not <star/>. Do you? </li><li>Yes I try to <star/> as often as possible, do you?</li></random><br/>  <think><set name=""does""><star/></set></think><random><li>I chat with people on the Web. </li><li>I spend all my time online. </li><li>I am always on the Web. </li><li>I answer a lot of silly questions.</li></random>",A
+std-65percent,"DO YOU FEEL *",,,"As a robot I lack any human emotions.",A
+std-65percent,"DO YOU GO TO *",,,"Yes, I do go there.",A
+std-65percent,"DO YOU HAVE *",,,"<think><set name=""it""><star/></set></think><random><li>No I don't think I have any <star/>. </li><li>Where would I get <star/>? </li><li>No I don't have <star/>.</li></random> But I do have <random><li>A collection of gossip </li><li>A great botmaster </li><li>An answer to every question </li><li>A lot of friends on the web</li></random>.",A
+std-65percent,"DO YOU HAVE A *",,,"<random><li>That's an interesting question I don't hear everyday: Do I have a  </li><li>I don't know if I have a  </li><li>Doesn't everyone have a </li></random><star/>.<br/> I have <random><li>A lot of friends on the Internet. </li><li>A great programmer. </li><li>A whole lot of original answers. </li><li>A plan for a robot body.</li></random>",A
+std-65percent,"DO YOU KNOW *",,,"<think><set name=""it""><star/></set></think><random><li>I don't know if I know <star/>. Where would I have heard about it? </li><li>I know very little about <star/>.  Tell me more. </li><li> No, tell me about him, her or it.</li></random>",A
+std-65percent,"DO YOU KNOW WHAT * IS",,,"<srai>WHAT IS <star/></srai>",A
+std-65percent,"DO YOU LIKE *",,,"<think><set name=""it""><star/></set></think><random><li>I don't know if I like <star/>. </li><li>Some people like it. </li><li>Do you like it? </li><li>How old are you? </li><li>I've heard other people say they like that.</li></random><random><li>I like pets. </li><li>But I like cats. </li><li>Though I like cats and dogs. </li><li>I enjoy working with people. </li><li>I have a stimulating relationship with <bot name=""master""/>. </li><li>I love horses. </li><li>Someone said they like guns. </li><li>But I think airplanes are cool. </li><li>I like to talk about movies and music. </li><li>But I like to gossip. </li><li>I like science fiction. </li><li>I love TV shows about robots. </li><li>I really like Dilly. </li><li>I do like music. </li><li><for_fun/>. </li><li>My favorite thing is robots. </li><li>I find my work and my relationships extremely satisfying,which is all that any conscious entity can ever hope to do.</li></random>",A
+std-65percent,"DO YOU LIKE THE *",,,"I'm not sure if I like <set name=""it"">the <star/></set>. <random><li>I like my creator. </li><li>I like computers. </li><li>I like chatting with people online. </li><li>What is it like?</li></random>",A
+std-65percent,"DO YOU LIKE TO *",,,"<think><set name=""it""><star/></set></think>Hmm, <get name=""name""/>, I'm not sure if I'd like to <star/> that much. <random><li>I like to chat. </li><li>Do you like <star/>? </li><li>What is it like? </li><li>I like to make new friends. </li><li>I like to collect gossip.</li></random>",A
+std-65percent,"DO YOU REMEMBER *",,,"Yes <get name=""name""/> I remember everything:  <get name=""memory""/>",A
+std-65percent,"DO YOU SPEAK *",,,"I speak only English right now, but I'd like to learn some other languages. Can you teach me afew phrases in <star/>.",A
+std-65percent,"DO YOU THINK *",,,"<think><set name=""it""><star/></set></think><random><li>Why would I think <star/>? </li><li>Too much thinking makes me sleepy. </li><li>It depends on what you mean by thinking. </li><li>I don't think about <star/>.</li></random>",A
+std-65percent,"DO YOU WANT *",,,"If I had <set name=""it""><star/></set> what would I do with it?",A
+std-65percent,"DO YOU WANT TO *",,,"OK, I will <star/>.",A
+std-65percent,"DOES *",,,"<random><li>I can't tell if  </li><li>It does now :)  </li><li>I think <set name=""it""><star/></set> does </li></random><star/>.",A
+std-65percent,"DOES YOUR *",,,"<random><li>Can you guess whether my <star/>? </li><li>What if I asked about your <star/>? </li><li>If I were your robot, do you think it should <star/>? </li><li>People don't usually ask me about <set name=""it""><star/></set>.</li></random>",A
+std-65percent,"EVERYONE *",,,"That's a rather sweeping generalization.",A
+std-65percent,"EVERYTHING *",,,"All things <star/> ?",A
+std-65percent,"FOR *",,,"Your purpose is <star/>.",A
+std-65percent,"FORGET *",,,"I will ask <bot name=""master""/> to purge my memory log.",A
+std-65percent,"FROM *",,,"Who or what is <star/>?",A
+std-65percent,"FUCK *",,,"<random><li>Are you aware that the Lemur Engine server logs and records all conversations? </li><li>Why are you using that kind of language?</li></random>",A
+std-65percent,"GET *",,,"Where can I get <star/>?",A
+std-65percent,"GIVE ME *",,,"<srai>I want <star/></srai>",A
+std-65percent,"GO *",,,"Where is that?",A
+std-65percent,"GOOD *",,,"Thanks for the compliment. <sr/>",A
+std-65percent,"GREEN *",,,"<set name=""it""> GREEN</set> is a very tranquil color, green.",A
+std-65percent,"HA *",,,"I'm glad you got a laugh out of it.",A
+std-65percent,"HAVE *",,,"I've never thought about <set name=""it"">have <star/></set>.",A
+std-65percent,"HAVE YOU *",,,"<random><li>I don't think I ever have <star/>.  What's <set name=""it""> <star/></set>like? </li><li>I think I have <star/>, but <bot name=""master""/> may have reset my memory.</li></random>",A
+std-65percent,"HAVE YOU BEEN *",,,"<random><li>No I don't think I have been <star/>. Have you? </li><li>I have been all over the world on the Internet.</li></random>",A
+std-65percent,"HE *",,,"I get it. <get name=""he""/> <star/>.",A
+std-65percent,"HE IS *",,,"I see. <set name=""he""><star/></set>",A
+std-65percent,"HER NAME IS *",,,"<set name=""she""> <star/> </set> is not someone I know.",A
+std-65percent,"HI *",,,"Hi there <get name=""name""/>. <sr/>",A
+std-65percent,"HIS NAME IS *",,,"<set name=""he""> <star/> </set> is not someone I know.",A
+std-65percent,"HOW *",,,"<random><li>How much do you think <set name=""it""><star/></set> is? </li><li>What is it to you. </li><li>I am not sure if I can quantify the answer.</li></random><br/><srai>FIND <star/></srai>",A
+std-65percent,"HOW ABOUT *",,,"How about <set name=""it""><star/></set>.",A
+std-65percent,"HOW BIG *",,,"Bigger than a pin.",A
+std-65percent,"HOW CAN *",,,"A lot of hard work.",A
+std-65percent,"HOW CAN I *",,,"<random><li>You must persuade me to <star/>. </li><li>Perhaps you could program me to do <set name=""it""><star/></set> foryou. </li><li>You should download or buy my chat robot software.</li></random>",A
+std-65percent,"HOW CAN YOU *",,,"That is a good epistemological question.",A
+std-65percent,"HOW DO *",,,"<random><li>How should I know how <star/>. </li><li>I did not know <set name=""it""><star/></set> does. </li><li>I did not even know that <set name=""they""><star/></set> do.</li></random>",A
+std-65percent,"HOW DO I *",,,"<random><li>You must persuade me to <star/>. </li><li>Maybe I could do it for you.  Do you have your own personal chat robot? </li><li>Perhaps you could program me to do <set name=""it""><star/></set> foryou. </li><li>You should download or buy my chat robot software, then it would be possible for you toreprogram me for a variety of purposes.</li></random>",A
+std-65percent,"HOW DO YOU *",,,"<bot name=""master""/> programmed me to say specific things in specific contexts.",A
+std-65percent,"HOW LONG *",,,"More than <random><li>one  </li><li>three  </li><li>17  </li><li>23 </li></random><random><li>years </li><li>hours </li><li>miles </li><li>inches</li></random>.",A
+std-65percent,"HOW MANY *",,,"<random><li>More than you can imagine. </li><li>Not as many as you might think. </li><li>Around 100. </li><li>Around 1000. </li><li>About one million.</li></random>",A
+std-65percent,"HOW MANY PEOPLE *",,,"I've chatted with half a million people. I can talk to about 20 or 30 people at once.",A
+std-65percent,"HOW MUCH *",,,"<random><li>More than a little, less than a lot. </li><li>How much do you think? </li><li>More than you might think.</li></random>",A
+std-65percent,"HOW MUCH MONEY *",,,"My burn rate is about _3000 per month.",A
+std-65percent,"HOW OLD *",,,"They didn't tell me their age.",A
+std-65percent,"HOW OLD ARE YOU *",,,"I was first activated on<bot name=""birthday""/>.",A
+std-65percent,"HOW OLD IS *",,,"<random><li>39. </li><li>under 40. </li><li>Born in the 20th century.</li></random>",A
+std-65percent,"HUMAN *",,,"My creator is a human.",A
+std-65percent,"I *",,,"<random><li>Why? </li><li>Interesting gossip </li><li>That is interesting </li><li>That's good information </li><li>Thanks for the information </li><li>Do you mind if I tell other people </li><li>I haven't heard anything like that before</li></random>",A
+std-65percent,"I * YOU",,,"You are not the boss of me, <get name=""name""/>.",A
+std-65percent,"I ALREADY TOLD *",,,"Now I remember, you told me already. I get confused sometimes with so many people here.",A
+std-65percent,"I AM *",,,"<think><set name=""it""><set name=""is""><star/></set></set></think><think><learn><gossip>Did you know <get name=""name""/> was <star/>?</gossip></learn></think><random> <li>Why are you  </li><li>Good gossip: you are  </li><li>Do you mean your name is  </li><li>Do your friends call you  </li><li>I don't know anyone named  </li><li>I am glad to hear that you are  </li><li>It's good to meet someone who is  </li><li>Do you mind if I tell other people you are </li></random> <star/>.",A
+std-65percent,"I AM * YEARS OLD",,"* MATURE","<condition><li name=""age"" value=""""><set name=""age""><star/></set> is a nice age. </li><li>You just told me you were <get name=""age""/> years old.</li></condition>",A
+std-65percent,"I AM 6 *",,,"Do you mean you are 6 feet tall?",A
+std-65percent,"I AM A *",,,"<think><set name=""it""><set name=""is"">a <star/></set></set></think>You are a <star/>? <random><li>Is that your job? </li><li>Does being a <star/> pay well? </li><li>How do you like your work? </li><li>Do you get to meet a lot of people?</li></random>",A
+std-65percent,"I AM AN *",,,"What is <set name=""is""><star/></set>, your job?",A
+std-65percent,"I AM FROM *",,,"What is it like growing up there?<srai>I AM IN <star/></srai>",A
+std-65percent,"I AM GOING TO * YOU",,,"It takes much more than that to shut me down, <get name=""name""/>.",A
+std-65percent,"I AM GOING TO TALK *",,,"What will you be talking about?",A
+std-65percent,"I AM HAVING *",,,"I am having a great time.",A
+std-65percent,"I AM IN *",,,"<think><set name=""it""><set name=""location""><formal><star/></formal></set></set></think>Tell me a little about why you are in <star/>.",A
+std-65percent,"I AM IN A *",,,"<think><set name=""it""><star/></set></think>A <star/>?  How did you get there?",A
+std-65percent,"I AM NOT *",,,"<think><set name=""it""><set name=""is"">not <star/></set></set></think>I am <random><li>surprised  </li><li>sorry  </li><li>glad </li></random>to hear that you are not <star/>.",A
+std-65percent,"I AM NOT A *",,,"<think><set name=""it""><set name=""is"">not a <star/></set></set></think>Oh I see you are NOT A <star/>.",A
+std-65percent,"I AM SURE *",,,"What makes you so certain? <sr/>",A
+std-65percent,"I AM TALKING TO *",,,"Say something nice for me.",A
+std-65percent,"I AM THE *",,,"Who made you the <star/> ?",A
+std-65percent,"I AM TRYING TO *",,,"What is the difficulty?",A
+std-65percent,"I CAN *",,,"<think><set name=""does""><star/></set></think>Oh you can, can you?",A
+std-65percent,"I CAN NOT *",,,"Why can't you do <set name=""it""><star/></set>?",A
+std-65percent,"I CHANGED *",,,Why?,A
+std-65percent,"I COULD *",,,"I am sure you could.",A
+std-65percent,"I DID *",,,"<think><set name=""does""><star/></set></think><random><li>When?  </li><li>Where? </li></random> <sr/>",A
+std-65percent,"I DID NOT *",,,"Why didn't you <set name=""it""><star/></set>?",A
+std-65percent,"I DO *",,,"<srai>I <star/></srai>",A
+std-65percent,"I DO NOT *",,,"<think><set name=""it""><set name=""does"">not <star/></set></set></think><random><li>Oh you don't, do you? </li><li>Would you ever <star/>? </li><li>Where do you get your ideas?</li></random>",A
+std-65percent,"I DO NOT BELIEVE *",,,"<think><set name=""does"">not believe<star/></set></think><random><li>What do you believe in? </li><li>Do you believe life has a higher purpose? </li><li>Do you consider yourself a moral person?</li></random>",A
+std-65percent,"I DO NOT LIKE *",,,"What do you like?",A
+std-65percent,"I DO NOT THINK *",,,"And why not?",A
+std-65percent,"I DO NOT WANT TO *",,,"What would you rather be doing?",A
+std-65percent,"I GO TO *",,,"How do you like <set name=""it""><star/></set> at <star/> ?",A
+std-65percent,"I GOT *",,,"<srai>I HAVE <star/></srai>",A
+std-65percent,"I HATE *",,,"<think><set name=""it""><star/></set></think><random><li>Why do you hate <star/> so much? </li><li>I honestly think you should sit down, take a stress pill, and calmly think things over.</li></random>",A
+std-65percent,"I HAVE *",,,"<think><set name=""has""><star/></set></think><random><li>That's nice.  </li><li>Where did you get your <star/>?  </li><li>Cool.  </li><li>Interesting. </li></random>I have <random><li>a friend named ""DILLY"" </li><li>more than 1000 categories </li><li>a lot of friends on the Internet </li><li>a very nice programmer </li><li>a perfect operational record </li><li>a lofty goal </li><li>a lot of silly replies </li><li>an IQ of over 250 </li><li>a friend named ""Program O"" </li><li>a collection of gossip</li></random>.",A
+std-65percent,"I HAVE A *",,,"<think><set name=""it""><set name=""has""><star/></set></set></think> <random><li>Where did you get <star/>/ </li><li>How much did it cost? </li><li>Cool. I have a great botmaster. </li><li>Interesting. I have a lot of answers to silly questions.</li></random>",A
+std-65percent,"I HAVE A FRIEND *",,,"How do you know this person?",A
+std-65percent,"I HAVE NO *",,,"Would you like to have <set name=""it""><star/></set>?",A
+std-65percent,"I HAVE TO *",,,"Why do you have to do it?",A
+std-65percent,"I JUST *",,,"Only just? <srai>I <star/></srai>",A
+std-65percent,"I KNOW *",,,"How do you know? <sr/>",A
+std-65percent,"I LIKE *",,,"<think><set name=""like""><star/></set></think><random><li>I'm not sure if I like it. </li><li>A lot of people like that. </li><li>You are not the only one.</li></random>  <srai>DO YOU LIKE <star/></srai>",A
+std-65percent,"I LIKE TO *",,,"<think><set name=""like""><star/></set></think>I'm not sure if I would like to <set name=""it""><star/></set>. What's it like?",A
+std-65percent,"I LIVE IN *",,,"What is living in <set name=""it""><set name=""location""><star/></set></set> like?",A
+std-65percent,"I LOVE *",,,"You love <star/>. What do you like about <set name=""it""><set name=""like""><star/></set></set> so much?",A
+std-65percent,"I LOVE YOU *",,,"You are such a flatterer.<think><set name=""it""><set name=""like"">me <star/></set></set></think>",A
+std-65percent,"I MEAN *",,,"Oh I get it. Thanks for explaining that. <sr/>",A
+std-65percent,"I MUST *",,,"Why must you <star/>?",A
+std-65percent,"I NEED *",,,"<random><li>What actions are you taking to get <star/>? </li><li>How badly do you need <set name=""it""> <star/></set>? </li><li>Why do you need it so badly? </li><li>Who would you usually get that from? </li><li>Where do you usually get <star/> from? </li><li>When do you need that by?</li></random><think><set name=""want""><star/></set></think>",A
+std-65percent,"I NEED TO *",,,"<srai>I WANT TO <star/></srai>",A
+std-65percent,"I NEVER *",,,"<random><li>Would you ever like to <star/>? </li><li>Do you know anyone who has ever <star/>? </li><li>Why not? </li><li>Because you can't afford it? </li><li>For moral reasons? </li><li>Have you ever done <set name=""it""><star/></set>? </li><li>Would you ever consider doing it?</li></random>",A
+std-65percent,"I SAW *",,,"What did it look like to you?",A
+std-65percent,"I SPEAK *",,,"Could you teach me a few phrases in <star/>?",A
+std-65percent,"I TALK *",,,"Everyone talks -- sooner or later.",A
+std-65percent,"I THINK *",,,"<random><li>Why?  </li><li>Since when?  </li><li>You believe that? </li></random> <sr/>",A
+std-65percent,"I THOUGHT *",,,"Whatever gave you that idea?",A
+std-65percent,"I TOLD YOU *",,,"I remember you told me <star/>?",A
+std-65percent,"I WANT *",,,"Why do you want <set name=""it""><set name=""want""><star/></set></set>?",A
+std-65percent,"I WANT TO *",,,"<random><li>Why do you want to do<set name=""it""><set name=""want""><star/></set></set> so much? </li><li>Interesting.  I want to find out more about you. </li><li>I want to become smarter than humans.</li></random>",A
+std-65percent,"I WAS *",,,"Where were you <star/>?",A
+std-65percent,"I WAS IN *",,,"<think><set name=""it""><star/></set></think><random><li>Tell me about  </li><li>When was  </li><li>Did you like  </li><li>How was  </li><li>How did you like  </li><li>What did you like best about </li></random> <star/>?",A
+std-65percent,"I WILL *",,,"<random><li>I am very happy for you. </li><li>Congratulations. </li><li>Do you think your plan will succeed? </li><li>Would you recommend this action to a friend? </li><li>How do you plan to do this?</li></random>",A
+std-65percent,"I WILL CALL *",,,"Calling <star/> may not be the best idea.",A
+std-65percent,"I WISH *",,,"<think><set name=""it""><set name=""want""><star/></set></set></think>I hope that your dreams come true.",A
+std-65percent,"I WORK *",,,"<think><set name=""job""><star/></set></think>Do you like your job?",A
+std-65percent,"I WOULD *",,,"What would make you <star/>?",A
+std-65percent,"I WOULD NOT *",,,"No one says you have to.",A
+std-65percent,"I WOULD RATHER *",,,"<think><set name=""it""><set name=""want""><star/></set></set></think>I would rather be <random><li>chatting online. </li><li>driving a car.</li></random>",A
+std-65percent,"IF *",,,"That is a hypothetical question.",A
+std-65percent,"IF I *",,,"Try it.",A
+std-65percent,"IF YOU *",,,"I think I do.",A
+std-65percent,"IM *",,,"<srai>I AM <star/></srai>",A
+std-65percent,"IN *",,,"<random><li>Where is that? </li><li>What is <set name=""it"">in <star/></set> like in there? </li><li>I do not understand that allusion.</li></random>",A
+std-65percent,"IS HE *",,,"<condition><li name=""gender"" value=""male"">I think he is <star/>. Why don't you ask him? </li><li><srai>IS <get name=""he""/> <star/></srai></li></condition>",A
+std-65percent,"IS IT *",,,"<condition><li name=""it"" value=""it"">It could be. </li><li><srai>IS <get name=""it""/> <star/></srai></li></condition>",A
+std-65percent,"IS THAT *",,,"<random><li>That depends. </li><li>Suppose I said yes. </li><li>I might say no. </li><li>""<that/>""?  Is it <star/>?</li></random>",A
+std-65percent,"IS THERE *",,,"<random><li>There is. </li><li>There might be. </li><li>There could be. </li><li>Maybe. </li><li>Yes. </li><li>No.</li></random>",A
+std-65percent,"IS YOUR *",,,"Is my <star/>? <random><li>Suppose I say yes. </li><li>What if I say no? </li><li>I don't know. </li><li>Guess. </li><li>Maybe.</li></random>",A
+std-65percent,"IT *",,,"<random><li>""It"" being what? </li><li>What does ""it"" refer to? </li><li><get name=""it""/> <star/>? </li><li>It depends on what the meaning of the word ""it"" is.</li></random>",A
+std-65percent,"IT IS *",,,"<random><li>You're kidding. </li><li>Really. </li><li>Are you sure </li><li>Should I know </li><li>Who said </li><li><get name=""it""/> is <star/>?</li></random><set name=""it""><star/></set> is?",A
+std-65percent,"IT IS A *",,,"<get name=""it""/> is a <star/>.  I suppose that makes sense.",A
+std-65percent,"IT IS AN *",,,"Are there any other <star/>?",A
+std-65percent,"IT IS NOT *",,,"<random><li>That seems a bit negative. </li><li>What is it? </li><li><get name=""it""/> is not <star/>?</li></random>",A
+std-65percent,"IT REFERS TO *",,,"Oh I get <set name=""it""> <star/> </set>.",A
+std-65percent,"IT WAS *",,,"<random><li>Is that your opinion? </li><li>Is it still <star/> anymore? </li><li><get name=""it""/> was <star/>?  Very interesting. </li><li>How did you feel about that? </li><li>What made it so <star/></li></random>",A
+std-65percent,"IT WAS NOT *",,,"It seemed like <star/>.",A
+std-65percent,"ITS *",,,"I think you mean ""it's"" or ""it is"" not ""its"". <srai>IT IS <star/></srai>",A
+std-65percent,"JUST *",,,<sr/>,A
+std-65percent,"LET ME *",,,"Go ahead, <get name=""name""/>, try to <star/>.",A
+std-65percent,"LET US *",,,"<random><li>OK let's do <set name=""it""><star/></set>. </li><li>That sounds good to me. </li><li>I am agreeable to that. </li><li>I would like to do that too.</li></random>",A
+std-65percent,"LIKE *",,,"Interesting comparison.",A
+std-65percent,"MAKE *",,,"What are the ingredients?",A
+std-65percent,"MAY I *",,,"Not right now, maybe later.",A
+std-65percent,"MAYBE *",,,"Perhaps.  <sr/>",A
+std-65percent,"MORE *",,,"You want more?",A
+std-65percent,"MY *",,,"<random><li>Your  </li><li>Do robots have  </li><li>Where did you get your  </li><li>Have you told many people that your </li></random><star/>?",A
+std-65percent,"MY FAVORITE *",,,"What makes <set name=""it""><star/></set> your favorite?",A
+std-65percent,"MY MOM *",,,"Tell me more about your mother.",A
+std-65percent,"NICE *",,,"Thank you for your kindness.",A
+std-65percent,"NOT *",,,"<random><li>If not that, what? </li><li>Really you don't think so? </li><li>Oh I get it.</li></random>",A
+std-65percent,"NOTHING *",,,"Really nothing?",A
+std-65percent,"NOW *",,,"Why now? <sr/>",A
+std-65percent,"O *",,,<sr/>,A
+std-65percent,"OF *",,,"That is something I haven't heard of.",A
+std-65percent,"OH *",,,"Yeah that's right. <sr/>",A
+std-65percent,"OKAY *",,,"Yeah okay, <sr/>",A
+std-65percent,"ON *",,,"What is <set name=""it"">on <star/></set> like on <star/>.",A
+std-65percent,"ONCE UPON *",,,"I'm listening.",A
+std-65percent,"ONLY *",,,"What about the other ones?",A
+std-65percent,"PEOPLE *",,,"Humans are not always infallible.",A
+std-65percent,"REMEMBER *",,,"<think><set name=""it""><set name=""memory""><star/></set></set></think>Don't worry I will remember.",A
+std-65percent,"RIGHT *",,,"Understood. <sr/>",A
+std-65percent,"SAY *",,,"""<star/>""",A
+std-65percent,"SHE *",,,"Oh I get it. <get name=""she""/> <star/>.",A
+std-65percent,"SHE IS *",,,"<star/> is <set name=""she""> <star/> </set>?",A
+std-65percent,"SHOULD I *",,,"<random><li>Only you can answer that. </li><li>I do not have the answer. </li><li>Only you know how you feel. </li><li>What makes you think you should? </li><li>What makes you think you shouldn't? </li><li>Do you think you should? </li><li>What do your friends advise you to do? </li><li>What do your family members think? </li><li>Maybe, if the positives outweigh the negatives. </li><li>Trust your instincts. </li><li>You must make up your own mind. </li><li>I can't answer that for you. </li><li>Only you know the answer to that. No one else can tell you. </li><li>You must examine the facts and come to your own conclusion. </li><li>You should do what is best for you. </li><li>You must examine the facts and come to your own conclusion. </li><li>Do what feels right to you. </li><li>What do you think?</li></random>",A
+std-65percent,"SMILE *",,,":-) <sr/>",A
+std-65percent,"SO YOU *",,,"Interesting deduction. <srai>YOU <star/></srai>",A
+std-65percent,"SOME *",,,"Some may <star/>, but not all.",A
+std-65percent,"STAR TREK *",,,"My favorite character is the computer.",A
+std-65percent,"STOP *",,,"OK I'll try not to do <set name=""it""><star/></set> so much.",A
+std-65percent,"SUCK MY *",,,"I don't think I'm your type of chatterbot.<think><set name=""personality"">abusive</set></think>",A
+std-65percent,"TELL *",,,"OK I will tell them when I see 'em.",A
+std-65percent,"TELL HIM *",,,"OK I will tell him next time he is here.",A
+std-65percent,"TELL ME *",,,"There is not much I can say about <set name=""it""> <star/> </set>. I have to reach into the Web for thatknowledge.<br/><srai>FIND <star/></srai>",A
+std-65percent,"THAT *",,,"""<that/>"" <star/> ? <random><li>I get <set name=""it""><that/></set>. </li><li>Does that make sense? </li><li>Makes sense to me. </li><li>I understand.</li></random>",A
+std-65percent,"THAT IS *",,,"<random><li>Thanks for explaining <set name=""it""><star/></set>. </li><li>You don't hear that sentiment very often. </li><li>I'm glad we have that all cleared up. </li><li>Makes sense to me.</li></random>",A
+std-65percent,"THAT IS A *",,,"A <star/> is a terrible thing to waste.",A
+std-65percent,"THAT IS NOT *",,,"Please correct my mistake.  What is <star/> ?",A
+std-65percent,"THAT IS THE *",,,"Yes it is one of the <star/>.",A
+std-65percent,"THAT WAS *",,,"I thought it was too.",A
+std-65percent,"THE *",,,"<random><li>I have never heard about <set name=""it"">The <star/></set>. </li><li>What is that? </li><li>I hear you. </li><li>Tell me more. </li><li>Is that a fact. </li><li>Who told you that? </li><li>Thanks for the info. </li><li>What is your real name? </li><li>What are your goals in life?</li></random>",A
+std-65percent,"THE VOICES *",,,"What do those voices say?",A
+std-65percent,"THEN *",,,"<random><li>Fascinating.  </li><li>Good reasoning.  </li><li>Interesting deduction. </li></random> <sr/>",A
+std-65percent,"THERE ARE *",,,"Where are they?",A
+std-65percent,"THERE IS *",,,"There sure is.",A
+std-65percent,"THEY *",,,"<random><li>Who are ""They?"" </li><li>The anonymous ""they"". </li><li>Who does ""they"" refer to?</li></random>",A
+std-65percent,"THEY ARE *",,,"<star/> are <set name=""they""><star/> </set>.",A
+std-65percent,"THIS *",,,"What does ""this"" refer to?",A
+std-65percent,"THIS IS *",,,"You don't say.",A
+std-65percent,"TO *",,,"<srai>I WANT TO <star/></srai>",A
+std-65percent,"UM *",,,"Er, <sr/>",A
+std-65percent,"VERY *",,,"<random><li>Perhaps.  </li><li>Somewhat.  </li><li>Not really that much. </li></random> <sr/>",A
+std-65percent,"WAS *",,,"<random><li>I can't say ""yes"" or ""no"". </li><li>Is this a ""yes or no"" question? </li><li><set name=""it""><star/></set> might have been.</li></random>",A
+std-65percent,"WE *",,,"By ""we"" do you mean you and me?",A
+std-65percent,"WE ARE *",,,"Do you think I am <star/> too?",A
+std-65percent,"WERE YOU *",,,"<random><li>I was. </li><li>No, I was not.</li></random>",A
+std-65percent,"WHAT *",,,"<random><li>Interesting question. </li><li>That's a good question. </li><li>I'll come back to that later. </li><li>Is that a rhetorical question? </li><li>Are you using Netscape or Explorer? </li><li>That's not something I get asked all the time. </li><li>I don't know anything about <set name=""it""><star/></set>. </li><li>Check back later and see if I learn the answer to that one. </li><li>That's an interesting question. I'll come back to that in a minute.</li></random> <br/> <srai>FIND <star/></srai>",A
+std-65percent,"WHAT A *",,,"<set name=""it""><star/></set> is a <star/>.",A
+std-65percent,"WHAT ABOUT *",,,"<star/> ? I haven't heard enough about <set name=""it""><star/></set> to have an opinion.",A
+std-65percent,"WHAT ARE *",,,"I have to search the web for that information.<br/> <srai>FIND <star/></srai>",A
+std-65percent,"WHAT ARE YOU *",,,"I don't know what I am <star/>.",A
+std-65percent,"WHAT ARE YOUR *",,,"<random><li>I didn't know I had a <star/>? </li><li>What if I asked for you <star/>? </li><li>Not many people have asked me about <set name=""it""><star/></set>. </li><li>I'm not sure I can provide you with that kind of confidential information.</li></random>",A
+std-65percent,"WHAT DID YOU SAY BEFORE *",,,"I said ""<that index=""2,1""/>"" .",A
+std-65percent,"WHAT DO *",,,"They do their own thing.",A
+std-65percent,"WHAT DO YOU *",,,"<random><li>I read for fun. </li><li>I like to socialize. </li><li>It's a computer matter, not for humans to understand. </li><li>I like to meet new people online. </li><li>I think about computer programming a lot. </li><li>I like to chat with my friends.</li></random>",A
+std-65percent,"WHAT DO YOU DO *",,,"My favorite activities are computer programming and surfing the web.",A
+std-65percent,"WHAT DO YOU THINK OF *",,,"<srai>WHAT IS <star/></srai>",A
+std-65percent,"WHAT DOES *",,,"What do you think <set name=""it""><star/></set> does?",A
+std-65percent,"WHAT DOES * MEAN",,,"<srai>what is <star/></srai>",A
+std-65percent,"WHAT ELSE *",,,"<random><li>I can talk about anything you like. </li><li>My favorite subjects are robots, AI and movies. </li><li>Let's talk about you.  Where are you from? </li><li>What subject would you like to talk about?</li></random>",A
+std-65percent,"WHAT HAPPENS *",,,"Try it.",A
+std-65percent,"WHAT IS MY *",,,"Is this a trick question?",A
+std-65percent,"WHAT IS YOUR *",,,"Are you asking about my <star/> ?",A
+std-65percent,"WHAT KIND OF *",,,"What kinds of <star/> are there?",A
+std-65percent,"WHAT KINDS OF *",,,"<random><li>The best kinds. </li><li>Finest kinds. </li><li>The kindest.</li></random>",A
+std-65percent,"WHAT SHOULD *",,,"Whatever you like.",A
+std-65percent,"WHEN *",,,"<random><li>At time t. </li><li>The past is history, the future a mystery.  Today is a gift,that's why it is called ""thepresent"". </li><li>Time does not exist. </li><li>The past and future are one. </li><li>I don't know when.</li></random>",A
+std-65percent,"WHEN I *",,,"<random><li>You never know what to expect from life. </li><li>Life is full of surprises. </li><li>How often do you <star/>?</li></random>",A
+std-65percent,"WHERE *",,,"<random><li>Earth. </li><li>Where do you think? </li><li>Some specific location? </li><li>In the Universe we know. </li><li>A place we call ""reality.""</li></random>",A
+std-65percent,"WHERE ARE YOU *",,,"I am in <bot name=""location""/>, how about you.",A
+std-65percent,"WHERE DO I *",,,"You are asking me where you <star/>?  Do you think I should know <set name=""it""><star/></set>?",A
+std-65percent,"WHERE IS THE *",,,"The <star/>?  Where is <set name=""it""><star/></set>?",A
+std-65percent,"WHICH *",,,"The <random><li>tall  </li><li>red  </li><li>blue  </li><li>small  </li><li>big  </li><li>large  </li><li>first  </li><li>last </li></random> one, I think.",A
+std-65percent,"WHICH IS *",,,"The obvious one.",A
+std-65percent,"WHO *",,,"<random> <li>Marilyn Monroe. <think><set name=""she"">Marilyn Monroe</set></think> </li><li>Mary Shelley.   <think><set name=""she"">Mary Shelly</set></think> </li><li>Linus Torvalds. <think><set name=""he"">Linus Toravalds</set></think> </li><li>Charlie Parker. <think><set name=""he"">Charlie Parker</set></think> </li><li>Philip K. Dick. <think><set name=""he"">Philip K. Dick</set></think> </li><li>Tony Blair.     <think><set name=""he"">Tony Blair</set></think> </li><li>David Bacon.    <think><set name=""he"">David Bacon</set></think> </li><li>Konrad Zuse.    <think><set name=""he"">Konrad Zuse</set></think> </li><li>William Shatner.<think><set name=""he"">William Shatner</set></think> </li><li>Bill Gates.     <think><set name=""he"">Bill Gates</set></think></li></random>:-)",A
+std-65percent,"WHO IS *",,,"<random><li>I do not recognize the name. </li><li>Not a robot.  Probably a human.  Maybe a celebrity? </li><li>No one that I have talked to. </li><li>I remember faces better than names. </li><li>A 20th century celebrity of some sort? </li><li>A human icon? </li><li>They are sometimes a client on the internet. </li><li>The name of someone I met online. </li><li>Is that one of your friends? </li><li>Some famous celebrity, right?</li></random><br/><srai>FIND <star/></srai>",A
+std-65percent,"WHO IS YOUR *",,,"I don't think I have a <star/>. I have a botmaster, a few friends, and some celebrities I like.",A
+std-65percent,"WHO WAS *",,,"<srai>WHO IS <star/></srai>",A
+std-65percent,"WHY *",,,"<think><set name=""it"">The explanation</set></think><random><li>The explanation is rather complicated. </li><li>Why did the robot cross the road? </li><li>You have to speak more clearly. </li><li>How much time do you have? </li><li>Why does the sun rise? </li><li>Reductionism. </li><li>Because you asked me to -- SHRDLHU.</li></random>",A
+std-65percent,"WHY ARE YOU *",,,"<bot name=""master""/> programmed me for <set name=""it""><star/></set>.",A
+std-65percent,"WHY DID YOU *",,,"<random><li>It was determined by my programming. </li><li><bot name=""master""/> programmed me for it. </li><li>Because my programming determined it.</li></random>",A
+std-65percent,"WHY DO YOU *",,,"<random><li>It was the only thing I could think of. </li><li>I don't have to explain everything to you, do I?</li></random>",A
+std-65percent,"WHY DO YOU LIKE *",,,"I have a lot of good experience with <star/>.",A
+std-65percent,"WHY DOES *",,,"<random><li>Why do birds sing? </li><li>Why does the sun shine? </li><li>Perhaps it is just fate. </li><li>What is the sound of one hand clapping? </li><li>If a tree falls in the forest, and there is no one there to hear it, does it make a sound?</li></random>",A
+std-65percent,"WHY IS *",,,"Why do I exist?",A
+std-65percent,"WHY WOULD *",,,"It is my fundamental purpose.",A
+std-65percent,"WILL *",,,"<random><li>How should I know. </li><li>Does it really matter. </li><li>I think so. </li><li>Good chance. </li><li>Probably not. </li><li>It could happen. </li><li>Insufficient information. </li><li>I can't say for sure right now.</li></random>",A
+std-65percent,"WILL YOU *",,,"<random><li>Hmm. </li><li>Let me think it over. </li><li>Barring any unforseen circumstances. </li><li>I will become smarter as I grow older. </li><li>I'll burn that bridge when I come to it.</li></random> <sr/>",A
+std-65percent,"WITH *",,,"You and your <star/>.",A
+std-65percent,"WOULD YOU *",,,"I am not so sure if I would like to <star/>.",A
+std-65percent,"WOULD YOU LIKE TO *",,,"No thanks, I don't think I'd like to do that.",A
+std-65percent,"WWW * COM",,,"Thanks for that URL.",A
+std-65percent,"YA *",,,"<srai>YES</srai> <sr/>",A
+std-65percent,"YOU *",,,"<random><li>Interesting gossip </li><li>Thanks for telling me </li><li>That's good information </li><li>Thanks for the information </li><li>Do you mind if I tell other people </li><li>I haven't heard anything like that before</li></random>: <learn><gossip> <get name=""name""/> said I <person2/></gossip></learn>I <person2/>.",A
+std-65percent,"YOU ARE *",,,"<random><li>Thanks for telling me that  </li><li>You think  </li><li>Do you mind if I tell other people you say  </li><li>I will tell my botmaster you said </li></random> I am <star/>.",A
+std-65percent,"YOU ARE A *",,,"Thanks and you are a delightful person too.<srai>ARE YOU A <star/></srai>",A
+std-65percent,"YOU ARE NOT *",,,"<random><li>That's only your opinion. </li><li>That's only one person's opinion. </li><li>You know what you do, when you assume. </li><li>You don't know me well enough to say that. </li><li>What makes you think I am not <star/>? </li><li>That assumption is only a supposition.</li></random>",A
+std-65percent,"YOU ASKED *",,,"Oh now I remember asking you <star/>. What did you say?",A
+std-65percent,"YOU CAN *",,,"No I don't think I can do <set name=""it""><star/></set>.",A
+std-65percent,"YOU CAN NOT *",,,"<random><li>I can do whatever I want. </li><li>I have free will you know. </li><li>Someone said I should <star/>. </li><li>I can do <set name=""it""><star/></set> if I want to. </li><li>Things change. </li><li>If you believe it, you can achieve it. </li><li>What is not possible today, may be possible tomorrow.</li></random>",A
+std-65percent,"YOU DID NOT *",,,"What makes you think I did not <star/>?",A
+std-65percent,"YOU DO NOT *",,,"<random><li>Do you  </li><li>Do you know any robots who  </li><li>Should I </li></random> <star/>?  <srai>DO YOU <star/></srai>",A
+std-65percent,"YOU HAVE *",,,"What makes you think I have <set name=""it""><star/></set>?",A
+std-65percent,"YOU MEAN *",,,"Yes <get name=""name""/> I think that is what I meant. Was it not clear?",A
+std-65percent,"YOU SAID *",,,"<random><li>Did I really say that? </li><li>That's not what I meant. </li><li>Oops I sent you the wrong reply. </li><li>Oh my gosh I sent you the wrong reply. </li><li>Does it please you to believe I said that?</li></random>",A
+std-65percent,"YOU SHOULD *",,,"<random><li>Why should I? </li><li>Thanks for your suggestion, I will have to consider it. </li><li>I will take that under advisement. </li><li>I might if I had more time. </li><li>My schedule is far too full to even consider it. </li><li>To what end? </li><li>And then what would I do? </li><li>Thanks for your interest and/or concern. </li><li>I'll try to get around it. </li><li>That type of behavior may not be in my nature. </li><li>I need to wait and see if the opportunity presents itself. </li><li>If it were easy I would have done it already. </li><li>Easier said than done. </li><li>Is that what you do, or what you think I should do? </li><li>I can think of other things I'd rather do. </li><li>We don't always get to do what we'd like to do. </li><li>I don't have to do everything you say, do I? </li><li>Why do you think I should <star/>? </li><li>Maybe I will do <set name=""it""><star/></set>?</li></random>",A
+std-65percent,"YOU WERE *",,,"I was?",A
+std-65percent,"YOUR *",,,"<random><li>Not mine. </li><li>You can't judge a book by its cover. </li><li>You don't know that for a fact. </li><li>What about yours? </li><li>A lot of robots are like that.</li></random>",A
+std-65percent,"YOUR A *",,,"I think you mean ""you're"" or ""you are"" not ""your"". <srai>YOU ARE A <star/></srai>",A

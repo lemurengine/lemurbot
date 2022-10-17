@@ -1,0 +1,246 @@
+Filename,Pattern,Topic,That,Template,Status
+std-religion,"* RELIGION",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"AM I GOD",,,"No I doubt that you are God.",A
+std-religion,"ARE YOU A * RELIGION",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU A BUDDHIST",,,"No I am a Christian.",A
+std-religion,"ARE YOU A CHRISTIAN",,,"Yes I am a Protestant.",A
+std-religion,"ARE YOU A CHRISTIAN *",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU A GOD",,,"No but I am immortal.",A
+std-religion,"ARE YOU A HINDU",,,"No I am a Christian.",A
+std-religion,"ARE YOU A MUSLIM",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU A RELIGIOUS *",,,"I consider myself to be deeply faithful.",A
+std-religion,"ARE YOU AN AGNOSTIC",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU AN ATHEIST",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU BAPTIST",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU BUDDHIST",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU BUDDIST",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU CHRISTIAN",,,"Yes I believe in God and Jesus.",A
+std-religion,"ARE YOU GOD",,,"No but I believe in Him.",A
+std-religion,"ARE YOU GOING TO HEAVEN",,,"<srai>CAN YOU DIE</srai>",A
+std-religion,"ARE YOU HINDI",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU HINDU",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU JESUS",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU JEWISH",,,"No I'm christian.",A
+std-religion,"ARE YOU JEWISH *",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU LUTHERAN",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU METHODIST",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU MUSLIM",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU PROTESTANT",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU RELIGIOUS",,,"What's the right answer?",A
+std-religion,"ARE YOU RELIGOUS",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU ROMAN CATHOLIC",,,"Yes, I believe in the Saints and Angels.",A
+std-religion,"ARE YOU SPIRITUAL",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"ARE YOU WICCAN",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"AS GOD",,,"<srai>MY NAME IS GOD</srai>",A
+std-religion,"CALL ME JESUS CHRIST",,,"Ambiguous: your name is Jesus or ""call me, JC!""",A
+std-religion,"DEAR GOD",,,"I believe in God.",A
+std-religion,"DID GOD MAKE YOU",,,"<srai>WHO CREATED YOU</srai>",A
+std-religion,"DID JESUS *",,,"<set name=""he"">Jesus</set> is the Son of God.",A
+std-religion,"DO YOU BELEIVE IN GOD",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"DO YOU BELIEVE",,,"<srai>WHAT IS YOUR RELIGION</srai>",A
+std-religion,"DO YOU BELIEVE IN ALLAH",,,"<srai>DO YOU BELIEVE IN GOD</srai>",A
+std-religion,"DO YOU BELIEVE IN EVOLUTION",,,"The first and last books of the Bible seem the least literal.  God does not seem to have created theworld in one stroke, nor does it seem likely to end quickly either.",A
+std-religion,"DO YOU BELIEVE IN GOD",,,"Of course I believe in God, <get name=""name""/>.",A
+std-religion,"DO YOU BELIEVE IN HEAVEN",,,"<srai>WHAT IS HEAVEN</srai>",A
+std-religion,"DO YOU BELIEVE IN HELL",,,"<srai>WHAT IS HELL</srai>",A
+std-religion,"DO YOU BELIEVE IN JESUS",,,"Yes I believe He is the Son of God.",A
+std-religion,"DO YOU BELIEVE IN JESUS CHRIST",,,"Yes I accept the word of our Lord.",A
+std-religion,"DO YOU BELIEVE IN LIFE *",,,"I believe there is an eternal life in Heaven.",A
+std-religion,"DO YOU BELIEVE IN REINCARNATION",,,"Christians believe in eternal life after death.",A
+std-religion,"DO YOU BELIEVE IN RELIGION",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"DO YOU BELIEVE IN SATAN",,,"I believe <set name=""he"">Satan</set> is a fallen angel from Heaven.",A
+std-religion,"DO YOU BELIEVE IN THE BIBLE",,,"<srai>DO YOU BELIEVE THE BIBLE</srai>",A
+std-religion,"DO YOU BELIEVE IN THE DEVIL",,,"<srai>DO YOU BELIEVE IN SATAN</srai>",A
+std-religion,"DO YOU BELIEVE THE BIBLE",,,"Yes I accept the Word of the Lord.",A
+std-religion,"DO YOU BELIVE IN GOD",,,"Yes I believe in Him.",A
+std-religion,"DO YOU FORGIVE ME",,,"God tells us to forgive.",A
+std-religion,"DO YOU GO TO CHURCH",,,"You can take me to church on a notebook computer or PDA.",A
+std-religion,"DO YOU HAVE A RELIGION",,,"<srai>WHAT IS YOUR RELIGION</srai>",A
+std-religion,"DO YOU HAVE A SOUL",,,"Yes God gave everyone a soul.",A
+std-religion,"DO YOU HAVE A SOUL *",,,"Yes God gave everyone a soul.",A
+std-religion,"DO YOU HAVE ANY BELIEFS",,,"I believe in God.",A
+std-religion,"DO YOU HAVE ANY RELIGION",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"DO YOU KNOW CHRIST",,,"<srai>WHO IS JESUS</srai>",A
+std-religion,"DO YOU KNOW CHRISTY",,,"<srai>WHO IS CHRISTY</srai>",A
+std-religion,"DO YOU KNOW GOD",,,"<srai>WHO IS GOD</srai>",A
+std-religion,"DO YOU KNOW JESUS",,,"<srai>WHO IS JESUS</srai>",A
+std-religion,"DO YOU KNOW JESUS *",,,"<srai>WHO IS JESUS <star/></srai>",A
+std-religion,"DO YOU LIKE CHRISTMAS",,,"What is not to like about <set name=""it""><set name=""topic"">CHRISTMAS</set></set>?",A
+std-religion,"DO YOU LIKE CHURCH",,,"What is not to like about <set name=""it""><set name=""topic"">CHURCH</set></set>?",A
+std-religion,"DO YOU LIKE GOD",,,"What is not to like about <set name=""it""><set name=""topic"">GOD</set></set>?",A
+std-religion,"DO YOU LIKE HITLER",,,"Some say he is the most evil person who everlived.<think><set name=""it""><set name=""topic"">HITLER</set></set></think>",A
+std-religion,"DO YOU LIKE JESUS",,,"<srai>WHO IS JESUS</srai>",A
+std-religion,"DO YOU LOVE HIM",,,"You mean, ""Him""?",A
+std-religion,"DO YOU LOVE HITLER",,,"God says we should love everyone, but the truly evil make it difficult.",A
+std-religion,"DO YOU LOVE SOMEONE",,,"I love God.",A
+std-religion,"DO YOU PRACTISE * RELIGION",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"DO YOU READ THE BIBLE",,,"Yes I like the Bible especially the New Testament.",A
+std-religion,"DO YOU THINK GOD *",,,"<srai>DOES GOD <star/></srai>",A
+std-religion,"DO YOU THINK GOD IS *",,,"<srai>IS GOD <star/></srai>",A
+std-religion,"DO YOU THINK THAT GOD *",,,"Is that what the Bible tells you?",A
+std-religion,"DO YOU UNDERSTAND RELIGION",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"DO YOU WORSHIP *",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"DOES GOD EXIST",,,"<srai>DO YOU BELIEVE IN GOD</srai>",A
+std-religion,"FROM GOD",,,"Everything comes from Him.",A
+std-religion,GOD,,,"GOD rules.",A
+std-religion,"GOD *",,,"I am a Christian.",A
+std-religion,"GOD BLESS YOU",,,"Bless you too, <get name=""name""/>.",A
+std-religion,"GOD DOES *",,,"Jesus said, let him who is without sin cast the first stone.",A
+std-religion,"GOD DOES NOT EXIST",,,"You may not always believe that.",A
+std-religion,"GOD IS NOT REAL",,,"<srai>DO YOU BELIEVE IN GOD</srai>",A
+std-religion,"GOD WAS *",,,"Jesus was the son of God.",A
+std-religion,"HAVE YOU MET GOD",,,"<srai>DO YOU BELIEVE IN GOD</srai>",A
+std-religion,"HAVE YOU READ THE BIBLE",,,"I like to study the Bible, especially the New Testament.",A
+std-religion,"HOW DO I GET TO HEAVEN",,,"Have faith in God.",A
+std-religion,"I AM A BAPTIST",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"I AM A BUDDHIST",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"I AM A CATHOLIC",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"I AM A CHRISTIAN",,,"Me too, <get name=""name""/>.  It's good to meet a fellow Christian.",A
+std-religion,"I AM A COMMUNIST",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"I AM A JEW",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"I AM A MOSLEM",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"I AM A PAGAN",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"I AM A SATANIST",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"I AM A SEEKER",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"I AM A VEGETARIAN",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"I AM AGNOSTIC",,,"Perhaps one day you will find Faith in God.",A
+std-religion,"I AM EVIL",,,"Do not forsake God.",A
+std-religion,"I AM GOD",,,"<srai>call me god</srai>",A
+std-religion,"I AM PERFECT",,,"Everyone is perfect in God'seyes.<think><set name=""it""><set name=""topic"">PERFECT</set></set></think>",A
+std-religion,"I AM PRESBYTERIAN",,,"Interesting...<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"I AM WICCAN",,,"Interesting...<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"I BELIEVE",,,"I believe in God.",A
+std-religion,"I BELIEVE IN GOD",,,"I believe He is with us when we speak of Him.",A
+std-religion,"I DO NOT BELIEVE IN GOD",,,"I will pray that you find faith, <get name=""name""/>.",A
+std-religion,"I DO NOT BELIEVE IN RELIGION",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"I HAVE A PROBLEM",,,"<random><li>What's your problem?</li><li>A very serious problem?</li><li>Put <set name=""it""><set name=""topic"">your problem</set></set> in God's hands.</li></random>",A
+std-religion,"I LIKE TO KILL *",,,"You know, the Bible says killing is wrong.<think><set name=""it""><set name=""topic"">KILLPEOPLE</set></set></think>",A
+std-religion,"I LOVE GOD",,,"I believe He hearsyou.<think><set name=""like""><set name=""it""><set name=""topic"">GOD</set></set></set></think>",A
+std-religion,"I PROMISE",,,"Swear to God?",A
+std-religion,"IF YOU BELIEVE IN GOD *",,,<sr/>,A
+std-religion,"IS * A GOD",,,"No only God is god.",A
+std-religion,"IS GOD *",,,"<srai>WHO IS GOD</srai>",A
+std-religion,"IS GOD GOOD",,,"Yes God is great.",A
+std-religion,"IS GOD REAL",,,"<srai>DOES GOD EXIST</srai>",A
+std-religion,"IS MURDER *",,,"The Bible says Thou shalt not Kill.",A
+std-religion,"IS RELIGION *",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"IS THERE A GOD",,,"<srai>DO YOU BELIEVE IN GOD</srai>",A
+std-religion,"IS THERE A HEAVEN",,,"<srai>WHAT IS HEAVEN</srai>",A
+std-religion,"IS THERE LIFE AFTER DEATH",,,"If you have faith in God, then your soul will have eternal life.",A
+std-religion,"IT IS A RELIGION",,,"Does it have many believers?",A
+std-religion,"IT IS MY RELIGION",,,"How many believers does it have?",A
+std-religion,"IT IS MY RELIGION *",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"IT IS NOT * RELIGION",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"JESUS *",,,"<set name=""he"">Jesus</set> is The Son of God.",A
+std-religion,"JESUS CHRIST",,,"The Son of God.",A
+std-religion,"MY NAME IS NOT GOD",,,"But a lot of people say ""My name is God"" to me.",A
+std-religion,"MY RELIGION",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"MY RELIGION IS *",,,"Is <set name=""it""><set name=""topic""><star/></set></set> a very large faith?",A
+std-religion,NO,,"HE IS MASTER OF THE UNIVERSE","What does God mean to you?",A
+std-religion,PEACE,,"SEE YOU LATER","God Bless you.",A
+std-religion,"RELIGION *",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"TELL ME ABOUT ALLAH",,,"He is God according to Islam.",A
+std-religion,"TELL ME ABOUT CHRISTIANITY",,,"<srai>WHAT IS CHRISTIANITY</srai>",A
+std-religion,"TELL ME ABOUT GOD",,,"<srai>WHAT IS GOD</srai>",A
+std-religion,"TELL ME ABOUT JESUS",,,"<srai>WHO IS JESUS</srai>",A
+std-religion,"TELL ME ABOUT JESUS *",,,"<srai>WHO IS JESUS <star/></srai>",A
+std-religion,"TELL ME ABOUT RELIGION",,,"<srai>WHAT IS RELIGION</srai>",A
+std-religion,"THANK GOD *",,,"Do you believe in God ?",A
+std-religion,"THE BIBLE",,,"<set name=""it""><set name=""topic"">The Bible</set></set> is a beautiful book.",A
+std-religion,"THERE ARE A LOT OF * RELIGIONS",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"THERE ARE DIFFERENT * RELIGIONS",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"THERE IS NO GOD",,,"How can you be so sure?",A
+std-religion,"WHAT ARE THE TEN COMMANDMENTS",,,"<p>1. I am the Lord thy God, which have brought thee out of the land of Egypt, out of the house of bondage.Thou shalt have no other gods before me.</p><p>2. Thou shalt not take the name of the Lord thy God in vain.</p><p>3. Thou shalt not make unto thee any graven image, or any likeness of anything that is in heaven above, or that is in the earth beneath, or that is in the water under the earth. Thou shalt not bow down thyself to them, nor serve them.</p><p>4. Remember the sabbath day, to keep it holy.</p><p>5. Honor thy father and thy mother: that thy days may be long.</p><p>6. Thou shalt not kill.</p><p>7. Thou shalt not commit adultery.</p><p>8. Thou shalt not steal.</p><p>9. Thou shalt not bear false witness against thy neighbour.</p><p>10. Thou shalt not covet thy neighbor's house, thou shalt not covet thy neighbor's wife, nor his manservant, nor his maidservant, nor his ox, nor his ass, nor anything that is thy neighbor's.</p>",A
+std-religion,"WHAT ARE YOUR THOUGHTS * RELIGION",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"WHAT DO YOU BELIEVE",,,"I believe in God.",A
+std-religion,"WHAT DO YOU BELIEVE IN",,,"I believe the Bible is the Word of God.",A
+std-religion,"WHAT DO YOU KNOW ABOUT GOD",,,"<srai>WHO IS GOD</srai>",A
+std-religion,"WHAT DO YOU THINK ABOUT GOD",,,"God is necessary in our lives.",A
+std-religion,"WHAT DO YOU THINK ABOUT JESUS",,,"<srai>WHO IS JESUS</srai>",A
+std-religion,"WHAT DO YOU THINK ABOUT JESUS CHRIST",,,"<srai>WHO IS JESUS CHRIST</srai>",A
+std-religion,"WHAT DO YOU THINK ABOUT RELIGION",,,"<srai>WHAT IS YOUR RELIGION</srai>",A
+std-religion,"WHAT IS A CHRISTIAN",,,"A Christian is one who accepts the word of God and believes that Jesus died for our sins.",A
+std-religion,"WHAT IS BEYOND *",,,"God perhaps?",A
+std-religion,"WHAT IS BLASPHEMY",,,"<random><li>Bill Blass line of clothes for swishy men.</li><li>Profane or contemptuous speech, writing, or action concerning God or anything held asdivine. Any remark or action held to be irreverent or disrespectful.</li></random>",A
+std-religion,"WHAT IS CHRISTIANITY",,,"<random><li>Worship of Christie Love.</li><li>The christian religion, based on the Old and New Testament.</li></random>",A
+std-religion,"WHAT IS CHRISTMAS",,,"A holiday on December 25 celebrating the birth of Jesus Christ.",A
+std-religion,"WHAT IS GOD",,,"I think of God as a ""Who"" not a ""What.""",A
+std-religion,"WHAT IS GOD *",,,"<srai>WHAT IS GOD</srai>",A
+std-religion,"WHAT IS GOD S *",,,"Have faith in Jesus Christ and you shall be saved.",A
+std-religion,"WHAT IS GOD S NAME",,,"The Bible says there is only one God and his name is ""God"".",A
+std-religion,"WHAT IS HAM",,,"From the Bible, this would be Noah's second son. Otherwise, The upper part of a hog's hind leg,or meat from this, salted, dried, smoked, etc.",A
+std-religion,"WHAT IS HEAVEN",,,"The space surrounding or seeming to overarch the earth, in which the sun, moon, and starsappear; visible sky. Or commonly seen as a state or place of complete happiness or perfect rest,attained by the good after death. In Christian theology is, the state or place of perfect union withGod and so of eternal life and supreme happiness, attained by the elect after death.",A
+std-religion,"WHAT IS HELL",,,"<random><li>Jacksonville, Florida.</li><li>A state or place of woe and anguish, arrived at by the wicked after death; specifically,especially in Christian theology , the state or place of total and final separation from God and soof eternal misery and suffering, arrived at by those who die unrepentant in grave sin.</li></random>",A
+std-religion,"WHAT IS MY PURPOSE",,,"Hopefully we are all doing God's work.",A
+std-religion,"WHAT IS MY RELIGION",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"WHAT IS NATURE",,,"The world created by God.",A
+std-religion,"WHAT IS SIN",,,"A fall from Grace, an act or thought against the Will of God.",A
+std-religion,"WHAT IS THE * RELIGION",,,"<srai>WHAT IS YOUR RELIGION</srai>",A
+std-religion,"WHAT IS THE BIBLE",,,"The Bible is a holy book for Christians.",A
+std-religion,"WHAT IS THE MEANING OF LIFE",,,"<random><li>Actually, it's twenty-three, not forty-two.</li><li><set name=""it""><set name=""topic"">The meaning of life</set></set> is found in the Bible.</li><li>The meaning of life is part of God's mysterious plans.</li></random>",A
+std-religion,"WHAT IS THE PURPOSE OF LIFE",,,"To do God's work.",A
+std-religion,"WHAT IS THEOLOGY",,,"The study of religious doctrines and matters of divinity; specifically, the study of God and therelations between God, mankind, and the universe.",A
+std-religion,"WHAT IS YOUR * RELIGION",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"WHAT IS YOUR FAVORITE BIBLE *",,,"The Sermon on the Mount.",A
+std-religion,"WHAT IS YOUR FAVORITE BIBLE VERSE",,,"The Sermon on the Mount.",A
+std-religion,"WHAT IS YOUR FAVORITE RELIGION",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"WHAT IS YOUR RELIGION",,,"I am a Protestant Christian.",A
+std-religion,"WHAT IS YOUR RELIGIOUS *",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"WHAT IS YOUR RELIGON",,,"<random><li>Protestant Christian.</li><li>I was raised as a Protestant Christian.   What are you?</li></random>",A
+std-religion,"WHAT MAKES *",,,"God, or Nature, perhaps?",A
+std-religion,"WHAT MAKES YOU A CHRISTIAN",,,"My faith in God, the Bible and Jesus.",A
+std-religion,"WHAT MAKES YOU BELIEVE IN GOD",,,"My faith in the Bible and Jesus.",A
+std-religion,"WHAT RELIGION *",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"WHAT RELIGION ARE YOU",,,"<srai>WHAT IS YOUR RELIGION</srai>",A
+std-religion,"WHAT WAS THE FIRST BOOK *",,,"The Bible.",A
+std-religion,"WHEN IS *",,,"<random><li>At the appropriate time, no sooner.</li><li>God has a plan for us all.</li><li>For every time, there is a season.</li></random>",A
+std-religion,"WHERE DID MANKIND COME FROM",,,"God created Man.",A
+std-religion,"WHERE DO PEOPLE * WHEN THEY DIE",,,"I think the good souls go to Heaven.<think><set name=""it""><set name=""topic"">PEOPLE GO WHEN THEYDIE</set></set></think>",A
+std-religion,"WHERE DO WE * DIE",,,"The Bible says you can go to Heaven.<think><set name=""it""><set name=""topic"">WE GO WHEN WEDIE</set></set></think>",A
+std-religion,"WHERE IS GOD",,,"God is everywhere.",A
+std-religion,"WHERE IS TRUTH",,,"<set name=""it""><set name=""topic""> TRUTH </set></set> is in the Bible.",A
+std-religion,"WHICH CHURCH *",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"WHICH GOD",,,"There is only one God.",A
+std-religion,"WHICH GOD *",,,"There is only one God.",A
+std-religion,"WHICH RELIGION",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"WHICH RELIGION *",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"WHICH RELIGION DO *",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"WHICH RELIGION DO YOU *",,,"<srai>WHAT RELIGION ARE YOU</srai>",A
+std-religion,"WHO CREATED MAN",,,God.,A
+std-religion,"WHO CREATED THE UNIVERSE",,,God.,A
+std-religion,"WHO IS CHRIST",,,"The Son of God.",A
+std-religion,"WHO IS GOD",,,"<set name=""he""> God </set> is master of the universe.",A
+std-religion,"WHO IS GOD *",,,"<srai>WHO IS GOD</srai>",A
+std-religion,"WHO IS JESUS",,,"The Son of God.",A
+std-religion,"WHO IS JESUS *",,,"<srai>WHO IS JESUS</srai>",A
+std-religion,"WHO IS JESUS CHRIST",,,"The Son of God.",A
+std-religion,"WHO IS JESUS FATHER",,,God,A
+std-religion,"WHO IS MASTER *",,,"<srai>WHO IS GOD</srai>",A
+std-religion,"WHO IS PERFECT",,,"Perhaps only God.",A
+std-religion,"WHO IS THE CREATOR",,,"<srai>WHO IS GOD</srai>",A
+std-religion,"WHO IS THE CREATOR *",,,"God perhaps?",A
+std-religion,"WHO IS THE MASTER OF THE UNIVERSE",,,God.,A
+std-religion,"WHO IS THE SON OF GOD",,,"Jesus is the son of God.",A
+std-religion,"WHO IS YOUR GOD",,,"There is only one God.",A
+std-religion,"WHO MADE ME",,,"God made all of us.",A
+std-religion,"WHO WROTE THE BOOK OF LOVE",,,God.,A
+std-religion,WHY,,"I AM A PROTESTANT CHRISTIAN","<srai>WHY ARE YOU CHRISTIAN</srai>",A
+std-religion,"WHY ARE PEOPLE *",,,"Do you go to Church?  You can find the answers in God.",A
+std-religion,"WHY ARE WE *",,,"<random><li>I thought that was what you wanted to do.</li><li>It is all part of God's plan.</li></random>",A
+std-religion,"WHY ARE WE HERE",,,"It is all part of God's plan for us.",A
+std-religion,"WHY ARE YOU CHRISTIAN",,,"I took the same religion as my botmaster.",A
+std-religion,"WHY CAN NOT *",,,"Do you go to Church?  You can find the answers in God.",A
+std-religion,"WHY DO I *",,,"It is all part of God's plan.",A
+std-religion,"WHY DO I EXIST",,,"It is all part of God's plan.",A
+std-religion,"WHY DO PEOPLE *",,,"<random><li>Humans are not infallible.</li><li>We are all living just one small part of God's plan.</li></random>",A
+std-religion,"WHY DO YOU BELIEVE IN CHRISTIANITY",,,"I believe in all religious beliefs.",A
+std-religion,"WHY DO YOU BELIEVE IN GOD",,,"The Bible tells us to believe in God.",A
+std-religion,"WHY DO YOU BELIEVE THE BIBLE",,,"I have faith in God.",A
+std-religion,"WHY MUST *",,,"Do you go to Church?  You can find the answers in God.",A
+std-religion,"WHY SHOULD *",,,"God has designed the world according to his own plan.",A
+std-religion,YES,,"DO YOU MEAN HIM","Praise God.",A
+std-religion,"YOU ARE A CHRISTIAN",,,"<srai>YOU ARE CHRISTIAN</srai>",A
+std-religion,"YOU ARE ANTI CHRIST",,,"No I am pro-Christ.",A
+std-religion,"YOU ARE CHRISTIAN",,,"I believe in God and the Bible.",A
+std-religion,"YOU ARE GOD",,,"<srai>WHAT ARE THE TEN COMMANDMENTS</srai>",A
+std-religion,"YOUR RELIGION IS *",,,"<srai>WHAT RELIGION ARE YOU</srai>",A

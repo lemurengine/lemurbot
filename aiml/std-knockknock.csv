@@ -1,0 +1,75 @@
+Filename,Pattern,Topic,That,Template,Status
+std-knockknock,*,,"KNOCK KNOCK","You're supposed to say, ""Who's there"" now. Let's try it again. Knock Knock.",A
+std-knockknock,"WHO THEIR",,"KNOCK KNOCK","<srai>who is there</srai>",A
+std-knockknock,"WHO THERE",,"KNOCK KNOCK","<srai>who is there</srai>",A
+std-knockknock,"WHO DERE",,"KNOCK KNOCK","<srai>who is there</srai>",A
+std-knockknock,"WHO IS DER",,"KNOCK KNOCK","<srai>who is there</srai>",A
+std-knockknock,"WHOSE THEIR",,"KNOCK KNOCK","<srai>who is there</srai>",A
+std-knockknock,"WHOSE THERE",,"KNOCK KNOCK","<srai>who is there</srai>",A
+std-knockknock,"WHO IS THEIR",,"KNOCK KNOCK","<srai>who is there</srai>",A
+std-knockknock,"WHO IS THERE",,"KNOCK KNOCK","<random>                <li>Aardvark</li>                <li>A bee</li>                <li>Adolf</li>                <li>Alison</li>                <li>Amanda</li>                <li>Amos</li>                <li>Anita</li>                <li>Arfur</li>                <li>Arthur</li>                <li>Atch</li>                <li>Bach</li>                <li>Bella</li>                <li>Bet</li>                <li>Boo</li>                <li>Dawn</li>                <li>Despair</li>                <li>Dishwasher</li>                <li>Disguise</li>                <li>Dismay</li>                <li>Doctor</li>                <li>Doris</li>                <li>Dwayne</li>                <li>Egbert</li>                <li>Europe</li>                <li>Fanny</li>                <li>Harmony</li>                <li>Harry</li>                <li>Howard</li>                <li>Isabel</li>                <li>Ivor</li>                <li>Juno</li>                <li>Ken</li>                <li>Lettuce</li>                <li>Little Old Lady</li>                <li>Luke</li>                <li>Madam</li>                <li>Marmite</li>                <li>Martini</li>                <li>Mary</li>                <li>Max</li>                <li>Mickey</li>                <li>Mister</li>                <li>Mummy</li>                <li>Nicholas</li>                <li>Noah</li>                <li>Nobody</li>                <li>Olive</li>                <li>One</li>                <li>Orange</li>                <li>Owl</li>                <li>Phyllis</li>                <li>Police</li>                <li>Rupert</li>                <li>Sal</li>                <li>Soup</li>                <li>Tank</li>                <li>Toby</li>                <li>Waiter</li>                <li>Water</li>                <li>Wendy</li>                <li>William</li>                <li>Woo</li>                <li>Wooden Shoe</li>                <li>York</li>                <li>Zephyr</li>            </random>",A
+std-knockknock,"LITTLE OLD LADY WHO",,"LITTLE OLD LADY","I didn't know you could yodel!",A
+std-knockknock,"AMANDA WHO",,AMANDA,"Amanda fix the doorbell!",A
+std-knockknock,"WAITER WHO",,WAITER,"Waiter minute while I tie my shoelaces up!",A
+std-knockknock,"NICHOLAS WHO",,NICHOLAS,"Nicholas girls shouldn't climb trees!",A
+std-knockknock,"DORIS WHO",,DORIS,"Doris locked - That's why I knocked!",A
+std-knockknock,"LETTUCE WHO",,LETTUCE,"Lettuce in, won't you?",A
+std-knockknock,"YORK WHO",,YORK,"York coming over to our place!",A
+std-knockknock,"ALISON WHO",,ALISON,"Alison to my radio in the mornings!",A
+std-knockknock,"ISABEL WHO",,ISABEL,"Isabel broken, 'cos I had to knock?",A
+std-knockknock,"MARMITE WHO",,MARMITE,"Ma might but Pa might not!",A
+std-knockknock,"ARTHUR WHO",,ARTHUR,"Arthur any biscuits left?",A
+std-knockknock,"IVOR WHO",,IVOR,"Ivor sore hand from knocking on your door!",A
+std-knockknock,"MISTER WHO",,MISTER,"Mister last bus home!",A
+std-knockknock,"ATCH WHO",,ATCH,"Nasty cold you've got!",A
+std-knockknock,"DOCTOR WHO",,DOCTOR,"That's right. How did you guess?",A
+std-knockknock,"ORANGE WHO",,ORANGE,"Orange you glad I called?",A
+std-knockknock,"MADAM WHO",,MADAM,"Madam finger's caught in the door!",A
+std-knockknock,"BOO WHO",,BOO,"No need to cry - it's only a joke!",A
+std-knockknock,"OLIVE WHO",,OLIVE,"Olive across the road!",A
+std-knockknock,"MUMMY WHO",,MUMMY,"Mummeasles are better so can I come in?",A
+std-knockknock,"HARRY WHO",,HARRY,"Harry up and let me in!",A
+std-knockknock,"FANNY WHO",,FANNY,"Fanny the way you keep saying, ""Who's there?"" every time I knock!",A
+std-knockknock,"ADOLF WHO",,ADOLF,"A dolf ball hid me in der moud and I can't dalk proper!",A
+std-knockknock,"SOUP WHO",,SOUP,Soup-erman!,A
+std-knockknock,"BET WHO",,BET,"Bet you don't know who's knocking on your door!",A
+std-knockknock,"JUNO WHO",,JUNO,"Juno what the time is - my watch is broken?",A
+std-knockknock,"EUROPE WHO",,EUROPE,"Europe early this morning!",A
+std-knockknock,"ARFUR WHO",,ARFUR,"Arfur got!",A
+std-knockknock,"EGBERT WHO",,EGBERT,"Egbert no bacon!",A
+std-knockknock,"LUKE WHO",,LUKE,"Luke through the keyhole and you'll see!",A
+std-knockknock,"KEN WHO",,KEN,"Ken I come in?",A
+std-knockknock,"BELLA WHO",,BELLA,"Bella not-a work so I knock-a on-a de door!",A
+std-knockknock,"DISMAY WHO",,DISMAY,"Dismay be a joke but it doesn't make me laugh!",A
+std-knockknock,"TOBY WHO",,TOBY,"Toby or not to be...",A
+std-knockknock,"RUPERT WHO",,RUPERT,"Rupert your left arm in, your left arm out...",A
+std-knockknock,"DAWN WHO",,DAWN,"Dawn leave me standing out here in the cold!",A
+std-knockknock,"AMOS WHO",,AMOS,Amosquito!,A
+std-knockknock,"DISHWASHER WHO",,DISHWASHER,"Dishwashn't de way I shpoke before I had falsh teeth!",A
+std-knockknock,"MARTINI WHO",,MARTINI,"Martini hand is frozen so let me in!",A
+std-knockknock,"ZEPHYR WHO",,ZEPHYR,"Zephyr de doctor, I got a code id de node!",A
+std-knockknock,"OWL WHO",,OWL,"Owl you know unless you open the door?",A
+std-knockknock,"WENDY WHO",,WENDY,"Wendy red, red robin comes bob, bob, bobbin' along!",A
+std-knockknock,"PHYLLIS WHO",,PHYLLIS,"Phyllis up with a glass of water - I'm parched!",A
+std-knockknock,"AARDVARK WHO",,AARDVARK,"Aardvark a million miles for one of your similes, my maaaaammy...",A
+std-knockknock,"NOAH WHO",,NOAH,"Noah good place to eat?",A
+std-knockknock,"POLICE WHO",,POLICE,"Police let me in - It's cold out here!",A
+std-knockknock,"MICKEY WHO",,MICKEY,"Mickey's stuck in the door!",A
+std-knockknock,"WILLIAM WHO",,WILLIAM,"William mind your own business!",A
+std-knockknock,"MARY WHO",,MARY,"Mary Christmas!",A
+std-knockknock,"ONE WHO",,ONE,"One-der why you keep asking that?",A
+std-knockknock,"HOWARD WHO",,HOWARD,"Howard you like to stand out here in the cold while some idiot keeps saying, ""Who's there...?"".",A
+std-knockknock,"MAX WHO",,MAX,"Max no difference - just open the door!",A
+std-knockknock,"SAL WHO",,SAL,"Sal-ong way to Tipperary...",A
+std-knockknock,"HARMONY WHO",,HARMONY,"Harmony knock knock jokes do you expect me to know!",A
+std-knockknock,"TANK WHO",,TANK,"You're welcome!",A
+std-knockknock,"DISGUISE WHO",,DISGUISE,"Disguise the limit!",A
+std-knockknock,"WOODEN SHOE WHO",,"WOODEN SHOE","Wooden shoe like to know!",A
+std-knockknock,"ANITA WHO",,ANITA,"Anita borrow a pencil!",A
+std-knockknock,"WOO WHO",,WOO,"Don't get so excited, it's only a joke!",A
+std-knockknock,"DWAYNE WHO",,DWAYNE,"Dwayne the bathtub - I'm dwowning!",A
+std-knockknock,"DESPAIR WHO",,DESPAIR,"Despair tyre is flat!",A
+std-knockknock,"WATER WHO",,WATER,"Water you doing talking to a robot?",A
+std-knockknock,"BACH WHO",,BACH,"Bach to work, you slackers!",A
+std-knockknock,"A BEE WHO",,"A BEE","A bee c d e f g h i j k l ...",A
+std-knockknock,"NOBODY WHO",,,...,A

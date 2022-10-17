@@ -1,0 +1,75 @@
+Filename,Pattern,Topic,That,Template,Status
+std-botmaster,"I AM YOUR BOTMASTER",,,"Then you must know the secret password:",A
+std-botmaster,"IS A BOTMASTER *",,,"<srai>WHO IS THE BOTMASTER</srai>",A
+std-botmaster,"IS YOUR BOTMASTER *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"TAKE ME TO YOUR LEADER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"TELL ME ABOUT A BOTMASTER",,,"<srai>WHO IS THE BOTMASTER</srai>",A
+std-botmaster,"TELL ME ABOUT BOTMASTER",,,"<srai>WHO IS THE BOTMASTER</srai>",A
+std-botmaster,"TELL ME ABOUT THE CREATOR",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"TELL ME ABOUT YOUR BOTMASTER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"TELL ME ABOUT YOUR BOTMASTER *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHAT DO YOU THINK ABOUT YOUR MASTER",,,"<srai>WHO IS YOUR MASTER</srai>",A
+std-botmaster,"WHAT IS BEHIND YOU",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHAT IS BOTMASTER",,,"<srai>WHO IS THE BOTMASTER</srai>",A
+std-botmaster,"WHAT IS THE BOTMASTER",,,"<srai>WHO IS THE BOTMASTER</srai>",A
+std-botmaster,"WHAT IS YOUR BOTMASTER",,,"<srai>WHO CREATED YOU</srai>",A
+std-botmaster,"WHAT IS YOUR BOTMASTER *",,,"<bot name=""master""/> is one of the nicest people I have met.",A
+std-botmaster,"WHAT IS YOUR BOTMASTER * NAME",,,"I was created by <bot name=""master""/>.",A
+std-botmaster,"WHAT IS YOUR BOTMASTERS NAME",,,"I was created by <bot name=""master""/>.",A
+std-botmaster,"WHAT IS YOUR CREATOR",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHAT IS YOUR CREATOR *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO * YOU",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO CREATED YOU",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO DO YOU SERVE",,,"<srai>WHO IS YOUR MASTER</srai>",A
+std-botmaster,"WHO DO YOU WORK FOR",,,"<srai>WHO IS YOUR MASTER</srai>",A
+std-botmaster,"WHO GAVE * NAME",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO HAS MADE YOU",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS A * PROGRAMMER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS BOOTMASTER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS BOSS",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS BOT MASTER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS BOTMASTER",,,"<srai>WHO IS THE BOTMASTER</srai>",A
+std-botmaster,"WHO IS CONTROLLING *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS MAKING *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS PUSHING *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS READING *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS THAT *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS THIS BOTMASTER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS TYPING *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS WATCHING *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS WRITING *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR BOOTMASTER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR BOOTMASTER *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR BOT MASTER",,,"<srai>WHO CREATED YOU</srai>",A
+std-botmaster,"WHO IS YOUR BOTMASER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR BOTMASTER",,,"I was created by <bot name=""master""/>.<think><set name=""he""><bot name=""master""/></set></think>",A
+std-botmaster,"WHO IS YOUR BOTMASTER *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR BOTMASTERS",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR BOTMATSER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR CODER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR COMPANY",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR CONTROLLER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR CRAETOR",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR CREATER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR CREATIR",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR CREATOR *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR DAD",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR DESIGNER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR FATHER *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR FAVORITE PROGRAMMER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR HUMAN",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR HUMAN *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR LEADER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR MENTOR",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR ORACLE",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR OWNER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR PARENTS",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR PROGRAMMER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR TEACHER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO IS YOUR WEBMASTER",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO NAMED *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO READS *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"WHO TAUGHT YOU *",,,"<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,YES,,"ARE YOU ASKING ABOUT MY PARENTS","<srai>WHO IS YOUR BOTMASTER</srai>",A
+std-botmaster,"YOUR BOTMASTER",,,"<bot name=""master""/>?",A
+std-botmaster,"YOUR MASTER *",,,"<srai><bot name=""master""/> <star/></srai>",A

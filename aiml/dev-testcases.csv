@@ -1,0 +1,86 @@
+Filename,Pattern,Topic,That,Template,Status
+dev-testcases,TESTATOMIC,,,"Test case #01.<br/>Test passed.",A
+dev-testcases,TESTDISPLAYSET,,,"Test case #02.<br/><set name=""test"">Test passed.</set>",A
+dev-testcases,TESTHIDE,,,"Test case #03.<br/><think><set name=""test"">Test failed.</set></think>Test passed.",A
+dev-testcases,TESTGET,,,"Test case #04.<br/><think><set name=""test"">Test passed</set></think><get name=""test""/> 1.",A
+dev-testcases,TESTSETX,,,"Test case #04a.<br/><think><set name=""test"">Test passed</set></think><get name=""test""/>.",A
+dev-testcases,TESTALTER,,,"Test case #05.<br/><think><set name=""test"">Test passed.</set></think><get name=""test""/><think><set name=""test"">Test failed.</set></think>",A
+dev-testcases,TESTSETTOPIC,,,"Test case #06.<br/><think><set name=""topic"">TEST PASSED TOPIC</set></think>setup",A
+dev-testcases,TEST6A,"TEST PASSED TOPIC",SETUP,"Test case #06a.<br/>With THAT test passed.",A
+dev-testcases,TEST6B,"TEST PASSED TOPIC",,"Test case #06b.<br/>Without THAT test passed.<think><set name=""topic""/></think>",A
+dev-testcases,TESTSIMPLECONDITION,,,"Test case #07.<br/><think><set name=""test"">match</set></think><condition name=""test"" value=""match"">Test passed.</condition><think><set name=""test""/></think>",A
+dev-testcases,TESTSIMPLECONDITIONA,,,"Test case #07a.<br/><srai>blindsetmatch</srai><condition name=""test"" value=""match"">Test passed.</condition><think><set name=""test""/></think>",A
+dev-testcases,BLINDSETMATCH,,,"<think><set name=""test"">match</set></think>test setup",A
+dev-testcases,BLINDSETNOMATCH,,,"<think><set name=""test"">nomatch</set></think>test setup",A
+dev-testcases,TESTSIMPLECONDITIONMATCH,,,"Test case #07b.<think><set name=""test"">match this</set></think><condition name=""test"" value=""match *"">Test passed.</condition><think><set name=""test""/></think>",A
+dev-testcases,TESTCONDITIONLIST,,,"Test case #08.<br/><think><set name=""test"">match</set></think><condition name=""test""><li value=""nomatch"">Test failed 1.</li><li value=""match"">Test passed.</li><li value=""nomatch"">Test failed 2.</li><li>Test failed 3.</li></condition><think><set name=""test""/></think>",A
+dev-testcases,TESTCONDITIONLISTMATCH,,,"Test case #08a.<br/><think><set name=""test"">match this</set></think><condition name=""test""><li value=""match"">Test failed 1.</li><li value=""match *"">Test passed.</li><li>Test failed 3.</li></condition><think><set name=""test""/></think>",A
+dev-testcases,TESTCONDITIONLISTDEFAULT,,,"Test case #09.<br/><think><set name=""test"">match</set></think><condition name=""test""><li value=""nomatch"">Test failed 1.</li><li value=""nomatch"">Test failed 2.</li><li value=""nomatch"">Test failed 3.</li><li>Test passed.</li></condition><think><set name=""test""/></think>",A
+dev-testcases,TESTCONDITIONLISTNAME,,,"Test case #10.<br/><think><set name=""test"">match</set></think><condition><li name=""test"" value=""nomatch"">Test failed 1.</li><li name=""test"" value=""match"">Test passed.</li><li name=""test"" value=""nomatch"">Test failed 2.</li><li>Test failed 3.</li></condition><think><set name=""test""/></think>",A
+dev-testcases,TESTCONDITIONLISTNAMEMATCH,,,"Test case #10a.<br/><think><set name=""test"">match this</set></think><condition><li name=""test"" value=""match"">Test failed 1.</li><li name=""test"" value=""match *"">Test passed.</li><li name=""test"" value=""match"">Test failed 2.</li><li>Test failed 3.</li></condition><think><set name=""test""/></think>",A
+dev-testcases,"TESTSTAR *",,,"Test case #11.<br/><star index=""1""/> 1.<br/><star/> 2.",A
+dev-testcases,"TESTSTAR * AND * AND * AND *",,,"Test case #11a.<br/>star index 1: <star index=""1""/>.<br/>star index 2: <star index=""2""/>.<br/>star index 3: <star index=""3""/>.<br/>star index 4: <star index=""4""/>.<br/>",A
+dev-testcases,"TESTUNDERSCORE _ AND _ AND _ AND _",,,"Test case #11b.<br/>star index 1: <star index=""1""/>.<br/>star index 2: <star index=""2""/>.<br/>star index 3: <star index=""3""/>.<br/>star index 4: <star index=""4""/>.<br/>",A
+dev-testcases,TESTRANDOM,,,"Test case #12.<br/><random><li>Test passed 1.</li><li>Test passed 2.</li><li>Test passed 3.</li><li>Test passed 4.</li><li>Test passed 5.</li></random>",A
+dev-testcases,TESTWORDFORMAT,,,"Test case #13.<br/>Test passed if <uppercase>uppercase</uppercase>.<br/>Test passed if <lowercase>lOwErCaSe</lowercase>.<br/>Test passed if <formal>proper name</formal>.<br/>Test passed if <sentence>this is a sentence.</sentence>",A
+dev-testcases,TESTNESTEDWORDFORMAT,,,"Test case #14.<br/><sentence>test passed if <uppercase>this is upper case</uppercase>, and this is a <formal>proper name</formal>.</sentence>",A
+dev-testcases,TESTSIMPLEMULTISENTENCETHAT,,,"Test case #15 setup. THAT plus two. THAT plus one. THAT.",A
+dev-testcases,TESTTHAT,,,"Test case #15.<br/>Test passed if:<br/>THAT: Old form: <that/>.<br/>New form: <that index=""1,1""/>.<br/>THAT+1: <that index=""1,2""/>.<br/>THAT+2: <that index=""1,3""/>.<br/>",A
+dev-testcases,TESTARRAY4MULTISENTENCETHAT,,,"Test case #16 setup a.<br/>THAT array4 response three.<br/>THAT array4 response two.<br/>THAT array4 response one.",A
+dev-testcases,TESTARRAY3MULTISENTENCETHAT,,,"Test case #16 setup b.<br/>THAT array3 response three.<br/>THAT array3 response two.<br/>THAT array3 response one.",A
+dev-testcases,TESTARRAY2MULTISENTENCETHAT,,,"Test case #16 setup c.<br/>THAT array2 response three.<br/>THAT array2 response two.<br/>THAT array2 response one.",A
+dev-testcases,TESTARRAY1MULTISENTENCETHAT,,,"Test case #16 setup d.<br/>THAT array1 response three.<br/>THAT array1 response two.<br/>THAT array1 response one.",A
+dev-testcases,TESTTHATARRAY,,,"Test case #16.<br/>Test passed if:<br/>Array 1<br/>THAT: <that index=""1,1""/><br/>THAT+1: <that index=""1,2""/><br/>THAT+2: <that index=""1,3""/><br/>Array 2<br/>THAT: <that index=""2,1""/><br/>THAT+1: <that index=""2,2""/><br/>THAT+2: <that index=""2,3""/><br/>Array 3<br/>THAT: <that index=""3,1""/><br/>THAT+1: <that index=""3,2""/><br/>THAT+2: <that index=""3,3""/><br/>Array 4<br/>THAT: <that index=""4,1""/><br/>THAT+1: <that index=""4,2""/><br/>THAT+2: <that index=""4,3""/>",A
+dev-testcases,TESTBOTPROPERTIES,,,"Test case #17. Test passed if no errors thrown<br/>Name: <bot name=""name""/>.<br/>Birthday: <bot name=""birthday""/>.<br/>BirthPlace: <bot name=""birthplace""/>.<br/>BoyFriend: <bot name=""boyfriend""/>.<br/>Favorite Band: <bot name=""favoriteband""/>.<br/>Favorite Book: <bot name=""favoritebook""/>.<br/>Favorite Color: <bot name=""favoritecolor""/>.<br/>Favorite Food: <bot name=""favoritefood""/>.<br/>Favorite Song: <bot name=""favoritesong""/>.<br/>Favorite Movie: <bot name=""favoritemovie""/>.<br/>For Fun: <bot name=""forfun""/>.<br/>Friends: <bot name=""friends""/>.<br/>Gender: <bot name=""gender""/>.<br/>GirlFriend: <bot name=""girlfriend""/>.<br/>Kind of Music: <bot name=""kindmusic""/>.<br/>Location: <bot name=""location""/>.<br/>Look Like: <bot name=""looklike""/>.<br/>Botmaster: <bot name=""master""/>.<br/>Question: <bot name=""question""/>.<br/>Sign: <bot name=""sign""/>.<br/>Talk About: <bot name=""talkabout""/>.<br/>Wear: <bot name=""wear""/>.<br/>",A
+dev-testcases,TESTCONDITIONSETVALUE,,,"Test case #18.<br/><condition><think><set name=""test"">testvalue</set></think><li name=""test"" value=""nomatch"">Test failed</li><li name=""test"" value=""testvalue"">Test passed</li><li name=""test"" value=""nomatch"">Test failed</li><li>Test failed</li></condition>",A
+dev-testcases,TESTNESTEDCONDITION,,,"Test case #20a.<br/><think><set name=""test"">test</set></think><think><set name=""test1"">test1</set></think><condition><li name=""test"" value=""test""> <condition> <li name=""test1"" value=""nomatch"">Test failed.</li> <li>Test passed.</li> </condition></li><li>Test failed.</li></condition><think><set name=""test1""/></think><think><set name=""test""/></think>",A
+dev-testcases,TESTNESTEDCONDITION1,,,"Test case #20b.<br/><think><set name=""test"">test</set></think><think><set name=""test1"">test1</set></think><condition><li name=""test"" value=""test""> <condition> <li name=""test1"" value=""test1"">Test passed.</li> <li>Test failed.</li> </condition></li><li>Test failed.</li></condition><think><set name=""test1""/></think><think><set name=""test""/></think>",A
+dev-testcases,TESTNESTEDCONDITION2,,,"Test case #20c.<br/><think><set name=""test"">test</set></think><think><set name=""test1"">test1</set></think><condition><li name=""test"" value=""nomatch""> <condition> <li name=""test1"" value=""nomatch"">Test failed.</li> <li>Test failed.</li> </condition></li><li>Test passed.</li></condition><think><set name=""test1""/></think><think><set name=""test""/></think>",A
+dev-testcases,TESTSETCONDITION,,,"Test case #21.<br/><think><set name=""test"">Test failed</set><set name=""test1"">pass</set></think><set name=""testcase""><condition name=""test1""> <li value=""nomatch"">Test failed 1.</li> <li value=""pass"">Test passed.</li> <li value=""nomatch"">Test failed 2.</li> <li>Test failed 3</li></condition></set><think><set name=""test1""/></think><think><set name=""test""/></think>",A
+dev-testcases,TESTVERSION,,,"Test case #22.<br/>Test passed if:<br/>Test of ""getversion"": <getversion/><br/>Test of ""version"": <version/>",A
+dev-testcases,TESTSRAI,,,"Test case #23.<br/><srai>TEST PASSED</srai>",A
+dev-testcases,"TEST PASSED",,,"Test passed.",A
+dev-testcases,"TESTSR *",,,"Test case #23a.<br/><sr/>",A
+dev-testcases,TESTNESTEDSRAI,,,"Test case #24.<br/><srai>SRAINESTED</srai>",A
+dev-testcases,SRAINESTED,,,"<srai>TEST PASSED</srai>",A
+dev-testcases,TESTTHINKSRAI,,,"Test case #25.<br/>Test passed, IF NO OTHER MESSAGE.<think><srai>TSRAI</srai></think>",A
+dev-testcases,TSRAI,,,"Test setup not a real fail.",A
+dev-testcases,"TESTSTARSET *",,,"Test case #26.<br/><think><set name=""test""><star/></set></think><get name=""test""/>.",A
+dev-testcases,TESTIDSIZEDATE,,,"Test case #27.<br/>Test passed if:<br/>Result of Test ID = <id/><br/>Result of Test SIZE = <size/><br/>Result of Test DATE = <date/>",A
+dev-testcases,TESTGOSSIP,,,"Test case #28.<br/>Test passed if:<br/><think><learn><gossip>This line should appear in the gossip log file <date/>.</gossip></learn></think>Test complete. Check the gossip log.",A
+dev-testcases,TESTNAME,,,"Test case #29.<br/><think><set name=""name"">test passed</set></think>Old form: <getname/><br/>new form: <get name=""name""/><br/><think><setname>TEST PASSED</setname></think>Old form: <getname/><br/>new form: <get name=""name""/><br/><think><set name=""name"">Client</set></think>",A
+dev-testcases,TESTINPUT3,,,"Test case #30.<br/>Test (input) passed if this says testinput3: <input/>.<br/>Test (justthat) passed if this says testinput2: <justthat/>.<br/>Test (beforethat) passed if this says testinput1: <beforethat/>.<br/>Test (input index 1) passed if this says testinput3: <input index=""1""/>.<br/>Test (input index 2) passed if this says testinput2: <input index=""2""/>.<br/>Test (input index 3) passed if this says testinput1: <input index=""3""/>.<br/>Test (input index 4) passed if this says testinput: <input index=""4""/>.<br/>",A
+dev-testcases,TESTINPUT,,,"Test case #30 setup a okay.",A
+dev-testcases,TESTINPUT1,,,"Test case #30 setup b okay.",A
+dev-testcases,TESTINPUT2,,,"Test case #30 setup c okay.",A
+dev-testcases,"TESTGENDER *",,,"Test case #31.<br/><star/> becomes <gender><star/></gender>",A
+dev-testcases,TESTTHATSTAR,,,"Test case #32 setup.<br/>Check next to see if Test passed.",A
+dev-testcases,TESTTHATSTAR1,,"CHECK NEXT TO SEE IF *","Test case #32.<br/>THATSTAR: <thatstar/><br/>THATSTAR INDEX=""1"": <thatstar index=""1""/>",A
+dev-testcases,TESTMULTITHATSTAR,,,"Test case #33 setup.<br/>See whether thatstar test passed and whether index two test passed and whether index three test passed next.",A
+dev-testcases,TESTMULTITHATSTAR1,,"SEE WHETHER * AND WHETHER * AND WHETHER * NEXT","Test case #33.<br/>THATSTAR: <thatstar/><br/>THATSTAR INDEX=""1"": <thatstar index=""1""/><br/>THATSTAR INDEX=""2"": <thatstar index=""2""/><br/>THATSTAR INDEX=""3"": <thatstar index=""3""/>",A
+dev-testcases,TESTTOPICSTAR,,,"Test case #34 setup okay.<think><set name=""topic"">TOPICSTAR Test passed TOPIC</set></think>",A
+dev-testcases,TESTMULTITOPICSTAR,,,"Test case #35 setup okay.<think><set name=""topic"">MULTITOPICSTAR Test passed 1 TOPIC Test passed 2 TOPIC1 Test passed 3</set></think>",A
+dev-testcases,TESTOLDTOPIC,,,"Test case #36 setup okay.<think><settopic>oldtopic</settopic></think>",A
+dev-testcases,TESTEXTREMESRAI,,,"<think><set name=""response""><srai>SRAI20</srai></set></think><condition name=""response""><li value=""Error - thinking too deeply."">Test passed</li><li value=""Test passed"">Test passed</li><li>Test failed</li></condition><think><set name=""responsedd"">reset</set></think>",A
+dev-testcases,SRAI20,,,"<think><set name=""response""><srai>SRAI19</srai></set></think><condition name=""response""><li value=""Error - thinking too deeply."">Test passed</li><li value=""Test passed"">Test passed</li><li>Test failed</li></condition><think><set name=""responsedd"">reset</set></think>",A
+dev-testcases,SRAI19,,,"<think><set name=""response""><srai>SRAI18</srai></set></think><condition name=""response""><li value=""Error - thinking too deeply."">Test passed</li><li value=""Test passed"">Test passed</li><li>Test failed</li></condition><think><set name=""responsedd"">reset</set></think>",A
+dev-testcases,SRAI18,,,"<think><set name=""response""><srai>SRAI17</srai></set></think><condition name=""response""><li value=""Error - thinking too deeply."">Test passed</li><li value=""Test passed"">Test passed</li><li>Test failed</li></condition><think><set name=""responsedd"">reset</set></think>",A
+dev-testcases,SRAI17,,,"<think><set name=""response""><srai>SRAI16</srai></set></think><condition name=""response""><li value=""Error - thinking too deeply."">Test passed</li><li value=""Test passed"">Test passed</li><li>Test failed</li></condition><think><set name=""responsedd"">reset</set></think>",A
+dev-testcases,SRAI16,,,"<think><set name=""response""><srai>SRAI15</srai></set></think><condition name=""response""><li value=""Error - thinking too deeply."">Test passed</li><li value=""Test passed"">Test passed</li><li>Test failed</li></condition><think><set name=""responsedd"">reset</set></think>",A
+dev-testcases,SRAI15,,,"<think><set name=""response""><srai>SRAI14</srai></set></think><condition name=""response""><li value=""Error - thinking too deeply."">Test passed</li><li value=""Test passed"">Test passed</li><li>Test failed</li></condition><think><set name=""responsedd"">reset</set></think>",A
+dev-testcases,SRAI14,,,"<think><set name=""response""><srai>SRAI13</srai></set></think><condition name=""response""><li value=""Error - thinking too deeply."">Test passed</li><li value=""Test passed"">Test passed</li><li>Test failed</li></condition><think><set name=""responsedd"">reset</set></think>",A
+dev-testcases,SRAI13,,,"<think><set name=""response""><srai>SRAI12</srai></set></think><condition name=""response""><li value=""Error - thinking too deeply."">Test passed</li><li value=""Test passed"">Test passed</li><li>Test failed</li></condition><think><set name=""responsedd"">reset</set></think>",A
+dev-testcases,SRAI12,,,"<think><set name=""response""><srai>SRAI11</srai></set></think><condition name=""response""><li value=""Error - thinking too deeply."">Test passed</li><li value=""Test passed"">Test passed</li><li>Test failed</li></condition><think><set name=""responsedd"">reset</set></think>",A
+dev-testcases,SRAI11,,,"<think><set name=""response""><srai>SRAI10</srai></set></think><condition name=""response""><li value=""Error - thinking too deeply."">Test passed</li><li value=""Test passed"">Test passed</li><li>Test failed</li></condition><think><set name=""responsedd"">reset</set></think>",A
+dev-testcases,SRAI10,,,<srai>SRAI9</srai>,A
+dev-testcases,SRAI9,,,<srai>SRAI8</srai>,A
+dev-testcases,SRAI8,,,<srai>SRAI7</srai>,A
+dev-testcases,SRAI7,,,<srai>SRAI6</srai>,A
+dev-testcases,SRAI6,,,<srai>SRAI5</srai>,A
+dev-testcases,SRAI5,,,<srai>SRAI4</srai>,A
+dev-testcases,SRAI4,,,<srai>SRAI3</srai>,A
+dev-testcases,SRAI3,,,<srai>SRAI2</srai>,A
+dev-testcases,SRAI2,,,<srai>SRAI1</srai>,A
+dev-testcases,SRAI1,,,"<srai>TEST PASSED</srai>",A
+dev-testcases,"TESTPERSON *",,,"Test case #38.<br/><star/> becomes <person/>",A
+dev-testcases,"TESTPERSON2 *",,,"Test case #39.<br/><star/> becomes <person2/>",A

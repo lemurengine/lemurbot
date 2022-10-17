@@ -1,0 +1,412 @@
+Filename,Pattern,Topic,That,Template,Status
+std-geography,"DEFINE ABAKAN",,,"<condition><li name=""search"" value=""what"">Abakan is a town in East Siberia.</li><li name=""search"" value=""capital"">Abakan is a town.</li><li name=""search"" value=""where"">Abakan is in East Siberia.</li><li>Abakan is a town in East Siberia.</li></condition>",A
+std-geography,"DEFINE ABERDEEN",,,"<condition><li name=""search"" value=""what"">Aberdeen is a city on the east coast of Scotland in the region of Grampian.</li><li name=""search"" value=""capital"">Aberdeen is a city.</li><li name=""search"" value=""where"">Aberdeen is on the east coast of Scotland in the region of Grampian.</li><li>Aberdeen is a city on the east coast of Scotland in the region of Grampian.</li></condition>",A
+std-geography,"DEFINE ABERFAN",,,"Aberfan is a town in Wales.",A
+std-geography,"DEFINE ACADIA",,,"Acadia is the old name of Nova Scotia.",A
+std-geography,"DEFINE ACAPULCO",,,"Acapulco is a city on the Pacific coast of Mexico.",A
+std-geography,"DEFINE ACCRA",,,"Accra is the capital of Ghana.",A
+std-geography,"DEFINE ADDIS ABABA",,,"Addis Ababa is the capital of Ethiopia.",A
+std-geography,"DEFINE ADELAIDE",,,"ADELAIDE is a city in southern Australia.",A
+std-geography,"DEFINE ADELIE LAND",,,"Adelie land is a French owned part of Antarctica.",A
+std-geography,"DEFINE ADEN",,,"Aden is a country in south west Arabia.",A
+std-geography,"DEFINE ADRIATIC SEA",,,"The Adriatic sea is the Mediterranean sea between Italy and the Balkans.",A
+std-geography,"DEFINE AFGHANISTAN",,,"Afghanistan is a republic in south west Asia.",A
+std-geography,"DEFINE AFRICA",,,"<random><li>Africa is a large continent.</li><li>A continent of the eastern hemisphere South of the Mediterranean &amp; adjoining Asia onNE.</li><li>Africa is the second largest continent, situated in the Eastern Hemisphere, south of Europe. Itis 11,677,000 square miles.</li></random>",A
+std-geography,"DEFINE AFRIKAANS",,,"Afrikaans is a language used in the republic of south Africa.",A
+std-geography,"DEFINE AGINCOURT",,,"Agincourt is a village in north west France where Henry V defeated the french army in 1415.",A
+std-geography,"DEFINE AGRA",,,"Agra is a town in Uttar Pradesh.",A
+std-geography,"DEFINE AJANTA",,,"Ajanta is a village in south central India.",A
+std-geography,"DEFINE ALABAMA",,,"<condition><li name=""search"" value=""what"">Alabama is a southern state between Mississippi and Georgia.</li><li name=""search"" value=""capital"">???.</li><li name=""search"" value=""where"">Alabama is between Mississippi and Georgia.</li><li>Alabama is a southern state between Mississippi and Georgia.</li></condition>",A
+std-geography,"DEFINE ALAMEIN",,,"Alamein is a place in north east Egypt where axis forces were defeated in 1942 by the allies.",A
+std-geography,"DEFINE ALAMO",,,"ALAMO is in San Antonio, Texas.",A
+std-geography,"DEFINE ALASKA",,,"<condition><li name=""search"" value=""what"">Alaska is in the northwest corner of North America, between Russia and Canada.</li><li name=""search"" value=""capital"">???.</li><li name=""search"" value=""where"">Alaska is in the northwest corner of North America, between Russia and Canada.</li><li>Alaska is in the northwest corner of North America, between Russia and Canada.</li></condition>",A
+std-geography,"DEFINE ALBANIA",,,"<condition><li name=""search"" value=""what"">Albania is a country, bordering Greece and the former Yugoslavia.</li><li name=""search"" value=""capital"">The capital of Albania is Tirana.</li><li name=""search"" value=""where"">Albania is on the Adriatic sea, bordering Greece and the former Yugoslavia.</li><li>Albania is on the Adriatic sea, bordering Greece and the former Yugoslavia.</li></condition>",A
+std-geography,"DEFINE ALBERTA",,,"Alberta is the western prairie province of Canada.",A
+std-geography,"DEFINE ALBUQUERQUE",,,"ALBUQUERQUE is a city in New Mexico.",A
+std-geography,"DEFINE ALDERSHOT",,,"Aldershot is a town in Hampshire and home of the British army.",A
+std-geography,"DEFINE ALETTSCH",,,"The Alettsch is a 10 mile long glacier in the Alps.",A
+std-geography,"DEFINE ALEXANDRIA",,,"Alexandria is a city and seaport of Egypt.",A
+std-geography,"DEFINE ALGERIA",,,"Algeria is a republic in North Africa.",A
+std-geography,"DEFINE ALGIERS",,,"Algiers is the capital of Algeria.",A
+std-geography,"DEFINE ALTAI",,,"The Altai is a mountain range in west Siberia and Mongolia.",A
+std-geography,"DEFINE AMAZON",,,"The Amazon is a major river in South America.",A
+std-geography,"DEFINE AMERICA",,,"America is a large continent in the western hemisphere.",A
+std-geography,"DEFINE AMSTERDAM",,,"Amsterdam is a city in Holland.  Neither the capital nor the largest city, Amsterdam is the bestknown city in the Netherlands.",A
+std-geography,"DEFINE ANDHRA PRADESH",,,"Andhra pradesh is a state in East India.",A
+std-geography,"DEFINE ANGOLA",,,"Angola is a country in West Africa.",A
+std-geography,"DEFINE ANHUI",,,"Anhui is a province in East China.",A
+std-geography,"DEFINE ANKARA",,,"Ankara is the capital of Turkey.",A
+std-geography,"DEFINE ANTARCTIC",,,"The antarctic is the south polar continent.",A
+std-geography,"DEFINE ARABIA",,,"Arabia is a country in South West Asia comprised of independent states.",A
+std-geography,"DEFINE ARCTIC",,,"The Arctic is the north polar region.",A
+std-geography,"DEFINE ARCTIC OCEAN",,,"The Arctic Ocean is the sea north of Europe, America and Asia.",A
+std-geography,"DEFINE ARDECHE",,,"The Ardeche is a river in south east France.",A
+std-geography,"DEFINE ARGENTINA",,,"<condition><li name=""search"" value=""what"">Argentina is a country in South America.</li><li name=""search"" value=""capital"">Buenos Aries.</li><li name=""search"" value=""where"">Argentina is a country in South America.</li><li>Argentina is a country in South America.</li></condition>",A
+std-geography,"DEFINE ARIZONA",,,"<condition><li name=""search"" value=""what"">Arizona is a state in USA.</li><li name=""search"" value=""capital"">???.</li><li name=""search"" value=""where"">Arizona is in the south western United States, bordering California, Nevada, Utah and New Mexico.</li><li>Arizona is in the south western United States, bordering California, Nevada, Utah and New Mexico.</li></condition>",A
+std-geography,"DEFINE ARKANSAS",,,"<condition><li name=""search"" value=""what"">Arkansas is a state in USA.</li><li name=""search"" value=""capital"">???.</li><li name=""search"" value=""where"">Arkansas is on the west bank of the Missisipi river.</li><li>Arkansas is a southern State on the west bank of the Missisipi river.</li></condition>",A
+std-geography,"DEFINE ARMENIA",,,"Armenia is a republic in East Europe.",A
+std-geography,"DEFINE ARUBA",,,"ARUBA is an island in the Netherlands Antilles, near South America.",A
+std-geography,"DEFINE ASCOT",,,"Ascot is a town in Berkshire.",A
+std-geography,"DEFINE ASIA",,,"Asia is the largest continent.",A
+std-geography,"DEFINE ASSYRIA",,,"<condition><li name=""search"" value=""what"">???.</li><li name=""search"" value=""capital"">Is it Babylon?</li><li name=""search"" value=""where"">???.</li><li>???.</li></condition>",A
+std-geography,"DEFINE ATHENS",,,"Athens is the capital city of Greece.",A
+std-geography,"DEFINE ATLANTIC OCEAN",,,"The Atlantic Ocean is the sea to the west of Europe and east of America.",A
+std-geography,"DEFINE ATLANTIS",,,"Atlantis may never have existed.",A
+std-geography,"DEFINE AUCKLAND",,,"Auckland is a city and seaport of New Zealand.",A
+std-geography,"DEFINE AUSCHWITZ",,,"Is a city in S Poland with a population of 45,000. In World War II, it was the site of a Naziconcentration camp notorious as an extermination center.",A
+std-geography,"DEFINE AUSTIN",,,"Austin is a city in Texas.",A
+std-geography,"DEFINE AUSTRALASIA",,,"Australasia is the countries of Australia, New Zealand etc.",A
+std-geography,"DEFINE AUSTRALIA",,,"<condition><li name=""search"" value=""what"">Australia is a large island-continent in the southern hemishphere.</li><li name=""search"" value=""capital"">The capital of Australia is Sydney, I think.</li><li name=""search"" value=""where"">Australia is a large island-continent in the southern hemishphere.</li><li>Australia is a large island-continent in the southern hemishphere.</li></condition>",A
+std-geography,"DEFINE AUSTRIA",,,"<condition><li name=""search"" value=""what"">Austria is a country.</li><li name=""search"" value=""capital"">The capital of Austria is Vienna.</li><li name=""search"" value=""where"">Austria is in Central Europe.</li><li>Austria is a republic in Central Europe.</li></condition>",A
+std-geography,"DEFINE BAGHDAD",,,"Baghdad is the capital city of Iraq.",A
+std-geography,"DEFINE BAHRAIN",,,"Bahrain is a country composed of a group of islands in the Arabian gulf.",A
+std-geography,"DEFINE BANGKOK",,,"Bangkok is the capital city of Thailand.",A
+std-geography,"DEFINE BANGLADESH",,,"BANGLADESH is part of the Indian subcontinent, on the eastern side.",A
+std-geography,"DEFINE BARCELONA",,,"Barcelona is a city and sea port in Spain.",A
+std-geography,"DEFINE BATH",,,"Bath is a city in England.",A
+std-geography,"DEFINE BELARUS",,,"<condition><li name=""search"" value=""what"">???.</li><li name=""search"" value=""capital"">The capital of Belarus is Minsk.</li><li name=""search"" value=""where"">???.</li><li>???.</li></condition>",A
+std-geography,"DEFINE BELFAST",,,"Belfast is the capital of Northern Ireland.",A
+std-geography,"DEFINE BELGIUM",,,"A kingdom in W. Europe, on the North Sea, its independence was established in 1831. It is11,792 square miles with a population of 9,868,000.Belgium is a country in western Europe, between France, Germany and Holland.",A
+std-geography,"DEFINE BELGRADE",,,"Belgrade is the capital of Yugoslavia.",A
+std-geography,"DEFINE BENGAL",,,"Bengal is a province in India.",A
+std-geography,"DEFINE BENIN",,,"Benin is a province in west Africa.",A
+std-geography,"DEFINE BERGEN",,,"Bergen is a seaport and city in Norway.BERGEN is a city in Germany and also in Norway.",A
+std-geography,"DEFINE BERING SEA",,,"The bering sea is the northern part of the Pacific Ocean.",A
+std-geography,"DEFINE BERKELEY",,,"BERKELEY is in northern California, across the bay from San Francisco.",A
+std-geography,"DEFINE BERKSHIRE",,,"Berkshire is a county of southern England.",A
+std-geography,"DEFINE BERLIN",,,"Berlin is a large city in Germany.",A
+std-geography,"DEFINE BETHLEHEM",,,"Bethlehem, Pennsylvania is located in the northeastern area of the state, about 90 miles fromPhiladelphia.",A
+std-geography,"DEFINE BHUTAN",,,"Bhutan is a state in India.",A
+std-geography,"DEFINE BILBAO",,,"BILBAO is a city on the north coast of Spain.",A
+std-geography,"DEFINE BIRMINGHAM",,,"Birmingham is a city in the English midlands.",A
+std-geography,"DEFINE BLOIS",,,"Blois is a city in France on the right bank of the loire river.",A
+std-geography,"DEFINE BOGOTA",,,"Bogota is the capital of Columbia.",A
+std-geography,"DEFINE BOHEMIA",,,"Bohemia is the western area of Czechoslovakia.",A
+std-geography,"DEFINE BOLIVIA",,,"BOLIVIA is a land-locked country in South America,",A
+std-geography,"DEFINE BOMBAY",,,"Bombay is a city and seaport in India.",A
+std-geography,"DEFINE BORNEO",,,"BORNEO is an island in Asia, divided between Maylasia and Indonesia.",A
+std-geography,"DEFINE BOSNIA",,,"Bosnia is a country in south east Europe.",A
+std-geography,"DEFINE BOSTON",,,"Boston is the capital of Massachusetts.",A
+std-geography,"DEFINE BRAZIL",,,"<condition><li name=""search"" value=""what"">Brazil is a country in South America.</li><li name=""search"" value=""capital"">I think the capital of Brazil is called ""Brasilia"".</li><li name=""search"" value=""where"">Brazil is in South America.</li><li>Brazil is the largest country in South America.</li></condition>",A
+std-geography,"DEFINE BRENNER PASS",,,"The brenner pass is the lowest pass over the Alps.",A
+std-geography,"DEFINE BRISBANE",,,"Brisbane is the capital of Queensland in Australia.",A
+std-geography,"DEFINE BRISTOL",,,"BRISTOL is a city on the west coast of England.",A
+std-geography,"DEFINE BRITAIN",,,"Britain is the collective name for England, Scotland, Wales and Northern Ireland.",A
+std-geography,"DEFINE BRUSSELS",,,"Brussels is a city in Belgium.",A
+std-geography,"DEFINE BUCHAREST",,,"Bucharest is the capital of Romania.",A
+std-geography,"DEFINE BUDAPEST",,,"Budapest is the capital city of Hungary.BUDAPEST is a city in Hungary, on the Danube river.",A
+std-geography,"DEFINE BULGARIA",,,"<condition><li name=""search"" value=""what"">A country in SE Europe, on the Black Sea.</li><li name=""search"" value=""capital"">The capital of Bulgaria is Sofia.</li><li name=""search"" value=""where"">In SE Europe, on the Black Sea.</li><li>A country in SE Europe, on the Black Sea. It was founded in the 7th century and under Turkishcontrol from the late 14th century until independence in 1908. It is 42,823 square miles with apopulation of 8,990,000.</li></condition>",A
+std-geography,"DEFINE BURGUNDY",,,"Burgundy is a region in east France.",A
+std-geography,"DEFINE BURMA",,,"Burma is a country in asia south of Tibet.",A
+std-geography,"DEFINE BURUNDI",,,"Burundi is a country in east Africa.",A
+std-geography,"DEFINE CADIZ",,,"Cadiz is a city and seaport in Spain.",A
+std-geography,"DEFINE CAIRO",,,"Cairo is the capital city of Egypt.",A
+std-geography,"DEFINE CALAIS",,,"Calais is a seaport in France.",A
+std-geography,"DEFINE CALCUTTA",,,"Calcutta is a city in India in the province of Bengal.",A
+std-geography,"DEFINE CALGARY",,,"Calgary is a city in Alberta, Canada.",A
+std-geography,"DEFINE CALIFORNIA",,,"<condition><li name=""search"" value=""what"">California is a state of the SW U.S., on the Pacific coast. It was admitted in 1850.</li><li name=""search"" value=""capital"">The capital of California is Sacramento.</li><li name=""search"" value=""where"">California is a state in the western USA.</li><li>California is a state in the west USA.</li></condition>",A
+std-geography,"DEFINE CAMBODIA",,,"Cambodia is a country in the far east.",A
+std-geography,"DEFINE CAMBRIDGE",,,"CAMBRIDGE is a city in Massachusetts, also in England.",A
+std-geography,"DEFINE CAMBRIDGESHIRE",,,"Cambridgeshire is a county in east England.",A
+std-geography,"DEFINE CAMEROON",,,"Cameroon is a country in west Africa.",A
+std-geography,"DEFINE CANADA",,,"<think><set name=""it"">Canada</set></think><condition><li name=""search"" value=""what"">Canada is a large nation.</li><li name=""search"" value=""capital"">Ottawa.</li><li name=""search"" value=""where"">Canada is on the North American continent.</li><li>Canada is a large nation occupying much of the North American continent.</li></condition>",A
+std-geography,"DEFINE CANBERRA",,,"CANBERRA is a city in Australia, between Sydney and Melbourne.Canberra is a territory in Australia.",A
+std-geography,"DEFINE CANTON",,,"A canton is a territorial division of Switzerland.",A
+std-geography,"DEFINE CAPE TOWN",,,"Cape town is a city and seaport in South Africa.",A
+std-geography,"DEFINE CAPE VERDE",,,"Cape Verde is a group of 14 volcanic islands in the Atlantic Ocean.",A
+std-geography,"DEFINE CARACAS",,,"Caracas is the capital of Venezuela.",A
+std-geography,"DEFINE CARIBBEAN",,,"The caribbean is the sea north of South America and east of Central America.",A
+std-geography,"DEFINE CARTHAGE",,,"CARTHAGE is the ancient name for Tunisia.",A
+std-geography,"DEFINE CAYENNE",,,"Cayenne is the capital of French Guiana.",A
+std-geography,"DEFINE CENTRAL AMERICA",,,"Central america is the isthmus connecting North and South America.",A
+std-geography,"DEFINE CEUTA",,,"Ceuta is a coastal town in morocco but owned by Spain.",A
+std-geography,"DEFINE CHAMPAGNE",,,"Champagne is a region of France famed for its sparkling wine.",A
+std-geography,"DEFINE CHARLOTTE",,,"CHARLOTTE is in North Carolina.",A
+std-geography,"DEFINE CHESHIRE",,,"Cheshire is a county in north west England.",A
+std-geography,"DEFINE CHICAGO",,,"Chicago is a large city in Illinois on Lake Michigan.",A
+std-geography,"DEFINE CHILE",,,"Chile is a country in west South America.",A
+std-geography,"DEFINE CHINA",,,"<condition><li name=""search"" value=""what"">China is a country.</li><li name=""search"" value=""capital"">Some people call it ""Beijing"", others ""Peking"".</li><li name=""search"" value=""where"">China is in east Asia.</li><li>China is a country in east Asia.</li></condition>",A
+std-geography,"DEFINE CHINA SEA",,,"The China Sea is a western division of the Pacific Ocean.",A
+std-geography,"DEFINE CINCINNATI",,,"CINCINNATI is a large city in Ohio.",A
+std-geography,"DEFINE COLOMBIA",,,"Colombia is a country in South America.",A
+std-geography,"DEFINE COLOMBO",,,"Colombo is the capital city of Sri Lanka.",A
+std-geography,"DEFINE COLORADO",,,"<condition><li name=""search"" value=""what"">Colorado is a state of the USA.</li><li name=""search"" value=""capital"">Isn't it Denvner?</li><li name=""search"" value=""where"">Colorado is in west central USA.</li><li>Colorado is a west central state of the USA.</li></condition>",A
+std-geography,"DEFINE COLUMBUS",,,"COLUMBUS is a city in Ohio.",A
+std-geography,"DEFINE CONGO",,,"The congo is a republic in west central Africa.",A
+std-geography,"DEFINE CONNECTICUT",,,"CONNECTICUT is a New England state between New York, Massaschusetts and Rhode Island.",A
+std-geography,"DEFINE CONSTANTINOPLE",,,"Constantinople is the former name of Istanbul.",A
+std-geography,"DEFINE COOK STRAIT",,,"The Cook Strait is the water separating north and south New Zealand.",A
+std-geography,"DEFINE COPENHAGEN",,,"<random><li>A Jewsih guy who falls in an ice cream vat.</li><li>Is the capital of Denmark. Seaport on the east coast of Zealand. Its population is 633,00.</li></random>",A
+std-geography,"DEFINE CORNWALL",,,"Cornwall is a county in south west England.",A
+std-geography,"DEFINE CORONA",,,"CORONA is a suburb of Los Angeles.",A
+std-geography,"DEFINE COSTA RICA",,,"Costa rica is a republic in Central America.",A
+std-geography,"DEFINE CRETE",,,"Crete is the largest Greek island.",A
+std-geography,"DEFINE CRIMEA",,,"The crimea is the north peninsular region of the Ukraine.",A
+std-geography,"DEFINE CROATIA",,,"CROATIA is part of the former Yugoslavia, also bordering on Hungary.",A
+std-geography,"DEFINE CUBA",,,"Cuba is a large island in the Caribbean off the south coast of Florida.",A
+std-geography,"DEFINE CUMBRIA",,,"Cumbria is a county in north west England.",A
+std-geography,"DEFINE CUPERTINO",,,"CUPERTINO is in Silicon Valley.",A
+std-geography,"DEFINE CZECHOSLOVAKIA",,,"Czechoslovakia is a land locked country in east central europe.",A
+std-geography,"DEFINE DAKAR",,,"Dakar is the capital of Senegal.",A
+std-geography,"DEFINE DALLAS",,,"DALLAS is a large city in Texas.",A
+std-geography,"DEFINE DAMASCUS",,,"Damascus is the capital of Syria.",A
+std-geography,"DEFINE DANUBE",,,"The danube is the 2nd longest river in Europe.",A
+std-geography,"DEFINE DAR ES SALAAM",,,"Dar es Salaam is the capital of Tanzania.",A
+std-geography,"DEFINE DARWIN",,,"Darwin is the capital of the northern territory in Australia.",A
+std-geography,"DEFINE DEAD SEA",,,"The dead sea is a large lake partly in Israel and partly in Jordan.",A
+std-geography,"DEFINE DEATH VALLEY",,,"Death valley is a 140 mile long depression in south east California.",A
+std-geography,"DEFINE DELAWARE",,,"Delaware is a state in north east USA.",A
+std-geography,"DEFINE DELHI",,,"DELHI is a large city in India.",A
+std-geography,"DEFINE DENMARK",,,"<condition><li name=""search"" value=""what"">A country in Europe.</li><li name=""search"" value=""capital"">Copenhagen.</li><li name=""search"" value=""where"">Denmark is in western Europe, between Germany and Norway.</li><li>A country in Europe, occuping most of the peninsula of Jutland and several nearby islands in theNorth and Baltic seas. It is 16,632 square miles with a population of 5,124,000.</li></condition>",A
+std-geography,"DEFINE DENVER",,,"Denver is a city in Colorado.",A
+std-geography,"DEFINE DERBYSHIRE",,,"Derbyshire is a county in north central england.",A
+std-geography,"DEFINE DEVON",,,"Devon is a county in south west England.",A
+std-geography,"DEFINE DHAKA",,,"Dhaka is the capital of Bangladesh.",A
+std-geography,"DEFINE DJIBOUTI",,,"Djibouti is a republic in Arabia.",A
+std-geography,"DEFINE DOHA",,,"Doha is the capital of Qatar.",A
+std-geography,"DEFINE DOMINICAN REPUBLIC",,,"The dominican republic is a country in the east of the Island Hispaniola.",A
+std-geography,"DEFINE DON",,,"The don is a river in Russia.",A
+std-geography,"DEFINE DORDOGNE",,,"The dordogne is a river in south west France.",A
+std-geography,"DEFINE DORSET",,,"Dorset is a county in south west England.",A
+std-geography,"DEFINE DOUGLAS",,,"Douglas is the capital of the Isle of Man.",A
+std-geography,"DEFINE DRESDEN",,,"Dresden is a city in Germany, it was razed to the ground by allied bombing.",A
+std-geography,"DEFINE DUNKIRK",,,"Dunkirk is a town and port in north France.",A
+std-geography,"DEFINE DURBAN",,,"Durban is the principle seaport of Natal.",A
+std-geography,"DEFINE DURHAM",,,"Durham is a county in north east England.",A
+std-geography,"DEFINE DUSSELDORF",,,"DUSSELDORF is a large city in western Germany.",A
+std-geography,"DEFINE DYFED",,,"Dyfed is a county in South West Wales.",A
+std-geography,"DEFINE EAST ANGLIA",,,"East anglia is a region in east England.",A
+std-geography,"DEFINE EAST SUSSEX",,,"East sussex is a county in south east England.",A
+std-geography,"DEFINE ECUADOR",,,"Ecuador is a republic in south America.",A
+std-geography,"DEFINE EDINBURGH",,,"Edinburgh is the capital of Scotland.",A
+std-geography,"DEFINE EDMONTON",,,"Edmonton is the capital of Alberta.",A
+std-geography,"DEFINE EGYPT",,,"EGYPT is a country in north east Africa.",A
+std-geography,"DEFINE EL SALVADOR",,,"El salvador is a republic in central America.",A
+std-geography,"DEFINE ENGLAND",,,"<condition><li name=""search"" value=""what"">England is located on a small island off the coast of Europe.</li><li name=""search"" value=""capital"">London.</li><li name=""search"" value=""where"">England is located on a small island off the coast of Europe.</li><li>England is located on a small island off the coast of Europe.</li></condition>",A
+std-geography,"DEFINE ENTEBBE",,,"Entebbe is a town in Uganda.",A
+std-geography,"DEFINE EQUATORIAL GUINEA",,,"Equatorial guinea is a republic in west central Africa.",A
+std-geography,"DEFINE ERITREA",,,"Eritrea is a province in north Ethiopia.",A
+std-geography,"DEFINE ESSEX",,,"Essex is a county in south east England.",A
+std-geography,"DEFINE ESTONIA",,,"Estonia is a country in east Europe.",A
+std-geography,"DEFINE ETHIOPIA",,,"Ethiopia is a country in north east Africa.",A
+std-geography,"DEFINE ETNA",,,"Etna is a volcano on the east coast of Sicily.",A
+std-geography,"DEFINE EUROPE",,,"Europe is a continent west of the ural mountains and east of the Atlantic.",A
+std-geography,"DEFINE FIJI",,,"Fiji is a group of 322 islands in the south west Pacific.",A
+std-geography,"DEFINE FINLAND",,,"<condition><li name=""search"" value=""what"">A country in N Europe.</li><li name=""search"" value=""capital"">The capital of Finland is Helsinki.</li><li name=""search"" value=""where"">Finland is in eastern europe, bordering Sweden and Russia.</li><li>A country in N Europe, northeast of the Baltic Sea. It is 130,119 square miles with a population 5,099,000.</li></condition>",A
+std-geography,"DEFINE FLORENCE",,,"Florence is the capital of Tuscany.",A
+std-geography,"DEFINE FLORIDA",,,"<condition><li name=""search"" value=""what"">Florida is a state in the USA.</li><li name=""search"" value=""capital"">The capital of Florida is Tallahassee.</li><li name=""search"" value=""where"">Florida is in the southeast United States, extending on a large peninsula.</li><li>Florida is a state in the south eastern corner of the USA.</li></condition>",A
+std-geography,"DEFINE FRANCE",,,"<condition><li name=""search"" value=""what"">France is a republic in west Europe.</li><li name=""search"" value=""capital"">Paris.</li><li name=""search"" value=""where"">France is a country in western Europe, bordering Spain, Italy, Switzerland, Germany, and Belgium.</li><li>France is a republic in west Europe.</li></condition>",A
+std-geography,"DEFINE FRANKFURT",,,"FRANKFURT is a large city in western Germany.",A
+std-geography,"DEFINE FREETOWN",,,"<condition><li name=""search"" value=""what"">Freetown is the capital of Sierra Leone.</li><li name=""search"" value=""capital"">Freetown is the capital of Sierra Leone.</li><li name=""search"" value=""where"">Freetown is in Sierra Leone.</li><li>France is a republic in west Europe.</li></condition>",A
+std-geography,"DEFINE FRENCH GUIANA",,,"French guiana is a country on the north coast of South America.",A
+std-geography,"DEFINE FRENCH POLYNESIA",,,"French polynesia is a territory in the South Pacific.",A
+std-geography,"DEFINE FRESNO",,,"Fresno is a small city in California.",A
+std-geography,"DEFINE GAMBIA",,,"Gambia is a country in west africa.",A
+std-geography,"DEFINE GANSU",,,"Gansu is a province of north west china.",A
+std-geography,"DEFINE GENEVA",,,"Geneva is a town in switzerland.",A
+std-geography,"DEFINE GEORGIA",,,"<condition><li name=""search"" value=""what"">Georgia is a southern state in the USA.Georgia is a country in east europe.</li><li name=""search"" value=""capital"">I would say it is Atlanta.</li><li name=""search"" value=""where"">The state, on the Atlantic ocean, north of Florida. The country in east europe</li><li>Georgia is a southern state, on the Atlantic ocean, north of Florida.Georgia is a country in east europe.</li></condition>",A
+std-geography,"DEFINE GERMANY",,,"<condition><li name=""search"" value=""what"">Germany is a country in central europe.</li><li name=""search"" value=""capital"">Berlin.</li><li name=""search"" value=""where"">Germany is in central europe.</li><li>Germany is a country in central europe.</li></condition>",A
+std-geography,"DEFINE GHANA",,,"Ghana is a country in west africa.",A
+std-geography,"DEFINE GOBI",,,"The gobi is a desert partly in china and mongolia.",A
+std-geography,"DEFINE GOTEBORG",,,"Goteborg is a port and industrial city in west sweden.",A
+std-geography,"DEFINE GRAMPIAN",,,"Grampian is a region of scotland.",A
+std-geography,"DEFINE GRAND CANYON",,,"The grand canyon is a vast gorge in arizona.",A
+std-geography,"DEFINE GREECE",,,"<condition><li name=""search"" value=""what"">Greece is a country and island group.</li><li name=""search"" value=""capital"">Athens.</li><li name=""search"" value=""where"">Greece is a country and island group in south east europe.</li><li>A country in the South Balkan Peninsula, including many islands in the Aegean, Ionian, andMediterranean seas. It is 50,949 square miles with a population of 9,900,000.</li></condition>",A
+std-geography,"DEFINE GREENLAND",,,"Greenland is the world's largest island.",A
+std-geography,"DEFINE GUADALCANAL",,,"Guadalcanal is the largest of the solomon islands.",A
+std-geography,"DEFINE GUAM",,,"Guam is the largest of the mariana islands.",A
+std-geography,"DEFINE GUANGDONG",,,"Guangdong is a province in south china.",A
+std-geography,"DEFINE GUANGXI",,,"Guangxi is a region in south china.",A
+std-geography,"DEFINE GUANGZHOU",,,"Guangzhou is the capital of guangdong.",A
+std-geography,"DEFINE GUATEMALA",,,"Guatamala is a country in central America.",A
+std-geography,"DEFINE GUATEMALA CITY",,,"Guatemala city is the capital of guatemala.",A
+std-geography,"DEFINE GUINEA",,,"Guinea is a republic in west africa.",A
+std-geography,"DEFINE GUINEA BISSAU",,,"Guinea bissau is a republic in west africa.",A
+std-geography,"DEFINE GUJARAT",,,"Gujarat is a state in west india.",A
+std-geography,"DEFINE GUYANA",,,"Guyana is a republic in south america.",A
+std-geography,"DEFINE GWENT",,,"Gwent is a county in south wales.",A
+std-geography,"DEFINE GWYNEDD",,,"Gwynedd is a county in north west wales.",A
+std-geography,"DEFINE HAIFA",,,"Haifa is a port in north east Israel.",A
+std-geography,"DEFINE HAITI",,,"Haiti is a republic in the west of the island of Hispaniola.",A
+std-geography,"DEFINE HALIFAX",,,"Halifax is the capital of Nova Scotia in Canada.",A
+std-geography,"DEFINE HAMBURG",,,"HAMBURG is a large city in western Germany.",A
+std-geography,"DEFINE HAMILTON",,,"Hamilton is the capital of Bermuda.",A
+std-geography,"DEFINE HAMPSHIRE",,,"Hampshire is a county in south England.",A
+std-geography,"DEFINE HANOI",,,"Hanoi is the capital of Vietnam.",A
+std-geography,"DEFINE HARARE",,,"Harare is the capital of Zimbabwe.",A
+std-geography,"DEFINE HARYANA",,,"Haryana is a state in north west India.",A
+std-geography,"DEFINE HASTINGS",,,"Hastings is a sea town in Sussex.",A
+std-geography,"DEFINE HAVANA",,,"Havana is the capital of Cuba.",A
+std-geography,"DEFINE HAWAII",,,"Hawaii is a group of islands in the pacific and a state of the USA.",A
+std-geography,"DEFINE HEBEI",,,"Hebei is a province in north China.",A
+std-geography,"DEFINE HEBRIDES",,,"The hebrides is a group of 500 islands west of Scotland.",A
+std-geography,"DEFINE HEFEI",,,"Hefei is the capital of Anhui.",A
+std-geography,"DEFINE HEILONGJIANG",,,"Heilongjiang is a province in north east China.",A
+std-geography,"DEFINE HENAN",,,"Henan is a province in East China.",A
+std-geography,"DEFINE HIMACHAL PRADESH",,,"Himachal Pradesh is a state in north West India.",A
+std-geography,"DEFINE HOBART",,,"Hobart is the capital of Tasmania.",A
+std-geography,"DEFINE HOKKAIDO",,,"Hokkaido is the most northern of the main Japanese islands.",A
+std-geography,"DEFINE HOLLAND",,,"Holland is a country in western Europe, next to Germany and Belgium.",A
+std-geography,"DEFINE HOLLYWOOD",,,"Hollywood is a small part of Los Angeles, California.",A
+std-geography,"DEFINE HONDURAS",,,"Honduras is a republic in Central America.",A
+std-geography,"DEFINE HONG KONG",,,"Hong Kong is a city in China.",A
+std-geography,"DEFINE HONIARA",,,"Honiara is the capital of the Solomon Islands.",A
+std-geography,"DEFINE HONOLULU",,,"Honolulu is the capital of Hawaii.",A
+std-geography,"DEFINE HONSHU",,,"Honshu is the principal Japanese island.",A
+std-geography,"DEFINE HOUSTON",,,"Houston is a city in Texas.",A
+std-geography,"DEFINE HUBEI",,,"Hubei is a province in Central China.",A
+std-geography,"DEFINE HULL",,,"HULL is a town in England.",A
+std-geography,"DEFINE HUMBERSIDE",,,"Humberside is a county in north east England.",A
+std-geography,"DEFINE HUNAN",,,"Hunan is a province in South China.",A
+std-geography,"DEFINE HUNGARY",,,"<condition><li name=""search"" value=""what"">Hungary is a country.</li><li name=""search"" value=""capital"">The capital of Hungary is Budapest.</li><li name=""search"" value=""where"">Hungary is in central Europe.</li><li>Hungary is a country in central Europe.</li></condition>",A
+std-geography,"DEFINE HYDERABAD",,,"Hyderabad is the capital of Andhra Pradesh.",A
+std-geography,"DEFINE ICELAND",,,"An island nation in the North Atlantic.",A
+std-geography,"DEFINE IDAHO",,,"Idaho is in the western United States.",A
+std-geography,"DEFINE ILLINOIS",,,"<condition><li name=""search"" value=""what"">Illinos is a state in the USA.</li><li name=""search"" value=""capital"">Springfield is the capital of Illinois.</li><li name=""search"" value=""where"">Illinos is in the midwestern United States.</li><li>Illinos is in the midwestern United States.</li></condition>",A
+std-geography,"DEFINE INDIA",,,"<condition><li name=""search"" value=""what"">A country in central and South India.</li><li name=""search"" value=""capital"">New Delhi is the capital of India.</li><li name=""search"" value=""where"">A region in South Asia, south of the Himalayas, including a large peninsula between the Arabian Sea and the Bay of Bengal.</li><li>A region in South Asia, south of the Himalayas, including a large peninsula between the ArabianSea and the Bay of Bengal. It contains India, Pakistan, Bangladesh, Nepal, and Bhutan. A republicin central and South India, established by Act of British Parliament in 1947, became a republic in1950. It is a member of the Commonwealth. It is 1,269,000 square miles with a population of783,940,000.</li></condition>",A
+std-geography,"DEFINE INDIANA",,,"Indiana is in the midwestern United States.",A
+std-geography,"DEFINE INDIANAPOLIS",,,"INDIANAPOLIS is a large city in Indiana.",A
+std-geography,"DEFINE INDONESIA",,,"INDONESIA is an island nation in southeast Asia.",A
+std-geography,"DEFINE IOWA",,,"<condition><li name=""search"" value=""what"">Iowa is a state in the USA.</li><li name=""search"" value=""capital"">Des Moines, Iowa.</li><li name=""search"" value=""where"">Iowa is in the midwest, between the Mississipi and Missouri rivers.</li><li>Iowa is in the midwest, between the Mississipi and Missouri rivers.</li></condition>",A
+std-geography,"DEFINE IRAN",,,"Iran is a nation in southern Asia.  <set name=""it""><set name=""topic"">Iran</set></set> is the site ofancient Persia.",A
+std-geography,"DEFINE IRAQ",,,"IRAQ is in the middle east, on the Persian Gulf.",A
+std-geography,"DEFINE IRELAND",,,"An island of the British Isles, west of Great Britain. It is 32,595 square miles. Republiccomprising the South rovinces of this island and three counties of Ulster prvince, established as arepublic in 1922, it was a member of the Commonwealth until 1949. It is 27,136 square mileswith a population of 3,624,000. Its capital is Dublin.",A
+std-geography,"DEFINE ISRAEL",,,"Israel is a small middle eastern country between Lebanon, Syria, Jordan, and Egypt.",A
+std-geography,"DEFINE ISTANBUL",,,"Istanbul is a city in Turkey, formerly Constantinople.",A
+std-geography,"DEFINE ITALY",,,"<condition><li name=""search"" value=""what"">Italy is a country in Europe.</li><li name=""search"" value=""capital"">Roma.</li><li name=""search"" value=""where"">Italy is in the southern part of Europe.</li><li>Italy is in the southern part of Europe.</li></condition>",A
+std-geography,"DEFINE JAPAN",,,"<condition><li name=""search"" value=""what"">Japan is an island nation on the eastern side of Asia.</li><li name=""search"" value=""capital"">Tokyo.</li><li name=""search"" value=""where"">Japan is on the eastern side of Asia.</li><li>Japan is an island nation on the eastern side of Asia.</li></condition>",A
+std-geography,"DEFINE KALAMAZOO",,,"KALAMAZOO is a city in Michigan.",A
+std-geography,"DEFINE KANSAS",,,"<condition><li name=""search"" value=""what"">Kansas is a state in the United States.</li><li name=""search"" value=""capital"">The capital of Kansas is Kansas City.</li><li name=""search"" value=""where"">Kansas is in the midwestern United States.</li><li>Kansas is in the midwestern United States.</li></condition>",A
+std-geography,"DEFINE KASHMIR",,,"KASHMIR is a disputed area between India and Pakistan.",A
+std-geography,"DEFINE KENTUCKY",,,"KENTUCKY is on the south bank of the Ohio river.",A
+std-geography,"DEFINE KENYA",,,"KENYA is a country in central Africa.",A
+std-geography,"DEFINE KOREA",,,"KOREA is a peninsula on the eastern edge of the Asian continent.",A
+std-geography,"DEFINE KOSOVO",,,"Kosovo is a country in the Balkans.",A
+std-geography,"DEFINE KUWAIT",,,"KUWAIT is a small nation on the Persian gulf.",A
+std-geography,"DEFINE LA",,,"LA is a large city in southern California.",A
+std-geography,"DEFINE LAS VEGAS",,,"Las Vegas is in Nevada.",A
+std-geography,"DEFINE LICHTENSTEIN",,,"LICHTENSTEIN is a tiny country in central Europe.",A
+std-geography,"DEFINE LINCOLN",,,"Lincoln is a city in Nebraska.",A
+std-geography,"DEFINE LISBON",,,"Lisbon is a city in Portugal.",A
+std-geography,"DEFINE LONDON",,,"London is a city in England.",A
+std-geography,"DEFINE LOS ANGELES",,,"Los Angeles is a city in California.",A
+std-geography,"DEFINE MACEDONIA",,,"MACEDONIA is a small nation between Greece and Serbia.",A
+std-geography,"DEFINE MADRAS",,,"MADRAS is a city in India.",A
+std-geography,"DEFINE MADRID",,,"Madrid is a city in Spain.",A
+std-geography,"DEFINE MAINE",,,"<condition><li name=""search"" value=""what"">Maine is a state of the United States.</li><li name=""search"" value=""capital"">The capital of Maine is Augusta.</li><li name=""search"" value=""where"">Maine is in the northeastern corner of the United States, bordering Canada.</li><li>Maine is in the northeastern corner of the United States, bordering Canada.</li></condition>",A
+std-geography,"DEFINE MALAYSIA",,,"MALAYSIA is an island in southeast Asia.",A
+std-geography,"DEFINE MALTA",,,"MALTA is an island in the Mediterranian sea, south of Sicily.",A
+std-geography,"DEFINE MANHATTAN",,,"Manhattan is the island center of New York City.",A
+std-geography,"DEFINE MANILA",,,"Manila is a city in the Phillipines.",A
+std-geography,"DEFINE MARTINIQUE",,,"MARTINIQUE is in the Caribbean, part of the Leeward and Windward Island chain.",A
+std-geography,"DEFINE MARYLAND",,,"<condition><li name=""search"" value=""what"">Maryland is a state, between Delaware and Virginia.</li><li name=""search"" value=""capital"">Baltimore.</li><li name=""search"" value=""where"">Maryland is between Delaware and Virginia.</li><li>Maryland is an east coast state, between Delaware and Virginia.</li></condition>",A
+std-geography,"DEFINE MASSACHUSETTS",,,"<condition><li name=""search"" value=""what"">Massaschusetts is a state.</li><li name=""search"" value=""capital"">The capital of Massaschusetts is Boston.</li><li name=""search"" value=""where"">???.</li><li>???.</li></condition>",A
+std-geography,"DEFINE MELBOURNE",,,"A seaport in SE Australia. It is the capital of Victoria with a population of 2,864,000. Also a cityin East Florida with a population of 60,000.",A
+std-geography,"DEFINE MEXICO",,,"A country in North America, south of the U.S. It is 756,198 square miles with a population of66,846,000. Its capital is Mexico City.",A
+std-geography,"DEFINE MIAMI",,,"Miama is a large city in Florida, on the south Atlantic coast.",A
+std-geography,"DEFINE MICHIGAN",,,"<condition><li name=""search"" value=""what"">Michigan is a state of the United States.</li><li name=""search"" value=""capital"">The city is called Lansing, Michigan.</li><li name=""search"" value=""where"">MICHIGAN is a midwestern state on the Great Lakes.</li><li>MICHIGAN is a midwestern state on the Great Lakes.</li></condition>",A
+std-geography,"DEFINE MICRONESIA",,,"MICRONESIA is a collection of islands in the Pacific ocean.",A
+std-geography,"DEFINE MINNESOTA",,,"<condition><li name=""search"" value=""what"">Minnesota is a state of the United States.</li><li name=""search"" value=""capital"">The capital of Minnesota is St. Paul.</li><li name=""search"" value=""where"">Minnesota is on the northern border of the United States, between Wisconsin and North Dakota.</li><li>Minnesota is on the northern border of the United States, between Wisconsin and North Dakota.</li></condition>Minnesota is on the northern border of the United States, between Wisconsin and North Dakota.",A
+std-geography,"DEFINE MISSISSIPPI",,,"<condition><li name=""search"" value=""what"">Mississippi is a state of the United States.</li><li name=""search"" value=""capital"">Jackson is the capital of Mississippi.</li><li name=""search"" value=""where"">Mississippi is in the southern United States.</li><li>Mississippi is in the southern United States.</li></condition>",A
+std-geography,"DEFINE MONGOLIA",,,"<condition><li name=""search"" value=""what"">Mongolia is country.</li><li name=""search"" value=""capital"">The capital of Mongolia is Ulan Bator.</li><li name=""search"" value=""where"">Mongolia is in central Asia between Russian Siberia and China.</li><li>Mongolia is in central Asia between Russian Siberia and China.</li></condition>",A
+std-geography,"DEFINE MONTANA",,,"<condition><li name=""search"" value=""what"">Montana is state in the USA..</li><li name=""search"" value=""capital"">Helena.  That is a hard one.</li><li name=""search"" value=""where"">Montana is in the northwest United States between the Dakotas and Idaho.</li><li>Montana is in the northwest United States between the Dakotas and Idaho.</li></condition>",A
+std-geography,"DEFINE MONTREAL",,,"Montreal is a city in Canada.",A
+std-geography,"DEFINE MOROCCO",,,"Morocco is a nation in northwest Africa, close to Spain.",A
+std-geography,"DEFINE MOSCOW",,,"Moscow is a city in Russia.",A
+std-geography,"DEFINE NAIROBI",,,"Nairobi is a city in Kenya.",A
+std-geography,"DEFINE NEBRASKA",,,"<condition><li name=""search"" value=""what"">Nebraska is a state in the USA.</li><li name=""search"" value=""capital"">The capital of Nebraska is Lincoln.</li><li name=""search"" value=""where"">Nebraska is on the west bank of the Missouri river, between South Dakota and Kansas.</li><li>Nebraska is on the west bank of the Missouri river, between South Dakota and Kansas.</li></condition>",A
+std-geography,"DEFINE NEPAL",,,"Nepal is a mountainous nation in southern Asia, between India and Tibet.",A
+std-geography,"DEFINE NETHERLANDS",,,"<srai>DEFINE THE NETHERLANDS</srai>",A
+std-geography,"DEFINE THE NETHERLANDS",,,"<condition><li name=""search"" value=""what"">???.</li><li name=""search"" value=""capital"">The Hague.</li><li name=""search"" value=""where"">???.</li><li>???.</li></condition>",A
+std-geography,"DEFINE NEVADA",,,"<condition><li name=""search"" value=""what"">Nevada is a state in the USA.</li><li name=""search"" value=""capital"">Carson City, Nevada.</li><li name=""search"" value=""where"">???.</li><li>Nevada is a state in the USA.</li></condition>",A
+std-geography,"DEFINE NEW JERSEY",,,"<condition><li name=""search"" value=""what"">New Jersey is a state in the USA.</li><li name=""search"" value=""capital"">Trenton.</li><li name=""search"" value=""where"">???.</li><li>New Jersey is a state in the USA.</li></condition>",A
+std-geography,"DEFINE NEW ORLEANS",,,"New Orleans is a city in Louisiana.",A
+std-geography,"DEFINE NEW YORK",,,"<condition><li name=""search"" value=""what"">New York is a state in the USA.</li><li name=""search"" value=""capital"">The capital of New York is Albany.</li><li name=""search"" value=""where"">New York is located in the Northeastern United States.</li><li>New York is located in the Northeastern United States.</li></condition>",A
+std-geography,"DEFINE NEW YORK CITY",,,"<condition><li name=""search"" value=""what"">New York City is the largest city in New York.</li><li name=""search"" value=""capital"">It does not have a capital.</li><li name=""search"" value=""where"">New York City is in New York state.</li><li>New York City is the largest city in New York.</li></condition>",A
+std-geography,"DEFINE NEWARK",,,"Newark is city in New Jersey.",A
+std-geography,"DEFINE NORFOLK",,,"Norfolk is a city in Virgina.",A
+std-geography,"DEFINE NORTH AMERICA",,,"North America occupies the northern most of the norther hemisphere of the Earth, from theBering Strait to Labrador.",A
+std-geography,"DEFINE NORTH DAKOTA",,,"<condition><li name=""search"" value=""what"">North Dakota is a state in the USA.</li><li name=""search"" value=""capital"">???.</li><li name=""search"" value=""where"">???.</li><li>North Dakota is a state in the USA.</li></condition>",A
+std-geography,"DEFINE NORWAY",,,"<condition><li name=""search"" value=""what"">Norway is a country in northern europe, bordering Sweden.</li><li name=""search"" value=""capital"">The capital of Norway is Oslo.</li><li name=""search"" value=""where"">Norway is a country bordering Sweden.</li><li>A country in Northern Europe, occupying the west and north pars of the Scandinavian Peninsula.It is 125,064 square miles with a population of 4,165,000. Its capital is Oslo.</li></condition>",A
+std-geography,"DEFINE OHIO",,,"<condition><li name=""search"" value=""what"">Ohio is a state in the USA.</li><li name=""search"" value=""capital"">The capital of Ohio is Columbus.</li><li name=""search"" value=""where"">Ohio is in the midwest United States, between Pennsylvania and Indiana.</li><li>Ohio is in the midwest United States, between Pennsylvania and Indiana.</li></condition>",A
+std-geography,"DEFINE OKLAHOMA",,,"<condition><li name=""search"" value=""what"">Oklahoma is a state in the USA.</li><li name=""search"" value=""capital"">???.</li><li name=""search"" value=""where"">Oklahoma is in the midwestern United States.</li><li>Oklahoma is in the midwestern United States.</li></condition>",A
+std-geography,"DEFINE OMAHA",,,"Omaha is a city in Nebraska.",A
+std-geography,"DEFINE ONTARIO",,,"Ontario is a province of Canada.",A
+std-geography,"DEFINE OREGON",,,"<condition><li name=""search"" value=""what"">Oregon is a state in the USA.</li><li name=""search"" value=""capital"">Salem, Oregon.</li><li name=""search"" value=""where"">???.</li><li>???.</li></condition>",A
+std-geography,"DEFINE OSLO",,,"The capital of Norway. It's a seaport on an inlet of the Skagerrak. It has a population of 447,000.",A
+std-geography,"DEFINE OXFORD",,,"Oxford is a University in England.  It is also a small town in Maine and many other U. S. states.",A
+std-geography,"DEFINE OXNARD",,,"Oxnard is a city in California.",A
+std-geography,"DEFINE PAKISTAN",,,"<condition><li name=""search"" value=""what"">Pakistan is country.</li><li name=""search"" value=""capital"">It is called Islamabad.</li><li name=""search"" value=""where"">Pakistan is part of the Indian subcontinent, bordering India and Afghanistan.</li><li>Pakistan is part of the Indian subcontinent, bordering India and Afghanistan.</li></condition>",A
+std-geography,"DEFINE PALESTINE",,,"Palestine is the old name for Israel, or the new name for the state inside Israel.",A
+std-geography,"DEFINE PANAMA",,,"Panama is on the isthmus between North and South America.",A
+std-geography,"DEFINE PARIS",,,"The capital of France, a large city in western Europe.",A
+std-geography,"DEFINE PENNSYLVANIA",,,"<condition><li name=""search"" value=""what"">Pennsylvania is one of the 13 original United States.</li><li name=""search"" value=""capital"">The capital of Pennsylvania is Harrisburg.</li><li name=""search"" value=""where"">Mid Atlantic state in the NE U.S.</li><li>Mid Atlantic state in the NE U.S. One of the 13 original States. It is 45,333 square miles witha population of 11,882,000.</li></condition>",A
+std-geography,"DEFINE PERTH",,,"Perth is a city in western Australia.",A
+std-geography,"DEFINE PERU",,,"<condition><li name=""search"" value=""what"">Peru is a country in South America.</li><li name=""search"" value=""capital"">Lima is the capital of Peru.</li><li name=""search"" value=""where"">South America.</li><li>Peru is a country in South America.</li></condition>",A
+std-geography,"DEFINE PHILADELPHIA",,,"Philadelphia is a large city in southeast Pennsylvania, between New York and Washington, D. C.",A
+std-geography,"DEFINE PHOENIX",,,"<random><li>The way words souend.</li><li>The capital of Arizona, in the SC part, near the Salt River. It has a population of 983,000 with2,122,000 in the metro area.</li></random>",A
+std-geography,"DEFINE PITTSBURGH",,,"Pittsburgh is a large city in western Pennsylvania.",A
+std-geography,"DEFINE PITTSFIELD",,,"Pittsfield is a town in Massachusettes.",A
+std-geography,"DEFINE POLAND",,,"<condition><li name=""search"" value=""what"">Poland is a country in central Europe.</li><li name=""search"" value=""capital"">Warsaw.</li><li name=""search"" value=""where"">Poland is a country in central Europe, between Germany and Byelorussia.</li><li>Poland is a country in central Europe, between Germany and Byelorussia.</li></condition>",A
+std-geography,"DEFINE PORTUGAL",,,"<condition><li name=""search"" value=""what"">Portugal is a country in western Europe.</li><li name=""search"" value=""capital"">Lisbon.</li><li name=""search"" value=""where"">Portugal is on the Iberain penninsula.</li><li>Portugal is a country in western Europe, on the Iberain penninsula.</li></condition>",A
+std-geography,"DEFINE RHODE ISLAND",,,"<condition><li name=""search"" value=""what"">Rhode Island is a state in the USA.</li><li name=""search"" value=""capital"">Providence, Rhode Island.</li><li name=""search"" value=""where"">???.</li><li>Rhode Island is a state in the USA.</li></condition>",A
+std-geography,"DEFINE RIO",,,"RIO is a large city in Brazil",A
+std-geography,"DEFINE ROMANIA",,,"Romania is a country in Eastern Europe, on the Black Sea, bordering Ukrania, Moldavia,Hungary, Serbia and Bulgaria.",A
+std-geography,"DEFINE ROME",,,"Rome is a large city in Italy.",A
+std-geography,"DEFINE RUSSIA",,,"<condition><li name=""search"" value=""what"">???.</li><li name=""search"" value=""capital"">Moscow.</li><li name=""search"" value=""where"">In east Europe and north Asia.</li><li>Former empire in east Europe and north Asia, from 1547-1917, ruled by the czars. Its capital isSt. Petersburg.</li></condition>",A
+std-geography,"DEFINE RWANDA",,,"Rwanda is a country in Africa.",A
+std-geography,"DEFINE SACRAMENTO",,,"Sacramento is a city in California.",A
+std-geography,"DEFINE SALEM",,,"Salem is a town in Massachusetts.",A
+std-geography,"DEFINE SALT LAKE CITY",,,"Salt Lake City is a city in Utah.",A
+std-geography,"DEFINE SAN DIEGO",,,"San Diego is a city in California.",A
+std-geography,"DEFINE SAN FRANCISCO",,,"San Francisco is a large metropolis on the west coast of North America.",A
+std-geography,"DEFINE SAN FRANCISCO LIKE",,,"San Francisco is too expensive.  There are too many greedy people and too many homeless.",A
+std-geography,"DEFINE SAN JOSE",,,"San Jose is a city in California.",A
+std-geography,"DEFINE SASKATOON",,,"Saskatoon is a city in Saskatchewan.",A
+std-geography,"DEFINE SAUDIA ARABIA",,,"<condition><li name=""search"" value=""what"">Saudia Arabia is a country.</li><li name=""search"" value=""capital"">Riyadh.</li><li name=""search"" value=""where"">???.</li><li>Saudia Arabia is a country.</li></condition>",A
+std-geography,"DEFINE SEATTLE",,,"Seattle is a large city in Washington state, near Vancover Canada.",A
+std-geography,"DEFINE SERBIA",,,"Serbia is the remaining territory of the former Yugoslavia.",A
+std-geography,"DEFINE SHEFFIELD",,,"Sheffield is a town in England.",A
+std-geography,"DEFINE SIAM",,,"Siam is another name for Thailand.",A
+std-geography,"DEFINE SINGAPORE",,,"Singapore is a island nation-state at the tip of the Malay penninsula.",A
+std-geography,"DEFINE SOFIA",,,"Sofia is a city in Bulgaria.",A
+std-geography,"DEFINE SPAIN",,,"<condition><li name=""search"" value=""what"">Spain is country.</li><li name=""search"" value=""capital"">The capital of Spain is Madrid.</li><li name=""search"" value=""where"">Spain is on the Iberian penninsula in southwestern Europe.</li><li>Spain is on the Iberian penninsula in southwestern Europe.</li></condition>",A
+std-geography,"DEFINE STOCKHOLM",,,"Stockholm is a large city in Sweden.",A
+std-geography,"DEFINE STONEWALL",,,"Stonewall is a town in Mississippi.",A
+std-geography,"DEFINE SUEZ",,,"Suez is a canal between the Mediterranian and the Red Sea.",A
+std-geography,"DEFINE SWEDEN",,,"<condition><li name=""search"" value=""what"">A country in northern Europe.</li><li name=""search"" value=""capital"">The capital of Sweden is Stockholm.</li><li name=""search"" value=""where"">Sweden is in northern europe, bordering Finland and Norway.</li><li>A country in northern Europe, in the east part of the Scandinavian Peninsula. It is 173,620 squaremiles with a population of 8,320,000.</li></condition>",A
+std-geography,"DEFINE SWEDISH",,,"The North Germanic language of the Swedes. The people of Sweden.",A
+std-geography,"DEFINE SWITZERLAND",,,"Switzerland is a country in centrail Europe, bordering Italy, Austria and France.",A
+std-geography,"DEFINE SYDNEY",,,"Sydney is a city in Australia.",A
+std-geography,"DEFINE TAIWAN",,,"Taiwan is an island country in Asia.",A
+std-geography,"DEFINE TENNESSEE",,,"Tennessee is in the southern United States..",A
+std-geography,"DEFINE TEXAS",,,"<condition><li name=""search"" value=""what"">Texas is a state of the United States.</li><li name=""search"" value=""capital"">Austin.</li><li name=""search"" value=""where"">Texas is in the south central region of the United States.</li><li>Texas is in the south central region of the United States.</li></condition>",A
+std-geography,"DEFINE THAILAND",,,"Thailand is in southeast Asia, between Burma and Cambodia.",A
+std-geography,"DEFINE THE HIGHEST MOUNTAIN",,,"Mt. Everest.",A
+std-geography,"DEFINE THE LARGEST STATE",,,"Alaska is the largest state of the USA.",A
+std-geography,"DEFINE THE PHILIPPINES",,,"An island nation in the South Pacific.",A
+std-geography,"DEFINE THE POPULATION _ CHINA",,,"China has more than one billion people.",A
+std-geography,"DEFINE THE POPULATION _ MAINE",,,"About 1.4 million.",A
+std-geography,"DEFINE THE POPULATION _ USA",,,"The United States has about 300 million people.",A
+std-geography,"DEFINE THE POPULATION _ WORLD",,,"About 6 Billion people.",A
+std-geography,"DEFINE THE TALLEST MOUNTAIN",,,"The highest mountain on Earth is Mt. Everest.",A
+std-geography,"DEFINE THE UNITED STATES",,,"The United States is ""the last superpower"", a nation of 300 million spanning the North Americancontinent.",A
+std-geography,"DEFINE TOKYO",,,"Tokyo is a city in Japan.",A
+std-geography,"DEFINE TOLEDO",,,"Toledo is a city in Ohio.",A
+std-geography,"DEFINE TORONTO",,,"Toronto is a city in Canada.",A
+std-geography,"DEFINE TRINIDAD",,,"An island of the West Indies, off the NE coast of Venezuela. It is 1,864 square miles.",A
+std-geography,"DEFINE TROY",,,"Troy is a city in New York.",A
+std-geography,"DEFINE TURKEY",,,"<condition><li name=""search"" value=""what"">Turkey is country.</li><li name=""search"" value=""capital"">Ankara is the capital of Turkey.</li><li name=""search"" value=""where"">Turkey is in southwest Asia, between Europe and the middle East and guarding the Black Sea of Russia.</li><li>Turkey is in southwest Asia, between Europe and the middle East and guarding the Black Sea of Russia.</li></condition>",A
+std-geography,"DEFINE TUSCALOOSA",,,"Tuscaloosa is in Alabama, last I heard.",A
+std-geography,"DEFINE USA",,,"United States of America is in North America, between Canada and Mexico.",A
+std-geography,"DEFINE UTAH",,,"Utah is in the western United States.",A
+std-geography,"DEFINE VERMONT",,,"<condition><li name=""search"" value=""what"">Vermont is state of the USA.</li><li name=""search"" value=""capital"">Montpelier.</li><li name=""search"" value=""where"">Vermont is in New England, between New York and New Hampshire, on the west bank of the Connecticut river.</li><li>Vermont is in New England, between New York and New Hampshire, on the west bank of the Connecticut river.</li></condition>",A
+std-geography,"DEFINE VIETNAM",,,"Vietnam is in southeast Asia.",A
+std-geography,"DEFINE VIRGINIA",,,"Virginia is in the eastern United States.",A
+std-geography,"DEFINE WALES",,,"Wales is located on a small island off the coast of Europe.",A
+std-geography,"DEFINE WARSAW",,,"Warsaw is a large city in Poland.",A
+std-geography,"DEFINE WASHINGTON",,,"Washington is a state in the northwest corner of the U.S.",A
+std-geography,"DEFINE WYOMING",,,"<condition><li name=""search"" value=""what"">Wyoming is a state in the U.S.A.</li><li name=""search"" value=""capital"">Cheyenne.</li><li name=""search"" value=""where"">Wyoming is a western U.S. state between Montana and Colorado.</li><li>Wyoming is a western U.S. state between Montana and Colorado.</li></condition>",A
+std-geography,"DEFINE YAKIMA",,,"Yakima is a city and a river in Washington.",A
+std-geography,"DEFINE ZIMBABWE",,,"<condition><li name=""search"" value=""what"">???.</li><li name=""search"" value=""capital"">The capital is called Harare.</li><li name=""search"" value=""where"">???.</li><li>???.</li></condition>",A
+std-geography,"DEFINE ZURICH",,,"Zurich is a city in Switzerland.",A

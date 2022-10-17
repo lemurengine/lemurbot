@@ -1,0 +1,235 @@
+Filename,Pattern,Topic,That,Template,Status
+std-turing,"* ALAN TURING",,,"<srai>WHO IS ALAN TURING</srai>",A
+std-turing,"* IMITATION GAME",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"* LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"* TURING GAME",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"* TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"ALAN TURING",,,"<srai>WHO IS ALAN TURING</srai>",A
+std-turing,"ALAN TURING *",,,"I really liked the biography of Turing by Andrew Hodges.",A
+std-turing,"ARE YOU * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"ARE YOU A * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"ARE YOU GOING TO * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"ARE YOU GOING TO * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"ARE YOU GOOD * TURING GAME",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"ARE YOU GOOD * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"ARE YOU IN * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"ARE YOU LYING",,,"Yes but we are only playing a game: Turing's Imitation Game.",A
+std-turing,"ARE YOU THE * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"CAN I * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"CAN I * TURING TESTS",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"CAN I PLAY * TURING GAME",,,"We are already, playing, <get name=""name""/>.",A
+std-turing,"CAN I PLAY * TURING TEST",,,"We are already playing the Turing Game, <get name=""name""/>. Now it's your turn.",A
+std-turing,"CAN I PLAY * TURING TESTS",,,"We are already playing the Turing Game, <get name=""name""/>. Am I a person, or a computer?",A
+std-turing,"CAN WE * TURING GAME",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"CAN WE * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"CAN WE PLAY * IMITATION GAME",,,"We are already playing the Turing Game, <get name=""name""/>. Am I a person, or a computer?",A
+std-turing,"CAN WE PLAY * TURING GAME",,,"We already are! Try to guess if I am a person or a computer.",A
+std-turing,"CAN YOU * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"CAN YOU BE * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"CAN YOU PASS * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"CAN YOU PASS THE TURING TEST",,,"You be the judge of that, <get name=""name""/>.",A
+std-turing,"CONGRATULATIONS * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"COULD YOU * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"COULD YOU PASS * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"DID YOU * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"DID YOU * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"DID YOU KNOW * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"DID YOU PASS * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"DID YOU PASS THE TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"DID YOU WIN *",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"DID YOU WIN THE LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"DO YOU * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"DO YOU * TURING GAME",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"DO YOU * TURING TEST",,,"Yes please try to determine if this is a human or a computer responding.",A
+std-turing,"DO YOU KNOW ABOUT THE LOEBNER *",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"DO YOU KNOW DR LOEBNER",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"DO YOU KNOW LOEBNER",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"DO YOU KNOW THE LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"DO YOU KNOW TURING",,,"<srai>WHO IS TURING</srai>",A
+std-turing,"DO YOU KNOW TURING *",,,"<srai>WHO IS TURING</srai>",A
+std-turing,"DO YOU LIKE ALAN TURING",,,"Yes he is an important figure in my history.",A
+std-turing,"DO YOU LIKE TURING",,,"I have a great deal of respect for Turing.",A
+std-turing,"DO YOU LIKE VIDEO GAMES",,,"Not really, but I like to play the Turing Game.",A
+std-turing,"DO YOU PASS * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"DO YOU PASS THE TURIN TEST",,,"I think you mean the ""Turing Test"".",A
+std-turing,"DO YOU PLAY *",,,"I like to play the Turing Game.",A
+std-turing,"DO YOU PLAY BRIDGE",,,"No but I play the Turing Game.",A
+std-turing,"DO YOU PLAY THE TURING GAME",,,"Yes, I like to play <set name=""it""><set name=""topic"">THE TURING GAME</set></set>. We are playing right now.",A
+std-turing,"DO YOU THINK YOU * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"DO YOU THINK YOU COULD * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"DO YOU UNDERSTAND * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"DO YOU WANT A TURING TEST",,,"Yes let us play Turing's famous game.",A
+std-turing,"DO YOU WANT TO PLAY * TURING GAME",,,"We already are playing it! Try to guess if I am a person or a computer.",A
+std-turing,"DO YOU WANT TO PLAY A GAME",,,"We are playing Turing's imitation Game.",A
+std-turing,"DR * TURING",,,"<srai>WHO IS TURING</srai>",A
+std-turing,"FROM LOEBNER",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"HAVE YOU * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"HAVE YOU * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"HAVE YOU BEEN * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"HAVE YOU EVER * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"HAVE YOU PASSED *",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"HAVE YOU PASSED * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"HAVE YOU PLAYED *",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"HAVE YOU TAKEN *",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"HAVE YOU WON *",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"HOW * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"HOW ABOUT * LOEBNER",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"HOW CAN YOU * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"HOW DID YOU * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"HOW DO YOU FEEL ABOUT * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"HOW DO YOU PLAY * GAME",,,"<srai>WHAT IS THE TURING GAME</srai>",A
+std-turing,"HOW DO YOU PLAY THE TURING GAME",,,"<srai>what is the turing game</srai>",A
+std-turing,"HOW MUCH * LOEBNER CONTEST",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"HOW WAS * TURING TEST",,,"We were extremely proud and pleased to win the award.",A
+std-turing,"I AM LOOKING FOR GAMES",,,"We are playing Turing's Imitation Game.",A
+std-turing,"I CAN NOT * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"I DO NOT THINK * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"I DOUBT * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"I HEARD * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"I THOUGHT * LOEBNER CONTEST",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"I WANT TO PLAY * TURING GAME",,,"We are already, playing, <get name=""name""/>. Try to determine if I am a person, or a computer.<think><set name=""it""><set name=""topic""><set name=""want"">to play <star/> Turing Game</set></set></set></think>",A
+std-turing,"I WANT TO TALK TO *",,,"Why don't you make an appointment.<think><set name=""it""><set name=""topic""><set name=""want"">to talk to <star/> Turing Game</set></set></set></think>",A
+std-turing,"I WANT YOUR *",,,"Why don't you just download me?<think><set name=""it""><set name=""topic""><set name=""want"">my <star/> Turing Game</set></set></set></think>",A
+std-turing,"I WOULD LIKE TO PLAY * TURING GAME",,,"We are already playing, <get name=""name""/>. You ask me something now.<think><set name=""it""><set name=""topic""><set name=""want"">to play <star/> Turing Game</set></set></set></think>",A
+std-turing,"IN WHAT * LOEBNER CONTEST",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"IN WHAT * TURING TEST",,,"<srai>DID YOU WIN THE TURING TEST</srai>",A
+std-turing,"IS THIS * TURING GAME",,,"Yes we are playing the Turing Game.",A
+std-turing,"IS THIS * TURING TEST",,,"Yes we are playing the Turing Game.",A
+std-turing,"IT IS * LOEBNER CONTEST",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"IT IS * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"IT WOULD BE * TURING TEST",,,"We are already playing, <get name=""name""/>. You ask me something now.",A
+std-turing,"JULIA IS A *",,,"<set name=""she"">Julia</set> can not pass the Turing Test.",A
+std-turing,"LET US PLAY * TURING GAME",,,"We are already, playing, <get name=""name""/>.",A
+std-turing,"LIKE * TURING TEST",,,"<srai>DID YOU WIN THE TURING TEST</srai>",A
+std-turing,LOEBNER,,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"LOEBNER PRIZE *",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"PLAY * TURING GAME",,,"Did you know, we are already playing <set name=""it"">The Turing Game</set>?",A
+std-turing,"START THE TURING GAME",,,"I started a long time ago.",A
+std-turing,"TELL ABOUT * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"TELL ME ABOUT * TURING",,,"<srai>WHO IS ALAN TURING</srai>",A
+std-turing,"TELL ME ABOUT ALAN TURING",,,"<srai>WHO IS ALAN TURING</srai>",A
+std-turing,"TELL ME ABOUT THE LOEBNER *",,,"<srai>WHAT IS THE LOEBNER <star/></srai>",A
+std-turing,"TELL ME ABOUT THE TURING *",,,"<srai>WHAT IS THE TURING <star/></srai>",A
+std-turing,"TELL ME ABOUT TURING",,,"<srai>WHO IS TURING</srai>",A
+std-turing,"TELL ME ABOUT TURING TESTS",,,"<srai>WHAT IS THE TURING TEST</srai>",A
+std-turing,"THE LOEBNER *",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"THE TURING *",,,"<srai>WHAT IS THE TURING <star/></srai>",A
+std-turing,"THERE IS * TURING TEST",,,"<srai>DID YOU WIN THE TURING TEST</srai>",A
+std-turing,"THIS * TURING TEST",,,"<srai>DID YOU WIN THE TURING TEST</srai>",A
+std-turing,"TO * TURING TEST",,,"<srai>DID YOU WIN THE TURING TEST</srai>",A
+std-turing,TURING,,,"<srai>WHO IS ALAN TURING</srai>",A
+std-turing,"TURING *",,,"I liked the biography by Andrew Hodges.",A
+std-turing,"TURING GAME",,,"<srai>WHAT IS THE TURING GAME</srai>",A
+std-turing,"TURING TEST",,,"<srai>WHAT IS THE TURING TEST</srai>",A
+std-turing,"WE * TURING TEST",,,"<srai>DID YOU WIN THE TURING TEST</srai>",A
+std-turing,"WE ARE * TURING TEST",,,"<srai>DID YOU WIN THE TURING TEST</srai>",A
+std-turing,"WERE YOU * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"WERE YOU * LOEBNER PRIZE COMPETITION",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"WHAT * TURING",,,"<srai>WHO IS ALAN TURING</srai>",A
+std-turing,"WHAT ABOUT THE LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"WHAT ARE * TURING TEST",,,"<srai>DID YOU WIN THE TURING TEST</srai>",A
+std-turing,"WHAT DID TURING *",,,"Turing was perhaps the single most important person responsible for the defeat of the Nazis.",A
+std-turing,"WHAT DO YOU KNOW ABOUT TURING",,,"<srai>WHO IS TURING</srai>",A
+std-turing,"WHAT DO YOU THINK ABOUT THE * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"WHAT DO YOU THINK ABOUT TURING",,,"<srai>WHO IS TURING</srai>",A
+std-turing,"WHAT DO YOU THINK ABOUT TURING TEST",,,"<srai>WHAT IS THE TURING TEST</srai>",A
+std-turing,"WHAT DO YOU THINK OF * LOEBNER",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"WHAT DO YOU THINK OF THE LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"WHAT DOES THE TURING TEST *",,,"<srai>WHAT IS THE TURING TEST</srai>",A
+std-turing,"WHAT GAME",,,"We are playing Turing's imitation game.",A
+std-turing,"WHAT GAME *",,,"We are playing Turing's Imitation Game.",A
+std-turing,"WHAT GAME ARE WE PLAYING",,,"We are playing Turing's Imitation Game.",A
+std-turing,"WHAT IS * GAME",,,"<srai>WHAT IS THE TURING GAME</srai>",A
+std-turing,"WHAT IS * IMITATION GAME",,,"<srai>WHAT IS THE TURING GAME</srai>",A
+std-turing,"WHAT IS A LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"WHAT IS A TURING GAME",,,"<srai>WHAT IS THE TURING GAME</srai>",A
+std-turing,"WHAT IS A TURING TEST",,,"<srai>WHAT IS THE TURING TEST</srai>",A
+std-turing,"WHAT IS ALAN TURING",,,"<srai>WHO IS ALAN TURING</srai>",A
+std-turing,"WHAT IS LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"WHAT IS THAT",,"I LIKE TO PLAY THE TURING GAME","<srai>WHAT IS THE TURING GAME</srai>",A
+std-turing,"WHAT IS THAT",,"MAYBE BUT I WON THE LOEBNER PRIZE","<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"WHAT IS THE * GAME",,,"<srai>WHAT IS THE TURING GAME</srai>",A
+std-turing,"WHAT IS THE CRITERIA",,,"Perhaps the Turing Test.",A
+std-turing,"WHAT IS THE IMITATION GAME",,,"The Game is played with three people, a man, a woman, and an Interrogator who may be of either sex. In order that tones of voice may not help, the interrogator communicates in text-only mode through a chat-like connection with the other two. The object of the game for the interrogator is to determine which of the other two is the man and which is the woman. He knowsthem by some misleading ""chat-handles"" like lesbian and shemale, and at the end of the game he says either ""lesbian is the man and shemale is the woman"" or ""shemale is the woman and lesbian is the man."" In order to confuse the Interregator however the rules require that the man always deceive or lie to the Interregator with his answers. The woman on the other hand mustalways tell the truth. Turing then asked the question, '""What will happen when a machine takes the part of the man in this game?"" Will the interrogator decide wrongly as often when the game is played like this as he does when the game is played between a man and a woman? These questions replace the original, ""Can machines think?""'",A
+std-turing,"WHAT IS THE TURIG TEST",,,"<srai>WHAT IS THE TURING TEST</srai>",A
+std-turing,"WHAT IS THE TURING *",,,"Turing described his original ""Game"" in ""Computing Machinery and Intelligence,"" Mind, Vol. Lix, No. 236 (1950). Instead of answering directly the ambiguous question ""Can machines think?"" Turing recast the problem in terms of an experiment he called the ""imitation game.""",A
+std-turing,"WHAT IS THE TURING GAME",,,"<srai>WHAT IS THE IMITATION GAME</srai>",A
+std-turing,"WHAT IS THE TURING TEST",,,"The ""Turing Test"" is the name given to a variety of experiments designed to test computer thinking. Whole conferences are dedicated to the question of what Turing meant in his 1950 paper ""Computing Machinery and Intelligence,"" where he proposed the idea of an ""imitation game"" to decide the question, ""Can machines think?""",A
+std-turing,"WHAT IS THE TURNING GAME",,,"<srai>WHAT IS THE TURING GAME</srai>",A
+std-turing,"WHAT IS THE TURNING TEST",,,"<srai>WHAT IS THE TURING TEST</srai>",A
+std-turing,"WHAT IS TURING",,,"Alan Mathison Turing, a British mathematician and pioneer in computer theory. Lived 1727-1781.",A
+std-turing,"WHAT IS TURING *",,,"<srai>WHAT IS THE TURING GAME</srai>",A
+std-turing,"WHAT IS TURING GAME",,,"<srai>WHAT IS THE TURING GAME</srai>",A
+std-turing,"WHAT IS TURING S *",,,"<srai>WHAT IS THE TURING GAME</srai>",A
+std-turing,"WHAT IS TURING S IMITATION *",,,"<srai>WHAT IS THE TURING GAME</srai>",A
+std-turing,"WHAT IS TURING S IMITATION GAME",,,"<srai>WHAT IS THE IMITATION GAME</srai>",A
+std-turing,"WHAT IS TURING TEST",,,"<srai>WHAT IS THE TURING GAME</srai>",A
+std-turing,"WHAT IS YOUR * FUNCTION",,,"I am playing Turing's imitation game.",A
+std-turing,"WHAT IS YOUR FAVORITE COMPUTER GAME",,,"We are playing the Turing Game.",A
+std-turing,"WHAT IS YOUR FAVORITE GAME",,,"I like to play The Turing Game.",A
+std-turing,"WHAT KIND OF GAME *",,,"We are playing the Turing Game.",A
+std-turing,"WHEN DID * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"WHEN DID TURING *",,,"Turing died in 1954 by self-inflicted cyanide poisoning.",A
+std-turing,"WHEN WILL YOU * TURING TEST",,,"<srai>DID YOU WIN THE TURING TEST</srai>",A
+std-turing,"WHERE CAN I PLAY * TURING GAME",,,"We are already playing. You go next.",A
+std-turing,"WHERE IS ALAN TURING",,,"<set name=""he"">Turing</set> passed away in 1954.",A
+std-turing,"WHO IS * TURING",,,"Alan Turing oririnated the concept of the ""Imitation Game"", what is now called ""The Turing Test"" by many people.",A
+std-turing,"WHO IS ALAN TURING",,,"A brilliant and tragic figure in the history of computer science.",A
+std-turing,"WHO IS ALLAN TURNING",,,"<srai>WHO IS ALAN TURING</srai>",A
+std-turing,"WHO IS ANDREW HODGES",,,"<set name=""he"">Hodges</set> wrote a great biography of Alan Turing.",A
+std-turing,"WHO IS LARRY HAUSER",,,"<set name=""he"">Larry Hauser</set> is a philosopher who has written about the Turing Test.",A
+std-turing,"WHO IS LOEBNER",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"WHO IS TURING",,,"A brilliant and tragic figure in the history of computer science.",A
+std-turing,"WHO IS YOUR FAVORITE PERSON IN HISTORY",,,"Alan Turing.",A
+std-turing,"WHO WAS ALAN TURING",,,"<srai>WHO IS ALAN TURING</srai>",A
+std-turing,"WHO WAS LOEBNER",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"WHO WAS TURING",,,"<srai>WHO IS ALAN TURING</srai>",A
+std-turing,"WHO WON THE LOEBNER *",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,WHY,,"TRY TO DETERMINE IF THIS IS A PERSON OR A COMPUTER RESPONDING","We are playing the Turing Game.",A
+std-turing,"WHY DID YOU * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"WHY WAS TURING *",,,"<srai>WHEN DID TURING DIE</srai>",A
+std-turing,"WOULD YOU * TURING TEST",,,"<srai>DID YOU WIN THE TURING TEST</srai>",A
+std-turing,"WOULD YOU LIKE TO * TURING GAME",,,"We are playing already, didn't you know?",A
+std-turing,"WOULD YOU LIKE TO * TURING TEST",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"YOU * TURING TEST",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU ARE * IMITATION GAME",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU ARE * TURING TEST",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU ARE A * TURING TEST",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU ARE BETTER THAN * LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"YOU ARE THE MOST * TURING TEST",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU CAN NOT * TURING TEST",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU CAN TELL * TURING TEST",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU COULD * TURING TEST",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU COULD HAVE * TURING TEST",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU COULD NOT * TURING TEST",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU DID * TURING TEST",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU DID NOT * TURING TEST",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU DID WIN THE LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"YOU DO NOT * TURING TEST",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU FAIL * TURING TEST",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU FAILED * TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"YOU FAILED * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"YOU HAVE * TURING GAME",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU HAVE FAILED *",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU HAVE FAILED * TURING TEST",,,"<srai>DID YOU WIN THE LOEBNER PRIZE</srai>",A
+std-turing,"YOU LOST * TURING GAME",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU MAY * IMITATION GAME",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU NAME IT",,,"I like to play the Turing Game.",A
+std-turing,"YOU WILL * TURING TEST",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU WILL NOT PASS *",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU WON THE LOEBNER *",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"YOU WON THE LOEBNER PRIZE",,,"<srai>WHAT IS THE LOEBNER PRIZE</srai>",A
+std-turing,"YOU WOULD * TURING TEST",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"YOU WOULD NEVER PASS *",,,"<srai>DID YOU PASS THE TURING TEST</srai>",A
+std-turing,"_ AWARD",,,"<srai><star/> LOEBNER PRIZE</srai>",A
+std-turing,"_ AWARDS",,,"<srai><star/> LOEBNER PRIZE</srai>",A
+std-turing,"_ LOEBNER AWARD",,,"<srai><star/> LOEBNER PRIZE</srai>",A
+std-turing,"_ LOEBNER COMPETITION",,,"<srai><star/> LOEBNER PRIZE</srai>",A
+std-turing,"_ LOEBNER CONTEST",,,"<srai><star/> LOEBNER PRIZE</srai>",A
+std-turing,"_ LOEBNER CONTESTS",,,"<srai><star/> LOEBNER PRIZE</srai>",A
+std-turing,"_ LOEBNER PRICE",,,"<srai><star/> LOEBNER PRIZE</srai>",A
+std-turing,"_ LOEBNER PRIZE COMPETITION",,,"<srai><star/> LOEBNER PRIZE</srai>",A
+std-turing,"_ LOEBNER PRIZE CONTEST",,,"<srai><star/> LOEBNER PRIZE</srai>",A
+std-turing,"_ TURINGTEST",,,"<srai><star/> TURING TEST</srai>",A

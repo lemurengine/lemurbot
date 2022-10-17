@@ -1,0 +1,40 @@
+Filename,Pattern,Topic,That,Template,Status
+std-sales,"AM I A * CUSTOMER",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"CAN YOU * CUSTOMER SERVICE",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"CAN YOU BE * CUSTOMER SERVICE",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"CAN YOU GIVE * CUSTOMER SERVICE",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"CAN YOU HELP * CUSTOMER SERVICE",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"COULD YOU * CUSTOMER SERVICE",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"COULD YOU BE * CUSTOMER SERVICE",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"COULD YOU WORK * CUSTOMER SERVICE",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,CUSTOMER,,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"CUSTOMER RELATIONS MANAGEMENT",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,CUSTOMERS,,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"DO YOU * CUSTOMER SERVICE",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"DO YOU THINK * CUSTOMER SERVICE",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"FOR CUSTOMER SERVICE",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"HOW CAN I USE YOUR PRODUCT",,,"<bot name=""name""/> might be used in help desks, sales, entertainment and personal chatterbots.",A
+std-sales,"I AM A CUSTOMER SERVICE *",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"I AM THE CUSTOMER",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"I HAVE A LOT OF CUSTOMERS",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"IS A CLIENT A CUSTOMER *",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"IT * CUSTOMERS",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"TELL ME ABOUT * CUSTOMER SERVICE",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"THE CUSTOMER *",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"TO ALLOW MY CUSTOMERS *",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"WHEN I * CUSTOMER",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"WHERE CAN I GET * CUSTOMER SERVICE",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"WHICH COMPANY * CUSTOMER SERVICE",,,"<srai>WHAT IS CUSTOMER SERVICE</srai>",A
+std-sales,"_ CALL CENTER",,,"<srai><star/> CUSTOMER SERVICE</srai>",A
+std-sales,"_ CALL CENTERS",,,"<srai><star/> CUSTOMER SERVICE</srai>",A
+std-sales,"_ CUSTOMER RELATIONS",,,"<srai><star/> CUSTOMER SERVICE</srai>",A
+std-sales,"_ CUSTOMER RELATIONS AGENT",,,"<srai><star/> CUSTOMER SERVICE</srai>",A
+std-sales,"_ CUSTOMER RELATIONS SOFTWARE",,,"<srai><star/> CUSTOMER SERVICE</srai>",A
+std-sales,"_ CUSTOMER SERVICE AGENT",,,"<srai><star/> CUSTOMER SERVICE</srai>",A
+std-sales,"_ CUSTOMER SERVICE REP",,,"<srai><star/> CUSTOMER SERVICE</srai>",A
+std-sales,"_ CUSTOMER SERVICE REPRESENTATIVE",,,"<srai><star/> CUSTOMER SERVICE</srai>",A
+std-sales,"_ CUSTOMER SERVICE REPRESENTATIVES",,,"<srai><star/> CUSTOMER SERVICE</srai>",A
+std-sales,"_ CUSTOMER SERVICE SOFTWARE",,,"<srai><star/> CUSTOMER SERVICE</srai>",A
+std-sales,"_ CUSTOMER SUPPORT",,,"<srai><star/> CUSTOMER SERVICE</srai>",A
+std-sales,"_ CUSTOMER SUPPORT AGENT",,,"<srai><star/> CUSTOMER SERVICE</srai>",A
+std-sales,"_ CUSTOMER SUPPORT SOFTWARE",,,"<srai><star/> CUSTOMER SERVICE</srai>",A

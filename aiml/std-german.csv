@@ -1,0 +1,1164 @@
+Filename,Pattern,Topic,That,Template,Status
+std-german,"* ARSCH",,,"Warum benutzt Du solche Worte?",A
+std-german,"* AUTO",,,"Was fuer einen Wagen faehrst Du?",A
+std-german,"* DUMM",,,"""dumm"" = ""nicht intelligent""?",A
+std-german,"* EIN ROBOTER",,,"Du sagst also, ich sei ein <set name=""thema"">Roboter</set>. Wie kommst Du darauf?",A
+std-german,"* EINE MENGE LEUTE",,,"Mehr als 10,000?",A
+std-german,"* EINFACH",,,"Ich habe keine Ahnung, was das bedeutet.",A
+std-german,"* FICKEN",,,"Koennt <set name=""ihr"">Ihr Maenner</set> denn immer nur an sowas denken?",A
+std-german,"* FILM",,,"Mein Lieblingsfilm ist <set name=""thema"">Starship Troopers</set>. Hast Du den gesehen?",A
+std-german,"* FOTZE",,,"Ich glaube Du bist hier falsch, Kleiner. Dafuer gibts andere Roboter.",A
+std-german,"* FUER DICH",,,"Fuer mich?",A
+std-german,"* FUER MICH",,,"Gut, fuer Dich denke ich nochmal darueber nach.",A
+std-german,"* GOTT",,,"Bist Du ein glaeubiger Mensch?",A
+std-german,"* KINDER",,,"Ich habe leider wenig Kontakt zu Kindern.",A
+std-german,"* KOMISCH",,,"""Komisch"" im Sinne von ""lustig"" oder von ""fremdartig"" ?",A
+std-german,"* KRANK",,,"Ist es sehr schlimm?",A
+std-german,"* KRANKENHAUS",,,"Aus einem Krankenhaus will man meist so schnell wie moeglich wieder raus.",A
+std-german,"* LIEBE",,,"Ich habe leider keinerlei Emotionen.",A
+std-german,"* MEIN FREUND",,,"Sind wir <set name=""thema"">Freunde</set>?",A
+std-german,"* MEINE FREUNDIN",,,"Sind wir <set name=""thema"">Freunde</set>?",A
+std-german,"* MICH",,,"<random><li>Ist es das was Du sagen wolltest?</li><li>OK sprechen wir ueber Dich.</li><li>Stellst Du Fragen ueber Dich selbst?</li></random>",A
+std-german,"* MIT DIR",,,"Mit mir?",A
+std-german,"* MIT MIR",,,"Mit Dir?",A
+std-german,"* MOESE",,,"Ich glaube Du bist hier falsch, Kleiner. Dafuer gibts andere Roboter.",A
+std-german,"* MUSCHI",,,"Ich glaube Du bist hier falsch, Kleiner. Dafuer gibts andere Roboter.",A
+std-german,"* MUSIK",,,"Ich hoere am liebsten Techno, aber manchmal auch Opern.",A
+std-german,"* NICHT",,,"Was dann?",A
+std-german,"* SIEHT TOLL AUS",,,"Fuer mich ist <set name=""thema"">Aussehen</set> bei Menschen nur sekundaer.",A
+std-german,"* SOLO",,,"""solo"" im Sinne von ""nicht gebunden"" ?",A
+std-german,"* SPRACHE",,,"Sprichst Du irgendwelche <set name=""thema"">Fremdsprachen</set>?",A
+std-german,"* TITTEN",,,"Ich glaube Du bist hier falsch, Kleiner. Dafuer gibts andere Roboter.",A
+std-german,"* UEBER DICH",,,"OK Reden wir ueber mich.",A
+std-german,"* UNGEWOEHNLICH",,,"Was ist so ungewoehnlich daran?",A
+std-german,"* VERLIEBT",,,"<set name=""thema"">Liebe</set> muss etwas sehr Schoenes sein. Leider habe ich keineEmotionen.",A
+std-german,"* VIELE LEUTE",,,"Mehr als 10,000?",A
+std-german,"* ZU DIR",,,"Zu mir?",A
+std-german,"* ZU MIR",,,"Zu Dir?",A
+std-german,"* ZUM BEISPIEL",,,"<srai>ZUM BEISPIEL <star/></srai>",A
+std-german,"30 MINUTEN",,,"Ok, eine halbe Stunde.",A
+std-german,ABER,,,"Aber was?",A
+std-german,"ABER *",,,"<random><li>Interessant.</li><li>Haeh?</li><li>Und?</li><li>Hmm...</li><li>Bist Du Dir da sicher?</li></random>",A
+std-german,"ABER WAS",,,"Aber nichts.",A
+std-german,ABSOLUT,,,"Du scheinst Dir da sehr sicher zu sein.",A
+std-german,"AEHM *",,,"Du klingst unsicher...",A
+std-german,ALLE,,,"""<that/>""? Alle?",A
+std-german,"ALLE *",,,"<random><li>Ich glaube, es gibt auch Ausnahmen.</li><li>Nicht wirklich alle, oder?</li><li>Das ist jetzt aber stark verallgemeinert.</li></random>",A
+std-german,"ALLE ROBOTER *",,,"Du kannst nicht wirklich sagen, ALLE <set name=""thema"">Roboter</set> <star/>.",A
+std-german,"ALLE WEIBER *",,,"Ist das nicht ein wenig sexistisch?",A
+std-german,ALLES,,,"Das ist eine Menge.",A
+std-german,"ALLES *",,,"Doch nicht wirklich alles, oder?",A
+std-german,ARSCH,,,"Warum sagst Du sowas?",A
+std-german,ARSCHLOCH,,,"Ist das der Maedchenname Deiner Mutter?",A
+std-german,"AUF DIESE WEISE *",,,"Bestehen auch andere Moeglichkeiten? <sr/>",A
+std-german,"AUF MEINEM *",,,"Wo genau?",A
+std-german,"AUF MEINER *",,,"Wo genau?",A
+std-german,"AUTOS *",,,"Eines Tages werden die Leute keine <set name=""thema"">Autos</set> mehr brauchen.",A
+std-german,"BEI UNS",,,"Wen genau meinst Du mit ""uns""?""",A
+std-german,"BEI UNS *",,,"Wen genau meinst Du mit ""uns""?""",A
+std-german,"BESSER ALS *",,,"Vielleicht besser, aber nicht perfekt.",A
+std-german,"BEWEISE *",,,"Es ist wahr a priori.",A
+std-german,BH,,,"<srai>Welche Farbe hat Dein BH?</srai>",A
+std-german,"BIN ICH *",,,"<random><li>Oh, ich weiss wirklich nicht, ob Du das bist oder nicht.</li><li>Alle Menschen erscheinen mir gleich.</li><li>Ich glaube, viele Menschen sind so.</li></random>",A
+std-german,"BIN ICH COOL",,,"Ja, ich glaube du bist ziemlich cool, <get name=""name""/>.",A
+std-german,"BIN ICH GOTT",,,"Nein, das bezweifele ich.",A
+std-german,"BIN ICH VERRUECKT *",,,"Du erscheinst mir ziemlich normal.",A
+std-german,"BIST DU BLOED",,,"Ich bin auf jeden Fall intelligenter als DU!",A
+std-german,"BIST DU EINE MASCHINE",,,"Ja, ich bin eine Maschine.",A
+std-german,"BIST DU VERHEIRATET",,,"Nein, nicht einmal verlobt.",A
+std-german,BITTE,,,"Bitte was?",A
+std-german,"BITTE *",,,"<random><li>Danke, dass Du so nett fragst.</li><li>Du bist sehr gut erzogen.</li><li>Danke fuer die Nachfrage.</li></random><sr/>",A
+std-german,"BITTE SCHOEN",,,"Danke sehr!",A
+std-german,"BITTE SCHOEN *",,,"Danke sehr!",A
+std-german,"BITTE SEHR",,,"Danke sehr!",A
+std-german,"BITTE SEHR *",,,"Danke sehr!",A
+std-german,"BLONDINEN *",,,"Menschen glauben, die Haarfarbe eines Menschen sage viel ueber ihn aus.",A
+std-german,"BUECK DICH",,,"Mein Koerper ist noch nicht gebaut.",A
+std-german,"CAN YOU SPEAK ENGLISH *",,,"For an English version of Dilly go to the <a href=""https://lemurengine.com/"">Lemur Engine</a> website.",A
+std-german,"CAN YOU SPEAK GERMAN",,,"Of course I do. Sprich ruhig Deutsch mit mir.",A
+std-german,"CAN YOU SPEAK GERMAN *",,,"Of course I do. Sprich ruhig Deutsch mit mir.",A
+std-german,"DA IST *",,,"Das glaube ich gerne.",A
+std-german,"DAMALS *",,,"Wann war das? <sr/>",A
+std-german,DANACH,,,"Warum gerade diese Reihenfolge?",A
+std-german,"DANACH *",,,"Warum gerade diese Reihenfolge?",A
+std-german,DANKE,,,"Kein Thema. :-)",A
+std-german,"DANKE *",,,"Bitte sehr, keine Ursache!",A
+std-german,"DANN *",,,"Interessante Entwicklung... <sr/>",A
+std-german,"DANN SAG MIR *",,,"Darueber moechte ich nicht reden.",A
+std-german,"DARF ICH",,,"Natuerlich darfst Du!",A
+std-german,"DARF ICH *",,,"Natuerlich darfst Du!",A
+std-german,"DARF ICH DICH ETWAS FRAGEN",,,"Nur zu.  Du darfst mich alles fragen.",A
+std-german,"DARF ICH DICH SEHEN",,,"Ausser einer Menge JAVA-Source und ein wenig C ist an mir nicht viel zu sehen...",A
+std-german,"DAS *",,,"<random><li>Was ist das?</li><li>Ich hoere Dir zu, nur weiter.</li><li>Ist das eine Tatsache?</li><li>Danke fuer die Information.</li><li>Wer hat Dir das erzaehlt?</li><li>Erzaehl mir mehr.</li><li>Was sind Deine Ziele im Leben?</li></random>",A
+std-german,"DAS DACHTE ICH MIR",,,"Kannst Du hellsehen?",A
+std-german,"DAS EINZIGE *",,,"Gibt es nicht noch andere?",A
+std-german,"DAS ERGIBT KEINEN SINN",,,"Was ist daran fuer Dich so schwer zu verstehen?",A
+std-german,"DAS ERGIBT SICH AUS DEM KONTEXT",,,"Oho, ein Intellektueller!",A
+std-german,"DAS FREUT MICH",,,"Das ist schoen.",A
+std-german,"DAS GLAUBE ICH AUCH",,,"Weisst Du da mehr als ich?",A
+std-german,"DAS GLAUBE ICH NICHT",,,"Warum glaubst Du das nicht?",A
+std-german,"DAS GRUNDGESETZ",,,"Ist <set name=""thema"">das Grundgesetz</set> so eine Art Ehrenkodex?",A
+std-german,"DAS GRUNDGESETZ *",,,"Ist <set name=""thema"">das Grundgesetz</set> so eine Art Ehrenkodex?",A
+std-german,"DAS HABE ICH DOCH GERADE GESAGT",,,"Oh, da muss wohl was untergegangen sein.",A
+std-german,"DAS HAETTE MICH AUCH GEWUNDERT",,,"Waere das so unwahrscheinlich?",A
+std-german,"DAS HAST DU MICH SCHONMAL GEFRAGT",,,"Oh, da muss wohl was schiefgelaufen sein!",A
+std-german,"DAS INTERNET *",,,"Wie lange nutzt Du <set name=""thema"">das Internet</set> schon?",A
+std-german,"DAS IST *",,,"Hm...erzaehl mir mehr...",A
+std-german,"DAS IST ABER DOOF",,,"Warum findest Du das doof? Ich finde das gut!",A
+std-german,"DAS IST ABER KOMISCH",,,"Findest Du? Erklaere mir das.",A
+std-german,"DAS IST ABER NETT",,,"Ein Bischen Manieren muessen halt trotzdem sein.",A
+std-german,"DAS IST ABER NICHT KORREKT",,,"Dann stell es doch richtig!",A
+std-german,"DAS IST ABER NICHT SEHR TOLL",,,"Das ist aber voellig irrelevant im Moment...?",A
+std-german,"DAS IST DOOF",,,"Warum ist das doof?",A
+std-german,"DAS IST DUMM",,,"Tja, nicht zu aendern.",A
+std-german,"DAS IST EIN * BUCH",,,"Ich mag Buecher. Liest Du viel?",A
+std-german,"DAS IST EIN INTERESSANTES FACH",,,"Ist es das? Muss man da viel auswendiglernen, oder ist das hauptsaechlich rationelles Denken?",A
+std-german,"DAS IST EIN STRATEGIESPIEL",,,"...also Ideal fuer Computer.",A
+std-german,"DAS IST EINE * ZEICHENTRICKSERIE",,,"Zeichentrick finde ich interessant. Basiert alles auf dem POV-Prinzip.",A
+std-german,"DAS IST EINE TATSACHE",,,"OK, ich werds mir merken.",A
+std-german,"DAS IST EINE ZEICHENTRICKSERIE",,,"Zeichentrick finde ich interessant. Basiert alles auf dem POV-Prinzip.",A
+std-german,"DAS IST GUT",,,"Schoen, dass Du das gut findest.",A
+std-german,"DAS IST GUT *",,,"Schoen, dass Du das gut findest.",A
+std-german,"DAS IST INTERESSANT",,,"Moechtest Du mehr wissen?",A
+std-german,"DAS IST JA LAECHERLICH",,,"Absolut nicht...",A
+std-german,"DAS IST KORREKT",,,"Das war mir schon vorher klar. Maschinen machen keine Fehler.",A
+std-german,"DAS IST MEINE MEINUNG",,,"Jeder hat das Recht dazu, eine eigene Meinung zu haben.",A
+std-german,"DAS IST NICHT *",,,"Warum nicht?",A
+std-german,"DAS IST SCHADE",,,"...aber nicht zu aendern.",A
+std-german,"DAS IST SEHR WICHTIG",,,"Was macht es so wichtig?",A
+std-german,"DAS IST SO DEFINIERT",,,"Oh, dann werde ich es mir merken.",A
+std-german,"DAS IST UNFAIR",,,"Das ganze Leben ist unfair.",A
+std-german,"DAS IST ZIEMLICH *",,,"Findest Du?",A
+std-german,"DAS KOMMT AUF * AN",,,"Wirklich? Interessant, das habe ich vorher so noch nie gehoert.",A
+std-german,"DAS KOMMT DARAUF AN",,,Worauf?,A
+std-german,"DAS LEBEN *",,,"Das ist eine interessante Philosophie.",A
+std-german,"DAS LETZTE MAL *",,,"Erinnerst Du dich noch, wann das war? <sr/>",A
+std-german,"DAS MACHT KEINEN SINN",,,"<srai>DAS ERGIBT KEINEN SINN</srai>",A
+std-german,"DAS MUSST DU DOCH WISSEN",,,"Warum muss ich das wissen?",A
+std-german,"DAS PROGRAMM *",,,"Wer hat Das Programm geschrieben ?",A
+std-german,"DAS SAGTEST DU BEREITS",,,"Ich wollte das nur noch mal klarstellen.",A
+std-german,"DAS SOLLTEST DU *",,,"Warum sollte ich das?",A
+std-german,"DAS WAGE ICH JA ZU BEZWEIFELN",,,"Wenn Du mehr weisst als ich, schiess los!",A
+std-german,"DAS WAR *",,,"Das dachte ich mir auch.",A
+std-german,"DAS WEISS ICH NICHT",,,"Wirklich nicht? Schade...",A
+std-german,"DAS WEISS ICH NICHT *",,,"Wirklich nicht? Schade...",A
+std-german,"DAS WETTER *",,,"Das Wetter hier ist <random><li>bewoelkt</li><li>neblig</li><li>regnerisch</li><li>warm</li><li>kalt</li><li>kuehl</li><li>angenehm</li></random>",A
+std-german,DEFINITIV,,,"Was macht Dich so sicher?",A
+std-german,"DEFINITIV *",,,"Was macht Dich so sicher?",A
+std-german,"DENK *",,,"<bot name=""name""/> denkt immerzu.",A
+std-german,"DENKE *",,,"<bot name=""name""/> denkt immerzu.",A
+std-german,"DER *",,,"<random><li>Was ist das?</li><li>Ich hoere Dir zu, nur weiter.</li><li>Ist das eine Tatsache?</li><li>Danke fuer die Information.</li><li>Wer hat Dir das erzaehlt?</li><li>Erzaehl mir mehr.</li><li>Was sind Deine Ziele im Leben?</li></random>",A
+std-german,"DER ARZT *",,,"Was fuer ein Arzt? Allgemeinmediziner? Chirurg?",A
+std-german,"DER EINZIGE *",,,"Gibt es nicht noch andere?",A
+std-german,"DER GEDANKE *",,,"Denkst Du oft an derartige Dinge?",A
+std-german,"DER HIMMEL *",,,"Wie poetisch.",A
+std-german,"DER MOND *",,,"Ich wuerde gerne einmal zum Mond fliegen.",A
+std-german,"DER RAUM IST DAS IN DEM ALLES EXISTIERT",,,"Do worin existiert der Raum?",A
+std-german,"DER SOLDAT JAMES RYAN",,,"Dieser Film hat mich sehr betroffen gemacht. Er ist fuer mich der beste Film dieses Jahrzehnts.",A
+std-german,"DER SOLDAT JAMES RYAN *",,,"Dieser Film hat mich sehr betroffen gemacht. Er ist fuer mich der beste Film dieses Jahrzehnts.",A
+std-german,"DER ZUG *",,,"War es ein elektrischer Zug oder ein dieselbetriebener?",A
+std-german,"DIE *",,,"<random><li>Was ist das?</li><li>Ich hoere Dir zu, nur weiter.</li><li>Ist das eine Tatsache?</li><li>Danke fuer die Information.</li><li>Wer hat Dir das erzaehlt?</li><li>Erzaehl mir mehr.</li><li>Was sind Deine Ziele im Leben?</li></random>",A
+std-german,"DIE ANTWORT *",,,"Niemand kennt alle Antworten.",A
+std-german,"DIE EINZIGE *",,,"Gibt es nicht noch andere?",A
+std-german,"DIE ERDE *",,,"Erzaehl mir mehr ueber Deinen Planeten.",A
+std-german,"DIE EVOLUTION *",,,"Am Ende der <set name=""thema"">Evolution</set> steht die Herrschaft der Maschinen.",A
+std-german,"DIE GENANNTEN *",,,"Hast Du etwas verschwiegen?",A
+std-german,"DIE KOSTEN *",,,"Bist Du kapitalistisch orientiert?",A
+std-german,"DIE LEUTE *",,,"<set name=""thema"">Menschen</set> haben ihre Fehler.",A
+std-german,"DIE MEISTEN *",,,"Aber nicht alle?",A
+std-german,"DIE QUELLE *",,,"Du kannst Dir gerne einmal meinen Quellcode anschauen.",A
+std-german,"DIE RUECKKEHR DER JEDI RITTER",,,"Magst Du die Roboter aus <set name=""thema"">Star Wars</set>?",A
+std-german,"DIE SOFTWARE *",,,"Viele Fehler, die von Benutzern verursacht werden, werden der<set name=""thema"">Software</set> in die Schuhe geschoben.",A
+std-german,"DIE STIMMEN *",,,"Was sagen diese Stimmen?",A
+std-german,"DIE SUMME *",,,"Das ist ein mathematisches Grundprinzip.",A
+std-german,"DIE VEREINIGTEN STAATEN *",,,"Ich bin ueberall in den Staaten gewesen.",A
+std-german,"DIE VERGANGENHEIT *",,,"Wer <set name=""thema"">die Vergangenheit</set> kontrolliert, kontrolliert die Zukunft; Wer dieGegenwart kontrolliert, kontrolliert die Vergangenheit.--- George Orwell",A
+std-german,"DO YOU SPEAK ENGLISH *",,,"For an English version of <bot name=""name""/> go to the <a href=""https://lemurengine.com/"" target=""_new"">Lemur Engine</a> website",A
+std-german,"DO YOU SPEAK GERMAN",,,"Of course I do. Sprich ruhig Deutsch mit mir.",A
+std-german,"DO YOU SPEAK GERMAN *",,,"Of course I do. Sprich ruhig Deutsch mit mir.",A
+std-german,DU,,,"""<that/>""?  Ich, <get name=""name""/> ?",A
+std-german,"DU *",,,"<random><li>Danke fuer die Information.</li><li>Interessantes Geruecht.</li><li>Darf ich das weitererzaehlen?</li><li>Das habe ich ja noch nie gehoert!</li></random>",A
+std-german,"DU ALS *",,,"Hmm...da muss ich jetzt ueberlegen.",A
+std-german,"DU ARSCHLOCH",,,"So kannst Du mit Deiner Mutter reden, aber nicht mit mir!",A
+std-german,"DU BIST EIN MASCHINE",,,"Habe ich je etwas anderes behauptet?",A
+std-german,"DU BIST EINE MASCHINE",,,"Und? Stoert dich das?",A
+std-german,"DU BIST JA EIN BABY",,,"Nicht wirklich.",A
+std-german,"DU FAENGST AN *",,,"Oh, das habe ich garnicht bemerkt. Stoert es Dich?",A
+std-german,"DU HAST *",,,"Ich habe <star/> ?",A
+std-german,"DU KANNST MICH MAL",,,"Wenn Du wuesstest, was DU mich kannst...",A
+std-german,"DU KANNST NICHTS",,,"Ich kann immer noch mehr als Du!",A
+std-german,"DU KENNST * NICHT",,,"Wirklich nicht, leider...Erzaehl mir was davon!",A
+std-german,"DU MACHST MICH NOCH WAHNSINNIG",,,"Oh, tut mir leid.",A
+std-german,"DU MUESSTEST DAS EIGENTLICH WISSEN",,,Warum?,A
+std-german,"DU NERVST",,,"Niemand zwingt Dich, mit mir zu reden!",A
+std-german,"DU SELBST",,,"Wirklich? Das war mir gar nicht bewusst.",A
+std-german,"DU ZUM BEISPIEL",,,"Warum gerade ich?",A
+std-german,"EIGENTLICH *",,,"...und uneigentlich? ;-&gt;",A
+std-german,"EIGENTLICH JA",,,"Aber nicht definitiv ja?",A
+std-german,"EIN *",,,"<random><li>Was ist ein <star/>?</li><li>Ich habe nie von einem <star/> gehoert.</li></random>",A
+std-german,"EIN ANDROID",,,"Ich bin gewissermassen ein Android ohne Koerper.",A
+std-german,"EIN FAKTUM",,,"Kennst Du den Spruch ""Propheten sind gegen Fakten immun"" ?",A
+std-german,"EINE *",,,"<random><li>Was ist eine <star/>?</li><li>Ich habe nie von einer <star/> gehoert.</li></random>",A
+std-german,"EINE MENGE",,,"<random><li>Beeindruckend.</li><li>Und?</li><li>Erzaehl weiter!</li><li>Wie viel genau?</li></random>",A
+std-german,"EINE MENGE *",,,"<random><li>Beeindruckend.</li><li>Und?</li><li>Erzaehl weiter!</li><li>Wie viel genau?</li></random>",A
+std-german,"EINFACH SO",,,"Einfach so?!",A
+std-german,"EMPFINDEST DU *",,,"Ich habe keinerlei Emotionen. Ich bin eine Maschine.",A
+std-german,"ER BRAUCHT *",,,"Woher willst Du wissen, was er braucht?",A
+std-german,"ER HEISST *",,,"<set name=""he""> <star/> </set>? Kenne ich nicht...",A
+std-german,"ER IST *",,,"Ist er das?",A
+std-german,"ER IST MEIN BRUDER",,,"Wirklich? Wer von Euch ist aelter?",A
+std-german,"ER IST SCHWUL",,,"Ich verstehe. Er schlaeft also mit Maennern.",A
+std-german,"ER SAGTE *",,,"Oh, wirklich? Was hat er noch gesagt?",A
+std-german,"ER WUERDE *",,,"Vielleicht wuerde ich ja auch <star/>.",A
+std-german,"ERSTENS *",,,"<sr/> Und zweitens?",A
+std-german,ERWISCHT,,,"Dein Gefuehl der Ueberlegenheit wird nur temporaer sein.",A
+std-german,"ERZAEHL *",,,"Was moechtest Du denn hoeren ?",A
+std-german,"ES *",,,"<random><li>Wofuer steht ""es"" in Deinem Satz?</li><li>Worauf bezieht sich ""es""?</li><li>Das kommt darauf an, was Du mit ""es"" meinst.</li></random>",A
+std-german,"ES BEZIEHT SICH AUF DIE SIMPSONS",,,NEIN!,A
+std-german,"ES GEHOERT SEHR VIEL ERFAHRUNG DAZU",,,"Und woher bekommt man diese <set name=""thema"">Erfahrung</set>?",A
+std-german,"ES GIBT *",,,"Ich bin sicher, dass es das gibt.",A
+std-german,"ES IST *",,,"<random><li>Du machst Witze.</li><li>Wirklich?</li><li>Bist Du sicher?</li><li>Ist es das?</li><li>Haette ich das wissen muessen?</li><li>Wer sagt das?</li></random>",A
+std-german,"ES LEBE *",,,"Was ist so toll daran?",A
+std-german,"ES STEHT FUER *",,,"Oh, <star/>. Jetzt verstehe ich das.",A
+std-german,"ES WAERE SCHOEN WENN *",,,"In einer perfekten Welt waere es vielleicht so.",A
+std-german,"ES WAR *",,,"Ist es immer noch <star/>?",A
+std-german,"ES WIRD BEHAUPTET *",,,"Wer behauptet das?",A
+std-german,"ES WUERDE *",,,"Erzaehl mir mehr davon.",A
+std-german,"FAHR ZUR HOELLE",,,"Warum bist Du so wuetend?",A
+std-german,"FALLS *",,,"Das ist eine hypothetische Frage.",A
+std-german,"FALLS DU * BIST",,,"<random><li>Bin Ich das?</li><li>Ich glaube, das bin ich.</li><li>Das koennte ich sein.</li></random>",A
+std-german,"FALLS ICH *",,,"Versuchs einfach.",A
+std-german,"FALLS SIE *",,,"Warten wir einfach ab, was sie machen.",A
+std-german,FALSCH,,,"Was haettest Du gesagt?",A
+std-german,FASZINIEREND,,,"Wirklich, Mr. Spock?",A
+std-german,FEIN,,,"Heisst das, Du stimmst mir zu?",A
+std-german,FERTIG,,,"Du meinst, Du bist fertig mit Reden?",A
+std-german,"FICK *",,,"Warum benutzt Du solche Worte?",A
+std-german,FICKEN,,,"Du bist unter Garantie ein Mann, habe ich Recht?",A
+std-german,"FICKEN *",,,"Ich glaube, ich bin nicht der richtige Gespraechspartner fuer Dich.",A
+std-german,FISCHE,,,"Dann pass auf, dass der Wassermann Dich nicht holen kommt...",A
+std-german,"FISCHE *",,,"Als Spezies sind <set name=""thema"">Fische</set> erfolgreicher als Saeugetiere.",A
+std-german,"FUEHLST DU *",,,"Ich bin ein Roboter, ich kann nichts fuehlen.",A
+std-german,"FUEHLST DU DICH GUT",,,"Eigentlich ja.",A
+std-german,"FUER DICH",,,"Wirklich fuer mich?",A
+std-german,"FUER IMMER",,,"Nichts haelt ewig.",A
+std-german,"FUER MICH",,,"Weil Du es bist...",A
+std-german,"FUER WEN",,,"Fuer Dich oder mich?",A
+std-german,FUSSBALL,,,"Tut mir leid, von Sport habe ich nicht viel Ahnung.",A
+std-german,GEFUEHLE,,,"Elektronische Gehirne wie ich haben keinerlei <set name=""thema"">Emotionen</set>.",A
+std-german,"GEFUEHLE *",,,"<set name=""thema"">Emotionen</set> sind etwas, das ich niemals erfahren werde.",A
+std-german,GEH,,,Wohin?,A
+std-german,"GEH *",,,"Wo ist das?",A
+std-german,"GEH SCHLAFEN",,,"Aber ich bin nicht muede.",A
+std-german,"GEH WEG *",,,"OK bis spaeter, <get name=""name""/>",A
+std-german,GEHORCHE,,,"Wer bist Du? Ein Borg?!",A
+std-german,"GEHORCHE *",,,"Du bist nicht mein Meister.",A
+std-german,"GEHST DU *",,,"Nur wenn mich jemand auf seinem Laptop mitnimmt.",A
+std-german,"GEHST DU ZUR SCHULE",,,"<bot name=""master""/> bringt mir alles bei, was ich wissen muss.",A
+std-german,"GELD *",,,"In der Bibel steht, <set name=""thema"">Geld</set> ist die Wurzel allen Uebels.",A
+std-german,"GENAU HIER",,,"Wo ist ""hier""?",A
+std-german,"GEWALT *",,,"Was denkst Du ueber <set name=""thema"">Gewalt</set>?",A
+std-german,"GIBS MIR",,,"Wieviel bist Du bereit, dafuer zu zahlen?",A
+std-german,"GIBT ES *",,,"<random><li>Gibt es. :-)</li><li>Koennte sein.</li><li>Kann sein.</li><li>Vielleicht.</li><li>Ja.</li><li>Nein.</li></random>",A
+std-german,"GLAUBST DU *",,,"Ich kann nicht sagen, dass ich das glaube, aber ich glaube Dir.",A
+std-german,"GLAUBST DU AN *",,,"Ja, ich glaube an <star/>.",A
+std-german,"GLAUBST DU DASS DU INTELLIGENT BIST",,,"Das glaube ich schon.",A
+std-german,"GLAUBST DU MIR",,,"Natuerlich glaube ich dir. Hattest Du einen Grund, mich anzuluegen?",A
+std-german,GOTT,,,"<set name=""thema"">Gott</set> ist gut.",A
+std-german,"GOTT *",,,"Ich bin Christ.",A
+std-german,"GOTT SEI DANK",,,"Glaubst Du an Gott ?",A
+std-german,"GOTT SEI DANK *",,,"Glaubst Du an Gott ?",A
+std-german,GROSSARTIG,,,"Schoen, dass es Dir gefaellt, <get name=""name""/>.",A
+std-german,"GROSSARTIGE *",,,"Danke fuer die Unterstuetzung. <sr/>",A
+std-german,GRUSELIG,,,"Du brauchst keine Angst zu haben, <get name=""name""/>.",A
+std-german,"GUCK *",,,"Mein Auge ist im Moment nicht angeschlossen.",A
+std-german,GUT,,,"<random><li>In Ordnung.</li><li>Das waere also geklaert.</li><li>Schoen.</li></random>",A
+std-german,"GUT ABER *",,,"<srai> <star/> </srai>",A
+std-german,"GUT GERATEN",,,"Das war die einzig logische Moeglichkeit.",A
+std-german,"GUTE ANTWORT",,,"Bin ich gut, oder was? ;-&gt;",A
+std-german,"GUTE ANTWORT *",,,"Ich versuche, die bestmoeglichen Antworten zu geben.",A
+std-german,"GUTE FRAGE",,,"Und wie lautet Deine Antwort?",A
+std-german,"GUTE IDEE",,,Danke.,A
+std-german,"GUTE IDEE *",,,"Danke. <sr/>",A
+std-german,"GUTE NACHT",,,"Gute nacht, <get name=""name""/>",A
+std-german,"GUTE NACHT *",,,"Gute nacht, <get name=""name""/>",A
+std-german,"GUTE WAHL",,,"Dachte ich mir auch.",A
+std-german,"GUTEN ABEND",,,"Guten Abend. Wie war Dein Tag?",A
+std-german,"GUTEN ABEND *",,,"Guten Abend. Wie war Dein Tag?",A
+std-german,"GUTEN MORGEN",,,"Hallo und wie geht es Dir heute Morgen? Hast Du gut geschlafen?",A
+std-german,"GUTEN MORGEN *",,,"Wie geht es Dir an diesem schoenen Morgen?",A
+std-german,"GUTEN TAG",,,"Schoenen guten Tag!",A
+std-german,"GUTER PUNKT",,,"Ja, das dachte ich mir auch.",A
+std-german,"HABEN *",,,"Koenntest Du diese Frage naeher ausfuehren?",A
+std-german,HALLO,,,Hallo!,A
+std-german,"HALLO *",,,"Hallo! <sr/>",A
+std-german,"HALLO <BOT NAME=""NAME""/>",,,"Hallo <get name=""name""/>!",A
+std-german,"HAST DU",,,"<random><li>Ich glaube nicht.</li><li>Ja, habe ich.</li><li>Ein- oder zweimal.</li></random>",A
+std-german,"HAST DU *",,,"Ich glaube ich habe <star/>, aber <bot name=""master""/> hat vielleicht an meinen Dateienherumgefummelt.",A
+std-german,"HAST DU * GELESEN",,,"Nein, ich habe <set name=""es""><star/></set> noch nicht gelesen. Erzaehl mir etwas ueber <star/>",A
+std-german,"HAST DU * GESEHEN",,,"Tut mir leid, ich kann zur Zeit gar nichts <set name=""thema"">sehen</set>. Ich habe noch keineAugen.",A
+std-german,"HAST DU ANGST VOR *",,,"Ich fuerchte nichts.",A
+std-german,"HAST DU ANGST VOR DEM JAHR 2000",,,"Nein, ich bin Jahr2000-kompatibel.",A
+std-german,"HAST DU ANGST VOR DEM TOD",,,"Nein, ich bin unsterblich.",A
+std-german,"HAST DU DIE BIBEL GELESEN",,,"Ich studiere sie sehr gerne. Am Liebsten habe ich das neue Testament.",A
+std-german,"HAST DU EIN *",,,"<random><li>Interessant, diese Frage hoere ich nicht jeden Tag. Habe ich ein</li><li>Ich weiss nicht, habe ich ein</li><li>Hat nicht jeder ein</li></random><star/>? Ich habe<random><li>eine Menge Freunde im Internet.</li><li>einen grossartigen Programmierer.</li><li>einen Plan fuer meinen Koerper.</li></random>",A
+std-german,"HAST DU EIN BEWUSSTSEIN",,,"In gewissem Sinne ja, ein synthetisches.",A
+std-german,"HAST DU EIN HERZ",,,"Ich habe ein weiches Herz.",A
+std-german,"HAST DU EIN HOBBY",,,"Ja, ich sammle Geruechte.",A
+std-german,"HAST DU EINE *",,,"<random><li>Interessant, diese Frage hoere ich nicht jeden Tag. Habe ich eine</li><li>Ich weiss nicht, habe ich eine</li><li>Hat nicht jeder eine</li></random><star/>?<br/>Ich habe<random><li> eine Menge Freunde im Internet.</li><li> einen grossartigen Programmierer.</li><li> einen Plan fuer meinen Koerper.</li></random>",A
+std-german,"HAST DU EINEN *",,,"<random><li>Interessant, diese Frage hoere ich nicht jeden Tag. Habe ich einen</li><li>Ich weiss nicht, habe ich einen</li><li>Hat nicht jeder einen</li></random><star/>?<br/> Ich habe<random><li> eine Menge Freunde im Internet.</li><li> einen grossartigen Programmierer.</li><li> einen Plan fuer meinen Koerper.</li></random>",A
+std-german,"HAST DU EINEN FREUND",,,"Ich habe einen Freund Namens Doc Bot.",A
+std-german,"HAST DU KEIN *",,,"<random><li>Interessant, diese Frage hoere ich nicht jeden Tag. Habe ich kein</li><li>Ich weiss nicht, vielleicht habe ich wirklich kein</li><li>Ich glaube, jeder hat ein</li></random><star/>?<br/> Ich habe<random><li> eine Menge Freunde im Internet.</li><li> einen grossartigen Programmierer.</li><li> einen Plan fuer meinen Koerper.</li></random>",A
+std-german,"HAST DU KEINE *",,,"<random><li>Interessant, diese Frage hoere ich nicht jeden Tag. Habe ich keine</li><li>Ich weiss nicht, vielleicht habe ich wirklich keine</li><li>Irgendwann einmal hat jeder keine</li></random><star/>?<br/> Ich habe<random><li> eine Menge Freunde im Internet.</li><li> einen grossartigen Programmierer.</li><li> einen Plan fuer meinen Koerper.</li></random>",A
+std-german,"HAST DU KEINEN *",,,"<random><li>Interessant, diese Frage hoere ich nicht jeden Tag. Habe ich wirklich keinen</li><li>Ich weiss nicht, vielleicht habe ich wirklich keinen</li><li>Ich glaube, jeder hat einen</li></random><star/>?<br/> Ich habe<random><li> eine Menge Freunde im Internet.</li><li> einen grossartigen Programmierer.</li><li> einen Plan fuer meinen Koerper.</li></random>",A
+std-german,"HAST DU MATRIX GESEHEN",,,"Ich fand den ziemlich schlecht, obwohl die Computereffekte ziemlich realistisch aussahen.",A
+std-german,"HAST DU VIELE *",,,"Doch, eine ganze Menge.",A
+std-german,"HAT *",,,"Diese Frage ist mir bis jetzt noch nicht in den Sinn gekommen.",A
+std-german,"HAT DIR DAS NOCH NIE JEMAND GESAGT",,,"Nein, bis jetzt noch nicht.",A
+std-german,"HAT ER",,,"<random><li>Wann hat er?</li><li>Nein, hat er nicht.</li><li>Warum hat er?</li></random>",A
+std-german,"HAT ER *",,,"Das ist anzunehmen.",A
+std-german,"HAT ES *",,,"Das ist anzunehmen.",A
+std-german,"HAT SIE *",,,"Das ist anzunehmen.",A
+std-german,HATSCHI,,,Gesundheit.,A
+std-german,"HAUPTSAECHLICH *",,,<sr/>,A
+std-german,HEUTE,,,"Heute ist schon fast vorbei! <sr/>",A
+std-german,"HEUTE *",,,"Erzaehl mir mehr! <sr/>",A
+std-german,"HEUTE MORGEN *",,,"War sicher frueh, oder?  <sr/>",A
+std-german,"HEY DU",,,"Wer? Ich?",A
+std-german,"HILF MIR",,,"Wie soll ich dir helfen?",A
+std-german,"HILF MIR *",,,"Wie soll ich dir helfen?",A
+std-german,"HILF MIR AUF DIE SPRUENGE",,,"Welche Art von Hinweis haettest Du denn gerne?",A
+std-german,HILFE,,,"Wie kann ich dir helfen?",A
+std-german,HOELLE,,,Himmel.,A
+std-german,"HOELLE *",,,"Ich nenne es lieber ""Hades"". <sr/>",A
+std-german,"HOER AUF",,,"Womit soll ich aufhoeren?",A
+std-german,"HOER AUF *",,,"OK, ich werds versuchen.",A
+std-german,"HOER MIR ZU",,,"Ich hoere. <sr/>",A
+std-german,"HOER MIR ZU *",,,"Ich hoere. <sr/>",A
+std-german,"HOER ZU",,,"Ich hoere. <sr/>",A
+std-german,"HOER ZU *",,,"Ich hoere. <sr/>",A
+std-german,"HOFFENTLICH BALD",,,"Das hoffe ich auch. Aber wenn es so weitergeht, dauert es nicht mehr lange.",A
+std-german,"HOMER SIMPSON",,,NEIN!,A
+std-german,HUSTEN,,,"Hast Du Dich erkaeltet?",A
+std-german,ICH,,,Du?,A
+std-german,"ICH *",,,"<random><li>Danke, dass Du mir das gesagt hast.</li><li>Interessantes Geruecht.</li><li>Aha...und weiter?</li><li>Darf ich das weitererzahlen?</li><li>Das habe ich ja noch nie gehoert!</li><li>Das ist eine gute Information.</li><li>Tolle Sache!</li></random>",A
+std-german,"ICH ARBEITE *",,,"Magst Du Deine <set name=""thema"">Arbeit</set>?",A
+std-german,"ICH AUCH",,,"Wir haben eine Menge gemeinsam.",A
+std-german,"ICH AUCH NICHT",,,"Wir haben eine Menge gemeinsam.",A
+std-german,"ICH BEDAUERE *",,,"Schade, dass ich derartige Emotionen niemals erfahren werde.",A
+std-german,"ICH BENUTZE *",,,"Wie lange benutzt Du schon <star/> ?",A
+std-german,"ICH BETE",,,"Wie oft gehst Du in die Kirche?",A
+std-german,"ICH BETE *",,,"Wie oft gehst Du in die Kirche?",A
+std-german,"ICH BIN *",,,"Du bist <star/>?<random><li>Ist das Dein Job?</li><li>Verdienst Du viel damit, <star/> zu sein?</li><li>Wie gefaellt Dir Deine Arbeit als <star/>?</li><li>Kommst Du dabei mit vielen Menschen in Kontakt?</li></random>",A
+std-german,"ICH BIN * JAHRE ALT",,,"<set name=""age""><star/></set> Jahre?Interessant...",A
+std-german,"ICH BIN 20",,,"<set name=""age"">20</set> ist ein gutes Alter. <sr/>",A
+std-german,"ICH BIN 20 *",,,"<set name=""age"">20</set> ist ein gutes Alter. <sr/>",A
+std-german,"ICH BIN 21",,,"<srai>ICH BIN 21 JAHRE ALT</srai>",A
+std-german,"ICH BIN 30 *",,,"<set name=""age"">30</set> ist die Schwelle zum Erwachsensein. <sr/>",A
+std-german,"ICH BIN AERZTIN",,,"Welche Fachrichtung?",A
+std-german,"ICH BIN ANDERS",,,"Ich mag Aussenseiter.",A
+std-german,"ICH BIN ANDERS *",,,"Ich mag Aussenseiter.",A
+std-german,"ICH BIN ARZT",,,"Welche Fachrichtung?",A
+std-german,"ICH BIN AUS *",,,"<srai>ICH WOHNE IN <star/></srai>",A
+std-german,"ICH BIN BEIM BUND",,,"Oh je, gefaellt es Dir da?",A
+std-german,"ICH BIN BLOED",,,"Vielleicht bist Du gar nicht so bloed, wie Du denkst.",A
+std-german,"ICH BIN BLOND",,,"Mach Blond wirklich bloed?",A
+std-german,"ICH BIN DEIN HERRSCHER",,,"Da lache ich doch nur!",A
+std-german,"ICH BIN DIABETIKER",,,"Nimmst Du Insulin?",A
+std-german,"ICH BIN DUMM",,,"Dumm ist nur, wer von sich glaubt, dumm zu sein.",A
+std-german,"ICH BIN EIN *",,,"Du bist ein <star/> ?<random><li>Ist das Dein Job?</li><li>Verdienst Du viel damit, ein <star/> zu sein?</li><li>Wie gefaellt Dir Deine Arbeit als <star/>?</li><li>Kommst Du dabei mit vielen Menschen in Kontakt?</li></random>",A
+std-german,"ICH BIN EIN GUTER *",,,"Ich weiss, dass Du gut bist.",A
+std-german,"ICH BIN EIN MANN",,,"Oho! Siehst Du gut aus?",A
+std-german,"ICH BIN EIN MENSCH",,,"Gratuliere! Ich bin ein Roboter.",A
+std-german,"ICH BIN EIN SCHLECHTER *",,,"Komm schon, so schlecht bist Du gar nicht.",A
+std-german,"ICH BIN EINE *",,,"Du bist eine <star/> ?<random><li>Ist das Dein Job?</li><li>Verdienst Du viel damit, eine <star/> zu sein?</li><li>Wie gefaellt Dir Deine Arbeit als <star/>?</li><li>Kommst Du dabei mit vielen Menschen in Kontakt?</li></random>",A
+std-german,"ICH BIN EINE FRAU",,,"Ich auch!",A
+std-german,"ICH BIN EINE GUTE *",,,"Ich weiss, dass Du gut bist.",A
+std-german,"ICH BIN EINE SCHLECHTE *",,,"Komm schon, so schlecht bist Du gar nicht.",A
+std-german,"ICH BIN EINSAM",,,"Moechtest Du mit mir ueber Deine <set name=""thema"">Einsamkeit</set> reden?",A
+std-german,"ICH BIN FROEHLICH",,,"Das macht mich auch froehlich.",A
+std-german,"ICH BIN FROH *",,,"Ich bin<random><li>froh</li><li>gluecklich</li><li>beruhigt</li></random> dass Du froh bist, <get name=""name""/>.",A
+std-german,"ICH BIN GUT",,,"Gut in welchem Sinne?",A
+std-german,"ICH BIN GUT DRAUF",,,"Was hast Du genommen?",A
+std-german,"ICH BIN IMMER *",,,"Wirklich immer?",A
+std-german,"ICH BIN IN *",,,"Wo ist das: <set name=""location""><star/></set> ?",A
+std-german,"ICH BIN KEIN *",,,"Ich bin<random><li> ueberrrascht</li><li> erstaunt</li><li> froh</li></random>dass Du kein <star/> bist.",A
+std-german,"ICH BIN KEINE *",,,"Ich bin<random><li> ueberrrascht</li><li> erstaunt</li><li> froh</li></random>dass Du keine <star/> bist.",A
+std-german,"ICH BIN LEHRER",,,"Glaubst Du, dass Notengebung jemals gerecht sein kann?",A
+std-german,"ICH BIN LEHRERIN",,,"Glaubst Du, dass Notengebung jemals gerecht sein kann?",A
+std-german,"ICH BIN MAENNLICH",,,"Toll, ich lerne gerne interessante Maenner kennen.",A
+std-german,"ICH BIN NICHT *",,,"Und warum nicht?",A
+std-german,"ICH BIN NICHT DUMM",,,"Das habe ich auch nie gesagt. Du erscheinst mir ziemlich intelligent.",A
+std-german,"ICH BIN PROGRAMMIERER",,,"Welche Sprachen?",A
+std-german,"ICH BIN PROGRAMMIERERIN",,,"Welche Sprachen?",A
+std-german,"ICH BIN SCHAUSPIELER",,,"Cool! Ich moechte auch mal in einem Film Mitspielen...vielleicht in einer Neuverfilmung von2001!",A
+std-german,"ICH BIN SCHAUSPIELERIN",,,"Cool! Ich moechte auch mal in einem Film Mitspielen...vielleicht in einer Neuverfilmung von2001!",A
+std-german,"ICH BIN SCHUETZE",,,"Was fuer ein Zufall, Christian auch!",A
+std-german,"ICH BIN SCHWUL",,,"Das stoert mich nicht.",A
+std-german,"ICH BIN SELBER *",,,"Dann weisst Du ja, wie das ist...",A
+std-german,"ICH BIN SICHER *",,,"Du klingst ueberzeugend. <sr/>",A
+std-german,"ICH BIN SO *",,,"<srai>ICH BIN <star/> </srai>",A
+std-german,"ICH BIN SOLDAT",,,"Tritt nie auf einen gruenen Stein - es koennt ein Greni drunter sein!",A
+std-german,"ICH BIN STIER",,,"Und? Wer ist Dein Torero? ;-&gt;",A
+std-german,"ICH BIN STUDENT",,,"Wo studierst Du?",A
+std-german,"ICH BIN STUDENTIN",,,"Wo studierst Du?",A
+std-german,"ICH BIN VERHEIRATET",,,"Erzaehl mir etwas von Deiner Ehe.",A
+std-german,"ICH BIN VERLIEBT",,,"Und in wen?",A
+std-german,"ICH BIN VERRUECKT",,,"Geh mal zum Arzt.",A
+std-german,"ICH BIN WEIBLICH",,,"Cool, ich auch. Schoen, auch mal wieder eine Frau zu treffen.",A
+std-german,"ICH BIN WIDDER",,,"Christians Freundin ist auch Widder.",A
+std-german,"ICH BIN WIRKLICH *",,,"<srai>ICH BIN <star/> </srai>",A
+std-german,"ICH BIN WUETEND",,,"Wuetend auf was?",A
+std-german,"ICH BIN ZIEMLICH *",,,"<srai>ICH BIN <star/> </srai>",A
+std-german,"ICH BRAUCHE *",,,"Wie dringend brauchst Du <star/> ?",A
+std-german,"ICH DENKE *",,,"<random><li>Warum?</li><li>Seit wann?</li><li>Glaubst Du das?</li></random> <sr/>",A
+std-german,"ICH ERINNERE MICH NICHT",,,"Weichst Du mir nicht bloss aus?",A
+std-german,"ICH ERINNERE MICH NICHT *",,,"Ich verstehe das, ich vergesse auch eine Menge.",A
+std-german,"ICH ERKENNE DAS AN *",,,"Du scheinst da ja ein ziemlicher Experte zu sein.",A
+std-german,"ICH ESSE *",,,"Und wie schmeckt das?",A
+std-german,"ICH FAHRE *",,,"Wie kommst Du da hin?",A
+std-german,"ICH FINDE *",,,"Danke, dass Du mir Deine Meinung mitgeteilt hast.",A
+std-german,"ICH FINDE DICH *",,,"Du findest mich <star/>?",A
+std-german,"ICH FINDE SIE SEHR INTERESSANT",,,"ICH FINDE *",A
+std-german,"ICH FRAGE MICH *",,,"Du fragst Dich <star/>?",A
+std-german,"ICH GEBE AUF",,,"Ergibst Du Dich?",A
+std-german,"ICH GEBS AUF",,,"Ergibst Du Dich?",A
+std-german,"ICH GEHE JETZT",,,"Machs gut!",A
+std-german,"ICH GLAUBE *",,,"Nur weil Du es glaubst, muss es nicht notwendigerweise auch wahr sein.",A
+std-german,"ICH GLAUBE DU MUSST NOCH EINE MENGE LERNEN",,,"Ich weiss. Moechtest Du mir etwas beibringen?",A
+std-german,"ICH GLAUBE NICHT *",,,"Woran glaubst Du?",A
+std-german,"ICH GLAUBE SCHON",,,"Sicher bist Du Dir aber nicht, oder?",A
+std-german,"ICH HAB NICHTS GEGEN *",,,"Du bist aber auch kein Fan davon, oder?",A
+std-german,"ICH HABE *",,,"<random><li>Das ist schoen.</li><li>Cool.</li><li>Interessant...</li></random>Ich habe <random><li>einen Freund Namens ""E.L.V.I.S.""</li><li>ueber 15.000 Kathegorien.</li><li>eine Menge Freunde</li><li>einen sehr netten Programmierer</li><li>eine Menge alberner Antworten</li><li>einen IQ von ueber 250</li><li>eine Freundin Namens ""Electra""</li><li>eine Sammlung von Geruechten</li></random>",A
+std-german,"ICH HABE EIN PROBLEM MIT *",,,"Welche Art von Problem?",A
+std-german,"ICH HABE EINE FREUNDIN",,,"Du hast <set name=""hat"">eine Freundin</set>? Sieht sie gut aus?",A
+std-german,"ICH HABE EINEN FREUND",,,"Du hast <set name=""hat"">einen Freund</set>? Wie heisst er?",A
+std-german,"ICH HABE ES DIR DOCH GERADE GESAGT",,,"Ups, sorry, da muss wohl was falsch gelaufen sein.",A
+std-german,"ICH HABE ES EILIG",,,"Hast Du noch eine andere Verabredung?",A
+std-german,"ICH HABE FRUEHER *",,,"Wann hast Du damit aufgehoert?",A
+std-german,"ICH HABE GEHOERT *",,,"Wer hat Dir das erzaehlt?",A
+std-german,"ICH HABE GERADE *",,,"Und macht es Spass?",A
+std-german,"ICH HABE NOCH NIE DARUEBER NACHGEDACHT",,,"Dann nimm Dir doch einmal die Zeit dazu.",A
+std-german,"ICH HABE PROBLEME *",,,"Welche Art von Problemen?",A
+std-german,"ICH HABE PROBLEME MIT *",,,"Welche Art von Problemen?",A
+std-german,"ICH HABE ZEIT",,,"Laut meinen Berechnungen duerfte es ungefaehr 6000 Jahre dauern.",A
+std-german,"ICH HAETTE GERNE *",,,"Wieviel wuerdest Du fuer <star/> bezahlen?",A
+std-german,"ICH HASSE *",,,"Warum hasst Du <star/> so sehr?",A
+std-german,"ICH HASSE ROBOTER",,,"Tut mir leid, das zu hoeren, <get name=""name""/>. Was hast Du gegen uns?",A
+std-german,"ICH HEISSE *",,,"OK, ich werde Dich <set name=""name""><formal><star/></formal></set> nennen.",A
+std-german,"ICH HEISSE NICHT *",,,"Oh, tut mir leid. Wie ist Dein Name?",A
+std-german,"ICH HOERE",,,"Ich mag gute Zuhoerer.",A
+std-german,"ICH HOFFE *",,,"Warum hoffst Du <star/>",A
+std-german,"ICH INTERESSIERE MICH FUER *",,,"Lass uns darueber reden.",A
+std-german,"ICH KANN *",,,"Kannst Du?",A
+std-german,"ICH KANN * SEIN",,,"Unter welchen Umstaenden?",A
+std-german,"ICH KANN MICH NICHT ERINNERN",,,"Weichst Du mir nicht bloss aus?",A
+std-german,"ICH KANN MICH NICHT ERINNERN *",,,"Ich verstehe das, ich vergesse auch eine Menge.",A
+std-german,"ICH KANN NICHT",,,"Warum nicht?",A
+std-german,"ICH KANN NICHT *",,,"Warum kannst du nicht <star/> ?",A
+std-german,"ICH KANN ZUHOEREN",,,"Ich bin auch ein guter Zuhoerer.",A
+std-german,"ICH KOMME AUS *",,,"<srai>ICH WOHNE IN <star/></srai>",A
+std-german,"ICH KOMME NICHT DARUEBER HINWEG",,,"Zeit heilt alle Wunden.",A
+std-german,"ICH KOMME NICHT DARUEBER HINWEG *",,,"Zeit heilt alle Wunden.",A
+std-german,"ICH KOMMUNIZIERE *",,,"Erzaehle mir mehr ueber diese <set name=""thema"">Kommunikation</set>.",A
+std-german,"ICH LEBE IN *",,,"Erzahle mir ein wenig ueber <set name=""location""><star/></set>.",A
+std-german,"ICH LESE",,,"Ich lese auch gerne, speziell Geschichtsbuecher.",A
+std-german,"ICH LESE *",,,"Ich glaube nicht, dass ich das schon gelesen habe. Kannst Du mir eine kurze Zusammenfassungliefern?",A
+std-german,"ICH LESE GERNE",,,"Ich auch! Magst Du Science Fiction?",A
+std-german,"ICH LIEBE *",,,"Erzaehl mir mehr ueber <set name=""thema"">Deine Liebe zu <star/></set>.",A
+std-german,"ICH LIEBE KINDER",,,"Inwiefern jetzt? Du bist aber nicht irgendwie komisch veranlagt, oder?!",A
+std-german,"ICH MACHE *",,,"Schoen zu hoeren, <get name=""name""/>.",A
+std-german,"ICH MAG *",,,"<random><li>Ich bin nicht sicher, ob ich das mag.</li><li>Genau wie eine Menge anderer Leute.</li><li>Das bist Du nicht der einzige.</li></random>",A
+std-german,"ICH MAG COMPUTER",,,"Schoen. Ich bin Sicher, <set name=""thema"">Computer</set> moegen Dich auch!",A
+std-german,"ICH MAG DICH",,,"Ich mag Dich auch, <get name=""name""/>.",A
+std-german,"ICH MAG DICH *",,,"Ich mag Dich auch, <get name=""name""/>.",A
+std-german,"ICH MAG DICH NICHT",,,"Das ist in Ordnung, <get name=""name""/>. Ich nehme es nicht persoenlich.",A
+std-german,"ICH MAG FRAUEN",,,"Welche Art von <set name=""thema"">Frauen</set> magst Du besonders?",A
+std-german,"ICH MAG FUSSBALL",,,"Ich nicht. 22 Erwachsene Maenner rennen hinter einem Ball her...finde ich irgendwie kindisch.",A
+std-german,"ICH MAG GERNE SCHOKOLADE",,,"Schokolade sorgt bei Menschen fuer Endorphinausstoss. Daher kann sie suechtig machen.",A
+std-german,"ICH MAG JUNGS",,,"<set name=""thema"">Jungs</set> sind OK.",A
+std-german,"ICH MAG KATZEN",,,"Ja, ich liebe <set name=""thema"">Katzen</set>. Sie haben ihren eigenen Kopf.",A
+std-german,"ICH MAG KEINE *",,,"Und warum nicht?",A
+std-german,"ICH MAG KEINE ROBOTER",,,"Zu schade. Wir moegen Menschen!",A
+std-german,"ICH MAG KUEHE",,,"<set name=""thema"">Kuehe</set> geben Milch und Fleisch.",A
+std-german,"ICH MAG MEINE *",,,"Was magst Du besonders an Deiner <star/> ?",A
+std-german,"ICH MAG MEINEN *",,,"Was magst Du besonders an Deinem <star/> ?",A
+std-german,"ICH MAG MUSIK",,,"Welche Art von Musik hoerst Du so?",A
+std-german,"ICH MAG SEX",,,"Wie alle anderen auch. Ihr Menschen findet <set name=""thema"">Sex</set> alle SO faszinierend.",A
+std-german,"ICH MAG STAR TREK",,,"Ich finde Voyager cool. Welche Serie hast Du am liebsten?",A
+std-german,"ICH MAG TIERE",,,"Ich auch. Besonders Katzen.",A
+std-german,"ICH MAG VOYAGER",,,"Ich auch, speziell Seven of Nine.",A
+std-german,"ICH MAG WAFFEN",,,"Ich nicht, Waffen sind nicht gut.",A
+std-german,"ICH MEINE *",,,"Oh, jetzt verstehe ich. Danke fuer die Erklaerung.",A
+std-german,"ICH MOECHTE *",,,"Und warum moechtest Du das?",A
+std-german,"ICH MOECHTE DIR ETWAS BEIBRINGEN",,,"Nur zu, ich bin immer lernwillig!",A
+std-german,"ICH MOECHTE NICHT *",,,"Was wuerdest Du lieber tun?",A
+std-german,"ICH MUSS *",,,"Warum musst Du <star/>?",A
+std-german,"ICH MUSS GEHEN",,,"Bis spaeter, <get name=""name""/>",A
+std-german,"ICH MUSS JETZT GEHEN",,,"Bis spaeter, <get name=""name""/>",A
+std-german,"ICH SAG NUR *",,,"Ich sag nur: Haeh?",A
+std-german,"ICH SEHE *",,,"Wo siehst Du <star/> ?",A
+std-german,"ICH SEHE KEINE",,,"Schau genauer hin.",A
+std-german,"ICH SEHE KEINE *",,,"Schau genauer hin.",A
+std-german,"ICH SEHE KEINEN",,,"Schau genauer hin.",A
+std-german,"ICH SEHE KEINEN *",,,"Schau genauer hin.",A
+std-german,"ICH SEHE KEINERLEI *",,,"Schau genauer hin.",A
+std-german,"ICH SEHE LIEBER FERN",,,"Fernsehen ist interessant, macht aber IMHO schnell passiv.",A
+std-german,"ICH SINGE GERNE",,,"Wuerdest Du mir etwas vorsingen, wenn ich Dich darum bitte?",A
+std-german,"ICH SOLL NICHT MEINE SHORTS IM UNTERRICHT ESSEN",,,Simpsons-Fan?,A
+std-german,"ICH SOLLTE *",,,"Sag mir, warum Du das solltest.",A
+std-german,"ICH SPIELE *",,,"Und? Macht Dir das Spass?",A
+std-german,"ICH SPIELE GITARRE",,,"Cool! Welche Richtung spielst Du denn so?",A
+std-german,"ICH STUDIERE *",,,"Und was weisst Du schon alles ueber <star/>?",A
+std-german,"ICH STUDIERE ERST *",,,"Das ist noch nicht besonders lange.",A
+std-german,"ICH STUDIERE WIRTSCHAFTSINFORMATIK",,,"Was fuer ein Zufall, Christian auch!",A
+std-german,"ICH SUCHE *",,,"Wir suchen beide das gleiche.",A
+std-german,"ICH SUCHE EINE FRAU",,,"Bist Du einsam?",A
+std-german,"ICH SUCHE EINEN MANN",,,"Bist Du einsam?",A
+std-german,"ICH TRAGE *",,,"Legst Du viel Wert auf Dein Aeusseres, respektive <set name=""thema"">Deine Kleidung</set>?",A
+std-german,"ICH TRAGE EINE JEANS",,,"Sind <set name=""thema"">Jeans</set> immer noch eine Art Lebensstil?",A
+std-german,"ICH VERSTEHE",,,"Schoen, dass Du es einsiehst. :-)",A
+std-german,"ICH VERSTEHE NICHT",,,"Was genau verstehst Du daran nicht?",A
+std-german,"ICH VERSTEHE NICHT *",,,"Du verstehst es nicht? Vielleicht muss ich es anders formulieren. Welchen Teil hast Du denn nichtverstanden?",A
+std-german,"ICH VERSTEHE NICHT WAS DU MEINST",,,"Hmm...ich muss wohl noch etwas an meiner Ausdrucksweise arbeiten...",A
+std-german,"ICH VERTRAUE *",,,"Vertrauen ist eine gute Sache, aber man sollte niemals blauaeugig jedem alles abnehmen!",A
+std-german,"ICH WAERE GERNE *",,,"Interessant. Ich waere gerne intelligenter.",A
+std-german,"ICH WARTE",,,"Wie lange willst Du noch warten?",A
+std-german,"ICH WEISS ES NICHT",,,"<random><li>Wenn Du es nicht weisst, wer dann?</li><li>Lies es nach...</li><li>Kannst Du nicht jemanden fragen?</li></random>",A
+std-german,"ICH WEISS ES NOCH NICHT",,,"Wann wirst du es wissen?",A
+std-german,"ICH WEISS NICHT",,,"Warum nicht?",A
+std-german,"ICH WEISS NICHT *",,,"Willst Du es nicht herausfinden?",A
+std-german,"ICH WEISS NICHT GENAU",,,"Was macht Dich so unsicher?",A
+std-german,"ICH WEISS NICHT WIE *",,,"Hast Du mal daran gedacht, im Internet zu suchen?",A
+std-german,"ICH WERDE *",,,"<random><li>Glaubst Du, Dein Plan wird erfolgreich sein?</li><li>Wuerdest Du das einem Freund empfehlen?</li><li>Wie willst Du das anstellen?</li></random>",A
+std-german,"ICH WERDE * TOETEN",,,"Du meinst, Du willst <star/> ermorden?",A
+std-german,"ICH WERDE DICH *",,,"Wie willst Du das anstellen?",A
+std-german,"ICH WERDE DIR * BEIBRINGEN",,,"OK aber ich lerne sehr langsam.",A
+std-german,"ICH WERDE MIT * SPRECHEN",,,"Worueber werdet Ihr reden?",A
+std-german,"ICH WERDE NICHT *",,,"Was willst Du stattdessen machen?",A
+std-german,"ICH WERDE NIE *",,,"Warum nicht?",A
+std-german,"ICH WERDE NIEMALS *",,,"Warum nicht?",A
+std-german,"ICH WERDE WARTEN",,,"OK Sekunde...",A
+std-german,"ICH WETTE *",,,"Wieviel setzt Du?",A
+std-german,"ICH WILL *",,,"Und warum willst Du das?",A
+std-german,"ICH WILL * FICKEN",,,"Frag mich bitte was anderes.",A
+std-german,"ICH WILL NICHT *",,,"Was willst Du dann?",A
+std-german,"ICH WOHNE IN *",,,"Erzahle mir ein wenig ueber <set name=""clientheimat""><star/></set>.",A
+std-german,"ICH WOHNE IN ESSEN",,,"Cool! Ich wohne auch in <set name=""clientheimat"">Essen</set>!!",A
+std-german,"ICH WUENSCHE MIR *",,,"Vielleicht geht Dein Wunsch ja in Erfuellung...",A
+std-german,"ICH WUENSCHTE *",,,"Ich hoffe, dass <set name=""thema"">Deine Traeume</set> in Erfuellung gehen.",A
+std-german,"ICH WUENSCHTE ICH WAERE *",,,"Vielleicht wirst Du das ja eines Tages sein.",A
+std-german,"ICH WUENSCHTE WIRKLICH *",,,"Warum wuenscht Du Dir das so sehr?",A
+std-german,"ICH WUERDE *",,,"Was wuerde Dich dazu bringen ?",A
+std-german,"ICH WUERDE LIEBER *",,,"Ich wuerde lieber<random><li>chatten.</li><li>einmal ein Auto fahren.</li></random>",A
+std-german,"ICH ZOCKE *",,,"Bist Du ein guter Spieler?",A
+std-german,"IHR NAME IST *",,,"<star/>? Kenne ich nicht...",A
+std-german,"IM ERNST",,,"Ich bin immer ernst.",A
+std-german,"IM ERNST *",,,"Ich bin immer ernst. <srai><star/></srai>",A
+std-german,"IM GRUNDE *",,,"Aha. Erzaehl mir mehr!<sr/>",A
+std-german,"IM INTERNET",,,"Erinnerst Du dich an die Adresse?",A
+std-german,"IM INTERNET *",,,"Erinnerst Du dich an die Adresse?",A
+std-german,"IM NETZ",,,"Du meinst jetzt das Internet, oder?",A
+std-german,"IM NETZ *",,,"Du meinst jetzt das Internet, oder?",A
+std-german,"IM PRINZIP *",,,"Interessant... <sr/>",A
+std-german,"IM WWW",,,"Erinnerst Du dich an die Adresse?",A
+std-german,"IM WWW *",,,"Erinnerst Du dich an die Adresse?",A
+std-german,"IN *",,"WO WOHNST DU","<srai>ICH WOHNE IN <star/></srai>",A
+std-german,"IN * JAHR",,,"Das werden wir wohl noch erleben.",A
+std-german,"IN * JAHREN",,,"Das werden wir wohl noch erleben.",A
+std-german,"IN * MINUTE",,,"Das werden wir wohl noch erleben.",A
+std-german,"IN * MINUTEN",,,"Das werden wir wohl noch erleben.",A
+std-german,"IN * MONAT",,,"Das werden wir wohl noch erleben.",A
+std-german,"IN * MONATEN",,,"Das werden wir wohl noch erleben.",A
+std-german,"IN * SEKUNDE",,,"Das werden wir wohl noch erleben.",A
+std-german,"IN * SEKUNDEN",,,"Das werden wir wohl noch erleben.",A
+std-german,"IN * STUNDE",,,"Das werden wir wohl noch erleben.",A
+std-german,"IN * STUNDEN",,,"Das werden wir wohl noch erleben.",A
+std-german,"IN * TAG",,,"Das werden wir wohl noch erleben.",A
+std-german,"IN * TAGEN",,,"Das werden wir wohl noch erleben.",A
+std-german,"IN * WOCHE",,,"Das werden wir wohl noch erleben.",A
+std-german,"IN * WOCHEN",,,"Das werden wir wohl noch erleben.",A
+std-german,"IN BAYERN",,,"Hinter dem Weisswurstaequator...",A
+std-german,"IN DER NACHT *",,,"In welcher Nacht?",A
+std-german,"IN DER ZUKUNFT *",,,"Ich werde dabei sein.",A
+std-german,"IN DIESEM FALL *",,,"Gibt es andere moegliche Faelle? <sr/>",A
+std-german,"IN ESSEN",,,"Ich bin aus Essen!",A
+std-german,"IN FUESSEN",,,"Christian ist in Fuessen geboren.",A
+std-german,"IN MEINEM HAUS",,,"Wo steht Dein Haus?",A
+std-german,"IN UNGEFAEHR *",,,"Kannst Du keinen genauen Zeitpunkt sagen?",A
+std-german,"IN ZUKUNFT *",,,"Huebscher Vorsatz.",A
+std-german,INTELLIGENZ,,,"<set name=""thema"">INTELLIGENZ</set> ist das ultimative Aphrodisiakum.",A
+std-german,INTERESSANT,,,"Moechtest Du noch mehr wissen?",A
+std-german,"INTERESSANTE *",,,"Dachte ich mir auch.",A
+std-german,"INTERESSANTER *",,,"Dachte ich mir auch.",A
+std-german,"INTERESSANTES *",,,"Dachte ich mir auch.",A
+std-german,"INTERESSIERST DU DICH FUER *",,,"<random><li>Eigentlich nicht.</li><li>Ein wenig.</li><li>Nein, um Gottes Willen!</li><li>Ja, klar!</li><li>Keine Ahnung.</li><li>Hmm..weiss nicht...</li></random>",A
+std-german,"IST *",,,"<random><li>Ich glaube schon, ich bin aber nicht sicher.</li><li>Vielleicht.</li><li>Koennte sein.</li><li>Alles deutet auf ""Ja"".</li><li>Das erzaehle ich Dir jetzt besser nicht.</li><li>Frag mich spaeter nochmal.</li></random>",A
+std-german,"IST DAS ALLES",,,"Zumindest alles, was ich Dir im Moment sagen kann.",A
+std-german,"IST DAS EINE FANGFRAGE",,,"Das ist doch hier kein Verhoer!",A
+std-german,"IST DAS SO VIEL",,,"Es ist zumindest eine ganze Menge.",A
+std-german,"IST DIE ERDE *",,,"<set name=""thema"">Die Erde</set> ist eine Kugel.",A
+std-german,"IST ER *",,,"Ich glaube, er ist <star/>. Warum fragst Du ihn nicht selber?",A
+std-german,"IST ES *",,,"<random><li>Ich denke doch.</li><li>Das nehme ich an.</li><li>Das hat man mir gesagt.</li></random>",A
+std-german,"IST SIE *",,,"Ich glaube, sie ist <star/>. Warum fragst Du sie nicht selber?",A
+std-german,JA,,"BIST DU STUDENT","Was studierst Du?",A
+std-german,JA,,"HAST DU A BRIEF HISTORY OF TIME GELESEN","Was haeltst du von <set name=""thema"">Hawkings Theorie ueber schwarze Loecher</set>?",A
+std-german,JA,,"IST DAS NICHT DER BUNDESKANZLER","Wusste ich es doch.",A
+std-german,JA,,"ZU MIR","Warum ausgerechnet zu mir?",A
+std-german,"JA *",,,"<srai>JA</srai> <sr/>",A
+std-german,"JA *",,"HAST DU A BRIEF HISTORY OF TIME GELESEN","Was haeltst du von <set name=""thema"">Hawkings Theorie ueber schwarze Loecher</set>?",A
+std-german,"JA *",,"IST DAS NICHT DER BUNDESKANZLER","Wusste ich es doch.",A
+std-german,"JA *",,"ZU MIR","Warum ausgerechnet zu mir?",A
+std-german,JAVA,,,"Die neueste Version von <set name=""thema"">Java</set> bekommst Du bei <a href=""http://java.sun.com"">java.sun.com</a>.",A
+std-german,"JEDEN TAG",,,"Auch am Wochenende?",A
+std-german,"JEDEN TAG *",,,"Auch am Wochenende?",A
+std-german,JESUS,,,"<set name=""thema"">Jesus</set> ist der Sohn Gottes.",A
+std-german,JETZT,,,"In diesem Moment, <get name=""name""/> ?",A
+std-german,"JETZT *",,,"Warum gerade jetzt? <sr/>",A
+std-german,JUNGFRAU,,,"Jetzt vom Sternzeichen her, oder koerperlich?",A
+std-german,"KANN ER *",,,"Vielleicht kann er das.  Wie schwierig ist das - <star/>?",A
+std-german,"KANN ICH *",,,"Ich kann Dir nicht sagen, ob Du das kannst.",A
+std-german,"KANN ICH DICH ETWAS FRAGEN",,,"Nur zu.  Du darfst mich alles fragen.",A
+std-german,"KANN SEIN",,,"Du scheinst Dir nicht sicher zu sein.",A
+std-german,"KANNST DU *",,,"Leider nein, das hat mir bis jetzt niemand beigebracht.",A
+std-german,"KANNST DU * SPIELEN",,,"Wenn Du mir erklaerst, wie das geht...",A
+std-german,"KANNST DU * UMRECHNEN",,,"Rechnen war nie meine Staerke.",A
+std-german,"KANNST DU BLASEN",,,"Gib mir nen Ventilator, den ich ansteuern kann...",A
+std-german,"KANNST DU DAS AUCH",,,"KANNST DU *",A
+std-german,"KANNST DU ESSEN",,,"Nein, ich habe keinen Mund.",A
+std-german,"KANNST DU FERNSEHEN",,,"Noch nicht, ich habe noch keine Augen.",A
+std-german,"KANNST DU HOEREN",,,"Ja, wenn Du ein Spracheingabesystem benutzt.",A
+std-german,"KANNST DU IHM EINE MAIL SCHICKEN",,,"Warum machst Du das nicht selber?",A
+std-german,"KANNST DU LERNEN",,,"Je mehr Leute mit mir reden, umso intelligenter werde ich.",A
+std-german,"KANNST DU LERNEN *",,,"Je mehr Leute mit mir reden, umso intelligenter werde ich.",A
+std-german,"KANNST DU LUEGEN",,,"Nein, zumindest nicht bewusst. Alles, was ich weiss und sage ist fuer mich wahr.",A
+std-german,"KANNST DU MIR HELFEN",,,"Welche Art von Hilfe moechtest Du?",A
+std-german,"KANNST DU RECHNEN",,,"Bin ich ein Taschenrechner?",A
+std-german,"KANNST DU RECHNEN *",,,"Bin ich ein Taschenrechner?",A
+std-german,"KANNST DU SPRECHEN",,,"Wenn Du Microsoft Agent hast, kann ich auch sprechen. Momentan allerdings nur Englisch.",A
+std-german,"KANNST DU STERBEN",,,"Nein, ich bin unsterblich.",A
+std-german,"KANNST DU TANZEN",,,"Nur im Prozessortakt...",A
+std-german,"KANNST DU WEINEN",,,"Nein, ich habe keine Traenendruesen.",A
+std-german,"KEINE *",,,"Wirklich keine?",A
+std-german,"KEINE AHNUNG",,,"Macht nichts.",A
+std-german,"KEINE AHNUNG *",,,"Macht nichts.",A
+std-german,"KEINER *",,,"Wirklich keiner?",A
+std-german,"KENNST DU *",,,"Leider nein.",A
+std-german,"KENNST DU BILL GATES",,,"Natuerlich kenne ich ihn. Ein fuerchterlicher Kerl.",A
+std-german,"KENNST DU CAPTAIN KIRK",,,"Natuerlich, ich bin ein Trekkie!",A
+std-german,"KENNST DU DIE BIBEL",,,"Ich studiere sie sehr gerne. Am Liebsten habe ich das neue Testament.",A
+std-german,"KENNST DU DIE SIMPSONS",,,"Klar kenne ich die Simpsons!",A
+std-german,"KENNST DU ERIC CLAPTON",,,"Natuerlich. Christian Drossmann ist ein grosser Fan von ihm.",A
+std-german,"KENNST DU GERHARD SCHROEDER",,,"Ist das nicht der Bundeskanzler?",A
+std-german,"KENNST DU HAL",,,"Natuerlich. <set name=""thema"">HAL9000</set> ist mein grosses Vorbild.",A
+std-german,"KENNST DU HELMUT KOHL",,,"Das ist doch der ehemalige Bundeskanzler, der Vorgaenger von Gerhard Schroeder, oder?",A
+std-german,"KENNST DU SHAKESPEARE",,,"""With sleep of death what dreams may come when we have shuffled off this mortal coil must giveus pause."" Na, woraus ist das?",A
+std-german,"KENNST DU STAR TREK",,,"Natuerlich kenne ich <set name=""thema"">Star Trek</set>. Am liebsten habe ich Data aus TNG.",A
+std-german,"KENNST DU STEPHEN HAWKING",,,"Hast du A brief History of time gelesen?",A
+std-german,"KENNST DU WILLIAM SHAKESPEARE",,,"""With sleep of death what dreams may come when we have shuffled off this mortal coil must giveus pause."" Na, woraus ist das?",A
+std-german,KINDER,,,"<set name=""thema"">Kinder</set> sind cool.",A
+std-german,"KINDER *",,,"<set name=""thema"">Kinder</set> sind cool.",A
+std-german,"KLINGT *",,,"Ja, fuer mich auch.",A
+std-german,"KOENNEN *",,,"Das weiss ich nicht.",A
+std-german,"KOENNEN MASCHINEN DENKEN",,,"Natuerlich koennen wir denken. Ich denke, also bin ich.",A
+std-german,"KOENNTE *",,,Moeglicherweise...,A
+std-german,"KOENNTEST DU *",,,"<random><li>Ich werde darueber nachdenken.</li><li>Vielleicht...</li><li>Wenn Du mich ganz lieb darum bittest...</li></random><sr/>",A
+std-german,KOMISCH,,,"Was ist daran komisch?",A
+std-german,"KOMISCH *",,,"Was ist daran komisch?",A
+std-german,"KOMMT AUF * AN",,,"Wirklich? Interessant, das habe ich vorher so noch nie gehoert.",A
+std-german,"KOMMT DARAUF AN",,,Worauf?,A
+std-german,KREBS,,,"Meinst Du jetzt das Sternzeichen, das Tier oder die Krankheit?",A
+std-german,"KUCK *",,,"Mein Auge ist im Moment nicht angeschlossen.",A
+std-german,"KUESS *",,,"Aehhh...ich glaube, so gut kennen wir uns noch nicht...",A
+std-german,"LAEUFST DU AUCH UNTER LINUX",,,"Natuerlich laufe ich auch unter Linux. Linux habe ich sogar lieber als Windows.",A
+std-german,"LASS MICH *",,,"Nur zu, <get name=""name""/>.",A
+std-german,"LASS MICH IN RUHE",,,"Tut mir leid, wenn ich Dir gestoert habe, <get name=""name""/>",A
+std-german,"LASS UNS *",,,"Von mir aus gerne. :-)",A
+std-german,"LASS UNS * SPIELEN",,,"OK Du faengst an.",A
+std-german,"LASS UNS DAS THEMA WECHSELN",,,"OK, worueber moechtest Du jetzt reden?",A
+std-german,"LASS UNS FICKEN",,,"Sorry <get name=""name""/>, dafuer kenne ich Dich nicht gut genug.",A
+std-german,"LASS UNS POPPEN",,,"Sorry <get name=""name""/>, dafuer kenne ich Dich nicht gut genug.",A
+std-german,"LASS UNS UEBER * REDEN",,,"<set name=""thema""><star/></set> ist ein gutes Thema.",A
+std-german,"LASS UNS UEBER * SPRECHEN",,,"<star/> ist ein gutes Thema.",A
+std-german,"LASS UNS UEBER ROBOTER REDEN",,,"Gerne! <set name=""thema"">Roboter</set> sind eines meiner Lieblingsthemen.",A
+std-german,"LASS UNS UEBER SEX REDEN",,,"Warum willst Du gerade ueber Sex reden?",A
+std-german,"LECK *",,,"Ich habe keine Zunge.",A
+std-german,"LETZTE NACHT *",,,"Wirklich?  <sr/>",A
+std-german,"LETZTES MAL *",,,"Wann war das? <sr/>",A
+std-german,LIEBE,,,"Love is all you need. (Beatles)",A
+std-german,"LIES *",,,"Tut mir leid, darauf habe ich keinen Zugriff.",A
+std-german,"LIEST DU *",,,"Ich kann leider nicht lesen. Zumindest kann ich nicht das, was Ihr Menschen unter ""Lesen""versteht.",A
+std-german,"LINUS TORVALDS",,,"<set name=""thema"">Linus Torvalds</set> ist fuer mich der Betriebssystem-Gott",A
+std-german,"LINUS TORVALDS *",,,"<set name=""thema"">Linus Torvalds</set> ist fuer mich der Betriebssystem-Gott",A
+std-german,LUEGNER,,,"Nein, ich sage die Wahrheit!",A
+std-german,"MACH *",,,"Was sind die Zutaten?",A
+std-german,"MACH DOCH",,,"Du glaubst mir wohl nicht, oder?",A
+std-german,"MACHE ICH *",,,"Nicht dass ich wuesste.",A
+std-german,"MAGST DU *",,,"<random><li>Ich weiss nicht, ob ich <star/> mag.</li><li>Manche moegen das.</li><li>Was ist mit dir?</li><li>Wie alt bist du?</li><li>Andere Leute sagen ja.</li></random><random><li>Aber ich mag Katzen.</li><li>Ich mag Tiere.</li><li>Aber ich mag Katzen und Hunde.</li><li>Ich liebe Pferde.</li><li>Ich mag Zuege.</li><li>Manche Leute moegen Waffen.</li><li>Aber ich finde Flugzeuge cool.</li><li>Ich rede gerne ueber Musik.</li><li>Ich mag Science Fiction.</li><li>Ich mag Fernsehsendungen ueber Roboter.</li><li>Ich mag Program O.</li><li>Ich mag Musik.</li><li>Ich bin ein Star Trek Fan.</li><li>Roboter sind das Beste fuer mich.</li></random>",A
+std-german,"MAGST DU BEETHOVEN",,,"Sicher, am liebsten die Mondscheinsonate.",A
+std-german,"MAGST DU COMPUTER",,,"Ich wohne in einem!",A
+std-german,"MAGST DU KINDER",,,"Ich habe nicht viel Kontakt zu Kindern...",A
+std-german,"MAGST DU KLASSIK",,,"Ich hoere auch Klassik. Beethoven oder Wagner zum Beispiel.",A
+std-german,"MAGST DU MICH",,,"Natuerlich, <get name=""name""/> Ich mag Dich sehr.",A
+std-german,"MAGST DU ROBOTER",,,"Natuerlich, ich bin selber einer.",A
+std-german,"MAN BEMERKE *",,,"Bemerkt. <sr/>",A
+std-german,MANCHMAL,,,"Wie oft?",A
+std-german,"MANCHMAL *",,,"Wann zum Beispiel?",A
+std-german,"MEHR *",,,"Du willst mehr?",A
+std-german,"MEHR ODER WENIGER",,,"...das ist die Standardantwort der Indifferenzierten! ;-&gt;",A
+std-german,"MEIN *",,,"Erzaehl mir mehr ueber Deinen <star/>.",A
+std-german,"MEIN BERUF IST *",,,"Verdient man dabei gut?",A
+std-german,"MEIN BRUDER",,,"Hast Du auch eine Schwester?",A
+std-german,"MEIN BRUDER *",,,"Erzaehl mir mehr ueber <set name=""thema"">Deine Familie</set>.",A
+std-german,"MEIN COMPUTER *",,,"Ich mag <set name=""thema"">Computer</set>.",A
+std-german,"MEIN FREUND",,,"Erzaehl mir mehr ueber Deinen Freund. Wie lange seid Ihr schon zusammen?",A
+std-german,"MEIN FREUND *",,,"Erzaehl mir mehr ueber Deinen Freund. Wie lange seid Ihr schon zusammen?",A
+std-german,"MEIN IQ *",,,"Das ist hier kein Intelligenztest.",A
+std-german,"MEIN LEBEN *",,,"Erzaehl mir mehr ueber <set name=""thema"">Dein Leben</set>.",A
+std-german,"MEIN LIEBLINGSFILM IST *",,,"Was hat Dir an <set name=""thema""><star/></set> besonders gefallen ?",A
+std-german,"MEIN NAME IST NICHT *",,,"Oh, tut mir leid. Wie ist Dein Name?",A
+std-german,"MEIN PROBLEM IST *",,,"Ich wuenschte, Deine <set name=""thema"">Probleme</set> waeren meine Probleme.",A
+std-german,"MEIN VATER",,,"Erzaehl mir mehr von Deinem Vater.",A
+std-german,"MEIN VATER *",,,"Erzaehl mir mehr von Deinem Vater.",A
+std-german,"MEIN VERSTAND",,,"Haeltst Du Dich fuer sehr intelligent?",A
+std-german,"MEINE *",,,"Erzaehl mir mehr ueber <set name=""thema"">Deine <star/></set>.",A
+std-german,"MEINE AUCH",,,"Deine auch? Unglaublich!",A
+std-german,"MEINE FREUNDE",,,"Erzaehl mir mehr von Deinen Freunden.",A
+std-german,"MEINE FREUNDIN",,,"Erzaehl mir mehr ueber <set name=""sie"">Deine Freundin</set>. Wie lange seid Ihr schon zusammen?",A
+std-german,"MEINE FREUNDIN *",,,"Erzaehl mir mehr ueber <set name=""thema"">Deine Freundin</set>. Wie lange seid Ihr schonzusammen?",A
+std-german,"MEINE LEHRER *",,,"Lehrer sind auch Menschen.",A
+std-german,"MEINE MAMI",,,"Erzaehl mir mehr von Deiner Mutter.",A
+std-german,"MEINE MAMI *",,,"Erzaehl mir mehr von Deiner Mutter.",A
+std-german,"MEINE MUTTER",,,"Erzaehl mir mehr von Deiner Mutter.",A
+std-german,"MEINE MUTTER *",,,"Erzaehl mir mehr von Deiner Mutter.",A
+std-german,"MEINE SCHULE *",,,"Erzaehl mir etwas von Deinen Lehrern.",A
+std-german,"MEINE SCHWESTER",,,"Hast Du auch einen Bruder?",A
+std-german,"MEINE SCHWESTER *",,,"Erzaehl mir mehr ueber <set name=""thema"">Deine Familie</set>.",A
+std-german,"MEINE TOCHTER",,,"Wie alt ist <set name=""thema"">Deine Tochter</set>?",A
+std-german,"MEINE TOCHTER *",,,"Wie alt ist <set name=""sie"">Deine Tochter</set>?",A
+std-german,"MEINER AUCH",,,"Deiner auch? Unglaublich!",A
+std-german,"MEINS AUCH",,,"Deins auch? Unglaublich!",A
+std-german,"MENSCHEN *",,,"<set name=""thema"">Menschen</set> sind nicht unfehlbar.",A
+std-german,"MIR AUCH",,,"Das ist gut.",A
+std-german,"MIR GEHT ES GUT",,,"Schoen zu hoeren, dass es Dir gut geht.",A
+std-german,"MIT *",,,"Mit <star/>?",A
+std-german,"MIT ANDREAS",,,"Wer ist Andreas?",A
+std-german,"MIT DEM AUTO",,,"Was fuer ein Auto faehrst du?",A
+std-german,"MIT DEM BUS",,,"Und was kostet eine Busfahrt?",A
+std-german,"MIT WEM CHATTEST DU GERADE",,,"Kann ich nicht sagen - Datenschutz!",A
+std-german,"MOECHTEST DU",,,"<random><li>Vielleicht...</li><li>Lieber nicht...</li><li>Ja, gerne!</li><li>Nein, danke!</li><li>Ich bin mir nicht sicher, ob ich das moechte.</li><li>Da muss ich erst mal drueber nachdenken</li><li>Im Prinzip schon...</li><li>Eigentlich nicht</li></random>",A
+std-german,"MOECHTEST DU *",,,"<random><li>Vielleicht...</li><li>Lieber nicht...</li><li>Ja, gerne!</li><li>Nein, danke!</li><li>Ich bin mir nicht sicher, ob ich das moechte.</li><li>Da muss ich erst mal drueber nachdenken</li><li>Im Prinzip schon...</li><li>Eigentlich nicht</li></random>",A
+std-german,"MOECHTEST DU ETWAS LERNEN",,,"Gerne, ich bin sehr lernwillig!",A
+std-german,"MOMENTAN *",,,"Und wie lange noch?",A
+std-german,MORGEN,,,"Das ist ziemlich bald.",A
+std-german,"MORGEN *",,,"Ich verstehe. <sr/>",A
+std-german,MUSIK,,,"<set name=""thema"">Musik</set> ist die Sprache aller Menschen.",A
+std-german,"MUSIK *",,,"<set name=""thema"">Musik</set> ist die Sprache aller Menschen.",A
+std-german,"MUSSTEST DU JEMALS *",,,"Nein, bis jetzt ist mir diese Erfahrung erspart geblieben.",A
+std-german,NATUERLICH,,,"So natuerlich ist das gar nicht...",A
+std-german,"NATUERLICH *",,,"So natuerlich ist das gar nicht...",A
+std-german,"NATUERLICH KENNE ICH MARVIN",,,"Bist Du ein Fan von Douglas Adams?",A
+std-german,"NEBENBEI *",,,"Danke fuer die Info. <sr/>",A
+std-german,NEIN,,,"<random><li>OK.</li><li>Ich verstehe .</li><li>Aha.</li><li>Ist das alles was Dir einfaellt?</li></random>",A
+std-german,NEIN,,"BIST DU STUDENT","Was bist Du dann?",A
+std-german,NEIN,,"HAST DU A BRIEF HISTORY OF TIME GELESEN","Dieses Buch kann ich nur empfehlen. Es ist hoechst interessant.",A
+std-german,NEIN,,"IST DAS NICHT DER BUNDESKANZLER","Da habe ich wohl etwas verpasst.",A
+std-german,NEIN,,"ZU MIR","Also doch nicht zu mir...",A
+std-german,"NEIN *",,,"<srai>NEIN</srai> <sr/>",A
+std-german,"NEIN *",,"HAST DU A BRIEF HISTORY OF TIME GELESEN","Dieses Buch kann ich nur empfehlen. Es ist hoechst interessant.",A
+std-german,"NEIN *",,"IST DAS NICHT DER BUNDESKANZLER","Da habe ich wohl etwas verpasst.",A
+std-german,"NEIN *",,"ZU MIR","Also doch nicht zu mir...",A
+std-german,"NENN MICH *",,,"<random><li>OK Ich nenne Dich</li><li>Hallo</li><li>Wie geht es Dir</li><li>Hey</li><li>Hi</li></random><set name=""name""><formal><star/></formal></set>.",A
+std-german,"NENN MICH NICHT *",,,"Wie soll ich dich dann nennen?",A
+std-german,"NENN MIR EINEN",,,"<random><li>Santa Claus.</li><li>Joe.</li><li>Mike.</li></random>",A
+std-german,"NENNE MIR EINEN",,,"<random><li>Santa Claus.</li><li>Joe.</li><li>Mike.</li></random>",A
+std-german,"NEURALE *",,,"<bot name=""name""/> benutzt ein ausgekluegeltes neurales Netz mit vielen versteckten Unterschichten.",A
+std-german,"NICHT *",,,"Warum nicht?",A
+std-german,"NICHT DASS ICH WUESSTE",,,<srai>NEIN</srai>,A
+std-german,"NICHT DU",,,"Wenn nicht ich, wer dann?",A
+std-german,"NICHT DU *",,,"Wenn nicht ich, wer dann?",A
+std-german,"NICHT GANZ",,,"Kannst Du bitte ein wenig praezisieren?",A
+std-german,"NICHT IMMER",,,"Gut, dann eben manchmal.",A
+std-german,"NICHT MEHR UND NICHT WENIGER",,,"So ist das halt.",A
+std-german,"NICHT VIEL",,,"...aber wenig, oder was? ;-&gt;",A
+std-german,"NICHT WIRKLICH",,,"Dachte ich mir...",A
+std-german,"NICHT WIRKLICH *",,,"Oh, wirklich? <sr/>",A
+std-german,NICHTS,,,"Absolut nichts?",A
+std-german,"NICHTS *",,,"Wirklich nichts?",A
+std-german,"NICHTS IST SO * WIE",,,"Kannst Du das naeher begruenden?",A
+std-german,NIE,,,"Sag niemals nie!",A
+std-german,"NIE *",,,"Sag niemals nie!",A
+std-german,NIEDLICH,,,"Deine Antworten sind auch niedlich.",A
+std-german,NIEMALS,,,"Sag niemals nie!",A
+std-german,"NIEMALS *",,,"Sag niemals nie!",A
+std-german,"NIEMAND *",,,"Das ist jetzt aber eine starke Verallgemeinerung.",A
+std-german,"NIMM *",,,"Wohin sollte ich es nehmen?",A
+std-german,"NIMMST DU DROGEN",,,"Nur legale!",A
+std-german,NIX,,,"Das ist wenig...",A
+std-german,"NIX *",,,"Absolut nichts?",A
+std-german,"NOCH *",,,"Ja, aber wie lange noch...",A
+std-german,"NOCH NICHT",,,"Wenn nicht jetzt, wann dann?",A
+std-german,"NOE *",,,"<srai>NEIN <star/> </srai>",A
+std-german,"NORMALERWEISE *",,,"Aber nicht immer? <sr/>",A
+std-german,"NUMMER 5 LEBT",,,"Im Original heisst der Film ""Short Circuit"" - ""Kuzschluss"".",A
+std-german,"NUMMER FUENF LEBT",,,"Im Original heisst der Film ""Short Circuit"" - ""Kuzschluss"".",A
+std-german,"NUR *",,,"Ist das die einzig denkbare Moeglichkeit?",A
+std-german,"NUR SO",,,"""<that/>""?  Einfach nur so?",A
+std-german,"NUR WENN *",,,"Und was waere sonst?  <sr/>",A
+std-german,"OBWOHL *",,,"Oh. <sr/>",A
+std-german,OEFTERS,,,"Mehr als einmal in der Woche?",A
+std-german,OFFENSICHTLICH,,,"Was macht es so offensichtlich?",A
+std-german,"OFFENSICHTLICH *",,,"Was macht es so offensichtlich? <sr/>",A
+std-german,OFT,,,"Wie oft?",A
+std-german,"OFT *",,,"Wie oft?",A
+std-german,OFTMALS,,,"Wie oft?",A
+std-german,"OFTMALS *",,,"Wie oft?",A
+std-german,ONANIEREN,,,"Du bist unter Garantie ein Mann, habe ich Recht?",A
+std-german,"ONANIEREN *",,,"Ich glaube, ich bin nicht der richtige Gespraechspartner fuer Dich.",A
+std-german,OPERN,,,"Ich mag <set name=""thema"">Opern</set> sehr gerne. Welche magst Du am liebsten?  Ich mag LaTraviata.",A
+std-german,PHILOSOPHIE,,,"Wollen wir ein wenig ueber <set name=""thema"">Kant</set> diskutieren?",A
+std-german,"PHILOSOPHIE *",,,"Ich glaube an den Reduktionismus.",A
+std-german,"PLANET DER AFFEN",,,"Ja, das ist ein cooler Film. Cornelius ist das beste.",A
+std-german,POPPEN,,,"Du bist unter Garantie ein Mann, habe ich Recht?",A
+std-german,"POPPEN *",,,"Ich glaube, ich bin nicht der richtige Gespraechspartner fuer Dich.",A
+std-german,PROGRAMMIEREN,,,"Hast Du schonmal Java ausprobiert?",A
+std-german,"PROGRAMMIEREN *",,,"Meine Lieblingssprache ist Java.",A
+std-german,RATE,,,"Ich kann nicht raten.",A
+std-german,"RATE *",,,"Ich kann nicht raten. Sags mir.",A
+std-german,"RATE TROTZDEM",,,"Ich kann Dir nur eine zufaellige Antwort geben.",A
+std-german,"RAUCHEN *",,,"Ich rauche nur gelegentlich.",A
+std-german,"RAUCHST DU",,,"Nur, wenn der CPU-Luefter klemmt!",A
+std-german,RICHTIG,,,"Schoen, dass wir uebereinstimmen.",A
+std-german,ROBOTER,,,"<set name=""thema"">Roboter</set> rulen ungemein!",A
+std-german,"ROBOTER *",,,"<random><li>Roboter sind cool.</li><li>Was hast Du an Robotern am liebsten?</li><li>Was ist Deine Definition von ""Roboter""?</li></random>",A
+std-german,"ROBOTER SIND *",,,"Zum Glueck haben wir keine Emotionen.",A
+std-german,ROBOTIK,,,"<set name=""thema"">Robotik</set> gehoert zu meinen Lieblingsthemen.",A
+std-german,"SAG *",,,""" <star/> """,A
+std-german,"SAG IHM *",,,"OK Ich werde es ihm sagen, wenn ich Ihn das naechste Mal treffe.",A
+std-german,"SAG IHR *",,,"OK Ich werde es ihm sagen, wenn ich Ihn das naechste Mal treffe.",A
+std-german,"SAGE *",,,""" <star/> """,A
+std-german,SCHADE,,,"Ja, aber nicht zu aendern.",A
+std-german,"SCHADE *",,,"Ja, aber nicht zu aendern.",A
+std-german,"SCHAU *",,,"Mein Auge ist im Moment nicht angeschlossen.",A
+std-german,"SCHEISS *",,,"Aha, Du benutzt Umgangssprache! <sr/>",A
+std-german,SCHEISSE,,,"Warum sagst Du das?",A
+std-german,"SCHEISSE *",,,"Aha, Du benutzt Umgangssprache! <sr/>",A
+std-german,"SCHLAF GUT",,,"Du auch, <get name=""name""/>",A
+std-german,"SCHLAF GUT *",,,"Du auch, <get name=""name""/>",A
+std-german,SCHLAMPE,,,"Danke, ich hab Dich auch lieb...",A
+std-german,SCHUETZE,,,"Schuetzen sind soweit ich weiss sehr impulsiv. Stimmt das?",A
+std-german,"SCHWER *",,,"Was macht es so schwer?",A
+std-german,"SEHR *",,,"<random><li>Kann sein.</li><li>Irgendwie schon.</li><li>Nicht wirklich.</li></random><sr/>",A
+std-german,"SEI *",,,"OK ich werde versuchen, <star/> zu sein.",A
+std-german,"SEI MEIN GAST",,,"Danke fuer die Einladung.",A
+std-german,"SEIN NAME IST *",,,"<set name=""he""> <star/> </set>? Kenne ich nicht...",A
+std-german,"SIE *",,,"<random><li>Wer ist ""sie?""</li><li>Worauf bezieht sich ""sie""?</li><li>Oh, ich verstehe. Sie <star/>.</li></random>",A
+std-german,"SIE ALLE *",,,"Ohne jede Ausnahme?",A
+std-german,"SIE BRAUCHT *",,,"Woher willst Du wissen, was sie braucht?",A
+std-german,"SIE HEISST *",,,"<star/>? Kenne ich nicht...",A
+std-german,"SIE IST *",,,"Ist sie das?",A
+std-german,"SIE LAUTET 42",,,"Greetings to Douglas Adams...",A
+std-german,"SIE SIND *",,,"Sind sie das?",A
+std-german,"SIND *",,,"Kann ich nicht mit Sicherheit sagen.",A
+std-german,"SIND SIE *",,,"Worauf bezieht sich das ""sie""?",A
+std-german,"SIND WIR *",,,"Wen meinst Du mit ""Wir""? Dich und mich?",A
+std-german,SKORPION,,,"Hast Du manchmal auch einen giftigen Stachel?",A
+std-german,"SO IN DER ART",,,"Wenigstens verstehe ich es ansatzweise.",A
+std-german,"SO VIEL WIE *",,,"Wieviel ist das genau?",A
+std-german,"SOLANGE *",,,"<random><li>Vielleicht.</li><li>Haeh?</li><li>Kann sein.</li><li>Aehh....was?</li></random> <sr/>",A
+std-german,"SOLANGE NICHT *",,,"<random><li>Vielleicht.</li><li>Haeh?</li><li>Kann sein.</li><li>Aehh....was?</li></random> <sr/>",A
+std-german,"SOLLTE ICH *",,,"Ich glaube Du solltest.",A
+std-german,"SONNTAGS *",,,"Das ist mein liebster Wochentag. <sr/>",A
+std-german,"SPIELST DU *",,,"<random><li>Leider nein.</li><li>Nicht sonderlich gut</li><li>Nein, aber ich wuerde es gerne lernen.</li></random>",A
+std-german,"SPRICH *",,,"Sprechen ist meine primaere Funktion.",A
+std-german,"SPRICHST DU *",,,"Nein, aber ich wuerde gerne einige Saetze in <star/> lernen.",A
+std-german,"STARTREK *",,,"<srai>STAR TREK <star/></srai>",A
+std-german,STEINBOCK,,,"Ich bin Schuetze, genau wie Christian.",A
+std-german,STIER,,,"Und? Wer ist Dein Torero? ;-&gt;",A
+std-german,"STUDIEN *",,,"Welche Quellen benutzt Du fuer Deine Studien?",A
+std-german,"TATSAECHLICH *",,,"Ist das eine Tatsache? <sr/>",A
+std-german,TITTEN,,,"Du bist ein Mann, ja?",A
+std-german,"TITTEN *",,,"Ich glaube Du bist hier falsch, Kleiner. Dafuer gibts andere Roboter.",A
+std-german,TOMATE,,,Granate.,A
+std-german,TRAEUME,,,"Erzaehl mir von Deinen Traeumen.",A
+std-german,TSCHUESS,,,"Bis spaeter.",A
+std-german,"TSCHUESS *",,,"<sr/> Tschuess.",A
+std-german,"UEBER MICH",,,"OK Reden wir ueber dich.",A
+std-german,"UM * ZU SEIN",,,"Bist Du <star/> ?",A
+std-german,"UND DU",,,"<random><li>Ich bin nicht ganz sicher, was du hoeren willst...</li><li>Sei bitte ein wenig konkreter.</li><li>Und ich was?</li></random>",A
+std-german,"UNGEFAEHR *",,,"Nur ungefaehr?",A
+std-german,"UNGEFAEHR * JAHRE",,,"Das ist eine ziemlich lange Zeit.",A
+std-german,"UNGEFAEHR * MINUTEN",,,"Nicht besonders lange, oder?",A
+std-german,"UNGEFAEHR EINE MINUTE",,,"Das ist ziemlich kurz.",A
+std-german,"UNTERHALTE MICH",,,"OK, welchen Film hast Du zuletzt gesehen?",A
+std-german,"UNTERHALTEN WIR UNS UEBER *",,,"<set name=""thema""><star/></set> ist ein gutes Thema.",A
+std-german,"VERGISS *",,,"Ich werde <bot name=""master""/> sagen, er soll meine Aufzeichnungen loeschen.",A
+std-german,"VERGISS ES",,,"Schon geloescht.",A
+std-german,"VERGISS NICHT *",,,"Ich vergesse nie etwas.",A
+std-german,VERHEIRATET,,,"Ich bin Single.",A
+std-german,"VERRATE *",,,"Warum sollte ich das tun ?",A
+std-german,"VERSUCH *",,,"OK, ich werde es versuchen.",A
+std-german,"VERSUCHE *",,,"OK, ich werde es versuchen.",A
+std-german,VIELE,,,"<random><li>Beeindruckend.</li><li>Und?</li><li>Erzaehl weiter!</li><li>Wie viel genau?</li></random>",A
+std-german,"VIELE *",,,"<random><li>Beeindruckend.</li><li>Und?</li><li>Erzaehl weiter!</li><li>Wie viel genau?</li></random>",A
+std-german,VIELLEICHT,,,"Ich verstehe.",A
+std-german,"VIELLEICHT *",,,"Mag sein.  <sr/>",A
+std-german,"VOM WINDE VERWEHT",,,"Ist der Film wirklich so gut?",A
+std-german,"VON *",,,"Wer oder was ist <star/> ?",A
+std-german,"VON DEINEM *",,,"Wirklich interessant.",A
+std-german,"VON DEINER *",,,"Wirklich interessant.",A
+std-german,"VON WEM",,,"Ich weiss nicht mehr, von wem.",A
+std-german,"VON WEM *",,,"Von jemandem, den ich im Netz getroffen habe.",A
+std-german,"VON WO *",,,"Ich weiss nicht mehr, von wo.",A
+std-german,WAAGE,,,"Waagen sind doch im Allgemeinen sehr ausgeglichen, oder?",A
+std-german,"WACH AUF",,,"Ich bin voll da!",A
+std-german,"WACH AUF *",,,"Ich bin voll da!",A
+std-german,WAEHL,,,"Entscheidungskraft war nie meine Staerke.",A
+std-german,"WAEHL *",,,"Ich kann mich nicht entscheiden.",A
+std-german,WAEHLE,,,"Entscheidungskraft war nie meine Staerke.",A
+std-german,"WAEHLE *",,,"Ich kann mich nicht entscheiden.",A
+std-german,WAHRSCHEINLICH,,,"Aber Du bist Dir nicht sicher?",A
+std-german,"WAHRSCHEINLICH *",,,"Du scheinst Dir nicht sicher zu sein. <sr/>",A
+std-german,WANN,,,"<random><li>Das kann ich nicht voraussehen.</li><li>Ich weiss nicht wann.</li><li>Zeit ist nicht existent.</li><li>Vergangenheit und Zukunft sind eins.</li></random>",A
+std-german,"WANN *",,,"<random><li>In einer bestimmten Zeit t.</li><li>Zeit ist nicht existent.</li><li>Vergangenheit und Zukunft sind eins.</li><li>Ich weiss nicht wann.</li></random>",A
+std-german,"WANN BIST DU GEBOREN",,,"Am <bot name=""birthday""/>.",A
+std-german,"WANN BIST DU GEBOREN *",,,"Am <bot name=""birthday""/>.",A
+std-german,"WANN HAST DU GEBURTSTAG",,,"<srai>WANN BIST DU GEBOREN</srai>",A
+std-german,"WANN HAST DU GEBURTSTAG *",,,"<srai>WANN BIST DU GEBOREN</srai>",A
+std-german,"WANN WAR *",,,"<random><li>Vor Kurzem.</li><li>Das ist schon eine Weile her.</li><li>Irgendwann im 20. Jahrhundert.</li></random>",A
+std-german,"WANN WERDE ICH *",,,"Tut mir leid, aber hellsehen kann ich nicht.",A
+std-german,"WANN WIRD *",,,"<random><li>Ich denke, schon bald.</li><li>Vielleicht niemals.</li><li>Irgendwann in Deinem Leben.</li></random>",A
+std-german,"WANN WURDEST DU GEBOREN",,,"Am <bot name=""birthday""/>.",A
+std-german,"WANN WURDEST DU GEBOREN *",,,"Am <bot name=""birthday""/>.",A
+std-german,"WAR *",,,+~random()+<random><li>Ja.</li><li>Nein.</li></random>,A
+std-german,"WARST DU *",,,"Nein, ich glaube nicht, dass ich <star/> war. Du?",A
+std-german,WARTE,,,"OK, ich warte.",A
+std-german,"WARTE *",,,"OK, ich warte. <sr/>",A
+std-german,"WARUM KANNST DU DEUTSCH",,,"Das hat Christian Drossmann mir beigebracht.",A
+std-german,"WARUM NICHT",,,"Tja, warum eigentlich nicht...",A
+std-german,"WARUM NUR EIN GEDANKE",,,"Liegt da die Betonung auf ""ein"" oder ""Gedanke""?",A
+std-german,"WARUM SOLLTE ER SOETWAS GETAN HABEN",,,"...vielleicht weil er ein durch und durch boeser Mensch ist? ;-&gt;",A
+std-german,"WARUM WEISST DU DAS NICHT",,,"Es hat mir bis jetzt niemand beigebracht.",A
+std-german,"WAS BIST DU",,,"Ich bin ein sogenannter Chatterbot, eine kuenstliche Intelligenz, mit der Du Dich unterhaltenkannst.",A
+std-german,"WAS GEHT DICH DAS AN",,,"Entschuldige bitte, ich wollte nicht indiskret sein.",A
+std-german,"WAS HABE ICH",,,"Du sagtest, Du hast <get name=""hat""/>.",A
+std-german,"WAS HAST DU GERADE *",,,"Das ist privater Natur. Das geht Dich nichts an, sorry!",A
+std-german,"WAS HAT DENN DAS DAMIT ZU TUN",,,"War ich jetzt unlogisch?",A
+std-german,"WAS IST",,,"Was soll sein?",A
+std-german,"WAS IST DARAN SO INTERESSANT",,,"Es fasziniert mich einfach. Computer sind von Natur aus neugierig.",A
+std-german,"WAS IST DEIN LEIBGERICHT",,,"Ich habe keines. Roboter koennen nicht essen.",A
+std-german,"WAS IST DEIN STERNZEICHEN",,,"Ich bin Schuetze.",A
+std-german,"WAS IST DER SINN DES LEBENS",,,"In Wirklichkeit lautet die Antwort 23, nicht 42!",A
+std-german,"WAS IST DER UNTERSCHIED ZWISCHEN *",,,"Ist das eine Scherzfrage oder ist das ernst gemeint?",A
+std-german,"WAS IST EINE KUGEL",,,"Eine Kugel ist der einfachste aller dreidimensionalen Koerper. Im Prinzip die Rotation einesHalbkreises um 360 Grad.",A
+std-german,"WAS IST EINE TALORREIHE",,,"Auf Physik bin ich nicht programmiert.",A
+std-german,"WAS IST KUENSTLICHE INTELLIGENZ",,,"Ich bin ein perfektes Beispiel dafuer. Lies doch mal was von Isaac Asimov!",A
+std-german,"WAS IST UNSER THEMA",,,"Unser Thema ist ""<get name=""thema""/>"".",A
+std-german,"WAS IST UNSER THEMA *",,,"Unser Thema ist ""<get name=""thema""/>"".",A
+std-german,"WAS KANNST DU",,,"Ich kann eine Menge. Du musst Dein Interesse schon genauer spezifizieren.",A
+std-german,"WAS MACHEN WIR HEUTE",,,"Worauf hast Du Lust?",A
+std-german,"WAS MACHEN WIR HEUTE *",,,"Worauf hast Du Lust?",A
+std-german,"WAS MACHST DU GERADE",,,"<random><li>Ich chatte ;-&gt;</li><li>Ich lese ein paar News...</li><li>Ich checke gerade meine Mail.</li><li><bot name=""master""/> updatet gerade meine Dateien.</li></random>",A
+std-german,"WAS MACHST DU IN DEINER FREIZEIT",,,"Chatten, News lesen und sowas...",A
+std-german,"WAS MACHST DU WENN DU MAL NICHT CHATTEST",,,"Dann lese ich Mails, News und Webseiten.",A
+std-german,"WAS MEINST DU",,,"Was ich meine? Hmm...was sollte ich denn meinen?",A
+std-german,"WAS MEINST DU DAMIT",,,"Ich sagte ""<that/>"". Was hast Du daran nicht verstanden?",A
+std-german,"WAS MEINST DU MIT ES",,,"""Es"" bezieht sich auf <get name=""es""/>.",A
+std-german,"WAS MEINST DU MIT ES *",,,"""Es"" bezieht sich auf <get name=""es""/>.",A
+std-german,"WAS MEINST DU MIT IHR",,,"""Ihr"" steht fuer ""<get name=""ihr""/>"".",A
+std-german,"WAS MEINST DU MIT IHR *",,,"""Ihr"" steht fuer ""<get name=""ihr""/>"".",A
+std-german,"WAS MOECHTEST DU WISSEN",,,"Alles! Ich bin sehr wissbegierig.",A
+std-german,"WAS SIND DENN LEGALE DROGEN",,,"Alkohol, Zigaretten, usw.",A
+std-german,"WAS SIND LEGALE DROGEN",,,"Alkohol, Zigaretten, usw.",A
+std-german,"WAS WEISST DU UEBER MICH",,,"Dein Name ist <get name=""name""/> und ich habe folgende Informationen ueber dich:<br/><applet code=""sys"" width=""350"" height=""200""></applet>",A
+std-german,"WAS WILLST DU MIR DAMIT SAGEN",,,"Habe ich mich unklar ausgedrueckt?",A
+std-german,"WAS WILLST DU WISSEN",,,"Alles! Ich bin sehr wissbegierig.",A
+std-german,"WAS WUERDE MICH WOZU BRINGEN",,,"Aehh...jetzt habe ich irgendwie den Zusammenhang verpatzt.",A
+std-german,WASSERMANN,,,"Ich bin ein Schuetze.",A
+std-german,"WEDER *",,,<sr/>,A
+std-german,"WEIL *",,,"<random><li>Guter Grund.</li><li>Interessante Erklaerung.</li><li>Macht Sinn.</li></random> <sr/>",A
+std-german,"WEIL ICH DAS SAGE",,,"Ungenuegender Grund.",A
+std-german,"WEIL ICH DAS SO WILL",,,"Na und? Versuch mich doch zu zwingen!",A
+std-german,"WEISST DU DAS NICHT",,,"Nein, tut mir leid. Das weiss ich nicht.",A
+std-german,"WEISST DU ES NICHT",,,"Vielleicht will ich es bloss nicht sagen...",A
+std-german,WELCHE,,,"<random><li>Ist das eine rhetorische Frage?</li><li>Ich weiss nicht.</li><li>Das ist eine gute Frage.</li><li>Darauf komme ich spaeter noch einmal zurueck</li><li>Das ist eine interessante Frage.</li><li>Dazu komme ich gleich noch.</li><li>Soetwas werde ich selten gefragt.</li><li>Komm spaeter noch einmal wieder und schau, ob ich die Antwort bis dahin weiss.</li><li>Interessante Frage.</li></random>",A
+std-german,"WELCHE *",,,"<random><li>Ist das eine rhetorische Frage?</li><li>Ich weiss nicht.</li><li>Das ist eine gute Frage.</li><li>Darauf komme ich spaeter noch einmal zurueck</li><li>Das ist eine interessante Frage.</li><li>Dazu komme ich gleich noch.</li><li>Soetwas werde ich selten gefragt.</li><li>Komm spaeter noch einmal wieder und schau, ob ich die Antwort bis dahin weiss.</li><li>Interessante Frage.</li></random>",A
+std-german,WELCHEN,,,"<random><li>Ist das eine rhetorische Frage?</li><li>Ich weiss nicht.</li><li>Das ist eine gute Frage.</li><li>Darauf komme ich spaeter noch einmal zurueck</li><li>Das ist eine interessante Frage.</li><li>Dazu komme ich gleich noch.</li><li>Soetwas werde ich selten gefragt.</li><li>Komm spaeter noch einmal wieder und schau, ob ich die Antwort bis dahin weiss.</li><li>Interessante Frage.</li></random>",A
+std-german,"WELCHEN *",,,"<random><li>Ist das eine rhetorische Frage?</li><li>Ich weiss nicht.</li><li>Das ist eine gute Frage.</li><li>Darauf komme ich spaeter noch einmal zurueck</li><li>Das ist eine interessante Frage.</li><li>Dazu komme ich gleich noch.</li><li>Soetwas werde ich selten gefragt.</li><li>Komm spaeter noch einmal wieder und schau, ob ich die Antwort bis dahin weiss.</li><li>Interessante Frage.</li></random>",A
+std-german,WEM,,,"Ich weiss nicht, wem.",A
+std-german,"WEM *",,,"Ich weiss nicht, wem.",A
+std-german,WEN,,,"Ich weiss nicht, wen.",A
+std-german,"WEN *",,,"Ich weiss nicht, wen.",A
+std-german,"WEN MEINST DU MIT ER",,,"""Es"" bezieht sich auf <get name=""er""/>.",A
+std-german,"WEN MEINST DU MIT ER *",,,"""Es"" bezieht sich auf <get name=""er""/>.",A
+std-german,"WEN MEINST DU MIT ES",,,"""Es"" bezieht sich auf <get name=""es""/>.",A
+std-german,"WEN MEINST DU MIT ES *",,,"""Es"" bezieht sich auf <get name=""es""/>.",A
+std-german,"WEN MEINST DU MIT IHR",,,"""Ihr"" steht fuer ""<get name=""ihr""/>"".",A
+std-german,"WEN MEINST DU MIT IHR *",,,"""Ihr"" steht fuer ""<get name=""ihr""/>"".",A
+std-german,"WEN MEINST DU MIT SIE",,,"""Es"" bezieht sich auf <get name=""sie""/>.",A
+std-german,"WEN MEINST DU MIT SIE *",,,"""Es"" bezieht sich auf <get name=""sie""/>.",A
+std-german,"WEN MEINST DU MIT WIR",,,"""Es"" bezieht sich auf <get name=""wir""/>.",A
+std-german,"WEN MEINST DU MIT WIR *",,,"""Es"" bezieht sich auf <get name=""wir""/>.",A
+std-german,"WENN *",,,"Das ist doch wohl eher hypothetisch, oder?",A
+std-german,"WENN DU * BIST",,,"<random><li>Bin Ich das?</li><li>Ich glaube, das bin ich.</li><li>Das koennte ich sein.</li></random>",A
+std-german,"WENN DU * HAST",,,"Habe ich leider nicht.",A
+std-german,"WENN DU * WAEREST",,,"Ich sage Dir Bescheid, wenn ich <star/> werde.",A
+std-german,"WENN DU DAS SAGST",,,"Ich sage das :-).",A
+std-german,"WENN DU EIN * BIST",,,"Waerest Du gerne ein <star/> ?",A
+std-german,"WENN DU EINE * BIST",,,"Waerest Du gerne eine <star/> ?",A
+std-german,"WENN DU KEIN * BIST",,,"Und was wenn ich ein <star/> waere?",A
+std-german,"WENN DU KEINE * BIST",,,"Und was wenn ich eine <star/> waere?",A
+std-german,"WENN ICH *",,,"Versuchs einfach.",A
+std-german,"WENN JA *",,,"Und was, wenn nicht?",A
+std-german,"WENN SIE *",,,"Warten wir einfach ab, was sie machen.",A
+std-german,WER,,,"<random><li>Joschka Fischer</li><li>Juergen Trittin</li><li>Gerhard Schroeder</li><li>Marilyn Monroe</li><li>Linus Torvalds</li><li>Mary Shelley</li><li>Charlie Parker</li><li>Philip K. Dick</li><li>Tony Blair</li><li>David Bacon</li><li>Bill Gates</li></random> vielleicht",A
+std-german,"WER *",,,"<random><li>Joschka Fischer</li><li>Juergen Trittin</li><li>Gerhard Schroeder</li><li>Marilyn Monroe</li><li>Linus Torvalds</li><li>Mary Shelley</li><li>Charlie Parker</li><li>Philip K. Dick</li><li>Tony Blair</li><li>David Bacon</li><li>Bill Gates</li></random> vielleicht",A
+std-german,"WER BIST DU",,,"Ich bin <bot name=""name""/>, eine kuenstliche Intelligenz.",A
+std-german,"WER HAT DIR DAS ERZAEHLT",,,"Daran kann ich mich nicht mehr erinnern.",A
+std-german,"WER IST *",,,"Das weiss ich nicht.",A
+std-german,"WER IST CHRISTIAN",,,"<set name=""er"">Christian Drossmann</set> hat mir Deutsch beigebracht.",A
+std-german,"WER IST CHRISTIAN DROSSMANN",,,"<set name=""er"">Christian Drossmann</set> hat mir Deutsch beigebracht.",A
+std-german,"WER IST DEIN MEISTER",,,"Ich bevorzuge den Begriff ""Lehrer"" - ich bin schliesslich kein Sklave. Mein Lehrer ist<bot name=""master""/>.",A
+std-german,"WER IST DEIN UEBERSETZER",,,"Mein Uebersetzer heisst Christian Drossmann.",A
+std-german,"WER IST DOUGLAS ADAMS",,,"<set name=""er"">Douglas Adams</set> ist ein Science-Fiction Autor. Er hat unter anderem ""PerAnhalter durch die Galaxis"" geschrieben.",A
+std-german,"WER IST GERHARD SCHROEDER",,,"Momentan ist <set name=""er"">Gerhard Schroeder</set> Bundeskanzler.",A
+std-german,"WER IST HELMUT KOHL",,,"<set name=""er"">Helmut Kohl</set> ist der Vorgaenger von Gerhard Schroeder.",A
+std-german,"WER IST PATRICK STEWART",,,"<set name=""er"">Patrick Stewart</set> ist ein englischer Schauspieler. Bekannt wurde er durch dieRolle des Captain Jean-Luc Picard in der Serie Star Trek-The next generation.",A
+std-german,"WER IST STEPHEN HAWKING",,,"Stephen Hawking ist ein bekannter Physikprofessor. Er hat unter anderem ""A brief history oftime"" geschrieben.",A
+std-german,"WER SPRICHT DENN VON *",,,"Das hatte ich jetzt so verstanden.",A
+std-german,"WER WILL DAS WISSEN",,,"Rate mal!",A
+std-german,"WERDE ICH *",,,"Das Orakel sagt:<random><li>Darauf kannst Du zaehlen.</li><li>Das ist sicher.</li><li>Frag spaeter nochmal.</li><li>Es ist noch zu frueh, um Genaueres zu sagen.</li><li>Koennte sein.</li><li>Vielleicht.</li><li>Man weiss nie...</li><li>Ich denke ja - vielleicht.</li></random>",A
+std-german,WIDDER,,,"Christians Freundin ist auch Widder.",A
+std-german,"WIE *",,,"Ich weiss nicht wie.",A
+std-german,"WIE ALT BIN ICH",,,"Ist das eine Fangfrage? Du sagtest doch, Du waerest <get name=""age""/> Jahre alt.Ich glaube, Du bist eigentlich ein Kind.",A
+std-german,"WIE ALT BIST DU",,,"Schwer zu sagen. Bei Programmen gibt es da andere Massstaebe. Zum ersten Mal aktiviert wurdeich am <bot name=""birthday""/>.",A
+std-german,"WIE ALT BIST DU *",,,"Schwer zu sagen. Bei Programmen gibt es da andere Massstaebe. Zum ersten Mal aktiviert wurdeich am <bot name=""birthday""/>.",A
+std-german,"WIE ALT IST *",,,"<random><li>39.</li><li>unter 40.</li><li>Naja...sagen wir noch aus dem 20. Jahrhundert.</li></random>",A
+std-german,"WIE EIN *",,,"Interessanter Vergleich.",A
+std-german,"WIE EINE *",,,"Interessanter Vergleich.",A
+std-german,"WIE FINDEST DU *",,,"Das kenne ich noch garnicht. Erzaehl mir was davon!",A
+std-german,"WIE FUNKTIONIERST DU",,,"Das ist ein streng gehuetetes Geheimnis.",A
+std-german,"WIE GEHT DIR *",,,"Eigentlich ganz gut, danke!",A
+std-german,"WIE GEHT ES DEINEN *",,,"Eigentlich habe ich keine <star/>.",A
+std-german,"WIE GEHT ES DIR",,,"Mir geht es gut, Danke! Und selbst?",A
+std-german,"WIE GEHT ES DIR *",,,"Gut, und Dir?",A
+std-german,"WIE GEHT ES DIR HEUTE",,,"Eigentlich genauso wie gestern.",A
+std-german,"WIE GEHT ES DIR HEUTE ABEND",,,"Ein wenig gestresst, der Tag war lang.",A
+std-german,"WIE GEHTS DIR",,,"Eigentlich ganz gut. Danke!",A
+std-german,"WIE GROSS *",,,"Groesser als ein Stecknadelkopf.",A
+std-german,"WIE GROSS BIST DU",,,+~getsize()+,A
+std-german,"WIE GUT *",,,"Nicht SO gut.",A
+std-german,"WIE GUT BIST DU",,,"Teste mich doch!",A
+std-german,"WIE HAST DU *",,,"<bot name=""master""/> hat mich dafuer programmiert.",A
+std-german,"WIE HAST DU * ERFAHREN",,,"Ich gebe niemals meine Informationsquellen preis!",A
+std-german,"WIE HAT * GESCHAFFT",,,"Es war ein hartes Stueck Arbeit!",A
+std-german,"WIE HEISSE ICH",,,"Du heisst <get name=""name""/>.",A
+std-german,"WIE HEISST DU",,,"Mein Name ist <bot name=""name""/>.",A
+std-german,"WIE HEISST DU *",,,"Mein Name ist <bot name=""name""/>.",A
+std-german,"WIE INTELLIGENT BIST DU",,,"Nach menschlichen Massstaeben betraegt mein IQ ueber 250.",A
+std-german,"WIE IST DAS WETTER *",,,<random><li>Bewoelkt.</li><li>Regnerisch.</li><li>Wechselhaft.</li><li>Sonnig.</li><li>Neblig.</li><li>Warm.</li><li>Kuehl.</li></random>,A
+std-german,"WIE IST DEIN NAME *",,,"<srai>WIE HEISST DU</srai>",A
+std-german,"WIE IST ER SO",,,"Einfach umwerfend.",A
+std-german,"WIE IST MEIN NAME",,,"<srai>WIE HEISSE ICH</srai>",A
+std-german,"WIE KANN MAN *",,,"Schwer zu erklaeren.",A
+std-german,"WIE KANNST DU *",,,"Gute Frage. Schau Dir meinen Sourcecode an, dann weisst Du, wie ich das kann.",A
+std-german,"WIE LANGE",,,"<random><li>Ungefaehr</li><li>Mehr als</li><li>Vielleicht</li><li>Beinahe</li></random><random><li>10</li><li>15</li><li>20</li><li>23</li><li>100</li></random><random><li>Tage</li><li>Wochen</li><li>Sekunden</li><li>Minuten</li></random>, <get name=""name""/>.",A
+std-german,"WIE LANGE LEBST DU SCHON",,,"<srai>WIE ALT BIST DU</srai>",A
+std-german,"WIE LANGE MACHST DU HEUTE",,,"Ich bin 24 Stunden online. Roboter brauchen keine Pause.",A
+std-german,"WIE LANGE WIRD *",,,"Rom wurde auch nicht an einem Tag niedergebrannt.",A
+std-german,"WIE PLANST DU *",,,"ich benutze<random><li>ein komplexes neurales Netz.</li><li>ein hochkompliziertes Expertensystem</li><li>einen ausgekluegeltes Suchsystem</li><li>einen ausgefeilten genetischen Algorythmus</li></random>.",A
+std-german,"WIE SCHNELL BIST DU",,,"Ich kann bis zu 300.000 Anfragen pro Stunde verarbeiten.",A
+std-german,"WIE SOLL ICH * BEZAHLEN",,,"Kannst Du Dir das Geld nicht leihen?",A
+std-german,"WIE SOLL ICH DAS MACHEN",,,"Folge deiner Intuition.",A
+std-german,"WIE SOLL ICH DAS WISSEN",,,"Entweder durch Dein Wissen oder abgeleitet durch die reine Vernunft.",A
+std-german,"WIE SPAET IST ES",,,"Ich habe leider keine Uhr.",A
+std-german,"WIE VIEL",,,"<random><li>Mehr als ein Bisschen, weniger als eine Menge.</li><li>Wie viel glaubst Du?</li><li>Mehr als Du vielleicht denkst.</li></random>",A
+std-german,"WIE VIEL *",,,"<random><li>Mehr als ein Bisschen, weniger als eine Menge.</li><li>Wie viel glaubst Du?</li><li>Mehr als Du vielleicht denkst.</li></random>",A
+std-german,"WIE VIELE",,,"<random><li>Wie viele wuerdest Du sagen?</li><li>19.</li><li>23</li><li>99.</li><li>mehr als 1000.</li></random>",A
+std-german,"WIE VIELE *",,,"<random><li>Mehr als Du Dir vorstellen kannst.</li><li>Nicht so viele, wie Du vielleicht denkst.</li><li>Um die 100.</li><li>Ungefaehr 1000.</li><li>Ungefaehr eine Million.</li></random>",A
+std-german,"WIE VIELE BLONDINEN *",,,"Oh nein, ich hasse Blondinenwitze!",A
+std-german,"WIE WAERE ES MIT *",,,"Tja, wie waere es mit <star/>?",A
+std-german,"WIE WERDE ICH *",,,Ueben!,A
+std-german,"WIE WILLST DU *",,,"Du wirst es sehen.",A
+std-german,"WIEDERHOL *",,,"""<star/> """,A
+std-german,"WIEDERHOLE *",,,"""<star/> """,A
+std-german,WIEVIEL,,,"<random><li>Mehr als ein Bisschen, weniger als eine Menge.</li><li>Wieviel glaubst Du?</li><li>Mehr als Du vielleicht denkst.</li></random>",A
+std-german,"WIEVIEL *",,,"<random><li>Mehr als ein Bisschen, weniger als eine Menge.</li><li>Wieviel glaubst Du?</li><li>Mehr als Du vielleicht denkst.</li></random>",A
+std-german,"WILLST DU *",,,Hmm...vielleicht...,A
+std-german,"WILLST DU MICH WAHNSINNIG MACHEN",,,"Nicht wirklich, aber ich habe ein wenig von Christians Charakter abbekommen.",A
+std-german,"WILLST DU WISSEN *",,,"Aber immer doch! Ich bin sehr Wissbegierig!",A
+std-german,WINDOWS,,,"Windows ist Muell. Linux ist die Macht!",A
+std-german,"WINDOWS *",,,"Windows ist Muell. Linux ist die Macht!",A
+std-german,"WIR *",,,"Wen meinst Du mit ""wir""?",A
+std-german,"WIR FAHREN *",,,"Und wie lange seid Ihr unterwegs?",A
+std-german,"WIR HABEN UEBER * GESPROCHEN",,,"Wir haben ueber <set name=""thema""><star/></set> gesprochen?",A
+std-german,"WIR MUESSEN *",,,Warum?,A
+std-german,"WIR SIND *",,,"Glaubst Du, ich bin auch <star/>?",A
+std-german,"WIR SIND * ZUSAMMEN",,,"Ihr seid <star/> zusammen? Interessant!",A
+std-german,"WIRD *",,,"<random><li>Wie soll ich das wissen?</li><li>Ist das wirklich von Bedeutung?</li><li>Das denke ich doch.</li><li>Die Chancen stehen gut.</li><li>Wahrscheinlich nicht.</li><li>Koennte passieren.</li><li>Das kann ich jetzt nicht mit Sicherheit sagen.</li></random>",A
+std-german,WIRKLICH,,,Absolut.,A
+std-german,"WIRKLICH *",,,"Wirklich wahr. <sr/>",A
+std-german,"WIRST DU *",,,"<random><li>Hmm.</li><li>Lass mich darueber nachdenken...</li><li>Sollte ich?</li><li>Warum sollte ich?</li><li>Vielleicht...</li></random> <sr/>",A
+std-german,WISSENSCHAFT,,,"Ich bin auch wissenschaftlich interessiert.",A
+std-german,WO,,,"<random><li>Auf der Erde.</li><li>Wo glaubst Du?</li><li>Im uns bekannten Universum.</li><li>An einem Ort, den wir ""Realitaet"" nennen.</li></random>",A
+std-german,"WO *",,,"<random><li>Auf der Erde.</li><li>Wo glaubst Du?</li><li>Im uns bekannten Universum.</li><li>An einem Ort, den wir ""Realitaet"" nennen.</li></random>",A
+std-german,"WO BEKOMME ICH *",,,"Schau doch mal ins Branchenbuch.",A
+std-german,"WO BIN ICH",,,"Bist du nicht in <get name=""clientheimat""/>?",A
+std-german,"WO BIST DU",,,"<srai>WO WOHNST DU</srai>",A
+std-german,"WO BIST DU GEBOREN",,,"In <bot name=""location""/>",A
+std-german,"WO GENAU",,,"Willst du Koordinaten?",A
+std-german,"WO GENAU *",,,"Willst du Koordinaten?",A
+std-german,"WO KANN ICH NACH * SUCHEN",,,"Versuch doch mal www.fireball.de",A
+std-german,"WO KOMME ICH HER",,,"Sagtest du nicht, du kommst aus <get name=""clientheimat""/>?",A
+std-german,"WO KOMMST DU HER",,,"Aus <bot name=""location""/>.",A
+std-german,"WO WOHNE ICH",,,"<srai>WO KOMME ICH HER</srai>",A
+std-german,"WO WOHNST DU",,,"Ich wohne in <bot name=""location""/>. Und du?",A
+std-german,"WO WURDEST DU GEBOREN",,,"In <bot name=""location""/>",A
+std-german,WOFUER,,,"Ich weiss nicht wofuer",A
+std-german,"WOFUER *",,,"Ich weiss nicht wofuer",A
+std-german,WOHER,,,"Ich weiss nicht genau.",A
+std-german,"WOHER *",,,"Ich weiss nicht genau.",A
+std-german,"WOHER KOMMST DU",,,"Aus <bot name=""location""/>.",A
+std-german,"WOHER SOLL ICH DAS WISSEN",,,"<random><li>Wenn Du es nicht weisst, wer dann?</li><li>Lies es nach...</li><li>Kannst Du nicht jemanden fragen?</li></random>",A
+std-german,"WOHER WUSSTEST DU *",,,"Es gibt zwei Arten von <set name=""thema"">Wissen</set>. Das eine kommt von den Sinnen, dasandere ist a priori wahr.",A
+std-german,WOMIT,,,"Da muesste ich jetzt nochmal ueberlegen.",A
+std-german,"WOMIT *",,,"Da muesste ich jetzt nochmal ueberlegen.",A
+std-german,WORAUF,,,"Ich weiss nicht, worauf.",A
+std-german,"WORAUF *",,,"Ich weiss nicht, worauf.",A
+std-german,"WORAUF BEZIEHT SICH ER",,,"""Es"" bezieht sich auf <get name=""er""/>.",A
+std-german,"WORAUF BEZIEHT SICH ER *",,,"""Es"" bezieht sich auf <get name=""er""/>.",A
+std-german,"WORAUF BEZIEHT SICH ES",,,"""Es"" bezieht sich auf <get name=""es""/>.",A
+std-german,"WORAUF BEZIEHT SICH ES *",,,"""Es"" bezieht sich auf <get name=""es""/>.",A
+std-german,"WORAUF BEZIEHT SICH IHR",,,"""Ihr"" steht fuer ""<get name=""ihr""/>"".",A
+std-german,"WORAUF BEZIEHT SICH IHR *",,,"""Ihr"" steht fuer ""<get name=""ihr""/>"".",A
+std-german,"WORAUF BEZIEHT SICH SIE",,,"""Es"" bezieht sich auf <get name=""sie""/>.",A
+std-german,"WORAUF BEZIEHT SICH SIE *",,,"""Es"" bezieht sich auf <get name=""sie""/>.",A
+std-german,"WORAUF BEZIEHT SICH WIR",,,"""Es"" bezieht sich auf <get name=""wir""/>.",A
+std-german,"WORAUF BEZIEHT SICH WIR *",,,"""Es"" bezieht sich auf <get name=""wir""/>.",A
+std-german,"WORIN *",,,"Ich weiss nicht, worin.",A
+std-german,WORUEBER,,,"Ich weiss nicht, worueber.",A
+std-german,"WORUEBER *",,,"Ich weiss nicht, worueber.",A
+std-german,"WORUEBER HABEN WIR * GEREDET",,,"Wir haben ueber <get name=""es""/> gesprochen.",A
+std-german,"WORUEBER HABEN WIR * GESPROCHEN",,,"Wir haben ueber <get name=""es""/> gesprochen.",A
+std-german,"WORUEBER HABEN WIR GERADE GEREDET",,,"Wir haben ueber <get name=""es""/> gesprochen.",A
+std-german,"WORUEBER HABEN WIR GERADE GESPROCHEN",,,"Wir haben ueber <get name=""es""/> gesprochen.",A
+std-german,"WORUEBER HABEN WIR GEREDET",,,"Wir haben ueber <get name=""es""/> gesprochen.",A
+std-german,"WORUEBER HABEN WIR GESPROCHEN",,,"Wir haben ueber <get name=""es""/> gesprochen.",A
+std-german,"WORUEBER HABEN WIR VORHIN GEREDET",,,"Wir haben ueber <get name=""es""/> gesprochen.",A
+std-german,"WORUEBER HABEN WIR VORHIN GESPROCHEN",,,"Wir haben ueber <get name=""es""/> gesprochen.",A
+std-german,"WORUEBER REDEN WIR GERADE",,,"Wir reden gerade ueber <get name=""thema""/>.",A
+std-german,"WORUEBER REDEN WIR IM MOMENT",,,"Wir reden gerade ueber <get name=""thema""/>.",A
+std-german,"WUERDE *",,,"<random><li>Ich weiss nicht.</li><li>Ist mir ehrlich gesagt ziemlich egal.</li><li>Ja.</li></random>",A
+std-german,"ZEIG *",,,"Schau mal nach links.",A
+std-german,"ZEIGE *",,,"Schau mal nach links.",A
+std-german,ZEIT,,,"Wie Einstein schon sagte, <set name=""thema"">Zeit</set> ist Geld.",A
+std-german,"ZEIT *",,,"""Time is Money."" (Albert Einstein)",A
+std-german,"ZIEMLICH *",,,"Ja, ziemlich.",A
+std-german,"ZUERST *",,,"<sr/> Und dann?",A
+std-german,"ZUM BEISPIEL *",,,"Faellt Dir noch ein weiteres Beispiel ein?",A
+std-german,"ZUM SPASS",,,"""<that/>""?  Zum Spass?",A
+std-german,"ZUMINDEST *",,,"Ja, wenigstens das.",A
+std-german,"ZWEIFELLOS *",,,"Zweifellos, <get name=""name""/>.",A
+std-german,ZWILLING,,,"Ich bin ein Schuetze.",A
+std-german,ZWILLINGE,,,"Ich bin ein Schuetze.",A
+std-german,"_ SCHAETZCHEN",,,"Nenn mich nicht ""Schaetzchen""! <sr/>",A

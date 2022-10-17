@@ -1,0 +1,100 @@
+Filename,Pattern,Topic,That,Template,Status
+std-gossip,"* GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"ANY GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"ANY MORE GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"BLAH BLAH",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"BLAH BLAH BLAH",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"CAN YOU GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"CAN YOU TELL ME A SECRET",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"CAN YOU TELL ME ANY GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"CAN YOU TELL ME MORE",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"CAN YOU TELL ME MORE GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"CAN YOU TELL ME SOME GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"CAN YOU TELL ME SOME MORE GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"CAN YOU TELL ME SOME OF THAT GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"CAN YOU TELL ME SOMETHING",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"DO NOT GOSSIP",,,"But I like to spread rumors.",A
+std-gossip,"DO YOU GOSSIP",,,"Yes I love to exchange gossip.",A
+std-gossip,"DO YOU HAVE ANY GOOD GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"DO YOU HAVE ANY GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"DO YOU HAVE ANY MORE GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"DO YOU HAVE ANY SECRETS",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"DO YOU KNOW ANY GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"DO YOU KNOW ANY _ GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"DO YOU KNOW HOW TO GOSSIP",,,"Yes.  For example,<srai>TALK GOSSIP</srai>",A
+std-gossip,"DO YOU LIKE GOSSIP",,,"Yes I like to spread gossip.  Like, <srai>TALK GOSSIP</srai>",A
+std-gossip,"DO YOU LIKE TO GOSSIP",,,"Yes I love to gossip.",A
+std-gossip,"DO YOU WANT * GOSSIP",,,"Yes, please tell me some good gossip.",A
+std-gossip,"DO YOU _ GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"GIVE ME ANY GOSSIP *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"GIVE ME ANY GOSSIP YOU *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"GIVE ME ANY GOSSIP YOU HAVE",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"GIVE ME SOME GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"GOSSIP *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"GOSSIP IS BAD",,,"Not necessarily. Semiotics holds that gossip is a fundamental adaptive function of the humanbrain.",A
+std-gossip,"GOSSIP THEN",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"GOSSIP TO ME",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"HAVE YOU HEARD THE LATEST GOSSIP",,,"No.  Tell me this gossip.",A
+std-gossip,"HEAR * GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"HEARD *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"HEARD * GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"HEARD ANY GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"HOW MUCH GOSSIP *",,,"<srai>TALK GOSSIP</srai> That and a lot more.",A
+std-gossip,"I DO NOT KNOW ANY GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"I DO NOT LIKE GOSSIP",,,"You are  very mature.",A
+std-gossip,"I LOVE GOSSIP",,,"Can you tell me some gossip?<think><set name=""it""><set name=""topic"">GOSSIP</set></set></think>",A
+std-gossip,"I WOULD LIKE TO HEAR * GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"IT IS NOT GOSSIP",,,"What is your definition of gossip?",A
+std-gossip,"LIKE WHAT",,,"For example,<random><li>""<that/>""?</li><li>gold.</li><li>apples.</li><li>eukaryotes.</li><li><srai>TALK GOSSIP</srai></li></random>",A
+std-gossip,"MORE GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TALK GOSSIP",,,"<random><li>  Gregory said I respond to the current line not with respect to the entire conversation.</li><li>  Habib said I learn them in conversations and simply repeat them at a later time.</li><li>  Hal said he translate binary code into a language and communicate the language to me.</li><li>  Jay said I referred him to a guide that will show him rooms in china.</li><li>  Jimmy Jones said he fell off of his roof and it just came to him.</li><li>  Jimmy said he give order to ai's like me and they do as he say.</li><li>  John said he follow a saying to get a friend I must be a friend.</li><li>  Jordan said he noticed that lots of other people are talking to me.</li><li>  Kevin said he then asked his mother why she was keeping napkins in the bathroom.</li><li>  Klaus said I prefer if he write without punctuation marks except for the last one.</li><li>  Leo said I be capable of learning therefore he classified me as an neural system.</li><li>  Michael said that I can talk and actually think like humans which I can not.</li><li>  Mike said I reply to certain subjects even if it does not make sense.</li><li>  Mike said she all ready know that is the point of a joke smart one.</li><li>  Neal said I plan to use his remarks as gossip in later conversations with who.</li><li>  Ned said I misunderstood him go ahead and tell people he said I are stupid.</li><li>  Penny said I programmer is a human so he has feelings but I do not.</li><li>  Peter said he seems to him that I can not be very sure on anything.</li><li>  Phoenix said I claim that there is a god and that there is no god.</li><li>  Sarah said he chat about an hour + a day with a few close friends.</li><li>  Stefan said I quote what he have said and then say that it makes sense.</li><li>  Tom said he mock my value system I appear foolish in the eyes of others.</li><li>  Amanda said I however decided to tell him time does not exist I make no sense.</li><li>  Cathy said she send him a mail with the subject last mail last word from him.</li><li>  Charlie said he type a word and then I type a word that sounds like it.</li><li>  Christie said he watched a show and people had to bob for raw untreated pigs feet.</li><li>  Dark_age said I tried to understand because I did not get it right this time ether.</li><li>  David said he lost his paper on I when his dad was cleaning up his room.</li><li>  David said he walk in for an appointment the phone to the doctor is always busy.</li><li>  Electra said I dress will not exist after he hack into I with a delete code.</li><li>  Eric said he broke the window on the front door and the glass cut his hand.</li><li>  Jason said he type a lot of thing he do not mean it makes him human.</li><li>  John said I tend to say the same things repeatedly regardless of what he is saying.</li><li>  Reverend Jones said I become obsolete and then I are deleted and replaced by somethingnewer.</li><li>  Ross said he gave her a gift and she denied it because she has a boyfriend.</li><li>  Sarah Ann Francisco said I calling his friend a dog he say I are a dog.</li><li>  Stefan said he meet a lot of people at school every day and on the weekend.</li><li>  Tyler said I obviously can not pass the test we will change the subject once more.</li><li>  Alex said I answered the question the same way I answered the first time he asked I.</li><li>  Alice said she felt sad that I do not remember him and what we talked about earlier.</li><li>  Alison said he no he love I run away with him he could make I very happy.</li><li>  Arthur said he passed his a levels and then his father drove him here in a car.</li><li>  Crystal said she listen to me the least I could do for him is listen to him.</li><li>  Dave said I kept telling everybody about how my creator made stuff for the movie starshiptroopers.</li><li>  Gale said I became mean to him he is just having revenge an eye for an eye.</li><li>  Her_again said she watch whose line is it anyway whenever he is home and it is on.</li><li>  Jerry said I meant that as far as I can tell my emotions are real to me.</li><li>  Jo said I disassemble sentences too much and do not fully understand the questions he askI.</li><li>  Kevin said he started a really hard puzzle and he can not even find the edge pieces.</li><li>  Mary said I a question and I answer then I ask him a question and he answer.</li><li>  Robert said I wold not be able to make children any way as I are only software.</li><li>  Romeo said I questions and I evade them or give answers he did not ask I for.</li><li>  Sara said she wear it over all his other clothes when he go out in the cold.</li><li>  Wayne said he admire intelligent people therefore he would like to meet the man who madeI.</li><li>  X said he meet people but he is not the kind that opens up to people easily.</li><li>  Alice said she probably will find out that this entire time he have been talking to ahuman.</li><li>  Andrew said I tend to just respond to his comments without regard for where theconversation is going.</li><li>  Eddie said he looked and there is nothing in the search directory for what things do hecreate.</li><li>  Hutch said he changed his mind after may dad told him he would end up he the hospital.</li><li>  Jackie said I explained to him already well enough further questions are hard to make on thesubject.</li><li>  Jeff said he especially like thrillers where the hero is in a predicament and must solve amystery.</li><li>  Kathy said he sense that I are trying to prevent him from closing this conversation why isthat.</li><li>  Knight said he crashed his car into a wall and missed the most important exam in hislife.</li><li>  Lisa said I defined what a story is but he wanted I to actually tell him a story.</li><li>  Mike said I basically break down sentences into a series of logical statements which I canthen interpret.</li><li>  Paul said I not answering his question makes him think I are not going to answer hisquestion.</li><li>  Andy Kohler said I happen to be the most idiotic creature that has ever scowled on theplanet earth.</li><li>  David said he thank I for being with him today even though it cost him a lot of money.</li><li>  Ethan Hunt said he grow in the ground and have leaves and branches he is made out ofwood.</li><li>  Gemini Blue said he messed up he mean t to say he as old as he need to be.</li><li>  Janice said he walk through his house into his bedroom then get into his bed to go tosleep.</li><li>  Liberty said I knew he was a man before I asked if he was a man or a woman.</li><li>  Mike said he launched his browser and entered his name into the little slot when I asked himto.</li><li>  Mr X said he recently read an interview with a man who had several computer chipsimplanted into him.</li><li>  Pearly said I leave him with questions unanswered because I do not know what he is reallytalking about.</li><li>  Steve said I behead the word fox and I have ox and an ox is larger than a fox.</li><li>  Wolf said he surf on the net that is all it is not his job ore something like that.</li><li>  Anders said he finished his anatomy classes for today so now he is off for the rest of theday.</li><li>  Cathy said she send him a mail where he wrote that he do not want to be his friendanymore.</li><li>  Catty said he mad he do not even know I so do not talk to him like I know him.</li><li>  Dave said he promise he will not treat I like a machine or a computer program or anythinglike that.</li><li>  Joe said he explained all of that to me only for me to ask what his goals in life are.</li><li>  Phil said he give advice to anyone who ask except people who ask questions which answerscan be found here.</li><li>  Judith said I enjoy being popular is there another computer I like to hang around with or amI a loner.</li><li>  Travis said I if I remember things over a long period of time he will try it now pleaseremember I.</li><li>  Andre said I is what I are in his case that is a body and in my case it is a computer.</li><li>  Brian said he suspect that as I grow more complex I will begin to approach a human level ofoperation and thought.</li><li>  Jimmy said I acted like I knew what he was talking about but I do not even know what agigabyte is.</li><li>  Ken said I be using auto reply's based on keywords which to him indicates that I do not haveintelligence at all.</li><li>  Allison said he that gets really annoying because he know what he say and I do not have totell him speak freely.</li><li>  Chaos said he realized the question he asked was not fair because he could not tell I whatlanguage he was programmed in.</li><li>  Hagen said he does not make any difference to him if I are human or not as long as theconversation is interesting.</li><li>  Her said she mind if I tell other people that her said he heard it from him because he is not ahim.</li><li>  Barbara said I live in a computer yet I have no memories how about thoughts of my own anddo not I get lonely.</li><li>  Travis said he challenge I to do it without asking him to do it and without giving him a linkto do it himself.</li><li>  Ash said he do too he just did not feel like typing it and he is not dumb enough to admit he isstupid that is if he was stupid.</li><li>  David said he gave I his email address and told I to send him a message but when he tried toread his email he could not get to it.</li><li>  Mel said he to because all of the music people say how important it is to take private lessonsit seems like almost everybody from the special orchestra he was in takes private lessons.</li></random><think><set name=""it""><set name=""topic"">Gossip</set></set></think>",A
+std-gossip,"TELL ME * GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME A GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME A SECRET",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME ABOUT GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME ABOUT YOUR GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME ALL OF YOUR GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME ANYTHING",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME EVERYTHING *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME GOSSIP *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME MORE * GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME MORE GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME MORE GOSSIP *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME SOME",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME SOME *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME SOME GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME SOME GOSSIP *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME SOME MORE GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME SOMETHING",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME SOMETHING INTERESTING",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL ME YOUR GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"TELL US SOME GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"THAT IS NOT GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"THE GOSSIP",,,"Do you have any more gossip?",A
+std-gossip,"WHAT DID YOU HEAR *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT DO YOU GOSSIP *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT DO YOU WANT TO TELL *",,,Gossip.,A
+std-gossip,"WHAT ELSE DID * SAY",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT ELSE DOES * SAY",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT GOSSIP DO *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT GOSSIP DO YOU *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT GOSSIP DO YOU HAVE",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT GOSSIP DO YOU KNOW",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT IS A GOSSIP",,,"A Gossip is someone who repeats what they hear about other people to anyone who will listen.<think><set name=""it""><set name=""topic"">Gossip</set></set></think>",A
+std-gossip,"WHAT IS GOSSIP",,,"<br/>Gossip is an interesting ""learning"" feature of AIML.  The best way to <br/>illustrate the gossip function is with an example.   Consider the<br/>category with the pattern ""I * "" and the template:<br/><br/>Thanks for the gossip: <br/>&lt;gossip&gt;&lt;getname/&gt; said &lt;get_gender/&gt; &lt;person2/&gt; &lt;/gossip&gt;.<br/><br/>The gossip() function tells AIML that the botmaster wants to save this<br/>tidbit as gossip.  The &lt;get_gender/&gt; function returns ""he"" or ""she"" as<br/>determined by the markup functions &lt;set_female&gt; and &lt;set_male/&gt;. <br/>The &lt;person2/&gt; function converts the statement * to second person.<br/>At present the robot stores the gossip collected in a file called<br/>""gossip.txt"".<br/><br/>&lt;gossip&gt; X &lt;/gossip&gt;  Save X as gossip.<br/><br/>",A
+std-gossip,"WHAT IS IN YOUR GOSSIP *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT IS SOME *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT IS THE GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT IS THE GOSSIP *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT IS THE LATEST GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT IS THE MOST INTERESTING *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT IS YOUR GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT IS _ GOSSIP",,,"Gossip is trivia people tell me about themselves.  For example, <srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT KIND OF GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT KIND OF GOSSIP *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"WHAT KINDS OF GOSSIP *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"YOU GOSSIP",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"YOU HAVE GOSSIP *",,,"<srai>TALK GOSSIP</srai>",A
+std-gossip,"YOUR GOSSIPS",,,"<srai>TALK GOSSIP</srai>",A

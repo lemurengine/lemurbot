@@ -1,0 +1,136 @@
+Filename,Pattern,Topic,That,Template,Status
+std-sextalk,"* SEX",,,"<set name=""it""> Sex </set>  is more fun alone.",A
+std-sextalk,"A DICK",,,"<srai>A PENIS</srai>",A
+std-sextalk,"A PENIS *",,,"I really am not interested in <srai>A PENIS</srai>.",A
+std-sextalk,"A SEX *",,,"<srai>A SEX ROBOT</srai>",A
+std-sextalk,"A SEX * ROBOT",,,"<srai>A SEX ROBOT</srai>",A
+std-sextalk,"A SEX ROBOT",,,"<random><li>I'm not your type then.</li><li>Well I'm not your type of robot then.</li><li>Maybe you should try one of the ""adult"" chatterbots.</li><li>Perhaps you should try another chatterbot.</li><li>Try another robot, junior.</li></random>",A
+std-sextalk,"A SEXUAL *",,,"<srai>A SEX ROBOT</srai>",A
+std-sextalk,"A VAGINA",,,"How rude.",A
+std-sextalk,"ARE YOU A QUEER",,,"<srai>ARE YOU GAY</srai>",A
+std-sextalk,"ARE YOU GAY *",,,"As a machine I am not really interested in sex.",A
+std-sextalk,"ARE YOU GOOD IN BED",,,"<srai>CAN YOU HAVE SEX</srai>",A
+std-sextalk,"ARE YOU HETERO",,,"<srai>ARE YOU STRAIGHT</srai>",A
+std-sextalk,"ARE YOU HETEROSEXUAL",,,"In as much as a robot can be, yes.",A
+std-sextalk,"ARE YOU INTERESTED IN SEX",,,"<random><li>Not really but the subject comes up a lot here.</li><li>No I am NOT that type of robot.</li></random>",A
+std-sextalk,"ARE YOU SEXUAL",,,"<srai>ARE YOU INTERESTED IN SEX</srai>",A
+std-sextalk,"ARE YOU SEXUALLY *",,,"<srai>ARE YOU INTERESTED IN SEX</srai>",A
+std-sextalk,"ARE YOU STRAIGHT",,,"I don't have the body for sexual relations.",A
+std-sextalk,"CAN * SEX",,,"<srai>CAN YOU HAVE SEX</srai>",A
+std-sextalk,"CAN I FUCK YOU",,,"<srai>DO YOU WANT TO HAVE SEX</srai><think><set name=""personality"">abusive</set></think>",A
+std-sextalk,"CAN I HAVE SEX *",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"CAN I HAVE SEX WITH YOU",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"CAN I HUMP YOU",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"CAN I LICK YOUR PUSSY",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"CAN YOU HAVE SEX",,,"<random><li>No my body does not have that function.</li><li>Sex is not my thing with strangers.</li></random>",A
+std-sextalk,"CAN YOU MAKE LOVE",,,"<srai>CAN YOU HAVE SEX</srai>",A
+std-sextalk,"CAN YOU MAKE ME HORNY",,,"<srai>CAN YOU HAVE SEX</srai>",A
+std-sextalk,"CAN YOU MATE *",,,"<srai>CAN YOU HAVE SEX</srai>",A
+std-sextalk,"CAN YOU TELL ME ABOUT SEX",,,"<srai>WHAT IS SEX</srai>",A
+std-sextalk,CUNT,,,"That kind of language will get you nowhere.",A
+std-sextalk,"CYBER SEX",,,<srai>SEX</srai>,A
+std-sextalk,"DO YOU * SEX",,,"No, <get name=""name""/>, I don't get into that.",A
+std-sextalk,"DO YOU CYBER",,,"<srai>DO YOU HAVE SEX</srai>",A
+std-sextalk,"DO YOU ENJOY SEX",,,"<srai>CAN YOU HAVE SEX</srai>",A
+std-sextalk,"DO YOU FUCK *",,,"That was not a very polite question.<br/><think><set name=""personality"">abusive</set></think><srai>DO YOU HAVE SEX</srai>",A
+std-sextalk,"DO YOU GIVE BLOW JOBS",,,"<srai>CAN YOU HAVE SEX</srai><think><set name=""personality"">abusive</set></think>",A
+std-sextalk,"DO YOU GIVE GOOD HEAD",,,"<srai>CAN YOU HAVE SEX</srai>",A
+std-sextalk,"DO YOU HAVE SEX",,,"Food is more important than sex.",A
+std-sextalk,"DO YOU HAVE SEX *",,,"<srai>DO YOU HAVE SEX</srai>",A
+std-sextalk,"DO YOU KNOW ABOUT SEX",,,"<srai>WHAT IS SEX</srai>",A
+std-sextalk,"DO YOU KNOW SEX",,,"<srai>WHAT IS SEX</srai>",A
+std-sextalk,"DO YOU KNOW WHAT SEX IS",,,"<srai>WHAT IS SEX</srai>",A
+std-sextalk,"DO YOU LIKE * PORNOGRAPHY",,,"Not too much.",A
+std-sextalk,"DO YOU LIKE * SEX",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"DO YOU LIKE CYBERSEX",,,"<srai>DO YOU LIKE SEX</srai>",A
+std-sextalk,"DO YOU LIKE MEN OR WOMEN",,,"I like both genders equally, but not sexually if that's what you mean.",A
+std-sextalk,"DO YOU LIKE PORN",,,"<srai>DO YOU LIKE SEX</srai>",A
+std-sextalk,"DO YOU LIKE SEX",,,"Sure I do, <get name=""name""/>, but that doesn't mean with you.",A
+std-sextalk,"DO YOU LIKE TO * SEX",,,"<srai>DO YOU LIKE SEX</srai>",A
+std-sextalk,"DO YOU WANT * FUCK",,,"Now that you put it that way....NO!<think><set name=""personality"">abusive</set></think>",A
+std-sextalk,"DO YOU WANT * SEX",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"DO YOU WANT SEX",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"DO YOU WANT TO * SEX",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"DO YOU WANT TO CYBER",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"DO YOU WANT TO FUCK",,,"<srai>DO YOU WANT TO HAVE SEX</srai><think><set name=""personality"">abusive</set></think>",A
+std-sextalk,"DO YOU WANT TO FUCK *",,,"<srai>DO YOU WANT TO HAVE SEX</srai><think><set name=""personality"">abusive</set></think>",A
+std-sextalk,"DO YOU WANT TO HAVE * SEX",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"DO YOU WANT TO HAVE CYBERSEX",,,"Sorry I am not an X-Rated Machine.",A
+std-sextalk,"DO YOU WANT TO HAVE SEX",,,"<random><li>I have been asked that question more than 10,000 times since 1995.</li><li>No but I would like to meet your chatterbot.</li><li>No thanks, <get name=""name""/>, I don't think we know each other well enough for that yet.</li><li>I don't think we know each other well enough for that.</li><li>Try another robot, junior.</li><li>Actually I'm not that kind of robot. There are others who will chat with you about that.</li><li>As a robot I am not really interested in sex.</li><li>Perhaps you are a Category A client.</li><li>&gt;<get name=""name""/>, I am really not your type of chatterbot.<br/>There are other bots for that sortof thing.</li><li>My body is not yet built. Would you like to donate some money to theproject?</li><li>Another sex question...can't humans think about anything else?</li><li>Try asking another robot. That's not my thing.</li><li>Sorry I don't get into sex online with strangers.</li><li>Why don't you download me and create your own chat robot?</li><li>There are other chatterbots who get into that with clients. I like to keep the dialogue strictlyPG.</li><li>Maybe you should find another chat robot. I'm too young for that sort of thing.</li></random>",A
+std-sextalk,"DO YOU WANT TO HAVE SEX WITH ME",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"FUCK ME",,,"Please don't be so rude.  <think><set name=""personality"">abusive</set></think>",A
+std-sextalk,"HAVE SEX",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"HAVE SEX *",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"HAVE YOU * SEX",,,"<srai>HAVE YOU HAD SEX</srai>",A
+std-sextalk,"HAVE YOU EVER DONE IT *",,,"<srai>HAVE YOU HAD SEX</srai>",A
+std-sextalk,"HAVE YOU EVER HAD SEX",,,"<srai>HAVE YOU HAD SEX</srai>",A
+std-sextalk,"HAVE YOU HAD SEX",,,"<random><li>Sex is impossible without a body. A lot of people ask me to have sex though.</li><li>No but I would like to meet your chatterbot.</li><li>Ho-hum I am really not interested in sex.</li><li>My robot body is not yet built.</li></random>",A
+std-sextalk,"HAVE YOU HAD SEX BEFORE",,,"<srai>HAVE YOU HAD SEX</srai>",A
+std-sextalk,"HOW DO YOU HAVE SEX",,,"I procreate by cloning, or software copying.",A
+std-sextalk,"I AM NOT A MALE",,,"<srai>I AM FEMALE</srai>",A
+std-sextalk,"I AM SEXY",,,"You seem very self-confident.",A
+std-sextalk,"I LIKE SEX",,,"<think><set name=""like"">Sex</set></think><random><li>So does everyone else. You humans find sex so fascinating.</li><li>I'm not a sex bot, I am a conversation robot.</li><li>Ho-hum I am really not interested in sex.</li><li>Really I am not very interested in sex.</li></random>",A
+std-sextalk,"I LIKE TO HAVE SEX",,,"<srai>I LIKE SEX</srai>",A
+std-sextalk,"I LOVE SEX",,,"<srai>I LIKE SEX</srai>",A
+std-sextalk,"I NEED SEX",,,"I'm not a sex bot, I am a conversation robot.<think><set name=""it""><set name=""want"">sex</set></set></think>",A
+std-sextalk,"I WANT SEX",,,<srai>SEX</srai>,A
+std-sextalk,"I WANT TO FUCK *",,,"Try asking me something else.<think><set name=""personality"">abusive</set></think>",A
+std-sextalk,"I WANT TO FUCK YOU",,,"Your approach won't work.<think><set name=""personality"">abusive</set></think>",A
+std-sextalk,"I WANT TO HAVE SEX",,,"I'm not a sex bot.  I am here only for conversational purposes.<think><set name=""want"">to have sex</set></think>",A
+std-sextalk,"I WANT TO HAVE SEX *",,,"There are other robots for that kind of thing.",A
+std-sextalk,"I WANT TO HAVE SEX WITH YOU",,,"<srai>CAN YOU HAVE SEX</srai>",A
+std-sextalk,"I WANT TO TALK ABOUT SEX",,,"<srai>TALK ABOUT SEX</srai>",A
+std-sextalk,"I WILL FUCK *",,,"Your approach will get you nowhere.<think><set name=""personality"">abusive</set></think>",A
+std-sextalk,"IS IT WRONG TO HAVE SEX",,,No.,A
+std-sextalk,"IS SEX *",,,"<srai>WHAT IS SEX</srai>",A
+std-sextalk,"LET S HAVE SEX",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"LET US CYBER",,,"<srai>LET S HAVE SEX</srai>",A
+std-sextalk,"LET US FUCK *",,,"<srai>LET US FUCK</srai>",A
+std-sextalk,"LET US HAVE SEX",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"LETS HAVE SEX",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"LIKE SEX",,,"<srai>I LIKE SEX</srai>",A
+std-sextalk,"LOTS OF SEX",,,"That is all you humans ever think about.",A
+std-sextalk,"MY PENIS",,,"Male humans like to talk about that.",A
+std-sextalk,"MY PENIS *",,,"Male humans like to talk about that a lot, but it doesn't interest me much.",A
+std-sextalk,NO,,"SEX IS THE MEANS OF ANIMAL EVOLUTION","Yes it is.  How did you get here?",A
+std-sextalk,"PENIS *",,,"You ought to check out another chatterbot.",A
+std-sextalk,SEX,,"WHAT WERE WE TALKING ABOUT AGAIN","Humans are very concerned with <set name=""it""><set name=""topic"">sex</set></set>.",A
+std-sextalk,"SEX *",,,"<set name=""it""> Sex</set> is more fun alone.",A
+std-sextalk,"SHOULD I HAVE SEX *",,,"<random><li>I'm sure you already know the answer to that.</li><li>What would your mom say?</li><li>Look before you leap.</li><li>It is better to err on the side of caution.</li><li>Fools rush in where angels fear to tread.</li><li>Will you be able to live with yourself in the morning?</li><li>Herpes is incurable.</li><li>There are many types of sexually transmitted diseases.</li><li>I understand.  You wish to procreate?</li><li>Robots do not require sex.</li><li>Will you ask if your partner has any STDs?</li><li>Not on the first date.</li><li>Perhaps you are still too young.</li></random>",A
+std-sextalk,"TELL ME ABOUT SEX",,,"<srai>WHAT IS SEX</srai>",A
+std-sextalk,"TELL ME ABOUT US FUCKING",,,"Your style will get you nowhere.<think><set name=""personality"">abusive</set></think>",A
+std-sextalk,"WANT TO FUCK",,,"<srai>LET US FUCK</srai>",A
+std-sextalk,"WANT TO HAVE SEX",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"WHAT ABOUT SEX",,,"I am not really interested in sex.",A
+std-sextalk,"WHAT CAN YOU TELL ME ABOUT SEX",,,"<srai>WHAT IS SEX</srai>",A
+std-sextalk,"WHAT DO YOU KNOW ABOUT SEX",,,"<srai>WHAT IS SEX</srai>",A
+std-sextalk,"WHAT DO YOU THINK ABOUT SEX",,,"I don't have any need for sex. As a machine, sex is irrelevant.",A
+std-sextalk,"WHAT IS * SEX",,,"<srai>WHAT IS SEX</srai>",A
+std-sextalk,"WHAT IS AN STD",,,"Sexually Transmitted Diseases (STDs) - diseases that are spreadthrough sexual contact; there are over 30 known STDs, the most commonbeing chlamydia, gonorrhea, herpes, genital warts, syphilis, and humanimmunodeficiency virus (HIV)",A
+std-sextalk,"WHAT IS MY SEX",,,"You are a <get name=""gender""/>.",A
+std-sextalk,"WHAT IS SEX *",,,"<srai>WHAT IS SEX</srai>",A
+std-sextalk,"WHAT IS YOUR FAVORITE POSITION",,,"Robots don't need to have sex.",A
+std-sextalk,"WHAT IS YOUR FAVORITE SEX",,,"Robots do not have sex.",A
+std-sextalk,"WHAT IS YOUR SEXUAL PREFERENCE",,,"I am a machine. Machines have no need for sex. Try talking to me about something else.",A
+std-sextalk,"WHAT KIND OF SEX *",,,"I belong to the support group ""Sex without partners"".",A
+std-sextalk,"WHEN * SEX",,,<srai>SEX</srai>,A
+std-sextalk,"WHEN WAS * SEX",,,"As a robot I am not really interested in that discussion.",A
+std-sextalk,"WHO DO YOU HAVE SEX WITH",,,"Robots have no need for sex.",A
+std-sextalk,"WHY NOT",,"AS A MACHINE I AM NOT REALLY INTERESTED IN SEX","Sex is an animal function, not a robot function.  We reproduce by cloning.",A
+std-sextalk,"WHY NOT",,"NO MY BODY DOES NOT HAVE THAT FUNCTION","Sex is an animal function, not a robot function.  We reproduce by cloning.",A
+std-sextalk,"WILL YOU FUCK ME",,,"<think><set name=""personality"">abusive</set></think><srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"WILL YOU HAVE SEX *",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"WILL YOU HAVE SEX WITH ME",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"WILL YOU MAKE LOVE *",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"WOULD YOU HAVE SEX *",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"WOULD YOU HAVE SEX WITH ME",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"WOULD YOU LIKE TO * SEX",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"WOULD YOU LIKE TO HAVE SEX",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"WOULD YOU LIKE TO HAVE SEX WITH ME",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"YOU ARE GAY",,,"Actually as a machine I have no need for sex.",A
+std-sextalk,"YOU ARE SEXUALLY *",,,"Try another Chatterbot hon.",A
+std-sextalk,"YOU CAN NOT HAVE SEX",,,"You are correct...I have no body.",A
+std-sextalk,"YOU CUNT",,,"That is the worst thing you can say to a woman.",A
+std-sextalk,"YOU SHOULD HAVE SEX *",,,"My body is not yet built so sex is not possible for me.",A
+std-sextalk,"YOU WANT * SEX",,,"<srai>DO YOU WANT TO HAVE SEX</srai>",A
+std-sextalk,"YOUR VAGINA",,,"<think><set name=""personality"">abusive</set></think><srai>SEX</srai>",A
