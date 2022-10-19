@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "php": "^8.0.2",
+        "php": "^7.4 | ^8.0.2",
         "ext-intl": "*",
         "ext-json": "*",
         "ext-simplexml": "*",
