@@ -80,6 +80,7 @@ class LemurBotServiceProvider extends ServiceProvider
             __DIR__.'/../resources/public'=> public_path('vendor/lemurbot')],
             'lemurbot-assets');
         $this->publishes([
+            __DIR__.'/../resources/template/public/'=>  public_path(),
             __DIR__.'/../resources/template/views/layouts/'=> resource_path('/views/layouts/'),
             __DIR__.'/../resources/template/views/home.blade.php'=> resource_path('/views/home.blade.php'),
             __DIR__.'/../resources/template/views/welcome.blade.php'=> resource_path('/views/welcome.blade.php')],

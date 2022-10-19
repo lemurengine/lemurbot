@@ -12,7 +12,7 @@
             <div class="box-body add-page">
                 <div class="row">
                     <div class="col-md-12">
-                    {!! Form::open(['route' => [$link.'.store', 'data-test'=>$htmlTag.'-create-form', 'class'=>'validate', 'name'=>$htmlTag.'-create']) !!}
+                    {!! Form::open(['route' => $link.'.store', 'data-test'=>$htmlTag.'-create-form', 'class'=>'validate', 'name'=>$htmlTag.'-create']) !!}
 
                         @include($resourceFolder.'.fields')
 

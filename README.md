@@ -60,14 +60,14 @@ If you are installing the Lemur Engine into a fresh application then run this co
 If you already have created your authentication layouts/controllers then you might want to skip this step
 As it will overwrite your existing resources/views/auth and app/Http/Controllers/Auth
 ``` php
-php artisan vendor:publish --tag=lemurbot-auth
+php artisan vendor:publish --tag=lemurbot-auth --force
 ```
 
 ### Publish Public Assets (required)
 This will copy the required asset files to your public folder
 This is required to make forms and validation features to work correctly
 ``` php
-php artisan vendor:publish --tag=lemurbot-assets
+php artisan vendor:publish --tag=lemurbot-assets --force
 ```
 
 ### Publish Widget Assets (required)
