@@ -18,6 +18,7 @@
         "ext-json": "*",
         "ext-simplexml": "*",
         "ext-xml": "*",
+        "laravel/framework": "^9.0",
         "aws/aws-sdk-php-laravel": "^3.7",
         "doctrine/dbal": "^3.4",
         "dyrynda/laravel-cascade-soft-deletes": "^4.2",

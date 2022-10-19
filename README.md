@@ -36,6 +36,11 @@ http://docs.lemurengine.com
 #### Admin Bot Stats
 [<img src="https://docs.lemurengine.com/assets/images/screenshots/stats.png" width="250"/>](https://docs.lemurengine.com/assets/images/screenshots/stats.png)
 
+## Versioning
+This package is built for Laravel 9 and above.
+Compatible Laravel versions are reflected in the LemurBot versions.
+LemurBot 9.x versions are compatible with Laravel 9.x versions
+
 ## Installation
 This package is built for Laravel 9 and above.
 For more information on how to install Laravel check out: https://laravel.com/docs/9.x/installation
