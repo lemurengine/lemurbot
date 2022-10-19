@@ -23,7 +23,7 @@ class LemurInstallAllCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Install an admin user';
+    protected $description = 'Create an admin user, a bot and some AIML knowledge for the bot.';
 
 
     /**
@@ -34,29 +34,53 @@ class LemurInstallAllCommand extends Command
      */
     public function handle(LemurBotInstallAllService $service)
     {
-        $admin = $this->option('admin');
+        if(empty($this->option('admin'))){
+            $this->error('Missing the --admin email address parameter');
+            $this->info('example: php artisan lemur:install-all --admin=admin@lemurengine.local --bot=myBot --data=max');
+            return false;
+        }else{
+            $options['email'] = $this->option('admin');
+        }
         //lets do a little check if the admin user already exists...
-        $user = User::where('email',$admin)->first();
+        $user = User::where('email',$options['email'])->first();
         if($user !== null){
-            if (!$this->confirm('The user '.$admin.' already exists. Do you wish to continue?', true)) {
+            if (!$this->confirm('The user '.$options['email'].' already exists. Do you wish to continue?', true)) {
                 $this->info('Exiting early - no changes made');
                 return false;
             }
         }
-        $botName = $this->option('bot');
-        $bot = Bot::where('name',$botName)->first();
+
+        if(empty($this->option('bot'))){
+            $this->error('Missing the --bot bot name parameter');
+            $this->info('example: php artisan lemur:install-all --admin=admin@lemurengine.local --bot=myBot --data=max');
+            return false;
+        }else{
+            $options['bot'] = $this->option('bot');
+        }
+
+        $bot = Bot::where('name',$options['bot'])->first();
         if($bot !== null){
-            if (!$this->confirm('The bot '.$botName.' already exists. Do you wish to continue?', true)) {
+            if (!$this->confirm('The bot '.$options['bot'].' already exists. Do you wish to continue?', true)) {
                 $this->info('Exiting early - no changes made');
                 return false;
             }
         }
-        $data = $this->option('data');
-        if($data !== null && !in_array($data, ['min','max','none'])){
+
+
+        if(empty($this->option('data'))){
+            $this->error('Missing the --data aiml parameter');
+            $this->info('example: php artisan lemur:install-all --admin=admin@lemurengine.local --bot=myBot --data=max');
+            return false;
+        }else{
+            $options['data'] = $this->option('data');
+        }
+        if($options['data'] !== null && !in_array($options['data'], ['min','max','none'])){
             $this->error('Please choose \'min\', \'max\', \'none\' for your AIML param');
+            $this->info('example: php artisan lemur:install-all --admin=admin@lemurengine.local --bot=myBot --data=max');
             return false;
         }
-        $service->run($admin, $botName, $data);
+        $service->setOptions($options);
+        $service->run();
 
     }
 }

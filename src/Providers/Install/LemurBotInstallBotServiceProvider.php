@@ -1,11 +1,11 @@
 <?php
 
-namespace LemurEngine\LemurBot\Providers;
+namespace LemurEngine\LemurBot\Providers\Install;
 
 use Illuminate\Support\ServiceProvider;
-use LemurEngine\LemurBot\Services\LemurInstallAppService;
+use LemurEngine\LemurBot\Services\Install\LemurBotInstallBotService;
 
-class LemurInstallAppServiceProvider extends ServiceProvider
+class LemurBotInstallBotServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
@@ -21,8 +21,8 @@ class LemurInstallAppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(LemurInstallAppService::class, function () {
-            return new LemurInstallAppService();
+        $this->app->singleton(LemurBotInstallBotService::class, function () {
+            return new LemurBotInstallBotService();
         });
     }
 

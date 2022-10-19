@@ -15,6 +15,7 @@ class LemurBotInstallAdminService extends LemurBotInstallService
 
     public function isolatedRun()
     {
+
         DB::beginTransaction();
         try{
             $this->run();
@@ -44,8 +45,10 @@ class LemurBotInstallAdminService extends LemurBotInstallService
 
         $user = User::firstOrCreate(
             ['email'=> $this->optionEmail],
-            ['name' => 'Test User',
-            'email_verified_at' => Carbon::now()]
+            [
+                'email'=> $this->optionEmail,
+                'name' => 'Test User',
+                'email_verified_at' => Carbon::now()]
         );
 
         if($user->wasRecentlyCreated){
@@ -70,7 +73,7 @@ class LemurBotInstallAdminService extends LemurBotInstallService
         if($role->wasRecentlyCreated){
             $this->displayMessage("Admin role created for user", "success");
         }else{
-            $role->displayMessage("Admin role already exists for user", "notice");
+            $this->displayMessage("Admin role already exists for user", "notice");
         }
 
 

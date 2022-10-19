@@ -12,9 +12,8 @@ use Throwable;
 class LemurBotInstallWordListsService extends LemurBotInstallService
 {
 
-
-    protected $userId;
-    protected $langId;
+    protected string $defaultSpellingSetSlug = 'default-spelling-set';
+    protected string $textTalkExpansionsSlug = 'text-talk-expansions';
 
     public function isolatedRun(){
 
@@ -83,11 +82,13 @@ class LemurBotInstallWordListsService extends LemurBotInstallService
     {
 
             $wordSpellingGroup = WordSpellingGroup::firstOrCreate(
-                ['language_id' =>  $this->langId,
-                'slug' => 'default-spelling-set',
-                'name' => 'Default spelling set',
-                'description' => 'Spelling corrections for common mistakes',
-                'is_master' => 1]
+                ['slug' => $this->defaultSpellingSetSlug, 'user_id' => $this->getUserId()],
+                [
+                    'language_id' =>  $this->langId,
+                    'name' => 'Default spelling set',
+                    'description' => 'Spelling corrections for common mistakes',
+                    'is_master' => 1
+                ]
             );
 
             if($wordSpellingGroup->wasRecentlyCreated){
@@ -98,11 +99,13 @@ class LemurBotInstallWordListsService extends LemurBotInstallService
 
 
         $wordSpellingGroup = WordSpellingGroup::firstOrCreate(
-                ['language_id' =>  $this->langId,
-                'slug' => 'text-talk-expansions',
+            ['slug' => $this->textTalkExpansionsSlug, 'user_id' => $this->getUserId()],
+            [
+                'language_id' =>  $this->langId,
                 'name' => 'Text Talk Expansions',
                 'description' => 'Expand out common text talk spellings',
-                'is_master' => 1]
+                'is_master' => 1
+            ]
             );
 
         if($wordSpellingGroup->wasRecentlyCreated){
@@ -119,7 +122,8 @@ class LemurBotInstallWordListsService extends LemurBotInstallService
         $newCount = 0;
         $existCount = 0;
         $wordTxtSpellingArr = $this->getDefaultSpellingList();
-        $group = WordSpellingGroup::where('user_id', Auth::id())->where( 'slug', 'default-spelling-set')->firstOrFail();
+
+        $group = WordSpellingGroup::where('user_id', $this->getUserId())->where( 'slug', $this->defaultSpellingSetSlug)->firstOrFail();
 
         foreach($wordTxtSpellingArr as $data){
 
@@ -147,7 +151,7 @@ class LemurBotInstallWordListsService extends LemurBotInstallService
         $newCount = 0;
         $existCount = 0;
         $wordTxtSpellingArr = $this->getWordTextSpellingList();
-        $group = WordSpellingGroup::where('user_id', Auth::id())->where( 'slug', 'text-talk-expansions')->firstOrFail();
+        $group = WordSpellingGroup::where('user_id', $this->getUserId())->where( 'slug', $this->textTalkExpansionsSlug)->firstOrFail();
         foreach($wordTxtSpellingArr as $data){
             $wordSpelling = WordSpelling::firstOrCreate(
                 ['word_spelling_group_id' =>  $group->id, 'word' => $data[0]],

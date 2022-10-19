@@ -30,7 +30,7 @@ class LemurInstallAppCommand extends Command
      */
     public function handle(LemurBotInstallAppService $service)
     {
-        $service->run();
+        $service->isolatedRun();
 
     }
 

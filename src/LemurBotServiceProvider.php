@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\Console\AboutCommand;
 use LemurEngine\LemurBot\Console\Commands\LemurInstallAdminCommand;
-use LemurEngine\LemurBot\Console\Commands\LemurInstallAimlCommand;
 use LemurEngine\LemurBot\Console\Commands\LemurInstallAppCommand;
 use LemurEngine\LemurBot\Console\Commands\LemurInstallBotCommand;
 use LemurEngine\LemurBot\Console\Commands\LemurInstallAllCommand;
@@ -16,11 +15,19 @@ use LemurEngine\LemurBot\Facades\LemurPriv;
 use LemurEngine\LemurBot\Providers\AimlUploadServiceProvider;
 use LemurEngine\LemurBot\Providers\BotPropertyUploadServiceProvider;
 use LemurEngine\LemurBot\Providers\BotStatsServiceProvider;
+use LemurEngine\LemurBot\Providers\Install\LemurBotInstallAdminServiceProvider;
+use LemurEngine\LemurBot\Providers\Install\LemurBotInstallAimlServiceProvider;
+use LemurEngine\LemurBot\Providers\Install\LemurBotInstallAllServiceProvider;
+use LemurEngine\LemurBot\Providers\Install\LemurBotInstallAppServiceProvider;
+use LemurEngine\LemurBot\Providers\Install\LemurBotInstallBotServiceProvider;
+use LemurEngine\LemurBot\Providers\Install\LemurBotInstallSectionsServiceProvider;
+use LemurEngine\LemurBot\Providers\Install\LemurBotInstallWordListsServiceProvider;
 use LemurEngine\LemurBot\Providers\MapValueUploadServiceProvider;
 use LemurEngine\LemurBot\Providers\SetValueUploadServiceProvider;
 use LemurEngine\LemurBot\Providers\TalkServiceProvider;
 use LemurEngine\LemurBot\Providers\WordSpellingUploadServiceProvider;
 use LemurEngine\LemurBot\Providers\WordTransformationUploadServiceProvider;
+use LemurEngine\LemurBot\Services\Install\LemurBotInstallAdminService;
 use LemurEngine\LemurBot\Services\LemurPrivilegeService;
 
 class LemurBotServiceProvider extends ServiceProvider
@@ -41,6 +48,17 @@ class LemurBotServiceProvider extends ServiceProvider
         $this->app->register(TalkServiceProvider::class);
         $this->app->register(WordSpellingUploadServiceProvider::class);
         $this->app->register(WordTransformationUploadServiceProvider::class);
+
+        if ( app()->runningInConsole() ){
+            $this->app->register(LemurBotInstallAdminServiceProvider::class);
+            $this->app->register(LemurBotInstallAimlServiceProvider::class);
+            $this->app->register(LemurBotInstallAllServiceProvider::class);
+            $this->app->register(LemurBotInstallAppServiceProvider::class);
+            $this->app->register(LemurBotInstallBotServiceProvider::class);
+            $this->app->register(LemurBotInstallSectionsServiceProvider::class);
+            $this->app->register(LemurBotInstallWordListsServiceProvider::class);
+            // it's console.
+        }
 
         $this->mergeConfigFrom(
             __DIR__ . '/../config/dropdown.php', 'lemurbot.dropdown'
@@ -109,7 +127,6 @@ class LemurBotServiceProvider extends ServiceProvider
             $this->commands([
                 LemurInstallAllCommand::class,
                 LemurInstallAppCommand::class,
-                LemurInstallAimlCommand::class,
                 LemurInstallAdminCommand::class,
                 LemurInstallBotCommand::class,
                 LemurInstallSectionsCommand::class,

@@ -18,15 +18,24 @@ abstract class LemurBotInstallService
     protected $optionData;
     protected $langId;
     protected $botId;
+    protected $userId;
 
 
-    public function __construct(?array $options)
-    {
+    public function setOptions(?array $options){
         $this->optionEmail=$options['email']??null;
         $this->optionBot=$options['bot']??null;
         $this->optionData=$options['data']??null;
     }
 
+
+    public function getOptions(){
+
+        return [
+            'optionEmail'=>$this->optionEmail,
+            'optionBot'=>$this->optionBot,
+            'optionData'=>$this->optionData,
+        ];
+    }
 
     /**
      * run the install (as part of a group)
@@ -80,6 +89,7 @@ abstract class LemurBotInstallService
         }else{
             Auth::login($user);
         }
+        $this->userId = Auth::id();
     }
 
     protected function setLangId(){
@@ -98,6 +108,10 @@ abstract class LemurBotInstallService
         }else{
             $this->botId = $bot->id;
         }
+    }
+
+    public function getUserId(){
+        return $this->userId;
     }
 
 }

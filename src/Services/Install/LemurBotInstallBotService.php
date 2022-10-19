@@ -32,7 +32,7 @@ class LemurBotInstallBotService extends LemurBotInstallService
 
     public function run(){
 
-        $this->displayMessage("Installing Lemur Engine Bot Data", "title");
+        $this->displayMessage("Installing Lemur Engine Bot And It's Property Data", "title");
 
         $this->setupIds();
         $this->botId = $this->createBot();

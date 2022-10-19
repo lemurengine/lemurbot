@@ -10,6 +10,7 @@ use LemurEngine\LemurBot\Models\BotCategoryGroup;
 use LemurEngine\LemurBot\Models\CategoryGroup;
 use LemurEngine\LemurBot\Models\Section;
 use LemurEngine\LemurBot\Services\AimlUploadService;
+use Throwable;
 
 class LemurBotInstallAimlService extends LemurBotInstallService
 {

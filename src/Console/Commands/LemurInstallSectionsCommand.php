@@ -13,7 +13,7 @@ class LemurInstallSectionsCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'lemur:install-sections {admin_email_address}';
+    protected $signature = 'lemur:install-sections {--admin= : The email of the admin user}';
 
     /**
      * The console command description.
@@ -31,8 +31,15 @@ class LemurInstallSectionsCommand extends Command
      */
     public function handle(LemurBotInstallSectionsService $service)
     {
-        $emailAddress = $this->argument('admin_email_address');
-        $service->run($emailAddress);
+        if(empty($this->option('admin'))){
+            $this->error('Missing the --admin email address parameter');
+            $this->info('example: php artisan lemur:install-sections --admin=admin@lemurengine.local');
+            return false;
+        }else{
+            $options['email'] = $this->option('admin');
+        }
+        $service->setOptions($options);
+        $service->isolatedRun();
 
     }
 

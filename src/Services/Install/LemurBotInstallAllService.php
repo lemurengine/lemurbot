@@ -8,7 +8,34 @@ use Throwable;
 class LemurBotInstallAllService
 {
 
-    public function run(?string $email, ?string $bot, ?string $aiml){
+    private LemurBotInstallAppService $installAppService;
+    private LemurBotInstallAdminService $installAdminService;
+    private LemurBotInstallSectionsService $installSectionsService;
+    private LemurBotInstallWordListsService $installWordListsService;
+    private LemurBotInstallBotService $installBotService;
+    private LemurBotInstallAimlService $installAimlService;
+
+    private ?array $options;
+
+    public function __construct(LemurBotInstallAppService $installAppService,
+                                LemurBotInstallAdminService $installAdminService,
+                                LemurBotInstallSectionsService $installSectionsService,
+                                LemurBotInstallWordListsService $installWordListsService,
+                                LemurBotInstallBotService $installBotService,
+                                LemurBotInstallAimlService $installAimlService){
+
+
+        $this->installAppService = $installAppService;
+        $this->installAdminService = $installAdminService;
+        $this->installSectionsService = $installSectionsService;
+        $this->installWordListsService = $installWordListsService;
+        $this->installBotService = $installBotService;
+        $this->installAimlService = $installAimlService;
+
+    }
+
+
+    public function run(){
 
 
         $this->displayMessage("Installing Lemur Engine All Data", "title");
@@ -17,23 +44,23 @@ class LemurBotInstallAllService
         DB::beginTransaction();
 
         try{
-            $installApp = new LemurBotInstallAppService([]);
-            $installApp->run();
+            $this->installAppService->setOptions($this->getOptions());
+            $this->installAppService->run();
 
-            $installAdmin = new LemurBotInstallAdminService(['email'=>$email]);
-            $installAdmin->run();
+            $this->installAdminService->setOptions($this->getOptions());
+            $this->installAdminService->run();
 
-            $installSection = new LemurBotInstallSectionsService(['email'=>$email]);
-            $installSection->run();
+            $this->installSectionsService->setOptions($this->getOptions());
+            $this->installSectionsService->run();
 
-            $installWordLists = new LemurBotInstallWordListsService(['email'=>$email]);
-            $installWordLists->run();
+            $this->installWordListsService->setOptions($this->getOptions());
+            $this->installWordListsService->run();
 
-            $installBot = new LemurBotInstallBotService(['email'=>$email, 'bot'=>$bot]);
-            $installBot->run();
+            $this->installBotService->setOptions($this->getOptions());
+            $this->installBotService->run();
 
-            $installAiml = new LemurBotInstallAimlService(['email'=>$email, 'data'=>$aiml, 'bot'=>$bot]);
-            $installAiml->run();
+            $this->installAimlService->setOptions($this->getOptions());
+            $this->installAimlService->run();
 
             DB::commit();
 
@@ -46,6 +73,16 @@ class LemurBotInstallAllService
             $this->displayMessage('No changes made');
             return 0;
         }
+    }
+
+
+    public function setOptions(?array $options){
+        $this->options=$options;
+    }
+
+
+    public function getOptions(){
+        return $this->options;
     }
 
     /**
@@ -72,8 +109,6 @@ class LemurBotInstallAllService
                 Colors::white($message);
                 break;
         }
-
     }
-
 
 }
