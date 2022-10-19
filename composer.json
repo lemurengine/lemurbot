@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "php": "^8.0.2",
+        "php": "^7.4 | ^8.0.2",
         "ext-intl": "*",
         "ext-json": "*",
         "ext-simplexml": "*",
@@ -26,13 +26,13 @@
         "guzzlehttp/guzzle": "^7.5",
         "intervention/image": "^2.7",
         "laracasts/flash": "^3.2",
-        "laravel/ui": "^4.0",
+        "laravel/ui": "^3.0 | ^4.0",
         "laravelcollective/html": "^6.3",
         "laravolt/avatar": "^4.1",
-        "league/flysystem-aws-s3-v3": "^3.2",
-        "spatie/laravel-sluggable": "^3.4",
-        "willvincent/laravel-rateable": "^3.0",
-        "yajra/laravel-datatables": "^9.0",
+        "league/flysystem-aws-s3-v3": "^2.5 | ^3.2",
+        "spatie/laravel-sluggable": "^2.6 | ^3.4",
+        "willvincent/laravel-rateable": "^2.4 | ^3.0",
+        "yajra/laravel-datatables": "^1.5| ^9.0",
         "web64/laravel-cli-colors": "^0.20.0"
     },
     "autoload": {
