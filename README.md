@@ -47,7 +47,7 @@ It is easy to migrate your original version of theramenrobotdiscocode/lemur-engi
 There are NO database schema changes just some minor data changes and file location changes.\
 We suggest you install new fresh copy of Laravel 9 and configure it to connect to your existing database. \
 You will need to still follow the fresh installation instructions below. \
-And anyway "Additional Migration Steps" as well.
+And anyway "Additional Upgrade Steps" as well.
 
 ## Fresh Installation
 LemurEngine LemurBots is written for the Laravel framework.\
@@ -59,7 +59,7 @@ For more information on how to install Laravel check out: https://laravel.com/do
 composer require lemurengine/lemurbot
 ```
 
-### Additional Migration Step: Run the command to update a few filenames in the migrations folder
+### Additional Upgrade Step: Run the command to update a few filenames in the migrations folder
 Only do this is you are migrating from the old project \
 There are 4 files which need reverting to their original Laravel Migration file names \
 As soon as you have installed Laravel 9 and connected your database \
@@ -89,15 +89,11 @@ php artisan vendor:publish --tag=lemurbot-auth --force
 
 ### Publish Public Assets (required)
 This will copy the required asset files to your public folder \
+And the widgets to the public widgets' folder  \
+And the example HelloWorldTag to the LemurTag folder  \
 This is required to make forms and validation features to work correctly
 ``` php
-php artisan vendor:publish --tag=lemurbot-assets --force
-```
-
-### Publish Widget Assets (required)
-This will copy the required widgets files to your widgets folder
-``` php
-php artisan vendor:publish --tag=lemurbot-widgets
+php artisan vendor:publish --tag=lemurbot-assets
 ```
 
 ### Publish Config (required)
@@ -133,7 +129,7 @@ The following command will create or update your existing database table schema.
 php artisan migrate
 ```
 
-### Additional Migration Step: Run the command to update the user to an admin user
+### Additional Upgrade Step: Run the command to update the user to an admin user
 Only do this is you are migrating from the old project \
 If you have existing data and want to give a user bot_admin privileges you can run this command.
 ```php
@@ -163,7 +159,7 @@ php artisan lemur:install-all --admin=admin@lemurengine.local --bot=mybot --data
 You do not have to install a user or bot, you can do these things at a later date, but we recommend you do this now. \
 If your user already exists it will be given bot admin privileges and will be linked to your bot.
 
-### Additional Migration Step: Custom Tag
+### Additional Upgrade Step: Custom Tag
 Only do this is you are migrating from the old project \
 Move any custom tags which you have created to a folder called in the main app folder called LemurTag
 like so.

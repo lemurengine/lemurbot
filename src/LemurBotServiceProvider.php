@@ -96,7 +96,10 @@ class LemurBotServiceProvider extends ServiceProvider
                 __DIR__ . '/../config/properties.php' => config_path('lemurbot/properties.php')],
             'lemurbot-config');
         $this->publishes([
-            __DIR__.'/../resources/public'=> public_path('vendor/lemurbot')],
+            __DIR__.'/../resources/public'=> public_path('vendor/lemurbot'),
+            __DIR__ . '/../resources/widgets' => public_path('/widgets'),
+            __DIR__ . '/../exampletag' => app_path('/LemurTag/')
+            ],
             'lemurbot-assets');
         $this->publishes([
             __DIR__.'/../resources/template/public/'=>  public_path(),
@@ -104,12 +107,6 @@ class LemurBotServiceProvider extends ServiceProvider
             __DIR__.'/../resources/template/views/home.blade.php'=> resource_path('/views/home.blade.php'),
             __DIR__.'/../resources/template/views/welcome.blade.php'=> resource_path('/views/welcome.blade.php')],
             'lemurbot-template');
-        $this->publishes(
-            [__DIR__ . '/../resources/widgets' => public_path('/widgets')],
-            'lemurbot-widgets');
-        $this->publishes(
-            [__DIR__ . '/../resources/widgets' => public_path('/widgets')],
-            'lemurbot-widgets');
         $this->publishes(
             [__DIR__ . '/../auth/views/auth' => resource_path('/views/auth'),
                 __DIR__ . '/../auth/Controllers/Auth' => app_path('/Http/Controllers/Auth')],
