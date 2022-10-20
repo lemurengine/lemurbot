@@ -8,14 +8,14 @@ return [
     |
     */
     'portal' =>
-        ['id' => '9.0.0'],
+        ['id' => '9.0.1'],
     'bot' =>
-        ['id' => '9.0.0'],
+        ['id' => '9.0.1'],
     'release' => [
         'version' => '9.0.0',
-        'name' => 'Packaged McPackageFace',
-        'description' => 'Converted Lemur Engine into a composer package so that it can be easily installed in Laravel 9.x using composer',
-        'url' => 'https://github.com/lemurengine/lemurbot/releases/tag/9.0.0',
+        'name' => 'Smooth Operator',
+        'description' => 'Improved processes for migrating from the old code repository',
+        'url' => 'https://github.com/lemurengine/lemurbot/releases/tag/9.0.1',
     ],
 
 ];

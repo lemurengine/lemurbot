@@ -1,7 +1,7 @@
 {
     "name": "lemurengine/lemurbot",
     "type": "project",
-    "description": "An AIML chatbot and admin portal",
+    "description": "An AIML chatbot and admin portal written for the Laravel framework",
     "keywords": [
         "ai", "chatbot", "chat bot", "AIML", "program-o", "program o", "programo", "lemur engine", "lemur-engine"
     ],
