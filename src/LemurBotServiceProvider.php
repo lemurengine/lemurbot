@@ -11,6 +11,7 @@ use LemurEngine\LemurBot\Console\Commands\LemurInstallBotCommand;
 use LemurEngine\LemurBot\Console\Commands\LemurInstallAllCommand;
 use LemurEngine\LemurBot\Console\Commands\LemurInstallSectionsCommand;
 use LemurEngine\LemurBot\Console\Commands\LemurInstallWordListsCommand;
+use LemurEngine\LemurBot\Console\Commands\LemurUpgradeCommand;
 use LemurEngine\LemurBot\Facades\LemurPriv;
 use LemurEngine\LemurBot\Providers\AimlUploadServiceProvider;
 use LemurEngine\LemurBot\Providers\BotPropertyUploadServiceProvider;
@@ -125,6 +126,7 @@ class LemurBotServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
+                LemurUpgradeCommand::class,
                 LemurInstallAllCommand::class,
                 LemurInstallAppCommand::class,
                 LemurInstallAdminCommand::class,

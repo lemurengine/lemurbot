@@ -3,7 +3,7 @@
 namespace LemurEngine\LemurBot\Console\Commands;
 
 use Illuminate\Console\Command;
-use LemurEngine\LemurBot\Services\Install\LemurBotInstallSectionsService;
+use LemurEngine\LemurBot\Services\Install\LemurBotUpgradeService;
 
 class LemurInstallSectionsCommand extends Command
 {
@@ -26,10 +26,10 @@ class LemurInstallSectionsCommand extends Command
     /**
      * Execute the console command.
      *
-     * @param LemurBotInstallSectionsService $service
+     * @param LemurBotUpgradeService $service
      * @return bool
      */
-    public function handle(LemurBotInstallSectionsService $service)
+    public function handle(LemurBotUpgradeService $service)
     {
         if(empty($this->option('admin'))){
             $this->error('Missing the --admin email address parameter');

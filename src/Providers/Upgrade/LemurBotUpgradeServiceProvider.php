@@ -1,12 +1,12 @@
 <?php
 
-namespace LemurEngine\LemurBot\Providers\Install;
+namespace LemurEngine\LemurBot\Providers\Upgrade;
 
 use Illuminate\Support\ServiceProvider;
 use LemurEngine\LemurBot\Services\Install\LemurBotUpgradeService;
 use LemurEngine\LemurBot\Services\LemurInstallBotService;
 
-class LemurBotInstallSectionsServiceProvider extends ServiceProvider
+class LemurBotUpgradeServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.

@@ -8,10 +8,12 @@ use LemurEngine\LemurBot\Exceptions\InstallPrerequisitesException;
 use LemurEngine\LemurBot\Models\Bot;
 use LemurEngine\LemurBot\Models\Language;
 use LemurEngine\LemurBot\Models\User;
+use LemurEngine\LemurBot\Traits\DisplayMessageTrait;
 use Web64\Colors\Facades\Colors;
 
 abstract class LemurBotInstallService
 {
+    use DisplayMessageTrait;
 
     protected $optionEmail;
     protected $optionBot;
@@ -52,35 +54,6 @@ abstract class LemurBotInstallService
      */
     abstract public function isolatedRun();
 
-
-
-
-    /**
-     * display a message to the console with colors
-     *
-     * @return bool
-     */
-    public function displayMessage($message, $type='info'):void{
-
-        switch ($type) {
-            case 'error':
-                Colors::red($message);
-                break;
-            case 'success':
-                Colors::green($message);
-                break;
-            case 'notice':
-                Colors::yellow($message);
-                break;
-            case 'title':
-                Colors::white("\n--------------------------------------\n$message\n--------------------------------------");
-                break;
-            default:
-                Colors::white($message);
-                break;
-        }
-
-    }
 
     protected function setAuthUser(){
         $user = User::where('email', $this->optionEmail)->first();
