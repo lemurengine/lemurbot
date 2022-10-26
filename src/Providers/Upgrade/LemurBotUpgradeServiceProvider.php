@@ -3,8 +3,7 @@
 namespace LemurEngine\LemurBot\Providers\Upgrade;
 
 use Illuminate\Support\ServiceProvider;
-use LemurEngine\LemurBot\Services\Install\LemurBotUpgradeService;
-use LemurEngine\LemurBot\Services\LemurInstallBotService;
+use LemurEngine\LemurBot\Services\Upgrade\LemurBotUpgradeService;
 
 class LemurBotUpgradeServiceProvider extends ServiceProvider
 {
