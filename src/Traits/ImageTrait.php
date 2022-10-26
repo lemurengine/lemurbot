@@ -22,7 +22,8 @@ trait ImageTrait
                     Carbon::now()->addMinutes(20)
                 );
             } else {
-                $imageUrl = asset($this->image);
+
+                $imageUrl = asset('avatars/'.$this->image);
             }
         } else {
             if (strpos($this->image, 'widgets/')!==false) {

@@ -6,7 +6,7 @@
         <h1 data-test="edit-bot-title">
 
 
-            <img class="bot-image-header img-circle" alt='{!! $bot->name !!} Logo'  src='{!! asset($bot->imageUrl) !!}'></small>
+            <img class="bot-image-header img-circle" alt='{!! $bot->name !!} Logo'  src='{!! $bot->imageUrl !!}'></small>
             {!! $bot->name !!} <small>(id: {!! $bot->slug !!})</small>
 
 
