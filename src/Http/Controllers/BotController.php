@@ -951,7 +951,7 @@ class BotController extends AppBaseController
 
             //store the file
             $request->file('image')->storeAs(
-                'lemurbot/avatars', $filename
+                'avatars', $filename
             );
 
             $bot->image = $filename;
