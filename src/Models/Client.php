@@ -213,6 +213,6 @@ class Client extends Model
     public static function getImageUrlAttribute()
     {
 
-        return asset('images/default/blank.png');
+        return asset('avatar/missing.png');
     }
 }
