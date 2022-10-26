@@ -13,7 +13,7 @@ trait ImageTrait
     {
 
         //how are the images for this model stored?
-        $imageStorage = env('PUBLIC_STORAGE_ADAPTER');
+        $imageStorage = env('PUBLIC_STORAGE_ADAPTER', 'local');
 
         if (Storage::disk($imageStorage)->exists($this->image)) {
             if ($imageStorage=='s3') {

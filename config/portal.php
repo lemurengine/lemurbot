@@ -89,4 +89,5 @@ return [
     */
 
     'homepage_bot' => env('LEMUR_ENGINE_HOMEPAGE_BOT', FALSE),
+
 ];

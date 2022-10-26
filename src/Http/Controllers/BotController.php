@@ -946,15 +946,15 @@ class BotController extends AppBaseController
 
 
         if (!empty($request->file('image'))) {
-            //the location we store publicly available images
-            $publicAdapter = env('PUBLIC_STORAGE_ADAPTER');
 
-            $path = $request->file('image')->storeAs(
-                'images',
-                $bot->slug.".".$request->file('image')->extension(),
-                $publicAdapter
+            $filename = $bot->slug.".".$request->file('image')->extension();
+
+            //store the file
+            $request->file('image')->storeAs(
+                'lemurbot/avatars', $filename
             );
-            $bot->image = $path;
+
+            $bot->image = $filename;
             $bot->save();
             return $bot;
         }

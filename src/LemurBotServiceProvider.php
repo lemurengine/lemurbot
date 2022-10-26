@@ -73,6 +73,11 @@ class LemurBotServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__ . '/../config/version.php', 'lemurbot.version'
         );
+
+        $this->mergeConfigFrom(
+            __DIR__ . '/../config/links.php', 'filesystems.links'
+        );
+
     }
 
     /**
@@ -96,11 +101,15 @@ class LemurBotServiceProvider extends ServiceProvider
                 __DIR__ . '/../config/properties.php' => config_path('lemurbot/properties.php')],
             'lemurbot-config');
         $this->publishes([
+            __DIR__.'/../resources/avatars'=> storage_path('app/avatars'),
             __DIR__.'/../resources/public'=> public_path('vendor/lemurbot'),
-            __DIR__ . '/../resources/widgets' => public_path('/widgets'),
             __DIR__ . '/../exampletag' => app_path('/LemurTag/')
             ],
             'lemurbot-assets');
+        $this->publishes([
+            __DIR__ . '/../resources/widgets' => resource_path('vendor/lemurbot/widgets'),
+        ],
+            'lemurbot-widgets');
         $this->publishes([
             __DIR__.'/../resources/template/public/'=>  public_path(),
             __DIR__.'/../resources/template/views/layouts/'=> resource_path('/views/layouts/'),
