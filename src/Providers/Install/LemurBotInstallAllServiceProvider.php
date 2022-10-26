@@ -8,7 +8,7 @@ use LemurEngine\LemurBot\Services\Install\LemurBotInstallAimlService;
 use LemurEngine\LemurBot\Services\Install\LemurBotInstallAllService;
 use LemurEngine\LemurBot\Services\Install\LemurBotInstallAppService;
 use LemurEngine\LemurBot\Services\Install\LemurBotInstallBotService;
-use LemurEngine\LemurBot\Services\Upgrade\LemurBotUpgradeService;
+use LemurEngine\LemurBot\Services\Install\LemurBotInstallSectionsService;
 use LemurEngine\LemurBot\Services\Install\LemurBotInstallWordListsService;
 
 class LemurBotInstallAllServiceProvider extends ServiceProvider
@@ -31,7 +31,7 @@ class LemurBotInstallAllServiceProvider extends ServiceProvider
             return new LemurBotInstallAllService(
                 new LemurBotInstallAppService(),
                 new LemurBotInstallAdminService(),
-                new LemurBotUpgradeService(),
+                new LemurBotInstallSectionsService(),
                 new LemurBotInstallWordListsService(),
                 new LemurBotInstallBotService(),
                 new LemurBotInstallAimlService()

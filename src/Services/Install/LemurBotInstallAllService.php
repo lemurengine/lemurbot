@@ -11,7 +11,7 @@ class LemurBotInstallAllService
 
     private LemurBotInstallAppService $installAppService;
     private LemurBotInstallAdminService $installAdminService;
-    private LemurBotUpgradeService $installSectionsService;
+    private LemurBotInstallSectionsService $installSectionsService;
     private LemurBotInstallWordListsService $installWordListsService;
     private LemurBotInstallBotService $installBotService;
     private LemurBotInstallAimlService $installAimlService;
@@ -20,7 +20,7 @@ class LemurBotInstallAllService
 
     public function __construct(LemurBotInstallAppService       $installAppService,
                                 LemurBotInstallAdminService     $installAdminService,
-                                LemurBotUpgradeService          $installSectionsService,
+                                LemurBotInstallSectionsService  $installSectionsService,
                                 LemurBotInstallWordListsService $installWordListsService,
                                 LemurBotInstallBotService       $installBotService,
                                 LemurBotInstallAimlService      $installAimlService){
