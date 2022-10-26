@@ -89,11 +89,16 @@ php artisan vendor:publish --tag=lemurbot-auth --force
 
 ### Publish Public Assets (required)
 This will copy the required asset files to your public folder \
-And the widgets to the public widgets' folder  \
 And the example HelloWorldTag to the LemurTag folder  \
 This is required to make forms and validation features to work correctly
 ``` php
 php artisan vendor:publish --tag=lemurbot-assets
+```
+
+### Publish Public Widgets (required)
+This will copy the widgets to the public widgets' folder  \
+``` php
+php artisan vendor:publish --tag=lemurbot-widgets
 ```
 
 ### Publish Config (required)
@@ -128,6 +133,13 @@ The following command will create or update your existing database table schema.
 ```php
 php artisan migrate
 ```
+
+### Symlink public folders (required)
+The following command will create or update your existing database table schema.
+```php
+php artisan storage:link
+```
+
 
 ### Additional Upgrade Step: Run the command to update the user to an admin user
 Only do this is you are migrating from the old project \
