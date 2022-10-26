@@ -1,38 +1,37 @@
 <?php
-namespace App\LemurTag;
+namespace LemurEngine\LemurBot\LemurTag;
 
 use LemurEngine\LemurBot\Classes\LemurLog;
-use LemurEngine\LemurBot\LemurTag\AimlTag;
 use LemurEngine\LemurBot\Models\Conversation;
 
 /**
- * Class HelloWorldTag
+ * Class EchoTag
  * @package App\LemurTag
  *
- * Usage: <helloworld />
+ * Usage: <echo><star /></echo>
  *
  * Example AIML:
  * <category>
- *  <pattern>TEST HELLO WORLD</pattern>
- *  <template><helloworld /></template>
+ *  <pattern>ECHO *</pattern>
+ *  <template><echo><star /></echo></template>
  * </category>
  *
  * Expected Conversation:
- * Input: Test Hello World
- * Output: Hello World!
+ * Input: Echo Yikes
+ * Output: Yikes
  *
  * Documentation:
  * https://docs.lemurbot.com/extend.html
  */
-class HelloWorldTag extends AimlTag
+class EchoTag extends AimlTag
 {
-    protected string $tagName = "HelloWorld";
+    protected string $tagName = "Echo";
     //this is a standard tag
     static $aimlTagType = self::TAG_STANDARD;
 
 
     /**
-     * HelloWorldTag Constructor.
+     * FormalTag Constructor.
      * @param Conversation $conversation
      * @param array $attributes
      */
@@ -43,14 +42,14 @@ class HelloWorldTag extends AimlTag
 
 
     /**
-     * This method is called when the closing tag is encountered e.g. <helloworld/>
-     * @return string|void
+     * when we close the <set> tag we need to decide if we want
      */
     public function closeTag()
     {
-        //some debugging
+
         LemurLog::debug(
-            __FUNCTION__, [
+            __FUNCTION__,
+            [
                 'conversation_id'=>$this->conversation->id,
                 'turn_id'=>$this->conversation->currentTurnId(),
                 'tag_id'=>$this->getTagId(),
@@ -58,7 +57,8 @@ class HelloWorldTag extends AimlTag
             ]
         );
 
-        //build response in the stack
-        $this->buildResponse("Hello World!");
+        //this will return the value of <star />
+        $contents = $this->getCurrentTagContents(true);
+        $this->buildResponse($contents);
     }
 }
