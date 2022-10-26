@@ -41,7 +41,7 @@ trait ImageTrait
         if ($string) {
             return Avatar::create($string)->toBase64();
         } else {
-            return asset('avatar/missing.png');
+            return asset('avatars/missing.png');
         }
     }
 }
