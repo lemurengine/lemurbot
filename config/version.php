@@ -8,14 +8,14 @@ return [
     |
     */
     'portal' =>
-        ['id' => '9.0.1'],
+        ['id' => '9.0.2'],
     'bot' =>
-        ['id' => '9.0.1'],
+        ['id' => '9.0.2'],
     'release' => [
-        'version' => '9.0.0',
-        'name' => 'Smooth Operator',
-        'description' => 'Improved processes for migrating from the old code repository',
-        'url' => 'https://github.com/lemurengine/lemurbot/releases/tag/9.0.1',
+        'version' => '9.0.2',
+        'name' => 'Operation',
+        'description' => 'Fix to a path that was preventing an the install from working properly',
+        'url' => 'https://github.com/lemurengine/lemurbot/releases/tag/9.0.2',
     ],
 
 ];
