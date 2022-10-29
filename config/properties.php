@@ -22,27 +22,6 @@ return [
     ],
     /*
     |--------------------------------------------------------------------------
-    | Default response
-    |--------------------------------------------------------------------------
-    |
-    | This is the default fallback message.
-    | If everything has gone wrong instead of sending a blank response
-    | The bot will respond with this message
-    | We DO NOT read this response at runtime but it is used to prepopulate the create new bot form
-    */
-    'default_response' => env('LEMUR_ENGINE_DEFAULT_RESPONSE', 'Sorry, I don\'t understand.'),
-    /*
-    |--------------------------------------------------------------------------
-    | Critical Category Group
-    |--------------------------------------------------------------------------
-    |
-    | By setting this field with the name of our critical file
-    | We ensure that when we 'deselect all' this critical file is no unselected.
-    | We DO NOT read this property at runtime but it is used to prepopulate the create new bot form
-    */
-    'critical_category_filename' => env('LEMUR_ENGINE_CRITICAL_CATEGORY_FILENAME', 'std-critical'),
-    /*
-    |--------------------------------------------------------------------------
     | DEFAULT PROPERTIES
     |--------------------------------------------------------------------------
     | These properties are not read from at runtime.

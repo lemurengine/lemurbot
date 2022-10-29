@@ -107,7 +107,9 @@ class LemurBotServiceProvider extends ServiceProvider
             ],
             'lemurbot-assets');
         $this->publishes([
-            __DIR__ . '/../resources/widgets' => resource_path('vendor/lemurbot/widgets'),
+            __DIR__ . '/../resources/widgets/avatar' => resource_path('vendor/lemurbot/widgets/avatar'),
+            __DIR__ . '/../resources/widgets/popup' => resource_path('vendor/lemurbot/widgets/popup'),
+            __DIR__ . '/../resources/widgets/custom' => resource_path('widgets/custom'),
         ],
             'lemurbot-widgets');
         $this->publishes([
