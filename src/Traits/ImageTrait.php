@@ -22,8 +22,8 @@ trait ImageTrait
             );
         }elseif (strpos($this->image, 'widgets/')!==false) {
             $imageUrl = url($this->image);
-        }elseif (Storage::disk($imageStorage)->exists('avatars/'.$this->image)) {
-            $imageUrl = asset('avatars/'.$this->image);
+        }elseif (Storage::disk($imageStorage)->exists('storage/avatars/'.$this->image)) {
+            $imageUrl = asset('storage/avatars/'.$this->image);
         }else {
             $imageUrl = self::getDefaultImageUrl(false);
         }

@@ -951,7 +951,7 @@ class BotController extends AppBaseController
 
             //store the file
             $request->file('image')->storeAs(
-                'avatars', $filename
+                'public/avatar', $filename
             );
 
             $bot->image = $filename;
