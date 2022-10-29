@@ -66,7 +66,7 @@ return [
     |
     */
 
-    'default_bot_image'  => env('LEMUR_ENGINE_DEFAULT_BOT_IMAGE', 'avatars/robot.png'),
+    'default_bot_image'  => env('LEMUR_ENGINE_DEFAULT_BOT_IMAGE', 'widgets/images/robot.png'),
 
     /*
     |--------------------------------------------------------------------------
@@ -77,7 +77,7 @@ return [
     |
     */
 
-    'default_client_image' => env('LEMUR_ENGINE_DEFAULT_CLIENT_IMAGE', 'avatars/user.png'),
+    'default_client_image' => env('LEMUR_ENGINE_DEFAULT_CLIENT_IMAGE', 'widgets/images/user.png'),
 
     /*
     |--------------------------------------------------------------------------

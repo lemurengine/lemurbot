@@ -179,7 +179,7 @@
                             '                <span class="direct-chat-timestamp pull-right">{!! Carbon\Carbon::now() !!}</span>\n' +
                             '            </div>\n' +
                             '            <!-- /.direct-chat-info -->\n' +
-                            '            <img class="direct-chat-img" src="{!! url('/avatars/user.png') !!}" alt="Message User Image"><!-- /.direct-chat-img -->\n' +
+                            '            <img class="direct-chat-img" src="{!! url('/widgets/images/user.png') !!}" alt="Message User Image"><!-- /.direct-chat-img -->\n' +
                             '            <div class="direct-chat-text">\n' +
                                             $('#message').val() +
                             '            </div>\n' +
