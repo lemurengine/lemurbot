@@ -192,6 +192,14 @@ Don't forget to change your password.
 php artisan serve
 ```
 
+
+## Note about deployment
+When you deploy to your live server remember to perform the steps below to update your live data
+
+    php artisan lemur:upgrade 9.0.0
+    php artisan migrate 
+
+
 ### More information
 Check out the docs for more information about how to use the portal and talk to the bot.
 
