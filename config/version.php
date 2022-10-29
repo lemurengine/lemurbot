@@ -17,7 +17,8 @@ return [
         'description' => 'Fix paths and symlinks. This allows for the management of custom widgets.
         If you are upgrading from >9.0.3 to this version then please;
          1. delete the public/widgets folder
-         2. run the following commands
+         2. delete the public/avatars folder
+         3. run the following commands
             php artisan vendor:publish --tag=lemurbot-config --force
             php artisan vendor:publish --tag=lemurbot-assets --force
             php artisan vendor:publish --tag=lemurbot-widgets --force
