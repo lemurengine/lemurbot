@@ -102,7 +102,8 @@ class LemurBotServiceProvider extends ServiceProvider
             'lemurbot-config');
         $this->publishes([
             __DIR__.'/../resources/avatars'=> storage_path('app/avatars'),
-            __DIR__.'/../resources/public'=> public_path('vendor/lemurbot'),
+            __DIR__.'/../resources/public/lemurbot'=> public_path('vendor/lemurbot'),
+            __DIR__.'/../resources/public/widgets'=> public_path('widgets'),
             __DIR__ . '/../exampletag' => app_path('/LemurTag/')
             ],
             'lemurbot-assets');
