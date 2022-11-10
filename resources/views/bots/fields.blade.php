@@ -45,7 +45,6 @@
         </div>
         <input name="image-filename" data-test="bot-image-filename"  type="hidden" value="{!! $imgFilename !!}"/>
         <input class="bot image-upload" name="image" id="bot-image" data-test="bot-image"  type="file" accept="image/*"/>
-        <small>{!! $imgFilename !!}</small>
 
     </div>
 </div>

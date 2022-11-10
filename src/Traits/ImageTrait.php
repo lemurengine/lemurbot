@@ -19,10 +19,7 @@ trait ImageTrait
         if (strpos($this->image, 'widgets/')!==false) { //if this is a widget image
             $imageUrl = url($this->image);
         }elseif ($imageStorage=='s3') { //if we are getting the details from s3
-            $imageUrl = Storage::disk($imageStorage)->temporaryUrl(
-                $this->image,
-                Carbon::now()->addMinutes(20)
-            );
+            $imageUrl = Storage::disk($imageStorage)->url('public/avatars/'.$this->image);
         }elseif (Storage::disk($imageStorage)->exists('public/avatars/'.$this->image)) { //if this is a local image
             $imageUrl = asset('storage/avatars/'.$this->image);
         }else {
