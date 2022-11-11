@@ -2,8 +2,6 @@
 
 namespace LemurEngine\LemurBot\Http\Requests;
 
-use LemurEngine\LemurBot\Models\Language;
-use Illuminate\Foundation\Http\FormRequest;
 use LemurEngine\LemurBot\Models\CategoryGroup;
 use Illuminate\Validation\Rule;
 

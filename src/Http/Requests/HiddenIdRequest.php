@@ -12,6 +12,7 @@ use LemurEngine\LemurBot\Models\Map;
 use LemurEngine\LemurBot\Models\Section;
 use LemurEngine\LemurBot\Models\Set;
 use LemurEngine\LemurBot\Models\Turn;
+use LemurEngine\LemurBot\Models\WordSpelling;
 use LemurEngine\LemurBot\Models\WordSpellingGroup;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
@@ -58,6 +59,8 @@ class HiddenIdRequest extends FormRequest
                     $item = Map::findOrFail($value);
                 } elseif ($key == 'word_spelling_group_id') {
                     $item = WordSpellingGroup::findOrFail($value);
+                } elseif ($key == 'word_spelling_id') {
+                    $item = WordSpelling::findOrFail($value);
                 } elseif ($key == 'client_id') {
                     $item = Client::findOrFail($value);
                 } elseif ($key == 'conversation_id') {

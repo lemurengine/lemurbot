@@ -2,7 +2,6 @@
 
 namespace LemurEngine\LemurBot\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
 use LemurEngine\LemurBot\Models\WordTransformation;
 use Illuminate\Validation\Rule;
 

@@ -2,6 +2,7 @@
 
 namespace LemurEngine\LemurBot\Http\Requests;
 
+use Illuminate\Validation\Rule;
 use LemurEngine\LemurBot\Models\BotWordSpellingGroup;
 
 class CreateBotWordSpellingGroupRequest extends HiddenIdRequest

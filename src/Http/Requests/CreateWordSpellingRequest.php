@@ -2,6 +2,7 @@
 
 namespace LemurEngine\LemurBot\Http\Requests;
 
+use Illuminate\Validation\Rule;
 use LemurEngine\LemurBot\Models\WordSpelling;
 
 class CreateWordSpellingRequest extends HiddenIdRequest
@@ -24,6 +25,28 @@ class CreateWordSpellingRequest extends HiddenIdRequest
      */
     public function rules()
     {
-        return WordSpelling::$rules;
+        $rules = WordSpelling::$rules;
+        $rules['word'] = [
+            'required',
+            'string',
+            'max:255',
+            Rule::unique('word_spellings')
+                ->where('word_spelling_group_id', $this->word_spelling_group_id)
+                ->whereNull('deleted_at')
+        ];
+        return $rules;
+
     }
+
+    /**
+     * @return array
+     */
+    public function messages()
+    {
+        return [
+            'word.unique' =>
+                'Duplicate record - a correction already exists for this word in this group.',
+        ];
+    }
+
 }

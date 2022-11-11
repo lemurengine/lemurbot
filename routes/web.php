@@ -435,4 +435,5 @@ Route::GET('/categories/{categoryGroupSlug}/download/csv', 'LemurEngine\LemurBot
     ->middleware(['web']);
 Route::GET('/categories/{categoryGroupSlug}/download/aiml', 'LemurEngine\LemurBot\Http\Controllers\CategoryController@downloadAiml')
     ->middleware(['web']);
-
+Route::GET('/wordSpellings/{wordSpellingGroupSlug}/download', 'LemurEngine\LemurBot\Http\Controllers\WordSpellingController@download')
+    ->middleware(['web']);

@@ -16,17 +16,20 @@
                         <div class="col-md-12">
                             <h4>Format:</h4>
                             <p>The format of your csv file should be:</p>
-                            @hasRole('admin')
+                            @if(LemurPriv::isAdmin(Auth::user()))
                             Admin Example
-                            <code>"Lang","1stPerson","2ndPerson","3rdPerson","3rdPerson Female","3rdPerson Male","Master Data?"
-                                "en","place","place","places","","","1"
-                                "en","matter","matter","matters","","","1"<br/>
+                            <code><br/>
+"Lang","1stPerson","2ndPerson","3rdPerson","3rdPerson Female","3rdPerson Male","Master Data?"<br/>
+"en","place","place","places","","","1"<br/>
+"en","matter","matter","matters","","","1"<br/>
                              </code>
+                            @endif
+                            <br/>
                             Normal User Example
-                            @endHasRole
-                            <code>"Lang","1stPerson","2ndPerson","3rdPerson","3rdPerson Female","3rdPerson Male""
-                                "en","place","place","places","",""
-                                "en","matter","matter","matters","",""<br/>
+                            <code><br/>
+"Lang","1stPerson","2ndPerson","3rdPerson","3rdPerson Female","3rdPerson Male""<br/>
+"en","place","place","places","",""<br/>
+"en","matter","matter","matters","",""<br/>
                             </code>
                             <br/>
                         </div>
@@ -39,9 +42,9 @@
                                 <li>Any columns after ones shown in the example will be ignored</li>
                                 <li>No changes will be made if there are any errors when processing the file</li>
                                 <li>If you want an example of the file, then just download a file from the table page</li>
-                                @hasRole('admin')
+                                @if(LemurPriv::isAdmin(Auth::user()))
                                 <li>Only admins can add a master data value</li>
-                                @endHasRole
+                                @endif
                             </ul>
                             <br/>
                         </div>

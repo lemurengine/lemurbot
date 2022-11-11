@@ -27,7 +27,9 @@
     <div class="form-group col-lg-6 col-md-6 col-sm-12" data-test="word_spelling_group_id_div">
         {!! Form::label('word_spelling_group_id', 'Word Spelling Group:', ['data-test'=>"word_spelling_group_id_label"]) !!}
         <div class="input-group">
-            {!! Form::text('word_spelling_group_id', $wordSpelling->wordSpellingGroup->name, ['readonly'=>'readonly','class' => 'form-control', 'id'=>"word_spelling_group_id_field", 'data-test'=>"word_spelling_group_id_field", LemurEngine\LemurBot\Models\SetValue::getFormValidation('word_spelling_group_id')]) !!}
+            {!! Form::text('word_spelling_group_id_text', $wordSpelling->wordSpellingGroup->name, ['readonly'=>'readonly','class' => 'form-control', 'id'=>"word_spelling_group_id_text_field", 'data-test'=>"word_spelling_group_id_text_field", LemurEngine\LemurBot\Models\SetValue::getFormValidation('word_spelling_group_id')]) !!}
+            {!! Form::hidden('word_spelling_group_id', $wordSpelling->wordSpellingGroup->slug, ['id'=>"word_spelling_group_id_field", 'data-test'=>"word_spelling_group_id_field", LemurEngine\LemurBot\Models\SetValue::getFormValidation('word_spelling_group_id')]) !!}
+
             <div class="input-group-btn">
                 @if(!empty($wordSpelling)&&!empty($wordSpelling->word_spelling_group_id))
                     <a href="{!!url('/wordSpellingGroups/'.$wordSpelling->wordSpellingGroup->slug) !!}" id='wordSpellingGroup_button' class='btn btn-warning' data-test='wordSpellingGroup_button'><i class='fa fa-arrow-right'></i></a>
