@@ -186,7 +186,7 @@ class WordSpellingUploadService
 
         //get the word_spelling_group_id by name and created by user..
         $wordSpelling = WordSpelling::where('word_spelling_group_id', $wordSpellingGroupId)
-            ->where('word', $word)->where('replacement', $replacement)
+            ->where('word', $word)
             ->withTrashed()->first();
 
         //map_value doesnt exist...
@@ -199,6 +199,10 @@ class WordSpellingUploadService
             $wordSpelling->save();
         } elseif ($wordSpelling->deleted_at !== null) {
             $wordSpelling->restore();
+            $wordSpelling->user_id = $userId;
+            $wordSpelling->save();
+        } elseif ($wordSpelling->deleted_at !== null) {
+            $wordSpelling->replacement = $replacement;
             $wordSpelling->user_id = $userId;
             $wordSpelling->save();
         }
