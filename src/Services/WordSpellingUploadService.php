@@ -199,9 +199,10 @@ class WordSpellingUploadService
             $wordSpelling->save();
         } elseif ($wordSpelling->deleted_at !== null) {
             $wordSpelling->restore();
+            $wordSpelling->replacement = $replacement;
             $wordSpelling->user_id = $userId;
             $wordSpelling->save();
-        } elseif ($wordSpelling->deleted_at !== null) {
+        } elseif ($wordSpelling->replacement !== $replacement) {
             $wordSpelling->replacement = $replacement;
             $wordSpelling->user_id = $userId;
             $wordSpelling->save();
