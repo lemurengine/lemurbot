@@ -16,6 +16,7 @@ use LemurEngine\LemurBot\Models\Map;
 use LemurEngine\LemurBot\Models\Section;
 use LemurEngine\LemurBot\Models\Set;
 use LemurEngine\LemurBot\Models\Turn;
+use LemurEngine\LemurBot\Models\WordSpelling;
 use LemurEngine\LemurBot\Models\WordSpellingGroup;
 use Closure;
 
@@ -89,6 +90,8 @@ class TransformData
                     $item = Map::where('slug', $value)->firstOrFail();
                 } elseif ($key == 'word_spelling_group_id') {
                     $item = WordSpellingGroup::where('slug', $value)->firstOrFail();
+                } elseif ($key == 'word_spelling_id') {
+                    $item = WordSpelling::where('slug', $value)->firstOrFail();
                 } elseif ($key == 'client_id') {
                     $item = Client::where('slug', $value)->firstOrFail();
                 } elseif ($key == 'conversation_id') {

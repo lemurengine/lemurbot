@@ -87,7 +87,7 @@ class WordSpellingDataTable extends DataTable
                 }',
                 'initComplete' => 'function(settings, json) {
 
-                    var maxColumn = 6
+                    var maxColumn = 7
                     var dateFields = [maxColumn-1]
                     var exactSearchFields = []
                     var noSearchFields = [maxColumn]
@@ -102,7 +102,6 @@ class WordSpellingDataTable extends DataTable
                 'buttons'   => [
                     ['extend' => 'create', 'className' => 'btn btn-default btn-sm no-corner create-item',],
                     ['extend' => 'upload', 'className' => 'btn btn-default btn-sm no-corner upload-item',],
-                    ['extend' => 'download', 'className' => 'btn btn-default btn-sm no-corner download-item',],
                     ['extend' => 'export', 'className' => 'btn btn-default btn-sm no-corner export-items',],
                     ['extend' => 'print', 'className' => 'btn btn-default btn-sm no-corner print-items',],
                     ['extend' => 'reset', 'className' => 'btn btn-default btn-sm no-corner reset-table',],
@@ -120,6 +119,8 @@ class WordSpellingDataTable extends DataTable
     protected function getColumns()
     {
         return [
+            'word_spelling_group_id'=>
+                ['name'=>'word_spelling_groups.slug','data'=>'word_spelling_group_slug','title'=>'WordSpellingGroupId'],
             'word_spelling_group'=>
                 ['name'=>'word_spelling_groups.name','data'=>'word_spelling_group','title'=>'WordSpellingGroupName'],
             'language'=> ['name'=>'languages.name','data'=>'language_name','title'=>'Language'],

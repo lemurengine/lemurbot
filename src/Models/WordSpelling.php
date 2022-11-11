@@ -169,6 +169,7 @@ class WordSpelling extends Model
             return WordSpelling::select([$this->table.'.*',
                 'users.email',
                 'word_spelling_groups.name as word_spelling_group',
+                'word_spelling_groups.slug as word_spelling_group_slug',
                 'languages.name as language_name'])
                 ->join('word_spelling_groups', 'word_spelling_groups.id', '=', $this->table.'.word_spelling_group_id')
                 ->join('languages', 'languages.id', '=', 'word_spelling_groups.language_id')

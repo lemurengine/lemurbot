@@ -4,7 +4,6 @@ namespace LemurEngine\LemurBot\Http\Controllers;
 
 use LemurEngine\LemurBot\DataTables\BotWordSpellingGroupDataTable;
 use LemurEngine\LemurBot\Http\Requests\CreateBotWordSpellingGroupRequest;
-use LemurEngine\LemurBot\Http\Requests\UpdateBotWordSpellingGroupRequest;
 use LemurEngine\LemurBot\Models\Bot;
 use LemurEngine\LemurBot\Models\WordSpellingGroup;
 use LemurEngine\LemurBot\Repositories\BotWordSpellingGroupRepository;

@@ -2,12 +2,8 @@
 
 namespace LemurEngine\LemurBot\Http\Requests;
 
-use LemurEngine\LemurBot\Models\Bot;
-use Illuminate\Contracts\Validation\Validator;
-use Illuminate\Foundation\Http\FormRequest;
 use LemurEngine\LemurBot\Models\BotKey;
 use Illuminate\Validation\Rule;
-use Illuminate\Validation\ValidationException;
 
 class UpdateBotKeyRequest extends HiddenIdRequest
 {

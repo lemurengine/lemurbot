@@ -16,9 +16,9 @@
                         <div class="col-md-12">
                             <h4>Format:</h4>
                             <p>The format of your csv file should be:</p>
-                            <code>"WordSpellingGroupName","Language", "Word","Replacement"<br/>
-                                "Default Spelling Set","en","hte","the"<br/>
-                                "Default Spelling Set","en","recieve","receive"<br/>
+                            <code>"WordSpellingGroupSlug","LanguageSlug", "Word","Replacement"<br/>
+                                "default-spelling-set","en","hte","the"<br/>
+                                "default-spelling-set","en","recieve","receive"<br/>
                              </code>
                             <br/>
                         </div>
@@ -34,7 +34,7 @@
                                 <li>The format of the file should be a comma separated csv file</li>
                                 <li>The first row should will be ignored (as assume this contains column headings</li>
                                 <li>Any columns after the first four will be ignored</li>
-                                <li>If the word spelling group name does not exist you will not be able to upload the records</li>
+                                <li>If the word spelling group slug does not exist you will not be able to upload the records</li>
                                 <li>No changes will be made if there are any errors when processing the file</li>
                                 <li>If you want an example of the file, then just download a file from the table page</li>
                             </ul>

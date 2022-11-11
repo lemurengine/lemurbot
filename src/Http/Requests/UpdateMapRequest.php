@@ -2,7 +2,6 @@
 
 namespace LemurEngine\LemurBot\Http\Requests;
 
-use LemurEngine\LemurBot\Models\Set;
 use Illuminate\Foundation\Http\FormRequest;
 use LemurEngine\LemurBot\Models\Map;
 use Illuminate\Validation\Rule;

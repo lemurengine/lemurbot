@@ -2,11 +2,16 @@
 
 namespace LemurEngine\LemurBot\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use LemurEngine\LemurBot\DataTables\WordSpellingDataTable;
+use LemurEngine\LemurBot\Exceptions\WordSpellingUploadException;
 use LemurEngine\LemurBot\Facades\LemurPriv;
 use LemurEngine\LemurBot\Http\Requests\CreateWordSpellingRequest;
 use LemurEngine\LemurBot\Http\Requests\UpdateWordSpellingRequest;
 use LemurEngine\LemurBot\Http\Requests\UploadWordSpellingFileRequest;
+use LemurEngine\LemurBot\Models\Category;
+use LemurEngine\LemurBot\Models\CategoryGroup;
+use LemurEngine\LemurBot\Models\Language;
 use LemurEngine\LemurBot\Models\WordSpelling;
 use LemurEngine\LemurBot\Models\WordSpellingGroup;
 use LemurEngine\LemurBot\Repositories\WordSpellingRepository;
@@ -206,7 +211,7 @@ class WordSpellingController extends AppBaseController
             return redirect(route('wordSpellings.index'));
         }
 
-        $this->wordSpellingRepository->delete($wordSpelling->id);
+        $this->wordSpellingRepository->force($wordSpelling->id);
 
         Flash::success('Word Spelling deleted successfully.');
 
@@ -240,7 +245,6 @@ class WordSpellingController extends AppBaseController
     {
         $this->authorize('create', WordSpelling::class);
 
-
         //start the transaction
         DB::beginTransaction();
 
@@ -253,17 +257,22 @@ class WordSpellingController extends AppBaseController
 
             // Commit the transaction
             DB::commit();
+        } catch (WordSpellingUploadException $e){
+
+            DB::rollback();
+            Log::error($e);
+            Flash::error($e->getMessage());
+            return redirect()->back();
+
         } catch (Exception $e) {
             DB::rollback();
             Log::error($e);
-
             //display generic error
             Flash::error('An error occurred - no changes have been made');
             //if admin display a little more info
             if(LemurPriv::isAdmin(Auth::user()) && (config('lemurbot.portal.show_detailed_error_messages'))){
                 Flash::error($e->getMessage());
             }
-
             return redirect()->back();
         }
 
@@ -274,4 +283,41 @@ class WordSpellingController extends AppBaseController
             return redirect('wordSpellingsUpload');
         }
     }
+
+    public function download($wordSpellingGroupSlug)
+    {
+        $wordSpellingGroup = WordSpellingGroup::where('slug', $wordSpellingGroupSlug)->first();
+        $language = Language::find($wordSpellingGroup->language_id);
+        $languageSlug = $language->slug;
+        $wordSpellingsArr = WordSpelling::selectRaw(
+            '? as WordSpellingGroupSlug, ? as LanguageSlug, word as Word, replacement as Replacement',
+            [$wordSpellingGroupSlug, $languageSlug]
+        )->where('word_spelling_group_id', $wordSpellingGroup->id)->orderBy('id')->get()->toArray();
+
+        if (empty($wordSpellingGroup) || count($wordSpellingsArr)<=0) {
+            Flash::error('Words not found');
+        }
+
+        $headers = [
+            'Cache-Control'       => 'must-revalidate, post-check=0, pre-check=0'
+            ,   'Content-type'        => 'text/csv'
+            ,   'Content-Disposition' => 'attachment; filename='.$wordSpellingGroupSlug.'.csv'
+            ,   'Expires'             => '0'
+            ,   'Pragma'              => 'public'
+        ];
+
+        # add headers for each column in the CSV download
+        array_unshift($wordSpellingsArr, array_keys($wordSpellingsArr[0]));
+
+        $callback = function () use ($wordSpellingsArr) {
+            $FH = fopen('php://output', 'w');
+            foreach ($wordSpellingsArr as $row) {
+                fputcsv($FH, $row);
+            }
+            fclose($FH);
+        };
+
+        return response()->stream($callback, 200, $headers);
+    }
+
 }

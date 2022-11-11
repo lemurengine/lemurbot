@@ -3,6 +3,9 @@
 
 namespace LemurEngine\LemurBot\Services;
 
+use LemurEngine\LemurBot\Exceptions\AimlUploadException;
+use LemurEngine\LemurBot\Exceptions\WordSpellingUploadException;
+use LemurEngine\LemurBot\Facades\LemurPriv;
 use LemurEngine\LemurBot\Models\Language;
 use LemurEngine\LemurBot\Models\WordSpelling;
 use LemurEngine\LemurBot\Models\WordSpellingGroup;
@@ -46,20 +49,20 @@ class WordSpellingUploadService
         $insertedRecords = 0;
 
         foreach ($data as $index => $record) {
-            $wordSpellingGroupName = $record[0];
-            $languageName = $record[1];
+            $wordSpellingGroupSlug = $record[0];
+            $languageSlug = $record[1];
 
-            if (empty($wordSpellingGroupIds[$wordSpellingGroupName][$languageName])) {
-                $wordSpellingGroupIds[$wordSpellingGroupName][$languageName] = $this->getWordSpellingGroupId(
-                    $wordSpellingGroupName,
-                    $languageName,
+            if (empty($wordSpellingGroupIds[$wordSpellingGroupSlug][$languageSlug])) {
+                $wordSpellingGroupIds[$wordSpellingGroupSlug][$languageSlug] = $this->getWordSpellingGroupId(
+                    $wordSpellingGroupSlug,
+                    $languageSlug,
                     $loggedInUser
                 );
             }
             $this->createWordSpelling(
-                $wordSpellingGroupIds[$wordSpellingGroupName][$languageName],
-                $record[1],
+                $wordSpellingGroupIds[$wordSpellingGroupSlug][$languageSlug],
                 $record[2],
+                $record[3],
                 $loggedInUser
             );
             $insertedRecords++;
@@ -89,20 +92,20 @@ class WordSpellingUploadService
 
         //delete the items linked to this record
         foreach ($data as $index => $record) {
-            $wordSpellingGroupName = $record[0];
-            $languageName = $record[1];
+            $wordSpellingGroupSlug = $record[0];
+            $languageSlug = $record[1];
 
-            if (!isset($wordSpellingGroupIds[$wordSpellingGroupName][$languageName])) {
+            if (!isset($wordSpellingGroupIds[$wordSpellingGroupSlug][$languageSlug])) {
                 //set this so it is excluded on the next loop
-                $wordSpellingGroupIds[$wordSpellingGroupName][$languageName] = $this->getWordSpellingGroupId(
-                    $wordSpellingGroupName,
-                    $languageName,
+                $wordSpellingGroupIds[$wordSpellingGroupSlug][$languageSlug] = $this->getWordSpellingGroupId(
+                    $wordSpellingGroupSlug,
+                    $languageSlug,
                     $loggedInUser
                 );
                 //delete all the values in this map that belong to this user
                 WordSpelling::where(
                     'word_spelling_group_id',
-                    $wordSpellingGroupIds[$wordSpellingGroupName][$languageName]
+                    $wordSpellingGroupIds[$wordSpellingGroupSlug][$languageSlug]
                 )
                     ->where('user_id', $loggedInUser)->delete();
             }
@@ -124,20 +127,23 @@ class WordSpellingUploadService
      * @return mixed
      * @throws Exception
      */
-    public function getWordSpellingGroupId($wordSpellingGroupName, $languageName, $userId)
+    public function getWordSpellingGroupId($wordSpellingGroupSlug, $languageSlug, $userId)
     {
 
         //get the word_spelling_group_id by name and created by user..
-        $languageId = $this->getLanguageId($languageName);
+        $languageId = $this->getLanguageIdBySlug($languageSlug);
 
         //get the word_spelling_group_id by name and created by user..
-        $wordSpellingGroup = WordSpellingGroup::where('name', 'like', $wordSpellingGroupName)
+        $wordSpellingGroup = WordSpellingGroup::where('slug', 'like', $wordSpellingGroupSlug)
             ->where('language_id', $languageId)->where('user_id', $userId)->withTrashed()->first();
 
         //wordSpellingGroup doesnt exist...
         if ($wordSpellingGroup == null) {
-            throw new Exception("Word spelling group ($wordSpellingGroupName - $languageName) does not exist");
-        } elseif ($wordSpellingGroup->deleted_at !== null) {
+            throw new WordSpellingUploadException("WordSpellingGroup with id: $wordSpellingGroupSlug with language id: $languageSlug does not exist");
+        } elseif($wordSpellingGroup->user_id !== Auth::id() && !LemurPriv::isAdmin(Auth::user())) {
+            throw new WordSpellingUploadException("WordSpellingGroup with id: $wordSpellingGroupSlug is not created by you. You cannot make changes to its words");
+        }
+        elseif ($wordSpellingGroup->deleted_at !== null) {
             $wordSpellingGroup->restore();
         }
 
@@ -151,15 +157,15 @@ class WordSpellingUploadService
      * @return mixed
      * @throws Exception
      */
-    public function getLanguageId($languageName)
+    public function getLanguageIdBySlug($languageSlug)
     {
 
         //get the language_id by name
-        $language = Language::where('name', 'like', $languageName)->first();
+        $language = Language::where('slug', 'like', $languageSlug)->first();
 
         //wordSpellingGroup doesnt exist...
         if ($language == null) {
-            throw new Exception("No such language ($languageName) exists");
+            throw new WordSpellingUploadException("Language with id: $languageSlug does not exist");
         }
 
         return $language->id;
@@ -180,8 +186,8 @@ class WordSpellingUploadService
 
         //get the word_spelling_group_id by name and created by user..
         $wordSpelling = WordSpelling::where('word_spelling_group_id', $wordSpellingGroupId)
-            ->where('word', $word)->where('replacement', $replacement)
-            ->where('user_id', $userId)->withTrashed()->first();
+            ->where('word', $word)
+            ->withTrashed()->first();
 
         //map_value doesnt exist...
         if ($wordSpelling == null) {
@@ -193,6 +199,13 @@ class WordSpellingUploadService
             $wordSpelling->save();
         } elseif ($wordSpelling->deleted_at !== null) {
             $wordSpelling->restore();
+            $wordSpelling->replacement = $replacement;
+            $wordSpelling->user_id = $userId;
+            $wordSpelling->save();
+        } elseif ($wordSpelling->replacement !== $replacement) {
+            $wordSpelling->replacement = $replacement;
+            $wordSpelling->user_id = $userId;
+            $wordSpelling->save();
         }
 
         return $wordSpelling->id;
