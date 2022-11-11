@@ -290,7 +290,7 @@ class WordSpellingController extends AppBaseController
         $language = Language::find($wordSpellingGroup->language_id);
         $languageSlug = $language->slug;
         $wordSpellingsArr = WordSpelling::selectRaw(
-            '? as WordSpellingGroupId, ? as Language, word as Word, replacement as Replacement',
+            '? as WordSpellingGroupSlug, ? as LanguageSlug, word as Word, replacement as Replacement',
             [$wordSpellingGroupSlug, $languageSlug]
         )->where('word_spelling_group_id', $wordSpellingGroup->id)->orderBy('id')->get()->toArray();
 
