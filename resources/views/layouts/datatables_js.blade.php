@@ -4,4 +4,5 @@
 <script src="https://cdn.datatables.net/buttons/1.3.1/js/dataTables.buttons.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/1.3.1/js/buttons.bootstrap.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/1.3.1/js/buttons.colVis.min.js"></script>
-<script src="{{ asset('vendor/datatables/buttons.server-side.js') }}"></script>
+{{ Html::script('vendor/datatables/buttons.server-side.js') }}
+{{ Html::script('vendor/lemurbot/js/buttons.lemur-extended.js') }}

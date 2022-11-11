@@ -45,6 +45,7 @@
         </div>
         <input name="image-filename" data-test="bot-image-filename"  type="hidden" value="{!! $imgFilename !!}"/>
         <input class="bot image-upload" name="image" id="bot-image" data-test="bot-image"  type="file" accept="image/*"/>
+
     </div>
 </div>
 
@@ -96,7 +97,7 @@
 
 <div class="form-group col-lg-6 col-md-6 col-sm-12" data-test="default_response">
     {!! Form::label('default_response', 'Default Response:', ['data-test'=>"default_response_label"]) !!}
-    {!! Form::text('default_response', config('lemurbot.properties.default_response'), ['placeholder'=>'Sorry, I dont\'t understand.', 'readonly'=>$readonly,  'class' => 'form-control', LemurEngine\LemurBot\Models\Bot::getFormValidation('default_response'),'id'=>"default_response_field", 'data-test'=>"default_response_field"] ) !!}
+    {!! Form::text('default_response', config('lemurbot.portal.default_response'), ['placeholder'=>'Sorry, I dont\'t understand.', 'readonly'=>$readonly,  'class' => 'form-control', LemurEngine\LemurBot\Models\Bot::getFormValidation('default_response'),'id'=>"default_response_field", 'data-test'=>"default_response_field"] ) !!}
     <small class="help-block text-muted-wrapped" data-test="">This is the response which is returned if no matching AIML category is found</small>
 </div>
 
@@ -108,7 +109,7 @@
 
 <div class="form-group col-lg-6 col-md-6 col-sm-12" data-test="critical_category_group">
     {!! Form::label('critical_category_group', 'Critical Category Group:', ['data-test'=>"critical_category_group_label"]) !!}
-    {!! Form::text('critical_category_group', config('lemurbot.properties.critical_category_filename'), ['placeholder'=>'std-critical', 'readonly'=>$readonly,  'class' => 'form-control', 'id'=>"critical_category_group_field", 'data-test'=>"critical_category_group_field"] ) !!}
+    {!! Form::text('critical_category_group', config('lemurbot.portal.critical_category_filename'), ['placeholder'=>'std-critical', 'readonly'=>$readonly,  'class' => 'form-control', 'id'=>"critical_category_group_field", 'data-test'=>"critical_category_group_field"] ) !!}
     <small class="help-block text-muted-wrapped" data-test="">The setting this category group ensures that this group cannot be unlinked from the bot.</small>
 </div>
 

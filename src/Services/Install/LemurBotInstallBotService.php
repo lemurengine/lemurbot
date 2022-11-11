@@ -77,7 +77,7 @@ class LemurBotInstallBotService extends LemurBotInstallService
                 'default_response' => 'I don\'t have a response for that',
                 'lemurtar_url' => 'https://lemurtar.com/?accessoriesType=Blank&avatarStyle=Circle&clotheColor=Pink&clotheType=Overall&eyeType=Default&eyebrowType=DefaultNatural&facialHairColor=Brown&facialHairType=Blank&graphicType=Pizza&hairColor=Black&hatColor=Blue02&mouthType=Twinkle&skinColor=Tanned&topType=ShortHairShaggyMullet',
                 'status' => 'A',
-                'image' => 'widgets/robot.png',
+                'image' => 'widgets/images/robot.png',
                 'is_public' => 1]);
 
         if($bot->wasRecentlyCreated){

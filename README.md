@@ -59,16 +59,6 @@ For more information on how to install Laravel check out: https://laravel.com/do
 composer require lemurengine/lemurbot
 ```
 
-### Additional Upgrade Step: Run the command to update a few filenames in the migrations folder
-Only do this is you are migrating from the old project \
-There are 4 files which need reverting to their original Laravel Migration file names \
-As soon as you have installed Laravel 9 and connected your database \
-Run this command to update the 4 filenames in the migrations table
-```php
-php artisan lemur:upgrade 9.0.0
-```
-
-
 ### Publish Template (recommended)
 This will create the default layout for the portal.\
 If you are installing the Lemur Engine into a fresh application then run this command.\
@@ -127,6 +117,15 @@ But you can if you want to.
 ``` php
 php artisan vendor:publish --tag=lemurbot-migrations
 ```
+
+### Additional Upgrade Step: Run the command to update a few filenames in the migrations folder
+Only do this is you are migrating from the old project \
+There are 4 filenames in the migration table which need reverting to their original Laravel Migration filenames \
+Run this command to update the 4 filenames in the migrations table before you move onto the next step
+```php
+php artisan lemur:upgrade 9.0.0
+```
+
 
 ### Run the database migrations (required)
 The following command will create or update your existing database table schema.
@@ -191,6 +190,14 @@ Don't forget to change your password.
 ```php
 php artisan serve
 ```
+
+
+## Note about deployment
+When you deploy to your live server remember to perform the steps below to update your live data
+
+    php artisan lemur:upgrade 9.0.0
+    php artisan migrate 
+
 
 ### More information
 Check out the docs for more information about how to use the portal and talk to the bot.

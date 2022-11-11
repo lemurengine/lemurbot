@@ -13,19 +13,17 @@ trait ImageTrait
     {
 
         //how are the images for this model stored?
-        $imageStorage = env('PUBLIC_STORAGE_ADAPTER', 'local');
+        $imageStorage = config('filesystems.default');
 
-        if ($imageStorage=='s3') {
-            $imageUrl = Storage::disk($imageStorage)->temporaryUrl(
-                $this->image,
-                Carbon::now()->addMinutes(20)
-            );
-        }elseif (strpos($this->image, 'widgets/')!==false) {
+
+        if (strpos($this->image, 'widgets/')!==false) { //if this is a widget image
             $imageUrl = url($this->image);
-        }elseif (Storage::disk($imageStorage)->exists('avatars/'.$this->image)) {
-            $imageUrl = asset('avatars/'.$this->image);
+        }elseif ($imageStorage=='s3') { //if we are getting the details from s3
+            $imageUrl = Storage::disk($imageStorage)->url('public/avatars/'.$this->image);
+        }elseif (Storage::disk($imageStorage)->exists('public/avatars/'.$this->image)) { //if this is a local image
+            $imageUrl = asset('storage/avatars/'.$this->image);
         }else {
-            $imageUrl = self::getDefaultImageUrl(false);
+            $imageUrl = self::getDefaultImageUrl(false); //get the default image
         }
 
         return $imageUrl;
@@ -37,7 +35,7 @@ trait ImageTrait
         if ($string) {
             return Avatar::create($string)->toBase64();
         } else {
-            return asset('avatars/missing.png');
+            return asset('widgets/images/missing.png');
         }
     }
 }

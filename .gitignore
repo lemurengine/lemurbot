@@ -10,3 +10,8 @@ testbench.yaml
 vendor
 node_modules
 .DS_Store
+# Symbolic links to these folders are created on the server so dont commit these 'links'
+public/widgets/avatar
+public/widgets/custom
+public/widgets/images
+public/widgets/popup
