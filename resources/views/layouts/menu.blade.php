@@ -1,10 +1,10 @@
 <li class="{{ Request::is('dashboard*') ? 'active' : '' }} side-bar-top-level-menu">
-    <a href="{!!  url('/dashboard')  !!}" data-test="sidebar-link-home"><i class="fa fa-home !!}"></i><span>Dashboard</span></a>
+    <a href="{!!  url('/dashboard')  !!}" data-test="sidebar-link-dashboard"><i class="fa fa-home !!}"></i><span>Dashboard</span></a>
 </li>
 
 
 <li class="{{ Request::is('bot*') ? 'active' : '' }}">
-    <a href="{{ url('botList') }}" data-test="sidebar-link-bots"><i class="fa fa-smile-o"></i><span>Bots</span></a>
+    <a href="{{ url('botList') }}" data-test="sidebar-link-bots-main"><i class="fa fa-smile-o"></i><span>Bots</span></a>
 </li>
 
 
@@ -123,7 +123,7 @@
         <ul class="treeview-menu" style="{{ Request::is('sections*')  || Request::is('botAllowedSites*') || Request::is('botRatings*') ||  Request::is('botKeys*') || Request::is('wildcards*') || Request::is('bots*') ||  Request::is('normalizations*') || Request::is('botWordSpellingGroups*') || Request::is('botProperties*') || Request::is('botCategoryGroups*')  || Request::is('users*') || Request::is('wordSpellingGroups*') || Request::is('wordSpellings*') || Request::is('languages*') || Request::is('wordTransformations*')  ? 'display:block;' : '' }}">
 
             <li class="{{ Request::is('bots*') ? 'active' : '' }}">
-                <a href="{{ url('bots') }}" data-test="sidebar-link-bots"><i class="fa fa-circle-o"></i><span>Bots</span></a>
+                <a href="{{ url('bots') }}" data-test="sidebar-link-bots-sub"><i class="fa fa-circle-o"></i><span>Bots</span></a>
             </li>
 
             <li class="{{ Request::is('botAllowedSites*') ? 'active' : '' }}">
