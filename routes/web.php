@@ -15,7 +15,7 @@ use LemurEngine\LemurBot\Http\Middleware\TransformData;
 */
 
 //this can be overwritten in the main projects web.php
-Auth::routes(['verify' => true,'register' => false]);
+Auth::routes(['verify' => true,'register' => false])->middleware(['web']);
 
 Route::get('/home', 'LemurEngine\LemurBot\Http\Controllers\DashboardController@index')
     ->middleware(['web'])->name('home');
