@@ -113,6 +113,11 @@ trait ConversationHelper
         return $this->currentConversationTurn->input;
     }
 
+    public function getPluginTransformedInput()
+    {
+        return $this->currentConversationTurn->getPluginTransformedInput();
+    }
+
     public function getTopic()
     {
         return $this->getGlobalProperty('topic');
@@ -167,6 +172,14 @@ trait ConversationHelper
     {
         return LemurStr::normalize($this->getInput(), true);
     }
+
+
+    public function normalisedPluginTransformedInput()
+    {
+        return LemurStr::normalize($this->getPluginTransformedInput(), true);
+    }
+
+
 
     public function normalisedTopic()
     {

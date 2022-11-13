@@ -19,6 +19,7 @@ use LemurEngine\LemurBot\Models\Client;
 use LemurEngine\LemurBot\Models\Conversation;
 use LemurEngine\LemurBot\Models\ConversationSource;
 use LemurEngine\LemurBot\Classes\AimlParser;
+use LemurEngine\LemurBot\Models\Map;
 use LemurEngine\LemurBot\Models\Normalization;
 use LemurEngine\LemurBot\Models\Wildcard;
 use LemurEngine\LemurBot\Models\WordSpelling;
@@ -438,7 +439,7 @@ class TalkService
         $preparedSentence = $sentence;
 
         $preparedSentence = $this->applyPrePlugins($preparedSentence);
-
+        $this->conversation->currentConversationTurn->setPluginTransformedInput($preparedSentence);
         $preparedSentence = LemurStr::normalizeInput($preparedSentence);
 
         $this->checkAndSetNormalizations($preparedSentence, $sentence);
@@ -570,39 +571,33 @@ class TalkService
 
     public function applySpellingCorrections($str){
 
-        $botWordSpellingGroupIds = BotWordSpellingGroup::where('bot_id', $this->bot->id)->pluck('id','id');
+        $botWordSpellingGroupIds = BotWordSpellingGroup::where('bot_id', $this->bot->id)->pluck('word_spelling_group_id','word_spelling_group_id');
 
         if(count($botWordSpellingGroupIds)==0){
-
             return $str;
         }
+        //break this up into words
+        $allInputWordsTmp = explode(" ",$str);
 
-        $allWords = $words = explode(" ",$str);
+        $wordSpellings = WordSpelling::whereIn('word_spelling_group_id',$botWordSpellingGroupIds)
+            ->where(function ($query)  use($allInputWordsTmp) {
+                //it has to be owned by the bot author or be a master record
+                for($i=0;$i<count($allInputWordsTmp);$i++) {
+                    $query->orWhere('word', $allInputWordsTmp[$i])
+                        ->orWhere('word', 'like', $allInputWordsTmp[$i].' %')
+                        ->orWhere('word', 'like', '% ' .$allInputWordsTmp[$i]);
+                };
+            })->orderByRaw("(LENGTH(word) - LENGTH(REPLACE(word, ' ', ''))+1) DESC")
+                ->pluck('replacement', 'word');
 
-        $countWords = count($words);
-        for($i=0; $i<=$countWords; $i++){
-            $j=$i+1;
-            $k=$i+2;
-            if(isset($words[$j])){
-                $allWords[] = $words[$i].' '.$words[$j];
-            }
-            if(isset($words[$j]) && isset($words[$k])){
-                $allWords[] = $words[$i].' '.$words[$j].' '.$words[$k];
-            }
-        }
 
-        $wordSpellings = WordSpelling::whereIn('word_spelling_group_id',$botWordSpellingGroupIds)->whereIn('word',$allWords)->pluck( 'replacement','word');
-
-        if(count($wordSpellings)==0){
-
+        if(count($wordSpellings)===0){
             return $str;
         }
-
 
         foreach($wordSpellings as $replacement => $word){
             $str = preg_replace("~\b$replacement\b~is",$word,$str);
         }
-
 
 
         return $str;
