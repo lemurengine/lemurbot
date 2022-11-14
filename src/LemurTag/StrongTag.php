@@ -10,7 +10,7 @@ use SimpleXMLElement;
  * example: <strong>I AM BOLD</strong>
  * @package LemurEngine\LemurBot\LemurTag
  * Documentation on this tag, examples and explanation
- * see: https://docs.lemurbot.com/aiml.html
+ * see: https://docs.lemurengine.com/aiml.html
  */
 class StrongTag extends HtmlTag
 {

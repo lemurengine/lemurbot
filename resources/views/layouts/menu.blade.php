@@ -209,7 +209,7 @@
     <ul class="treeview-menu" style="{{ Request::is('customDocs*')  ? 'display:block;' : '' }}">
 
         <li>
-            <a href="https://docs.lemurbot.com" data-test="sidebar-link-standard-docs"><i class="fa fa-circle-o"></i><span>Standard Docs</span></a>
+            <a href="https://docs.lemurengine.com" data-test="sidebar-link-standard-docs"><i class="fa fa-circle-o"></i><span>Standard Docs</span></a>
         </li>
 
         <li class="{{ Request::is('customDocs*') ? 'active' : '' }}">

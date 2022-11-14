@@ -21,7 +21,7 @@ use LemurEngine\LemurBot\Models\Conversation;
  * Output: Yikes
  *
  * Documentation:
- * https://docs.lemurbot.com/extend.html
+ * https://docs.lemurengine.com/extend.html
  */
 class EchoTag extends AimlTag
 {
