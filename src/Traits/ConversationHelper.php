@@ -266,7 +266,6 @@ trait ConversationHelper
 
     public function setGlobalProperty($name, $value)
     {
-
         ConversationProperty::updateOrCreate(
             ['conversation_id' =>  $this->id, 'name'=>$name],
             ['conversation_id' =>  $this->id, 'name'=>$name, 'value'=>$value]
@@ -284,6 +283,7 @@ trait ConversationHelper
 
             return $default;
         }
+
         return $property->value;
     }
 

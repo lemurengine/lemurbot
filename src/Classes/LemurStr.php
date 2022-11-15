@@ -327,11 +327,23 @@ class LemurStr
 
     public static function cleanForFinalOutput($str): string
     {
+
+        $str = preg_replace('/\.([A-Z])/',". $1",$str);
+        $str = preg_replace('/\?([A-Z])/',"? $1",$str);
+        $str = preg_replace('/\!([A-Z])/',"1 $1",$str);
         $str = str_replace("_keepspace_", " ", $str);
+        $str = str_replace("keepspace", " ", $str);
+        $str = str_replace(", .", ". ", $str);
         $str = str_replace(":", ": ", $str);
         $str = str_replace(": //", "://", $str);
         return trim(str_replace("  ", " ", $str));
     }
 
+    public static function cleanKeepSpace($str): string
+    {
+        $str = str_replace("_keepspace_", " ", $str);
+        return str_replace("keepspace", " ", $str);
+
+    }
 
 }

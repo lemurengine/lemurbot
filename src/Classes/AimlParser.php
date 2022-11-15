@@ -57,8 +57,6 @@ class AimlParser
      */
     public function extractAllWildcards()
     {
-
-
         $this->extractAndSaveWildCards('star');
         $this->extractAndSaveWildCards('topicstar');
         $this->extractAndSaveWildCards('thatstar');
@@ -494,7 +492,6 @@ class AimlParser
 
         $wildcardArr = LemurStr::extractWildcardFromString($str, $strRegExp);
 
-
         if (!empty($wildcardArr)) {
             //reverse it so we maintain the order as we insert...
             $wildcardArr = array_reverse($wildcardArr);
@@ -502,7 +499,7 @@ class AimlParser
                 $wildcard = new Wildcard;
                 $wildcard->conversation_id = $this->conversation->id;
                 $wildcard->type = $extractType;
-                $wildcard->value = $wildCard;
+                $wildcard->value = LemurStr::cleanKeepSpace($wildCard);
                 $wildcard->save();
             }
         }

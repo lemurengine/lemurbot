@@ -2,6 +2,7 @@
 namespace LemurEngine\LemurBot\LemurTag;
 
 use LemurEngine\LemurBot\Classes\LemurLog;
+use LemurEngine\LemurBot\Classes\LemurStr;
 use LemurEngine\LemurBot\Models\Wildcard;
 use LemurEngine\LemurBot\Models\Conversation;
 
@@ -105,7 +106,7 @@ class StarTag extends AimlTag
                 $wildcard = new Wildcard;
                 $wildcard->conversation_id = $this->conversation->id;
                 $wildcard->type = 'topicstar';
-                $wildcard->value = $star;
+                $wildcard->value = LemurStr::cleanKeepSpace($star);
                 $wildcard->save();
             }
         }
