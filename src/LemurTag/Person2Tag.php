@@ -63,13 +63,13 @@ class Person2Tag extends AimlTag
 
                 if ($newWord!=$word) {
                     $change=true;
-                    $this->buildResponse($newWord);
+                    $this->buildResponse(" ".$newWord." ");
                     break;
                 }
             }
 
             if (!$change) {
-                $this->buildResponse($word);
+                $this->buildResponse(" ".$word." ");
             }
         }
     }

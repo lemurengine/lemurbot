@@ -1,6 +1,7 @@
 <?php
 namespace LemurEngine\LemurBot\LemurTag;
 
+use LemurEngine\LemurBot\Classes\LemurStr;
 use LemurEngine\LemurBot\Models\Conversation;
 
 /**
@@ -36,10 +37,13 @@ class TemplateTag extends AimlTag
         } else {
             //if not this is the last tag ... just send the contents
             $contents = $this->getCurrentTagContents(true);
-          //  $this->buildResponse($contents);
 
+            $contents = LemurStr::cleanForFinalOutput($contents);
 
-            return $contents;
+            $contents = str_replace("_keepspace_", " ", $contents);
+            $contents = str_replace(":", ": ", $contents);
+            $contents = str_replace(": //", "://", $contents);
+            return trim(str_replace("  ", " ", $contents));
         }
     }
 }

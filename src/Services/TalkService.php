@@ -398,7 +398,6 @@ class TalkService
                 'sentence'=>$message
             ]
         );
-
         $message = LemurStr::removeSentenceEnders($message);
         $sentences = LemurStr::splitIntoSentences($message);
 
@@ -437,7 +436,6 @@ class TalkService
     public function process($sentence)
     {
         $preparedSentence = $sentence;
-
         $preparedSentence = $this->applyPrePlugins($preparedSentence);
         $this->conversation->currentConversationTurn->setPluginTransformedInput($preparedSentence);
         $preparedSentence = LemurStr::normalizeInput($preparedSentence);
@@ -467,10 +465,12 @@ class TalkService
                     return '';
                 }
                 $this->conversation->debug('categories.matches.top', [$category->toArray()]);
+                $category = $this->aimlParser->expandWhiteSpaceTagSpacing($category);
                 $this->aimlParser->setCategory($category);
             } else {
                 $category = $categories;
-                $this->aimlParser->setCategory($categories);
+                $category = $this->aimlParser->expandWhiteSpaceTagSpacing($category);
+                $this->aimlParser->setCategory($category);
             }
 
             $this->aimlParser->extractAllWildcards();

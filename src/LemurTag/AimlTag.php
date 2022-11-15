@@ -666,11 +666,11 @@ XML;
         $this->tagContents=[];
     }
 
-    public function buildResponse($newResponse)
+    public function buildResponse($newResponse, $sourceTag = null)
     {
         $this->tagContents[]=$newResponse;
 
-        $contents = LemurStr::cleanAndImplode($this->tagContents);
+        $contents = LemurStr::cleanAndImplode($this->tagContents, $sourceTag);
         $this->tagContents=[];
         $this->tagContents[]=$contents;
 

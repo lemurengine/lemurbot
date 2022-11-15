@@ -92,7 +92,7 @@ class WordSpellingController extends AppBaseController
         $this->authorize('create', WordSpelling::class);
         $input = $request->all();
 
-        $wordSpelling = $this->wordSpellingRepository->create($input);
+        $wordSpelling = $this->wordSpellingRepository->createOrUpdate($input);
 
         Flash::success('Word Spelling saved successfully.');
 
@@ -181,7 +181,7 @@ class WordSpellingController extends AppBaseController
 
         $input = $request->all();
 
-        $wordSpelling = $this->wordSpellingRepository->update($input, $wordSpelling->id);
+        $wordSpelling = $this->wordSpellingRepository->createOrUpdate($input, $wordSpelling->id);
 
         Flash::success('Word Spelling updated successfully.');
 
@@ -211,7 +211,7 @@ class WordSpellingController extends AppBaseController
             return redirect(route('wordSpellings.index'));
         }
 
-        $this->wordSpellingRepository->force($wordSpelling->id);
+        $this->wordSpellingRepository->delete($wordSpelling->id);
 
         Flash::success('Word Spelling deleted successfully.');
 

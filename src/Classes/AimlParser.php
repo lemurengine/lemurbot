@@ -39,6 +39,17 @@ class AimlParser
         $this->category = $category;
     }
 
+    public function expandWhiteSpaceTagSpacing(Category $category)
+    {
+        $newTemplate = str_replace(" <", "<whitespace /><", $category->template);
+        $newTemplate = str_replace("> ", "><whitespace />", $newTemplate);
+        $newTemplate = str_replace("> ", "><whitespace />", $newTemplate);
+        $newTemplate = str_replace("> ", "><whitespace />", $newTemplate);
+        $newTemplate = str_replace("> ", "><whitespace />", $newTemplate);
+        $category->template = $newTemplate;
+        return $category;
+    }
+
     /**
      * before we parse the AIML template
      * we need to do some things such as
@@ -55,7 +66,6 @@ class AimlParser
 
     public function parseTemplate($encoding = 'UTF-8', $is_final = false)
     {
-
         return $this->parse($this->category->template, $encoding, $is_final);
     }
 
@@ -108,7 +118,7 @@ class AimlParser
     public function setConditionStack($template)
     {
 
-
+        $template = LemurStr::removeTrailingKeepSpace($template);
         $xml_data = simplexml_load_string($template);
 
 
@@ -149,7 +159,7 @@ class AimlParser
     public function reduceRandomStack($template)
     {
 
-
+        $template = LemurStr::removeTrailingKeepSpace($template);
         $xml_data = simplexml_load_string($template);
 
         if (isset($xml_data->random->li)) {
@@ -293,7 +303,6 @@ class AimlParser
                 'tag_id'=>$this->getTagId()
             ]
         );
-
         if ($this->currentTag->getIsTagValid()) {
             if ($this->currentTag->getTagName()=='Template') {
                // echo "<br/>THIS IS JUST CDATA...".$cdata." parent = ".$p->getTagName();

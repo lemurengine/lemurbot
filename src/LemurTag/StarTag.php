@@ -54,7 +54,7 @@ class StarTag extends AimlTag
         } else {
             $star = $this->buildResponseFromStar();
             $this->buildResponse($star);
-            $this->checkSetTopicStar($star);
+            $this->checkSetTopicStar($star, 'star');
         }
     }
 
