@@ -46,4 +46,43 @@ class WordSpellingRepository extends BaseRepository
     {
         return WordSpelling::class;
     }
+
+
+
+    /**
+     * Add extra data before saving
+     *
+     * @param array $input
+     *
+     */
+    public function createOrUpdate($input, $id = null):void
+    {
+
+        if (!is_null($id)) {
+            //so lets update/restore or create a new BotWordSpellingGroup
+            $item = WordSpelling::withTrashed()->updateOrCreate(
+                [
+                    'word_spelling_group_id' => $input['word_spelling_group_id'],
+                    'word' => $input['word']],
+                [
+                    'user_id' => Auth::id(),
+                    'replacement' => $input['replacement']
+                ]
+            )->where('id', $id);
+        } else {
+            //so lets update or create a new BotWordSpellingGroup
+            $item = WordSpelling::withTrashed()->updateOrCreate([
+                'word_spelling_group_id' => $input['word_spelling_group_id'],
+                'word' => $input['word']],
+                [
+                    'user_id' => Auth::id(),
+                    'replacement' => $input['replacement']
+                ]);
+        }
+
+        //if deleted lets restore
+        if (!empty($item->deleted_at) && !is_null($item->deleted_at)) {
+            $item->restore();
+        }
+    }
 }

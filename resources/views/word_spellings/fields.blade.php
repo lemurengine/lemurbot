@@ -53,10 +53,25 @@
 @endif
 
 
-<div class="form-group col-lg-6 col-md-6 col-sm-12" data-test="word_div">
-    {!! Form::label('word', 'Word:', ['data-test'=>"word_label"]) !!}
-    {!! Form::text('word', null, ['class' => 'form-control', LemurEngine\LemurBot\Models\WordSpelling::getFormValidation('word'),'id'=>"word_field", 'data-test'=>"word_field"] ) !!}
-</div>
+<!-- Slug Field -->
+@if( !empty($wordSpelling) && !empty($wordSpelling->word) )
+
+    <div class="form-group col-lg-6 col-md-6 col-sm-12" data-test="word_div">
+        {!! Form::label('word', 'Word:', ['data-test'=>"word_label"]) !!}
+        {!! Form::text('word', null, ['readonly'=>'readonly', 'class' => 'form-control', LemurEngine\LemurBot\Models\WordSpelling::getFormValidation('word'),'id'=>"word_field", 'data-test'=>"word_field"] ) !!}
+        <small class="text-muted-wrapped">You cannot update words, only their replacements. Please delete and create a new word if you wish to change this.</small>
+    </div>
+
+@else
+
+    <div class="form-group col-lg-6 col-md-6 col-sm-12" data-test="word_div">
+        {!! Form::label('word', 'Word:', ['data-test'=>"word_label"]) !!}
+        {!! Form::text('word', null, ['class' => 'form-control', LemurEngine\LemurBot\Models\WordSpelling::getFormValidation('word'),'id'=>"word_field", 'data-test'=>"word_field"] ) !!}
+    </div>
+
+@endif
+
+
 
 <div class="clearfix"></div>
 

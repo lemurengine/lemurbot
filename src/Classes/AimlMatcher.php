@@ -40,7 +40,7 @@ class AimlMatcher
             if ($pattern != $category->pattern) {
                 $this->conversation->debug(
                     'filtering.pattern.replaced.' . $category->slug,
-                    $pattern
+                    preg_replace('~\\|.*\\|~', '|...hidden for brevity...|', $pattern, -1, $count)
                 );
 
                 $category->fill(['regexp_pattern' => $pattern]);
@@ -124,7 +124,7 @@ class AimlMatcher
                     $removed=true;
                     $this->conversation->debug(
                         'filtering.result.removed.'.$category->slug,
-                        'Patterns do not match - '.$pattern
+                        'Patterns do not match - '.preg_replace('~\\|.*\\|~', '|...hidden for brevity...|', $pattern, -1, $count)
                     );
             }
 
@@ -137,7 +137,7 @@ class AimlMatcher
                     $removed=true;
                     $this->conversation->debug(
                         'filtering.result.removed.'.$category->slug,
-                        'Topics do not match - '.$topic
+                        'Topics do not match - '.preg_replace('~\\|.*\\|~', '|...hidden for brevity...|', $pattern, -1, $count)
                     );
                 }
             }
@@ -152,7 +152,7 @@ class AimlMatcher
                     $categories = $this->removeFromCollection($categories, $category->id);
                     $this->conversation->debug(
                         'filtering.result.removed.'.$category->slug,
-                        'Thats do not match - '.$that
+                        'Thats do not match - '.preg_replace('~\\|.*\\|~', '|...hidden for brevity...|', $pattern, -1, $count)
                     );
                 }
             }
