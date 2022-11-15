@@ -165,10 +165,10 @@ class AimlParser
         if (isset($xml_data->random->li)) {
 
             foreach ($xml_data->random[0]->li as $index => $tag) {
-                $this->randomStack[] = $tag->asXML();
+                $randomStack[] = $tag->asXML();
             }
 
-            $randomTag = trim(array_rand(array_flip($this->randomStack), 1));
+            $randomTag = trim(array_rand(array_flip($randomStack), 1));
 
             unset($xml_data->random[0]->li);
 
@@ -184,10 +184,9 @@ class AimlParser
             $contents = preg_replace("~\s+~", " ", $contents);
 
 
-            $contents = preg_replace('~<random><replace>(.*?)</replace></random>~s', $liContents, $contents);
+            $contents = preg_replace('~<replace>here</replace>~s', $liContents, $contents);
 
             $template = trim(preg_replace('#<\?xml.*\?>#', '', $contents));
-
 
 
             //recursively call to reduce the next random in the template (if there is one)
