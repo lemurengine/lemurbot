@@ -140,7 +140,7 @@
 
 
                                     </div>
-                                    <small>id: {!! $categoryGroup->slug !!}</small>
+                                    <small>id: {!! $categoryGroup->category_group_id !!}</small>
                                 </div>
 
 
