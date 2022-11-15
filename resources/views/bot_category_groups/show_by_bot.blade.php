@@ -76,7 +76,7 @@
                         <h3 class="box-title">{!! $allSections[$sectionId]['name'] !!} Section</h3>
 
                         <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-toggle="collapse" href="#{!! $sectionSlug !!}" role="button" aria-expanded="{!! $sectionShow !!}" aria-controls="#{!! $sectionSlug !!}" data-test='{!! $sectionSlug !!}_expand_button'><i class="fa fa-minus"></i>
+                            <button type="button" class="btn btn-box-tool expander {!! $collapseShow !!}" data-toggle="collapse" href="#{!! $sectionSlug !!}" role="button" aria-expanded="{!! $sectionShow !!}" aria-controls="#{!! $sectionSlug !!}" data-test='{!! $sectionSlug !!}_expand_button'><i class="fa fa-minus"></i>
                             </button>
                         </div>
                         <!-- /.box-tools -->
