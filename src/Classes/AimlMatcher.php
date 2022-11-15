@@ -40,7 +40,7 @@ class AimlMatcher
             if ($pattern != $category->pattern) {
                 $this->conversation->debug(
                     'filtering.pattern.replaced.' . $category->slug,
-                    preg_replace('~\|.*\|~', '|...hidden for brevity...|', $pattern, -1, $count)
+                    preg_replace('~\\|.*\\|~', '|...hidden for brevity...|', $pattern, -1, $count)
                 );
 
                 $category->fill(['regexp_pattern' => $pattern]);
