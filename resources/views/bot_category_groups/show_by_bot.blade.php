@@ -110,7 +110,7 @@
 
                                             @endif
 
-                                        <input type='checkbox' class="cb-element" name='linked[{!! $index !!}]' value='1' {!! $checked !!}  id='{!! $categoryGroup->category_group_id !!}_link_field' data-test='{!! $categoryGroup->slug !!}_link_field'>
+                                        <input type='checkbox' class="cb-element" name='linked[{!! $index !!}]' value='1' {!! $checked !!}  id='{!! $categoryGroup->category_group_id !!}_link_field' data-test='{!! $categoryGroup->slug !!}_checkbox'>
                                         </span>
 
                                         <input type='text' value='{!! strtolower($categoryGroup->name) !!}' class='form-control' id='{!! $categoryGroup->name !!}_value_field' data-test='{!! $categoryGroup->name !!}_value_field'>
@@ -140,6 +140,7 @@
 
 
                                     </div>
+                                    <small>id: {!! $categoryGroup->slug !!}</small>
                                 </div>
 
 
