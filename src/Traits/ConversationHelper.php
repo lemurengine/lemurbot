@@ -266,6 +266,7 @@ trait ConversationHelper
 
     public function setGlobalProperty($name, $value)
     {
+        $value = LemurStr::cleanKeepSpace($value);
         ConversationProperty::updateOrCreate(
             ['conversation_id' =>  $this->id, 'name'=>$name],
             ['conversation_id' =>  $this->id, 'name'=>$name, 'value'=>$value]

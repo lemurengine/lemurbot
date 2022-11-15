@@ -158,6 +158,7 @@ class AimlParser
     {
 
         $template = LemurStr::removeTrailingKeepSpace($template);
+        $originalTemplate=$template;
         $xml_data = simplexml_load_string($template);
 
         if (isset($xml_data->random->li)) {
@@ -185,7 +186,6 @@ class AimlParser
             $contents = preg_replace('~<replace>here</replace>~s', $liContents, $contents);
 
             $template = trim(preg_replace('#<\?xml.*\?>#', '', $contents));
-
 
             //recursively call to reduce the next random in the template (if there is one)
             return $this->reduceRandomStack($template);
