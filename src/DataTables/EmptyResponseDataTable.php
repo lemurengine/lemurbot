@@ -94,7 +94,7 @@ class EmptyResponseDataTable extends DataTable
                 }',
                 'initComplete' => 'function(settings, json) {
 
-                    var maxColumn = 5
+                    var maxColumn = 6
                     var dateFields = [maxColumn-1]
                     var exactSearchFields = [0,1]
                     var noSearchFields = [maxColumn]
@@ -126,6 +126,7 @@ class EmptyResponseDataTable extends DataTable
         return [
             'id'=> ['name'=>'empty_responses.id','data'=>'id','title'=>'#'],
             'bot'=> ['name'=>'bots.slug','data'=>'bot','title'=>'BotId'],
+            'that'=> ['title'=>'That'],
             'input'=> ['title'=>'Input'],
             'occurrences'=> ['title'=>'Occurrences'],
             'updated_at'=> ['name'=>'updated_at','data'=>'updated_at', 'title'=>'Updated',
