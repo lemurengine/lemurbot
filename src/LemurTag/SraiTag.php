@@ -3,6 +3,7 @@ namespace LemurEngine\LemurBot\LemurTag;
 
 use Exception;
 use LemurEngine\LemurBot\Classes\LemurLog;
+use LemurEngine\LemurBot\Classes\LemurStr;
 use LemurEngine\LemurBot\Services\TalkService;
 use LemurEngine\LemurBot\Models\Conversation;
 use function Ramsey\Uuid\v1;
@@ -84,6 +85,7 @@ class SraiTag extends AimlTag
 
     public function getResponseFromNewTalk($contents)
     {
+        $contents = LemurStr::cleanKeepSpace($contents);
 
         $this->sraiCount++;
 
@@ -94,7 +96,6 @@ class SraiTag extends AimlTag
         }
 
         $this->conversation->setVar('srai-count', $this->sraiCount);
-
         $this->talkService->initFromTag($this->conversation, $contents, 'srai');
 
         $this->talkService->talk($contents);

@@ -69,7 +69,6 @@ class AimlParser
 
     public function parse($template, $encoding = 'UTF-8', $is_final = false)
     {
-
         LemurLog::info(
             'parsing',
             [
