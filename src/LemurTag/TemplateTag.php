@@ -37,7 +37,13 @@ class TemplateTag extends AimlTag
         } else {
             //if not this is the last tag ... just send the contents
             $contents = $this->getCurrentTagContents(true);
-            return LemurStr::cleanForFinalOutput($contents);
+
+            $contents = LemurStr::cleanForFinalOutput($contents);
+
+            $contents = str_replace("_keepspace_", " ", $contents);
+            $contents = str_replace(":", ": ", $contents);
+            $contents = str_replace(": //", "://", $contents);
+            return trim(str_replace("  ", " ", $contents));
         }
     }
 }

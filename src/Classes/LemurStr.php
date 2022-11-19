@@ -345,7 +345,6 @@ class LemurStr
         $str = str_replace("_keepspace_", " ", $str);
         $str = str_replace("keepspace", " ", $str);
         return trim($str);
-
     }
 
 }

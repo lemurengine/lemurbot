@@ -241,24 +241,6 @@ abstract class AimlTag implements AimlTagInterface
     }
 
 
-
-    /**
-     * nothing to do ...
-     * this is intentionally left empty
-     */
-    public function __destruct()
-    {
-
-        LemurLog::info(
-            __FUNCTION__,
-            [
-                'conversation_id'=>$this->conversation->id,
-                'turn_id'=>$this->conversation->currentTurnId(),
-                'tag_id'=>$this->getTagId(),
-            ]
-        );
-    }
-
     public function getTagContentsCompact()
     {
         return implode(" ", $this->tagContents);

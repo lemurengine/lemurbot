@@ -30,24 +30,11 @@
 
 <div class="form-group col-lg-6 col-md-6 col-sm-12" data-test="that_div">
     {!! Form::label('that', 'That:', ['data-test'=>"that_label"]) !!}
-
-    @if(!empty($emptyResponse->that))
-        <div class="input-group">
-            {!! Form::text('that', $emptyResponse->that, ['class' => 'form-control', LemurEngine\LemurBot\Models\Category::getFormValidation('that'),'id'=>"that_field", 'data-test'=>"that_field"] ) !!}
-            <div class="input-group-btn">
-                <span name='clear' id='clear-button' data-field="that_field" data-test='clear-button' class='btn btn-warning clear-button'><i class='fa fa-remove'></i> clear</span>
-            </div>
-        </div>
-    @else
-        {!! Form::text('that', null, ['class' => 'form-control', LemurEngine\LemurBot\Models\Category::getFormValidation('that'),'id'=>"that_field", 'data-test'=>"that_field"] ) !!}
-
-    @endif
-
+    {!! Form::text('that', null, ['class' => 'form-control', LemurEngine\LemurBot\Models\Category::getFormValidation('that'),'id'=>"that_field", 'data-test'=>"that_field"] ) !!}
     <small class="help-block" data-test="help-block-that-field">
-        <span>You do not need to add the enclosing &lt;that>&lt;/that> tags.</span>
+        <span>You do not need to add the enclosing &lt;that>&lt;/that> tags.<br/>All fields will be normalized when you save.</span>
     </small>
 </div>
-
 
 <div class="clearfix"></div>
 

@@ -12,12 +12,6 @@
 
 <!-- Raw Input Field -->
 <div class="form-group">
-    {!! Form::label('that', 'That:') !!}
-    <p>{{ $emptyResponse->that }}</p>
-</div>
-
-<!-- Raw Input Field -->
-<div class="form-group">
     {!! Form::label('input', 'Input:') !!}
     <p>{{ $emptyResponse->input }}</p>
 </div>

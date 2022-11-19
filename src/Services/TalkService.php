@@ -546,6 +546,7 @@ class TalkService
             $debugArr['wildcards']['thatstar'] = Wildcard::where('conversation_id', $conversation->id)
                 ->where('type', 'thatstar')->latest('id')->take(10)->pluck('value');
 
+
             $debugArr['globals']= $conversation->getGlobalProperties();
             $debugArr['locals']= $conversation->getVars();
             $debugArr['debug']= $conversation->getDebugs();

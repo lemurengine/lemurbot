@@ -15,7 +15,7 @@ class AimlParser
     private $xmlParser;
     private $currentTag;
     private $response='';
-    private $conditionStack = array();
+    private $conditionStack = [];
     private $conversation;
     private $currentTurn;
     private $category;
@@ -69,6 +69,7 @@ class AimlParser
 
     public function parse($template, $encoding = 'UTF-8', $is_final = false)
     {
+
         LemurLog::info(
             'parsing',
             [
@@ -153,11 +154,10 @@ class AimlParser
 
     }
 
-    public function reduceRandomStack($template)
+    public function reduceRandomStack($template, $index = 0)
     {
 
         $template = LemurStr::removeTrailingKeepSpace($template);
-        $originalTemplate=$template;
         $xml_data = simplexml_load_string($template);
 
         if (isset($xml_data->random->li)) {
@@ -185,14 +185,14 @@ class AimlParser
             $contents = preg_replace('~<replace>here</replace>~s', $liContents, $contents);
 
             $template = trim(preg_replace('#<\?xml.*\?>#', '', $contents));
-
             //recursively call to reduce the next random in the template (if there is one)
-            return $this->reduceRandomStack($template);
+
+            $this->conversation->debug('template.reduction.'.$index, $template);
+
+            return $this->reduceRandomStack($template, $index++);
 
 
         }
-
-        $this->conversation->debug('template.reduction', $template);
 
         return $template;
     }
@@ -254,7 +254,6 @@ class AimlParser
                 'tag_id'=>$this->currentTag->getTagId()
             ]
         );
-
         $this->getTagStack()->push($this->currentTag, $this->getTagId());
 
         if (!$this->currentTag->getIsTagValid()) {
@@ -437,7 +436,6 @@ class AimlParser
 
         if ($previousTag && !$previousTag->getIsTagValid()) {
             $this->currentTag->setIsTagValid(false);
-
             LemurLog::warn('Invalid tag', [
                 'conversation_id'=>$this->conversation->id,
                 'turn_id'=>$this->conversation->currentTurnId(),
@@ -490,6 +488,7 @@ class AimlParser
 
 
         $wildcardArr = LemurStr::extractWildcardFromString($str, $strRegExp);
+
 
         if (!empty($wildcardArr)) {
             //reverse it so we maintain the order as we insert...

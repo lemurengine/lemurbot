@@ -129,7 +129,7 @@ trait ConversationHelper
 
         //
 
-        /*$lastSource = $this->currentConversationTurn->source;
+        $lastSource = $this->currentConversationTurn->source;
 
         if ($lastSource=='human') {
             //this is a v lazy way of doing this
@@ -138,10 +138,9 @@ trait ConversationHelper
             //this is a v lazy way of doing this
             $turn = Turn::where('conversation_id', $this->id)
                 ->where('source', '!=', 'multiple')->latest('id')->skip(1)->first();
-        }*/
-        //i have commented the above  out... I cannot find any good point where we would need a non humnan turn that
-        //but just incase things get strange we will leave it here for now
-        $turn = Turn::where('conversation_id', $this->id)->where('source', 'human')->latest('id')->skip(1)->first();
+        }
+
+
 
         if ($turn!==null) {
 
@@ -267,7 +266,7 @@ trait ConversationHelper
 
     public function setGlobalProperty($name, $value)
     {
-        $value = LemurStr::cleanKeepSpace($value);
+
         ConversationProperty::updateOrCreate(
             ['conversation_id' =>  $this->id, 'name'=>$name],
             ['conversation_id' =>  $this->id, 'name'=>$name, 'value'=>$value]
@@ -285,7 +284,6 @@ trait ConversationHelper
 
             return $default;
         }
-
         return $property->value;
     }
 

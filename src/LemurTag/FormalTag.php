@@ -44,8 +44,13 @@ class FormalTag extends AimlTag
             ]
         );
 
+
         $contents = $this->getCurrentTagContents(true);
-        $tagContents = mb_convert_case($contents, MB_CASE_TITLE, "UTF-8");
-        $this->buildResponse($tagContents);
+        if ($this->isInLiTag()) { //if we are in a LI tag...
+            $this->buildResponse("<formal>" . $contents . "</formal>");
+        } else {
+            $tagContents = mb_convert_case($contents, MB_CASE_TITLE, "UTF-8");
+            $this->buildResponse($tagContents);
+        }
     }
 }
