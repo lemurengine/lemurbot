@@ -841,7 +841,7 @@ class BotController extends AppBaseController
      */
     public function quickChat(Request $request)
     {
-        $slug = $request->input('q','');
+        $slug = $request->input('bot_id','');
         $bot = Bot::where('slug',$slug)->where('user_id', Auth::user()->id)->first();
 
         if (empty($bot)) {
@@ -850,9 +850,6 @@ class BotController extends AppBaseController
         }else{
             return redirect(url('bot/'.$slug.'/chat'));
         }
-
-
-
     }
 
     /**
@@ -936,6 +933,119 @@ class BotController extends AppBaseController
     }
 
 
+    /**
+     * Display all the properties for this bot in the tab
+     *
+     * @param  string $slug
+     *
+     * @return Response
+     */
+    public function popupChatForm($id)
+    {
+
+        $bot = $this->botRepository->find($id);
+
+        if (empty($bot)) {
+            Flash::error('Bot not found');
+            return redirect(route('bots.index'));
+        }
+
+
+        //to help with data testing and form settings
+        $link = 'popupChat';
+        $htmlTag = 'popup-chat';
+        $title = 'Popup Chat';
+        $resourceFolder = 'lemurbot::bot_chat';
+
+        session(['target_bot' => $bot]);
+
+        // get a nice list of word spelling groups
+        return view($resourceFolder.'.popup')->with(
+            ['bot'=> $bot,
+                'link'=>$link,
+                'htmlTag'=>$htmlTag,
+                'title'=>$title,
+                'conversation'=>[],
+                'resourceFolder'=>$resourceFolder
+            ]
+        );
+    }
+
+    /**
+     * Initiate a talk to the bot...
+     * @param CreateTalkRequest $request
+     * @param TalkService $talkService
+     * @return Factory|View
+     * @throws Exception
+     */
+    public function popupChat($id, CreateTalkRequest $request, TalkService $talkService)
+    {
+
+        $bot = $this->botRepository->find($id);
+
+        if (empty($bot)) {
+            Flash::error('Bot not found');
+            return redirect(route('bots.index'));
+        }
+
+
+        //to help with data testing and form settings
+        $link = 'popupChat';
+        $htmlTag = 'popup-chat';
+        $title = 'Popup Chat';
+        $resourceFolder = 'lemurbot::bot_chat';
+
+        session(['target_bot' => $bot]);
+
+        try {
+            if (!empty($request->input('message'))) {
+                $talkService->checkOwnerAccess($request);
+                $talkService->validateRequest($request);
+
+
+                //return the service and return the response and debug
+                $parts = $talkService->run($request->input(), true);
+                //get the latest conversations from the service
+                $conversation=$talkService->getConversation();
+
+                $res=$parts['response'];
+                $allResponses=$parts['allResponses'];
+            } else {
+                $res=[];
+                $conversation=[];
+                $allResponses=[];
+            }
+
+
+            // get a nice list of word spelling groups
+            return view($resourceFolder.'.popup')->with(
+                ['bot'=> $bot,
+                    'link'=>$link,
+                    'htmlTag'=>$htmlTag,
+                    'title'=>$title,
+                    'resourceFolder'=>$resourceFolder,
+                    'response'=>$res,
+                    'conversation'=>$conversation,
+                    'sentences' => $allResponses,
+                ]
+            );
+        } catch (Exception $e) {
+            // get a nice list of word spelling groups
+            return view($resourceFolder.'.popup')->with(
+                ['bot'=> $bot,
+                    'link'=>$link,
+                    'htmlTag'=>$htmlTag,
+                    'title'=>$title,
+                    'resourceFolder'=>$resourceFolder,
+                    'response'=>['error'=>true,'message'=>$e->getMessage(),'line'=>$e->getLine(),'file'=>basename($e->getFile())],
+                    'conversation'=>[],
+                    'sentences' => [],
+                ]
+            );
+        }
+
+
+    }
 
     /**
      * @param $request

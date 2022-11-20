@@ -115,9 +115,9 @@
 
             <small class="copyright">
                 portal: {!! config('lemurbot.version.portal.id') !!} | bot: {!! config('lemurbot.version.bot.id') !!} |
-                Designed with <i class="fa fa-heart"></i> by <a href="https://lemurbot.com/" target="_blank">Lemur Engine</a> and <i class="fa fa-github-alt"></i> <a href="https://github.com/lemurengine/lemurbot">Friends</a>
+                Designed with <i class="fa fa-heart"></i> by <a href="https://lemurengine.com/" target="_blank">Lemur Engine</a> and <i class="fa fa-github-alt"></i> <a href="https://github.com/lemurengine/lemurbot">Friends</a>
 
-                | Copyright © {{date('Y')}} <a href="https://lemurbot.com">lemurbot.com</a>.</small>
+                | Copyright © {{date('Y')}} <a href="https://lemurengine.com">lemurengine.com</a>.</small>
         </footer>
 
 

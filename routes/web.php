@@ -79,7 +79,7 @@ Route::resource('customDocs', 'LemurEngine\LemurBot\Http\Controllers\CustomDocCo
     ->middleware(['web',TransformData::class]);
 
 /** ---------------------------------------------------------------
- *  Create category from an empty response
+ *  Quick chat with a bot
  ** -------------------------------------------------------------- */
 Route::group(['prefix' => '/quickchat'], function () {
 
@@ -88,6 +88,15 @@ Route::group(['prefix' => '/quickchat'], function () {
 
 });
 
+/** ---------------------------------------------------------------
+ *  Popup chat with a bot
+ ** -------------------------------------------------------------- */
+Route::group(['prefix' => '/quickchat'], function () {
+
+    Route::GET('/', 'LemurEngine\LemurBot\Http\Controllers\BotController@quickChat')
+        ->middleware(['web']);
+
+});
 
 /** ---------------------------------------------------------------
  *  Create category from an empty response
@@ -396,6 +405,10 @@ Route::group(['prefix' => '/bot'], function () {
     ->middleware(['web']);
     Route::POST('/{botSlug}/chat', 'LemurEngine\LemurBot\Http\Controllers\BotController@chat')
     ->middleware(['web']);
+    Route::GET('/{botSlug}/popup', 'LemurEngine\LemurBot\Http\Controllers\BotController@popupChatForm')
+        ->middleware(['web']);
+    Route::POST('/{botSlug}/popup', 'LemurEngine\LemurBot\Http\Controllers\BotController@popupChat')
+        ->middleware(['web']);
 });
 
 

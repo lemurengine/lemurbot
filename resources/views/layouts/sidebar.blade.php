@@ -18,14 +18,33 @@
 
         <!-- Sidebar Menu -->
         <form action="{!! url('/quickchat') !!}" method="get" class="sidebar-form">
-            <div class="input-group">
-                <input type="text" name="q" class="form-control" value="@if(!empty(Session::get('target_bot'))){!! Session::get('target_bot')->slug !!}@endif" placeholder="Quick Chat...">
-                <span class="input-group-btn">
-                <button type="submit" id="search-btn" class="btn btn btn-info">
-                  <i class="fa fa-forward"></i> Go
-                </button>
-              </span>
-            </div>
+
+
+            <!-- Category Group Id Field -->
+                <div class="form-group col-sm-12 select2" data-test="category_group_id_div">
+                    {!! Form::label('bot_id', 'Bot:', ['data-test'=>"bot-id-quick-chat-label"]) !!}
+                    <div class="input-group">
+                        {!! Form::select('bot_id', LemurEngine\LemurBot\Models\Bot::myBots(), Session::get('target_bot')->slug??"", [ 'placeholder'=>'Quick Chat...', 'class' => 'form-control select2', 'data-test'=>"bot-id-quick-chat-select", 'id'=>"bot-id-quick-chat-select"]) !!}
+                        <div class="input-group-btn">
+                            @if(!empty(Session::get('target_bot')->slug)))
+                                <button type="submit" id="bot-id-quick-chat-go-button" class="btn btn btn-info" data-test='bot-id-quick-chat-go-button'>
+                                    <i class="fa fa-arrow-right"></i>
+                                </button>
+                                <button type="button" id='bot-id-quick-chat-popup-button' class="btn btn-warning" data-test='bot-id-quick-chat-popup-button'>
+                                    <i class="fa fa-arrow-up"></i>
+                                </button>
+                            @endif
+                        </div>
+                    </div>
+
+                </div>
+            <!--/.direct-chat-messages-->
+                <div class="clearfix"></div>
+
+
+
+
+
         </form>
         <ul class="sidebar-menu" data-widget="tree">
             @include('lemurbot::layouts.menu')
@@ -34,3 +53,18 @@
     </section>
     <!-- /.sidebar -->
 </aside>
+@push('scripts')
+<script>
+    $(document).ready(function() {
+        $("#bot-id-quick-chat-popup-button").click(function (e) {
+            var botName = $('#bot-id-quick-chat-select :selected').text();
+            var botId = $('#bot-id-quick-chat-select :selected').val();
+            var left = (screen.width ) ;
+            var top = (screen.height ) ;
+            window.open('/bot/'+botId+'/popup','Chatting with '+botName,'toolbar=no, menubar=no, resizable=no, width=400,height=500 , top=' + top + ', left=' + left);
+        });
+    });
+
+    //window.open(url,'window','toolbar=no, menubar=no, resizable=yes');
+</script>
+@endpush

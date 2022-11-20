@@ -472,4 +472,20 @@ class Bot extends Model
             return $query->where('user_id', $thisLoggedInUser->id);
         }
     }
+
+
+    /**
+     * Scope a query a specific property.
+     * Get the bots this user is allowed to edit
+     *
+     * @param Builder $query
+     * @param $name
+     * @return Builder
+     */
+    public static function myBots()
+    {
+        return Bot::where('user_id', Auth::user()->id)->orderBy('name')->pluck('name', 'slug');
+    }
+
+
 }

@@ -440,8 +440,6 @@ class TalkService
         $this->conversation->currentConversationTurn->setPluginTransformedInput($preparedSentence);
         $preparedSentence = LemurStr::normalizeInput($preparedSentence);
 
-        echo "<br/>".$preparedSentence;
-
         $this->checkAndSetNormalizations($preparedSentence, $sentence);
 
         //initially we will check to see if there is 'learnt' response from the same client...
@@ -451,6 +449,7 @@ class TalkService
             $this->conversation->debug('categories.find.sentence', $preparedSentence);
             //if not go to the big db find the match
             $categories = $this->aimlMatcher->match($preparedSentence);
+
             //update the state with a list of matched category id's
             $this->conversation->debug('categories.matches.all', $categories->pluck('slug'));
             //expand out any tags in the pattern, that, set
