@@ -51,7 +51,7 @@ class EmptyTag extends AimlTag
             $emptyResponse = new EmptyResponse();
             $emptyResponse->bot_id = $this->conversation->bot->id;
             $emptyResponse->that = $that;
-            $emptyResponse->input = $input;
+            $emptyResponse->input = $this->conversation->getInput();
             $emptyResponse->occurrences = 1;
             $emptyResponse->save();
         } else {
