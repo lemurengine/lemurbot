@@ -440,6 +440,8 @@ class TalkService
         $this->conversation->currentConversationTurn->setPluginTransformedInput($preparedSentence);
         $preparedSentence = LemurStr::normalizeInput($preparedSentence);
 
+        echo "<br/>".$preparedSentence;
+
         $this->checkAndSetNormalizations($preparedSentence, $sentence);
 
         //initially we will check to see if there is 'learnt' response from the same client...
