@@ -200,7 +200,7 @@ class AimlParser
             $this->conversation->debug('template.reduction.'.$index, $newTemplate);
 
             if($newTemplate !=$template){
-                $this->conversation->flow('expanding_whitespace', $newTemplate);
+                $this->conversation->flow('reducing_randomstack', $newTemplate);
             }
 
             return $this->reduceRandomStack($newTemplate, $index++);
