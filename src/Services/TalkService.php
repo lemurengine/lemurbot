@@ -470,23 +470,24 @@ class TalkService
                 $this->conversation->debug('categories.matches.filtered', $categories->pluck('slug'));
                 $category = $this->aimlMatcher->score($categories);
                 if(!$category){
+                    $this->conversation->flow('top_scoring_category', 'no categories after filtering');
                     return '';
                 }
                 $this->conversation->debug('categories.matches.top', [$category->toArray()]);
-                $category->template = $this->aimlParser->expandWhiteSpaceTagSpacing($category->template);
-                $this->aimlParser->setCategory($category);
                 $this->conversation->flow('top_scoring_category_total', count($categories));
                 $this->conversation->flow('top_scoring_category_id', $category->id);
                 $this->conversation->flow('top_scoring_category_pattern', $category->pattern);
                 $this->conversation->flow('top_scoring_category_template', $category->template);
-            } else {
-                $category = $categories;
                 $category->template = $this->aimlParser->expandWhiteSpaceTagSpacing($category->template);
                 $this->aimlParser->setCategory($category);
+            } else {
+                $category = $categories;
                 $this->conversation->flow('top_scoring_category_total', 1);
                 $this->conversation->flow('top_scoring_category_id', $category->id);
                 $this->conversation->flow('top_scoring_category_pattern', $category->pattern);
                 $this->conversation->flow('top_scoring_category_template', $category->template);
+                $category->template = $this->aimlParser->expandWhiteSpaceTagSpacing($category->template);
+                $this->aimlParser->setCategory($category);
             }
 
             $this->aimlParser->extractAllWildcards();

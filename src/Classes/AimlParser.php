@@ -180,12 +180,15 @@ class AimlParser
 
             $newTemplate = str_replace($currentRandomToReplace, $randomTag,$newTemplate );
 
-            $this->conversation->debug('template.reduction.'.$index, $newTemplate);
+            if($newTemplate != $template){
+                $this->conversation->debug('template.reduction.'.$index, $newTemplate);
+            }
 
             return $this->reduceRandomStack($newTemplate, $index++);
         }
 
-        $newTemplate = str_replace('randomReplaced', 'random',$newTemplate );
+        $newTemplate = str_replace('<randomReplaced><li>', '',$newTemplate );
+        $newTemplate = str_replace('</li></randomReplaced>', '',$newTemplate );
         if($newTemplate !=$template){
             $this->conversation->flow('reducing_randomstack', $newTemplate);
         }

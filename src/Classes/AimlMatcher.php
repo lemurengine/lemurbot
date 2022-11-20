@@ -474,6 +474,10 @@ class AimlMatcher
         $thatNormalised = $this->conversation->normalisedThat();
 
 
+        $this->conversation->flow('searching_categories_sentence_pattern', $preparedSentence);
+        $this->conversation->flow('searching_categories_topic', $topicNormalised);
+        $this->conversation->flow('searching_categories_that', $thatNormalised);
+
         //if this is a single word....
         /**
          * we are searching for a matching pattern we do this by doing a regex search on pattern/topic/that
