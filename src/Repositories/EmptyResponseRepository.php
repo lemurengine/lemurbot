@@ -20,6 +20,7 @@ class EmptyResponseRepository extends BaseRepository
         'slug',
         'that',
         'input',
+        'source',
         'occurrences'
     ];
 

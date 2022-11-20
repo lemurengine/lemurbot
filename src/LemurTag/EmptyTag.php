@@ -44,17 +44,21 @@ class EmptyTag extends AimlTag
 
         $input = $this->getCurrentTagContents();
         $that = $this->conversation->getThat('human');
+        $source = $this->conversation->getSource();
         $input = LemurStr::cleanKeepSpace($input);
 
-        $empty = EmptyResponse::where('bot_id', $this->conversation->bot->id)->where('input', 'like', $input)->where('that', 'like', $that)->first();
+        $empty = EmptyResponse::where('bot_id', $this->conversation->bot->id)->where('input', 'like', $input)->where('that', 'like', $that)->where('source', 'like', $source)->first();
         if ($empty===null) {
             $emptyResponse = new EmptyResponse();
             $emptyResponse->bot_id = $this->conversation->bot->id;
             $emptyResponse->that = $that;
-            $emptyResponse->input = $this->conversation->getInput();
+            $emptyResponse->input = $this->conversation->getInput('human');
+            $emptyResponse->source = $source;
             $emptyResponse->occurrences = 1;
             $emptyResponse->save();
         } else {
+            $empty->that = $that;
+            $empty->source = $source;
             $empty->occurrences++;
             $empty->save();
         }

@@ -44,6 +44,11 @@ use Spatie\Sluggable\SlugOptions;
  *          type="string"
  *      ),
  *      @SWG\Property(
+ *          property="source",
+ *          description="source",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
  *          property="occurrences",
  *          description="occurrences",
  *          type="integer",
@@ -91,6 +96,7 @@ class EmptyResponse extends Model
         'slug',
         'input',
         'that',
+        'source',
         'occurrences'
     ];
 
@@ -105,6 +111,7 @@ class EmptyResponse extends Model
         'slug' => 'string',
         'input' => 'string',
         'that' => 'string',
+        'source' => 'string',
         'occurrences' => 'integer',
     ];
 
@@ -116,6 +123,7 @@ class EmptyResponse extends Model
     public static $rules = [
         'bot_id' => 'required',
         'that' => 'string',
+        'source' => 'string',
         'input' => 'required|string',
     ];
 

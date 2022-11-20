@@ -126,6 +126,12 @@ trait ConversationHelper
         return $this->currentConversationTurn->getPluginTransformedInput();
     }
 
+
+    public function getSource()
+    {
+        return $this->currentConversationTurn->source;
+    }
+
     public function getTopic()
     {
         return $this->getGlobalProperty('topic');
