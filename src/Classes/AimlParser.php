@@ -39,12 +39,19 @@ class AimlParser
         $this->category = $category;
     }
 
-    public function expandWhiteSpaceTagSpacing(Category $category)
+    public function expandWhiteSpaceTagSpacing($template)
     {
-        $newTemplate = str_replace(" <", "<whitespace /><", $category->template);
-        $newTemplate = str_replace("> ", "><whitespace />", $newTemplate);
-        $category->template = $newTemplate;
-        return $category;
+
+        $newTemplate = preg_replace('~\s(<star[^>]*>)~iU', "<whitespace />$1", $template);
+        $newTemplate = preg_replace('~(<star[^>]*>)\s~iU', "$1<whitespace />", $newTemplate);
+
+        $newTemplate = preg_replace('~\s(<topicstar[^>]*>)~iU', "<whitespace />$1", $newTemplate);
+        $newTemplate = preg_replace('~(<topicstar[^>]*>)\s~iU', "$1<whitespace />", $newTemplate);
+
+
+        $newTemplate = preg_replace('~\s(<thatstar[^>]*>)~iU', "<whitespace />$1", $newTemplate);
+        return preg_replace('~(<thatstar[^>]*>)\s~iU', "$1<whitespace />", $newTemplate);
+
     }
 
     /**

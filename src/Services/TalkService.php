@@ -466,11 +466,11 @@ class TalkService
                     return '';
                 }
                 $this->conversation->debug('categories.matches.top', [$category->toArray()]);
-                $category = $this->aimlParser->expandWhiteSpaceTagSpacing($category);
+                $category->template = $this->aimlParser->expandWhiteSpaceTagSpacing($category->template);
                 $this->aimlParser->setCategory($category);
             } else {
                 $category = $categories;
-                $category = $this->aimlParser->expandWhiteSpaceTagSpacing($category);
+                $category->template = $this->aimlParser->expandWhiteSpaceTagSpacing($category->template);
                 $this->aimlParser->setCategory($category);
             }
 
