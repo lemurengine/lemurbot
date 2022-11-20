@@ -43,9 +43,6 @@ class AimlParser
     {
         $newTemplate = str_replace(" <", "<whitespace /><", $category->template);
         $newTemplate = str_replace("> ", "><whitespace />", $newTemplate);
-        $newTemplate = str_replace("> ", "><whitespace />", $newTemplate);
-        $newTemplate = str_replace("> ", "><whitespace />", $newTemplate);
-        $newTemplate = str_replace("> ", "><whitespace />", $newTemplate);
         $category->template = $newTemplate;
         return $category;
     }
