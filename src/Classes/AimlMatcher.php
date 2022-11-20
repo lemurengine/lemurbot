@@ -32,6 +32,8 @@ class AimlMatcher
 
         foreach ($categories as $category) {
 
+            echo "<br/>".$category->pattern;
+
             $pattern = LemurStr::convertStrToRegExp($category->pattern);
             $pattern = $this->replaceSets($pattern, 'set', $this->conversation->bot);
             $pattern = $this->replaceBotProperty($pattern, $this->conversation->bot);
