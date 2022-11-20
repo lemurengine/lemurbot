@@ -342,8 +342,9 @@ class LemurStr
 
     public static function cleanKeepSpace($str): string
     {
-        $str = str_replace("_keepspace_", " ", $str);
-        $str = str_replace("keepspace", " ", $str);
+        $str = str_ireplace("_keepspace_", " ", $str);
+        $str = str_ireplace("keepspace", " ", $str);
+        $str = preg_replace('/\s+/', ' ', $str);
         return trim($str);
     }
 
