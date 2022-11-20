@@ -169,43 +169,25 @@ class AimlParser
 
         $newTemplate = LemurStr::removeTrailingKeepSpace($template);
         $xml_data = simplexml_load_string($newTemplate);
-
         if (isset($xml_data->random->li)) {
 
             foreach ($xml_data->random[0]->li as $index => $tag) {
                 $randomStack[] = $tag->asXML();
             }
 
-            $randomTag = trim(array_rand(array_flip($randomStack), 1));
+            $currentRandomToReplace = $xml_data->random[0]->asXML();
+            $randomTag = "<randomReplaced>".trim(array_rand(array_flip($randomStack), 1))."</randomReplaced>";
 
-            unset($xml_data->random[0]->li);
-
-            $pattern = "#<\s*?li\b[^>]*>(.*?)</li\b[^>]*>#s";
-            preg_match($pattern, $randomTag, $matches);
-            $liContents = $matches[1];
-
-
-            $xml_data->random[0]->addChild('replace', 'here');
-            $contents = $xml_data->asXML();
-            $contents = preg_replace("~<random>\s+<replace>~", "<random><replace>", $contents);
-            $contents = preg_replace("~</replace>\s+</random>~", "</replace></random>", $contents);
-            $contents = preg_replace("~\s+~", " ", $contents);
-
-
-            $contents = preg_replace('~<replace>here</replace>~s', $liContents, $contents);
-
-            $newTemplate = trim(preg_replace('#<\?xml.*\?>#', '', $contents));
-            //recursively call to reduce the next random in the template (if there is one)
+            $newTemplate = str_replace($currentRandomToReplace, $randomTag,$newTemplate );
 
             $this->conversation->debug('template.reduction.'.$index, $newTemplate);
 
-            if($newTemplate !=$template){
-                $this->conversation->flow('reducing_randomstack', $newTemplate);
-            }
-
             return $this->reduceRandomStack($newTemplate, $index++);
+        }
 
-
+        $newTemplate = str_replace('randomReplaced', 'random',$newTemplate );
+        if($newTemplate !=$template){
+            $this->conversation->flow('reducing_randomstack', $newTemplate);
         }
 
         return $newTemplate;
