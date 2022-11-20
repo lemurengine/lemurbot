@@ -167,8 +167,8 @@ class AimlParser
     public function reduceRandomStack($template, $index = 0)
     {
 
-        $template = LemurStr::removeTrailingKeepSpace($template);
-        $xml_data = simplexml_load_string($template);
+        $newTemplate = LemurStr::removeTrailingKeepSpace($template);
+        $xml_data = simplexml_load_string($newTemplate);
 
         if (isset($xml_data->random->li)) {
 
@@ -194,17 +194,21 @@ class AimlParser
 
             $contents = preg_replace('~<replace>here</replace>~s', $liContents, $contents);
 
-            $template = trim(preg_replace('#<\?xml.*\?>#', '', $contents));
+            $newTemplate = trim(preg_replace('#<\?xml.*\?>#', '', $contents));
             //recursively call to reduce the next random in the template (if there is one)
 
-            $this->conversation->debug('template.reduction.'.$index, $template);
+            $this->conversation->debug('template.reduction.'.$index, $newTemplate);
 
-            return $this->reduceRandomStack($template, $index++);
+            if($newTemplate !=$template){
+                $this->conversation->flow('expanding_whitespace', $newTemplate);
+            }
+
+            return $this->reduceRandomStack($newTemplate, $index++);
 
 
         }
 
-        return $template;
+        return $newTemplate;
     }
 
     public function getConditionStack()
