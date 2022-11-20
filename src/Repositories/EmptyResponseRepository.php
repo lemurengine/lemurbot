@@ -18,6 +18,7 @@ class EmptyResponseRepository extends BaseRepository
     protected $fieldSearchable = [
         'bot_id',
         'slug',
+        'that',
         'input',
         'occurrences'
     ];
