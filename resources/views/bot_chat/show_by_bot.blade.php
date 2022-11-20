@@ -117,6 +117,7 @@
                             <ul class="nav nav-tabs">
                                 <li class="active"><a href="#response" data-toggle="tab">Response</a></li>
                                 <li><a href="#debug" data-toggle="tab">Debug</a></li>
+                                <li><a href="#flow" data-toggle="tab">Flow</a></li>
                                 <li><a href="#wildcards" data-toggle="tab">Wildcards</a></li>
                                 <li><a href="#globals" data-toggle="tab">Globals</a></li>
                                 <li><a href="#locals" data-toggle="tab">Locals</a></li>
@@ -142,6 +143,14 @@
                                         <div class="alert alert-info">Start talking and full response will appear here</div>
                                     @endif
 
+                                </div>
+                                <!-- /.tab-pane -->
+                                <div class="tab-pane" id="flow">
+                                    @if(!empty($flow))
+                                        <pre><code>{{ json_encode($flow,JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) }}</code></pre>
+                                    @else
+                                        <div class="alert alert-info">Start talking and detailed flow information will appear here</div>
+                                    @endif
                                 </div>
                                 <!-- /.tab-pane -->
                                 <div class="tab-pane" id="debug">

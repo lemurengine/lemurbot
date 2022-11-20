@@ -51,10 +51,10 @@ class StarTag extends AimlTag
 
         if ($this->isInLiTag()) {
             $newContents = $this->buildAIMLIfInDoNotParseMode($contents);
-            $this->buildResponse($newContents);
+            $this->buildResponse($newContents, false);
         } else {
             $star = $this->buildResponseFromStar();
-            $this->buildResponse($star);
+            $this->buildResponse($star,false);
             $this->checkSetTopicStar($star, 'star');
         }
     }

@@ -648,13 +648,15 @@ XML;
         $this->tagContents=[];
     }
 
-    public function buildResponse($newResponse, $sourceTag = null)
+    public function buildResponse($newResponse, $keepSpace = true)
     {
-        $this->tagContents[]=$newResponse;
+        $this->tagContents[]=($keepSpace?' ':'').$newResponse;
 
-        $contents = LemurStr::cleanAndImplode($this->tagContents, $sourceTag);
+        $contents = LemurStr::cleanAndImplode($this->tagContents);
         $this->tagContents=[];
         $this->tagContents[]=$contents;
+
+        //$this->conversation->flow('building_response', $this->tagContents[0]);
 
         $this->getTagStack()->overWrite($this);
     }
@@ -675,6 +677,9 @@ XML;
 
     public function getResponseFromReParse($contents)
     {
+
+        $this->conversation->flow('response_from_reparse', $contents);
+
 
         //does the contents actually have a tag?
         if (strpos($contents, "<")!==false) {

@@ -2,6 +2,7 @@
 namespace LemurEngine\LemurBot\LemurTag;
 
 use LemurEngine\LemurBot\Classes\LemurLog;
+use LemurEngine\LemurBot\Classes\LemurStr;
 use LemurEngine\LemurBot\Models\EmptyResponse;
 use LemurEngine\LemurBot\Models\Conversation;
 
@@ -42,12 +43,14 @@ class EmptyTag extends AimlTag
         );
 
         $input = $this->getCurrentTagContents();
+        $that = $this->conversation->getThat('human');
+        $input = LemurStr::cleanKeepSpace($input);
 
-        $empty = EmptyResponse::where('bot_id', $this->conversation->bot->id)->where('input', 'like', $input)->first();
-
+        $empty = EmptyResponse::where('bot_id', $this->conversation->bot->id)->where('input', 'like', $input)->where('that', 'like', $that)->first();
         if ($empty===null) {
             $emptyResponse = new EmptyResponse();
             $emptyResponse->bot_id = $this->conversation->bot->id;
+            $emptyResponse->that = $that;
             $emptyResponse->input = $input;
             $emptyResponse->occurrences = 1;
             $emptyResponse->save();

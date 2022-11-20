@@ -50,7 +50,13 @@ class AimlParser
 
 
         $newTemplate = preg_replace('~\s(<thatstar[^>]*>)~iU', "<whitespace />$1", $newTemplate);
-        return preg_replace('~(<thatstar[^>]*>)\s~iU', "$1<whitespace />", $newTemplate);
+        $newTemplate = preg_replace('~(<thatstar[^>]*>)\s~iU', "$1<whitespace />", $newTemplate);
+
+        if($newTemplate !=$template){
+            $this->conversation->flow('expanding_whitespace', $newTemplate);
+        }
+
+        return $newTemplate;
 
     }
 
@@ -503,6 +509,7 @@ class AimlParser
                 $wildcard->type = $extractType;
                 $wildcard->value = LemurStr::cleanKeepSpace($wildCard);
                 $wildcard->save();
+                $this->conversation->flow('wildcard.'.$extractType, LemurStr::cleanKeepSpace($wildCard));
             }
         }
     }

@@ -22,9 +22,9 @@
 
             <!-- Category Group Id Field -->
                 <div class="form-group col-sm-12 select2" data-test="category_group_id_div">
-                    {!! Form::label('bot_id', 'Bot:', ['data-test'=>"bot-id-quick-chat-label"]) !!}
+                    {!! Form::label('bot_id', 'Quick chat:', ['data-test'=>"bot-id-quick-chat-label"]) !!}
                     <div class="input-group">
-                        {!! Form::select('bot_id', LemurEngine\LemurBot\Models\Bot::myBots(), Session::get('target_bot')->slug??"", [ 'placeholder'=>'Quick Chat...', 'class' => 'form-control select2', 'data-test'=>"bot-id-quick-chat-select", 'id'=>"bot-id-quick-chat-select"]) !!}
+                        {!! Form::select('bot_id', LemurEngine\LemurBot\Models\Bot::myBots(), Session::get('target_bot')->slug??"", [ 'placeholder'=>'Quick Chat...', 'style'=>'color: #b8c7ce; box-shadow: none; background-color: #374850; border: 1px solid transparent; height: 35px;', 'class' => 'form-control select2', 'data-test'=>"bot-id-quick-chat-select", 'id'=>"bot-id-quick-chat-select"]) !!}
                         <div class="input-group-btn">
                             @if(!empty(Session::get('target_bot')->slug)))
                                 <button type="submit" id="bot-id-quick-chat-go-button" class="btn btn btn-info" data-test='bot-id-quick-chat-go-button'>

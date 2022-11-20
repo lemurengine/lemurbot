@@ -6,6 +6,7 @@ namespace LemurEngine\LemurBot\Services;
 use Exception;
 use Illuminate\Validation\UnauthorizedException;
 use LemurEngine\LemurBot\Classes\AimlMatcher;
+use LemurEngine\LemurBot\Classes\FlowStack;
 use LemurEngine\LemurBot\Classes\LemurLog;
 use LemurEngine\LemurBot\Classes\LemurStr;
 use LemurEngine\LemurBot\Facades\LemurPriv;
@@ -187,7 +188,7 @@ class TalkService
             return ['response'=>$res];
         }
 
-        return ['response'=>$res, 'debug'=>$debug,'allResponses'=>$allResponses];
+        return ['response'=>$res, 'debug'=>$debug, 'flow'=>FlowStack::getInstance()->getFlowStack(), 'allResponses'=>$allResponses];
     }
 
     /**
@@ -224,6 +225,8 @@ class TalkService
             $forceNew
         );
 
+        $this->conversation->flow('initConversation', $input['message']);
+
         if(!empty($input['startingTopic']) && $this->conversation->isFirstTurn()){
             $this->conversation->setGlobalProperty('topic', $input['startingTopic']);
         }
@@ -231,6 +234,8 @@ class TalkService
         if($this->conversation->isFirstTurn()){
             ConversationSource::createConversationSource($this->conversation->id);
         }
+
+
 
         LemurLog::debug(
             'conversation started',
@@ -255,7 +260,7 @@ class TalkService
      */
     public function initTurn($input, $source = 'human', $parentTurnId = null)
     {
-
+        $this->conversation->flow('initTurn.'.$source, $input['message']);
         $turn = TurnFactory::createTurn($this->conversation, $input, $source, $parentTurnId);
 
         $this->conversation->refresh();
@@ -291,7 +296,7 @@ class TalkService
      */
     public function initFromSentences($input, $responseArr, $parentTurnId)
     {
-
+        $this->conversation->flow('initFromSentences', $input['message']);
         if (isset($input['html']) && $input['html']) {
             $allowHtml=true;
         } else {
@@ -340,6 +345,7 @@ class TalkService
     public function initFromTag($conversation, $message, $source, $copyVars = true)
     {
 
+        $conversation->flow('initFromTag.'.$source, $message);
 
         $conversation->debug('info', "this response includes a reparse. Reparse values below");
 
@@ -458,6 +464,7 @@ class TalkService
             $categories = $this->aimlMatcher->filter($categories);
 
             if (!$categories) {
+                $this->conversation->flow('top_scoring_category', 'no categories');
                 return '';
             } elseif (is_countable($categories)) {
                 $this->conversation->debug('categories.matches.filtered', $categories->pluck('slug'));
@@ -468,10 +475,18 @@ class TalkService
                 $this->conversation->debug('categories.matches.top', [$category->toArray()]);
                 $category->template = $this->aimlParser->expandWhiteSpaceTagSpacing($category->template);
                 $this->aimlParser->setCategory($category);
+                $this->conversation->flow('top_scoring_category_total', count($categories));
+                $this->conversation->flow('top_scoring_category_id', $category->id);
+                $this->conversation->flow('top_scoring_category_pattern', $category->pattern);
+                $this->conversation->flow('top_scoring_category_template', $category->template);
             } else {
                 $category = $categories;
                 $category->template = $this->aimlParser->expandWhiteSpaceTagSpacing($category->template);
                 $this->aimlParser->setCategory($category);
+                $this->conversation->flow('top_scoring_category_total', 1);
+                $this->conversation->flow('top_scoring_category_id', $category->id);
+                $this->conversation->flow('top_scoring_category_pattern', $category->pattern);
+                $this->conversation->flow('top_scoring_category_template', $category->template);
             }
 
             $this->aimlParser->extractAllWildcards();

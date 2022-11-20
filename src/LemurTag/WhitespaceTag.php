@@ -28,6 +28,6 @@ class WhitespaceTag extends AimlTag
 
     public function closeTag()
     {
-        $this->buildResponse('_keepspace_');
+        $this->buildResponse('_keepspace_', false);
     }
 }

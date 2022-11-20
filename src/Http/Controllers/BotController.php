@@ -891,11 +891,13 @@ class BotController extends AppBaseController
 
                 $res=$parts['response'];
                 $debug=$parts['debug'];
+                $flow=$parts['flow'];
                 $allResponses=$parts['allResponses'];
             } else {
                 $res=[];
                 $conversation=[];
                 $debug=[];
+                $flow=[];
                 $allResponses=[];
             }
 
@@ -910,6 +912,7 @@ class BotController extends AppBaseController
                     'response'=>$res,
                     'conversation'=>$conversation,
                     'debug'=>$debug,
+                    'flow'=>$flow,
                     'sentences' => $allResponses,
                 ]
             );

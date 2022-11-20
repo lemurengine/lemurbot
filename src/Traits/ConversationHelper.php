@@ -2,6 +2,7 @@
 
 namespace LemurEngine\LemurBot\Traits;
 
+use LemurEngine\LemurBot\Classes\FlowStack;
 use LemurEngine\LemurBot\Classes\LemurLog;
 use LemurEngine\LemurBot\Classes\LemurStr;
 use LemurEngine\LemurBot\Models\BotProperty;
@@ -54,6 +55,13 @@ trait ConversationHelper
     {
         $this->setDebug($value, $message);
     }
+
+    public function flow($key, $message)
+    {
+
+        FlowStack::getInstance()->push($key, $message);
+    }
+
 
     public function setDebug($value, $message)
     {
@@ -123,25 +131,25 @@ trait ConversationHelper
         return $this->getGlobalProperty('topic');
     }
 
-    public function getThat()
+    public function getThat($forceSource = false)
     {
         //<that/> = <that index="1,1"/> - the last sentence the bot uttered.
 
         //
 
-        /*$lastSource = $this->currentConversationTurn->source;
+        $lastSource = $this->currentConversationTurn->source;
 
-        if ($lastSource=='human') {
+        if ($lastSource =='human' || $forceSource =='human') {
             //this is a v lazy way of doing this
             $turn = Turn::where('conversation_id', $this->id)->where('source', 'human')->latest('id')->skip(1)->first();
         } else {
             //this is a v lazy way of doing this
             $turn = Turn::where('conversation_id', $this->id)
                 ->where('source', '!=', 'multiple')->latest('id')->skip(1)->first();
-        }*/
+        }
         //i have commented the above  out... I cannot find any good point where we would need a non humnan turn that
         //but just incase things get strange we will leave it here for now
-        $turn = Turn::where('conversation_id', $this->id)->where('source', 'human')->latest('id')->skip(1)->first();
+        //$turn = Turn::where('conversation_id', $this->id)->where('source', 'human')->latest('id')->skip(1)->first();
 
         if ($turn!==null) {
 

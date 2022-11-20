@@ -278,7 +278,7 @@ class LemurStr
         return str_replace(" (\\s", "(\\s", $str);
     }
 
-    public static function cleanAndImplode($arr, $sourceTag=null): string
+    public static function cleanAndImplode($arr): string
     {
         if (is_array($arr) && !empty($arr)) {
             $str = implode("", $arr);
@@ -298,6 +298,8 @@ class LemurStr
      */
     public static function cleanOutPutForResponse($str) :string
     {
+        $str = str_replace(" _keepspace_", "_keepspace_", $str);
+        $str = str_replace("_keepspace_ ", "_keepspace_", $str);
         $str = str_replace(" !", "!", $str);
         $str = str_replace(" ?", "?", $str);
         $str = str_replace(" .", ".", $str);

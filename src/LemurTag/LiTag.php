@@ -116,23 +116,29 @@ class LiTag extends AimlTag
         if ($isLoop) {
             //either this li or this condition is in a loop
             if (!$this->hasAttribute('VALUE')) {
+                $message = "This is a closing tag li in condition loop and this is the default value";
                 LemurLog::info(
                     $this->getTagId(),
-                    "This is a closing tag li in condition loop and this is the default value"
+                    $message
                 );
+                $this->conversation->flow('in_loop_checking_value', $message);
                 //this is the default value!
                 $this->buildResponse($contents);
             } elseif ($this->checkAttribute('LI_STATUS', 'false')) {
+                $message = "This is a closing tag li in condition loop and the condition is false";
                 LemurLog::info(
                     $this->getTagId(),
-                    "This is a closing tag li in condition loop and the condition is false"
+                    $message
                 );
+                $this->conversation->flow('in_loop_checking_value', $message);
                 //nothing to do here...
             } else {
+                $message = "This is a  closing tag li in condition loop and the condition is true";
                 LemurLog::info(
                     $this->getTagId(),
-                    "This is a  closing tag li in condition loop and the condition is true"
+                    $message
                 );
+                $this->conversation->flow('in_loop_checking_value', $message);
                 $this->buildResponse($contents);
             }
         } elseif ($parentTagName == 'Random') {
@@ -168,10 +174,13 @@ class LiTag extends AimlTag
             //so if we have a match send it up the stack to the tempContents
             //and if we get the to default lets send if up the stack and only use if nothing exists
             if ($liValue === $conditionValue && !$parentObject->hasTmpContents()) {
+                $this->conversation->flow('in_condition_checking_value', 'li value == condition value');
                 $parentObject->setTmpContents($contents);
             } elseif(preg_match('/^'.$liValue."$/i", $conditionValue, $matches)&& !$parentObject->hasTmpContents()) {
+                $this->conversation->flow('in_condition_checking_value', 'li value matches condition value');
                 $parentObject->setTmpContents($contents);
             } elseif(!$isLoop && $defaultValue && !$parentObject->hasTmpContents()) {
+                $this->conversation->flow('in_condition_checking_value', 'li is default value');
                 $parentObject->setTmpContents($contents);
             }
 
