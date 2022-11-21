@@ -637,7 +637,7 @@ textarea.form-control-span {
 }
 
 /* responsive, make the chat window fit screen */
-@media (max-width: 479px) {
+@media (max-width: 414px) {
     .direct-chat-messages{
         height: 600px;
     }
