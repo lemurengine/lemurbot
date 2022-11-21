@@ -26,14 +26,12 @@
                     <div class="input-group">
                         {!! Form::select('bot_id', LemurEngine\LemurBot\Models\Bot::myBots(), Session::get('target_bot')->slug??"", [ 'placeholder'=>'Quick Chat...', 'style'=>'color: #b8c7ce; box-shadow: none; background-color: #374850; border: 1px solid transparent; height: 35px;', 'class' => 'form-control select2', 'data-test'=>"bot-id-quick-chat-select", 'id'=>"bot-id-quick-chat-select"]) !!}
                         <div class="input-group-btn">
-                            @if(!empty(Session::get('target_bot')->slug)))
                                 <button type="submit" id="bot-id-quick-chat-go-button" class="btn btn btn-info" data-test='bot-id-quick-chat-go-button'>
                                     <i class="fa fa-arrow-right"></i>
                                 </button>
                                 <button type="button" id='bot-id-quick-chat-popup-button' class="btn btn-warning" data-test='bot-id-quick-chat-popup-button'>
                                     <i class="fa fa-arrow-up"></i>
                                 </button>
-                            @endif
                         </div>
                     </div>
 
