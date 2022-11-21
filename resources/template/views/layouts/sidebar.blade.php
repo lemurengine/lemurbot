@@ -45,7 +45,13 @@
 
         </form>
         <ul class="sidebar-menu" data-widget="tree">
-            @include('lemurbot::layouts.menu')
+            @include('lemurbot::layouts.menu_dashboard')
+            @include('lemurbot::layouts.menu_bot')
+            @include('lemurbot::layouts.menu_logs')
+            @include('lemurbot::layouts.menu_knowledge')
+            @include('lemurbot::layouts.menu_learning')
+            @include('lemurbot::layouts.menu_admin')
+            @include('lemurbot::layouts.menu_doc')
         </ul>
         <!-- /.sidebar-menu -->
     </section>
@@ -62,7 +68,5 @@
             window.open('/bot/'+botId+'/popup','Chatting with '+botName,'toolbar=no, menubar=no, resizable=no, width=400,height=500 , top=' + top + ', left=' + left);
         });
     });
-
-    //window.open(url,'window','toolbar=no, menubar=no, resizable=yes');
 </script>
 @endpush
