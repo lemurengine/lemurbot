@@ -18,6 +18,7 @@ class UpdateEmptyResponsesTable extends Migration
         Schema::table('empty_responses', function (Blueprint $table) {
             $table->string('that')->nullable()->after('bot_id');
             $table->dropUnique('empty_responses_ibuq_1');
+            $table->unique(['bot_id','that', 'input'], 'empty_responses_ibuq_1');
         });
     }
 
@@ -25,7 +26,8 @@ class UpdateEmptyResponsesTable extends Migration
     {
         Schema::table('empty_responses', function (Blueprint $table) {
             $table->dropColumn('that');
-            $table->unique(['bot_id','that', 'input'], 'empty_responses_ibuq_1');
+            $table->dropUnique('empty_responses_ibuq_1');
+            $table->unique(['bot_id', 'input'], 'empty_responses_ibuq_1');
         });
     }
 }
