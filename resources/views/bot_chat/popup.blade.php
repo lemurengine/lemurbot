@@ -54,7 +54,7 @@
                     <div class="box-header with-border">
                         <h3 class="box-title">Chat with {{$bot->name}}</h3>
 
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"  data-test="direct-chat-window-close-dashboard">
+                        <button type="button" class="close" onclick="window.close();" aria-label="Close"  data-test="direct-chat-window-close-dashboard">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
