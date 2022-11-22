@@ -25,8 +25,8 @@ class UpdateEmptyResponsesSourceTable extends Migration
     public function down()
     {
         Schema::table('empty_responses', function (Blueprint $table) {
-            $table->dropColumn('source');
             $table->dropUnique('empty_responses_ibuq_1');
+            $table->dropColumn('source');
             $table->unique(['bot_id','that', 'input'], 'empty_responses_ibuq_1');
         });
     }
