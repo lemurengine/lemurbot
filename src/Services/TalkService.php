@@ -603,7 +603,10 @@ class TalkService
         $plugins = Plugin::whereIn('id',$pluginIds)->where('apply_plugin', $apply)->orderby('priority', 'ASC')->get();
 
         if(count($plugins)==0){
+            $this->conversation->flow('applying_'.$apply.'_plugin', 'no plugins found');
             return ['sentence'=>$str, 'return'=>false];
+        }else{
+            $this->conversation->flow('applying_'.$apply.'_plugin', count($plugins).' plugins found');
         }
         $originalStr = $str;
         foreach($plugins as $plugin){
