@@ -119,7 +119,7 @@ class BotPlugin extends Model
             ->leftJoin('plugins', 'plugins.id', '=', $this->table.'.plugin_id')
             ->leftJoin('bots', 'bots.id', '=', $this->table.'.bot_id')
             ->leftJoin('users', 'users.id', '=', $this->table.'.user_id')
-            ->scopeMyEditableItems();
+            ->myEditableItems();
     }
 
 
