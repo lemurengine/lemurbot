@@ -5,6 +5,7 @@ namespace LemurEngine\LemurBot\Models;
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Auth;
 use LemurEngine\LemurBot\Facades\LemurPriv;
@@ -115,6 +116,15 @@ class Plugin extends Model
     }
 
     /**
+     * @return HasMany
+     **/
+    public function botPlugins()
+    {
+        return $this->hasMany(BotPlugin::class, 'plugin_id');
+    }
+
+
+    /**
      * the query that is run in the datatable
      *
      * @return mixed
@@ -154,16 +164,50 @@ class Plugin extends Model
      */
     public function scopeMyEditableItems($query)
     {
-        $thisLoggedInUser = Auth::user();
         if (LemurPriv::isAdmin(Auth::user())) {
             //admins can edit all ...
             return $query;
         } else {
-            return $query->where('bots.user_id', Auth::user()->id)
-                ->orWhere('plugins.is_master', 1)
-                ->orWhere('bot_plugins.user_id', Auth::user()->id);
-
+            return $query->where(function ($query) {
+                //it has to be owned by the bot author or be a master record
+                $query->where('plugins.is_master', 1)
+                    ->orWhere('plugins.user_id', Auth::user()->id);
+            });
         }
     }
+
+    /**
+     * return a list of all available word spelling groups
+     * and mark if they are enabled for the current bot or not
+     * order by name
+     *
+     * @param $botId
+     * @return mixed
+     */
+    public static function getAllPluginsForBot($botId)
+    {
+
+        //this is a list of ALL plugins excluding the ones we have accounted for above.
+        return Plugin::select([
+            'plugins.slug as plugin_slug',
+            'plugins.title',
+            'plugins.id',
+            'plugins.description',
+            'plugins.is_master',
+            'bot_plugins.bot_id'])
+            ->leftJoin('bot_plugins', function($join) use($botId){
+                $join->on('plugins.id', '=', 'bot_plugins.plugin_id')
+                    ->where('bot_plugins.plugin_id', $botId);
+            })
+            ->where(function ($query) {
+                //it has to be owned by the bot author or be a master record
+                $query->where('plugins.is_master', 1)->orWhere('plugins.user_id', Auth::user()->id);
+            })
+            ->orderBy('plugins.title')
+            ->get();
+
+
+    }
+
 
 }
