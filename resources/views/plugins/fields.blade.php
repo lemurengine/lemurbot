@@ -46,7 +46,7 @@
 <!-- Apply Plugin Field -->
 <div class="form-group col-lg-4 col-md-4 col-sm-4 select2" data-test="apply_plugin_div">
     {!! Form::label('apply_plugin', 'Apply Plugin:', ['data-test'=>"apply_plugin_label"]) !!}
-    {!! Form::select('apply_plugin', ['pre'=>'Before AIML processing', 'post'=>'After AIML processing'], null, [  'placeholder'=>'Please Select', 'class' => 'form-control select2 generic', LemurEngine\LemurBot\Models\Plugin::getFormValidation('apply_plugin'), 'data-test'=>"$htmlTag-apply_plugin-select", 'id'=>"$htmlTag-apply_plugin-select"]) !!}
+    {!! Form::select('apply_plugin', ['pre'=>'PRE (Before AIML processing)', 'post'=>'POST (After AIML processing)'], null, [  'placeholder'=>'Please Select', 'class' => 'form-control select2 generic', LemurEngine\LemurBot\Models\Plugin::getFormValidation('apply_plugin'), 'data-test'=>"$htmlTag-apply_plugin-select", 'id'=>"$htmlTag-apply_plugin-select"]) !!}
 </div>
 
 <!-- Return Onchange Field -->

@@ -61,8 +61,8 @@ class BotPluginController extends AppBaseController
     {
         $this->authorize('create', BotPlugin::class);
 
-        $botList = Bot::orderBy('name')->get()->pluck('full_name', 'slug');
-        $pluginList = Plugin::orderBy('title')->get()->pluck('full_title', 'slug');
+        $botList = Bot::myEditableItems()->orderBy('name')->get()->pluck('full_name', 'slug');
+        $pluginList = Plugin::myEditableItems()->orderBy('title')->get()->pluck('full_title', 'slug');
 
         return view('lemurbot::bot_plugins.create')->with(
             ['link'=>$this->link, 'htmlTag'=>$this->htmlTag,
@@ -146,8 +146,8 @@ class BotPluginController extends AppBaseController
             return redirect(route('botPlugins.index'));
         }
 
-        $botList = Bot::orderBy('name')->get()->pluck('full_name', 'slug');
-        $pluginList = Plugin::orderBy('title')->get()->pluck('full_title', 'slug');
+        $botList = Bot::myEditableItems()->orderBy('name')->get()->pluck('full_name', 'slug');
+        $pluginList = Plugin::myEditableItems()->orderBy('title')->get()->pluck('full_title', 'slug');
 
         return view('lemurbot::bot_plugins.edit')->with(
             ['botPlugin'=> $botPlugin, 'link'=>$this->link, 'htmlTag'=>$this->htmlTag,

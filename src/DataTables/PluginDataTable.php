@@ -88,7 +88,7 @@ class PluginDataTable extends DataTable
                 }',
                 'initComplete' => 'function(settings, json) {
 
-                    var maxColumn = 8
+                    var maxColumn = 9
                     var dateFields = [maxColumn-1]
                     var exactSearchFields = []
                     var noSearchFields = [maxColumn]

@@ -3,9 +3,11 @@
 namespace LemurEngine\LemurBot\Models;
 
 use Eloquent as Model;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Auth;
+use LemurEngine\LemurBot\Facades\LemurPriv;
 use LemurEngine\LemurBot\Traits\HasPackageFactory;
 use LemurEngine\LemurBot\Traits\UiValidationTrait;
 use Spatie\Sluggable\HasSlug;
@@ -116,7 +118,8 @@ class BotPlugin extends Model
             'plugins.title as plugin'])
             ->leftJoin('plugins', 'plugins.id', '=', $this->table.'.plugin_id')
             ->leftJoin('bots', 'bots.id', '=', $this->table.'.bot_id')
-            ->leftJoin('users', 'users.id', '=', $this->table.'.user_id');
+            ->leftJoin('users', 'users.id', '=', $this->table.'.user_id')
+            ->scopeMyEditableItems();
     }
 
 
@@ -161,6 +164,26 @@ class BotPlugin extends Model
             ->get();
 
 
+    }
+
+    /**
+     * Scope a query a specific property.
+     * Get the bots this user is allowed to edit
+     *
+     * @param Builder $query
+     * @param $name
+     * @return Builder
+     */
+    public function scopeMyEditableItems($query)
+    {
+        $thisLoggedInUser = Auth::user();
+        if (LemurPriv::isAdmin(Auth::user())) {
+            //admins can edit all ...
+            return $query;
+        } else {
+            //users can edit their own bots plugins
+            return $query->where('bots.user_id', $thisLoggedInUser->id);
+        }
     }
 
 }
