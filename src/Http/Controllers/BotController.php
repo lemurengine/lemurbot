@@ -541,7 +541,7 @@ class BotController extends AppBaseController
         $allWordSpellingGroups = BotWordSpellingGroup::getAllWordSpellingsGroupsForBot($bot->id);
 
         //set a list of all the available category groups for the ui
-        $allBotPlugins = BotPlugin::getAllPluginsForBot($bot->id);
+        $allBotPlugins = Plugin::getAllPluginsForBot($bot->id);
 
         //list of bots for forms (but in this view we only want the bot we are looking at)
         $botList = Bot::where('id', $bot->id)->pluck('name', 'slug');
