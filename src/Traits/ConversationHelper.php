@@ -272,8 +272,23 @@ trait ConversationHelper
 
     public function getBotProperty($name)
     {
-
         return BotProperty::where('bot_id', $this->bot->id)->where('name', $name)->first();
+    }
+
+
+
+    public function getBotPropertyValue($name, $default = false)
+    {
+
+        $botProperty = BotProperty::where('bot_id', $this->bot->id)->where('name', $name)->first('value');
+        if($botProperty === null && !$default){
+            return config('lemurbot.properties.unknown.bot_property');
+        }elseif($botProperty === null && $default){
+            return $default;
+        }else{
+            return $botProperty->value;
+        }
+
     }
 
 

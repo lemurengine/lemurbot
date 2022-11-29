@@ -21,9 +21,11 @@ class PluginRepository extends BaseRepository
         'title',
         'description',
         'classname',
+        'priority',
         'apply_plugin',
         'return_onchange',
-        'is_master'
+        'is_master',
+        'is_active'
     ];
 
     /**

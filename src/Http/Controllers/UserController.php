@@ -87,7 +87,6 @@ class UserController extends AppBaseController
         DB::beginTransaction();
         try {
 
-
             $user = $this->userRepository->create($input);
 
             //assign the bot user role
@@ -201,8 +200,11 @@ class UserController extends AppBaseController
 
             $user = $this->userRepository->update($input, $user->id);
 
-            //assign the bot user role
-            LemurPriv::assignRole($user->id, $input['user_role']);
+            if($user->id != Auth::user()->id){
+                //assign the bot user role
+                LemurPriv::assignRole($user->id, $input['user_role']);
+            }
+
 
             Flash::success('User updated successfully.');
             // Commit the transaction

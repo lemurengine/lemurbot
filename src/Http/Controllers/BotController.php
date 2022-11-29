@@ -14,6 +14,7 @@ use LemurEngine\LemurBot\Http\Requests\UpdateBotSlugRequest;
 use LemurEngine\LemurBot\Models\BotAllowedSite;
 use LemurEngine\LemurBot\Models\BotCategoryGroup;
 use LemurEngine\LemurBot\Models\BotKey;
+use LemurEngine\LemurBot\Models\BotPlugin;
 use LemurEngine\LemurBot\Models\BotProperty;
 use LemurEngine\LemurBot\Models\BotWordSpellingGroup;
 use LemurEngine\LemurBot\Models\Client;
@@ -21,6 +22,7 @@ use LemurEngine\LemurBot\Models\Conversation;
 use LemurEngine\LemurBot\Models\ConversationProperty;
 use LemurEngine\LemurBot\Models\ConversationSource;
 use LemurEngine\LemurBot\Models\Language;
+use LemurEngine\LemurBot\Models\Plugin;
 use LemurEngine\LemurBot\Models\Section;
 use LemurEngine\LemurBot\Repositories\BotPropertyRepository;
 use LemurEngine\LemurBot\Repositories\BotRepository;
@@ -537,17 +539,22 @@ class BotController extends AppBaseController
 
         //set a list of all the available category groups for the ui
         $allWordSpellingGroups = BotWordSpellingGroup::getAllWordSpellingsGroupsForBot($bot->id);
+
+        //set a list of all the available category groups for the ui
+        $allBotPlugins = BotPlugin::getAllPluginsForBot($bot->id);
+
         //list of bots for forms (but in this view we only want the bot we are looking at)
         $botList = Bot::where('id', $bot->id)->pluck('name', 'slug');
+
+        $pluginList = Plugin::pluck('title', 'slug');
 
         session(['target_bot' => $bot]);
 
         return view('lemurbot::bots.edit_all')->with(
             ['bot'=> $bot,'wordSpellingGroups'=> $allWordSpellingGroups,
-            'link'=>$link, 'htmlTag'=>$htmlTag,
-                'title'=>$title,
+            'link'=>$link, 'htmlTag'=>$htmlTag, 'title'=>$title,
             'resourceFolder'=>$resourceFolder,
-            'botList'=>$botList]
+            'botList'=>$botList, 'pluginList'=>$pluginList, 'allBotPlugins'=>$allBotPlugins ]
         );
     }
 

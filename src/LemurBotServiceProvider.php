@@ -101,10 +101,14 @@ class LemurBotServiceProvider extends ServiceProvider
                 __DIR__ . '/../config/properties.php' => config_path('lemurbot/properties.php')],
             'lemurbot-config');
         $this->publishes([
-            __DIR__.'/../resources/public/lemurbot'=> public_path('vendor/lemurbot'),
-            __DIR__ . '/../exampletag' => app_path('/LemurTag/')
+            __DIR__.'/../resources/public/lemurbot'=> public_path('vendor/lemurbot')
             ],
             'lemurbot-assets');
+        $this->publishes([
+            __DIR__ . '/../exampletag' => app_path('/LemurTag/'),
+            __DIR__ . '/../exampleplugin' => app_path('/LemurPlugin/')
+        ],
+            'lemurbot-examples');
         $this->publishes([
             __DIR__ . '/../resources/public/widgets'=> public_path('widgets'),
             __DIR__ . '/../resources/widgets/avatar' => resource_path('vendor/lemurbot/widgets/avatar'),

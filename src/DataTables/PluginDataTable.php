@@ -88,7 +88,7 @@ class PluginDataTable extends DataTable
                 }',
                 'initComplete' => 'function(settings, json) {
 
-                    var maxColumn = 7
+                    var maxColumn = 8
                     var dateFields = [maxColumn-1]
                     var exactSearchFields = []
                     var noSearchFields = [maxColumn]
@@ -129,6 +129,7 @@ class PluginDataTable extends DataTable
                  }
                  ';
                     }],
+            'priority',
             'apply_plugin',
             'return_onchange' => ['name'=>'return_onchange','data'=>'return_onchange','title'=>'Return onChange?','searchable'=>true,
                 'printable'=>true, 'exportable'=>true,'defaultContent'=>'false', 'render' =>
@@ -140,6 +141,15 @@ class PluginDataTable extends DataTable
                  ';
                     }],
             'is_master' => ['name'=>'is_master','data'=>'is_master','title'=>'Master Data?','searchable'=>true,
+                'printable'=>true, 'exportable'=>true,'defaultContent'=>'false', 'render' =>
+                    function () {
+                        return 'function(data, type, full, meta)
+                {
+                    return getFormattedItem(data, \'is_master\'); //
+                 }
+                 ';
+                    }],
+            'is_active' => ['name'=>'is_active','data'=>'is_active','title'=>'Is Active?','searchable'=>true,
                 'printable'=>true, 'exportable'=>true,'defaultContent'=>'false', 'render' =>
                     function () {
                         return 'function(data, type, full, meta)

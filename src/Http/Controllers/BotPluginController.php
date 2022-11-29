@@ -84,9 +84,14 @@ class BotPluginController extends AppBaseController
 
         $input = $request->all();
 
-        $botPlugin = $this->botPluginRepository->create($input);
 
-        Flash::success('Bot Plugin saved successfully.');
+        if (!empty($input['bulk'])) {
+            $this->botPluginRepository->bulkCreate($input);
+            Flash::success('Bot plugins saved successfully.');
+        } else {
+            $this->botPluginRepository->create($input);
+            Flash::success('Bot plugin saved successfully.');
+        }
 
         if (!empty($input['redirect_url'])) {
             return redirect($input['redirect_url']);

@@ -46,10 +46,16 @@ class LemurPrivilegeService
     public function assignRole($userId, $which){
 
         $privStr = ($which==='admin'?self::BOT_ADMIM:self::BOT_AUTHOR);
-
-        return BotUserRole::firstOrCreate(['user_id' => $userId,
-            'role' => $privStr]);
-
+        $botUser = BotUserRole::where('user_id', $userId)->first();
+        if($botUser === null){
+            $botUser = new BotUserRole();
+            $botUser->user_id = $userId;
+            $botUser->role = $privStr;
+            $botUser->save();
+        } else {
+            $botUser->role = $privStr;
+            $botUser->save();
+        }
 
     }
 

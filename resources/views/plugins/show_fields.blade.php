@@ -28,6 +28,12 @@
     <p>{{ $plugin->classname }}</p>
 </div>
 
+<!-- Priority Field -->
+<div class="form-group">
+    {!! Form::label('priority', 'Priority:') !!}
+    <p>{{ $plugin->priority }}</p>
+</div>
+
 <!-- Apply Plugin Field -->
 <div class="form-group">
     {!! Form::label('apply_plugin', 'Apply Plugin:') !!}
@@ -44,4 +50,10 @@
 <div class="form-group">
     {!! Form::label('is_master', 'Is Master:') !!}
     <p>{{ $plugin->is_master }}</p>
+</div>
+
+<!-- Is Active Field -->
+<div class="form-group">
+    {!! Form::label('is_active', 'Is Active:') !!}
+    <p>{{ $plugin->is_active }}</p>
 </div>

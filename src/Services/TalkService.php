@@ -8,6 +8,7 @@ use Illuminate\Validation\UnauthorizedException;
 use LemurEngine\LemurBot\Classes\AimlMatcher;
 use LemurEngine\LemurBot\Classes\FlowStack;
 use LemurEngine\LemurBot\Classes\LemurLog;
+use LemurEngine\LemurBot\Classes\LemurPlugin;
 use LemurEngine\LemurBot\Classes\LemurStr;
 use LemurEngine\LemurBot\Facades\LemurPriv;
 use LemurEngine\LemurBot\Factories\ConversationFactory;
@@ -15,6 +16,7 @@ use LemurEngine\LemurBot\Factories\TurnFactory;
 use LemurEngine\LemurBot\Models\Bot;
 use LemurEngine\LemurBot\Models\BotAllowedSite;
 use LemurEngine\LemurBot\Models\BotKey;
+use LemurEngine\LemurBot\Models\BotPlugin;
 use LemurEngine\LemurBot\Models\BotWordSpellingGroup;
 use LemurEngine\LemurBot\Models\Client;
 use LemurEngine\LemurBot\Models\Conversation;
@@ -22,6 +24,7 @@ use LemurEngine\LemurBot\Models\ConversationSource;
 use LemurEngine\LemurBot\Classes\AimlParser;
 use LemurEngine\LemurBot\Models\Map;
 use LemurEngine\LemurBot\Models\Normalization;
+use LemurEngine\LemurBot\Models\Plugin;
 use LemurEngine\LemurBot\Models\Wildcard;
 use LemurEngine\LemurBot\Models\WordSpelling;
 use Carbon\Carbon;
@@ -413,7 +416,10 @@ class TalkService
             $sentence = LemurStr::removeSentenceEnders($sentence);
             $fullOutput=$this->process($sentence);
             //if we have more than one we are going to shift it
-            //liz
+            //apply any post processing
+            $pluginArr = $this->applyCustomPlugins($this->conversation, $fullOutput, 'post');
+            $fullOutput = $pluginArr['sentence'];
+
         }
 
         //some internal tag reparses such as the SRAI tag do not return a response.
@@ -444,12 +450,16 @@ class TalkService
         $preparedSentence = $sentence;
         $preparedSentence = $this->applyPrePlugins($preparedSentence);
         $this->conversation->currentConversationTurn->setPluginTransformedInput($preparedSentence);
-        $preparedSentence = LemurStr::normalizeInput($preparedSentence);
 
+        $pluginArr = $this->applyCustomPlugins($this->conversation, $preparedSentence, 'pre');
+        $preparedSentence = $pluginArr['sentence'];
+        $preparedSentence = LemurStr::normalizeInput($preparedSentence);
         $this->checkAndSetNormalizations($preparedSentence, $sentence);
 
         //initially we will check to see if there is 'learnt' response from the same client...
-        if ($output =$this->aimlMatcher->matchClientCategory($preparedSentence)) {
+        if($pluginArr['return']){
+            return $pluginArr['sentence'];
+        } elseif ($output =$this->aimlMatcher->matchClientCategory($preparedSentence)) {
             return $output;
         } else {
             $this->conversation->debug('categories.find.sentence', $preparedSentence);
@@ -585,6 +595,51 @@ class TalkService
         return $this->applySpellingCorrections($str);
 
     }
+
+
+    public function applyCustomPlugins($conversation, $str, $apply){
+
+        $pluginIds = BotPlugin::where('bot_id', $this->bot->id)->pluck('plugin_id','plugin_id');
+        $plugins = Plugin::whereIn('id',$pluginIds)->where('apply_plugin', $apply)->orderby('priority', 'ASC')->get();
+
+        if(count($plugins)==0){
+            return ['sentence'=>$str, 'return'=>false];
+        }
+        $originalStr = $str;
+        foreach($plugins as $plugin){
+            $pluginClass = 'App\\LemurPlugin\\'.$plugin->classname;
+            if($plugin->is_active && class_exists($pluginClass)){
+                //load the class
+                $activePlugin = new $pluginClass($conversation, $str);
+
+                if($activePlugin instanceof LemurPlugin){
+                    $str = $activePlugin->apply();
+                    //check for changes
+                    if($plugin->return_onchange && $originalStr!=$str){
+
+                        $this->conversation->flow('applying_'.$apply.'_plugin', $plugin->classname.' plugin, output updated returning early');
+                        return ['sentence'=>$str, 'return'=>true];
+                    }elseif($originalStr!=$str){
+                        $this->conversation->flow('applying_'.$apply.'_plugin', $plugin->classname.' plugin, output updated continuing');
+                        return ['sentence'=>$str, 'return'=>true];
+                    }
+                }else{
+                    $this->conversation->flow('applying_'.$apply.'_plugin', $plugin->classname.'. - cannot apply - class not instance of LemurPlugin');
+                }
+
+
+            }elseif(!class_exists($pluginClass)){
+                $this->conversation->flow('applying_'.$apply.'_plugin', $plugin->classname.' - cannot apply - class does not exist');
+            }
+        }
+
+
+
+        return ['sentence'=>$str, 'return'=>false];
+
+    }
+
+
 
     public function applySpellingCorrections($str){
 

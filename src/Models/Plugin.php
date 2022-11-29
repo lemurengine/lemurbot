@@ -24,6 +24,7 @@ use Spatie\Sluggable\SlugOptions;
  * @property string $apply_plugin
  * @property boolean $return_onchange
  * @property boolean $is_master
+ * @property boolean $is_active
  */
 class Plugin extends Model
 {
@@ -48,9 +49,11 @@ class Plugin extends Model
         'title',
         'description',
         'classname',
+        'priority',
         'apply_plugin',
         'return_onchange',
-        'is_master'
+        'is_master',
+        'is_active'
     ];
 
     /**
@@ -64,10 +67,12 @@ class Plugin extends Model
         'slug' => 'string',
         'title' => 'string',
         'description' => 'string',
+        'priority' => 'integer',
         'classname' => 'string',
         'apply_plugin' => 'string',
         'return_onchange' => 'boolean',
-        'is_master' => 'boolean'
+        'is_master' => 'boolean',
+        'is_active' => 'boolean'
     ];
 
     /**
@@ -79,9 +84,11 @@ class Plugin extends Model
         'title' => 'required|string|max:255',
         'description' => 'required|string|max:255',
         'classname' => 'required|string|max:255',
+        'priority' => 'required|integer',
         'apply_plugin' => 'required|string',
         'return_onchange' => 'boolean',
-        'is_master' => 'boolean'
+        'is_master' => 'boolean',
+        'is_active' => 'boolean'
     ];
 
     /**
@@ -92,6 +99,8 @@ class Plugin extends Model
         static::creating(function ($model) {
             $model->user_id = Auth::id();
         });
+
+        static::addGlobalScope(fn ($query) => $query->orderBy('priority'));
     }
 
 

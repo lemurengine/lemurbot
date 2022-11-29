@@ -50,6 +50,8 @@ class AimlTagFactory
         try {
 
             $currentTagClass = self::getTagClass($tagName);
+
+
             if(!$currentTagClass || !class_exists($currentTagClass)){
                 LemurLog::error(
                     'TagClass cannot be found: '.class_basename($currentTagClass),

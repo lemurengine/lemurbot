@@ -1,5 +1,5 @@
 <?php
-namespace LemurEngine\LemurBot\LemurTag;
+namespace App\LemurTag;
 
 use LemurEngine\LemurBot\Classes\LemurLog;
 use LemurEngine\LemurBot\Models\Conversation;

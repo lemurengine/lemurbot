@@ -133,4 +133,34 @@ class BotPlugin extends Model
             ->doNotGenerateSlugsOnUpdate();
     }
 
+
+    /**
+     * return a list of all available word spelling groups
+     * and mark if they are enabled for the current bot or not
+     * order by name
+     *
+     * @param $botId
+     * @return mixed
+     */
+    public static function getAllPluginsForBot($botId)
+    {
+
+        //this is a list of ALL plugins excluding the ones we have accounted for above.
+        return Plugin::select([
+            'plugins.slug as plugin_slug',
+            'plugins.title',
+            'plugins.id',
+            'plugins.description',
+            'plugins.is_master',
+            'bot_plugins.bot_id'])
+            ->leftjoin('bot_plugins', 'plugins.id', '=', 'bot_plugins.plugin_id')
+            ->where('bot_plugins.bot_id', $botId)
+            ->where('plugins.user_id', Auth::user()->id)
+            ->orWhere('plugins.is_master', 1)
+            ->orderBy('plugins.title')
+            ->get();
+
+
+    }
+
 }

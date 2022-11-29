@@ -20,21 +20,27 @@
 <!-- Title Field -->
 <div class="form-group col-sm-4" data-test="title_div">
     {!! Form::label('title', 'Title:', ['data-test'=>"title_label"]) !!}
-    {!! Form::text('title', null, [ 'placeholder'=>'News Reader','maxlength' => 255,'maxlength' => 255, 'class' => 'form-control', LemurEngine\LemurBot\Models\Plugin::getFormValidation('title'), 'data-test'=>"$htmlTag-title-input", 'id'=>"$htmlTag-title-input"]) !!}
+    {!! Form::text('title', null, [ 'placeholder'=>'Maintenance Mode','maxlength' => 255,'maxlength' => 255, 'class' => 'form-control', LemurEngine\LemurBot\Models\Plugin::getFormValidation('title'), 'data-test'=>"$htmlTag-title-input", 'id'=>"$htmlTag-title-input"]) !!}
 </div>
 
 <!-- Description Field -->
 <div class="form-group col-sm-8" data-test="description_div">
     {!! Form::label('description', 'Description:', ['data-test'=>"description_label"]) !!}
-    {!! Form::text('description', null, [ 'placeholder'=>'This plugin reads news from news.org','maxlength' => 255,'maxlength' => 255, 'class' => 'form-control', LemurEngine\LemurBot\Models\Plugin::getFormValidation('description'), 'data-test'=>"$htmlTag-description-input", 'id'=>"$htmlTag-description-input"]) !!}
+    {!! Form::text('description', null, [ 'placeholder'=>'An example plugin that makes your bot respond with a maintenance message','maxlength' => 255,'maxlength' => 255, 'class' => 'form-control', LemurEngine\LemurBot\Models\Plugin::getFormValidation('description'), 'data-test'=>"$htmlTag-description-input", 'id'=>"$htmlTag-description-input"]) !!}
 </div>
 
 <div class="clearfix"></div>
 
 <!-- Classname Field -->
-<div class="form-group col-sm-8" data-test="classname_div">
-    {!! Form::label('classname', 'Classname:', ['data-test'=>"classname_label"]) !!}
-    {!! Form::text('classname', null, [ 'placeholder'=>'ReadFromNewsOrg','maxlength' => 255,'maxlength' => 255, 'class' => 'form-control', LemurEngine\LemurBot\Models\Plugin::getFormValidation('classname'), 'data-test'=>"$htmlTag-classname-input", 'id'=>"$htmlTag-classname-input"]) !!}
+<div class="form-group col-sm-6" data-test="classname_div">
+    {!! Form::label('classname', 'ClassName:', ['data-test'=>"classname_label"]) !!}
+    {!! Form::text('classname', null, [ 'placeholder'=>'MaintenanceMode','maxlength' => 255,'maxlength' => 255, 'class' => 'form-control', LemurEngine\LemurBot\Models\Plugin::getFormValidation('classname'), 'data-test'=>"$htmlTag-classname-input", 'id'=>"$htmlTag-classname-input"]) !!}
+</div>
+
+<!-- Priority Field -->
+<div class="form-group col-lg-2 col-md-2 col-sm-2 select2" data-test="priority_div">
+    {!! Form::label('priority', 'Priority:', ['data-test'=>"priority_label"]) !!}
+    {!! Form::number('priority', '10', [  'placeholder'=>'10', 'class' => 'form-control', LemurEngine\LemurBot\Models\Plugin::getFormValidation('priority'), 'data-test'=>"$htmlTag-priority-select", 'id'=>"$htmlTag-priority-select"]) !!}
 </div>
 
 <!-- Apply Plugin Field -->
@@ -58,12 +64,17 @@
              </span>
         <input type="text" class="form-control" aria-label="..." value="Return Onchange?">
     </div><!-- /.col-lg-6 -->
+    <small class="help-block" data-test="help-block-return_onchange-field">
+        <span>True: All conversation processing will stop if the plugin output has been updated.<br/>
+        False: All conversation processing will continue regardless of output.<br/>
+        Only applies to pre-processing plugins.</span>
+    </small>
 </div>
 
 
 @if(LemurPriv::isAdmin(Auth::user()))
     <!-- Is Master Field -->
-    <div class="form-group col-lg-6 col-md-6 col-sm-12" data-test="is_master_div">
+    <div class="form-group col-lg-3 col-md-3 col-sm-12" data-test="is_master_div">
         {!! Form::label('is_master', 'Is Master:', ['data-test'=>"is_master_label"]) !!}
         <div class="input-group" data-test="is_master_group">
             <span class="input-group-addon">
@@ -79,4 +90,23 @@
         </div><!-- /.col-lg-6 -->
     </div>
 @endif
+
+<!-- Is Active Field -->
+<div class="form-group col-lg-3 col-md-3 col-sm-12" data-test="is_active_div">
+    {!! Form::label('is_active', 'Is Active:', ['data-test'=>"is_active_label"]) !!}
+    <div class="input-group" data-test="is_active_group">
+            <span class="input-group-addon">
+                {!! Form::hidden('is_active', 0) !!}
+                @if(empty($plugin) || $plugin->is_active==0 || !$plugin->is_active)
+                    @php $checked = ''; @endphp
+                @else
+                    @php $checked = true; @endphp
+                @endif
+                {{ Form::checkbox('is_active', '1', $checked, ['id'=>"is_active_field", 'data-test'=>"is_active_field"])  }}
+             </span>
+        <input type="text" class="form-control" aria-label="..." value="Is Active?">
+    </div><!-- /.col-lg-6 -->
+</div>
+
+
 <div class="clearfix"></div>

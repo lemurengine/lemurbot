@@ -11,7 +11,7 @@
             @php $index = 0; @endphp
 
             @if(empty($authorBots->first()))
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="callout callout-info">Create your first bot by <a href="{!! url('/bots/create') !!}">clicking here</a>.</div>
                 </div>
             @else

@@ -276,8 +276,9 @@ class User extends ParentUser
      */
     public function dataTableQuery()
     {
+        return User::select(['role','users.deleted_at','users.slug','users.id','users.name','users.email','users.created_at'])
+            ->leftJoin('bot_user_roles', 'users.id', '=', 'bot_user_roles.user_id')->withTrashed();
 
-        return User::select(['users.deleted_at','users.slug','users.id','users.name','users.email','users.created_at'])->withTrashed();
     }
 
     /**
