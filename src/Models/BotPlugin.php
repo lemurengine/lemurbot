@@ -158,9 +158,7 @@ class BotPlugin extends Model
             'plugins.is_master',
             'bot_plugins.bot_id'])
             ->leftjoin('bot_plugins', 'plugins.id', '=', 'bot_plugins.plugin_id')
-            ->where('bot_plugins.bot_id', $botId)
-            ->where('plugins.user_id', Auth::user()->id)
-            ->orWhere('plugins.is_master', 1)
+            ->myEditableItems()
             ->orderBy('plugins.title')
             ->get();
 

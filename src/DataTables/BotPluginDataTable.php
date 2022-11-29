@@ -87,7 +87,7 @@ class BotPluginDataTable extends DataTable
                 }',
                 'initComplete' => 'function(settings, json) {
 
-                    var maxColumn = 4
+                    var maxColumn = 6
                     var dateFields = [maxColumn-1]
                     var exactSearchFields = [0]
                     var noSearchFields = [maxColumn]

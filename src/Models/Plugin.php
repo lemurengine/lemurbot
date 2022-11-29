@@ -159,8 +159,10 @@ class Plugin extends Model
             //admins can edit all ...
             return $query;
         } else {
-            //users can edit their own
-            return $query->where('user_id', $thisLoggedInUser->id);
+            return $query->where('bots.user_id', Auth::user()->id)
+                ->orWhere('plugins.is_master', 1)
+                ->orWhere('bot_plugins.user_id', Auth::user()->id);
+
         }
     }
 
