@@ -114,8 +114,9 @@ class BotPlugin extends Model
     public function dataTableQuery()
     {
 
-        return BotPlugin::select([$this->table.'.*','users.email','bots.slug as bot',
-            'plugins.title as plugin'])
+        return BotPlugin::select([$this->table.'.*','users.email','bots.slug as bot', 'bots.name as bot_name',
+            'plugins.slug as plugin',
+            'plugins.title as plugin_title'])
             ->leftJoin('plugins', 'plugins.id', '=', $this->table.'.plugin_id')
             ->leftJoin('bots', 'bots.id', '=', $this->table.'.bot_id')
             ->leftJoin('users', 'users.id', '=', $this->table.'.user_id')

@@ -120,7 +120,9 @@ class BotPluginDataTable extends DataTable
     {
         return [
             'bot'=> ['name'=>'bots.slug','data'=>'bot','title'=>'BotId'],
-            'plugin'=> ['name'=>'plugins.title','data'=>'plugin','title'=>'Plugin'],
+            'bot_name'=> ['name'=>'bots.name','data'=>'bot_name','title'=>'Bot Name'],
+            'plugin'=> ['name'=>'plugins.slug','data'=>'plugin','title'=>'PluginId'],
+            'plugin_title'=> ['name'=>'plugins.title','data'=>'plugin_title','title'=>'Plugin Title'],
             'email'=> ['name'=>'users.email','data'=>'email','title'=>'Owner', 'exportable'=>false],
             'updated_at'=> ['name'=>'updated_at','data'=>'updated_at', 'title'=>'Updated',
                 'defaultContent'=>'', 'render' =>
