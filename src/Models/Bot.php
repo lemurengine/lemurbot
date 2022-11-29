@@ -487,5 +487,9 @@ class Bot extends Model
         return Bot::where('user_id', Auth::user()->id)->orderBy('name')->pluck('name', 'slug');
     }
 
+    public function getBotNameSlugAttribute()
+    {
+        return $this->name . ' (' . $this->last_slug .')';
+    }
 
 }

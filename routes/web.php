@@ -452,3 +452,7 @@ Route::GET('/categories/{categoryGroupSlug}/download/aiml', 'LemurEngine\LemurBo
     ->middleware(['web']);
 Route::GET('/wordSpellings/{wordSpellingGroupSlug}/download', 'LemurEngine\LemurBot\Http\Controllers\WordSpellingController@download')
     ->middleware(['web']);
+
+Route::resource('plugins', 'LemurEngine\LemurBot\Http\Controllers\PluginController')->middleware(['web',TransformData::class]);
+
+Route::resource('botPlugins', 'LemurEngine\LemurBot\Http\Controllers\BotPluginController')->middleware(['web',TransformData::class]);

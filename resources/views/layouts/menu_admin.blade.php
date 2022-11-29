@@ -1,6 +1,6 @@
 @if(LemurPriv::isAdmin(Auth::user()))
 
-    <li class="treeview {{ Request::is('sections*')  || Request::is('botAllowedSites*') || Request::is('botRatings*') ||  Request::is('botKeys*') || Request::is('wildcards*') || Request::is('bots*') ||  Request::is('normalizations*') || Request::is('botWordSpellingGroups*') || Request::is('botProperties*') || Request::is('botCategoryGroups*')  ||  Request::is('users*')||  Request::is('wordSpellingGroups*') || Request::is('wordSpellings*') || Request::is('languages*') || Request::is('wordTransformations*') }} side-bar-top-level-menu" data-test="sidebar-parent-master-data-li">
+    <li class="treeview {{ Request::is('botPlugins*') || Request::is('plugins*') || Request::is('sections*')  || Request::is('botAllowedSites*') || Request::is('botRatings*') ||  Request::is('botKeys*') || Request::is('wildcards*') || Request::is('bots*') ||  Request::is('normalizations*') || Request::is('botWordSpellingGroups*') || Request::is('botProperties*') || Request::is('botCategoryGroups*')  ||  Request::is('users*')||  Request::is('wordSpellingGroups*') || Request::is('wordSpellings*') || Request::is('languages*') || Request::is('wordTransformations*') }} side-bar-top-level-menu" data-test="sidebar-parent-master-data-li">
 
         <a href="#">
             <i class="fa fa-th-list"></i>
@@ -9,7 +9,7 @@
             <i class="fa fa-angle-left pull-right"  data-test="sidebar-parent-master-data-button"></i>
         </span>
         </a>
-        <ul class="treeview-menu" style="{{ Request::is('sections*')  || Request::is('botAllowedSites*') || Request::is('botRatings*') ||  Request::is('botKeys*') || Request::is('wildcards*') || Request::is('bots*') ||  Request::is('normalizations*') || Request::is('botWordSpellingGroups*') || Request::is('botProperties*') || Request::is('botCategoryGroups*')  || Request::is('users*') || Request::is('wordSpellingGroups*') || Request::is('wordSpellings*') || Request::is('languages*') || Request::is('wordTransformations*')  ? 'display:block;' : '' }}">
+        <ul class="treeview-menu" style="{{ Request::is('botPlugins*') || Request::is('plugins*') || Request::is('sections*')  || Request::is('botAllowedSites*') || Request::is('botRatings*') ||  Request::is('botKeys*') || Request::is('wildcards*') || Request::is('bots*') ||  Request::is('normalizations*') || Request::is('botWordSpellingGroups*') || Request::is('botProperties*') || Request::is('botCategoryGroups*')  || Request::is('users*') || Request::is('wordSpellingGroups*') || Request::is('wordSpellings*') || Request::is('languages*') || Request::is('wordTransformations*')  ? 'display:block;' : '' }}">
 
             <li class="{{ Request::is('bots*') ? 'active' : '' }}">
                 <a href="{{ url('bots') }}" data-test="sidebar-link-bots-sub"><i class="fa fa-circle-o"></i><span>Bots</span></a>
@@ -39,6 +39,13 @@
                 <a href="{{ route('botRatings.index') }}" data-test="sidebar-link-botRatings"><i class="fa fa-circle-o"></i><span>Bot Ratings</span></a>
             </li>
 
+            <li class="{{ Request::is('botPlugins*') ? 'active' : '' }}">
+                <a href="{{ route('botPlugins.index') }}" data-test="sidebar-link-botPlugins"><i class="fa fa-circle-o"></i><span>Bot Plugins</span></a>
+            </li>
+
+            <li class="{{ Request::is('plugins*') ? 'active' : '' }}">
+                <a href="{{ route('plugins.index') }}" data-test="sidebar-link-Plugins"><i class="fa fa-circle-o"></i><span>Plugins</span></a>
+            </li>
 
             <li class="{{ Request::is('languages*') ? 'active' : '' }}">
                 <a href="{{ route('languages.index') }}" data-test="sidebar-link-languages"><i class="fa fa-circle-o"></i><span>Languages</span></a>
