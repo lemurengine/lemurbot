@@ -197,7 +197,7 @@ class Plugin extends Model
             'bot_plugins.bot_id'])
             ->leftJoin('bot_plugins', function($join) use($botId){
                 $join->on('plugins.id', '=', 'bot_plugins.plugin_id')
-                    ->where('bot_plugins.plugin_id', $botId);
+                    ->where('bot_plugins.bot_id', $botId);
             })
             ->where(function ($query) {
                 //it has to be owned by the bot author or be a master record
