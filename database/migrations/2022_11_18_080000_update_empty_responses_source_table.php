@@ -29,7 +29,7 @@ class UpdateEmptyResponsesSourceTable extends Migration
             $table->dropUnique('empty_responses_ibuq_1');
             //when we try to drop the source field.. we are going to make un-unique key combinations
             //so lets just clear anything where that is not null
-            EmptyResponse::whereIsNotNull('source')->delete();
+            EmptyResponse::whereNotNull('source')->delete();
             $table->dropColumn('source');
             $table->unique(['bot_id','that', 'input'], 'empty_responses_ibuq_1');
         });
