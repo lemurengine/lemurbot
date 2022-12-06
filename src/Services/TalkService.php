@@ -450,11 +450,11 @@ class TalkService
         $preparedSentence = $sentence;
         $preparedSentence = $this->applyPrePlugins($preparedSentence);
         $this->conversation->currentConversationTurn->setPluginTransformedInput($preparedSentence);
+        $preparedSentence = LemurStr::normalizeInput($preparedSentence);
+        $this->checkAndSetNormalizations($preparedSentence, $sentence);
 
         $pluginArr = $this->applyCustomPlugins($this->conversation, $preparedSentence, 'pre');
         $preparedSentence = $pluginArr['sentence'];
-        $preparedSentence = LemurStr::normalizeInput($preparedSentence);
-        $this->checkAndSetNormalizations($preparedSentence, $sentence);
 
         //initially we will check to see if there is 'learnt' response from the same client...
         if($pluginArr['return']){
