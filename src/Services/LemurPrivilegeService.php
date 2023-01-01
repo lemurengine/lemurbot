@@ -56,7 +56,7 @@ class LemurPrivilegeService
             $botUser->role = $privStr;
             $botUser->save();
         }
-
+        return $botUser;
     }
 
 }
