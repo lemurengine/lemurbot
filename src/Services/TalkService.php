@@ -501,9 +501,13 @@ class TalkService
             }
 
             $this->aimlParser->extractAllWildcards();
-            return $this->aimlParser->parseTemplate();
+            return $this->finalClean($this->aimlParser->parseTemplate());
         }
         return '';
+    }
+
+    public function finalClean($str){
+        return trim($str);
     }
 
 
