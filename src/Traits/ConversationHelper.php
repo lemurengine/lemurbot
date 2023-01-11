@@ -317,10 +317,25 @@ trait ConversationHelper
         return $property->value;
     }
 
-    public function getGlobalProperties()
+    public function getGlobalProperties($convertJsonToArray=false)
     {
 
-        return ConversationProperty::select(['name', 'value'])
+        $items = ConversationProperty::select(['name', 'value'])
             ->where('conversation_id', $this->id)->pluck('value', 'name')->toArray();
+
+        if($convertJsonToArray){
+            foreach($items as $name => $value){
+                if($this->isJson($value)){
+                    $items[$name] = json_decode($value);
+                }
+            }
+        }
+
+        return $items;
+    }
+
+    public function isJson($string) {
+        json_decode($string);
+        return json_last_error() === JSON_ERROR_NONE;
     }
 }

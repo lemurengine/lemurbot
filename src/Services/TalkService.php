@@ -578,7 +578,7 @@ class TalkService
                 ->where('type', 'thatstar')->latest('id')->take(10)->pluck('value');
 
 
-            $debugArr['globals']= $conversation->getGlobalProperties();
+            $debugArr['globals']= $conversation->getGlobalProperties(true);
             $debugArr['locals']= $conversation->getVars();
             $debugArr['debug']= $conversation->getDebugs();
 
