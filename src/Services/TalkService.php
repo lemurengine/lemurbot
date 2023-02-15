@@ -614,7 +614,13 @@ class TalkService
         }
         $originalStr = $str;
         foreach($plugins as $plugin){
-            $pluginClass = 'App\\LemurPlugin\\'.$plugin->classname;
+
+            //if the a name space isnt detected add the custom namespace
+            if(strpos($plugin->classname, "\\")===false){
+                $pluginClass = 'App\\LemurPlugin\\'.$plugin->classname;
+            }else{
+                $pluginClass = $plugin->classname;
+            }
             if($plugin->is_active && class_exists($pluginClass)){
                 //load the class
                 $activePlugin = new $pluginClass($conversation, $str);

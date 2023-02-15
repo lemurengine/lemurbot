@@ -1,4 +1,4 @@
-@if(LemurPriv::isAdmin(Auth::user()))
+\@if(LemurPriv::isAdmin(Auth::user()))
 
     <li class="treeview {{ Request::is('botPlugins*') || Request::is('plugins*') || Request::is('sections*')  || Request::is('botAllowedSites*') || Request::is('botRatings*') ||  Request::is('botKeys*') || Request::is('wildcards*') || Request::is('bots*') ||  Request::is('normalizations*') || Request::is('botWordSpellingGroups*') || Request::is('botProperties*') || Request::is('botCategoryGroups*')  ||  Request::is('users*')||  Request::is('wordSpellingGroups*') || Request::is('wordSpellings*') || Request::is('languages*') || Request::is('wordTransformations*') }} side-bar-top-level-menu" data-test="sidebar-parent-master-data-li">
 

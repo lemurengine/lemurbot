@@ -3,8 +3,6 @@
 namespace LemurEngine\LemurBot\Http\Controllers;
 
 use LemurEngine\LemurBot\DataTables\EmptyResponseDataTable;
-use LemurEngine\LemurBot\Http\Requests\CreateEmptyResponseRequest;
-use LemurEngine\LemurBot\Http\Requests\UpdateEmptyResponseRequest;
 use LemurEngine\LemurBot\Repositories\EmptyResponseRepository;
 use Laracasts\Flash\Flash;
 use Illuminate\Auth\Access\AuthorizationException;
@@ -24,6 +22,7 @@ class EmptyResponseController extends AppBaseController
     public function __construct(EmptyResponseRepository $emptyResponseRepo)
     {
         $this->emptyResponseRepository = $emptyResponseRepo;
+
     }
 
     /**

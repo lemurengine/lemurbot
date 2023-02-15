@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\hasManyThrough;
 use Illuminate\Database\Eloquent\Relations\hasOne;
+use Illuminate\Database\Eloquent\SoftDeletingScope;
 use LemurEngine\LemurBot\Traits\HasPackageFactory;
 use LemurEngine\LemurBot\Facades\LemurPriv;
 use LemurEngine\LemurBot\Traits\ImageTrait;
@@ -226,6 +227,10 @@ class Bot extends Model
         });
 
     }
+
+
+
+
 
     /**
      * Get the validation rules

@@ -2,7 +2,9 @@
 
 namespace LemurEngine\LemurBot\Http\Controllers;
 
+use Illuminate\Support\Facades\App;
 use LemurEngine\LemurBot\DataTables\ClientDataTable;
+use LemurEngine\LemurBot\Exceptions\Handler;
 use LemurEngine\LemurBot\Http\Requests\UpdateClientRequest;
 use LemurEngine\LemurBot\Http\Requests\UpdateClientSlugRequest;
 use LemurEngine\LemurBot\Repositories\ClientRepository;
@@ -25,6 +27,11 @@ class ClientController extends AppBaseController
     {
         $this->middleware('auth');
         $this->clientRepository = $clientRepo;
+
+        App::singleton(
+            \Illuminate\Contracts\Debug\ExceptionHandler::class,
+            Handler::class
+        );
     }
 
     /**

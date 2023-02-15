@@ -2,8 +2,10 @@
 
 namespace LemurEngine\LemurBot\Http\Controllers;
 
+use Illuminate\Support\Facades\App;
 use LemurEngine\LemurBot\DataTables\CategoryDataTable;
 use LemurEngine\LemurBot\Exceptions\AimlUploadException;
+use LemurEngine\LemurBot\Exceptions\Handler;
 use LemurEngine\LemurBot\Facades\LemurPriv;
 use LemurEngine\LemurBot\Http\Requests\CreateCategoryRequest;
 use LemurEngine\LemurBot\Http\Requests\UpdateCategoryRequest;
@@ -40,6 +42,11 @@ class CategoryController extends AppBaseController
     {
         $this->middleware('auth');
         $this->categoryRepository = $categoryRepo;
+
+        App::singleton(
+            \Illuminate\Contracts\Debug\ExceptionHandler::class,
+            Handler::class
+        );
     }
 
     /**
@@ -85,16 +92,15 @@ class CategoryController extends AppBaseController
 
     /**
      * Show the form for creating a new Category.
-     *
+     * @param Turn $turn
      * @return Response
      * @throws AuthorizationException
      */
-    public function createFromTurn($id)
+    public function createFromTurn(Turn $turn)
     {
         $this->authorize('create', Category::class);
 
-        $turn = Turn::find($id);
-        $previousTurn = Turn::PreviousTurn($id);
+        $previousTurn = Turn::PreviousTurn($turn->id);
 
         $categoryGroupList = CategoryGroup::myEditableItems()->orderBy('name')->pluck('name', 'slug');
 
@@ -115,14 +121,12 @@ class CategoryController extends AppBaseController
     /**
      * Show the form for creating a new Category.
      *
-     * @return Response
+     * @return EmptyResponse $emptyResponse
      * @throws AuthorizationException
      */
-    public function createFromEmptyResponse($id)
+    public function createFromEmptyResponse(EmptyResponse $emptyResponse)
     {
         $this->authorize('create', Category::class);
-
-        $emptyResponse = EmptyResponse::find($id);
 
         $categoryGroupList = CategoryGroup::myEditableItems()->orderBy('name')->pluck('name', 'slug');
 
@@ -141,14 +145,12 @@ class CategoryController extends AppBaseController
     /**
      * Show the form for creating a new Category.
      *
-     * @return Response
+     * @return ClientCategory $clientCategory
      * @throws AuthorizationException
      */
-    public function createFromClientCategory($id)
+    public function createFromClientCategory(ClientCategory $clientCategory)
     {
         $this->authorize('create', Category::class);
-
-        $clientCategory = ClientCategory::find($id);
 
         $categoryGroupList = CategoryGroup::myEditableItems()->orderBy('name')->pluck('name', 'slug');
 
@@ -167,15 +169,13 @@ class CategoryController extends AppBaseController
 
     /**
      * Show the form for creating a new Category.
-     *
+     * @param MachineLearntCategory $machineLearntCategory
      * @return Response
      * @throws AuthorizationException
      */
-    public function createFromMachineLearntCategory($id)
+    public function createFromMachineLearntCategory(MachineLearntCategory $machineLearntCategory)
     {
         $this->authorize('create', Category::class);
-
-        $machineLearntCategory = MachineLearntCategory::find($id);
 
         $categoryGroupList = CategoryGroup::myEditableItems()->orderBy('name')->pluck('name', 'slug');
 
@@ -207,14 +207,13 @@ class CategoryController extends AppBaseController
     /**
      * Show the form for creating a new Category.
      *
+     * @param Category $category
      * @return Response
      * @throws AuthorizationException
      */
-    public function createFromCopy($id)
+    public function createFromCopy(Category $category)
     {
         $this->authorize('create', Category::class);
-
-        $category = Category::find($id);
 
         $categoryGroupList = CategoryGroup::myEditableItems()->orderBy('name')->pluck('name', 'slug');
 

@@ -115,12 +115,6 @@ trait ConversationHelper
         return Turn::where('conversation_id', $conversationId)->where('turns.source',  'human')->latest('id')->skip($skip)->first();
 
     }
-
-    public function getInput()
-    {
-        return $this->currentConversationTurn->input;
-    }
-
     public function getPluginTransformedInput()
     {
         return $this->currentConversationTurn->getPluginTransformedInput();
@@ -137,12 +131,36 @@ trait ConversationHelper
         return $this->getGlobalProperty('topic');
     }
 
+    public function getInput($forceSource = false)
+    {
+        $lastSource = $this->currentConversationTurn->source;
+        if ($lastSource =='human' || $forceSource =='human') {
+            //this is a v lazy way of doing this
+            $turn = Turn::where('conversation_id', $this->id)->where('source', 'human')->latest('id')->skip(1)->first();
+            if ($turn!==null) {
+                $input = $turn->input;
+            } else {
+                $input = '';
+            }
+        } else {
+            $input = $this->currentConversationTurn->input;
+        }
+        return $input;
+    }
+
+
+    /**
+     * get the first turn in this conversation line.
+     * e.g. the turn the human spoke
+     * @return mixed
+     */
+    public function getThisFirstTurn()
+    {
+        return Turn::where('conversation_id', $this->id)->where('source', 'human')->latest('id')->skip(1)->first();
+    }
+
     public function getThat($forceSource = false)
     {
-        //<that/> = <that index="1,1"/> - the last sentence the bot uttered.
-
-        //
-
         $lastSource = $this->currentConversationTurn->source;
 
         if ($lastSource =='human' || $forceSource =='human') {
@@ -153,19 +171,13 @@ trait ConversationHelper
             $turn = Turn::where('conversation_id', $this->id)
                 ->where('source', '!=', 'multiple')->latest('id')->skip(1)->first();
         }
-        //i have commented the above  out... I cannot find any good point where we would need a non humnan turn that
-        //but just incase things get strange we will leave it here for now
-        //$turn = Turn::where('conversation_id', $this->id)->where('source', 'human')->latest('id')->skip(1)->first();
-
         if ($turn!==null) {
-
             $output = $turn->output;
             $output = preg_replace('/<respondbutton[^>]*>([\s\S]*?)<\/respondbutton[^>]*>/', '', $output);
             $output = trim($output);
             $output = str_replace("<br/>",".", $output);
             $output = strip_tags($output, "<a>");
             $output = str_replace("..",".", $output);
-
             $allTurnSentences = LemurStr::splitIntoSentences($output);
             //now flip it as the last sentence = 1 (in AIML world)
             $allTurnSentences = array_reverse($allTurnSentences);

@@ -37,6 +37,12 @@ use Spatie\Sluggable\SlugOptions;
  *          format="int32"
  *      ),
  *      @SWG\Property(
+ *          property="client_category_id",
+ *          description="client_category_id",
+ *          type="integer",
+ *          format="int32"
+ *      ),
+ *      @SWG\Property(
  *          property="slug",
  *          description="slug",
  *          type="string"
