@@ -133,8 +133,7 @@ trait ConversationHelper
 
     public function getInput($forceSource = false)
     {
-        $lastSource = $this->currentConversationTurn->source;
-        if ($lastSource =='human' || $forceSource =='human') {
+        if ($forceSource === 'human') {
             //this is a v lazy way of doing this
             $turn = Turn::where('conversation_id', $this->id)->where('source', 'human')->latest('id')->skip(1)->first();
             if ($turn!==null) {
@@ -142,6 +141,7 @@ trait ConversationHelper
             } else {
                 $input = '';
             }
+
         } else {
             $input = $this->currentConversationTurn->input;
         }
