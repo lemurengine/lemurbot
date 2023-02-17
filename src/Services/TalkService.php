@@ -621,11 +621,10 @@ class TalkService
                 if($activePlugin instanceof LemurPlugin){
                     $str = $activePlugin->apply();
                     //check for changes
-                    if($plugin->return_onchange && $originalStr!=$str){
-
+                    if($plugin->return_onchange && $originalStr!=$str && $str!==''){
                         $this->conversation->flow('applying_'.$apply.'_plugin', $plugin->classname.' plugin, output updated returning early');
                         return ['sentence'=>$str, 'return'=>true];
-                    }elseif($originalStr!=$str){
+                    }elseif($originalStr!=$str  && $str!==''){
                         $this->conversation->flow('applying_'.$apply.'_plugin', $plugin->classname.' plugin, output updated continuing');
                         return ['sentence'=>$str, 'return'=>true];
                     }
