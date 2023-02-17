@@ -37,6 +37,7 @@ class TurnFactory
      */
     public static function createCompleteTurn($conversation, $input, $source, $parentTurnId = null)
     {
+
         $currentLog = new Turn([
             'conversation_id' => $conversation->id,
             'parent_turn_id' =>$parentTurnId,

@@ -43,6 +43,7 @@ class TalkService
     protected $config;
     protected $aimlParser;
     protected $aimlMatcher;
+    protected $category;
 
 
     /**
@@ -396,7 +397,7 @@ class TalkService
     }
 
 
-    public function talk($message)
+    public function talk($sentence)
     {
 
         LemurLog::debug(
@@ -404,23 +405,15 @@ class TalkService
             [
                 'conversation_id'=>$this->conversation->id,
                 'turn_id'=>$this->conversation->currentTurnId(),
-                'sentence'=>$message
+                'sentence'=>$sentence
             ]
         );
-        $message = LemurStr::removeSentenceEnders($message);
-        $sentences = LemurStr::splitIntoSentences($message);
 
-        $fullOutput='';
-
-        foreach ($sentences as $index => $sentence) {
-            $sentence = LemurStr::removeSentenceEnders($sentence);
-            $fullOutput=$this->process($sentence);
-            //if we have more than one we are going to shift it
-            //apply any post processing
-            $pluginArr = $this->applyCustomPlugins($this->conversation, $fullOutput, 'post');
-            $fullOutput = $pluginArr['sentence'];
-
-        }
+        $fullOutput=$this->process($sentence);
+        //if we have more than one we are going to shift it
+        //apply any post processing
+        $pluginArr = $this->applyCustomPlugins($this->conversation, $fullOutput, 'post');
+        $fullOutput = $pluginArr['sentence'];
 
         //some internal tag reparses such as the SRAI tag do not return a response.
         //as they are just <think> actions
@@ -603,8 +596,9 @@ class TalkService
 
     public function applyCustomPlugins($conversation, $str, $apply){
 
+
         $pluginIds = BotPlugin::where('bot_id', $this->bot->id)->pluck('plugin_id','plugin_id');
-        $plugins = Plugin::whereIn('id',$pluginIds)->where('apply_plugin', $apply)->orderby('priority', 'ASC')->get();
+        $plugins = Plugin::whereIn('id',$pluginIds)->where('is_active', true)->where('apply_plugin', $apply)->orderby('priority', 'ASC')->get();
 
         if(count($plugins)==0){
             $this->conversation->flow('applying_'.$apply.'_plugin', 'no plugins found');
@@ -614,14 +608,13 @@ class TalkService
         }
         $originalStr = $str;
         foreach($plugins as $plugin){
-
             //if the a name space isnt detected add the custom namespace
             if(strpos($plugin->classname, "\\")===false){
                 $pluginClass = 'App\\LemurPlugin\\'.$plugin->classname;
             }else{
                 $pluginClass = $plugin->classname;
             }
-            if($plugin->is_active && class_exists($pluginClass)){
+            if(class_exists($pluginClass)){
                 //load the class
                 $activePlugin = new $pluginClass($conversation, $str);
 

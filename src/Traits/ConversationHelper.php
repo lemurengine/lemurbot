@@ -149,16 +149,6 @@ trait ConversationHelper
     }
 
 
-    /**
-     * get the first turn in this conversation line.
-     * e.g. the turn the human spoke
-     * @return mixed
-     */
-    public function getThisFirstTurn()
-    {
-        return Turn::where('conversation_id', $this->id)->where('source', 'human')->latest('id')->skip(1)->first();
-    }
-
     public function getThat($forceSource = false)
     {
         $lastSource = $this->currentConversationTurn->source;
@@ -245,12 +235,9 @@ trait ConversationHelper
 
     public function getTurnValue($field, $skip = 1, $default = '')
     {
-
-
             //have had to use ..
             $res = Turn::where('conversation_id', $this->id)
                 ->where('source', 'human')->latest('id')->skip($skip)->first()->$field;
-
 
             LemurLog::debug(
                 __METHOD__,
