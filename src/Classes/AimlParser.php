@@ -106,20 +106,11 @@ class AimlParser
             $this->response='';
             return $this->response;
         }
-
-
-
         $template = $this->expandTags($template);
         $template = $this->reduceRandomStack($template);
-
-
         $this->setConditionStack($template);
-
         xml_parse($this->xmlParser, $template, $is_final);
-
-
         $this->conversation->debug('output.parsed', $this->response);
-
         return $this->response;
     }
 
@@ -171,17 +162,17 @@ class AimlParser
         if (isset($xmlTemplate->random[0]->li)) { //there is atleast 1
             $totalRandomNodesInTemplate = count($xmlTemplate->random);
             for($r=0; $r<$totalRandomNodesInTemplate; $r++){
-                $totalLiNodesInRandomTag = count($xmlTemplate->random[$r]->li)-1;
-                $rand = rand(0,$totalLiNodesInRandomTag);
-                $randomStack = [];
-                foreach ($xmlTemplate->random[$r]->li as $tagIndex => $tag) {
-                    $randomStack[] = "<random>".$tag->asXML()."</random>";
-                }
-                $xmlRandomLi = simplexml_load_string($randomStack[$rand]);
-                $domToChange = dom_import_simplexml($xmlTemplate->random[$r]);
+                $totalLiNodesInRandomTag = count($xmlTemplate->random[$r]->li);
+                $rand = rand(0,$totalLiNodesInRandomTag-1);
+                $randomStack[] = "<placeholder>".$xmlTemplate->random[$r]->li[$rand]->asXML()."</placeholder>";
+            }
+            foreach($randomStack as $index=> $randomToReplace){
+                $xmlRandomLi = simplexml_load_string($randomToReplace);
+                $domToChange = dom_import_simplexml($xmlTemplate->random);
                 $domReplace  = dom_import_simplexml($xmlRandomLi);
                 $nodeImport  = $domToChange->ownerDocument->importNode($domReplace, TRUE);
                 $domToChange->parentNode->replaceChild($nodeImport, $domToChange);
+
             }
             if ($originalTemplate->asXML() != $xmlTemplate->asXML()) {
                 $this->conversation->debug('template.reduction.' . $r, $xmlTemplate->asXML());
@@ -189,9 +180,18 @@ class AimlParser
             }
         }
 
-        return $xmlTemplate->asXML();
+        $strXml = $xmlTemplate->asXML();
+        $strXml = $this->removeStrXml("</li></placeholder>", $strXml);
+        $strXml = $this->removeStrXml("<placeholder><li>", $strXml);
+        return trim($this->removeStrXml('<?xml version="1.0"?>', $strXml));
+
 
     }
+
+    public function removeStrXml($toRemove, $xmlString){
+        return str_replace($toRemove,"",$xmlString);
+    }
+
 
     public function getConditionStack()
     {
