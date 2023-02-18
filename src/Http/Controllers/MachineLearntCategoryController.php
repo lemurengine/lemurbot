@@ -96,7 +96,7 @@ class MachineLearntCategoryController extends AppBaseController
             return redirect(route('machineLearntCategories.index'));
         }
 
-        return view('lemurbot::.show')->with(
+        return view('lemurbot::machine_learnt_categories.show')->with(
             ['machineLearntCategory'=>$machineLearntCategory, 'link'=>$this->link, 'htmlTag'=>$this->htmlTag,
                 'title'=>$this->title, 'resourceFolder'=>$this->resourceFolder]
         );
