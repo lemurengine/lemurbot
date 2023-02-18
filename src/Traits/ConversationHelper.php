@@ -131,11 +131,11 @@ trait ConversationHelper
         return $this->getGlobalProperty('topic');
     }
 
-    public function getInput($forceSource = false)
+    public function getInput($forceSource = false, $skip = 0)
     {
         if ($forceSource === 'human') {
             //this is a v lazy way of doing this
-            $turn = Turn::where('conversation_id', $this->id)->where('source', 'human')->latest('id')->skip(1)->first();
+            $turn = Turn::where('conversation_id', $this->id)->where('source', 'human')->latest('id')->skip($skip)->first();
             if ($turn!==null) {
                 $input = $turn->input;
             } else {
