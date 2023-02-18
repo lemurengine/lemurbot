@@ -164,36 +164,33 @@ class AimlParser
 
     }
 
-    public function reduceRandomStack($template, $index = 0)
+    public function reduceRandomStack($template)
     {
-
         $newTemplate = LemurStr::removeTrailingKeepSpace($template);
-        $xml_data = simplexml_load_string($newTemplate);
-        if (isset($xml_data->random->li)) {
-
-            foreach ($xml_data->random[0]->li as $index => $tag) {
-                $randomStack[] = $tag->asXML();
+        $originalTemplate = $xmlTemplate = simplexml_load_string($newTemplate);
+        if (isset($xmlTemplate->random[0]->li)) { //there is atleast 1
+            $totalRandomNodesInTemplate = count($xmlTemplate->random);
+            for($r=0; $r<$totalRandomNodesInTemplate; $r++){
+                $totalLiNodesInRandomTag = count($xmlTemplate->random[$r]->li)-1;
+                $rand = rand(0,$totalLiNodesInRandomTag);
+                $randomStack = [];
+                foreach ($xmlTemplate->random[$r]->li as $tagIndex => $tag) {
+                    $randomStack[] = "<random>".$tag->asXML()."</random>";
+                }
+                $xmlRandomLi = simplexml_load_string($randomStack[$rand]);
+                $domToChange = dom_import_simplexml($xmlTemplate->random[$r]);
+                $domReplace  = dom_import_simplexml($xmlRandomLi);
+                $nodeImport  = $domToChange->ownerDocument->importNode($domReplace, TRUE);
+                $domToChange->parentNode->replaceChild($nodeImport, $domToChange);
             }
-
-            $currentRandomToReplace = $xml_data->random[0]->asXML();
-            $randomTag = "<randomReplaced>".trim(array_rand(array_flip($randomStack), 1))."</randomReplaced>";
-
-            $newTemplate = str_replace($currentRandomToReplace, $randomTag,$newTemplate );
-
-            if($newTemplate != $template){
-                $this->conversation->debug('template.reduction.'.$index, $newTemplate);
+            if ($originalTemplate->asXML() != $xmlTemplate->asXML()) {
+                $this->conversation->debug('template.reduction.' . $r, $xmlTemplate->asXML());
+                $this->conversation->flow('reducing_randomstack', $xmlTemplate->asXML());
             }
-
-            return $this->reduceRandomStack($newTemplate, $index++);
         }
 
-        $newTemplate = str_replace('<randomReplaced><li>', '',$newTemplate );
-        $newTemplate = str_replace('</li></randomReplaced>', '',$newTemplate );
-        if($newTemplate !=$template){
-            $this->conversation->flow('reducing_randomstack', $newTemplate);
-        }
+        return $xmlTemplate->asXML();
 
-        return $newTemplate;
     }
 
     public function getConditionStack()
