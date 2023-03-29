@@ -27,6 +27,7 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Response;
 use LemurEngine\LemurBot\Models\Category;
 use SimpleXMLElement;
+use Illuminate\Support\Facades\Response as FacadeResponse;
 
 class CategoryController extends AppBaseController
 {
@@ -580,8 +581,7 @@ class CategoryController extends AppBaseController
 $stringXml
 XML;
         $aiml = simplexml_load_string($aiml);
-
-        return response::make($aiml->asXML(), 200, $headers);
+        return FacadeResponse::make($aiml->asXML(), 200, $headers);
     }
 
 }
