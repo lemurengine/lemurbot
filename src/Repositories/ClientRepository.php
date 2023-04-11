@@ -21,7 +21,8 @@ class ClientRepository extends BaseRepository
     protected $fieldSearchable = [
         'bot_id',
         'slug',
-        'is_banned'
+        'is_banned',
+        'image'
     ];
 
     /**

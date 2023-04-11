@@ -80,7 +80,8 @@ class Client extends Model
     public $fillable = [
         'bot_id',
         'slug',
-        'is_banned'
+        'is_banned',
+        'image'
     ];
 
     /**
@@ -92,7 +93,8 @@ class Client extends Model
         'id' => 'integer',
         'bot_id' => 'integer',
         'slug' => 'string',
-        'is_banned' => 'boolean'
+        'is_banned' => 'boolean',
+        'image' => 'string',
     ];
 
     /**
@@ -102,6 +104,7 @@ class Client extends Model
      */
     public static $rules = [
         'is_banned' => 'required|boolean',
+        'image' => 'nullable|url',
     ];
 
     /**
