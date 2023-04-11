@@ -96,8 +96,7 @@ class CategoryGroup extends Model
     use CascadeSoftDeletes;
     use HasPackageFactory;
 
-    protected $cascadeDeletes = ['categories'];
-
+    protected $cascadeDeletes = ['categories', 'botCategoryGroups'];
 
     public $table = 'category_groups';
 
