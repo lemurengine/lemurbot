@@ -187,11 +187,12 @@ class Client extends Model
         }
 
         $client = Client::where('slug', $slug)->first();
+        $bot = Bot::where('slug', $bot->id)->first();
 
         if ($client == null) {
             $client = new Client();
             $client->bot_id=$bot->id;
-            $client->slug=$slug;
+            $client->user_id=$bot->user_id;
             $client->slug=$slug;
             $client->save();
         }
