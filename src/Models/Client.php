@@ -79,8 +79,10 @@ class Client extends Model
 
     public $fillable = [
         'bot_id',
+        'user_id',
         'slug',
         'is_banned',
+        'name',
         'image'
     ];
 
@@ -92,7 +94,9 @@ class Client extends Model
     protected $casts = [
         'id' => 'integer',
         'bot_id' => 'integer',
+        'user_id' => 'integer',
         'slug' => 'string',
+        'name' => 'string',
         'is_banned' => 'boolean',
         'image' => 'string',
     ];
@@ -105,6 +109,7 @@ class Client extends Model
     public static $rules = [
         'is_banned' => 'required|boolean',
         'image' => 'nullable|url',
+        'name' => 'nullable|string',
     ];
 
     /**
@@ -115,9 +120,9 @@ class Client extends Model
 
         //You cant update some of the items
         static::updating(function ($model) {
-
             $originalAttributes = $model->getOriginal();
             $model->bot_id = $originalAttributes['bot_id'];
+            $model->slug = $originalAttributes['slug'];
         });
     }
 
