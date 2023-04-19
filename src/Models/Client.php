@@ -81,8 +81,6 @@ class Client extends Model
         'bot_id',
         'slug',
         'is_banned',
-        'name',
-        'image'
     ];
 
     /**
@@ -94,9 +92,7 @@ class Client extends Model
         'id' => 'integer',
         'bot_id' => 'integer',
         'slug' => 'string',
-        'name' => 'string',
         'is_banned' => 'boolean',
-        'image' => 'string',
     ];
 
     /**
@@ -107,7 +103,7 @@ class Client extends Model
     public static $rules = [
         'is_banned' => 'required|boolean',
         'image' => 'nullable|url',
-        'name' => 'nullable|string',
+        'slug' => 'nullable|string',
     ];
 
     /**
@@ -195,8 +191,6 @@ class Client extends Model
             $client = new Client();
             $client->bot_id=$bot->id;
             $client->slug=$slug;
-            $client->name=$slug;
-            $client->image='';
             $client->save();
         }
 
