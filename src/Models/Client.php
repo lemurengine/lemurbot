@@ -79,7 +79,6 @@ class Client extends Model
 
     public $fillable = [
         'bot_id',
-        'user_id',
         'slug',
         'is_banned',
         'name',
@@ -94,7 +93,6 @@ class Client extends Model
     protected $casts = [
         'id' => 'integer',
         'bot_id' => 'integer',
-        'user_id' => 'integer',
         'slug' => 'string',
         'name' => 'string',
         'is_banned' => 'boolean',
@@ -196,7 +194,6 @@ class Client extends Model
         if ($client == null) {
             $client = new Client();
             $client->bot_id=$bot->id;
-            $client->user_id=$bot->user_id;
             $client->slug=$slug;
             $client->name=$slug;
             $client->image='';
