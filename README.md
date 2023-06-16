@@ -41,22 +41,37 @@ This package is built for Laravel 9.x \
 Compatible Laravel versions are reflected in the LemurBot versions. \
 LemurBot 9.x versions are compatible with Laravel 9.x versions
 
-## Migrating From theramenrobotdiscocode/lemur-engine
-The original version of this library was released as an entire application which included a checked in version of Laravel 7.\
-It is easy to migrate your original version of theramenrobotdiscocode/lemur-engine to this version.\
-There are NO database schema changes just some minor data changes and file location changes.\
-We suggest you install new fresh copy of Laravel 9 and configure it to connect to your existing database. \
-You will need to still follow the fresh installation instructions below. \
-And anyway "Additional Upgrade Steps" as well.
+## Prerequisites
+This has been developed for PHP8.0
 
-## Fresh Installation
+## TL/DR Fresh Installation Steps
+If you do not want to read what the commands actually do and you just want run them then here they are.
+Only use these command on a FRESH installation of laravel.
+```php
+php artisan vendor:publish --tag=lemurbot-template --force
+php artisan vendor:publish --tag=lemurbot-auth --force
+php artisan vendor:publish --tag=lemurbot-assets
+php artisan vendor:publish --tag=lemurbot-widgets
+php artisan vendor:publish --tag=lemurbot-config
+php artisan vendor:publish --tag=datatables
+php artisan vendor:publish --tag=datatables-buttons
+php artisan vendor:publish --tag=datatables-html
+php artisan vendor:publish --tag=datatables-fractal
+php artisan vendor:publish --tag=lemurbot-examples
+php artisan vendor:publish --tag=lemurbot-migrations
+php artisan migrate
+php artisan storage:link
+php artisan lemur:install-all --admin=admin@lemurengine.local --bot=mybot --data=max
+```
+
+## Full Fresh Installation Steps
 LemurEngine LemurBots is written for the Laravel framework.\
 The first step is to install and setup your version of Laravel.\
 For more information on how to install Laravel check out: https://laravel.com/docs/9.x/installation
-
+Use the --with-all-dependencies flag to update any conflicting packages the first time its run
 ### Install with Lemur Engine with composer
 ```php
-composer require lemurengine/lemurbot
+composer require lemurengine/lemurbot dev-develop --with-all-dependencies
 ```
 
 ### Publish Template (recommended)
@@ -141,6 +156,11 @@ If you are migrating or already have this data you probably will not need to run
 ```php
 php artisan lemur:install-all --admin=[admin_email] --bot=[bot_name] --data=[none|min|max]
 ```
+example:
+```php
+php artisan lemur:install-all --admin=admin@lemurengine.local --bot=mybot --data=max
+```
+
 -`admin_email` is the email address you will log in with.
 Your password will be 'password' which you should change immediately.
 
@@ -151,13 +171,32 @@ Your password will be 'password' which you should change immediately.
 * min - 4 datasets (testing, hello, the critical and rating)
 * max - all available datasets
 
-example:
-```php
-php artisan lemur:install-all --admin=admin@lemurengine.local --bot=mybot --data=max
-```
-
 You do not have to install a user or bot, you can do these things at a later date, but we recommend you do this now. \
 If your user already exists it will be given bot admin privileges and will be linked to your bot.
+
+
+## Start the Application
+You can start the application now and log in using the username you entered above and the password 'password'. \
+Don't forget to change your password.
+```php
+php artisan serve
+```
+
+## Use
+
+Talk to your bot here:
+http://127.0.0.1:8000
+
+Log in to admin your bot here:
+http://127.0.0.1:8000/login
+
+## Migrating From theramenrobotdiscocode/lemur-engine
+The original version of this library was released as an entire application which included a checked in version of Laravel 7.\
+It is easy to migrate your original version of theramenrobotdiscocode/lemur-engine to this version.\
+There are NO database schema changes just some minor data changes and file location changes.\
+We suggest you install new fresh copy of Laravel 9 and configure it to connect to your existing database. \
+You will need to still follow the fresh installation instructions below. \
+And anyway "Additional Upgrade Steps" as well.
 
 ### Additional Upgrade Step: Custom Tag
 Only do this is you are migrating from the old project \
@@ -187,23 +226,7 @@ If you have existing data and want to give a user bot_admin privileges you can r
 php artisan lemur:install-admin --admin=[admin_email]
 ```
 
-## Start the Application
-You can start the application now and log in using the username you entered above and the password 'password'. \
-Don't forget to change your password.
-```php
-php artisan serve
-```
-
-## Use
-
-Talk to your bot here:
-http://127.0.0.1:8000
-
-Log in to admin your bot here:
-http://127.0.0.1:8000/login
-
-
 ### More information
 Check out the docs for more information about how to use the portal and talk to the bot.
-
 http://docs.lemurengine.com
+http://lemurengine.com
