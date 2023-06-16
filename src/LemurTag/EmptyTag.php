@@ -2,6 +2,7 @@
 namespace LemurEngine\LemurBot\LemurTag;
 
 use LemurEngine\LemurBot\Classes\LemurLog;
+use LemurEngine\LemurBot\Classes\LemurStr;
 use LemurEngine\LemurBot\Models\EmptyResponse;
 use LemurEngine\LemurBot\Models\Conversation;
 
@@ -9,7 +10,7 @@ use LemurEngine\LemurBot\Models\Conversation;
  * Class EmptyTag
  * @package LemurEngine\LemurBot\LemurTag
  * Documentation on this tag, examples and explanation
- * see: https://docs.lemurbot.com/aiml.html
+ * see: https://docs.lemurengine.com/aiml.html
  */
 class EmptyTag extends AimlTag
 {
@@ -42,16 +43,32 @@ class EmptyTag extends AimlTag
         );
 
         $input = $this->getCurrentTagContents();
+        $that = $this->conversation->getThat('human');
+        $source = $this->conversation->getSource();
+        $input = LemurStr::cleanKeepSpace($input);
 
-        $empty = EmptyResponse::where('bot_id', $this->conversation->bot->id)->where('input', 'like', $input)->first();
+        $empty = EmptyResponse::where('bot_id', $this->conversation->bot->id)
+            ->where(function ($query) use ($input) {
+                $query->where('input', $input)
+                    ->orWhere('input', 'like', $input);
+            })->where(function ($query) use ($that) {
+                $query->where('that', $that)
+                    ->orWhere('that', 'like', $that);
+            })
+            ->where('source', $source)
+            ->first();
 
         if ($empty===null) {
             $emptyResponse = new EmptyResponse();
             $emptyResponse->bot_id = $this->conversation->bot->id;
+            $emptyResponse->that = substr($that, 0, 255);
             $emptyResponse->input = $input;
+            $emptyResponse->source = $source;
             $emptyResponse->occurrences = 1;
             $emptyResponse->save();
         } else {
+            $empty->that = $that;
+            $empty->source = $source;
             $empty->occurrences++;
             $empty->save();
         }

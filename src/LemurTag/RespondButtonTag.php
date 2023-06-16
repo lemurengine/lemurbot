@@ -10,7 +10,7 @@ use SimpleXMLElement;
  * example: <respondbutton>Yes</respondbutton><respondbutton>No</respondbutton>
  * @package LemurEngine\LemurBot\LemurTag
  * Documentation on this tag, examples and explanation
- * see: https://docs.lemurbot.com/aiml.html
+ * see: https://docs.lemurengine.com/aiml.html
  */
 class RespondButtonTag extends HtmlTag
 {

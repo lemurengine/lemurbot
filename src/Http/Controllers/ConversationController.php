@@ -2,7 +2,9 @@
 
 namespace LemurEngine\LemurBot\Http\Controllers;
 
+use Illuminate\Support\Facades\App;
 use LemurEngine\LemurBot\DataTables\ConversationDataTable;
+use LemurEngine\LemurBot\Exceptions\Handler;
 use LemurEngine\LemurBot\Http\Requests\UpdateConversationSlugRequest;
 use LemurEngine\LemurBot\Models\Turn;
 use LemurEngine\LemurBot\Repositories\ConversationRepository;
@@ -25,6 +27,11 @@ class ConversationController extends AppBaseController
     {
         $this->middleware('auth');
         $this->conversationRepository = $conversationRepo;
+
+        App::singleton(
+            \Illuminate\Contracts\Debug\ExceptionHandler::class,
+            Handler::class
+        );
     }
 
     /**

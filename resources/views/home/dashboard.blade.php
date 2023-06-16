@@ -11,7 +11,7 @@
             @php $index = 0; @endphp
 
             @if(empty($authorBots->first()))
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="callout callout-info">Create your first bot by <a href="{!! url('/bots/create') !!}">clicking here</a>.</div>
                 </div>
             @else
@@ -114,14 +114,14 @@
                         <div class="box-header with-border">
                             <h3 class="box-title">Chat</h3>
 
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"  data-test="direct-chat-window-close-dashboard">
                                 <span aria-hidden="true">×</span>
                             </button>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
                             <!-- Conversations are loaded here -->
-                            <div id="direct-chat-window" class="direct-chat-messages">
+                            <div id="direct-chat-window" class="direct-chat-messages" data-test="direct-chat-window-responses-dashboard">
 
                             </div>
                             <!--/.direct-chat-messages-->
@@ -132,11 +132,11 @@
                         <div class="box-footer">
                             <form action="#" method="post" id="chat-form">
                                 <div class="input-group">
-                                    <input type="hidden" name="bot" id="bot" value="">
-                                    <input type="hidden" name="client" id="client" value="{!! Auth::user()->slug !!}">
-                                    <input type="text" name="message" id="message" placeholder="Type Message ..." class="form-control">
+                                    <input type="hidden" name="bot" id="bot" value=""  data-test="chat-bot-id-dashboard">
+                                    <input type="hidden" name="client" id="client" value="{!! Auth::user()->slug !!}" data-test="chat-client-id-dashboard">
+                                    <input type="text" name="message" id="message" placeholder="Type Message ..." class="form-control" data-test="chat-input-dashboard">
                                     <span class="input-group-btn">
-                                        <button type="submit" id="submit-button" class="btn btn-primary btn-flat">Send</button>
+                                        <button type="submit" id="submit-button" class="btn btn-primary btn-flat" data-test="chat-button-send-dashboard">Send</button>
                                     </span>
                                 </div>
                             </form>

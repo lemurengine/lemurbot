@@ -15,7 +15,7 @@ class AimlParser
     private $xmlParser;
     private $currentTag;
     private $response='';
-    private $conditionStack = array();
+    private $conditionStack = [];
     private $conversation;
     private $currentTurn;
     private $category;
@@ -39,6 +39,27 @@ class AimlParser
         $this->category = $category;
     }
 
+    public function expandWhiteSpaceTagSpacing($template)
+    {
+
+        $newTemplate = preg_replace('~\s(<star[^>]*>)~iU', "<whitespace />$1", $template);
+        $newTemplate = preg_replace('~(<star[^>]*>)\s~iU', "$1<whitespace />", $newTemplate);
+
+        $newTemplate = preg_replace('~\s(<topicstar[^>]*>)~iU', "<whitespace />$1", $newTemplate);
+        $newTemplate = preg_replace('~(<topicstar[^>]*>)\s~iU', "$1<whitespace />", $newTemplate);
+
+
+        $newTemplate = preg_replace('~\s(<thatstar[^>]*>)~iU', "<whitespace />$1", $newTemplate);
+        $newTemplate = preg_replace('~(<thatstar[^>]*>)\s~iU', "$1<whitespace />", $newTemplate);
+
+        if($newTemplate !=$template){
+            $this->conversation->flow('expanding_whitespace', $newTemplate);
+        }
+
+        return $newTemplate;
+
+    }
+
     /**
      * before we parse the AIML template
      * we need to do some things such as
@@ -46,8 +67,6 @@ class AimlParser
      */
     public function extractAllWildcards()
     {
-
-
         $this->extractAndSaveWildCards('star');
         $this->extractAndSaveWildCards('topicstar');
         $this->extractAndSaveWildCards('thatstar');
@@ -55,7 +74,6 @@ class AimlParser
 
     public function parseTemplate($encoding = 'UTF-8', $is_final = false)
     {
-
         return $this->parse($this->category->template, $encoding, $is_final);
     }
 
@@ -88,27 +106,18 @@ class AimlParser
             $this->response='';
             return $this->response;
         }
-
-
-
         $template = $this->expandTags($template);
         $template = $this->reduceRandomStack($template);
-
-
         $this->setConditionStack($template);
-
         xml_parse($this->xmlParser, $template, $is_final);
-
-
         $this->conversation->debug('output.parsed', $this->response);
-
         return $this->response;
     }
 
     public function setConditionStack($template)
     {
 
-
+        $template = LemurStr::removeTrailingKeepSpace($template);
         $xml_data = simplexml_load_string($template);
 
 
@@ -148,48 +157,41 @@ class AimlParser
 
     public function reduceRandomStack($template)
     {
-
-
-        $xml_data = simplexml_load_string($template);
-
-        if (isset($xml_data->random->li)) {
-
-            foreach ($xml_data->random[0]->li as $index => $tag) {
-                $this->randomStack[] = $tag->asXML();
+        $newTemplate = LemurStr::removeTrailingKeepSpace($template);
+        $originalTemplate = $xmlTemplate = simplexml_load_string($newTemplate);
+        if (isset($xmlTemplate->random[0]->li)) { //there is atleast 1
+            $totalRandomNodesInTemplate = count($xmlTemplate->random);
+            for($r=0; $r<$totalRandomNodesInTemplate; $r++){
+                $totalLiNodesInRandomTag = count($xmlTemplate->random[$r]->li);
+                $rand = rand(0,$totalLiNodesInRandomTag-1);
+                $randomStack[] = "<placeholder>".$xmlTemplate->random[$r]->li[$rand]->asXML()."</placeholder>";
             }
+            foreach($randomStack as $index=> $randomToReplace){
+                $xmlRandomLi = simplexml_load_string($randomToReplace);
+                $domToChange = dom_import_simplexml($xmlTemplate->random);
+                $domReplace  = dom_import_simplexml($xmlRandomLi);
+                $nodeImport  = $domToChange->ownerDocument->importNode($domReplace, TRUE);
+                $domToChange->parentNode->replaceChild($nodeImport, $domToChange);
 
-            $randomTag = trim(array_rand(array_flip($this->randomStack), 1));
-
-            unset($xml_data->random[0]->li);
-
-            $pattern = "#<\s*?li\b[^>]*>(.*?)</li\b[^>]*>#s";
-            preg_match($pattern, $randomTag, $matches);
-            $liContents = $matches[1];
-
-
-            $xml_data->random[0]->addChild('replace', 'here');
-            $contents = $xml_data->asXML();
-            $contents = preg_replace("~<random>\s+<replace>~", "<random><replace>", $contents);
-            $contents = preg_replace("~</replace>\s+</random>~", "</replace></random>", $contents);
-            $contents = preg_replace("~\s+~", " ", $contents);
-
-
-            $contents = preg_replace('~<random><replace>(.*?)</replace></random>~s', $liContents, $contents);
-
-            $template = trim(preg_replace('#<\?xml.*\?>#', '', $contents));
-
-
-
-            //recursively call to reduce the next random in the template (if there is one)
-            return $this->reduceRandomStack($template);
-
-
+            }
+            if ($originalTemplate->asXML() != $xmlTemplate->asXML()) {
+                $this->conversation->debug('template.reduction.' . $r, $xmlTemplate->asXML());
+                $this->conversation->flow('reducing_randomstack', $xmlTemplate->asXML());
+            }
         }
 
-        $this->conversation->debug('template.reduction', $template);
+        $strXml = $xmlTemplate->asXML();
+        $strXml = $this->removeStrXml("</li></placeholder>", $strXml);
+        $strXml = $this->removeStrXml("<placeholder><li>", $strXml);
+        return trim($this->removeStrXml('<?xml version="1.0"?>', $strXml));
 
-        return $template;
+
     }
+
+    public function removeStrXml($toRemove, $xmlString){
+        return str_replace($toRemove,"",$xmlString);
+    }
+
 
     public function getConditionStack()
     {
@@ -248,7 +250,6 @@ class AimlParser
                 'tag_id'=>$this->currentTag->getTagId()
             ]
         );
-
         $this->getTagStack()->push($this->currentTag, $this->getTagId());
 
         if (!$this->currentTag->getIsTagValid()) {
@@ -293,7 +294,6 @@ class AimlParser
                 'tag_id'=>$this->getTagId()
             ]
         );
-
         if ($this->currentTag->getIsTagValid()) {
             if ($this->currentTag->getTagName()=='Template') {
                // echo "<br/>THIS IS JUST CDATA...".$cdata." parent = ".$p->getTagName();
@@ -432,7 +432,6 @@ class AimlParser
 
         if ($previousTag && !$previousTag->getIsTagValid()) {
             $this->currentTag->setIsTagValid(false);
-
             LemurLog::warn('Invalid tag', [
                 'conversation_id'=>$this->conversation->id,
                 'turn_id'=>$this->conversation->currentTurnId(),
@@ -494,8 +493,9 @@ class AimlParser
                 $wildcard = new Wildcard;
                 $wildcard->conversation_id = $this->conversation->id;
                 $wildcard->type = $extractType;
-                $wildcard->value = $wildCard;
+                $wildcard->value = LemurStr::cleanKeepSpace($wildCard);
                 $wildcard->save();
+                $this->conversation->flow('wildcard.'.$extractType, LemurStr::cleanKeepSpace($wildCard));
             }
         }
     }

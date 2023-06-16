@@ -3,7 +3,9 @@
 namespace LemurEngine\LemurBot\Http\Controllers;
 
 use Exception;
+use Illuminate\Support\Facades\App;
 use LemurEngine\LemurBot\DataTables\CustomDocDataTable;
+use LemurEngine\LemurBot\Exceptions\Handler;
 use LemurEngine\LemurBot\Facades\LemurPriv;
 use LemurEngine\LemurBot\Http\Requests\CreateCustomDocRequest;
 use LemurEngine\LemurBot\Http\Requests\UpdateCustomDocRequest;
@@ -30,6 +32,11 @@ class CustomDocController extends AppBaseController
     {
         $this->middleware('auth');
         $this->customDocRepository = $customDocRepo;
+
+        App::singleton(
+            \Illuminate\Contracts\Debug\ExceptionHandler::class,
+            Handler::class
+        );
     }
 
     /**
@@ -224,20 +231,14 @@ class CustomDocController extends AppBaseController
      * @return Response
      * @throws Exception
      */
-    public function restore($customDoc, UpdateCustomDocRequest $request)
+    public function restore(CustomDoc $customDoc, UpdateCustomDocRequest $request)
     {
-
         $this->authorize('update', $customDoc);
 
         $input = $request->all();
 
         if(!empty($input['restore'])){
             $this->customDocRepository->makeModel()->withTrashed()->where('id',$customDoc->id)->first()->restore();
-        }
-
-        if (empty($customDoc)) {
-            Flash::error('Error restoring Custom Doc');
-            return redirect(route('customDocs.index'));
         }
 
         Flash::success('CustomDoc restored successfully.');
@@ -259,15 +260,9 @@ class CustomDocController extends AppBaseController
      * @return Response
      * @throws AuthorizationException
      */
-    public function forceDestroy($customDoc)
+    public function forceDestroy(CustomDoc $customDoc)
     {
         $this->authorize('forceDelete', $customDoc);
-
-        if (empty($customDoc)) {
-            Flash::error('CustomDoc not found');
-            return redirect()->back();
-        }
-
 
         try {
             $this->customDocRepository->forceDelete($customDoc->id);
@@ -300,7 +295,7 @@ class CustomDocController extends AppBaseController
      * @return Response
      * @throws AuthorizationException
      */
-    public function slugUpdate($customDoc, UpdateCustomDocSlugRequest $request)
+    public function slugUpdate(CustomDoc $customDoc, UpdateCustomDocSlugRequest $request)
     {
 
         $this->authorize('update', $customDoc);

@@ -1,5 +1,5 @@
 <?php
-namespace LemurEngine\LemurBot\LemurTag;
+namespace App\LemurTag;
 
 use LemurEngine\LemurBot\Classes\LemurLog;
 use LemurEngine\LemurBot\Models\Conversation;
@@ -21,7 +21,7 @@ use LemurEngine\LemurBot\Models\Conversation;
  * Output: Yikes
  *
  * Documentation:
- * https://docs.lemurbot.com/extend.html
+ * https://docs.lemurengine.com/extend.html
  */
 class EchoTag extends AimlTag
 {

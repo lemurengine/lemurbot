@@ -6,7 +6,9 @@ namespace LemurEngine\LemurBot\Services;
 use Exception;
 use Illuminate\Validation\UnauthorizedException;
 use LemurEngine\LemurBot\Classes\AimlMatcher;
+use LemurEngine\LemurBot\Classes\FlowStack;
 use LemurEngine\LemurBot\Classes\LemurLog;
+use LemurEngine\LemurBot\Classes\LemurPlugin;
 use LemurEngine\LemurBot\Classes\LemurStr;
 use LemurEngine\LemurBot\Facades\LemurPriv;
 use LemurEngine\LemurBot\Factories\ConversationFactory;
@@ -14,12 +16,15 @@ use LemurEngine\LemurBot\Factories\TurnFactory;
 use LemurEngine\LemurBot\Models\Bot;
 use LemurEngine\LemurBot\Models\BotAllowedSite;
 use LemurEngine\LemurBot\Models\BotKey;
+use LemurEngine\LemurBot\Models\BotPlugin;
 use LemurEngine\LemurBot\Models\BotWordSpellingGroup;
 use LemurEngine\LemurBot\Models\Client;
 use LemurEngine\LemurBot\Models\Conversation;
 use LemurEngine\LemurBot\Models\ConversationSource;
 use LemurEngine\LemurBot\Classes\AimlParser;
+use LemurEngine\LemurBot\Models\Map;
 use LemurEngine\LemurBot\Models\Normalization;
+use LemurEngine\LemurBot\Models\Plugin;
 use LemurEngine\LemurBot\Models\Wildcard;
 use LemurEngine\LemurBot\Models\WordSpelling;
 use Carbon\Carbon;
@@ -38,6 +43,7 @@ class TalkService
     protected $config;
     protected $aimlParser;
     protected $aimlMatcher;
+    protected $category;
 
 
     /**
@@ -186,7 +192,7 @@ class TalkService
             return ['response'=>$res];
         }
 
-        return ['response'=>$res, 'debug'=>$debug,'allResponses'=>$allResponses];
+        return ['response'=>$res, 'debug'=>$debug, 'flow'=>FlowStack::getInstance()->getFlowStack(), 'allResponses'=>$allResponses];
     }
 
     /**
@@ -223,6 +229,8 @@ class TalkService
             $forceNew
         );
 
+        $this->conversation->flow('initConversation', $input['message']);
+
         if(!empty($input['startingTopic']) && $this->conversation->isFirstTurn()){
             $this->conversation->setGlobalProperty('topic', $input['startingTopic']);
         }
@@ -230,6 +238,8 @@ class TalkService
         if($this->conversation->isFirstTurn()){
             ConversationSource::createConversationSource($this->conversation->id);
         }
+
+
 
         LemurLog::debug(
             'conversation started',
@@ -254,7 +264,7 @@ class TalkService
      */
     public function initTurn($input, $source = 'human', $parentTurnId = null)
     {
-
+        $this->conversation->flow('initTurn.'.$source, $input['message']);
         $turn = TurnFactory::createTurn($this->conversation, $input, $source, $parentTurnId);
 
         $this->conversation->refresh();
@@ -290,7 +300,7 @@ class TalkService
      */
     public function initFromSentences($input, $responseArr, $parentTurnId)
     {
-
+        $this->conversation->flow('initFromSentences', $input['message']);
         if (isset($input['html']) && $input['html']) {
             $allowHtml=true;
         } else {
@@ -339,6 +349,7 @@ class TalkService
     public function initFromTag($conversation, $message, $source, $copyVars = true)
     {
 
+        $conversation->flow('initFromTag.'.$source, $message);
 
         $conversation->debug('info', "this response includes a reparse. Reparse values below");
 
@@ -386,7 +397,7 @@ class TalkService
     }
 
 
-    public function talk($message)
+    public function talk($sentence)
     {
 
         LemurLog::debug(
@@ -394,21 +405,15 @@ class TalkService
             [
                 'conversation_id'=>$this->conversation->id,
                 'turn_id'=>$this->conversation->currentTurnId(),
-                'sentence'=>$message
+                'sentence'=>$sentence
             ]
         );
 
-        $message = LemurStr::removeSentenceEnders($message);
-        $sentences = LemurStr::splitIntoSentences($message);
-
-        $fullOutput='';
-
-        foreach ($sentences as $index => $sentence) {
-            $sentence = LemurStr::removeSentenceEnders($sentence);
-            $fullOutput=$this->process($sentence);
-            //if we have more than one we are going to shift it
-            //liz
-        }
+        $fullOutput=$this->process($sentence);
+        //if we have more than one we are going to shift it
+        //apply any post processing
+        $pluginArr = $this->applyCustomPlugins($this->conversation, $fullOutput, 'post');
+        $fullOutput = $pluginArr['sentence'];
 
         //some internal tag reparses such as the SRAI tag do not return a response.
         //as they are just <think> actions
@@ -436,20 +441,24 @@ class TalkService
     public function process($sentence)
     {
         $preparedSentence = $sentence;
-
         $preparedSentence = $this->applyPrePlugins($preparedSentence);
-
+        $this->conversation->currentConversationTurn->setPluginTransformedInput($preparedSentence);
         $preparedSentence = LemurStr::normalizeInput($preparedSentence);
-
         $this->checkAndSetNormalizations($preparedSentence, $sentence);
 
+        $pluginArr = $this->applyCustomPlugins($this->conversation, $preparedSentence, 'pre');
+        $preparedSentence = $pluginArr['sentence'];
+
         //initially we will check to see if there is 'learnt' response from the same client...
-        if ($output =$this->aimlMatcher->matchClientCategory($preparedSentence)) {
+        if($pluginArr['return']){
+            return $pluginArr['sentence'];
+        } elseif ($output =$this->aimlMatcher->matchClientCategory($preparedSentence)) {
             return $output;
         } else {
             $this->conversation->debug('categories.find.sentence', $preparedSentence);
             //if not go to the big db find the match
             $categories = $this->aimlMatcher->match($preparedSentence);
+
             //update the state with a list of matched category id's
             $this->conversation->debug('categories.matches.all', $categories->pluck('slug'));
             //expand out any tags in the pattern, that, set
@@ -458,24 +467,40 @@ class TalkService
             $categories = $this->aimlMatcher->filter($categories);
 
             if (!$categories) {
+                $this->conversation->flow('top_scoring_category', 'no categories');
                 return '';
             } elseif (is_countable($categories)) {
                 $this->conversation->debug('categories.matches.filtered', $categories->pluck('slug'));
                 $category = $this->aimlMatcher->score($categories);
                 if(!$category){
+                    $this->conversation->flow('top_scoring_category', 'no categories after filtering');
                     return '';
                 }
                 $this->conversation->debug('categories.matches.top', [$category->toArray()]);
+                $this->conversation->flow('top_scoring_category_total', count($categories));
+                $this->conversation->flow('top_scoring_category_id', $category->id);
+                $this->conversation->flow('top_scoring_category_pattern', $category->pattern);
+                $this->conversation->flow('top_scoring_category_template', $category->template);
+                $category->template = $this->aimlParser->expandWhiteSpaceTagSpacing($category->template);
                 $this->aimlParser->setCategory($category);
             } else {
                 $category = $categories;
-                $this->aimlParser->setCategory($categories);
+                $this->conversation->flow('top_scoring_category_total', 1);
+                $this->conversation->flow('top_scoring_category_id', $category->id);
+                $this->conversation->flow('top_scoring_category_pattern', $category->pattern);
+                $this->conversation->flow('top_scoring_category_template', $category->template);
+                $category->template = $this->aimlParser->expandWhiteSpaceTagSpacing($category->template);
+                $this->aimlParser->setCategory($category);
             }
 
             $this->aimlParser->extractAllWildcards();
-            return $this->aimlParser->parseTemplate();
+            return $this->finalClean($this->aimlParser->parseTemplate());
         }
         return '';
+    }
+
+    public function finalClean($str){
+        return trim($str);
     }
 
 
@@ -546,7 +571,7 @@ class TalkService
                 ->where('type', 'thatstar')->latest('id')->take(10)->pluck('value');
 
 
-            $debugArr['globals']= $conversation->getGlobalProperties();
+            $debugArr['globals']= $conversation->getGlobalProperties(true);
             $debugArr['locals']= $conversation->getVars();
             $debugArr['debug']= $conversation->getDebugs();
 
@@ -568,41 +593,88 @@ class TalkService
 
     }
 
+
+    public function applyCustomPlugins($conversation, $str, $apply){
+
+
+        $pluginIds = BotPlugin::where('bot_id', $this->bot->id)->pluck('plugin_id','plugin_id');
+        $plugins = Plugin::whereIn('id',$pluginIds)->where('is_active', true)->where('apply_plugin', $apply)->orderby('priority', 'ASC')->get();
+
+        if(count($plugins)==0){
+            $this->conversation->flow('applying_'.$apply.'_plugin', 'no plugins found');
+            return ['sentence'=>$str, 'return'=>false];
+        }else{
+            $this->conversation->flow('applying_'.$apply.'_plugin', count($plugins).' plugins found');
+        }
+        $originalStr = $str;
+        foreach($plugins as $plugin){
+            //if the a name space isnt detected add the custom namespace
+            if(strpos($plugin->classname, "\\")===false){
+                $pluginClass = 'App\\LemurPlugin\\'.$plugin->classname;
+            }else{
+                $pluginClass = $plugin->classname;
+            }
+            if(class_exists($pluginClass)){
+                //load the class
+                $activePlugin = new $pluginClass($conversation, $str);
+
+                if($activePlugin instanceof LemurPlugin){
+                    $str = $activePlugin->apply();
+                    //check for changes
+                    if($plugin->return_onchange && $originalStr!=$str && $str!==''){
+                        $this->conversation->flow('applying_'.$apply.'_plugin', $plugin->classname.' plugin, output updated returning early');
+                        return ['sentence'=>$str, 'return'=>true];
+                    }elseif($originalStr!=$str  && $str!==''){
+                        $this->conversation->flow('applying_'.$apply.'_plugin', $plugin->classname.' plugin, output updated continuing');
+                        return ['sentence'=>$str, 'return'=>true];
+                    }
+                }else{
+                    $this->conversation->flow('applying_'.$apply.'_plugin', $plugin->classname.'. - cannot apply - class not instance of LemurPlugin');
+                }
+
+
+            }elseif(!class_exists($pluginClass)){
+                $this->conversation->flow('applying_'.$apply.'_plugin', $plugin->classname.' - cannot apply - class does not exist');
+            }
+        }
+
+
+
+        return ['sentence'=>$str, 'return'=>false];
+
+    }
+
+
+
     public function applySpellingCorrections($str){
 
-        $botWordSpellingGroupIds = BotWordSpellingGroup::where('bot_id', $this->bot->id)->pluck('id','id');
+        $botWordSpellingGroupIds = BotWordSpellingGroup::where('bot_id', $this->bot->id)->pluck('word_spelling_group_id','word_spelling_group_id');
 
         if(count($botWordSpellingGroupIds)==0){
-
             return $str;
         }
+        //break this up into words
+        $allInputWordsTmp = explode(" ",$str);
 
-        $allWords = $words = explode(" ",$str);
+        $wordSpellings = WordSpelling::whereIn('word_spelling_group_id',$botWordSpellingGroupIds)
+            ->where(function ($query)  use($allInputWordsTmp) {
+                //it has to be owned by the bot author or be a master record
+                for($i=0;$i<count($allInputWordsTmp);$i++) {
+                    $query->orWhere('word', $allInputWordsTmp[$i])
+                        ->orWhere('word', 'like', $allInputWordsTmp[$i].' %')
+                        ->orWhere('word', 'like', '% ' .$allInputWordsTmp[$i]);
+                };
+            })->orderByRaw("(LENGTH(word) - LENGTH(REPLACE(word, ' ', ''))+1) DESC")
+                ->pluck('replacement', 'word');
 
-        $countWords = count($words);
-        for($i=0; $i<=$countWords; $i++){
-            $j=$i+1;
-            $k=$i+2;
-            if(isset($words[$j])){
-                $allWords[] = $words[$i].' '.$words[$j];
-            }
-            if(isset($words[$j]) && isset($words[$k])){
-                $allWords[] = $words[$i].' '.$words[$j].' '.$words[$k];
-            }
-        }
 
-        $wordSpellings = WordSpelling::whereIn('word_spelling_group_id',$botWordSpellingGroupIds)->whereIn('word',$allWords)->pluck( 'replacement','word');
-
-        if(count($wordSpellings)==0){
-
+        if(count($wordSpellings)===0){
             return $str;
         }
-
 
         foreach($wordSpellings as $replacement => $word){
             $str = preg_replace("~\b$replacement\b~is",$word,$str);
         }
-
 
 
         return $str;

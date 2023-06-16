@@ -9,7 +9,7 @@ use LemurEngine\LemurBot\Models\Conversation;
  * Class Person2Tag
  * @package LemurEngine\LemurBot\LemurTag
  * Documentation on this tag, examples and explanation
- * see: https://docs.lemurbot.com/aiml.html
+ * see: https://docs.lemurengine.com/aiml.html
  */
 class Person2Tag extends AimlTag
 {
@@ -63,13 +63,13 @@ class Person2Tag extends AimlTag
 
                 if ($newWord!=$word) {
                     $change=true;
-                    $this->buildResponse($newWord);
+                    $this->buildResponse(" ".$newWord." ");
                     break;
                 }
             }
 
             if (!$change) {
-                $this->buildResponse($word);
+                $this->buildResponse(" ".$word." ");
             }
         }
     }

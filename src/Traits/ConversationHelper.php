@@ -2,6 +2,7 @@
 
 namespace LemurEngine\LemurBot\Traits;
 
+use LemurEngine\LemurBot\Classes\FlowStack;
 use LemurEngine\LemurBot\Classes\LemurLog;
 use LemurEngine\LemurBot\Classes\LemurStr;
 use LemurEngine\LemurBot\Models\BotProperty;
@@ -55,6 +56,13 @@ trait ConversationHelper
         $this->setDebug($value, $message);
     }
 
+    public function flow($key, $message)
+    {
+
+        FlowStack::getInstance()->push($key, $message);
+    }
+
+
     public function setDebug($value, $message)
     {
         $this->debug[$value]=$message;
@@ -107,10 +115,15 @@ trait ConversationHelper
         return Turn::where('conversation_id', $conversationId)->where('turns.source',  'human')->latest('id')->skip($skip)->first();
 
     }
-
-    public function getInput()
+    public function getPluginTransformedInput()
     {
-        return $this->currentConversationTurn->input;
+        return $this->currentConversationTurn->getPluginTransformedInput();
+    }
+
+
+    public function getSource()
+    {
+        return $this->currentConversationTurn->source;
     }
 
     public function getTopic()
@@ -118,15 +131,29 @@ trait ConversationHelper
         return $this->getGlobalProperty('topic');
     }
 
-    public function getThat()
+    public function getInput($forceSource = false, $skip = 0)
     {
-        //<that/> = <that index="1,1"/> - the last sentence the bot uttered.
+        if ($forceSource === 'human') {
+            //this is a v lazy way of doing this
+            $turn = Turn::where('conversation_id', $this->id)->where('source', 'human')->latest('id')->skip($skip)->first();
+            if ($turn!==null) {
+                $input = $turn->input;
+            } else {
+                $input = '';
+            }
 
-        //
+        } else {
+            $input = $this->currentConversationTurn->input;
+        }
+        return $input;
+    }
 
+
+    public function getThat($forceSource = false)
+    {
         $lastSource = $this->currentConversationTurn->source;
 
-        if ($lastSource=='human') {
+        if ($lastSource =='human' || $forceSource =='human') {
             //this is a v lazy way of doing this
             $turn = Turn::where('conversation_id', $this->id)->where('source', 'human')->latest('id')->skip(1)->first();
         } else {
@@ -134,18 +161,13 @@ trait ConversationHelper
             $turn = Turn::where('conversation_id', $this->id)
                 ->where('source', '!=', 'multiple')->latest('id')->skip(1)->first();
         }
-
-
-
         if ($turn!==null) {
-
             $output = $turn->output;
             $output = preg_replace('/<respondbutton[^>]*>([\s\S]*?)<\/respondbutton[^>]*>/', '', $output);
             $output = trim($output);
             $output = str_replace("<br/>",".", $output);
             $output = strip_tags($output, "<a>");
             $output = str_replace("..",".", $output);
-
             $allTurnSentences = LemurStr::splitIntoSentences($output);
             //now flip it as the last sentence = 1 (in AIML world)
             $allTurnSentences = array_reverse($allTurnSentences);
@@ -167,6 +189,14 @@ trait ConversationHelper
     {
         return LemurStr::normalize($this->getInput(), true);
     }
+
+
+    public function normalisedPluginTransformedInput()
+    {
+        return LemurStr::normalize($this->getPluginTransformedInput(), true);
+    }
+
+
 
     public function normalisedTopic()
     {
@@ -205,12 +235,9 @@ trait ConversationHelper
 
     public function getTurnValue($field, $skip = 1, $default = '')
     {
-
-
             //have had to use ..
             $res = Turn::where('conversation_id', $this->id)
                 ->where('source', 'human')->latest('id')->skip($skip)->first()->$field;
-
 
             LemurLog::debug(
                 __METHOD__,
@@ -244,8 +271,23 @@ trait ConversationHelper
 
     public function getBotProperty($name)
     {
-
         return BotProperty::where('bot_id', $this->bot->id)->where('name', $name)->first();
+    }
+
+
+
+    public function getBotPropertyValue($name, $default = false)
+    {
+
+        $botProperty = BotProperty::where('bot_id', $this->bot->id)->where('name', $name)->first('value');
+        if($botProperty === null && !$default){
+            return config('lemurbot.properties.unknown.bot_property');
+        }elseif($botProperty === null && $default){
+            return $default;
+        }else{
+            return $botProperty->value;
+        }
+
     }
 
 
@@ -274,10 +316,25 @@ trait ConversationHelper
         return $property->value;
     }
 
-    public function getGlobalProperties()
+    public function getGlobalProperties($convertJsonToArray=false)
     {
 
-        return ConversationProperty::select(['name', 'value'])
+        $items = ConversationProperty::select(['name', 'value'])
             ->where('conversation_id', $this->id)->pluck('value', 'name')->toArray();
+
+        if($convertJsonToArray){
+            foreach($items as $name => $value){
+                if($this->isJson($value)){
+                    $items[$name] = json_decode($value);
+                }
+            }
+        }
+
+        return $items;
+    }
+
+    public function isJson($string) {
+        json_decode($string);
+        return json_last_error() === JSON_ERROR_NONE;
     }
 }

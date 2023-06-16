@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\hasManyThrough;
 use Illuminate\Database\Eloquent\Relations\hasOne;
+use Illuminate\Database\Eloquent\SoftDeletingScope;
 use LemurEngine\LemurBot\Traits\HasPackageFactory;
 use LemurEngine\LemurBot\Facades\LemurPriv;
 use LemurEngine\LemurBot\Traits\ImageTrait;
@@ -226,6 +227,10 @@ class Bot extends Model
         });
 
     }
+
+
+
+
 
     /**
      * Get the validation rules
@@ -472,4 +477,24 @@ class Bot extends Model
             return $query->where('user_id', $thisLoggedInUser->id);
         }
     }
+
+
+    /**
+     * Scope a query a specific property.
+     * Get the bots this user is allowed to edit
+     *
+     * @param Builder $query
+     * @param $name
+     * @return Builder
+     */
+    public static function myBots()
+    {
+        return Bot::where('user_id', Auth::user()->id)->orderBy('name')->pluck('name', 'slug');
+    }
+
+    public function getBotNameSlugAttribute()
+    {
+        return $this->name . ' (' . $this->last_slug .')';
+    }
+
 }

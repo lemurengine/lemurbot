@@ -9,7 +9,7 @@ use LemurEngine\LemurBot\Models\Conversation;
  * Class GenderTag
  * @package LemurEngine\LemurBot\LemurTag
  * Documentation on this tag, examples and explanation
- * see: https://docs.lemurbot.com/aiml.html
+ * see: https://docs.lemurengine.com/aiml.html
  */
 class GenderTag extends AimlTag
 {
@@ -64,13 +64,13 @@ class GenderTag extends AimlTag
 
                 if ($newWord!=$word) {
                     $change=true;
-                    $this->buildResponse($newWord);
+                    $this->buildResponse(" ".$newWord." ");
                     break;
                 }
             }
 
             if (!$change) {
-                $this->buildResponse($word);
+                $this->buildResponse(" ".$word." ");
             }
         }
     }

@@ -3,6 +3,7 @@ namespace LemurEngine\LemurBot\LemurTag;
 
 use Exception;
 use LemurEngine\LemurBot\Classes\LemurLog;
+use LemurEngine\LemurBot\Classes\LemurStr;
 use LemurEngine\LemurBot\Services\TalkService;
 use LemurEngine\LemurBot\Models\Conversation;
 use function Ramsey\Uuid\v1;
@@ -11,7 +12,7 @@ use function Ramsey\Uuid\v1;
  * Class SraiTag
  * @package LemurEngine\LemurBot\LemurTag
  * Documentation on this tag, examples and explanation
- * see: https://docs.lemurbot.com/aiml.html
+ * see: https://docs.lemurengine.com/aiml.html
  */
 class SraiTag extends AimlTag
 {
@@ -55,6 +56,7 @@ class SraiTag extends AimlTag
                 );
 
         $contents = $this->getCurrentTagContents(true);
+        $contents = LemurStr::cleanKeepSpace($contents);
 
         //check if we have reached the max levels of srai recursion
         //if so through an exception

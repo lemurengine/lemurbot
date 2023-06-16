@@ -37,6 +37,12 @@ use Spatie\Sluggable\SlugOptions;
  *          format="int32"
  *      ),
  *      @SWG\Property(
+ *          property="client_category_id",
+ *          description="client_category_id",
+ *          type="integer",
+ *          format="int32"
+ *      ),
+ *      @SWG\Property(
  *          property="slug",
  *          description="slug",
  *          type="string"
@@ -91,7 +97,7 @@ class Turn extends Model
 
     protected $dates = ['deleted_at'];
 
-
+    protected $pluginTransformedInput;
 
     public $fillable = [
         'conversation_id',
@@ -223,5 +229,14 @@ class Turn extends Model
             ->saveSlugsTo('slug')
             ->slugsShouldBeNoLongerThan(50)
             ->doNotGenerateSlugsOnUpdate();
+    }
+
+
+    public function setPluginTransformedInput($value){
+        $this->pluginTransformedInput= $value;
+    }
+
+    public function getPluginTransformedInput(){
+        return $this->pluginTransformedInput;
     }
 }

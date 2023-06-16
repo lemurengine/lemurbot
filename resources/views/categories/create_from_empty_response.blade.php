@@ -34,4 +34,5 @@
 @push('scripts')
     {{ Html::script('vendor/lemurbot/js/validation.js') }}
     {{ Html::script('vendor/lemurbot/js/select2.js') }}
+    {{ Html::script('vendor/lemurbot/js/clear.js') }}
 @endpush

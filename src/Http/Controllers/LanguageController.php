@@ -3,7 +3,9 @@
 namespace LemurEngine\LemurBot\Http\Controllers;
 
 use Exception;
+use Illuminate\Support\Facades\App;
 use LemurEngine\LemurBot\DataTables\LanguageDataTable;
+use LemurEngine\LemurBot\Exceptions\Handler;
 use LemurEngine\LemurBot\Http\Requests\CreateLanguageRequest;
 use LemurEngine\LemurBot\Http\Requests\UpdateLanguageRequest;
 use LemurEngine\LemurBot\Http\Requests\UpdateLanguageSlugRequest;
@@ -27,6 +29,11 @@ class LanguageController extends AppBaseController
     {
         $this->middleware('auth');
         $this->languageRepository = $languageRepo;
+
+        App::singleton(
+            \Illuminate\Contracts\Debug\ExceptionHandler::class,
+            Handler::class
+        );
     }
 
     /**

@@ -84,11 +84,13 @@ class AimlMatcher
 
         $totalPotentials = $categories->count();
         $inputNormalised = $this->conversation->normalisedInput();
+        $pluginTransformedInputNormalised = $this->conversation->normalisedPluginTransformedInput();
         $topicNormalised = $this->conversation->normalisedTopic();
         $thatNormalised = $this->conversation->normalisedThat();
 
         $this->conversation->debug('categories.filtering.result', $totalPotentials);
         $this->conversation->debug('categories.filtering.input', $inputNormalised);
+        $this->conversation->debug('categories.matches.parts.plugin.input', $pluginTransformedInputNormalised);
         $this->conversation->debug('categories.filtering.topic', $topicNormalised);
         $this->conversation->debug('categories.filtering.that', $thatNormalised);
 
@@ -116,8 +118,8 @@ class AimlMatcher
             $pattern = str_replace("\B","\b", $pattern);
 
             //if this is NOT a exact match.... and the regexp does not match
-            if ($pattern!=='$'.$inputNormalised &&
-                !preg_match_all("~^" . $pattern . "$~is", $inputNormalised, $matches)) {
+            if ($pattern!=='$'.$pluginTransformedInputNormalised &&
+                !preg_match_all("~^" . $pattern . "$~is", $pluginTransformedInputNormalised, $matches)) {
                     $categories = $this->removeFromCollection($categories, $category->id);
                     $removed=true;
                     $this->conversation->debug(
@@ -249,12 +251,14 @@ class AimlMatcher
 
         $totalPotentials = $categories->count();
         $inputNormalised = $this->conversation->normalisedInput();
+        $pluginTransformedInputNormalised = $this->conversation->normalisedPluginTransformedInput();
         $topicNormalised = $this->conversation->normalisedTopic();
         $thatNormalised = $this->conversation->normalisedThat();
 
         //some debug to help us work things out
         $this->conversation->debug('categories.matches.parts.potentials', $totalPotentials);
         $this->conversation->debug('categories.matches.parts.input', $inputNormalised);
+        $this->conversation->debug('categories.matches.parts.plugin.input', $pluginTransformedInputNormalised);
         $this->conversation->debug('categories.matches.parts.topic', $topicNormalised);
         $this->conversation->debug('categories.matches.parts.that', $thatNormalised);
 
@@ -287,10 +291,10 @@ class AimlMatcher
             }
 
 
-            if ($category->pattern === $inputNormalised || preg_match('/^'.$category->regexp_pattern."$/i", $inputNormalised, $matches) ) {
+            if ($category->pattern === $pluginTransformedInputNormalised || preg_match('/^'.$category->regexp_pattern."$/i", $pluginTransformedInputNormalised, $matches) ) {
                 $points = 2;
                 $scoreArray[$i]['total'] = $this->addScoreToCategory($points, $scoreArray[$i]);
-                $scoreArray[$i]['messages'][]=$category->pattern .'==='. $inputNormalised;
+                $scoreArray[$i]['messages'][]=$category->pattern .'==='. $pluginTransformedInputNormalised;
                 $scoreArray[$i]['messages'][]=$points.' points added for exact input match';
             } else {
                 $scoreArray[$i]['messages'][]='no points not exact input match';
@@ -469,6 +473,10 @@ class AimlMatcher
         $topicNormalised = $this->conversation->normalisedTopic();
         $thatNormalised = $this->conversation->normalisedThat();
 
+
+        $this->conversation->flow('searching_categories_sentence_pattern', $preparedSentence);
+        $this->conversation->flow('searching_categories_topic', $topicNormalised);
+        $this->conversation->flow('searching_categories_that', $thatNormalised);
 
         //if this is a single word....
         /**

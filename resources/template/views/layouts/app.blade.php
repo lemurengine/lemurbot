@@ -104,7 +104,7 @@
         </header>
 
         <!-- Left side column. contains the logo and sidebar -->
-    @include('lemurbot::layouts.sidebar')
+    @include('layouts.sidebar')
     <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             @yield('content')
@@ -115,9 +115,9 @@
 
             <small class="copyright">
                 portal: {!! config('lemurbot.version.portal.id') !!} | bot: {!! config('lemurbot.version.bot.id') !!} |
-                Designed with <i class="fa fa-heart"></i> by <a href="https://lemurbot.com/" target="_blank">Lemur Engine</a> and <i class="fa fa-github-alt"></i> <a href="https://github.com/lemurengine/lemurbot">Friends</a>
+                Designed with <i class="fa fa-heart"></i> by <a href="https://lemurengine.com/" target="_blank">Lemur Engine</a> and <i class="fa fa-github-alt"></i> <a href="https://github.com/lemurengine/lemurbot">Friends</a>
 
-                | Copyright © {{date('Y')}} <a href="https://lemurbot.com">lemurbot.com</a>.</small>
+                | Copyright © {{date('Y')}} <a href="https://lemurengine.com">lemurengine.com</a>.</small>
         </footer>
 
 
@@ -131,7 +131,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
 <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="/js/adminlte.min.js"></script>
+<script src="/vendor/lemurbot/js/adminlte.min.js"></script>
+<script src="/vendor/lemurbot/js/menu.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
