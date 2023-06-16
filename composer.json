@@ -23,7 +23,6 @@
         "doctrine/dbal": "^3.4",
         "dyrynda/laravel-cascade-soft-deletes": "^4.2",
         "fideloper/proxy": "^4.4",
-        "fruitcake/laravel-cors": "^3.0",
         "guzzlehttp/guzzle": "^7.5",
         "intervention/image": "^2.7",
         "laracasts/flash": "^3.2",
