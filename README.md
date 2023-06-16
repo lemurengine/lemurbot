@@ -228,5 +228,7 @@ php artisan lemur:install-admin --admin=[admin_email]
 
 ### More information
 Check out the docs for more information about how to use the portal and talk to the bot.
+
 http://docs.lemurengine.com
+
 http://lemurengine.com
