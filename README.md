@@ -118,15 +118,6 @@ But you can if you want to.
 php artisan vendor:publish --tag=lemurbot-migrations
 ```
 
-### Additional Upgrade Step: Run the command to update a few filenames in the migrations folder
-Only do this is you are migrating from the old project \
-There are 4 filenames in the migration table which need reverting to their original Laravel Migration filenames \
-Run this command to update the 4 filenames in the migrations table before you move onto the next step
-```php
-php artisan lemur:upgrade 9.0.0
-```
-
-
 ### Run the database migrations (required)
 The following command will create or update your existing database table schema.
 ```php
@@ -137,14 +128,6 @@ php artisan migrate
 The following command will create or update your existing database table schema.
 ```php
 php artisan storage:link
-```
-
-
-### Additional Upgrade Step: Run the command to update the user to an admin user
-Only do this is you are migrating from the old project \
-If you have existing data and want to give a user bot_admin privileges you can run this command.
-```php
-php artisan lemur:install-admin --admin=[admin_email]
 ```
 
 ### Run the command to install a user, a bot and the AIML data
@@ -183,6 +166,20 @@ app/\
 
 You will need to change the namespace of your custom tags to `namespace App\LemurTag;`\
 Please look at the HelloWorldTag for an example
+### Additional Upgrade Step: Run the command to update a few filenames in the migrations folder
+Only do this is you are migrating from the old project \
+There are 4 filenames in the migration table which need reverting to their original Laravel Migration filenames \
+Run this command to update the 4 filenames in the migrations table before you move onto the next step
+```php
+php artisan lemur:upgrade 9.0.0
+```
+
+### Additional Upgrade Step: Run the command to update the user to an admin user
+Only do this is you are migrating from the old project \
+If you have existing data and want to give a user bot_admin privileges you can run this command.
+```php
+php artisan lemur:install-admin --admin=[admin_email]
+```
 
 ## Start the Application
 You can start the application now and log in using the username you entered above and the password 'password'. \
@@ -191,12 +188,13 @@ Don't forget to change your password.
 php artisan serve
 ```
 
+## Use
 
-## Note about deployment
-When you deploy to your live server remember to perform the steps below to update your live data
+Talk to your bot here:
+http://127.0.0.1:8000
 
-    php artisan lemur:upgrade 9.0.0
-    php artisan migrate 
+Log in to admin your bot here:
+http://127.0.0.1:8000/login
 
 
 ### More information
