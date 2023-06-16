@@ -22,7 +22,7 @@ use LemurEngine\LemurBot\Models\Conversation;
  * Output: Hello World!
  *
  * Documentation:
- * https://docs.lemurbot.com/extend.html
+ * https://docs.lemurengine.com/extend.html
  */
 class HelloWorldTag extends AimlTag
 {

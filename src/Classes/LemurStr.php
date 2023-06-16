@@ -106,7 +106,7 @@ class LemurStr
      * @param $regExpItem - the value from the db - could be regexp_input, regexp_that, regexp_topic
      * @return array
      */
-    public static function extractWildcardFromString($string, $regExpItem):array
+    public static function extractWildcardFromString($string, $regExpItem, $shift=true):array
     {
 
 
@@ -137,7 +137,9 @@ class LemurStr
         if ($regExpItem == $match) {
             return [];
         }elseif(preg_match($regExpItem, $match, $matches)){
-            array_shift($matches); //remove the first result
+            if($shift){
+                array_shift($matches); //remove the first result
+            }
             return $matches;
         }else{
             return []; //is this right //todo
@@ -279,7 +281,7 @@ class LemurStr
     public static function cleanAndImplode($arr): string
     {
         if (is_array($arr) && !empty($arr)) {
-            $str = implode(" ", $arr);
+            $str = implode("", $arr);
         } elseif (is_string($arr)) {
             $str = $arr;
         } else {
@@ -296,6 +298,8 @@ class LemurStr
      */
     public static function cleanOutPutForResponse($str) :string
     {
+        $str = str_replace(" _keepspace_", "_keepspace_", $str);
+        $str = str_replace("_keepspace_ ", "_keepspace_", $str);
         $str = str_replace(" !", "!", $str);
         $str = str_replace(" ?", "?", $str);
         $str = str_replace(" .", ".", $str);
@@ -303,6 +307,7 @@ class LemurStr
         $str = str_replace(" :", ":", $str);
         $str = str_replace(" ;", ";", $str);
         $str = preg_replace('/\s+/', ' ', $str);
+
         return trim($str);
     }
 
@@ -314,4 +319,35 @@ class LemurStr
         $str = str_replace("^", "hat", $str);
         return str_replace("$", "dollar", $str);
     }
+
+
+    public static function removeTrailingKeepSpace($str): string
+    {
+        $str = rtrim($str, '_keepspace_');
+        return ltrim($str, '_keepspace_');
+    }
+
+    public static function cleanForFinalOutput($str): string
+    {
+
+        $str = preg_replace('/\.([A-Z])/',". $1",$str);
+        $str = preg_replace('/\?([A-Z])/',"? $1",$str);
+        $str = preg_replace('/\!([A-Z])/',"1 $1",$str);
+        $str = str_replace("_keepspace_", " ", $str);
+        $str = str_replace("keepspace", " ", $str);
+        $str = str_replace(", .", ". ", $str);
+        $str = str_replace(", ,", ", ", $str);
+        $str = str_replace(":", ": ", $str);
+        $str = str_replace(": //", "://", $str);
+        return trim(str_replace("  ", " ", $str));
+    }
+
+    public static function cleanKeepSpace($str): string
+    {
+        $str = str_ireplace("_keepspace_", " ", $str);
+        $str = str_ireplace("keepspace", " ", $str);
+        $str = preg_replace('/\s+/', ' ', $str);
+        return trim($str);
+    }
+
 }

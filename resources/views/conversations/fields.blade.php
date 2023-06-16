@@ -53,8 +53,7 @@
 {!! Form::hidden('client_id', $conversation->client->slug, ['data-test'=>"client_id_hidden"]) !!}
     <div class="clearfix"></div>
 
-
-<!-- 'Boolean FIELD_NAME_TITLE$ Field' checked by default -->
+<!-- Allow HTML Field -->
 <div class="form-group col-lg-6 col-md-6 col-sm-12" data-test="allow_html_div">
     {!! Form::label('allow_html', 'Allow HTML:', ['data-test'=>"allow_html_label"]) !!}
     <div class="input-group" data-test="allow_html_group">

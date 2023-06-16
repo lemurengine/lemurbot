@@ -85,7 +85,7 @@ class UserDataTable extends DataTable
                 }',
                 'initComplete' => 'function(settings, json) {
 
-                    var maxColumn = 5
+                    var maxColumn = 6
                     var dateFields = [maxColumn-1]
                     var exactSearchFields = []
                     var noSearchFields = [maxColumn]
@@ -119,6 +119,20 @@ class UserDataTable extends DataTable
             'slug' => ['title'=>'Id'],
             'name',
             'email',
+            'role' => ['name'=>'role','data'=>'role','title'=>'Role','searchable'=>true,
+                'printable'=>true, 'exportable'=>true,'defaultContent'=>'false', 'render' =>
+                    function () {
+                        return 'function(data, type, full, meta) {
+                            if(data=="bot_admin"){
+                                return "ADMIN"
+                            }else if(data=="bot_author"){
+                                return "AUTHOR"
+                            }else {
+                                return ""
+                            }
+                 }
+                 ';
+                    }],
             'updated_at'=> ['name'=>'updated_at','data'=>'updated_at', 'title'=>'Updated',
                 'defaultContent'=>'', 'render' =>
                 function () {

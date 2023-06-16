@@ -66,22 +66,22 @@
 
 @if(LemurPriv::isAdmin(Auth::user()))
 
-<!-- 'Boolean FIELD_NAME_TITLE$ Field' checked by default -->
-<div class="form-group col-lg-6 col-md-6 col-sm-12" data-test="is_master_div">
-    {!! Form::label('is_master', 'Is Master:', ['data-test'=>"is_master_label"]) !!}
-    <div class="input-group" data-test="is_master_group">
-        <span class="input-group-addon">
-            {!! Form::hidden('is_master', 0) !!}
-            @if(empty($categoryGroup) || $categoryGroup->is_master==0 || !$categoryGroup->is_master)
-                @php $checked = ''; @endphp
-            @else
-                @php $checked = true; @endphp
-            @endif
-            {{ Form::checkbox('is_master', '1', $checked, ['id'=>"is_master_field", 'data-test'=>"is_master_field"])  }}
-         </span>
-         <input type="text" class="form-control" aria-label="..." value="Is Master?">
-    </div><!-- /.col-lg-6 -->
-</div>
+    <!-- Is Master Field -->
+    <div class="form-group col-lg-6 col-md-6 col-sm-12" data-test="is_master_div">
+        {!! Form::label('is_master', 'Is Master:', ['data-test'=>"is_master_label"]) !!}
+        <div class="input-group" data-test="is_master_group">
+            <span class="input-group-addon">
+                {!! Form::hidden('is_master', 0) !!}
+                @if(empty($categoryGroup) || $categoryGroup->is_master==0 || !$categoryGroup->is_master)
+                    @php $checked = ''; @endphp
+                @else
+                    @php $checked = true; @endphp
+                @endif
+                {{ Form::checkbox('is_master', '1', $checked, ['id'=>"is_master_field", 'data-test'=>"is_master_field"])  }}
+             </span>
+             <input type="text" class="form-control" aria-label="..." value="Is Master?">
+        </div><!-- /.col-lg-6 -->
+    </div>
 
 <div class="clearfix"></div>
 

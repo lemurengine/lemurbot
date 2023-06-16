@@ -209,6 +209,20 @@ abstract class BaseRepository
     }
 
     /**
+     * @param string $slug
+     *
+     * @throws Exception
+     *
+     * @return bool|mixed|null
+     */
+    public function getBySlugWithTrashed($slug)
+    {
+        $query = $this->model->newQuery()->withTrashed();
+
+        return $query->where('slug', $slug)->firstOrFail();
+    }
+
+    /**
      * @param int $id
      *
      * @throws Exception

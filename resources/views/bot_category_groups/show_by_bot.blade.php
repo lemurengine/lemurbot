@@ -63,10 +63,12 @@
                 @if($sectionGroup['default_state'] == 'open')
                     @php $sectionShow = 'true'; @endphp
                     @php $collapseShow = 'collapse in'; @endphp
+                    @php $buttonName = 'showsections'; @endphp
 
                 @else
                     @php $sectionShow = 'false'; @endphp
                     @php $collapseShow = 'collapse'; @endphp
+                    @php $buttonName = 'hidden-sections'; @endphp
                 @endif
 
 
@@ -76,7 +78,7 @@
                         <h3 class="box-title">{!! $allSections[$sectionId]['name'] !!} Section</h3>
 
                         <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-toggle="collapse" href="#{!! $sectionSlug !!}" role="button" aria-expanded="{!! $sectionShow !!}" aria-controls="#{!! $sectionSlug !!}"><i class="fa fa-minus"></i>
+                            <button type="button" class="btn btn-box-tool {!! $buttonName !!}" data-toggle="collapse" href="#{!! $sectionSlug !!}" role="button" aria-expanded="{!! $sectionShow !!}" aria-controls="#{!! $sectionSlug !!}" data-test='{!! $sectionSlug !!}_expand_button'><i class="fa fa-minus"></i>
                             </button>
                         </div>
                         <!-- /.box-tools -->
@@ -108,7 +110,7 @@
 
                                             @endif
 
-                                        <input type='checkbox' class="cb-element" name='linked[{!! $index !!}]' value='1' {!! $checked !!}  id='{!! $categoryGroup->category_group_id !!}_link_field' data-test='{!! $categoryGroup->name !!}_link_field'>
+                                        <input type='checkbox' class="cb-element" name='linked[{!! $index !!}]' value='1' {!! $checked !!}  id='{!! $categoryGroup->category_group_id !!}_link_field' data-test='{!! $categoryGroup->category_group_id !!}_checkbox'>
                                         </span>
 
                                         <input type='text' value='{!! strtolower($categoryGroup->name) !!}' class='form-control' id='{!! $categoryGroup->name !!}_value_field' data-test='{!! $categoryGroup->name !!}_value_field'>
@@ -138,6 +140,7 @@
 
 
                                     </div>
+                                    <small>id: {!! $categoryGroup->category_group_id !!}</small>
                                 </div>
 
 
@@ -155,8 +158,8 @@
 
         <!-- Submit Field -->
             <div class="form-group col-sm-12">
-                {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                <button type="reset" class="btn btn-default">Reset</button>
+                {!! Form::submit('Save', ['class' => 'btn btn-primary', 'data-test' => 'save-bot-cagtegory-groups']) !!}
+                <button type="reset" class="btn btn-default" data-test="reset-bot-cagtegory-groups">Reset</button>
             </div>
 
             {!! Form::close() !!}

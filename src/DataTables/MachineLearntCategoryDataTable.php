@@ -89,7 +89,7 @@ class MachineLearntCategoryDataTable extends DataTable
                 }',
                 'initComplete' => 'function(settings, json) {
 
-                    var maxColumn = 12
+                    var maxColumn = 9
                     var dateFields = [maxColumn-1]
                     var exactSearchFields = [0,1]
                     var noSearchFields = [maxColumn]
@@ -122,11 +122,20 @@ class MachineLearntCategoryDataTable extends DataTable
             'bot'=> ['name'=>'bots.slug','data'=>'bot','title'=>'BotId'],
             'client'=> ['title'=>'ClientId'],
             'pattern',
-            'template',
-            'topic',
-            'that',
+            'template'=> ['name'=>'template','data'=>'template', 'title'=>'Template', 'defaultContent'=>'', 'render' =>
+                function () {
+                    return 'function(data, type, full, meta)
+                {
+                    var dots=""
+                    if(data.length > 100){
+                        dots+="..."
+                    }
+
+                    return data.substr(0, 100)+dots
+                 }
+                 ';
+                }],
             'example_input',
-            'example_output',
             'category_group_slug',
             'occurrences',
             'updated_at'=> ['name'=>'updated_at','data'=>'updated_at', 'title'=>'Updated',

@@ -33,7 +33,7 @@ class CreateBotWordSpellingGroupRequest extends HiddenIdRequest
 
         $rules['word_spelling_group_id'] = [
             'required',
-            Rule::unique('word_spelling_groups')
+            Rule::unique('bot_word_spelling_groups')
                 ->where('bot_id', $this->bot_id)
                 ->whereNull('deleted_at')
         ];

@@ -25,7 +25,7 @@
                     <!-- /.box-header -->
                     <div class="box-body">
                         <!-- Conversations are loaded here -->
-                        <div class="direct-chat-messages" id="direct-chat-messages">
+                        <div class="direct-chat-messages" id="direct-chat-messages" data-test="direct-chat-window-responses-bot-panel">
                             <!-- Message. Default to the left -->
                         @if((($conversation != null) && count($conversation->turns->take(10))>0))
 
@@ -41,7 +41,7 @@
                                         </div>
                                         <!-- /.direct-chat-info -->
                                         <img class="direct-chat-img" src="{!! Avatar::create($conversation->client->slug)->toBase64() !!}" alt="Message User Image"><!-- /.direct-chat-img -->
-                                        <div class="direct-chat-text">
+                                        <div class="direct-chat-text" data-test="direct-chat-window-client-input-bot-panel">
                                             {!! $item->input !!}
                                         </div>
                                         <!-- /.direct-chat-text -->
@@ -56,7 +56,7 @@
                                         </div>
                                         <!-- /.direct-chat-info -->
                                         <img class="img-circle direct-chat-img" src="{!! $botImage !!}" alt="Message Bot Image"><!-- /.direct-chat-img -->
-                                        <div class="direct-chat-text">
+                                        <div class="direct-chat-text" data-test="direct-chat-window-client-output-bot-panel">
                                             {!! $item->output !!}
                                         </div>
                                         <!-- /.direct-chat-text -->
@@ -79,18 +79,18 @@
 
                         @if(!empty($response) && !empty($response['client']['id']))
 
-                            {{ Form::hidden('client', $response['client']['id']) }}
+                            {{ Form::hidden('client', $response['client']['id'], ['data-test'=>"chat-client-id-bot-panel"]) }}
                         @else
-                            {{ Form::hidden('client', MD5(Auth::user()->api_token)) }}
+                            {{ Form::hidden('client', MD5(Auth::user()->api_token), ['data-test'=>"chat-client-id-bot-panel"]) }}
                         @endif
 
                             <div class="input-group">
-                                <input type="hidden" name="bot" id="bot" value="{!! $bot->slug !!}">
-                                <input type="hidden" name="html" id="html" value="1">
-                                <input type="hidden" name="redirect_url" id="redirect_url" value="{!! url('/bot/'.$bot->slug.'/chat') !!}">
-                                <input type="text" name="message" id="message" placeholder="Type Message ..." class="form-control">
+                                <input type="hidden" name="bot" id="bot" value="{!! $bot->slug !!}" data-test="chat-bot-id-bot-panel">
+                                <input type="hidden" name="html" id="html" value="1" data-test="chat-html-bot-panel">
+                                <input type="hidden" name="redirect_url" id="redirect_url" value="{!! url('/bot/'.$bot->slug.'/chat') !!}"  data-test="client-bot-id-bot-panel">
+                                <input type="text" name="message" id="message" placeholder="Type Message ..." class="form-control"  data-test="chat-input-bot-panel">
                                 <span class="input-group-btn">
-                                    <button type="submit" class="btn btn-primary btn-flat">Send</button>
+                                    <button type="submit" class="btn btn-primary btn-flat" data-test="chat-button-send-bot-panel">Send</button>
                                 </span>
                             </div>
                             <span id="convo-help-message" class="help-block form-info">Type: 'start a new conversation' to start again</span>
@@ -117,6 +117,7 @@
                             <ul class="nav nav-tabs">
                                 <li class="active"><a href="#response" data-toggle="tab">Response</a></li>
                                 <li><a href="#debug" data-toggle="tab">Debug</a></li>
+                                <li><a href="#flow" data-toggle="tab">Flow</a></li>
                                 <li><a href="#wildcards" data-toggle="tab">Wildcards</a></li>
                                 <li><a href="#globals" data-toggle="tab">Globals</a></li>
                                 <li><a href="#locals" data-toggle="tab">Locals</a></li>
@@ -142,6 +143,14 @@
                                         <div class="alert alert-info">Start talking and full response will appear here</div>
                                     @endif
 
+                                </div>
+                                <!-- /.tab-pane -->
+                                <div class="tab-pane" id="flow">
+                                    @if(!empty($flow))
+                                        <pre><code>{{ json_encode($flow,JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) }}</code></pre>
+                                    @else
+                                        <div class="alert alert-info">Start talking and detailed flow information will appear here</div>
+                                    @endif
                                 </div>
                                 <!-- /.tab-pane -->
                                 <div class="tab-pane" id="debug">

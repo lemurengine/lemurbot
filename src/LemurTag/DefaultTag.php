@@ -7,7 +7,7 @@ use LemurEngine\LemurBot\Models\Conversation;
  * Class DefaultTag
  * @package LemurEngine\LemurBot\LemurTag
  * Documentation on this tag, examples and explanation
- * see: https://docs.lemurbot.com/aiml.html
+ * see: https://docs.lemurengine.com/aiml.html
  */
 class DefaultTag extends AimlTag
 {

@@ -2,6 +2,7 @@
 namespace LemurEngine\LemurBot\LemurTag;
 
 use LemurEngine\LemurBot\Classes\LemurLog;
+use LemurEngine\LemurBot\Classes\LemurStr;
 use LemurEngine\LemurBot\Models\Wildcard;
 use LemurEngine\LemurBot\Models\Conversation;
 
@@ -9,7 +10,7 @@ use LemurEngine\LemurBot\Models\Conversation;
  * Class StarTag
  * @package LemurEngine\LemurBot\LemurTag
  * Documentation on this tag, examples and explanation
- * see: https://docs.lemurbot.com/aiml.html
+ * see: https://docs.lemurengine.com/aiml.html
  */
 class StarTag extends AimlTag
 {
@@ -50,11 +51,11 @@ class StarTag extends AimlTag
 
         if ($this->isInLiTag()) {
             $newContents = $this->buildAIMLIfInDoNotParseMode($contents);
-            $this->buildResponse($newContents);
+            $this->buildResponse($newContents, false);
         } else {
             $star = $this->buildResponseFromStar();
-            $this->buildResponse($star);
-            $this->checkSetTopicStar($star);
+            $this->buildResponse($star,false);
+            $this->checkSetTopicStar($star, 'star');
         }
     }
 
@@ -105,7 +106,7 @@ class StarTag extends AimlTag
                 $wildcard = new Wildcard;
                 $wildcard->conversation_id = $this->conversation->id;
                 $wildcard->type = 'topicstar';
-                $wildcard->value = $star;
+                $wildcard->value = LemurStr::cleanKeepSpace($star);
                 $wildcard->save();
             }
         }

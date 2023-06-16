@@ -223,7 +223,7 @@ class BotPropertyController extends AppBaseController
 
         $botProperty = $this->botPropertyRepository->update($input, $botProperty->id);
 
-        Flash::success('Bot Property updated successfully.');
+        Flash::success('Bot property updated successfully.');
 
         if (!empty($input['redirect_url'])) {
             return redirect($input['redirect_url']);

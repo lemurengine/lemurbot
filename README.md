@@ -79,7 +79,6 @@ php artisan vendor:publish --tag=lemurbot-auth --force
 
 ### Publish Public Assets (required)
 This will copy the required asset files to your public folder \
-And the example HelloWorldTag to the LemurTag folder  \
 This is required to make forms and validation features to work correctly
 ``` php
 php artisan vendor:publish --tag=lemurbot-assets
@@ -108,6 +107,13 @@ php artisan vendor:publish --tag=datatables
 php artisan vendor:publish --tag=datatables-buttons
 php artisan vendor:publish --tag=datatables-html
 php artisan vendor:publish --tag=datatables-fractal
+```
+
+### Publish Example Tags and Plugins (optional)
+This will copy the example HelloWorldTag and EchoTag to the App\LemurTag folder  \
+And will copy the example MaintainMode and ShoutBack to the App\LemurPlugin folder  \
+``` php
+php artisan vendor:publish --tag=lemurbot-examples
 ```
 
 ### Publish Database Migrations (optional)

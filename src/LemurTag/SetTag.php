@@ -8,7 +8,7 @@ use LemurEngine\LemurBot\Models\Conversation;
  * Class SetTag
  * @package LemurEngine\LemurBot\LemurTag
  * Documentation on this tag, examples and explanation
- * see: https://docs.lemurbot.com/aiml.html
+ * see: https://docs.lemurengine.com/aiml.html
  */
 class SetTag extends AimlTag
 {

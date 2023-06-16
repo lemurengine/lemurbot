@@ -2,6 +2,7 @@
 namespace LemurEngine\LemurBot\LemurTag;
 
 use LemurEngine\LemurBot\Classes\LemurLog;
+use LemurEngine\LemurBot\Classes\LemurStr;
 use LemurEngine\LemurBot\Models\ClientCategory;
 use LemurEngine\LemurBot\Models\Conversation;
 
@@ -9,7 +10,7 @@ use LemurEngine\LemurBot\Models\Conversation;
  * Class LearnTag
  * @package LemurEngine\LemurBot\LemurTag
  * Documentation on this tag, examples and explanation
- * see: https://docs.lemurbot.com/aiml.html
+ * see: https://docs.lemurengine.com/aiml.html
  */
 class LearnTag extends AimlTag
 {
@@ -56,17 +57,17 @@ class LearnTag extends AimlTag
             return;
         }
 
+        $contents = LemurStr::removeTrailingKeepSpace($contents);
+
         $aiml = simplexml_load_string($contents);
 
-        $pattern = $aiml->pattern;
-        $template = $aiml->template;
+        $pattern = LemurStr::cleanForFinalOutput($aiml->pattern);
+        $template = LemurStr::cleanForFinalOutput($aiml->template);
 
 
         $botId = $this->conversation->bot->id;
         $clientId = $this->conversation->client->id;
         $turnId = $this->conversation->currentTurnId();
-
-
 
             $clientCategory = new ClientCategory();
             $clientCategory->pattern=$pattern;
@@ -76,5 +77,7 @@ class LearnTag extends AimlTag
             $clientCategory->turn_id=$turnId;
             $clientCategory->tag=strtolower($this->tagName);
             $clientCategory->save();
+
+
     }
 }

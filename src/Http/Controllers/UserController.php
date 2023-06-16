@@ -3,7 +3,9 @@
 namespace LemurEngine\LemurBot\Http\Controllers;
 
 use Exception;
+use Illuminate\Support\Facades\App;
 use LemurEngine\LemurBot\DataTables\UserDataTable;
+use LemurEngine\LemurBot\Exceptions\Handler;
 use LemurEngine\LemurBot\Facades\LemurPriv;
 use Laracasts\Flash\Flash;
 use Illuminate\Auth\Access\AuthorizationException;
@@ -32,6 +34,11 @@ class UserController extends AppBaseController
     {
         $this->middleware('auth');
         $this->userRepository = $userRepo;
+
+        App::singleton(
+            \Illuminate\Contracts\Debug\ExceptionHandler::class,
+            Handler::class
+        );
     }
 
     /**
@@ -86,7 +93,6 @@ class UserController extends AppBaseController
         //start the transaction
         DB::beginTransaction();
         try {
-
 
             $user = $this->userRepository->create($input);
 
@@ -201,8 +207,11 @@ class UserController extends AppBaseController
 
             $user = $this->userRepository->update($input, $user->id);
 
-            //assign the bot user role
-            LemurPriv::assignRole($user->id, $input['user_role']);
+            if($user->id != Auth::user()->id){
+                //assign the bot user role
+                LemurPriv::assignRole($user->id, $input['user_role']);
+            }
+
 
             Flash::success('User updated successfully.');
             // Commit the transaction
@@ -407,7 +416,7 @@ class UserController extends AppBaseController
      * @return Response
      * @throws Exception
      */
-    public function restore($user)
+    public function restore(User $user)
     {
 
         $this->authorize('restore', $user);
@@ -439,7 +448,7 @@ class UserController extends AppBaseController
      * @return Response
      * @throws AuthorizationException
      */
-    public function forceDestroy($user)
+    public function forceDestroy(User $user)
     {
 
         $this->authorize('forceDelete', $user);
@@ -481,7 +490,7 @@ class UserController extends AppBaseController
      * @return Response
      * @throws AuthorizationException
      */
-    public function slugUpdate($user, UpdateUserSlugRequest $request)
+    public function slugUpdate(User $user, UpdateUserSlugRequest $request)
     {
 
         $this->authorize('update', $user);

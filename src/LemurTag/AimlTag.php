@@ -12,7 +12,7 @@ use SimpleXMLElement;
  * Class AimlTag
  * @package LemurEngine\LemurBot\LemurTag
  * Documentation on this tag, examples and explanation
- * see: https://docs.lemurbot.com/aiml.html
+ * see: https://docs.lemurengine.com/aiml.html
  */
 abstract class AimlTag implements AimlTagInterface
 {
@@ -240,24 +240,6 @@ abstract class AimlTag implements AimlTagInterface
         $this->buildResponse($contents);
     }
 
-
-
-    /**
-     * nothing to do ...
-     * this is intentionally left empty
-     */
-    public function __destruct()
-    {
-
-        LemurLog::info(
-            __FUNCTION__,
-            [
-                'conversation_id'=>$this->conversation->id,
-                'turn_id'=>$this->conversation->currentTurnId(),
-                'tag_id'=>$this->getTagId(),
-            ]
-        );
-    }
 
     public function getTagContentsCompact()
     {
@@ -666,13 +648,15 @@ XML;
         $this->tagContents=[];
     }
 
-    public function buildResponse($newResponse)
+    public function buildResponse($newResponse, $keepSpace = true)
     {
-        $this->tagContents[]=$newResponse;
+        $this->tagContents[]=($keepSpace?' ':'').$newResponse;
 
         $contents = LemurStr::cleanAndImplode($this->tagContents);
         $this->tagContents=[];
         $this->tagContents[]=$contents;
+
+        //$this->conversation->flow('building_response', $this->tagContents[0]);
 
         $this->getTagStack()->overWrite($this);
     }
@@ -693,6 +677,9 @@ XML;
 
     public function getResponseFromReParse($contents)
     {
+
+        $this->conversation->flow('response_from_reparse', $contents);
+
 
         //does the contents actually have a tag?
         if (strpos($contents, "<")!==false) {

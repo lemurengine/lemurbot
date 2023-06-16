@@ -7,7 +7,7 @@ use LemurEngine\LemurBot\Models\Conversation;
  * Class Category
  * @package LemurEngine\LemurBot\LemurTag
  * Documentation on this tag, examples and explanation
- * see: https://docs.lemurbot.com/aiml.html
+ * see: https://docs.lemurengine.com/aiml.html
  *
  * this has been intentionally left empty
  * why? because the category tag is NOT parsed at run time

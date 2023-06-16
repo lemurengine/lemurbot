@@ -34,8 +34,18 @@ use Spatie\Sluggable\SlugOptions;
  *          type="string"
  *      ),
  *      @SWG\Property(
+ *          property="that",
+ *          description="that",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
  *          property="input",
  *          description="input",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="source",
+ *          description="source",
  *          type="string"
  *      ),
  *      @SWG\Property(
@@ -85,6 +95,8 @@ class EmptyResponse extends Model
         'bot_id',
         'slug',
         'input',
+        'that',
+        'source',
         'occurrences'
     ];
 
@@ -98,6 +110,8 @@ class EmptyResponse extends Model
         'bot_id' => 'integer',
         'slug' => 'string',
         'input' => 'string',
+        'that' => 'string',
+        'source' => 'string',
         'occurrences' => 'integer',
     ];
 
@@ -108,6 +122,8 @@ class EmptyResponse extends Model
      */
     public static $rules = [
         'bot_id' => 'required',
+        'that' => 'string',
+        'source' => 'string',
         'input' => 'required|string',
     ];
 

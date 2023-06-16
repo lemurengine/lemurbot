@@ -4,8 +4,11 @@ namespace LemurEngine\LemurBot\Http\Controllers;
 
 use Exception;
 use Illuminate\Contracts\View\Factory;
+use Illuminate\Support\Facades\App;
 use Illuminate\View\View;
 use LemurEngine\LemurBot\DataTables\BotDataTable;
+use LemurEngine\LemurBot\Exceptions\BotNotFoundException;
+use LemurEngine\LemurBot\Exceptions\Handler;
 use LemurEngine\LemurBot\Facades\LemurPriv;
 use LemurEngine\LemurBot\Http\Requests\CreateBotRequest;
 use LemurEngine\LemurBot\Http\Requests\CreateTalkRequest;
@@ -14,6 +17,7 @@ use LemurEngine\LemurBot\Http\Requests\UpdateBotSlugRequest;
 use LemurEngine\LemurBot\Models\BotAllowedSite;
 use LemurEngine\LemurBot\Models\BotCategoryGroup;
 use LemurEngine\LemurBot\Models\BotKey;
+use LemurEngine\LemurBot\Models\BotPlugin;
 use LemurEngine\LemurBot\Models\BotProperty;
 use LemurEngine\LemurBot\Models\BotWordSpellingGroup;
 use LemurEngine\LemurBot\Models\Client;
@@ -21,6 +25,7 @@ use LemurEngine\LemurBot\Models\Conversation;
 use LemurEngine\LemurBot\Models\ConversationProperty;
 use LemurEngine\LemurBot\Models\ConversationSource;
 use LemurEngine\LemurBot\Models\Language;
+use LemurEngine\LemurBot\Models\Plugin;
 use LemurEngine\LemurBot\Models\Section;
 use LemurEngine\LemurBot\Repositories\BotPropertyRepository;
 use LemurEngine\LemurBot\Repositories\BotRepository;
@@ -52,6 +57,12 @@ class BotController extends AppBaseController
         $this->middleware('auth');
         $this->botRepository = $botRepo;
         $this->botPropertyRepository = $botPropertyRepo;
+
+        App::singleton(
+            \Illuminate\Contracts\Debug\ExceptionHandler::class,
+            Handler::class
+        );
+
     }
 
     /**
@@ -269,7 +280,7 @@ class BotController extends AppBaseController
 
         //if this a request to restore....
         if(!empty($input['restore'])){
-            return $this->restore($bot->id, $request);
+            return $this->restore($bot, $request);
         }
 
 
@@ -337,21 +348,12 @@ class BotController extends AppBaseController
     /**
  * Display all the properties for this bot in the tab
  *
- * @param  string $slug
+ * @param Bot $bot
  *
  * @return Response
  */
-    public function botProperties($id)
+    public function botProperties(Bot $bot)
     {
-
-        $bot = $this->botRepository->find($id);
-
-        if (empty($bot)) {
-            Flash::error('Bot not found');
-
-            return redirect(route('bots.index'));
-        }
-
         //ui settings
         $link = 'botProperties';
         $htmlTag = 'bot-properties';
@@ -387,20 +389,12 @@ class BotController extends AppBaseController
     /**
      * Display all the properties for this bot in the tab
      *
-     * @param  string $slug
+     * @param Bot $bot
      *
      * @return Response
      */
-    public function botCategoryGroups($id)
+    public function botCategoryGroups(Bot $bot)
     {
-        $bot = $this->botRepository->find($id);
-
-        if (empty($bot)) {
-            Flash::error('Bot not found');
-
-            return redirect(route('bots.index'));
-        }
-
         //ui settings
         $link = 'botCategoryGroups';
         $htmlTag = 'bot-category-groups';
@@ -415,10 +409,7 @@ class BotController extends AppBaseController
 
         session(['target_bot' => $bot]);
 
-
         $categoryGroupSectionList = Section::where('type','CATEGORY_GROUP')->orderBy('order')->pluck('name', 'slug');
-
-
 
         return view('lemurbot::bots.edit_all')->with(
             ['bot'=> $bot,'categoryGroups'=> $allCategoryGroups,
@@ -435,22 +426,12 @@ class BotController extends AppBaseController
     /**
      * Display all the properties for this bot in the tab
      *
-     * @param $id
+     * @param Bot $bot
      * @param string $conversationSlug
      * @return Response
      */
-    public function conversations($id, $conversationSlug = 'list')
+    public function conversations(Bot $bot, $conversationSlug = 'list')
     {
-
-
-        $bot = $this->botRepository->find($id);
-
-        if (empty($bot)) {
-            Flash::error('Bot not found');
-
-            return redirect(route('bots.index'));
-        }
-
         //ui settings
         $link = 'conversations';
         $htmlTag = 'conversations';
@@ -461,7 +442,6 @@ class BotController extends AppBaseController
         $conversationProperties = null;
         $conversationSources = null;
         $client = null;
-
 
         //get a list of the last 20 conversations and their count...
         $conversations = Conversation::where('bot_id', $bot->id)->latest('updated_at')->take(20)->get();
@@ -515,20 +495,11 @@ class BotController extends AppBaseController
     /**
      * Display all the properties for this bot in the tab
      *
-     * @param $id
+     * @param Bot $bot
      * @return Response
      */
-    public function botPlugins($id)
+    public function botPlugins(Bot $bot)
     {
-
-        $bot = $this->botRepository->find($id);
-
-        if (empty($bot)) {
-            Flash::error('Bot not found');
-
-            return redirect(route('bots.index'));
-        }
-
         //ui settings
         $link = 'botPlugins';
         $htmlTag = 'bot-plugins';
@@ -537,38 +508,33 @@ class BotController extends AppBaseController
 
         //set a list of all the available category groups for the ui
         $allWordSpellingGroups = BotWordSpellingGroup::getAllWordSpellingsGroupsForBot($bot->id);
+
+        //set a list of all the available category groups for the ui
+        $allBotPlugins = Plugin::getAllPluginsForBot($bot->id);
+
         //list of bots for forms (but in this view we only want the bot we are looking at)
         $botList = Bot::where('id', $bot->id)->pluck('name', 'slug');
+
+        $pluginList = Plugin::pluck('title', 'slug');
 
         session(['target_bot' => $bot]);
 
         return view('lemurbot::bots.edit_all')->with(
             ['bot'=> $bot,'wordSpellingGroups'=> $allWordSpellingGroups,
-            'link'=>$link, 'htmlTag'=>$htmlTag,
-                'title'=>$title,
+            'link'=>$link, 'htmlTag'=>$htmlTag, 'title'=>$title,
             'resourceFolder'=>$resourceFolder,
-            'botList'=>$botList]
+            'botList'=>$botList, 'pluginList'=>$pluginList, 'allBotPlugins'=>$allBotPlugins ]
         );
     }
 
     /**
      * Display all the keys for this bot in the tab
      *
-     * @param $id
+     * @param Bot $bot
      * @return Response
      */
-    public function botKeys($id)
+    public function botKeys(Bot $bot)
     {
-
-        $bot = $this->botRepository->find($id);
-
-
-        if (empty($bot)) {
-            Flash::error('Bot not found');
-
-            return redirect(route('bots.index'));
-        }
-
         //ui settings
         $link = 'botKeys';
         $htmlTag = 'bot-keys';
@@ -579,16 +545,12 @@ class BotController extends AppBaseController
         $botKeys = BotKey::orderBy('name')->where('bot_id', $bot->id)->get();
         //list of bots for forms (but in this view we only want the bot we are looking at)
         $botList = Bot::where('id', $bot->id)->pluck('name', 'slug');
-
         session(['target_bot' => $bot]);
-
 
         return view('lemurbot::bots.edit_all')->with(
             ['bot'=> $bot,'botKeys'=> $botKeys,
-            'link'=>$link, 'htmlTag'=>$htmlTag,
-                'title'=>$title,
-            'resourceFolder'=>$resourceFolder,
-            'botList'=>$botList]
+            'link'=>$link, 'htmlTag'=>$htmlTag, 'title'=>$title,
+            'resourceFolder'=>$resourceFolder, 'botList'=>$botList]
         );
     }
 
@@ -596,21 +558,11 @@ class BotController extends AppBaseController
     /**
      * Display all the allowed sites for this bot in the tab
      *
-     * @param $id
+     * @param Bot $bot
      * @return Response
      */
-    public function botSites($id)
+    public function botSites(Bot $bot)
     {
-
-        $bot = $this->botRepository->find($id);
-
-
-        if (empty($bot)) {
-            Flash::error('Bot not found');
-
-            return redirect(route('bots.index'));
-        }
-
         //to help with data testing and form settings
         $link = 'botAllowedSites';
         $htmlTag = 'bot-allowed-sites';
@@ -637,18 +589,12 @@ class BotController extends AppBaseController
     /**
      * Display all the properties for this bot in the tab
      *
-     * @param $id
+     * @param Bot $bot
      * @param BotStatsService $botStatsService
      * @return Response
      */
-    public function stat_download(Request $request, $id, BotStatsService $botStatsService)
+    public function stat_download(Request $request, Bot $bot, BotStatsService $botStatsService)
     {
-        $bot = $this->botRepository->find($id);
-        if (empty($bot)) {
-            Flash::error('Bot not found');
-            return redirect(route('bots.index'));
-        }
-
         $from = $request->post('date_from');
         if(empty($from)){
             $from = Carbon::now()->subDay();
@@ -703,22 +649,12 @@ class BotController extends AppBaseController
     /**
      * Display all the properties for this bot in the tab
      *
-     * @param $id
+     * @param Bot $bot
      * @param BotStatsService $botStatsService
      * @return Response
      */
-    public function stats($id, BotStatsService $botStatsService)
+    public function stats(Bot $bot, BotStatsService $botStatsService)
     {
-
-        $bot = $this->botRepository->find($id);
-
-
-        if (empty($bot)) {
-            Flash::error('Bot not found');
-
-            return redirect(route('bots.index'));
-        }
-
         //ui settings
         $link = 'botStats';
         $htmlTag = 'bot-stats';
@@ -759,27 +695,17 @@ class BotController extends AppBaseController
     /**
      * Display all the properties for this bot in the tab
      *
-     * @param  string $slug
+     * @param Bot $bot
      *
      * @return Response
      */
-    public function widgets($id)
+    public function widgets(Bot $bot)
     {
-
-        $bot = $this->botRepository->find($id);
-
-        if (empty($bot)) {
-            Flash::error('Bot not found');
-            return redirect(route('bots.index'));
-        }
-
-
         //to help with data testing and form settings
         $link = 'botWidgets';
         $htmlTag = 'bot-widgets';
         $title = 'Bot Widgets';
         $resourceFolder = 'lemurbot::bot_widgets';
-
 
         session(['target_bot' => $bot]);
 
@@ -797,20 +723,12 @@ class BotController extends AppBaseController
     /**
      * Display all the properties for this bot in the tab
      *
-     * @param  string $slug
+     * @param  Bot $bot
      *
      * @return Response
      */
-    public function chatForm($id)
+    public function chatForm(Bot $bot)
     {
-
-        $bot = $this->botRepository->find($id);
-
-        if (empty($bot)) {
-            Flash::error('Bot not found');
-            return redirect(route('bots.index'));
-        }
-
 
         //to help with data testing and form settings
         $link = 'botChat';
@@ -841,7 +759,7 @@ class BotController extends AppBaseController
      */
     public function quickChat(Request $request)
     {
-        $slug = $request->input('q','');
+        $slug = $request->input('bot_id','');
         $bot = Bot::where('slug',$slug)->where('user_id', Auth::user()->id)->first();
 
         if (empty($bot)) {
@@ -850,29 +768,17 @@ class BotController extends AppBaseController
         }else{
             return redirect(url('bot/'.$slug.'/chat'));
         }
-
-
-
     }
 
     /**
      * Initiate a talk to the bot...
+     * @param Bot $bot
      * @param CreateTalkRequest $request
      * @param TalkService $talkService
      * @return Factory|View
-     * @throws Exception
      */
-    public function chat($id, CreateTalkRequest $request, TalkService $talkService)
+    public function chat(Bot $bot, CreateTalkRequest $request, TalkService $talkService)
     {
-
-        $bot = $this->botRepository->find($id);
-
-        if (empty($bot)) {
-            Flash::error('Bot not found');
-            return redirect(route('bots.index'));
-        }
-
-
         //to help with data testing and form settings
         $link = 'botChat';
         $htmlTag = 'bot-chat';
@@ -894,11 +800,13 @@ class BotController extends AppBaseController
 
                 $res=$parts['response'];
                 $debug=$parts['debug'];
+                $flow=$parts['flow'];
                 $allResponses=$parts['allResponses'];
             } else {
                 $res=[];
                 $conversation=[];
                 $debug=[];
+                $flow=[];
                 $allResponses=[];
             }
 
@@ -913,6 +821,7 @@ class BotController extends AppBaseController
                     'response'=>$res,
                     'conversation'=>$conversation,
                     'debug'=>$debug,
+                    'flow'=>$flow,
                     'sentences' => $allResponses,
                 ]
             );
@@ -936,6 +845,101 @@ class BotController extends AppBaseController
     }
 
 
+    /**
+     * Display all the properties for this bot in the tab
+     *
+     * @param Bot $bot
+     *
+     * @return Response
+     */
+    public function popupChatForm(Bot $bot)
+    {
+        //to help with data testing and form settings
+        $link = 'popupChat';
+        $htmlTag = 'popup-chat';
+        $title = 'Popup Chat';
+        $resourceFolder = 'lemurbot::bot_chat';
+
+        session(['target_bot' => $bot]);
+
+        // get a nice list of word spelling groups
+        return view($resourceFolder.'.popup')->with(
+            ['bot'=> $bot,
+                'link'=>$link,
+                'htmlTag'=>$htmlTag,
+                'title'=>$title,
+                'conversation'=>[],
+                'resourceFolder'=>$resourceFolder
+            ]
+        );
+    }
+
+    /**
+     * Initiate a talk to the bot...
+     * @param Bot $bot
+     * @param CreateTalkRequest $request
+     * @param TalkService $talkService
+     * @return Factory|View
+     */
+    public function popupChat(Bot $bot, CreateTalkRequest $request, TalkService $talkService)
+    {
+        //to help with data testing and form settings
+        $link = 'popupChat';
+        $htmlTag = 'popup-chat';
+        $title = 'Popup Chat';
+        $resourceFolder = 'lemurbot::bot_chat';
+
+        session(['target_bot' => $bot]);
+
+        try {
+            if (!empty($request->input('message'))) {
+                $talkService->checkOwnerAccess($request);
+                $talkService->validateRequest($request);
+
+
+                //return the service and return the response and debug
+                $parts = $talkService->run($request->input(), true);
+                //get the latest conversations from the service
+                $conversation=$talkService->getConversation();
+
+                $res=$parts['response'];
+                $allResponses=$parts['allResponses'];
+            } else {
+                $res=[];
+                $conversation=[];
+                $allResponses=[];
+            }
+
+
+            // get a nice list of word spelling groups
+            return view($resourceFolder.'.popup')->with(
+                ['bot'=> $bot,
+                    'link'=>$link,
+                    'htmlTag'=>$htmlTag,
+                    'title'=>$title,
+                    'resourceFolder'=>$resourceFolder,
+                    'response'=>$res,
+                    'conversation'=>$conversation,
+                    'sentences' => $allResponses,
+                ]
+            );
+        } catch (Exception $e) {
+            // get a nice list of word spelling groups
+            return view($resourceFolder.'.popup')->with(
+                ['bot'=> $bot,
+                    'link'=>$link,
+                    'htmlTag'=>$htmlTag,
+                    'title'=>$title,
+                    'resourceFolder'=>$resourceFolder,
+                    'response'=>['error'=>true,'message'=>$e->getMessage(),'line'=>$e->getLine(),'file'=>basename($e->getFile())],
+                    'conversation'=>[],
+                    'sentences' => [],
+                ]
+            );
+        }
+
+
+    }
 
     /**
      * @param $request
@@ -943,7 +947,6 @@ class BotController extends AppBaseController
      */
     public function uploadImage($request, $bot)
     {
-
 
         if (!empty($request->file('image'))) {
 
@@ -973,20 +976,13 @@ class BotController extends AppBaseController
      * @return Response
      * @throws Exception
      */
-    public function restore($bot, UpdateBotRequest $request)
+    public function restore(Bot $bot, UpdateBotRequest $request)
     {
-
         $this->authorize('update', $bot);
-
         $input = $request->all();
 
         if(!empty($input['restore'])){
             $this->botRepository->makeModel()->withTrashed()->where('id',$bot->id)->first()->restore();
-        }
-
-        if (empty($bot)) {
-            Flash::error('Error restoring bot');
-            return redirect(route('bots.index'));
         }
 
         Flash::success('Bot restored successfully.');
@@ -1008,15 +1004,9 @@ class BotController extends AppBaseController
      * @return Response
      * @throws AuthorizationException
      */
-    public function forceDestroy($bot)
+    public function forceDestroy(Bot $bot)
     {
         $this->authorize('forceDelete', $bot);
-
-        if (empty($bot)) {
-            Flash::error('Bot not found');
-            return redirect()->back();
-        }
-
 
         try {
             $this->botRepository->forceDelete($bot->id);
@@ -1043,19 +1033,16 @@ class BotController extends AppBaseController
     /**
      * Update the specified Bot in storage.
      *
-     * @param  Bot $bot
+     * @param Bot $bot
      * @param UpdateBotSlugRequest $request
      *
      * @return Response
      * @throws AuthorizationException
      */
-    public function slugUpdate($bot, UpdateBotSlugRequest $request)
+    public function slugUpdate(Bot $bot, UpdateBotSlugRequest $request)
     {
-
         $this->authorize('update', $bot);
-
         $inputAll=$request->all();
-
         $botCheck = $this->botRepository->getBySlug($inputAll['original_slug']);
 
         if (empty($bot)||empty($botCheck)) {
@@ -1068,9 +1055,8 @@ class BotController extends AppBaseController
             return redirect(route('bots.index'));
         }
 
-
         $input['slug'] = $inputAll['slug'];
-        $bot = $this->botRepository->update($input, $bot->id);
+        $this->botRepository->update($input, $bot->id);
 
         Flash::success('Bot slug updated successfully.');
 

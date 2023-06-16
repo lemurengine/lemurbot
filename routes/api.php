@@ -13,24 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/api/talk/bot', 'LemurEngine\LemurBot\Http\Controllers\API\TalkAPIController@store');
-Route::post('/api/talk/meta', 'LemurEngine\LemurBot\Http\Controllers\API\TalkAPIController@old_meta');
-
-
+Route::post('/api/talk/bot', 'LemurEngine\LemurBot\Http\Controllers\API\TalkAPIController@store')->name('post.bot.talk');
+Route::post('/api/talk/meta', 'LemurEngine\LemurBot\Http\Controllers\API\TalkAPIController@old_meta')->name('post.bot.meta');
 
 /** ---------------------------------------------------------------
- *  Create category from an empty response
+ *  Deprecated route to get the bot meta
  ** -------------------------------------------------------------- */
-Route::group(['prefix' => '/api/meta'], function () {
-
-    Route::bind('botMetaSlug', function ($botMetaSlug) {
-        try {
-            $bot = LemurEngine\LemurBot\Models\Bot::where('slug', $botMetaSlug)->firstOrFail();
-            return $bot->slug;
-        } catch (Exception $e) {
-            abort(404);
-        }
-    });
-
-    Route::GET('/{botMetaSlug}', 'LemurEngine\LemurBot\Http\Controllers\API\TalkAPIController@meta');
-});
+Route::GET('/api/meta/{bot:slug}', 'LemurEngine\LemurBot\Http\Controllers\API\TalkAPIController@meta')->name('get.bot.talk');
