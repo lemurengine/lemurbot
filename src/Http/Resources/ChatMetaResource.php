@@ -66,6 +66,8 @@ class ChatMetaResource extends JsonResource
                 'id'=> $this->slug,
                 'name'=> $this->name,
                 'image'=> $this->imageUrl,
+                'summary'=> $this->summary,
+                'description'=> $this->description,
                 'lemurtar' => $cleanFields,
             ],
             'client' => [
