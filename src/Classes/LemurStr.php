@@ -12,11 +12,11 @@ class LemurStr
     public static function splitIntoSentences($str):array|false
     {
 
-        $str = str_replace("<br/>",".",$str);
-        $str = str_replace("<br>",".",$str);
-        $str = str_replace("<br />",".",$str);
+        $str = str_replace("<br/>",". ",$str);
+        $str = str_replace("<br>",". ",$str);
+        $str = str_replace("<br />",". ",$str);
 
-        return preg_split('/(\s*,*\s*)*[.?!;:]+(\s*,*\s*)*/', $str, -1, PREG_SPLIT_NO_EMPTY);
+        return preg_split('/(\s*,*\s*)*[.?!;:][\s|\n|\r]+(\s*,*\s*)*|(\s*,*\s*)*[.?!;:]([\s\n\r]*,[\s\n\r]*)*$/', $str, -1, PREG_SPLIT_NO_EMPTY);
     }
 
     public static function normalizeInput($str, $uppercase=true):string
