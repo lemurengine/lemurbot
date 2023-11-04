@@ -629,11 +629,22 @@ class TalkService
         $pluginIds = BotPlugin::where('bot_id', $this->bot->id)->pluck('plugin_id','plugin_id');
         $plugins = Plugin::whereIn('id',$pluginIds)->where('is_active', true)->where('apply_plugin', $apply)->orderby('priority', 'ASC')->get();
 
+        LemurLog::debug(
+            'apply custom plugin checkpoint: '.__LINE__,
+        );
+
+
         if(count($plugins)==0){
             $this->conversation->flow('applying_'.$apply.'_plugin', 'no plugins found');
+            LemurLog::debug(
+                'apply custom plugin checkpoint: '.__LINE__,
+            );
             return ['sentence'=>$str, 'return'=>false];
         }else{
             $this->conversation->flow('applying_'.$apply.'_plugin', count($plugins).' plugins found');
+            LemurLog::debug(
+                'apply custom plugin checkpoint: '.__LINE__,
+            );
         }
         $originalStr = $str;
         foreach($plugins as $plugin){
@@ -643,43 +654,53 @@ class TalkService
             }else{
                 $pluginClass = $plugin->classname;
             }
+            LemurLog::debug(
+                'apply custom plugin checkpoint: '.__LINE__,
+            );
             if(class_exists($pluginClass)){
+                LemurLog::debug(
+                    'apply custom plugin checkpoint: '.__LINE__,
+                );
                 //load the class
                 $activePlugin = new $pluginClass($conversation, $str);
-
+                LemurLog::debug(
+                    'apply custom plugin checkpoint: '.__LINE__,
+                );
                 if($activePlugin instanceof LemurPlugin){
 
                     LemurLog::debug(
-                        'applying plugin '.$pluginClass,
-                        [
-                            'conversation_id'=>$this->conversation->id,
-                            'turn_id'=>$this->conversation->currentTurnId(),
-                            'pluginClass'=>$pluginClass
-                        ]
+                        'apply custom plugin checkpoint '.$pluginClass.': '.__LINE__,
                     );
                     $str = $activePlugin->apply();
                     LemurLog::debug(
-                        'applying plugin '.$pluginClass. ' end',
-                        [
-                            'conversation_id'=>$this->conversation->id,
-                            'turn_id'=>$this->conversation->currentTurnId(),
-                            'pluginClass'=>$pluginClass
-                        ]
+                        'apply custom plugin checkpoint: '.$pluginClass.': '.__LINE__,
                     );
                     //check for changes
                     if($plugin->return_onchange && $originalStr!=$str && $str!==''){
+                        LemurLog::debug(
+                            'apply custom plugin checkpoint: '.__LINE__,
+                        );
                         $this->conversation->flow('applying_'.$apply.'_plugin', $plugin->classname.' plugin, output updated returning early');
                         return ['sentence'=>$str, 'return'=>true];
                     }elseif($originalStr!=$str  && $str!==''){
+                        LemurLog::debug(
+                            'apply custom plugin checkpoint: '.__LINE__,
+                        );
                         $this->conversation->flow('applying_'.$apply.'_plugin', $plugin->classname.' plugin, output updated continuing');
                         return ['sentence'=>$str, 'return'=>true];
                     }
                 }else{
+                    LemurLog::debug(
+                        'apply custom plugin checkpoint: '.__LINE__,
+                    );
                     $this->conversation->flow('applying_'.$apply.'_plugin', $plugin->classname.'. - cannot apply - class not instance of LemurPlugin');
                 }
 
 
             }elseif(!class_exists($pluginClass)){
+                LemurLog::debug(
+                    'apply custom plugin checkpoint: '.__LINE__,
+                );
                 $this->conversation->flow('applying_'.$apply.'_plugin', $plugin->classname.' - cannot apply - class does not exist');
             }
         }
