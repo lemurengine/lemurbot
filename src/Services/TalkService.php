@@ -276,7 +276,7 @@ class TalkService
         $this->aimlParser->resetResponse();
 
         LemurLog::debug(
-            'turn started',
+            'init turn',
             [
                 'conversation_id'=>$this->conversation->id,
                 'turn_id'=>$turn->id,
@@ -440,6 +440,16 @@ class TalkService
      */
     public function process($sentence)
     {
+
+        LemurLog::debug(
+            'process sentence',
+            [
+                'conversation_id'=>$this->conversation->id,
+                'turn_id'=>$this->conversation->currentTurnId(),
+                'sentence'=>$sentence
+            ]
+        );
+
         $preparedSentence = $sentence;
         $preparedSentence = $this->applyPrePlugins($preparedSentence);
         $this->conversation->currentConversationTurn->setPluginTransformedInput($preparedSentence);
@@ -494,6 +504,16 @@ class TalkService
             }
 
             $this->aimlParser->extractAllWildcards();
+
+            LemurLog::debug(
+                'process sentence end',
+                [
+                    'conversation_id'=>$this->conversation->id,
+                    'turn_id'=>$this->conversation->currentTurnId(),
+                    'sentence'=>$sentence
+                ]
+            );
+
             return $this->finalClean($this->aimlParser->parseTemplate());
         }
         return '';
@@ -596,6 +616,15 @@ class TalkService
 
     public function applyCustomPlugins($conversation, $str, $apply){
 
+        LemurLog::debug(
+            'apply custom plugin',
+            [
+                'conversation_id'=>$this->conversation->id,
+                'turn_id'=>$this->conversation->currentTurnId(),
+                'str'=>$str,
+                'apply'=>$apply
+            ]
+        );
 
         $pluginIds = BotPlugin::where('bot_id', $this->bot->id)->pluck('plugin_id','plugin_id');
         $plugins = Plugin::whereIn('id',$pluginIds)->where('is_active', true)->where('apply_plugin', $apply)->orderby('priority', 'ASC')->get();

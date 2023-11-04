@@ -609,6 +609,8 @@ class AimlMatcher
      */
     public function matchClientCategory($preparedSentence)
     {
+
+
         $botId = $this->bot->id;
         $clientId = $this->client->id;
 
