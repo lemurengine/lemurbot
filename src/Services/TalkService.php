@@ -667,7 +667,15 @@ class TalkService
             }
         }
 
-
+        LemurLog::debug(
+            'apply custom plugin end',
+            [
+                'conversation_id'=>$this->conversation->id,
+                'turn_id'=>$this->conversation->currentTurnId(),
+                'str'=>$str,
+                'apply'=>$apply
+            ]
+        );
 
         return ['sentence'=>$str, 'return'=>false];
 

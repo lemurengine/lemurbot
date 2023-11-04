@@ -41,7 +41,14 @@ class AimlParser
 
     public function expandWhiteSpaceTagSpacing($template)
     {
-
+        LemurLog::debug(
+            'expandWhiteSpaceTagSpacing',
+            [
+                'conversation_id'=>$this->conversation->id,
+                'turn_id'=>$this->conversation->currentTurnId(),
+                'template'=>$template,
+            ]
+        );
         $newTemplate = preg_replace('~\s(<star[^>]*>)~iU', "<whitespace />$1", $template);
         $newTemplate = preg_replace('~(<star[^>]*>)\s~iU', "$1<whitespace />", $newTemplate);
 
@@ -55,7 +62,14 @@ class AimlParser
         if($newTemplate !=$template){
             $this->conversation->flow('expanding_whitespace', $newTemplate);
         }
-
+        LemurLog::debug(
+            'expandWhiteSpaceTagSpacing',
+            [
+                'conversation_id'=>$this->conversation->id,
+                'turn_id'=>$this->conversation->currentTurnId(),
+                'template'=>$template,
+            ]
+        );
         return $newTemplate;
 
     }
@@ -67,13 +81,30 @@ class AimlParser
      */
     public function extractAllWildcards()
     {
+        LemurLog::debug(
+            'extractAllWildcards',
+            [
+                'conversation_id'=>$this->conversation->id,
+                'turn_id'=>$this->conversation->currentTurnId(),
+            ]
+        );
+
         $this->extractAndSaveWildCards('star');
         $this->extractAndSaveWildCards('topicstar');
         $this->extractAndSaveWildCards('thatstar');
+
+        LemurLog::debug(
+            'extractAllWildcards end',
+            [
+                'conversation_id'=>$this->conversation->id,
+                'turn_id'=>$this->conversation->currentTurnId(),
+            ]
+        );
     }
 
     public function parseTemplate($encoding = 'UTF-8', $is_final = false)
     {
+
         return $this->parse($this->category->template, $encoding, $is_final);
     }
 
@@ -111,6 +142,16 @@ class AimlParser
         $this->setConditionStack($template);
         xml_parse($this->xmlParser, $template, $is_final);
         $this->conversation->debug('output.parsed', $this->response);
+
+
+        LemurLog::info(
+            'parsing end',
+            [
+                'conversation_id'=>$this->conversation->id,
+                'turn_id'=>$this->conversation->currentTurnId()
+            ]
+        );
+
         return $this->response;
     }
 

@@ -249,6 +249,15 @@ class AimlMatcher
     public function score($categories)
     {
 
+        LemurLog::debug(
+            'score',
+            [
+                'conversation_id'=>$this->conversation->id,
+                'turn_id'=>$this->conversation->currentTurnId(),
+                'categoryCounts'=>count($categories),
+            ]
+        );
+
         $totalPotentials = $categories->count();
         $inputNormalised = $this->conversation->normalisedInput();
         $pluginTransformedInputNormalised = $this->conversation->normalisedPluginTransformedInput();
@@ -419,6 +428,16 @@ class AimlMatcher
 
         $this->conversation->debug('categories.matches.top.score', $item);
 
+        LemurLog::debug(
+            'score end',
+            [
+                'conversation_id'=>$this->conversation->id,
+                'turn_id'=>$this->conversation->currentTurnId(),
+                'categoryCounts'=>count($categories),
+            ]
+        );
+
+
         return $categories->find($item['category_id']);
     }
 
@@ -468,6 +487,15 @@ class AimlMatcher
      */
     public function match($preparedSentence)
     {
+        LemurLog::debug(
+            'match',
+            [
+                'conversation_id'=>$this->conversation->id,
+                'turn_id'=>$this->conversation->currentTurnId(),
+                'preparedSentence'=>$preparedSentence,
+            ]
+        );
+
         $allowedCategoryGroupIds = $this->getListOfAllowedCategoryGroups();
 
         $topicNormalised = $this->conversation->normalisedTopic();
@@ -597,6 +625,16 @@ class AimlMatcher
 
 
         $this->conversation->setAdminDebug('sql', getEloquentSqlWithBindings($sqlBuilder));
+
+        LemurLog::debug(
+            'match end',
+            [
+                'conversation_id'=>$this->conversation->id,
+                'turn_id'=>$this->conversation->currentTurnId(),
+                'preparedSentence'=>$preparedSentence,
+            ]
+        );
+
 
         return $sqlBuilder->get();
     }
