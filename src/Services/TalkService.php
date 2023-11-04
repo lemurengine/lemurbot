@@ -648,7 +648,24 @@ class TalkService
                 $activePlugin = new $pluginClass($conversation, $str);
 
                 if($activePlugin instanceof LemurPlugin){
+
+                    LemurLog::debug(
+                        'applying plugin '.$pluginClass,
+                        [
+                            'conversation_id'=>$this->conversation->id,
+                            'turn_id'=>$this->conversation->currentTurnId(),
+                            'pluginClass'=>$pluginClass
+                        ]
+                    );
                     $str = $activePlugin->apply();
+                    LemurLog::debug(
+                        'applying plugin '.$pluginClass. ' end',
+                        [
+                            'conversation_id'=>$this->conversation->id,
+                            'turn_id'=>$this->conversation->currentTurnId(),
+                            'pluginClass'=>$pluginClass
+                        ]
+                    );
                     //check for changes
                     if($plugin->return_onchange && $originalStr!=$str && $str!==''){
                         $this->conversation->flow('applying_'.$apply.'_plugin', $plugin->classname.' plugin, output updated returning early');
