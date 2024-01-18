@@ -89,7 +89,7 @@ class BotDataTable extends DataTable
                 }',
                 'initComplete' => 'function(settings, json) {
 
-                    var maxColumn = 8
+                    var maxColumn = 9
                     var dateFields =[maxColumn-1]
                     var exactSearchFields = [0]
                     var noSearchFields = [maxColumn]
@@ -120,7 +120,8 @@ class BotDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            'slug'=> ['name'=>'bots.slug','data'=>'slug','title'=>'Id'],
+            'id'=> ['name'=>'bots.id','data'=>'id','title'=>'Id'],
+            'slug'=> ['name'=>'bots.slug','data'=>'slug','title'=>'slug'],
             'language'=> ['name'=>'languages.name','data'=>'language','title'=>'Lang'],
             'name',
             'summary' => ['name'=>'summary','data'=>'summary','title'=>'Summary','searchable'=>true,
