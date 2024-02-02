@@ -116,9 +116,9 @@ class UserDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            'id' => ['name'=>'id','data'=>'users.id', 'title'=>'Id', 'searchable'=>true,
+            'id' => ['name'=>'users.id','data'=>'id', 'title'=>'Id', 'searchable'=>true,
                 'printable'=>true, 'exportable'=>true,'defaultContent'=>'false'],
-            'slug' => ['title'=>'Id'],
+            'slug' => ['title'=>'Slug'],
             'name',
             'email',
             'role' => ['name'=>'role','data'=>'role','title'=>'Role','searchable'=>true,
