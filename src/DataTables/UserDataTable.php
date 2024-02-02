@@ -85,9 +85,9 @@ class UserDataTable extends DataTable
                 }',
                 'initComplete' => 'function(settings, json) {
 
-                    var maxColumn = 6
+                    var maxColumn = 7
                     var dateFields = [maxColumn-1]
-                    var exactSearchFields = []
+                    var exactSearchFields = [0]
                     var noSearchFields = [maxColumn]
 
                     runAutoSearch(settings, json)
@@ -116,6 +116,8 @@ class UserDataTable extends DataTable
     protected function getColumns()
     {
         return [
+            'id' => ['name'=>'id','data'=>'users.id', 'title'=>'Id', 'searchable'=>true,
+                'printable'=>true, 'exportable'=>true,'defaultContent'=>'false'],
             'slug' => ['title'=>'Id'],
             'name',
             'email',
