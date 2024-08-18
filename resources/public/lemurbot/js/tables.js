@@ -133,8 +133,6 @@ function addRowFeatures(settings, json, linkModel, linkAction){
 
 }
 
-
-
 function addFooterSearch(settings, json, dateFields, exactSearchFields, noSearchFields){
 
 

@@ -3,6 +3,7 @@
 namespace LemurEngine\LemurBot\Factories;
 
 use Exception;
+use LemurEngine\LemurBot\Classes\LemurLog;
 use LemurEngine\LemurBot\Models\Turn;
 
 class TurnFactory
@@ -16,14 +17,17 @@ class TurnFactory
      */
     public static function createTurn($conversation, $input, $source, $parentTurnId = null)
     {
-        $turn = new Turn([
-            'conversation_id' => $conversation->id,
-            'parent_turn_id' => $parentTurnId,
-            "input" => $input['message'],
-            "source" => $source
-        ]);
-        $turn->save();
+        LemurLog::debug(
+            'creating turn'
+        );
 
+        $turn = new Turn();
+        $turn->conversation_id = $conversation->id; //this seem to fix the bottleneck
+        $turn->save();
+        $turn->parent_turn_id = $parentTurnId;
+        $turn->input = $input['message'];
+        $turn->source = $source;
+        $turn->save();
         return $turn;
     }
 
@@ -38,18 +42,20 @@ class TurnFactory
     public static function createCompleteTurn($conversation, $input, $source, $parentTurnId = null)
     {
 
-        $currentLog = new Turn([
-            'conversation_id' => $conversation->id,
-            'parent_turn_id' =>$parentTurnId,
-            "input" => $input['message'],
-            'status' => 'C',
-            "source" => $source
-        ]);
+        LemurLog::debug(
+            'completing turn'
+        );
+
+        $currentLog = new Turn();
+        $currentLog->conversation_id = $conversation->id; //this seem to fix the bottleneck
+        $currentLog->save();
+        $currentLog->parent_turn_id = $parentTurnId;
+        $currentLog->input = $input['message'];
+        $currentLog->status = 'C';
+        $currentLog->source = $source;
         $currentLog->save();
 
+        return $conversation->currentConversationTurn;
 
-        $currentLog = $conversation->currentConversationTurn;
-
-        return $currentLog;
     }
 }
