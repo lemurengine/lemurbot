@@ -225,12 +225,10 @@ class Turn extends Model
     public function getSlugOptions() : SlugOptions
     {
         return SlugOptions::create()
-            ->generateSlugsFrom('input')
+            ->generateSlugsFrom('conversation_id')
             ->saveSlugsTo('slug')
-            ->slugsShouldBeNoLongerThan(50)
             ->doNotGenerateSlugsOnUpdate();
     }
-
 
     public function setPluginTransformedInput($value){
         $this->pluginTransformedInput= $value;
