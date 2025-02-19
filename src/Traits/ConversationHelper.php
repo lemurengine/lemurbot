@@ -8,6 +8,7 @@ use LemurEngine\LemurBot\Classes\LemurStr;
 use LemurEngine\LemurBot\Models\BotProperty;
 use LemurEngine\LemurBot\Models\ConversationProperty;
 use LemurEngine\LemurBot\Models\Turn;
+use Illuminate\Support\Str;
 
 trait ConversationHelper
 {
@@ -295,10 +296,12 @@ trait ConversationHelper
 
     public function setGlobalProperty($name, $value)
     {
+        $slug = Str::slug($name . '-' . $this->id);
 
-        ConversationProperty::updateOrCreate(
-            ['conversation_id' =>  $this->id, 'name'=>$name],
-            ['conversation_id' =>  $this->id, 'name'=>$name, 'value'=>$value]
+        ConversationProperty::upsert(
+            [['conversation_id' => $this->id, 'name' => $name, 'value' => $value, 'slug' => $slug]],
+            ['conversation_id', 'name'], // Unique columns to check
+            ['value'] // Only update `value`
         );
     }
 

@@ -38,9 +38,16 @@ class AimlMatcher
 
 
             if ($pattern != $category->pattern) {
+
+                if(strlen($pattern)>100){
+                    $truncPattern = substr($pattern, 0, 100)."... (truncated)";
+                }else{
+                    $truncPattern = $pattern;
+                }
+
                 $this->conversation->debug(
                     'filtering.pattern.replaced.' . $category->slug,
-                    $pattern
+                    $truncPattern
                 );
 
                 $category->fill(['regexp_pattern' => $pattern]);
@@ -122,9 +129,16 @@ class AimlMatcher
                 !preg_match_all("~^" . $pattern . "$~is", $pluginTransformedInputNormalised, $matches)) {
                     $categories = $this->removeFromCollection($categories, $category->id);
                     $removed=true;
+
+                    if(strlen($pattern)>100){
+                        $truncPattern = substr($pattern, 0, 100)."... (truncated)";
+                    }else{
+                        $truncPattern = $pattern;
+                    }
+
                     $this->conversation->debug(
                         'filtering.result.removed.'.$category->slug,
-                        'Patterns do not match - '.$pattern
+                        'Patterns do not match - '.$truncPattern
                     );
             }
 

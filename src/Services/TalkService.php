@@ -205,6 +205,8 @@ class TalkService
     public function initConversation($input)
     {
 
+        LemurLog::debug('init conversation');
+
         if ($input['message']=='start a new conversation') {
             $forceNew=true;
         } else {
