@@ -83,6 +83,11 @@ class TalkService
 
         $botAllowedSites = BotAllowedSite::where('bot_id', $botFound->id);
 
+        //todo: must be fixed properly - this is handled in middleware
+        //quick fix something
+        return true;
+
+
         //there are no allowed sites specified which means all sites are allowed
         if($botAllowedSites->count()<=0){
             return true;
@@ -90,7 +95,7 @@ class TalkService
 
             $origin = $request->headers->get('Origin');
 
-            $botAllowedSitesArr = $botAllowedSites->pluck('website_url','website_url');
+            $botAllowedSitesArr = $botAllowedSites->pluck('website_url')->toArray();
             if (in_array($origin, $botAllowedSitesArr)) {
                 return true;
             }
@@ -117,7 +122,7 @@ class TalkService
 
         //is the input within the limit
         if(!empty($request->input('message') &&
-                strlen($request->input('message')) > config('lemurbot.portal.max_chars'))){
+            strlen($request->input('message')) > config('lemurbot.portal.max_chars'))){
             throw new LengthException("Client message is over the allowed length");
         }
 
@@ -145,8 +150,9 @@ class TalkService
         $startTime = Carbon::now();
 
         $originalInput = $input;
-        $message = LemurStr::removeSentenceEnders($input['message']);
-        $sentences = LemurStr::splitIntoSentences($message);
+        //$message = LemurStr::removeSentenceEnders($input['message']);
+        //$sentences = LemurStr::splitIntoSentences($message);
+        $sentences = [$input['message']];
         $sources = 'human';
         if (count($sentences) > 1) {
             $sources = 'multiple';
@@ -204,8 +210,6 @@ class TalkService
      */
     public function initConversation($input)
     {
-
-        LemurLog::debug('init conversation');
 
         if ($input['message']=='start a new conversation') {
             $forceNew=true;
@@ -266,9 +270,9 @@ class TalkService
      */
     public function initTurn($input, $source = 'human', $parentTurnId = null)
     {
-        $this->conversation->flow('initTurn.'.$source, $input['message']);
+        $this->conversation->flow('initTurn.creating.'.$source, $input['message']);
         $turn = TurnFactory::createTurn($this->conversation, $input, $source, $parentTurnId);
-
+        $this->conversation->flow('initTurn.created.'.$source, $input['message']);
         $this->conversation->refresh();
         $this->conversation->push();
 
@@ -571,17 +575,17 @@ class TalkService
         //only when we are using the admin area...
         //so we only have to bother when we have logged in user
 
-            $res['conversation']['input'] = $conversation->getTurnValue('input', 0);
-            $res['conversation']['output'] = $conversation->getTurnValue('output', 0);
-            $res['conversation']['id'] = $conversation->slug;
-            $res['conversation']['topic'] = $conversation->getGlobalProperty('topic');
-            $res['bot']['id'] = $conversation->bot->slug;
-            $res['bot']['name'] = $conversation->bot->name;
-            $res['bot']['image'] = $conversation->bot->imageUrl;
-            $res['client']['id'] = $conversation->client->slug;
-            $res['client']['image'] = $conversation->client->imageUrl;
-            $res['client']['name'] = $conversation->getGlobalProperty('name');
-            $res['features'] = $conversation->getFeatures();
+        $res['conversation']['input'] = $conversation->getTurnValue('input', 0);
+        $res['conversation']['output'] = $conversation->getTurnValue('output', 0);
+        $res['conversation']['id'] = $conversation->slug;
+        $res['conversation']['topic'] = $conversation->getGlobalProperty('topic');
+        $res['bot']['id'] = $conversation->bot->slug;
+        $res['bot']['name'] = $conversation->bot->name;
+        $res['bot']['image'] = $conversation->bot->imageUrl;
+        $res['client']['id'] = $conversation->client->slug;
+        $res['client']['image'] = $conversation->client->imageUrl;
+        $res['client']['name'] = $conversation->getGlobalProperty('name');
+        $res['features'] = $conversation->getFeatures();
 
 
         if (Auth::user()) {
@@ -742,7 +746,7 @@ class TalkService
                         ->orWhere('word', 'like', '% ' .$allInputWordsTmp[$i]);
                 };
             })->orderByRaw("(LENGTH(word) - LENGTH(REPLACE(word, ' ', ''))+1) DESC")
-                ->pluck('replacement', 'word');
+            ->pluck('replacement', 'word');
 
 
         if(count($wordSpellings)===0){
