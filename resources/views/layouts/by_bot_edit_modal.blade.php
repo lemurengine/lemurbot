@@ -9,7 +9,7 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="modal-body">
-                    @include($resourceFolder.'.fields')
+                    @include('Lemurbot::'.$resourceFolder.'.fields')
                     {{ Form::hidden('redirect_url', url()->current(),['data-test'=>"{$htmlTag}-edit-redirect-url"]) }}
                     <div class="clearfix"></div>
                 </div>
