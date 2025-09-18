@@ -9,7 +9,7 @@
         <div class="clearfix"></div>
 
         <div class="callout callout-warning"><h4>Bot keys are used to grant access to talk non public bots.</h4>The only action you can perform with these keys is talking to a bot.</div>
-        @if(count($botKeys)<=0)
+        @if((empty($botKeys))||(count($botKeys)<=0))
 
             <div class="alert alert-info">There are no bot keys associated with this bot </div>
 
