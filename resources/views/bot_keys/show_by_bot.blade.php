@@ -40,10 +40,11 @@
 
         </div>
 </section>
-@php $resourceFolder = 'lemurbot::bot_keys'; @endphp
+@if ($resourceFolder !== 'lemurbot::bot_chat')
 @include('lemurbot::layouts.by_bot_add_modal')
 @include('lemurbot::bot_keys.by_bot_show_modal')
 @include('lemurbot::layouts.datatable_delete_modal')
+@endif
 
 @push('scripts')
     <script>
