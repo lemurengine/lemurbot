@@ -539,7 +539,7 @@ class BotController extends AppBaseController
         $link = 'botKeys';
         $htmlTag = 'bot-keys';
         $title = 'Bot Keys';
-        $resourceFolder = 'bot_keys';
+        $resourceFolder = 'lemurbot::bot_keys';
 
         //set a list of all keys for this bot
         $botKeys = BotKey::orderBy('name')->where('bot_id', $bot->id)->get();
