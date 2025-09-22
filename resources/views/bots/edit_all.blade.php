@@ -75,8 +75,8 @@
                   @else
                        <!-- {!! $htmlTag !!} pane -->
                        <div class="tab-pane active" id="bot-{!! $htmlTag !!}-pane" data-test="bot-{!! $htmlTag !!}-pane">
-                       @include('lemurbot::bot_keys.show_by_bot')
-                       <div class="clearfix"></div>
+                           @include($resourceFolder.'.show_by_bot')
+                           <div class="clearfix"></div>
                       </div>
 
 
