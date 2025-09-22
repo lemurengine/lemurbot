@@ -5,8 +5,7 @@
 
             <div class="modal-header">
                 <h4 class="modal-title">{!! $title !!} Add</h4>
-                <div class="clearfix"></div>
-            </div>
+                @if ($resourceFolder !== 'bot_chat' )
             <div class="modal-body">
                 @include($resourceFolder.'.fields')
                 @csrf
@@ -14,6 +13,7 @@
                 {{ Form::hidden('redirect_url', url()->current(),['data-test'=>"{$htmlTag}-create-redirect-url"]) }}
                 <div class="clearfix"></div>
             </div>
+                @endif
             <div class="modal-footer">
                 <!-- Submit Field -->
                 <div class="form-group col-sm-12">
